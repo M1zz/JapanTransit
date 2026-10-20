@@ -1,0 +1,49 @@
+# Xcode 프로젝트의 원본. JapanTransit.xcodeproj 는 여기서 만든다:
+#   xcodegen generate
+# 프로젝트 설정을 Xcode 화면에서 고치면 다음 생성 때 사라진다. 이 파일을 고친다.
+name: JapanTransit
+options:
+  bundleIdPrefix: com.leeo
+  deploymentTarget:
+    iOS: "17.0"
+  developmentLanguage: en
+  createIntermediateGroups: true
+packages:
+  TrainBoardKit:
+    path: ../TrainBoardKit
+settings:
+  base:
+    SWIFT_VERSION: "5.0"
+    DEVELOPMENT_TEAM: QGAQ3AY3R3
+    CODE_SIGN_STYLE: Automatic
+targets:
+  JapanTransit:
+    type: application
+    platform: iOS
+    sources:
+      - JapanTransit
+    dependencies:
+      - package: TrainBoardKit
+    configFiles:
+      Debug: Config/Version.xcconfig
+      Release: Config/Version.xcconfig
+    info:
+      path: JapanTransit/Info.plist
+      properties:
+        CFBundleDisplayName: 일본길찾기
+        CFBundleShortVersionString: $(MARKETING_VERSION)
+        CFBundleVersion: $(CURRENT_PROJECT_VERSION)
+        CFBundleDevelopmentRegion: en
+        CFBundleLocalizations: [en, ko]
+        NSCameraUsageDescription: Reads the departure board and train front so we can tell you whether to board.
+        UILaunchScreen: {}
+        UIApplicationSupportsIndirectInputEvents: true
+        UISupportedInterfaceOrientations: [UIInterfaceOrientationPortrait]
+        ITSAppUsesNonExemptEncryption: false
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.leeo.japantransit
+        TARGETED_DEVICE_FAMILY: "1"
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
+        GENERATE_INFOPLIST_FILE: NO

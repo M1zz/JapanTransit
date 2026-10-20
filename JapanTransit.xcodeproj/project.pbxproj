@@ -1,0 +1,408 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		013BEF3B3D9AB0B0EDEC43CF /* BoardTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6834FC7750DBADC2BBCE4FFB /* BoardTestView.swift */; };
+		3626C44DC953F76363EAF43E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CEFEFE97FE01A8EDFF372CE /* Assets.xcassets */; };
+		5C434EFC3E06EFB483CAA36D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 53E8002144E771EFC16356B9 /* InfoPlist.strings */; };
+		9EEBF98C5C88A1350D6BAA97 /* JapanTransitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE5B2738F3684EC1CEA09BA /* JapanTransitApp.swift */; };
+		AA0DA774D9E6D67C05F0B09D /* TrainBoardKit in Frameworks */ = {isa = PBXBuildFile; productRef = 98FFD97337BFE7C18E380635 /* TrainBoardKit */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4AC73DAD1575021E5193C5D0 /* TrainBoardKit */ = {isa = PBXFileReference; lastKnownFileType = folder; name = TrainBoardKit; path = ../TrainBoardKit; sourceTree = SOURCE_ROOT; };
+		6834FC7750DBADC2BBCE4FFB /* BoardTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardTestView.swift; sourceTree = "<group>"; };
+		8617328BEF96A26E836F8D3A /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9CEFEFE97FE01A8EDFF372CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ACE5B2738F3684EC1CEA09BA /* JapanTransitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JapanTransitApp.swift; sourceTree = "<group>"; };
+		AD19A7C529CE64B4C2038316 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		DA3740E2F15EA12B1D1F9083 /* Version.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Version.xcconfig; sourceTree = "<group>"; };
+		E1274C58CDE5F77132107958 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FC75089C14B69DDBF54624C4 /* JapanTransit.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = JapanTransit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3CDA2BD9269106206D87B719 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA0DA774D9E6D67C05F0B09D /* TrainBoardKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0F4DB284B4349592FAB79ABC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9CEFEFE97FE01A8EDFF372CE /* Assets.xcassets */,
+				53E8002144E771EFC16356B9 /* InfoPlist.strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		1E433B1AE0E6DEA83FE945C7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FC75089C14B69DDBF54624C4 /* JapanTransit.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		59EE016F91F350C3E016DBCA /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				4AC73DAD1575021E5193C5D0 /* TrainBoardKit */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		941137FD6D342B8B5A76D1D5 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				ACE5B2738F3684EC1CEA09BA /* JapanTransitApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		B1B3E3E9A7298E9697E5DBA5 /* JapanTransit */ = {
+			isa = PBXGroup;
+			children = (
+				AD19A7C529CE64B4C2038316 /* Info.plist */,
+				941137FD6D342B8B5A76D1D5 /* App */,
+				E74736B9A804B9EDFE4359D3 /* Board */,
+				0F4DB284B4349592FAB79ABC /* Resources */,
+			);
+			path = JapanTransit;
+			sourceTree = "<group>";
+		};
+		CA11E0A8E00879191CAC32EC = {
+			isa = PBXGroup;
+			children = (
+				D4F30D8520A4CF84EC0EB287 /* Config */,
+				B1B3E3E9A7298E9697E5DBA5 /* JapanTransit */,
+				59EE016F91F350C3E016DBCA /* Packages */,
+				1E433B1AE0E6DEA83FE945C7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D4F30D8520A4CF84EC0EB287 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				DA3740E2F15EA12B1D1F9083 /* Version.xcconfig */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		E74736B9A804B9EDFE4359D3 /* Board */ = {
+			isa = PBXGroup;
+			children = (
+				6834FC7750DBADC2BBCE4FFB /* BoardTestView.swift */,
+			);
+			path = Board;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		400ED8CBB5679C216AD5E655 /* JapanTransit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D68B548321E96ECBB47FC165 /* Build configuration list for PBXNativeTarget "JapanTransit" */;
+			buildPhases = (
+				5A87AC38339A8D24FABFDD85 /* Sources */,
+				4DC8377D516A201A81169D35 /* Resources */,
+				3CDA2BD9269106206D87B719 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JapanTransit;
+			packageProductDependencies = (
+				98FFD97337BFE7C18E380635 /* TrainBoardKit */,
+			);
+			productName = JapanTransit;
+			productReference = FC75089C14B69DDBF54624C4 /* JapanTransit.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		91B05C94F70D304ECFE8152B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					400ED8CBB5679C216AD5E655 = {
+						DevelopmentTeam = QGAQ3AY3R3;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = CC4F923D1527665B1AE2664A /* Build configuration list for PBXProject "JapanTransit" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+				ko,
+			);
+			mainGroup = CA11E0A8E00879191CAC32EC;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				DD8F43F4BEF3F6AF0470A821 /* XCLocalSwiftPackageReference "../TrainBoardKit" */,
+			);
+			preferredProjectObjectVersion = 77;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				400ED8CBB5679C216AD5E655 /* JapanTransit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4DC8377D516A201A81169D35 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3626C44DC953F76363EAF43E /* Assets.xcassets in Resources */,
+				5C434EFC3E06EFB483CAA36D /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5A87AC38339A8D24FABFDD85 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				013BEF3B3D9AB0B0EDEC43CF /* BoardTestView.swift in Sources */,
+				9EEBF98C5C88A1350D6BAA97 /* JapanTransitApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		53E8002144E771EFC16356B9 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E1274C58CDE5F77132107958 /* en */,
+				8617328BEF96A26E836F8D3A /* ko */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7C9801926E174E1B042F11C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA3740E2F15EA12B1D1F9083 /* Version.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = JapanTransit/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.leeo.japantransit;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		93A65C76FAD4F54259A368FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = QGAQ3AY3R3;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		B6AEEE003E32B74715A10A00 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA3740E2F15EA12B1D1F9083 /* Version.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = JapanTransit/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.leeo.japantransit;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		CD6417DA4E1CD04DD9A17BF4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = QGAQ3AY3R3;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CC4F923D1527665B1AE2664A /* Build configuration list for PBXProject "JapanTransit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD6417DA4E1CD04DD9A17BF4 /* Debug */,
+				93A65C76FAD4F54259A368FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		D68B548321E96ECBB47FC165 /* Build configuration list for PBXNativeTarget "JapanTransit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6AEEE003E32B74715A10A00 /* Debug */,
+				7C9801926E174E1B042F11C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		DD8F43F4BEF3F6AF0470A821 /* XCLocalSwiftPackageReference "../TrainBoardKit" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../TrainBoardKit;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		98FFD97337BFE7C18E380635 /* TrainBoardKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = TrainBoardKit;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 91B05C94F70D304ECFE8152B /* Project object */;
+}
