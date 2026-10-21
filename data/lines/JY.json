@@ -1,0 +1,392 @@
+{
+  "id": "JY",
+  "operator": "JR東日本",
+  "operatorKo": "JR 동일본",
+  "nameJa": "山手線",
+  "nameKo": "야마노테선",
+  "nameEn": "Yamanote Line",
+  "color": "#9ACD32",
+  "circular": true,
+  "circularForwardSign": "内回り",
+  "circularBackwardSign": "外回り",
+  "circularDirectionNote": "JY番号が増える方向（東京→上野→池袋→新宿→渋谷→品川→東京、反時計回り）が内回り。JY番号が減る方向（東京→品川→渋谷→新宿→池袋→上野、時計回り）が外回り。",
+  "stations": [
+    {
+      "code": "JY01",
+      "ja": "東京",
+      "kana": "とうきょう",
+      "ko": "도쿄",
+      "koSource": "wiki",
+      "en": "Tokyo",
+      "lat": 35.680833,
+      "lng": 139.766944
+    },
+    {
+      "code": "JY02",
+      "ja": "神田",
+      "kana": "かんだ",
+      "ko": "간다",
+      "koSource": "wiki",
+      "en": "Kanda",
+      "lat": 35.691731,
+      "lng": 139.771264
+    },
+    {
+      "code": "JY03",
+      "ja": "秋葉原",
+      "kana": "あきはばら",
+      "ko": "아키하바라",
+      "koSource": "wiki",
+      "en": "Akihabara",
+      "lat": 35.698333,
+      "lng": 139.773056
+    },
+    {
+      "code": "JY04",
+      "ja": "御徒町",
+      "kana": "おかちまち",
+      "ko": "오카치마치",
+      "koSource": "wiki",
+      "en": "Okachimachi",
+      "lat": 35.707328,
+      "lng": 139.774847
+    },
+    {
+      "code": "JY05",
+      "ja": "上野",
+      "kana": "うえの",
+      "ko": "우에노",
+      "koSource": "wiki",
+      "en": "Ueno",
+      "lat": 35.713889,
+      "lng": 139.777222
+    },
+    {
+      "code": "JY06",
+      "ja": "鶯谷",
+      "kana": "うぐいすだに",
+      "ko": "우구이스다니",
+      "koSource": "wiki",
+      "en": "Uguisudani",
+      "lat": 35.7213,
+      "lng": 139.7783
+    },
+    {
+      "code": "JY07",
+      "ja": "日暮里",
+      "kana": "にっぽり",
+      "ko": "닛포리",
+      "koSource": "wiki",
+      "en": "Nippori",
+      "lat": 35.727589,
+      "lng": 139.770781
+    },
+    {
+      "code": "JY08",
+      "ja": "西日暮里",
+      "kana": "にしにっぽり",
+      "ko": "니시닛포리",
+      "koSource": "wiki",
+      "en": "Nishi-Nippori",
+      "lat": 35.732361,
+      "lng": 139.766806
+    },
+    {
+      "code": "JY09",
+      "ja": "田端",
+      "kana": "たばた",
+      "ko": "다바타",
+      "koSource": "wiki",
+      "en": "Tabata",
+      "lat": 35.7379,
+      "lng": 139.761254
+    },
+    {
+      "code": "JY10",
+      "ja": "駒込",
+      "kana": "こまごめ",
+      "ko": "고마고메",
+      "koSource": "wiki",
+      "en": "Komagome",
+      "lat": 35.736472,
+      "lng": 139.746861
+    },
+    {
+      "code": "JY11",
+      "ja": "巣鴨",
+      "kana": "すがも",
+      "ko": "스가모",
+      "koSource": "wiki",
+      "en": "Sugamo",
+      "lat": 35.733472,
+      "lng": 139.739333
+    },
+    {
+      "code": "JY12",
+      "ja": "大塚",
+      "kana": "おおつか",
+      "ko": "오쓰카",
+      "koSource": "wiki",
+      "en": "Ōtsuka",
+      "lat": 35.731833,
+      "lng": 139.728056
+    },
+    {
+      "code": "JY13",
+      "ja": "池袋",
+      "kana": "いけぶくろ",
+      "ko": "이케부쿠로",
+      "koSource": "wiki",
+      "en": "Ikebukuro",
+      "lat": 35.730278,
+      "lng": 139.711389
+    },
+    {
+      "code": "JY14",
+      "ja": "目白",
+      "kana": "めじろ",
+      "ko": "메지로",
+      "koSource": "wiki",
+      "en": "Mejiro",
+      "lat": 35.721194,
+      "lng": 139.706583
+    },
+    {
+      "code": "JY15",
+      "ja": "高田馬場",
+      "kana": "たかだのばば",
+      "ko": "다카다노바바",
+      "koSource": "wiki",
+      "en": "Takadanobaba",
+      "lat": 35.712222,
+      "lng": 139.70375
+    },
+    {
+      "code": "JY16",
+      "ja": "新大久保",
+      "kana": "しんおおくぼ",
+      "ko": "신오쿠보",
+      "koSource": "wiki",
+      "en": "Shin-Ōkubo",
+      "lat": 35.701306,
+      "lng": 139.700056
+    },
+    {
+      "code": "JY17",
+      "ja": "新宿",
+      "kana": "しんじゅく",
+      "ko": "신주쿠",
+      "koSource": "wiki",
+      "en": "Shinjuku",
+      "lat": 35.690833,
+      "lng": 139.700278
+    },
+    {
+      "code": "JY18",
+      "ja": "代々木",
+      "kana": "よよぎ",
+      "ko": "요요기",
+      "koSource": "wiki",
+      "en": "Yoyogi",
+      "lat": 35.683056,
+      "lng": 139.702083
+    },
+    {
+      "code": "JY19",
+      "ja": "原宿",
+      "kana": "はらじゅく",
+      "ko": "하라주쿠",
+      "koSource": "wiki",
+      "en": "Harajuku",
+      "lat": 35.670222,
+      "lng": 139.702667
+    },
+    {
+      "code": "JY20",
+      "ja": "渋谷",
+      "kana": "しぶや",
+      "ko": "시부야",
+      "koSource": "wiki",
+      "en": "Shibuya",
+      "lat": 35.658514,
+      "lng": 139.701331
+    },
+    {
+      "code": "JY21",
+      "ja": "恵比寿",
+      "kana": "えびす",
+      "ko": "에비스",
+      "koSource": "wiki",
+      "en": "Ebisu",
+      "lat": 35.646667,
+      "lng": 139.710139
+    },
+    {
+      "code": "JY22",
+      "ja": "目黒",
+      "kana": "めぐろ",
+      "ko": "메구로",
+      "koSource": "wiki",
+      "en": "Meguro",
+      "lat": 35.634028,
+      "lng": 139.715833
+    },
+    {
+      "code": "JY23",
+      "ja": "五反田",
+      "kana": "ごたんだ",
+      "ko": "고탄다",
+      "koSource": "wiki",
+      "en": "Gotanda",
+      "lat": 35.626389,
+      "lng": 139.723472
+    },
+    {
+      "code": "JY24",
+      "ja": "大崎",
+      "kana": "おおさき",
+      "ko": "오사키",
+      "koSource": "wiki",
+      "en": "Ōsaki",
+      "lat": 35.619722,
+      "lng": 139.728556
+    },
+    {
+      "code": "JY25",
+      "ja": "品川",
+      "kana": "しながわ",
+      "ko": "시나가와",
+      "koSource": "wiki",
+      "en": "Shinagawa",
+      "lat": 35.628611,
+      "lng": 139.739167
+    },
+    {
+      "code": "JY26",
+      "ja": "高輪ゲートウェイ",
+      "kana": "たかなわげーとうぇい",
+      "ko": "다카나와 게이트웨이",
+      "koSource": "wiki",
+      "en": "Takanawa Gateway",
+      "lat": 35.6355,
+      "lng": 139.7407
+    },
+    {
+      "code": "JY27",
+      "ja": "田町",
+      "kana": "たまち",
+      "ko": "다마치",
+      "koSource": "wiki",
+      "en": "Tamachi",
+      "lat": 35.645722,
+      "lng": 139.747583
+    },
+    {
+      "code": "JY28",
+      "ja": "浜松町",
+      "kana": "はままつちょう",
+      "ko": "하마마쓰초",
+      "koSource": "wiki",
+      "en": "Hamamatsuchō",
+      "lat": 35.655,
+      "lng": 139.756944
+    },
+    {
+      "code": "JY29",
+      "ja": "新橋",
+      "kana": "しんばし",
+      "ko": "신바시",
+      "koSource": "wiki",
+      "en": "Shimbashi",
+      "lat": 35.666389,
+      "lng": 139.758056
+    },
+    {
+      "code": "JY30",
+      "ja": "有楽町",
+      "kana": "ゆうらくちょう",
+      "ko": "유라쿠초",
+      "koSource": "wiki",
+      "en": "Yūrakuchō",
+      "lat": 35.675056,
+      "lng": 139.763333
+    }
+  ],
+  "directionLandmarks": {
+    "pattern": "各駅の行先案内は主要6駅（東京・上野・池袋・新宿・渋谷・品川）のうち進行方向で直近の2駅を「○○・△△方面」と表示する（例: 有楽町駅の外回りは「品川・渋谷方面」）。",
+    "majorStations": [
+      "東京",
+      "上野",
+      "池袋",
+      "新宿",
+      "渋谷",
+      "品川"
+    ],
+    "内回り": [
+      "東京",
+      "上野",
+      "池袋",
+      "新宿",
+      "渋谷",
+      "品川"
+    ],
+    "外回り": [
+      "東京",
+      "品川",
+      "渋谷",
+      "新宿",
+      "池袋",
+      "上野"
+    ]
+  },
+  "throughTermini": {
+    "start": [],
+    "end": []
+  },
+  "services": [
+    {
+      "id": "local",
+      "signWords": [],
+      "nameKo": "각역정차",
+      "stops": [
+        "東京",
+        "神田",
+        "秋葉原",
+        "御徒町",
+        "上野",
+        "鶯谷",
+        "日暮里",
+        "西日暮里",
+        "田端",
+        "駒込",
+        "巣鴨",
+        "大塚",
+        "池袋",
+        "目白",
+        "高田馬場",
+        "新大久保",
+        "新宿",
+        "代々木",
+        "原宿",
+        "渋谷",
+        "恵比寿",
+        "目黒",
+        "五反田",
+        "大崎",
+        "品川",
+        "高輪ゲートウェイ",
+        "田町",
+        "浜松町",
+        "新橋",
+        "有楽町"
+      ],
+      "note": "列車種別の設定なし。全列車が全30駅に停車。途中駅止まり（池袋・品川・大崎行き）や途中駅始発（田町・池袋発）が一部ある。"
+    }
+  ],
+  "sources": [
+    "https://ja.wikipedia.org/wiki/山手線",
+    "https://ko.wikipedia.org/wiki/야마노테선",
+    "https://www.wikidata.org/"
+  ],
+  "notes": "駅順・駅番号は日本語版Wikipedia『山手線』駅一覧（東京駅から内回り方向にJY01〜JY30）による。外回り＝時計回り（品川→渋谷→新宿→池袋→上野→東京）、内回り＝反時計回りと同記事に明記。directionLandmarksの『○○・△△方面』は同記事の運行形態節の記述に基づく規則で、各駅の実際の掲示板は個別に確認していない。英語表記はEnglish Wikipediaの駅名（長音記号付き）に合わせた。JR東日本の駅名標の長音記号の有無は駅ごとに個別確認していない。座標は日本語版Wikipedia（無い場合はWikidata P625）の駅代表点で、ホーム位置ではない。神田・田端・恵比寿・田町の韓国語版記事名には『(도쿄도)』の曖昧さ回避が付くため除去した。"
+}

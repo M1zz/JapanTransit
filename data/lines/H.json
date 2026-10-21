@@ -1,0 +1,275 @@
+{
+  "id": "H",
+  "operator": "東京メトロ",
+  "operatorKo": "도쿄메트로",
+  "nameJa": "日比谷線",
+  "nameKo": "히비야선",
+  "nameEn": "Hibiya Line",
+  "color": "#B5B5AC",
+  "circular": false,
+  "stations": [
+    {
+      "code": "H01",
+      "ja": "中目黒",
+      "kana": "なかめぐろ",
+      "ko": "나카메구로",
+      "koSource": "wiki",
+      "en": "Naka-meguro",
+      "lat": 35.6443,
+      "lng": 139.6992
+    },
+    {
+      "code": "H02",
+      "ja": "恵比寿",
+      "kana": "えびす",
+      "ko": "에비스",
+      "koSource": "wiki",
+      "en": "Ebisu",
+      "lat": 35.646667,
+      "lng": 139.710139
+    },
+    {
+      "code": "H03",
+      "ja": "広尾",
+      "kana": "ひろお",
+      "ko": "히로오",
+      "koSource": "wiki",
+      "en": "Hiro-o",
+      "lat": 35.653194,
+      "lng": 139.721889
+    },
+    {
+      "code": "H04",
+      "ja": "六本木",
+      "kana": "ろっぽんぎ",
+      "ko": "롯폰기",
+      "koSource": "wiki",
+      "en": "Roppongi",
+      "lat": 35.662778,
+      "lng": 139.731389
+    },
+    {
+      "code": "H05",
+      "ja": "神谷町",
+      "kana": "かみやちょう",
+      "ko": "가미야초",
+      "koSource": "wiki",
+      "en": "Kamiyacho",
+      "lat": 35.662972,
+      "lng": 139.745056
+    },
+    {
+      "code": "H06",
+      "ja": "虎ノ門ヒルズ",
+      "kana": "とらのもんひるず",
+      "ko": "도라노몬힐스",
+      "koSource": "wiki",
+      "en": "Toranomon Hills",
+      "lat": 35.667444,
+      "lng": 139.747778
+    },
+    {
+      "code": "H07",
+      "ja": "霞ケ関",
+      "kana": "かすみがせき",
+      "ko": "가스미가세키",
+      "koSource": "wiki",
+      "en": "Kasumigaseki",
+      "lat": 35.673806,
+      "lng": 139.750944
+    },
+    {
+      "code": "H08",
+      "ja": "日比谷",
+      "kana": "ひびや",
+      "ko": "히비야",
+      "koSource": "wiki",
+      "en": "Hibiya",
+      "lat": 35.674889,
+      "lng": 139.759611
+    },
+    {
+      "code": "H09",
+      "ja": "銀座",
+      "kana": "ぎんざ",
+      "ko": "긴자",
+      "koSource": "wiki",
+      "en": "Ginza",
+      "lat": 35.672833,
+      "lng": 139.76325
+    },
+    {
+      "code": "H10",
+      "ja": "東銀座",
+      "kana": "ひがしぎんざ",
+      "ko": "히가시긴자",
+      "koSource": "wiki",
+      "en": "Higashi-ginza",
+      "lat": 35.670194,
+      "lng": 139.767389
+    },
+    {
+      "code": "H11",
+      "ja": "築地",
+      "kana": "つきじ",
+      "ko": "쓰키지",
+      "koSource": "wiki",
+      "en": "Tsukiji",
+      "lat": 35.668111,
+      "lng": 139.772583
+    },
+    {
+      "code": "H12",
+      "ja": "八丁堀",
+      "kana": "はっちょうぼり",
+      "ko": "핫초보리",
+      "koSource": "wiki",
+      "en": "Hatchobori",
+      "lat": 35.675,
+      "lng": 139.777083
+    },
+    {
+      "code": "H13",
+      "ja": "茅場町",
+      "kana": "かやばちょう",
+      "ko": "가야바초",
+      "koSource": "wiki",
+      "en": "Kayabacho",
+      "lat": 35.679944,
+      "lng": 139.780139
+    },
+    {
+      "code": "H14",
+      "ja": "人形町",
+      "kana": "にんぎょうちょう",
+      "ko": "닌교초",
+      "koSource": "wiki",
+      "en": "Ningyocho",
+      "lat": 35.686306,
+      "lng": 139.782278
+    },
+    {
+      "code": "H15",
+      "ja": "小伝馬町",
+      "kana": "こでんまちょう",
+      "ko": "고덴마초",
+      "koSource": "wiki",
+      "en": "Kodemmacho",
+      "lat": 35.69075,
+      "lng": 139.778472
+    },
+    {
+      "code": "H16",
+      "ja": "秋葉原",
+      "kana": "あきはばら",
+      "ko": "아키하바라",
+      "koSource": "wiki",
+      "en": "Akihabara",
+      "lat": 35.69848,
+      "lng": 139.77549
+    },
+    {
+      "code": "H17",
+      "ja": "仲御徒町",
+      "kana": "なかおかちまち",
+      "ko": "나카오카치마치",
+      "koSource": "wiki",
+      "en": "Naka-okachimachi",
+      "lat": 35.706556,
+      "lng": 139.776194
+    },
+    {
+      "code": "H18",
+      "ja": "上野",
+      "kana": "うえの",
+      "ko": "우에노",
+      "koSource": "wiki",
+      "en": "Ueno",
+      "lat": 35.711763,
+      "lng": 139.775358
+    },
+    {
+      "code": "H19",
+      "ja": "入谷",
+      "kana": "いりや",
+      "ko": "이리야",
+      "koSource": "wiki",
+      "en": "Iriya",
+      "lat": 35.720722,
+      "lng": 139.784583
+    },
+    {
+      "code": "H20",
+      "ja": "三ノ輪",
+      "kana": "みのわ",
+      "ko": "미노와",
+      "koSource": "wiki",
+      "en": "Minowa",
+      "lat": 35.729528,
+      "lng": 139.791306
+    },
+    {
+      "code": "H21",
+      "ja": "南千住",
+      "kana": "みなみせんじゅ",
+      "ko": "미나미센주",
+      "koSource": "wiki",
+      "en": "Minami-senju",
+      "lat": 35.733333,
+      "lng": 139.799167
+    },
+    {
+      "code": "H22",
+      "ja": "北千住",
+      "kana": "きたせんじゅ",
+      "ko": "기타센주",
+      "koSource": "wiki",
+      "en": "Kita-senju",
+      "lat": 35.749517,
+      "lng": 139.804828
+    }
+  ],
+  "throughTermini": {
+    "start": [],
+    "end": [
+      "東武動物公園",
+      "南栗橋",
+      "北春日部",
+      "北越谷",
+      "竹ノ塚",
+      "草加",
+      "久喜"
+    ]
+  },
+  "services": [
+    {
+      "id": "th_liner",
+      "signWords": [
+        "THライナー",
+        "TH LINER"
+      ],
+      "nameKo": "TH라이너 (좌석지정 유료열차)",
+      "stops": [
+        "恵比寿",
+        "広尾",
+        "六本木",
+        "神谷町",
+        "虎ノ門ヒルズ",
+        "霞ケ関",
+        "銀座",
+        "茅場町",
+        "秋葉原",
+        "上野"
+      ],
+      "note": "東武70090型の全車座席指定列車。乗車券のほか座席指定券が必要(霞ケ関→恵比寿間のみ乗車券だけで乗れる)。上り(久喜発恵比寿行き)は朝2本で、上野・秋葉原・茅場町・銀座・霞ケ関に停車し霞ケ関から恵比寿まで各駅停車(恵比寿止まり、中目黒へは行かない)。下り(霞ケ関発久喜行き)は夕夜5本で霞ケ関・銀座・茅場町・秋葉原・上野に停車し、恵比寿・広尾・六本木・神谷町・虎ノ門ヒルズは経由しない。北千住は乗務員交代の運転停車で客扱いなし。",
+      "paid": true
+    }
+  ],
+  "sources": [
+    "https://ja.wikipedia.org/wiki/東京メトロ日比谷線",
+    "https://ja.wikipedia.org/wiki/THライナー",
+    "https://www.wikidata.org/ (line-specific station items for some coordinates)",
+    "https://ko.wikipedia.org/ (Korean station article titles via ja.wikipedia interlanguage links)"
+  ],
+  "notes": "THライナー以外の定期列車は全て各駅停車。東急東横線との直通は2013年3月16日から休止中のため中目黒側の直通先はなし。throughTermini.endは日本語版Wikipediaに記載のある東武線内の始発・終着駅(東武動物公園・南栗橋が主、北春日部・北越谷・竹ノ塚・草加は朝夕の一部、久喜はTHライナーのみ)。日中は北千住止まりの線内列車も多い。また一部に南千住・六本木・広尾止まりの線内列車がある。秋葉原(H16)・上野(H18)の座標はWikidataの東京メトロ側駅項目の値。"
+}

@@ -1,0 +1,258 @@
+{
+  "id": "S",
+  "operator": "都営地下鉄",
+  "operatorKo": "도에이 지하철",
+  "nameJa": "新宿線",
+  "nameKo": "신주쿠선",
+  "nameEn": "Shinjuku Line",
+  "color": "#B0BF1E",
+  "circular": false,
+  "stations": [
+    {
+      "code": "S01",
+      "ja": "新宿",
+      "kana": "しんじゅく",
+      "ko": "신주쿠",
+      "koSource": "wiki",
+      "en": "Shinjuku",
+      "lat": 35.68869,
+      "lng": 139.69914
+    },
+    {
+      "code": "S02",
+      "ja": "新宿三丁目",
+      "kana": "しんじゅくさんちょうめ",
+      "ko": "신주쿠산초메",
+      "koSource": "wiki",
+      "en": "Shinjuku-sanchome",
+      "lat": 35.69064,
+      "lng": 139.70583
+    },
+    {
+      "code": "S03",
+      "ja": "曙橋",
+      "kana": "あけぼのばし",
+      "ko": "아케보노바시",
+      "koSource": "wiki",
+      "en": "Akebonobashi",
+      "lat": 35.69239,
+      "lng": 139.72286
+    },
+    {
+      "code": "S04",
+      "ja": "市ヶ谷",
+      "kana": "いちがや",
+      "ko": "이치가야",
+      "koSource": "wiki",
+      "en": "Ichigaya",
+      "lat": 35.69156,
+      "lng": 139.73764
+    },
+    {
+      "code": "S05",
+      "ja": "九段下",
+      "kana": "くだんした",
+      "ko": "구단시타",
+      "koSource": "wiki",
+      "en": "Kudanshita",
+      "lat": 35.69542,
+      "lng": 139.75108
+    },
+    {
+      "code": "S06",
+      "ja": "神保町",
+      "kana": "じんぼうちょう",
+      "ko": "진보초",
+      "koSource": "wiki",
+      "en": "Jimbocho",
+      "lat": 35.69594,
+      "lng": 139.75767
+    },
+    {
+      "code": "S07",
+      "ja": "小川町",
+      "kana": "おがわまち",
+      "ko": "오가와마치",
+      "koSource": "wiki",
+      "en": "Ogawamachi",
+      "lat": 35.69506,
+      "lng": 139.76667
+    },
+    {
+      "code": "S08",
+      "ja": "岩本町",
+      "kana": "いわもとちょう",
+      "ko": "이와모토초",
+      "koSource": "wiki",
+      "en": "Iwamotocho",
+      "lat": 35.69556,
+      "lng": 139.77586
+    },
+    {
+      "code": "S09",
+      "ja": "馬喰横山",
+      "kana": "ばくろよこやま",
+      "ko": "바쿠로요코야마",
+      "koSource": "wiki",
+      "en": "Bakuroyokoyama",
+      "lat": 35.69211,
+      "lng": 139.78278
+    },
+    {
+      "code": "S10",
+      "ja": "浜町",
+      "kana": "はまちょう",
+      "ko": "하마초",
+      "koSource": "wiki",
+      "en": "Hamacho",
+      "lat": 35.68847,
+      "lng": 139.78814
+    },
+    {
+      "code": "S11",
+      "ja": "森下",
+      "kana": "もりした",
+      "ko": "모리시타",
+      "koSource": "wiki",
+      "en": "Morishita",
+      "lat": 35.68797,
+      "lng": 139.79703
+    },
+    {
+      "code": "S12",
+      "ja": "菊川",
+      "kana": "きくかわ",
+      "ko": "기쿠카와",
+      "koSource": "wiki",
+      "en": "Kikukawa",
+      "lat": 35.68839,
+      "lng": 139.80603
+    },
+    {
+      "code": "S13",
+      "ja": "住吉",
+      "kana": "すみよし",
+      "ko": "스미요시",
+      "koSource": "wiki",
+      "en": "Sumiyoshi",
+      "lat": 35.68931,
+      "lng": 139.81606
+    },
+    {
+      "code": "S14",
+      "ja": "西大島",
+      "kana": "にしおおじま",
+      "ko": "니시오지마",
+      "koSource": "wiki",
+      "en": "Nishi-ojima",
+      "lat": 35.68936,
+      "lng": 139.82619
+    },
+    {
+      "code": "S15",
+      "ja": "大島",
+      "kana": "おおじま",
+      "ko": "오지마",
+      "koSource": "wiki",
+      "en": "Ojima",
+      "lat": 35.68983,
+      "lng": 139.83564
+    },
+    {
+      "code": "S16",
+      "ja": "東大島",
+      "kana": "ひがしおおじま",
+      "ko": "히가시오지마",
+      "koSource": "wiki",
+      "en": "Higashi-ojima",
+      "lat": 35.68972,
+      "lng": 139.84781
+    },
+    {
+      "code": "S17",
+      "ja": "船堀",
+      "kana": "ふなぼり",
+      "ko": "후나보리",
+      "koSource": "wiki",
+      "en": "Funabori",
+      "lat": 35.68381,
+      "lng": 139.86431
+    },
+    {
+      "code": "S18",
+      "ja": "一之江",
+      "kana": "いちのえ",
+      "ko": "이치노에",
+      "koSource": "wiki",
+      "en": "Ichinoe",
+      "lat": 35.686,
+      "lng": 139.88294
+    },
+    {
+      "code": "S19",
+      "ja": "瑞江",
+      "kana": "みずえ",
+      "ko": "미즈에",
+      "koSource": "wiki",
+      "en": "Mizue",
+      "lat": 35.69325,
+      "lng": 139.89769
+    },
+    {
+      "code": "S20",
+      "ja": "篠崎",
+      "kana": "しのざき",
+      "ko": "시노자키",
+      "koSource": "wiki",
+      "en": "Shinozaki",
+      "lat": 35.70597,
+      "lng": 139.90375
+    },
+    {
+      "code": "S21",
+      "ja": "本八幡",
+      "kana": "もとやわた",
+      "ko": "모토야와타",
+      "koSource": "wiki",
+      "en": "Motoyawata",
+      "lat": 35.72306,
+      "lng": 139.92667
+    }
+  ],
+  "throughTermini": {
+    "start": [
+      "笹塚",
+      "若葉台",
+      "京王多摩センター",
+      "橋本"
+    ],
+    "end": []
+  },
+  "services": [
+    {
+      "id": "express",
+      "signWords": [
+        "急行"
+      ],
+      "nameKo": "급행",
+      "stops": [
+        "新宿",
+        "市ヶ谷",
+        "神保町",
+        "馬喰横山",
+        "森下",
+        "大島",
+        "船堀",
+        "本八幡"
+      ],
+      "note": "本数はごく少ない（2023年以降は主に平日朝夕・土休日の一部のみ、1日数本）。一部は大島発着（大島止まり）。大島で各駅停車と接続。新宿三丁目・曙橋・九段下・小川町・岩本町・浜町・菊川・住吉・西大島・東大島・一之江・瑞江・篠崎は通過。"
+    }
+  ],
+  "sources": [
+    "https://ja.wikipedia.org/wiki/都営地下鉄新宿線",
+    "https://www.kotsu.metro.tokyo.jp/subway/timetable/shinjuku/S21WD.html",
+    "https://www.kotsu.metro.tokyo.jp/subway/timetable/shinjuku/S21WH.html",
+    "https://ja.wikipedia.org/w/api.php (coordinates/langlinks)"
+  ],
+  "notes": "急行停車駅は日本語版Wikipedia駅一覧の停車駅欄による（1997年運転開始以来、2000年に森下を追加した以外変更なしと記載）。新宿側直通（京王新線・京王線・相模原線）の行先は都営公式時刻表 本八幡駅 新宿方面（平日: 令和7年3月17日改正、土休日: 令和6年3月改正、Wayback保存版）の凡例から: 笹塚・若葉台・京王多摩センター・橋本。京王八王子・高尾山口は本八幡行きの始発駅としてのみ存在（新宿線から両駅への直通は現行なし）。京王線内の種別（快速・区間急行・急行）は新宿で切り替わる。線内の新宿行・大島行は直通行先ではないので含めない。新宿駅は京王管轄の共同使用駅（京王側案内では「新線新宿」）。本八幡側の先に直通はない。2026年の改正で行先・急行本数が変わっている可能性あり。市ヶ谷は都営の表記（JR・メトロは市ケ谷）。座標は日本語版Wikipedia各駅記事の座標（複数事業者の駅は都営の該当路線の座標を選択）。韓国語名は日本語版記事の韓国語版リンク先記事名から「역」と曖昧さ回避括弧を除いたもの。色は日本語版Wikipediaの路線インフォボックス「路線色」の値。都営は公式HEXを公開していないため出典により値が異なる（#6CBB5A とする資料もある）。"
+}

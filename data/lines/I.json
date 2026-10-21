@@ -1,0 +1,302 @@
+{
+  "id": "I",
+  "operator": "都営地下鉄",
+  "operatorKo": "도에이 지하철",
+  "nameJa": "三田線",
+  "nameKo": "미타선",
+  "nameEn": "Mita Line",
+  "color": "#0079C2",
+  "circular": false,
+  "stations": [
+    {
+      "code": "I01",
+      "ja": "目黒",
+      "kana": "めぐろ",
+      "ko": "메구로",
+      "koSource": "wiki",
+      "en": "Meguro",
+      "lat": 35.63333,
+      "lng": 139.71556
+    },
+    {
+      "code": "I02",
+      "ja": "白金台",
+      "kana": "しろかねだい",
+      "ko": "시로카네다이",
+      "koSource": "wiki",
+      "en": "Shirokanedai",
+      "lat": 35.63789,
+      "lng": 139.72611
+    },
+    {
+      "code": "I03",
+      "ja": "白金高輪",
+      "kana": "しろかねたかなわ",
+      "ko": "시로카네타카나와",
+      "koSource": "wiki",
+      "en": "Shirokane-takanawa",
+      "lat": 35.64289,
+      "lng": 139.73414
+    },
+    {
+      "code": "I04",
+      "ja": "三田",
+      "kana": "みた",
+      "ko": "미타",
+      "koSource": "wiki",
+      "en": "Mita",
+      "lat": 35.64817,
+      "lng": 139.74881
+    },
+    {
+      "code": "I05",
+      "ja": "芝公園",
+      "kana": "しばこうえん",
+      "ko": "시바코엔",
+      "koSource": "wiki",
+      "en": "Shibakoen",
+      "lat": 35.65408,
+      "lng": 139.74983
+    },
+    {
+      "code": "I06",
+      "ja": "御成門",
+      "kana": "おなりもん",
+      "ko": "오나리몬",
+      "koSource": "wiki",
+      "en": "Onarimon",
+      "lat": 35.66119,
+      "lng": 139.75156
+    },
+    {
+      "code": "I07",
+      "ja": "内幸町",
+      "kana": "うちさいわいちょう",
+      "ko": "우치사이와이초",
+      "koSource": "wiki",
+      "en": "Uchisaiwaicho",
+      "lat": 35.66981,
+      "lng": 139.75556
+    },
+    {
+      "code": "I08",
+      "ja": "日比谷",
+      "kana": "ひびや",
+      "ko": "히비야",
+      "koSource": "wiki",
+      "en": "Hibiya",
+      "lat": 35.67636,
+      "lng": 139.76022
+    },
+    {
+      "code": "I09",
+      "ja": "大手町",
+      "kana": "おおてまち",
+      "ko": "오테마치",
+      "koSource": "wiki",
+      "en": "Otemachi",
+      "lat": 35.68472,
+      "lng": 139.76294
+    },
+    {
+      "code": "I10",
+      "ja": "神保町",
+      "kana": "じんぼうちょう",
+      "ko": "진보초",
+      "koSource": "wiki",
+      "en": "Jimbocho",
+      "lat": 35.69511,
+      "lng": 139.75825
+    },
+    {
+      "code": "I11",
+      "ja": "水道橋",
+      "kana": "すいどうばし",
+      "ko": "스이도바시",
+      "koSource": "wiki",
+      "en": "Suidobashi",
+      "lat": 35.70361,
+      "lng": 139.75508
+    },
+    {
+      "code": "I12",
+      "ja": "春日",
+      "kana": "かすが",
+      "ko": "가스가",
+      "koSource": "wiki",
+      "en": "Kasuga",
+      "lat": 35.70964,
+      "lng": 139.75325
+    },
+    {
+      "code": "I13",
+      "ja": "白山",
+      "kana": "はくさん",
+      "ko": "하쿠산",
+      "koSource": "wiki",
+      "en": "Hakusan",
+      "lat": 35.72133,
+      "lng": 139.75208
+    },
+    {
+      "code": "I14",
+      "ja": "千石",
+      "kana": "せんごく",
+      "ko": "센고쿠",
+      "koSource": "wiki",
+      "en": "Sengoku",
+      "lat": 35.72792,
+      "lng": 139.74475
+    },
+    {
+      "code": "I15",
+      "ja": "巣鴨",
+      "kana": "すがも",
+      "ko": "스가모",
+      "koSource": "wiki",
+      "en": "Sugamo",
+      "lat": 35.73378,
+      "lng": 139.73819
+    },
+    {
+      "code": "I16",
+      "ja": "西巣鴨",
+      "kana": "にしすがも",
+      "ko": "니시스가모",
+      "koSource": "wiki",
+      "en": "Nishi-sugamo",
+      "lat": 35.7435,
+      "lng": 139.72872
+    },
+    {
+      "code": "I17",
+      "ja": "新板橋",
+      "kana": "しんいたばし",
+      "ko": "신이타바시",
+      "koSource": "wiki",
+      "en": "Shin-itabashi",
+      "lat": 35.74878,
+      "lng": 139.71961
+    },
+    {
+      "code": "I18",
+      "ja": "板橋区役所前",
+      "kana": "いたばしくやくしょまえ",
+      "ko": "이타바시쿠야쿠쇼마에",
+      "koSource": "wiki",
+      "en": "Itabashi-kuyakushomae",
+      "lat": 35.75139,
+      "lng": 139.71008
+    },
+    {
+      "code": "I19",
+      "ja": "板橋本町",
+      "kana": "いたばしほんちょう",
+      "ko": "이타바시혼초",
+      "koSource": "wiki",
+      "en": "Itabashihoncho",
+      "lat": 35.76133,
+      "lng": 139.70556
+    },
+    {
+      "code": "I20",
+      "ja": "本蓮沼",
+      "kana": "もとはすぬま",
+      "ko": "모토하스누마",
+      "koSource": "wiki",
+      "en": "Motohasunuma",
+      "lat": 35.76875,
+      "lng": 139.70228
+    },
+    {
+      "code": "I21",
+      "ja": "志村坂上",
+      "kana": "しむらさかうえ",
+      "ko": "시무라사카우에",
+      "koSource": "wiki",
+      "en": "Shimura-sakaue",
+      "lat": 35.77578,
+      "lng": 139.69542
+    },
+    {
+      "code": "I22",
+      "ja": "志村三丁目",
+      "kana": "しむらさんちょうめ",
+      "ko": "시무라산초메",
+      "koSource": "wiki",
+      "en": "Shimura-sanchome",
+      "lat": 35.7775,
+      "lng": 139.68589
+    },
+    {
+      "code": "I23",
+      "ja": "蓮根",
+      "kana": "はすね",
+      "ko": "하스네",
+      "koSource": "wiki",
+      "en": "Hasune",
+      "lat": 35.78417,
+      "lng": 139.67903
+    },
+    {
+      "code": "I24",
+      "ja": "西台",
+      "kana": "にしだい",
+      "ko": "니시다이",
+      "koSource": "wiki",
+      "en": "Nishidai",
+      "lat": 35.78694,
+      "lng": 139.67397
+    },
+    {
+      "code": "I25",
+      "ja": "高島平",
+      "kana": "たかしまだいら",
+      "ko": "다카시마다이라",
+      "koSource": "wiki",
+      "en": "Takashimadaira",
+      "lat": 35.78861,
+      "lng": 139.66117
+    },
+    {
+      "code": "I26",
+      "ja": "新高島平",
+      "kana": "しんたかしまだいら",
+      "ko": "신타카시마다이라",
+      "koSource": "wiki",
+      "en": "Shin-takashimadaira",
+      "lat": 35.79028,
+      "lng": 139.65425
+    },
+    {
+      "code": "I27",
+      "ja": "西高島平",
+      "kana": "にしたかしまだいら",
+      "ko": "니시타카시마다이라",
+      "koSource": "wiki",
+      "en": "Nishi-takashimadaira",
+      "lat": 35.79167,
+      "lng": 139.64583
+    }
+  ],
+  "throughTermini": {
+    "start": [
+      "武蔵小杉",
+      "日吉",
+      "新横浜",
+      "西谷",
+      "大和",
+      "海老名",
+      "湘南台"
+    ],
+    "end": []
+  },
+  "services": [],
+  "sources": [
+    "https://ja.wikipedia.org/wiki/都営地下鉄三田線",
+    "https://www.kotsu.metro.tokyo.jp/subway/timetable/mita/I27SD.html",
+    "https://www.kotsu.metro.tokyo.jp/subway/timetable/mita/I27SH.html",
+    "https://ja.wikipedia.org/w/api.php (coordinates/langlinks)"
+  ],
+  "notes": "三田線内は全列車各駅停車（東急線内急行の列車も三田線内は各駅停車）なので services は空。目黒–白金高輪間は東京メトロ南北線と線路・駅を共用。目黒側直通（東急目黒線・東急新横浜線・相鉄線）の行先は都営公式時刻表 西高島平駅 目黒方面（令和7年3月改正、Wayback保存版）の凡例から: 武蔵小杉・日吉・新横浜・西谷・大和（大和は平日版のみ）・海老名・湘南台。依頼にあった元住吉行は当該時刻表で確認できず除外。2026年3月以降の改正で変わっている可能性あり。線内折り返しの白金高輪行・高島平行は直通行先ではないので含めない。西高島平側の先に直通はない。目黒は東急管轄の共同使用駅で、目黒止まりの定期列車は基本的にない（ほぼ全列車が東急線直通か白金高輪折り返し）。座標は日本語版Wikipedia各駅記事の座標（複数事業者の駅は都営の該当路線の座標を選択）。韓国語名は日本語版記事の韓国語版リンク先記事名から「역」と曖昧さ回避括弧を除いたもの。色は日本語版Wikipediaの路線インフォボックス「路線色」の値。都営は公式HEXを公開していないため出典により値が異なる。"
+}

@@ -1,0 +1,213 @@
+{
+  "id": "G",
+  "operator": "東京メトロ",
+  "operatorKo": "도쿄메트로",
+  "nameJa": "銀座線",
+  "nameKo": "긴자선",
+  "nameEn": "Ginza Line",
+  "color": "#FF9500",
+  "circular": false,
+  "stations": [
+    {
+      "code": "G01",
+      "ja": "渋谷",
+      "kana": "しぶや",
+      "ko": "시부야",
+      "koSource": "wiki",
+      "en": "Shibuya",
+      "lat": 35.659055,
+      "lng": 139.703529
+    },
+    {
+      "code": "G02",
+      "ja": "表参道",
+      "kana": "おもてさんどう",
+      "ko": "오모테산도",
+      "koSource": "wiki",
+      "en": "Omote-sando",
+      "lat": 35.665278,
+      "lng": 139.7125
+    },
+    {
+      "code": "G03",
+      "ja": "外苑前",
+      "kana": "がいえんまえ",
+      "ko": "가이엔마에",
+      "koSource": "wiki",
+      "en": "Gaiemmae",
+      "lat": 35.670556,
+      "lng": 139.717861
+    },
+    {
+      "code": "G04",
+      "ja": "青山一丁目",
+      "kana": "あおやまいっちょうめ",
+      "ko": "아오야마잇초메",
+      "koSource": "wiki",
+      "en": "Aoyama-itchome",
+      "lat": 35.672444,
+      "lng": 139.724417
+    },
+    {
+      "code": "G05",
+      "ja": "赤坂見附",
+      "kana": "あかさかみつけ",
+      "ko": "아카사카미쓰케",
+      "koSource": "wiki",
+      "en": "Akasaka-mitsuke",
+      "lat": 35.677,
+      "lng": 139.737056
+    },
+    {
+      "code": "G06",
+      "ja": "溜池山王",
+      "kana": "ためいけさんのう",
+      "ko": "다메이케산노",
+      "koSource": "wiki",
+      "en": "Tameike-sanno",
+      "lat": 35.671944,
+      "lng": 139.741389
+    },
+    {
+      "code": "G07",
+      "ja": "虎ノ門",
+      "kana": "とらのもん",
+      "ko": "도라노몬",
+      "koSource": "wiki",
+      "en": "Toranomon",
+      "lat": 35.670139,
+      "lng": 139.75
+    },
+    {
+      "code": "G08",
+      "ja": "新橋",
+      "kana": "しんばし",
+      "ko": "신바시",
+      "koSource": "wiki",
+      "en": "Shimbashi",
+      "lat": 35.667488,
+      "lng": 139.758192
+    },
+    {
+      "code": "G09",
+      "ja": "銀座",
+      "kana": "ぎんざ",
+      "ko": "긴자",
+      "koSource": "wiki",
+      "en": "Ginza",
+      "lat": 35.672833,
+      "lng": 139.76325
+    },
+    {
+      "code": "G10",
+      "ja": "京橋",
+      "kana": "きょうばし",
+      "ko": "교바시",
+      "koSource": "wiki",
+      "en": "Kyobashi",
+      "lat": 35.676833,
+      "lng": 139.770139
+    },
+    {
+      "code": "G11",
+      "ja": "日本橋",
+      "kana": "にほんばし",
+      "ko": "니혼바시",
+      "koSource": "wiki",
+      "en": "Nihombashi",
+      "lat": 35.682528,
+      "lng": 139.773694
+    },
+    {
+      "code": "G12",
+      "ja": "三越前",
+      "kana": "みつこしまえ",
+      "ko": "미쓰코시마에",
+      "koSource": "wiki",
+      "en": "Mitsukoshimae",
+      "lat": 35.685333,
+      "lng": 139.774333
+    },
+    {
+      "code": "G13",
+      "ja": "神田",
+      "kana": "かんだ",
+      "ko": "간다",
+      "koSource": "wiki",
+      "en": "Kanda",
+      "lat": 35.69371,
+      "lng": 139.77089
+    },
+    {
+      "code": "G14",
+      "ja": "末広町",
+      "kana": "すえひろちょう",
+      "ko": "스에히로초",
+      "koSource": "wiki",
+      "en": "Suehirocho",
+      "lat": 35.702944,
+      "lng": 139.771667
+    },
+    {
+      "code": "G15",
+      "ja": "上野広小路",
+      "kana": "うえのひろこうじ",
+      "ko": "우에노히로코지",
+      "koSource": "wiki",
+      "en": "Ueno-hirokoji",
+      "lat": 35.707639,
+      "lng": 139.772972
+    },
+    {
+      "code": "G16",
+      "ja": "上野",
+      "kana": "うえの",
+      "ko": "우에노",
+      "koSource": "wiki",
+      "en": "Ueno",
+      "lat": 35.711763,
+      "lng": 139.775358
+    },
+    {
+      "code": "G17",
+      "ja": "稲荷町",
+      "kana": "いなりちょう",
+      "ko": "이나리초",
+      "koSource": "wiki",
+      "en": "Inaricho",
+      "lat": 35.711333,
+      "lng": 139.782778
+    },
+    {
+      "code": "G18",
+      "ja": "田原町",
+      "kana": "たわらまち",
+      "ko": "다와라마치",
+      "koSource": "wiki",
+      "en": "Tawaramachi",
+      "lat": 35.709861,
+      "lng": 139.790778
+    },
+    {
+      "code": "G19",
+      "ja": "浅草",
+      "kana": "あさくさ",
+      "ko": "아사쿠사",
+      "koSource": "wiki",
+      "en": "Asakusa",
+      "lat": 35.712083,
+      "lng": 139.798417
+    }
+  ],
+  "throughTermini": {
+    "start": [],
+    "end": []
+  },
+  "services": [],
+  "sources": [
+    "https://ja.wikipedia.org/wiki/東京メトロ銀座線",
+    "https://www.wikidata.org/ (line-specific station items for some coordinates)",
+    "https://ko.wikipedia.org/ (Korean station article titles via ja.wikipedia interlanguage links)"
+  ],
+  "notes": "全列車各駅停車、他社直通なし。渋谷(G01)・新橋(G08)・神田(G13)・上野(G16)の座標はWikidataの東京メトロ側駅項目の値、他は日本語版駅記事の座標(駅全体の代表点)。"
+}

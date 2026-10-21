@@ -1,0 +1,227 @@
+{
+  "id": "N",
+  "operator": "東京メトロ",
+  "operatorKo": "도쿄메트로",
+  "nameJa": "南北線",
+  "nameKo": "난보쿠선",
+  "nameEn": "Namboku Line",
+  "color": "#00AC9B",
+  "circular": false,
+  "stations": [
+    {
+      "code": "N01",
+      "ja": "目黒",
+      "kana": "めぐろ",
+      "ko": "메구로",
+      "koSource": "wiki",
+      "en": "Meguro",
+      "lat": 35.63333,
+      "lng": 139.71556
+    },
+    {
+      "code": "N02",
+      "ja": "白金台",
+      "kana": "しろかねだい",
+      "ko": "시로카네다이",
+      "koSource": "wiki",
+      "en": "Shirokanedai",
+      "lat": 35.63789,
+      "lng": 139.72611
+    },
+    {
+      "code": "N03",
+      "ja": "白金高輪",
+      "kana": "しろかねたかなわ",
+      "ko": "시로카네타카나와",
+      "koSource": "wiki",
+      "en": "Shirokane-takanawa",
+      "lat": 35.64289,
+      "lng": 139.73414
+    },
+    {
+      "code": "N04",
+      "ja": "麻布十番",
+      "kana": "あざぶじゅうばん",
+      "ko": "아자부주반",
+      "koSource": "wiki",
+      "en": "Azabu-juban",
+      "lat": 35.65472,
+      "lng": 139.73694
+    },
+    {
+      "code": "N05",
+      "ja": "六本木一丁目",
+      "kana": "ろっぽんぎいっちょうめ",
+      "ko": "롯폰기잇초메",
+      "koSource": "wiki",
+      "en": "Roppongi-itchome",
+      "lat": 35.66556,
+      "lng": 139.73903
+    },
+    {
+      "code": "N06",
+      "ja": "溜池山王",
+      "kana": "ためいけさんのう",
+      "ko": "다메이케산노",
+      "koSource": "wiki",
+      "en": "Tameike-sanno",
+      "lat": 35.67194,
+      "lng": 139.74139
+    },
+    {
+      "code": "N07",
+      "ja": "永田町",
+      "kana": "ながたちょう",
+      "ko": "나가타초",
+      "koSource": "wiki",
+      "en": "Nagatacho",
+      "lat": 35.67819,
+      "lng": 139.74000
+    },
+    {
+      "code": "N08",
+      "ja": "四ツ谷",
+      "kana": "よつや",
+      "ko": "요쓰야",
+      "koSource": "wiki",
+      "en": "Yotsuya",
+      "lat": 35.68631,
+      "lng": 139.72961
+    },
+    {
+      "code": "N09",
+      "ja": "市ケ谷",
+      "kana": "いちがや",
+      "ko": "이치가야",
+      "koSource": "wiki",
+      "en": "Ichigaya",
+      "lat": 35.69297,
+      "lng": 139.73639
+    },
+    {
+      "code": "N10",
+      "ja": "飯田橋",
+      "kana": "いいだばし",
+      "ko": "이다바시",
+      "koSource": "wiki",
+      "en": "Iidabashi",
+      "lat": 35.70167,
+      "lng": 139.74356
+    },
+    {
+      "code": "N11",
+      "ja": "後楽園",
+      "kana": "こうらくえん",
+      "ko": "고라쿠엔",
+      "koSource": "wiki",
+      "en": "Korakuen",
+      "lat": 35.70731,
+      "lng": 139.75186
+    },
+    {
+      "code": "N12",
+      "ja": "東大前",
+      "kana": "とうだいまえ",
+      "ko": "도다이마에",
+      "koSource": "wiki",
+      "en": "Todaimae",
+      "lat": 35.71764,
+      "lng": 139.75803
+    },
+    {
+      "code": "N13",
+      "ja": "本駒込",
+      "kana": "ほんこまごめ",
+      "ko": "혼코마고메",
+      "koSource": "wiki",
+      "en": "Hon-komagome",
+      "lat": 35.72417,
+      "lng": 139.75381
+    },
+    {
+      "code": "N14",
+      "ja": "駒込",
+      "kana": "こまごめ",
+      "ko": "고마고메",
+      "koSource": "wiki",
+      "en": "Komagome",
+      "lat": 35.73639,
+      "lng": 139.74661
+    },
+    {
+      "code": "N15",
+      "ja": "西ケ原",
+      "kana": "にしがはら",
+      "ko": "니시가하라",
+      "koSource": "wiki",
+      "en": "Nishigahara",
+      "lat": 35.74583,
+      "lng": 139.74222
+    },
+    {
+      "code": "N16",
+      "ja": "王子",
+      "kana": "おうじ",
+      "ko": "오지",
+      "koSource": "wiki",
+      "en": "Oji",
+      "lat": 35.75444,
+      "lng": 139.73733
+    },
+    {
+      "code": "N17",
+      "ja": "王子神谷",
+      "kana": "おうじかみや",
+      "ko": "오지카미야",
+      "koSource": "wiki",
+      "en": "Oji-kamiya",
+      "lat": 35.76511,
+      "lng": 139.73578
+    },
+    {
+      "code": "N18",
+      "ja": "志茂",
+      "kana": "しも",
+      "ko": "시모",
+      "koSource": "wiki",
+      "en": "Shimo",
+      "lat": 35.77792,
+      "lng": 139.73258
+    },
+    {
+      "code": "N19",
+      "ja": "赤羽岩淵",
+      "kana": "あかばねいわぶち",
+      "ko": "아카바네이와부치",
+      "koSource": "wiki",
+      "en": "Akabane-iwabuchi",
+      "lat": 35.78333,
+      "lng": 139.72222
+    }
+  ],
+  "throughTermini": {
+    "start": [
+      "日吉",
+      "新横浜",
+      "武蔵小杉",
+      "奥沢",
+      "海老名",
+      "湘南台",
+      "西谷"
+    ],
+    "end": [
+      "浦和美園",
+      "鳩ヶ谷"
+    ]
+  },
+  "services": [],
+  "sources": [
+    "https://ja.wikipedia.org/wiki/東京メトロ南北線",
+    "https://ja.wikipedia.org/wiki/東急目黒線",
+    "https://ja.wikipedia.org/wiki/東急新横浜線",
+    "https://ja.wikipedia.org/wiki/相鉄新横浜線",
+    "https://www.wikidata.org/ (station sitelinks to kowiki, fallback coordinates)",
+    "https://web.archive.org/web/2025/https://www.tokyometro.jp/lang_en/station/index.html (English station names)"
+  ],
+  "notes": "目黒〜白金高輪（N01〜N03）は都営三田線と線路・駅を共用（三田線の駅番号はI01〜I03）。南北線・埼玉高速鉄道線内は全列車各駅停車。東急目黒線内で急行となる列車は目黒方面行きのみ南北線内でも「急行」と表示されるが、南北線内では全駅に停車する。相鉄線（海老名・湘南台・西谷）直通は朝夕中心で日中は南北線からは設定なし。奥沢・武蔵小杉行きは早朝・夜間の区間列車。鳩ヶ谷の駅名表記は「鳩ヶ谷」（ヶの大小は資料により揺れあり）。"
+}

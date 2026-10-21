@@ -1,0 +1,249 @@
+{
+  "id": "C",
+  "operator": "東京メトロ",
+  "operatorKo": "도쿄메트로",
+  "nameJa": "千代田線",
+  "nameKo": "지요다선",
+  "nameEn": "Chiyoda Line",
+  "color": "#00BB85",
+  "circular": false,
+  "stations": [
+    {
+      "code": "C01",
+      "ja": "代々木上原",
+      "kana": "よよぎうえはら",
+      "ko": "요요기우에하라",
+      "koSource": "wiki",
+      "en": "Yoyogi-uehara",
+      "lat": 35.669028,
+      "lng": 139.679722
+    },
+    {
+      "code": "C02",
+      "ja": "代々木公園",
+      "kana": "よよぎこうえん",
+      "ko": "요요기코엔",
+      "koSource": "wiki",
+      "en": "Yoyogi-koen",
+      "lat": 35.668944,
+      "lng": 139.691306
+    },
+    {
+      "code": "C03",
+      "ja": "明治神宮前",
+      "kana": "めいじじんぐうまえ",
+      "ko": "메이지진구마에",
+      "koSource": "wiki",
+      "en": "Meiji-jingumae",
+      "lat": 35.669028,
+      "lng": 139.704139
+    },
+    {
+      "code": "C04",
+      "ja": "表参道",
+      "kana": "おもてさんどう",
+      "ko": "오모테산도",
+      "koSource": "wiki",
+      "en": "Omote-sando",
+      "lat": 35.665278,
+      "lng": 139.7125
+    },
+    {
+      "code": "C05",
+      "ja": "乃木坂",
+      "kana": "のぎざか",
+      "ko": "노기자카",
+      "koSource": "wiki",
+      "en": "Nogizaka",
+      "lat": 35.666667,
+      "lng": 139.726333
+    },
+    {
+      "code": "C06",
+      "ja": "赤坂",
+      "kana": "あかさか",
+      "ko": "아카사카",
+      "koSource": "wiki",
+      "en": "Akasaka",
+      "lat": 35.672361,
+      "lng": 139.736528
+    },
+    {
+      "code": "C07",
+      "ja": "国会議事堂前",
+      "kana": "こっかいぎじどうまえ",
+      "ko": "곳카이기지도마에",
+      "koSource": "wiki",
+      "en": "Kokkai-gijidomae",
+      "lat": 35.674167,
+      "lng": 139.745278
+    },
+    {
+      "code": "C08",
+      "ja": "霞ケ関",
+      "kana": "かすみがせき",
+      "ko": "가스미가세키",
+      "koSource": "wiki",
+      "en": "Kasumigaseki",
+      "lat": 35.673806,
+      "lng": 139.750944
+    },
+    {
+      "code": "C09",
+      "ja": "日比谷",
+      "kana": "ひびや",
+      "ko": "히비야",
+      "koSource": "wiki",
+      "en": "Hibiya",
+      "lat": 35.674889,
+      "lng": 139.759611
+    },
+    {
+      "code": "C10",
+      "ja": "二重橋前",
+      "kana": "にじゅうばしまえ",
+      "ko": "니주바시마에",
+      "koSource": "wiki",
+      "en": "Nijubashimae",
+      "lat": 35.680361,
+      "lng": 139.761667
+    },
+    {
+      "code": "C11",
+      "ja": "大手町",
+      "kana": "おおてまち",
+      "ko": "오테마치",
+      "koSource": "wiki",
+      "en": "Otemachi",
+      "lat": 35.684722,
+      "lng": 139.765833
+    },
+    {
+      "code": "C12",
+      "ja": "新御茶ノ水",
+      "kana": "しんおちゃのみず",
+      "ko": "신오차노미즈",
+      "koSource": "wiki",
+      "en": "Shin-ochanomizu",
+      "lat": 35.698056,
+      "lng": 139.766
+    },
+    {
+      "code": "C13",
+      "ja": "湯島",
+      "kana": "ゆしま",
+      "ko": "유시마",
+      "koSource": "wiki",
+      "en": "Yushima",
+      "lat": 35.708222,
+      "lng": 139.769889
+    },
+    {
+      "code": "C14",
+      "ja": "根津",
+      "kana": "ねづ",
+      "ko": "네즈",
+      "koSource": "wiki",
+      "en": "Nezu",
+      "lat": 35.717361,
+      "lng": 139.76575
+    },
+    {
+      "code": "C15",
+      "ja": "千駄木",
+      "kana": "せんだぎ",
+      "ko": "센다기",
+      "koSource": "wiki",
+      "en": "Sendagi",
+      "lat": 35.725556,
+      "lng": 139.76325
+    },
+    {
+      "code": "C16",
+      "ja": "西日暮里",
+      "kana": "にしにっぽり",
+      "ko": "니시닛포리",
+      "koSource": "wiki",
+      "en": "Nishi-nippori",
+      "lat": 35.73239,
+      "lng": 139.766963
+    },
+    {
+      "code": "C17",
+      "ja": "町屋",
+      "kana": "まちや",
+      "ko": "마치야",
+      "koSource": "wiki",
+      "en": "Machiya",
+      "lat": 35.742222,
+      "lng": 139.781389
+    },
+    {
+      "code": "C18",
+      "ja": "北千住",
+      "kana": "きたせんじゅ",
+      "ko": "기타센주",
+      "koSource": "wiki",
+      "en": "Kita-senju",
+      "lat": 35.749517,
+      "lng": 139.804828
+    },
+    {
+      "code": "C19",
+      "ja": "綾瀬",
+      "kana": "あやせ",
+      "ko": "아야세",
+      "koSource": "wiki",
+      "en": "Ayase",
+      "lat": 35.762222,
+      "lng": 139.825
+    }
+  ],
+  "throughTermini": {
+    "start": [
+      "伊勢原",
+      "本厚木",
+      "相模大野",
+      "向ヶ丘遊園",
+      "成城学園前",
+      "唐木田",
+      "箱根湯本",
+      "片瀬江ノ島"
+    ],
+    "end": [
+      "我孫子",
+      "取手",
+      "柏",
+      "松戸"
+    ]
+  },
+  "services": [
+    {
+      "id": "romancecar",
+      "signWords": [
+        "特急",
+        "ロマンスカー",
+        "メトロはこね",
+        "メトロえのしま",
+        "メトロモーニングウェイ",
+        "メトロホームウェイ"
+      ],
+      "nameKo": "특급 로맨스카 (전석지정 유료특급)",
+      "stops": [
+        "北千住",
+        "大手町",
+        "霞ケ関",
+        "表参道"
+      ],
+      "note": "小田急の全車座席指定特急。特急券が必要で、東京メトロ線内だけの利用は不可(小田急線にまたがる利用のみ)。代々木上原は乗務員交代のための停車で乗降不可。メトロホームウェイの一部は平日夜に大手町始発。北千住-箱根湯本(メトロはこね)、北千住-片瀬江ノ島(メトロえのしま、土休日)、本厚木発北千住行き(メトロモーニングウェイ)、北千住・大手町発本厚木行き(メトロホームウェイ)。",
+      "paid": true
+    }
+  ],
+  "sources": [
+    "https://ja.wikipedia.org/wiki/東京メトロ千代田線",
+    "https://ja.wikipedia.org/wiki/常磐緩行線",
+    "https://www.wikidata.org/ (line-specific station items for some coordinates)",
+    "https://ko.wikipedia.org/ (Korean station article titles via ja.wikipedia interlanguage links)"
+  ],
+  "notes": "依頼では本線を代々木上原-北綾瀬としていたが、北綾瀬は支線(Cb)に入れるため本線はC01代々木上原-C19綾瀬とした。ロマンスカー以外は全列車各駅停車(小田急直通列車は小田急線内の種別「急行」「準急」等を表示するが千代田線内は各駅に停車)。駅名の副名称: C03は駅名標で「明治神宮前〈原宿〉」、C10は「二重橋前〈丸の内〉」(jaには主名称のみを入れた)。throughTermini.startの小田急線行先は成城学園前・向ヶ丘遊園発着が主体、相模大野・本厚木・伊勢原は少数、唐木田は日中の急行(2025年3月改正で復活)。箱根湯本・片瀬江ノ島はロマンスカーのみ。endの常磐線行先は我孫子が主、取手は平日朝夕のみ、松戸・柏は朝夕。綾瀬止まり・北綾瀬行きの線内列車も多い。また北綾瀬発着の10両編成直通列車があり行先「北綾瀬」が表示される。西日暮里(C16)の座標はWikidataの東京メトロ側駅項目の値。"
+}

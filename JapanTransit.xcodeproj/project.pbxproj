@@ -3,27 +3,61 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 63;
+	objectVersion = 77;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		013BEF3B3D9AB0B0EDEC43CF /* BoardTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6834FC7750DBADC2BBCE4FFB /* BoardTestView.swift */; };
+		190426973C769A26A4886452 /* RouteDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 851DA975B85EC05B380C81CD /* RouteDetailView.swift */; };
+		24C0AACD11E27AF8906BD4BC /* LinesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A05DA3DB508FD51BAB1C9721 /* LinesView.swift */; };
+		24E2F3CBF5CFE0881861A705 /* Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD04B12F93CB68B179AD658F /* Components.swift */; };
+		24FD7F1D56B3435DF4A55A6D /* RoutePlanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D71D3F38002124DE6720827 /* RoutePlanner.swift */; };
+		3534EA86D8372C7FAD0F5D42 /* PlannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED0E35625AE1BF7FEBB65EB /* PlannerView.swift */; };
 		3626C44DC953F76363EAF43E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CEFEFE97FE01A8EDFF372CE /* Assets.xcassets */; };
 		5C434EFC3E06EFB483CAA36D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 53E8002144E771EFC16356B9 /* InfoPlist.strings */; };
+		6E5587466DE2510907CC344D /* JapanTransitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB5E3ED5C62BBB63BAB1900 /* JapanTransitTests.swift */; };
+		885E6F19FD9D4B1C240A65CF /* BoardScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61DEC47787F3B2EC4A143B94 /* BoardScannerView.swift */; };
+		9E2A0D23E09B2D4FFA6064CD /* transfers.json in Resources */ = {isa = PBXBuildFile; fileRef = 9AD297C0DA128F06454FFD69 /* transfers.json */; };
 		9EEBF98C5C88A1350D6BAA97 /* JapanTransitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE5B2738F3684EC1CEA09BA /* JapanTransitApp.swift */; };
+		A7D32BEA75090FF7A8D9DA40 /* TrainBoardKit in Frameworks */ = {isa = PBXBuildFile; productRef = F8424BD879EA3E144DFE00D1 /* TrainBoardKit */; };
 		AA0DA774D9E6D67C05F0B09D /* TrainBoardKit in Frameworks */ = {isa = PBXBuildFile; productRef = 98FFD97337BFE7C18E380635 /* TrainBoardKit */; };
+		CB5402643D9C2447B58A8981 /* RailNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD2FD13BED8EDA11DE0C546 /* RailNetwork.swift */; };
+		E4AF358A3758CAA012958D85 /* lines in Resources */ = {isa = PBXBuildFile; fileRef = 4A94026393C4A0B10B50F65A /* lines */; };
+		F4D0065AB9AF85CF206468D4 /* StationPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC4AD5D7938AF9CE492F19A /* StationPickerView.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		7B4CCAB8BFA4EBD4AB189DE8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 91B05C94F70D304ECFE8152B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 400ED8CBB5679C216AD5E655;
+			remoteInfo = JapanTransit;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		1D71D3F38002124DE6720827 /* RoutePlanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutePlanner.swift; sourceTree = "<group>"; };
+		1ED0E35625AE1BF7FEBB65EB /* PlannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlannerView.swift; sourceTree = "<group>"; };
+		4A94026393C4A0B10B50F65A /* lines */ = {isa = PBXFileReference; lastKnownFileType = folder; name = lines; path = data/lines; sourceTree = SOURCE_ROOT; };
 		4AC73DAD1575021E5193C5D0 /* TrainBoardKit */ = {isa = PBXFileReference; lastKnownFileType = folder; name = TrainBoardKit; path = ../TrainBoardKit; sourceTree = SOURCE_ROOT; };
+		61DEC47787F3B2EC4A143B94 /* BoardScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardScannerView.swift; sourceTree = "<group>"; };
 		6834FC7750DBADC2BBCE4FFB /* BoardTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardTestView.swift; sourceTree = "<group>"; };
+		6EF75739630CB9F0464CA269 /* JapanTransitTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = JapanTransitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		851DA975B85EC05B380C81CD /* RouteDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteDetailView.swift; sourceTree = "<group>"; };
 		8617328BEF96A26E836F8D3A /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9AD297C0DA128F06454FFD69 /* transfers.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = transfers.json; sourceTree = "<group>"; };
 		9CEFEFE97FE01A8EDFF372CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9FC4AD5D7938AF9CE492F19A /* StationPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationPickerView.swift; sourceTree = "<group>"; };
+		A05DA3DB508FD51BAB1C9721 /* LinesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinesView.swift; sourceTree = "<group>"; };
 		ACE5B2738F3684EC1CEA09BA /* JapanTransitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JapanTransitApp.swift; sourceTree = "<group>"; };
 		AD19A7C529CE64B4C2038316 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		AFD2FD13BED8EDA11DE0C546 /* RailNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RailNetwork.swift; sourceTree = "<group>"; };
+		CD04B12F93CB68B179AD658F /* Components.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Components.swift; sourceTree = "<group>"; };
 		DA3740E2F15EA12B1D1F9083 /* Version.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Version.xcconfig; sourceTree = "<group>"; };
 		E1274C58CDE5F77132107958 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		FC75089C14B69DDBF54624C4 /* JapanTransit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JapanTransit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECB5E3ED5C62BBB63BAB1900 /* JapanTransitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JapanTransitTests.swift; sourceTree = "<group>"; };
+		FC75089C14B69DDBF54624C4 /* JapanTransit.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = JapanTransit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,9 +69,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9903C63F8B2C2DFD9F4324CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7D32BEA75090FF7A8D9DA40 /* TrainBoardKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0246E901B8DF1D49D263C552 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				AFD2FD13BED8EDA11DE0C546 /* RailNetwork.swift */,
+				1D71D3F38002124DE6720827 /* RoutePlanner.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
 		0F4DB284B4349592FAB79ABC /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -51,8 +102,17 @@
 			isa = PBXGroup;
 			children = (
 				FC75089C14B69DDBF54624C4 /* JapanTransit.app */,
+				6EF75739630CB9F0464CA269 /* JapanTransitTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		52FD654FDA33649A4F47ADD8 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				CD04B12F93CB68B179AD658F /* Components.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 		59EE016F91F350C3E016DBCA /* Packages */ = {
@@ -63,6 +123,16 @@
 			name = Packages;
 			sourceTree = "<group>";
 		};
+		7886955D3DCBE891DBE16E2D /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				9FAC0E2FC971B37E02C31C3E /* Board */,
+				D2500179D611B31A7E765B06 /* Lines */,
+				C831678C9D23FD262E2C88F1 /* Planner */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
 		941137FD6D342B8B5A76D1D5 /* App */ = {
 			isa = PBXGroup;
 			children = (
@@ -71,25 +141,65 @@
 			path = App;
 			sourceTree = "<group>";
 		};
+		9FAC0E2FC971B37E02C31C3E /* Board */ = {
+			isa = PBXGroup;
+			children = (
+				61DEC47787F3B2EC4A143B94 /* BoardScannerView.swift */,
+			);
+			path = Board;
+			sourceTree = "<group>";
+		};
+		A5A3BAC8065B47F3DF456B7D /* data */ = {
+			isa = PBXGroup;
+			children = (
+				4A94026393C4A0B10B50F65A /* lines */,
+				9AD297C0DA128F06454FFD69 /* transfers.json */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
 		B1B3E3E9A7298E9697E5DBA5 /* JapanTransit */ = {
 			isa = PBXGroup;
 			children = (
 				AD19A7C529CE64B4C2038316 /* Info.plist */,
 				941137FD6D342B8B5A76D1D5 /* App */,
 				E74736B9A804B9EDFE4359D3 /* Board */,
+				52FD654FDA33649A4F47ADD8 /* Common */,
+				0246E901B8DF1D49D263C552 /* Data */,
+				7886955D3DCBE891DBE16E2D /* Features */,
 				0F4DB284B4349592FAB79ABC /* Resources */,
 			);
 			path = JapanTransit;
+			sourceTree = "<group>";
+		};
+		C831678C9D23FD262E2C88F1 /* Planner */ = {
+			isa = PBXGroup;
+			children = (
+				1ED0E35625AE1BF7FEBB65EB /* PlannerView.swift */,
+				851DA975B85EC05B380C81CD /* RouteDetailView.swift */,
+				9FC4AD5D7938AF9CE492F19A /* StationPickerView.swift */,
+			);
+			path = Planner;
 			sourceTree = "<group>";
 		};
 		CA11E0A8E00879191CAC32EC = {
 			isa = PBXGroup;
 			children = (
 				D4F30D8520A4CF84EC0EB287 /* Config */,
+				A5A3BAC8065B47F3DF456B7D /* data */,
 				B1B3E3E9A7298E9697E5DBA5 /* JapanTransit */,
+				F51AEBBF80D5991960069CBC /* JapanTransitTests */,
 				59EE016F91F350C3E016DBCA /* Packages */,
 				1E433B1AE0E6DEA83FE945C7 /* Products */,
 			);
+			sourceTree = "<group>";
+		};
+		D2500179D611B31A7E765B06 /* Lines */ = {
+			isa = PBXGroup;
+			children = (
+				A05DA3DB508FD51BAB1C9721 /* LinesView.swift */,
+			);
+			path = Lines;
 			sourceTree = "<group>";
 		};
 		D4F30D8520A4CF84EC0EB287 /* Config */ = {
@@ -108,9 +218,37 @@
 			path = Board;
 			sourceTree = "<group>";
 		};
+		F51AEBBF80D5991960069CBC /* JapanTransitTests */ = {
+			isa = PBXGroup;
+			children = (
+				ECB5E3ED5C62BBB63BAB1900 /* JapanTransitTests.swift */,
+			);
+			path = JapanTransitTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		2A81D8BE47E4DBF8CDDB0848 /* JapanTransitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA279772F4F1FF2832D4C820 /* Build configuration list for PBXNativeTarget "JapanTransitTests" */;
+			buildPhases = (
+				CE27618CDC76098DBB5EB5FC /* Sources */,
+				9903C63F8B2C2DFD9F4324CF /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B8B13225EA36836AA41D7F30 /* PBXTargetDependency */,
+			);
+			name = JapanTransitTests;
+			packageProductDependencies = (
+				F8424BD879EA3E144DFE00D1 /* TrainBoardKit */,
+			);
+			productName = JapanTransitTests;
+			productReference = 6EF75739630CB9F0464CA269 /* JapanTransitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		400ED8CBB5679C216AD5E655 /* JapanTransit */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D68B548321E96ECBB47FC165 /* Build configuration list for PBXNativeTarget "JapanTransit" */;
@@ -140,6 +278,10 @@
 				BuildIndependentTargetsInParallel = YES;
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
+					2A81D8BE47E4DBF8CDDB0848 = {
+						DevelopmentTeam = QGAQ3AY3R3;
+						ProvisioningStyle = Automatic;
+					};
 					400ED8CBB5679C216AD5E655 = {
 						DevelopmentTeam = QGAQ3AY3R3;
 						ProvisioningStyle = Automatic;
@@ -160,10 +302,12 @@
 			packageReferences = (
 				DD8F43F4BEF3F6AF0470A821 /* XCLocalSwiftPackageReference "../TrainBoardKit" */,
 			);
+			preferredProjectObjectVersion = 77;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				400ED8CBB5679C216AD5E655 /* JapanTransit */,
+				2A81D8BE47E4DBF8CDDB0848 /* JapanTransitTests */,
 			);
 		};
 /* End PBXProject section */
@@ -175,6 +319,8 @@
 			files = (
 				3626C44DC953F76363EAF43E /* Assets.xcassets in Resources */,
 				5C434EFC3E06EFB483CAA36D /* InfoPlist.strings in Resources */,
+				E4AF358A3758CAA012958D85 /* lines in Resources */,
+				9E2A0D23E09B2D4FFA6064CD /* transfers.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -185,12 +331,36 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				885E6F19FD9D4B1C240A65CF /* BoardScannerView.swift in Sources */,
 				013BEF3B3D9AB0B0EDEC43CF /* BoardTestView.swift in Sources */,
+				24E2F3CBF5CFE0881861A705 /* Components.swift in Sources */,
 				9EEBF98C5C88A1350D6BAA97 /* JapanTransitApp.swift in Sources */,
+				24C0AACD11E27AF8906BD4BC /* LinesView.swift in Sources */,
+				3534EA86D8372C7FAD0F5D42 /* PlannerView.swift in Sources */,
+				CB5402643D9C2447B58A8981 /* RailNetwork.swift in Sources */,
+				190426973C769A26A4886452 /* RouteDetailView.swift in Sources */,
+				24FD7F1D56B3435DF4A55A6D /* RoutePlanner.swift in Sources */,
+				F4D0065AB9AF85CF206468D4 /* StationPickerView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE27618CDC76098DBB5EB5FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E5587466DE2510907CC344D /* JapanTransitTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B8B13225EA36836AA41D7F30 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 400ED8CBB5679C216AD5E655 /* JapanTransit */;
+			targetProxy = 7B4CCAB8BFA4EBD4AB189DE8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		53E8002144E771EFC16356B9 /* InfoPlist.strings */ = {
@@ -282,6 +452,40 @@
 			};
 			name = Release;
 		};
+		A3F47ABA300C432C59E18685 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.leeo.japantransit.tests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JapanTransit.app/JapanTransit";
+			};
+			name = Debug;
+		};
+		B6059CF33A47E818575D03B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.leeo.japantransit.tests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JapanTransit.app/JapanTransit";
+			};
+			name = Release;
+		};
 		B6AEEE003E32B74715A10A00 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DA3740E2F15EA12B1D1F9083 /* Version.xcconfig */;
@@ -369,6 +573,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		BA279772F4F1FF2832D4C820 /* Build configuration list for PBXNativeTarget "JapanTransitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3F47ABA300C432C59E18685 /* Debug */,
+				B6059CF33A47E818575D03B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
 		CC4F923D1527665B1AE2664A /* Build configuration list for PBXProject "JapanTransit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -398,6 +611,10 @@
 
 /* Begin XCSwiftPackageProductDependency section */
 		98FFD97337BFE7C18E380635 /* TrainBoardKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = TrainBoardKit;
+		};
+		F8424BD879EA3E144DFE00D1 /* TrainBoardKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = TrainBoardKit;
 		};

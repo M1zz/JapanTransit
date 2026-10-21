@@ -1,1 +1,2 @@
 "NSCameraUsageDescription" = "Reads the departure board and train front so we can tell you whether to board.";
+"NSLocationWhenInUseUsageDescription" = "Finds the station nearest to you.";

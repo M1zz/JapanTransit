@@ -1,0 +1,176 @@
+{
+  "id": "Z",
+  "operator": "東京メトロ",
+  "operatorKo": "도쿄메트로",
+  "nameJa": "半蔵門線",
+  "nameKo": "한조몬선",
+  "nameEn": "Hanzomon Line",
+  "color": "#8F76D6",
+  "circular": false,
+  "stations": [
+    {
+      "code": "Z01",
+      "ja": "渋谷",
+      "kana": "しぶや",
+      "ko": "시부야",
+      "koSource": "wiki",
+      "en": "Shibuya",
+      "lat": 35.65944,
+      "lng": 139.70194
+    },
+    {
+      "code": "Z02",
+      "ja": "表参道",
+      "kana": "おもてさんどう",
+      "ko": "오모테산도",
+      "koSource": "wiki",
+      "en": "Omote-sando",
+      "lat": 35.66528,
+      "lng": 139.7125
+    },
+    {
+      "code": "Z03",
+      "ja": "青山一丁目",
+      "kana": "あおやまいっちょうめ",
+      "ko": "아오야마잇초메",
+      "koSource": "wiki",
+      "en": "Aoyama-itchome",
+      "lat": 35.67244,
+      "lng": 139.72442
+    },
+    {
+      "code": "Z04",
+      "ja": "永田町",
+      "kana": "ながたちょう",
+      "ko": "나가타초",
+      "koSource": "wiki",
+      "en": "Nagatacho",
+      "lat": 35.67861,
+      "lng": 139.74028
+    },
+    {
+      "code": "Z05",
+      "ja": "半蔵門",
+      "kana": "はんぞうもん",
+      "ko": "한조몬",
+      "koSource": "wiki",
+      "en": "Hanzomon",
+      "lat": 35.68569,
+      "lng": 139.74167
+    },
+    {
+      "code": "Z06",
+      "ja": "九段下",
+      "kana": "くだんした",
+      "ko": "구단시타",
+      "koSource": "wiki",
+      "en": "Kudanshita",
+      "lat": 35.69592,
+      "lng": 139.75128
+    },
+    {
+      "code": "Z07",
+      "ja": "神保町",
+      "kana": "じんぼうちょう",
+      "ko": "진보초",
+      "koSource": "wiki",
+      "en": "Jimbocho",
+      "lat": 35.69586,
+      "lng": 139.75683
+    },
+    {
+      "code": "Z08",
+      "ja": "大手町",
+      "kana": "おおてまち",
+      "ko": "오테마치",
+      "koSource": "wiki",
+      "en": "Otemachi",
+      "lat": 35.68667,
+      "lng": 139.765
+    },
+    {
+      "code": "Z09",
+      "ja": "三越前",
+      "kana": "みつこしまえ",
+      "ko": "미쓰코시마에",
+      "koSource": "wiki",
+      "en": "Mitsukoshimae",
+      "lat": 35.68489,
+      "lng": 139.77317
+    },
+    {
+      "code": "Z10",
+      "ja": "水天宮前",
+      "kana": "すいてんぐうまえ",
+      "ko": "스이텐구마에",
+      "koSource": "wiki",
+      "en": "Suitengumae",
+      "lat": 35.68206,
+      "lng": 139.78603
+    },
+    {
+      "code": "Z11",
+      "ja": "清澄白河",
+      "kana": "きよすみしらかわ",
+      "ko": "기요스미시라카와",
+      "koSource": "wiki",
+      "en": "Kiyosumi-shirakawa",
+      "lat": 35.68211,
+      "lng": 139.80031
+    },
+    {
+      "code": "Z12",
+      "ja": "住吉",
+      "kana": "すみよし",
+      "ko": "스미요시",
+      "koSource": "wiki",
+      "en": "Sumiyoshi",
+      "lat": 35.68733,
+      "lng": 139.81567
+    },
+    {
+      "code": "Z13",
+      "ja": "錦糸町",
+      "kana": "きんしちょう",
+      "ko": "긴시초",
+      "koSource": "wiki",
+      "en": "Kinshicho",
+      "lat": 35.69639,
+      "lng": 139.815
+    },
+    {
+      "code": "Z14",
+      "ja": "押上",
+      "kana": "おしあげ",
+      "ko": "오시아게",
+      "koSource": "wiki",
+      "en": "Oshiage",
+      "lat": 35.71014,
+      "lng": 139.81339,
+      "jaSub": "スカイツリー前",
+      "enSub": "SKYTREE"
+    }
+  ],
+  "throughTermini": {
+    "start": [
+      "中央林間",
+      "長津田",
+      "鷺沼"
+    ],
+    "end": [
+      "久喜",
+      "南栗橋",
+      "東武動物公園",
+      "北越谷"
+    ]
+  },
+  "services": [],
+  "sources": [
+    "https://ja.wikipedia.org/wiki/東京メトロ半蔵門線",
+    "https://ja.wikipedia.org/wiki/東急田園都市線",
+    "https://ja.wikipedia.org/wiki/東武伊勢崎線",
+    "https://www.wikidata.org/ (station sitelinks to kowiki, fallback coordinates)",
+    "https://web.archive.org/web/2025/https://www.tokyometro.jp/lang_en/station/index.html (English station names)"
+  ],
+  "notes": "半蔵門線内は全列車各駅停車。ただし線内でも乗り入れ先の種別（急行・準急・各駅停車）で案内されるため、「急行」「準急」表示でも半蔵門線内では全駅に停車する。押上の駅名標表記は「押上〈スカイツリー前〉」（kanaは本名「おしあげ」のみ）。行先のうち北越谷（東武線内準急）・鷺沼は本数が少なく、現行ダイヤで毎日設定されているかは未確認。途中駅止まり（清澄白河・半蔵門・水天宮前など）は線内なので含めていない。"
+}

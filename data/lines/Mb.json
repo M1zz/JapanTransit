@@ -1,0 +1,63 @@
+{
+  "id": "Mb",
+  "operator": "東京メトロ",
+  "operatorKo": "도쿄메트로",
+  "nameJa": "丸ノ内線（方南町支線）",
+  "nameKo": "마루노우치선 (호난초 지선)",
+  "nameEn": "Marunouchi Line (Honancho Branch)",
+  "color": "#F62E36",
+  "circular": false,
+  "stations": [
+    {
+      "code": "Mb03",
+      "ja": "方南町",
+      "kana": "ほうなんちょう",
+      "ko": "호난초",
+      "koSource": "wiki",
+      "en": "Honancho",
+      "lat": 35.683417,
+      "lng": 139.657167
+    },
+    {
+      "code": "Mb04",
+      "ja": "中野富士見町",
+      "kana": "なかのふじみちょう",
+      "ko": "나카노후지미초",
+      "koSource": "wiki",
+      "en": "Nakano-fujimicho",
+      "lat": 35.6905,
+      "lng": 139.666917
+    },
+    {
+      "code": "Mb05",
+      "ja": "中野新橋",
+      "kana": "なかのしんばし",
+      "ko": "나카노신바시",
+      "koSource": "wiki",
+      "en": "Nakano-shimbashi",
+      "lat": 35.692222,
+      "lng": 139.673944
+    },
+    {
+      "code": "M06",
+      "ja": "中野坂上",
+      "kana": "なかのさかうえ",
+      "ko": "나카노사카우에",
+      "koSource": "wiki",
+      "en": "Nakano-sakaue",
+      "lat": 35.697,
+      "lng": 139.682778
+    }
+  ],
+  "throughTermini": {
+    "start": [],
+    "end": []
+  },
+  "services": [],
+  "sources": [
+    "https://ja.wikipedia.org/wiki/東京メトロ丸ノ内線",
+    "https://www.wikidata.org/ (line-specific station items for some coordinates)",
+    "https://ko.wikipedia.org/ (Korean station article titles via ja.wikipedia interlanguage links)"
+  ],
+  "notes": "駅番号はMb-03 方南町, Mb-04 中野富士見町, Mb-05 中野新橋で、分岐駅の中野坂上は本線のM-06(Mb-01/02は欠番)。ここでは駅番号順(方南町→中野坂上)に並べ、中野坂上はコードM06のまま入れた。運行は中野坂上-方南町の線内折返しと池袋発着の本線直通が基本、朝夕深夜に池袋-中野富士見町の列車あり(日本語版Wikipedia「運行形態」)。nameKo/nameEnの支線表記は本プロジェクト用に付けたもので公式名ではない(公式には「丸ノ内線」の分岐線)。"
+}

@@ -1,0 +1,317 @@
+{
+  "id": "T",
+  "operator": "東京メトロ",
+  "operatorKo": "도쿄메트로",
+  "nameJa": "東西線",
+  "nameKo": "도자이선",
+  "nameEn": "Tozai Line",
+  "color": "#009BBF",
+  "circular": false,
+  "stations": [
+    {
+      "code": "T01",
+      "ja": "中野",
+      "kana": "なかの",
+      "ko": "나카노",
+      "koSource": "wiki",
+      "en": "Nakano",
+      "lat": 35.705833,
+      "lng": 139.665556
+    },
+    {
+      "code": "T02",
+      "ja": "落合",
+      "kana": "おちあい",
+      "ko": "오치아이",
+      "koSource": "wiki",
+      "en": "Ochiai",
+      "lat": 35.71075,
+      "lng": 139.686333
+    },
+    {
+      "code": "T03",
+      "ja": "高田馬場",
+      "kana": "たかだのばば",
+      "ko": "다카다노바바",
+      "koSource": "wiki",
+      "en": "Takadanobaba",
+      "lat": 35.712222,
+      "lng": 139.70375
+    },
+    {
+      "code": "T04",
+      "ja": "早稲田",
+      "kana": "わせだ",
+      "ko": "와세다",
+      "koSource": "wiki",
+      "en": "Waseda",
+      "lat": 35.705833,
+      "lng": 139.721306
+    },
+    {
+      "code": "T05",
+      "ja": "神楽坂",
+      "kana": "かぐらざか",
+      "ko": "가구라자카",
+      "koSource": "wiki",
+      "en": "Kagurazaka",
+      "lat": 35.703889,
+      "lng": 139.734222
+    },
+    {
+      "code": "T06",
+      "ja": "飯田橋",
+      "kana": "いいだばし",
+      "ko": "이다바시",
+      "koSource": "wiki",
+      "en": "Iidabashi",
+      "lat": 35.702056,
+      "lng": 139.745
+    },
+    {
+      "code": "T07",
+      "ja": "九段下",
+      "kana": "くだんした",
+      "ko": "구단시타",
+      "koSource": "wiki",
+      "en": "Kudanshita",
+      "lat": 35.695917,
+      "lng": 139.751278
+    },
+    {
+      "code": "T08",
+      "ja": "竹橋",
+      "kana": "たけばし",
+      "ko": "다케바시",
+      "koSource": "wiki",
+      "en": "Takebashi",
+      "lat": 35.69075,
+      "lng": 139.756861
+    },
+    {
+      "code": "T09",
+      "ja": "大手町",
+      "kana": "おおてまち",
+      "ko": "오테마치",
+      "koSource": "wiki",
+      "en": "Otemachi",
+      "lat": 35.684722,
+      "lng": 139.765833
+    },
+    {
+      "code": "T10",
+      "ja": "日本橋",
+      "kana": "にほんばし",
+      "ko": "니혼바시",
+      "koSource": "wiki",
+      "en": "Nihombashi",
+      "lat": 35.682528,
+      "lng": 139.773694
+    },
+    {
+      "code": "T11",
+      "ja": "茅場町",
+      "kana": "かやばちょう",
+      "ko": "가야바초",
+      "koSource": "wiki",
+      "en": "Kayabacho",
+      "lat": 35.679944,
+      "lng": 139.780139
+    },
+    {
+      "code": "T12",
+      "ja": "門前仲町",
+      "kana": "もんぜんなかちょう",
+      "ko": "몬젠나카초",
+      "koSource": "wiki",
+      "en": "Monzen-nakacho",
+      "lat": 35.671972,
+      "lng": 139.795778
+    },
+    {
+      "code": "T13",
+      "ja": "木場",
+      "kana": "きば",
+      "ko": "기바",
+      "koSource": "wiki",
+      "en": "Kiba",
+      "lat": 35.669444,
+      "lng": 139.806528
+    },
+    {
+      "code": "T14",
+      "ja": "東陽町",
+      "kana": "とうようちょう",
+      "ko": "도요초",
+      "koSource": "wiki",
+      "en": "Toyocho",
+      "lat": 35.669583,
+      "lng": 139.8175
+    },
+    {
+      "code": "T15",
+      "ja": "南砂町",
+      "kana": "みなみすなまち",
+      "ko": "미나미스나마치",
+      "koSource": "wiki",
+      "en": "Minami-sunamachi",
+      "lat": 35.668833,
+      "lng": 139.830667
+    },
+    {
+      "code": "T16",
+      "ja": "西葛西",
+      "kana": "にしかさい",
+      "ko": "니시카사이",
+      "koSource": "wiki",
+      "en": "Nishi-kasai",
+      "lat": 35.664583,
+      "lng": 139.859361
+    },
+    {
+      "code": "T17",
+      "ja": "葛西",
+      "kana": "かさい",
+      "ko": "가사이",
+      "koSource": "wiki",
+      "en": "Kasai",
+      "lat": 35.663611,
+      "lng": 139.872694
+    },
+    {
+      "code": "T18",
+      "ja": "浦安",
+      "kana": "うらやす",
+      "ko": "우라야스",
+      "koSource": "wiki",
+      "en": "Urayasu",
+      "lat": 35.665833,
+      "lng": 139.892917
+    },
+    {
+      "code": "T19",
+      "ja": "南行徳",
+      "kana": "みなみぎょうとく",
+      "ko": "미나미교토쿠",
+      "koSource": "wiki",
+      "en": "Minami-gyotoku",
+      "lat": 35.672778,
+      "lng": 139.902278
+    },
+    {
+      "code": "T20",
+      "ja": "行徳",
+      "kana": "ぎょうとく",
+      "ko": "교토쿠",
+      "koSource": "wiki",
+      "en": "Gyotoku",
+      "lat": 35.682639,
+      "lng": 139.914167
+    },
+    {
+      "code": "T21",
+      "ja": "妙典",
+      "kana": "みょうでん",
+      "ko": "묘덴",
+      "koSource": "wiki",
+      "en": "Myoden",
+      "lat": 35.691611,
+      "lng": 139.925
+    },
+    {
+      "code": "T22",
+      "ja": "原木中山",
+      "kana": "ばらきなかやま",
+      "ko": "바라키나카야마",
+      "koSource": "wiki",
+      "en": "Baraki-nakayama",
+      "lat": 35.70325,
+      "lng": 139.941806
+    },
+    {
+      "code": "T23",
+      "ja": "西船橋",
+      "kana": "にしふなばし",
+      "ko": "니시후나바시",
+      "koSource": "wiki",
+      "en": "Nishi-funabashi",
+      "lat": 35.707417,
+      "lng": 139.959083
+    }
+  ],
+  "throughTermini": {
+    "start": [
+      "三鷹"
+    ],
+    "end": [
+      "東葉勝田台",
+      "八千代緑が丘",
+      "津田沼"
+    ]
+  },
+  "services": [
+    {
+      "id": "rapid",
+      "signWords": [
+        "快速"
+      ],
+      "nameKo": "쾌속",
+      "stops": [
+        "中野",
+        "落合",
+        "高田馬場",
+        "早稲田",
+        "神楽坂",
+        "飯田橋",
+        "九段下",
+        "竹橋",
+        "大手町",
+        "日本橋",
+        "茅場町",
+        "門前仲町",
+        "木場",
+        "東陽町",
+        "浦安",
+        "西船橋"
+      ],
+      "note": "中野-東陽町は各駅停車、東陽町-西船橋間は浦安のみ停車(南砂町・西葛西・葛西・南行徳・行徳・妙典・原木中山を通過)。両方向・終日運転(平日朝の中野方面は通勤快速に置き換え)。直通先(中央・総武線、東葉高速線)では各駅停車。中野方面行きは浦安以西で通過駅がなくなるため、車両によっては浦安から先で種別表示が各駅停車に変わる。"
+    },
+    {
+      "id": "commuter_rapid",
+      "signWords": [
+        "通勤快速",
+        "通快"
+      ],
+      "nameKo": "통근쾌속",
+      "stops": [
+        "中野",
+        "落合",
+        "高田馬場",
+        "早稲田",
+        "神楽坂",
+        "飯田橋",
+        "九段下",
+        "竹橋",
+        "大手町",
+        "日本橋",
+        "茅場町",
+        "門前仲町",
+        "木場",
+        "東陽町",
+        "南砂町",
+        "西葛西",
+        "葛西",
+        "浦安",
+        "西船橋"
+      ],
+      "note": "平日朝の中野方面(西行)のみ運転。西船橋-浦安間ノンストップ(南行徳・行徳・妙典・原木中山を通過)、浦安-中野間は各駅停車。西船橋方面行きの通勤快速はない(江東花火大会の日に夜の西行快速の一部が通勤快速になる臨時例のみ)。"
+    }
+  ],
+  "sources": [
+    "https://ja.wikipedia.org/wiki/東京メトロ東西線",
+    "https://ja.wikipedia.org/wiki/東葉高速鉄道東葉高速線",
+    "https://www.wikidata.org/ (line-specific station items for some coordinates)",
+    "https://ko.wikipedia.org/ (Korean station article titles via ja.wikipedia interlanguage links)"
+  ],
+  "notes": "停車駅は日本語版Wikipedia「駅一覧」の通勤快速・快速欄(2026年10月取得)による。東葉快速は2014年3月15日に廃止済み。津田沼直通は平日朝夕のみ。throughTermini.endの八千代緑が丘は平日の一部列車(中野発八千代緑が丘行き2本など)。東西線線内の途中駅止まり(九段下・東陽町・浦安・妙典)の列車も存在する。"
+}

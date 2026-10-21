@@ -1,0 +1,43 @@
+{
+  "id": "Cb",
+  "operator": "東京メトロ",
+  "operatorKo": "도쿄메트로",
+  "nameJa": "千代田線（北綾瀬支線）",
+  "nameKo": "지요다선 (기타아야세 지선)",
+  "nameEn": "Chiyoda Line (Kita-ayase Branch)",
+  "color": "#00BB85",
+  "circular": false,
+  "stations": [
+    {
+      "code": "C19",
+      "ja": "綾瀬",
+      "kana": "あやせ",
+      "ko": "아야세",
+      "koSource": "wiki",
+      "en": "Ayase",
+      "lat": 35.762222,
+      "lng": 139.825
+    },
+    {
+      "code": "C20",
+      "ja": "北綾瀬",
+      "kana": "きたあやせ",
+      "ko": "기타아야세",
+      "koSource": "wiki",
+      "en": "Kita-ayase",
+      "lat": 35.776944,
+      "lng": 139.832083
+    }
+  ],
+  "throughTermini": {
+    "start": [],
+    "end": []
+  },
+  "services": [],
+  "sources": [
+    "https://ja.wikipedia.org/wiki/東京メトロ千代田線",
+    "https://www.wikidata.org/ (line-specific station items for some coordinates)",
+    "https://ko.wikipedia.org/ (Korean station article titles via ja.wikipedia interlanguage links)"
+  ],
+  "notes": "公式には千代田線の一部(綾瀬-北綾瀬間)で別の路線記号はない。区間列車(主に3両編成ワンマン)が綾瀬-北綾瀬を往復するほか、2019年3月16日から10両編成の本線直通列車(代々木上原・小田急線方面)が北綾瀬に発着する。常磐線とは直通しない。北綾瀬発の本線直通列車の行先(代々木上原、小田急線内の駅など)はここでは列挙していない(他社線への直通は綾瀬ではなく代々木上原側で発生するため)。nameKo/nameEnの支線表記は本プロジェクト用の便宜名。"
+}

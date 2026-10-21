@@ -1,0 +1,273 @@
+{
+  "id": "A",
+  "operator": "都営地下鉄",
+  "operatorKo": "도에이 지하철",
+  "nameJa": "浅草線",
+  "nameKo": "아사쿠사선",
+  "nameEn": "Asakusa Line",
+  "color": "#EC6E65",
+  "circular": false,
+  "stations": [
+    {
+      "code": "A01",
+      "ja": "西馬込",
+      "kana": "にしまごめ",
+      "ko": "니시마고메",
+      "koSource": "wiki",
+      "en": "Nishi-magome",
+      "lat": 35.58686,
+      "lng": 139.70594
+    },
+    {
+      "code": "A02",
+      "ja": "馬込",
+      "kana": "まごめ",
+      "ko": "마고메",
+      "koSource": "wiki",
+      "en": "Magome",
+      "lat": 35.59642,
+      "lng": 139.71181
+    },
+    {
+      "code": "A03",
+      "ja": "中延",
+      "kana": "なかのぶ",
+      "ko": "나카노부",
+      "koSource": "wiki",
+      "en": "Nakanobu",
+      "lat": 35.60556,
+      "lng": 139.71369
+    },
+    {
+      "code": "A04",
+      "ja": "戸越",
+      "kana": "とごし",
+      "ko": "도고시",
+      "koSource": "wiki",
+      "en": "Togoshi",
+      "lat": 35.61472,
+      "lng": 139.71642
+    },
+    {
+      "code": "A05",
+      "ja": "五反田",
+      "kana": "ごたんだ",
+      "ko": "고탄다",
+      "koSource": "wiki",
+      "en": "Gotanda",
+      "lat": 35.62694,
+      "lng": 139.72403
+    },
+    {
+      "code": "A06",
+      "ja": "高輪台",
+      "kana": "たかなわだい",
+      "ko": "다카나와다이",
+      "koSource": "wiki",
+      "en": "Takanawadai",
+      "lat": 35.63167,
+      "lng": 139.73028
+    },
+    {
+      "code": "A07",
+      "ja": "泉岳寺",
+      "kana": "せんがくじ",
+      "ko": "센가쿠지",
+      "koSource": "wiki",
+      "en": "Sengakuji",
+      "lat": 35.63869,
+      "lng": 139.74
+    },
+    {
+      "code": "A08",
+      "ja": "三田",
+      "kana": "みた",
+      "ko": "미타",
+      "koSource": "wiki",
+      "en": "Mita",
+      "lat": 35.64689,
+      "lng": 139.74722
+    },
+    {
+      "code": "A09",
+      "ja": "大門",
+      "kana": "だいもん",
+      "ko": "다이몬",
+      "koSource": "wiki",
+      "en": "Daimon",
+      "lat": 35.65675,
+      "lng": 139.75464
+    },
+    {
+      "code": "A10",
+      "ja": "新橋",
+      "kana": "しんばし",
+      "ko": "신바시",
+      "koSource": "wiki",
+      "en": "Shimbashi",
+      "lat": 35.66528,
+      "lng": 139.75925
+    },
+    {
+      "code": "A11",
+      "ja": "東銀座",
+      "kana": "ひがしぎんざ",
+      "ko": "히가시긴자",
+      "koSource": "wiki",
+      "en": "Higashi-ginza",
+      "lat": 35.67019,
+      "lng": 139.76739
+    },
+    {
+      "code": "A12",
+      "ja": "宝町",
+      "kana": "たからちょう",
+      "ko": "다카라초",
+      "koSource": "wiki",
+      "en": "Takaracho",
+      "lat": 35.67542,
+      "lng": 139.77186
+    },
+    {
+      "code": "A13",
+      "ja": "日本橋",
+      "kana": "にほんばし",
+      "ko": "니혼바시",
+      "koSource": "wiki",
+      "en": "Nihombashi",
+      "lat": 35.68139,
+      "lng": 139.77556
+    },
+    {
+      "code": "A14",
+      "ja": "人形町",
+      "kana": "にんぎょうちょう",
+      "ko": "닌교초",
+      "koSource": "wiki",
+      "en": "Ningyocho",
+      "lat": 35.68631,
+      "lng": 139.78228
+    },
+    {
+      "code": "A15",
+      "ja": "東日本橋",
+      "kana": "ひがしにほんばし",
+      "ko": "히가시니혼바시",
+      "koSource": "wiki",
+      "en": "Higashi-nihombashi",
+      "lat": 35.69211,
+      "lng": 139.78489
+    },
+    {
+      "code": "A16",
+      "ja": "浅草橋",
+      "kana": "あさくさばし",
+      "ko": "아사쿠사바시",
+      "koSource": "wiki",
+      "en": "Asakusabashi",
+      "lat": 35.69733,
+      "lng": 139.78625
+    },
+    {
+      "code": "A17",
+      "ja": "蔵前",
+      "kana": "くらまえ",
+      "ko": "구라마에",
+      "koSource": "wiki",
+      "en": "Kuramae",
+      "lat": 35.70322,
+      "lng": 139.79094
+    },
+    {
+      "code": "A18",
+      "ja": "浅草",
+      "kana": "あさくさ",
+      "ko": "아사쿠사",
+      "koSource": "wiki",
+      "en": "Asakusa",
+      "lat": 35.70897,
+      "lng": 139.79658
+    },
+    {
+      "code": "A19",
+      "ja": "本所吾妻橋",
+      "kana": "ほんじょあづまばし",
+      "ko": "혼조아즈마바시",
+      "koSource": "wiki",
+      "en": "Honjo-azumabashi",
+      "lat": 35.70858,
+      "lng": 139.80461
+    },
+    {
+      "code": "A20",
+      "ja": "押上",
+      "kana": "おしあげ",
+      "ko": "오시아게",
+      "koSource": "wiki",
+      "en": "Oshiage",
+      "lat": 35.71075,
+      "lng": 139.81289
+    }
+  ],
+  "throughTermini": {
+    "start": [],
+    "end": [
+      "青砥",
+      "京成高砂",
+      "京成佐倉",
+      "宗吾参道",
+      "京成成田",
+      "成田空港",
+      "芝山千代田",
+      "印西牧の原",
+      "印旛日本医大"
+    ]
+  },
+  "junctionTermini": {
+    "atStation": "泉岳寺",
+    "towardStart": [
+      "品川",
+      "京急川崎",
+      "神奈川新町",
+      "金沢文庫",
+      "羽田空港",
+      "逗子・葉山",
+      "京急久里浜",
+      "三浦海岸",
+      "三崎口"
+    ]
+  },
+  "services": [
+    {
+      "id": "airportExpress",
+      "signWords": [
+        "エアポート快特"
+      ],
+      "nameKo": "에어포트 쾌특",
+      "stops": [
+        "泉岳寺",
+        "三田",
+        "大門",
+        "新橋",
+        "日本橋",
+        "東日本橋",
+        "浅草",
+        "押上"
+      ],
+      "note": "泉岳寺–押上間のみ運行（西馬込–泉岳寺間には入らない）。東銀座・宝町・人形町・浅草橋・蔵前・本所吾妻橋は通過。本数は少なく日中約40分に1本、朝ラッシュは上り1本程度。南行は泉岳寺以南で羽田空港方面（一部は泉岳寺で快特/急行に種別変更）、北行は押上で京成側の種別（アクセス特急・通勤特急・特急・快速など）に変わる。快速/通勤特急/特急/アクセス特急/快特/急行は浅草線内では各駅に停車するため省略。"
+    }
+  ],
+  "sources": [
+    "https://ja.wikipedia.org/wiki/都営地下鉄浅草線",
+    "https://ja.wikipedia.org/wiki/京成押上線",
+    "https://ja.wikipedia.org/wiki/泉岳寺駅",
+    "https://www.kotsu.metro.tokyo.jp/subway/timetable/asakusa/A10ND.html",
+    "https://www.kotsu.metro.tokyo.jp/subway/timetable/asakusa/A10SD.html",
+    "https://www.kotsu.metro.tokyo.jp/subway/timetable/asakusa/A08SH.html",
+    "https://www.kotsu.metro.tokyo.jp/subway/timetable/asakusa/A07KD.html",
+    "https://www.kotsu.metro.tokyo.jp/subway/timetable/asakusa/A07KH.html",
+    "https://www.kotsu.metro.tokyo.jp/subway/timetable/asakusa/A20SD.html",
+    "https://ja.wikipedia.org/w/api.php (coordinates/langlinks)"
+  ],
+  "notes": "泉岳寺は分岐駅: 京急線（品川・羽田空港・横浜方面）直通列車は泉岳寺で浅草線を離れ、西馬込–泉岳寺間には入らない。京急方面の行先は throughTermini.start ではなく junctionTermini.towardStart に入れた。西馬込側の先に直通はない（行き止まり）。押上は京成管轄の共同使用駅で、ほとんどの列車が京成押上線へ直通。線内折り返し行先（西馬込・泉岳寺・押上・浅草橋）は直通行先に含めていない。行先は都営公式時刻表（公式サイトはボット遮断のためWayback Machineの保存版を参照）から収集: 押上方面は令和7年12月15日改正版（平日、新橋A10ND）、京急方面は令和7年12月改正の三田/新橋南行と泉岳寺京急線方面（土休日）。京急川崎・金沢文庫・逗子・葉山は土休日版のみで確認、神奈川新町は平日版で確認。令和6年11月版には浦賀行（平日・泉岳寺始発）もあったが現行版で未確認のため除外。2026年以降のダイヤ改正があれば行先が変わっている可能性あり。列車前面の表示は「羽田空港」（駅名は羽田空港第1・第2ターミナル）。押上は駅名標に副名称〈スカイツリー前〉、大門は〈浜松町〉、日本橋・新橋等はそのまま。座標は日本語版Wikipedia各駅記事の座標（複数事業者の駅は都営の該当路線の座標を選択）。韓国語名は日本語版記事の韓国語版リンク先記事名から「역」と曖昧さ回避括弧を除いたもの。色は日本語版Wikipediaの路線インフォボックス「路線色」の値。都営は公式HEXを公開していないため出典により値が異なる（例: #E85298 とする資料もある）。"
+}

@@ -1,0 +1,312 @@
+{
+  "id": "E",
+  "operator": "都営地下鉄",
+  "operatorKo": "도에이 지하철",
+  "nameJa": "大江戸線",
+  "nameKo": "오에도선",
+  "nameEn": "Oedo Line",
+  "color": "#B6007A",
+  "circular": true,
+  "stations": [
+    {
+      "code": "E01",
+      "ja": "新宿西口",
+      "kana": "しんじゅくにしぐち",
+      "ko": "신주쿠니시구치",
+      "koSource": "wiki",
+      "en": "Shinjuku-nishiguchi",
+      "lat": 35.69331,
+      "lng": 139.69914
+    },
+    {
+      "code": "E02",
+      "ja": "東新宿",
+      "kana": "ひがししんじゅく",
+      "ko": "히가시신주쿠",
+      "koSource": "wiki",
+      "en": "Higashi-shinjuku",
+      "lat": 35.69792,
+      "lng": 139.7075
+    },
+    {
+      "code": "E03",
+      "ja": "若松河田",
+      "kana": "わかまつかわだ",
+      "ko": "와카마쓰카와다",
+      "koSource": "wiki",
+      "en": "Wakamatsu-kawada",
+      "lat": 35.69925,
+      "lng": 139.71819
+    },
+    {
+      "code": "E04",
+      "ja": "牛込柳町",
+      "kana": "うしごめやなぎちょう",
+      "ko": "우시고메야나기초",
+      "koSource": "wiki",
+      "en": "Ushigome-yanagicho",
+      "lat": 35.6995,
+      "lng": 139.725
+    },
+    {
+      "code": "E05",
+      "ja": "牛込神楽坂",
+      "kana": "うしごめかぐらざか",
+      "ko": "우시고메카구라자카",
+      "koSource": "wiki",
+      "en": "Ushigome-kagurazaka",
+      "lat": 35.70086,
+      "lng": 139.73578
+    },
+    {
+      "code": "E06",
+      "ja": "飯田橋",
+      "kana": "いいだばし",
+      "ko": "이다바시",
+      "koSource": "wiki",
+      "en": "Iidabashi",
+      "lat": 35.70317,
+      "lng": 139.74583
+    },
+    {
+      "code": "E07",
+      "ja": "春日",
+      "kana": "かすが",
+      "ko": "가스가",
+      "koSource": "wiki",
+      "en": "Kasuga",
+      "lat": 35.7085,
+      "lng": 139.75319
+    },
+    {
+      "code": "E08",
+      "ja": "本郷三丁目",
+      "kana": "ほんごうさんちょうめ",
+      "ko": "혼고산초메",
+      "koSource": "wiki",
+      "en": "Hongo-sanchome",
+      "lat": 35.7075,
+      "lng": 139.76042
+    },
+    {
+      "code": "E09",
+      "ja": "上野御徒町",
+      "kana": "うえのおかちまち",
+      "ko": "우에노오카치마치",
+      "koSource": "wiki",
+      "en": "Ueno-okachimachi",
+      "lat": 35.70789,
+      "lng": 139.77433
+    },
+    {
+      "code": "E10",
+      "ja": "新御徒町",
+      "kana": "しんおかちまち",
+      "ko": "신오카치마치",
+      "koSource": "wiki",
+      "en": "Shin-okachimachi",
+      "lat": 35.70689,
+      "lng": 139.78278
+    },
+    {
+      "code": "E11",
+      "ja": "蔵前",
+      "kana": "くらまえ",
+      "ko": "구라마에",
+      "koSource": "wiki",
+      "en": "Kuramae",
+      "lat": 35.70544,
+      "lng": 139.7925
+    },
+    {
+      "code": "E12",
+      "ja": "両国",
+      "kana": "りょうごく",
+      "ko": "료고쿠",
+      "koSource": "wiki",
+      "en": "Ryogoku",
+      "lat": 35.69686,
+      "lng": 139.79744
+    },
+    {
+      "code": "E13",
+      "ja": "森下",
+      "kana": "もりした",
+      "ko": "모리시타",
+      "koSource": "wiki",
+      "en": "Morishita",
+      "lat": 35.68806,
+      "lng": 139.79825
+    },
+    {
+      "code": "E14",
+      "ja": "清澄白河",
+      "kana": "きよすみしらかわ",
+      "ko": "기요스미시라카와",
+      "koSource": "wiki",
+      "en": "Kiyosumi-shirakawa",
+      "lat": 35.68264,
+      "lng": 139.79872
+    },
+    {
+      "code": "E15",
+      "ja": "門前仲町",
+      "kana": "もんぜんなかちょう",
+      "ko": "몬젠나카초",
+      "koSource": "wiki",
+      "en": "Monzen-nakacho",
+      "lat": 35.67275,
+      "lng": 139.79508
+    },
+    {
+      "code": "E16",
+      "ja": "月島",
+      "kana": "つきしま",
+      "ko": "쓰키시마",
+      "koSource": "wiki",
+      "en": "Tsukishima",
+      "lat": 35.66428,
+      "lng": 139.78464
+    },
+    {
+      "code": "E17",
+      "ja": "勝どき",
+      "kana": "かちどき",
+      "ko": "가치도키",
+      "koSource": "wiki",
+      "en": "Kachidoki",
+      "lat": 35.65847,
+      "lng": 139.77647
+    },
+    {
+      "code": "E18",
+      "ja": "築地市場",
+      "kana": "つきじしじょう",
+      "ko": "쓰키지시조",
+      "koSource": "wiki",
+      "en": "Tsukijishijo",
+      "lat": 35.66492,
+      "lng": 139.76694
+    },
+    {
+      "code": "E19",
+      "ja": "汐留",
+      "kana": "しおどめ",
+      "ko": "시오도메",
+      "koSource": "wiki",
+      "en": "Shiodome",
+      "lat": 35.66292,
+      "lng": 139.75997
+    },
+    {
+      "code": "E20",
+      "ja": "大門",
+      "kana": "だいもん",
+      "ko": "다이몬",
+      "koSource": "wiki",
+      "en": "Daimon",
+      "lat": 35.65669,
+      "lng": 139.7555
+    },
+    {
+      "code": "E21",
+      "ja": "赤羽橋",
+      "kana": "あかばねばし",
+      "ko": "아카바네바시",
+      "koSource": "wiki",
+      "en": "Akabanebashi",
+      "lat": 35.655,
+      "lng": 139.74361
+    },
+    {
+      "code": "E22",
+      "ja": "麻布十番",
+      "kana": "あざぶじゅうばん",
+      "ko": "아자부주반",
+      "koSource": "wiki",
+      "en": "Azabu-juban",
+      "lat": 35.6565,
+      "lng": 139.73611
+    },
+    {
+      "code": "E23",
+      "ja": "六本木",
+      "kana": "ろっぽんぎ",
+      "ko": "롯폰기",
+      "koSource": "wiki",
+      "en": "Roppongi",
+      "lat": 35.66333,
+      "lng": 139.73211
+    },
+    {
+      "code": "E24",
+      "ja": "青山一丁目",
+      "kana": "あおやまいっちょうめ",
+      "ko": "아오야마잇초메",
+      "koSource": "wiki",
+      "en": "Aoyama-itchome",
+      "lat": 35.67306,
+      "lng": 139.72267
+    },
+    {
+      "code": "E25",
+      "ja": "国立競技場",
+      "kana": "こくりつきょうぎじょう",
+      "ko": "고쿠리쓰쿄기조",
+      "koSource": "wiki",
+      "en": "Kokuritsu-kyogijo",
+      "lat": 35.68006,
+      "lng": 139.71411
+    },
+    {
+      "code": "E26",
+      "ja": "代々木",
+      "kana": "よよぎ",
+      "ko": "요요기",
+      "koSource": "wiki",
+      "en": "Yoyogi",
+      "lat": 35.683,
+      "lng": 139.70172
+    },
+    {
+      "code": "E27",
+      "ja": "新宿",
+      "kana": "しんじゅく",
+      "ko": "신주쿠",
+      "koSource": "wiki",
+      "en": "Shinjuku",
+      "lat": 35.68778,
+      "lng": 139.69931
+    },
+    {
+      "code": "E28",
+      "ja": "都庁前",
+      "kana": "とちょうまえ",
+      "ko": "도초마에",
+      "koSource": "wiki",
+      "en": "Tochomae",
+      "lat": 35.69058,
+      "lng": 139.69256
+    }
+  ],
+  "throughTermini": {
+    "start": [],
+    "end": []
+  },
+  "services": [],
+  "sources": [
+    "https://ja.wikipedia.org/wiki/都営地下鉄大江戸線",
+    "https://ja.wikipedia.org/w/api.php (coordinates/langlinks)"
+  ],
+  "notes": "大江戸線は「6の字」運転。駅番号は外回り(B線)方向に増加: E28 都庁前 → E01 新宿西口 → … → E27 新宿 → E28 都庁前 が環状部、E28 都庁前 → E29 西新宿五丁目 → … → E38 光が丘 が放射部。ここでは2エントリに分割: \"E\" = 環状部（circular=true、E01〜E28の番号順で、E28 都庁前の次は E01 に戻る）、\"Et\" = 放射部（都庁前〜光が丘、非環状）。都庁前(E28)が両方に含まれ乗換点となる。注意: 実際の列車は環状を回り続けない。外回り: 都庁前→飯田橋→両国→大門→六本木→都庁前→光が丘（都庁前で光が丘方面へ直進）。内回り: 光が丘→都庁前→六本木→大門→両国→飯田橋→都庁前（終点）。つまり: 光が丘→新宿(E27)は内回りで直通、新宿(E27)→光が丘は外回り（新宿→都庁前→光が丘）で直通。光が丘→新宿西口(E01)は、内回りに乗ると環状を一周してから着くため、都庁前で降りて都庁前始発の外回り（飯田橋・両国方面）に乗り換えるのが最短。新宿西口(E01)→光が丘は、内回りで都庁前（終点）まで行き、新宿方面から来て光が丘へ直進する外回り列車に乗り換える（Wikipediaによれば都庁前ではこの乗り継ぎ時間が短くなるよう設定）。このように新宿(E27)–都庁前(E28)–新宿西口(E01)をまたぐ移動は都庁前での乗り換えが必要になる場合がある。表示は「六本木・大門方面」「（○○経由）都庁前行き」「（○○経由）光が丘行き」などの方面式。清澄白河・汐留・新御徒町折り返しの区間列車もある。全列車各駅停車、他社直通なし。座標は日本語版Wikipedia各駅記事の座標（複数事業者の駅は都営の該当路線の座標を選択）。韓国語名は日本語版記事の韓国語版リンク先記事名から「역」と曖昧さ回避括弧を除いたもの。色は日本語版Wikipediaの路線インフォボックス「路線色」の値。都営は公式HEXを公開していないため出典により値が異なる（#CE045B とする資料もある）。",
+  "loopBreak": "都庁前",
+  "continuations": [
+    {
+      "step": 1,
+      "atStation": "都庁前",
+      "intoLine": "Et",
+      "intoStep": 1,
+      "note": "外回り(번호가 커지는 쪽)는 新宿 → 都庁前 에서 끝나지 않고 그대로 光が丘 까지 간다"
+    }
+  ]
+}

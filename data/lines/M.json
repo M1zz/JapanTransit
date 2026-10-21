@@ -1,0 +1,273 @@
+{
+  "id": "M",
+  "operator": "東京メトロ",
+  "operatorKo": "도쿄메트로",
+  "nameJa": "丸ノ内線",
+  "nameKo": "마루노우치선",
+  "nameEn": "Marunouchi Line",
+  "color": "#F62E36",
+  "circular": false,
+  "stations": [
+    {
+      "code": "M01",
+      "ja": "荻窪",
+      "kana": "おぎくぼ",
+      "ko": "오기쿠보",
+      "koSource": "wiki",
+      "en": "Ogikubo",
+      "lat": 35.704175,
+      "lng": 139.61976
+    },
+    {
+      "code": "M02",
+      "ja": "南阿佐ケ谷",
+      "kana": "みなみあさがや",
+      "ko": "미나미아사가야",
+      "koSource": "wiki",
+      "en": "Minami-asagaya",
+      "lat": 35.699389,
+      "lng": 139.635667
+    },
+    {
+      "code": "M03",
+      "ja": "新高円寺",
+      "kana": "しんこうえんじ",
+      "ko": "신코엔지",
+      "koSource": "wiki",
+      "en": "Shin-koenji",
+      "lat": 35.697778,
+      "lng": 139.648056
+    },
+    {
+      "code": "M04",
+      "ja": "東高円寺",
+      "kana": "ひがしこうえんじ",
+      "ko": "히가시코엔지",
+      "koSource": "wiki",
+      "en": "Higashi-koenji",
+      "lat": 35.698,
+      "lng": 139.657833
+    },
+    {
+      "code": "M05",
+      "ja": "新中野",
+      "kana": "しんなかの",
+      "ko": "신나카노",
+      "koSource": "wiki",
+      "en": "Shin-nakano",
+      "lat": 35.697472,
+      "lng": 139.669028
+    },
+    {
+      "code": "M06",
+      "ja": "中野坂上",
+      "kana": "なかのさかうえ",
+      "ko": "나카노사카우에",
+      "koSource": "wiki",
+      "en": "Nakano-sakaue",
+      "lat": 35.697,
+      "lng": 139.682778
+    },
+    {
+      "code": "M07",
+      "ja": "西新宿",
+      "kana": "にししんじゅく",
+      "ko": "니시신주쿠",
+      "koSource": "wiki",
+      "en": "Nishi-shinjuku",
+      "lat": 35.694389,
+      "lng": 139.692806
+    },
+    {
+      "code": "M08",
+      "ja": "新宿",
+      "kana": "しんじゅく",
+      "ko": "신주쿠",
+      "koSource": "wiki",
+      "en": "Shinjuku",
+      "lat": 35.69223,
+      "lng": 139.7006
+    },
+    {
+      "code": "M09",
+      "ja": "新宿三丁目",
+      "kana": "しんじゅくさんちょうめ",
+      "ko": "신주쿠산초메",
+      "koSource": "wiki",
+      "en": "Shinjuku-sanchome",
+      "lat": 35.691167,
+      "lng": 139.704139
+    },
+    {
+      "code": "M10",
+      "ja": "新宿御苑前",
+      "kana": "しんじゅくぎょえんまえ",
+      "ko": "신주쿠교엔마에",
+      "koSource": "wiki",
+      "en": "Shinjuku-gyoemmae",
+      "lat": 35.688583,
+      "lng": 139.710694
+    },
+    {
+      "code": "M11",
+      "ja": "四谷三丁目",
+      "kana": "よつやさんちょうめ",
+      "ko": "요쓰야산초메",
+      "koSource": "wiki",
+      "en": "Yotsuya-sanchome",
+      "lat": 35.687944,
+      "lng": 139.720083
+    },
+    {
+      "code": "M12",
+      "ja": "四ツ谷",
+      "kana": "よつや",
+      "ko": "요쓰야",
+      "koSource": "wiki",
+      "en": "Yotsuya",
+      "lat": 35.686,
+      "lng": 139.730667
+    },
+    {
+      "code": "M13",
+      "ja": "赤坂見附",
+      "kana": "あかさかみつけ",
+      "ko": "아카사카미쓰케",
+      "koSource": "wiki",
+      "en": "Akasaka-mitsuke",
+      "lat": 35.677,
+      "lng": 139.737056
+    },
+    {
+      "code": "M14",
+      "ja": "国会議事堂前",
+      "kana": "こっかいぎじどうまえ",
+      "ko": "곳카이기지도마에",
+      "koSource": "wiki",
+      "en": "Kokkai-gijidomae",
+      "lat": 35.674167,
+      "lng": 139.745278
+    },
+    {
+      "code": "M15",
+      "ja": "霞ケ関",
+      "kana": "かすみがせき",
+      "ko": "가스미가세키",
+      "koSource": "wiki",
+      "en": "Kasumigaseki",
+      "lat": 35.673806,
+      "lng": 139.750944
+    },
+    {
+      "code": "M16",
+      "ja": "銀座",
+      "kana": "ぎんざ",
+      "ko": "긴자",
+      "koSource": "wiki",
+      "en": "Ginza",
+      "lat": 35.672833,
+      "lng": 139.76325
+    },
+    {
+      "code": "M17",
+      "ja": "東京",
+      "kana": "とうきょう",
+      "ko": "도쿄",
+      "koSource": "wiki",
+      "en": "Tokyo",
+      "lat": 35.68204,
+      "lng": 139.76497
+    },
+    {
+      "code": "M18",
+      "ja": "大手町",
+      "kana": "おおてまち",
+      "ko": "오테마치",
+      "koSource": "wiki",
+      "en": "Otemachi",
+      "lat": 35.684722,
+      "lng": 139.765833
+    },
+    {
+      "code": "M19",
+      "ja": "淡路町",
+      "kana": "あわじちょう",
+      "ko": "아와지초",
+      "koSource": "wiki",
+      "en": "Awajicho",
+      "lat": 35.695444,
+      "lng": 139.767444
+    },
+    {
+      "code": "M20",
+      "ja": "御茶ノ水",
+      "kana": "おちゃのみず",
+      "ko": "오차노미즈",
+      "koSource": "wiki",
+      "en": "Ochanomizu",
+      "lat": 35.70043,
+      "lng": 139.764405
+    },
+    {
+      "code": "M21",
+      "ja": "本郷三丁目",
+      "kana": "ほんごうさんちょうめ",
+      "ko": "혼고산초메",
+      "koSource": "wiki",
+      "en": "Hongo-sanchome",
+      "lat": 35.706667,
+      "lng": 139.76
+    },
+    {
+      "code": "M22",
+      "ja": "後楽園",
+      "kana": "こうらくえん",
+      "ko": "고라쿠엔",
+      "koSource": "wiki",
+      "en": "Korakuen",
+      "lat": 35.707361,
+      "lng": 139.751111
+    },
+    {
+      "code": "M23",
+      "ja": "茗荷谷",
+      "kana": "みょうがだに",
+      "ko": "묘가다니",
+      "koSource": "wiki",
+      "en": "Myogadani",
+      "lat": 35.717361,
+      "lng": 139.736806
+    },
+    {
+      "code": "M24",
+      "ja": "新大塚",
+      "kana": "しんおおつか",
+      "ko": "신오쓰카",
+      "koSource": "wiki",
+      "en": "Shin-otsuka",
+      "lat": 35.725778,
+      "lng": 139.729917
+    },
+    {
+      "code": "M25",
+      "ja": "池袋",
+      "kana": "いけぶくろ",
+      "ko": "이케부쿠로",
+      "koSource": "wiki",
+      "en": "Ikebukuro",
+      "lat": 35.7301,
+      "lng": 139.71185
+    }
+  ],
+  "throughTermini": {
+    "start": [],
+    "end": []
+  },
+  "services": [],
+  "sources": [
+    "https://ja.wikipedia.org/wiki/東京メトロ丸ノ内線",
+    "https://www.wikidata.org/ (line-specific station items for some coordinates)",
+    "https://ko.wikipedia.org/ (Korean station article titles via ja.wikipedia interlanguage links)"
+  ],
+  "notes": "本線は全列車各駅停車、他社直通なし。ただし本線の列車の一部は中野坂上から方南町支線(Mb)へ直通する(池袋発方南町行き、池袋-中野富士見町間の列車など)ため、本線上で行先「方南町」「中野富士見町」が表示されることがある。荻窪(M01)・新宿(M08)・東京(M17)・御茶ノ水(M20)・池袋(M25)の座標はWikidataの東京メトロ側駅項目の値。"
+}

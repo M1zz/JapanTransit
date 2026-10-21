@@ -1,1 +1,2 @@
 "NSCameraUsageDescription" = "전광판과 열차 앞 표시를 읽어 타도 되는 열차인지 알려 드립니다.";
+"NSLocationWhenInUseUsageDescription" = "가장 가까운 역을 찾을 때 씁니다.";

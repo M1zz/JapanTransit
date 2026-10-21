@@ -1,0 +1,291 @@
+{
+  "id": "Y",
+  "operator": "東京メトロ",
+  "operatorKo": "도쿄메트로",
+  "nameJa": "有楽町線",
+  "nameKo": "유라쿠초선",
+  "nameEn": "Yurakucho Line",
+  "color": "#C1A470",
+  "circular": false,
+  "stations": [
+    {
+      "code": "Y01",
+      "ja": "和光市",
+      "kana": "わこうし",
+      "ko": "와코시",
+      "koSource": "wiki",
+      "en": "Wakoshi",
+      "lat": 35.78847,
+      "lng": 139.6125
+    },
+    {
+      "code": "Y02",
+      "ja": "地下鉄成増",
+      "kana": "ちかてつなります",
+      "ko": "지카테쓰나리마스",
+      "koSource": "wiki",
+      "en": "Chikatetsu-narimasu",
+      "lat": 35.77653,
+      "lng": 139.63153
+    },
+    {
+      "code": "Y03",
+      "ja": "地下鉄赤塚",
+      "kana": "ちかてつあかつか",
+      "ko": "지카테쓰아카쓰카",
+      "koSource": "wiki",
+      "en": "Chikatetsu-akatsuka",
+      "lat": 35.76997,
+      "lng": 139.64403
+    },
+    {
+      "code": "Y04",
+      "ja": "平和台",
+      "kana": "へいわだい",
+      "ko": "헤이와다이",
+      "koSource": "wiki",
+      "en": "Heiwadai",
+      "lat": 35.75786,
+      "lng": 139.65378
+    },
+    {
+      "code": "Y05",
+      "ja": "氷川台",
+      "kana": "ひかわだい",
+      "ko": "히카와다이",
+      "koSource": "wiki",
+      "en": "Hikawadai",
+      "lat": 35.74981,
+      "lng": 139.665
+    },
+    {
+      "code": "Y06",
+      "ja": "小竹向原",
+      "kana": "こたけむかいはら",
+      "ko": "고타케무카이하라",
+      "koSource": "wiki",
+      "en": "Kotake-mukaihara",
+      "lat": 35.74333,
+      "lng": 139.67949
+    },
+    {
+      "code": "Y07",
+      "ja": "千川",
+      "kana": "せんかわ",
+      "ko": "센카와",
+      "koSource": "wiki",
+      "en": "Senkawa",
+      "lat": 35.73842,
+      "lng": 139.68917
+    },
+    {
+      "code": "Y08",
+      "ja": "要町",
+      "kana": "かなめちょう",
+      "ko": "가나메초",
+      "koSource": "wiki",
+      "en": "Kanamecho",
+      "lat": 35.73322,
+      "lng": 139.69872
+    },
+    {
+      "code": "Y09",
+      "ja": "池袋",
+      "kana": "いけぶくろ",
+      "ko": "이케부쿠로",
+      "koSource": "wiki",
+      "en": "Ikebukuro",
+      "lat": 35.72944,
+      "lng": 139.71028
+    },
+    {
+      "code": "Y10",
+      "ja": "東池袋",
+      "kana": "ひがしいけぶくろ",
+      "ko": "히가시이케부쿠로",
+      "koSource": "wiki",
+      "en": "Higashi-ikebukuro",
+      "lat": 35.72567,
+      "lng": 139.7195
+    },
+    {
+      "code": "Y11",
+      "ja": "護国寺",
+      "kana": "ごこくじ",
+      "ko": "고코쿠지",
+      "koSource": "wiki",
+      "en": "Gokokuji",
+      "lat": 35.71903,
+      "lng": 139.7275
+    },
+    {
+      "code": "Y12",
+      "ja": "江戸川橋",
+      "kana": "えどがわばし",
+      "ko": "에도가와바시",
+      "koSource": "wiki",
+      "en": "Edogawabashi",
+      "lat": 35.70944,
+      "lng": 139.73353
+    },
+    {
+      "code": "Y13",
+      "ja": "飯田橋",
+      "kana": "いいだばし",
+      "ko": "이다바시",
+      "koSource": "wiki",
+      "en": "Iidabashi",
+      "lat": 35.70167,
+      "lng": 139.74356
+    },
+    {
+      "code": "Y14",
+      "ja": "市ケ谷",
+      "kana": "いちがや",
+      "ko": "이치가야",
+      "koSource": "wiki",
+      "en": "Ichigaya",
+      "lat": 35.69139,
+      "lng": 139.73625
+    },
+    {
+      "code": "Y15",
+      "ja": "麹町",
+      "kana": "こうじまち",
+      "ko": "고지마치",
+      "koSource": "wiki",
+      "en": "Kojimachi",
+      "lat": 35.68403,
+      "lng": 139.73767
+    },
+    {
+      "code": "Y16",
+      "ja": "永田町",
+      "kana": "ながたちょう",
+      "ko": "나가타초",
+      "koSource": "wiki",
+      "en": "Nagatacho",
+      "lat": 35.67861,
+      "lng": 139.74028
+    },
+    {
+      "code": "Y17",
+      "ja": "桜田門",
+      "kana": "さくらだもん",
+      "ko": "사쿠라다몬",
+      "koSource": "wiki",
+      "en": "Sakuradamon",
+      "lat": 35.67736,
+      "lng": 139.75175
+    },
+    {
+      "code": "Y18",
+      "ja": "有楽町",
+      "kana": "ゆうらくちょう",
+      "ko": "유라쿠초",
+      "koSource": "wiki",
+      "en": "Yurakucho",
+      "lat": 35.67569,
+      "lng": 139.76333
+    },
+    {
+      "code": "Y19",
+      "ja": "銀座一丁目",
+      "kana": "ぎんざいっちょうめ",
+      "ko": "긴자잇초메",
+      "koSource": "wiki",
+      "en": "Ginza-itchome",
+      "lat": 35.67436,
+      "lng": 139.76703
+    },
+    {
+      "code": "Y20",
+      "ja": "新富町",
+      "kana": "しんとみちょう",
+      "ko": "신토미초",
+      "koSource": "wiki",
+      "en": "Shintomicho",
+      "lat": 35.6705,
+      "lng": 139.77372
+    },
+    {
+      "code": "Y21",
+      "ja": "月島",
+      "kana": "つきしま",
+      "ko": "쓰키시마",
+      "koSource": "wiki",
+      "en": "Tsukishima",
+      "lat": 35.66489,
+      "lng": 139.78425
+    },
+    {
+      "code": "Y22",
+      "ja": "豊洲",
+      "kana": "とよす",
+      "ko": "도요스",
+      "koSource": "wiki",
+      "en": "Toyosu",
+      "lat": 35.655,
+      "lng": 139.79611
+    },
+    {
+      "code": "Y23",
+      "ja": "辰巳",
+      "kana": "たつみ",
+      "ko": "다쓰미",
+      "koSource": "wiki",
+      "en": "Tatsumi",
+      "lat": 35.64556,
+      "lng": 139.81056
+    },
+    {
+      "code": "Y24",
+      "ja": "新木場",
+      "kana": "しんきば",
+      "ko": "신키바",
+      "koSource": "wiki",
+      "en": "Shin-kiba",
+      "lat": 35.64592,
+      "lng": 139.82694
+    }
+  ],
+  "throughTermini": {
+    "start": [
+      "森林公園",
+      "川越市",
+      "志木",
+      "飯能",
+      "小手指",
+      "所沢",
+      "清瀬",
+      "保谷",
+      "石神井公園",
+      "西武球場前"
+    ],
+    "end": []
+  },
+  "services": [
+    {
+      "id": "s-train",
+      "signWords": [
+        "S-TRAIN"
+      ],
+      "nameKo": "S-TRAIN(좌석지정)",
+      "stops": [
+        "飯田橋",
+        "有楽町",
+        "豊洲"
+      ],
+      "note": "平日のみ。豊洲発着で小竹向原から西武有楽町線・池袋線（所沢・小手指方面）に直通。座席指定券が必要。池袋は通過、小竹向原は運転停車（乗降不可）。朝の豊洲行きは飯田橋・有楽町で降車のみ、夕方の小手指行きは乗車のみで、有楽町線内だけの利用は不可。辰巳・新木場には入らない。土休日は有楽町線には入らず副都心線経由で運転。",
+      "paid": true
+    }
+  ],
+  "sources": [
+    "https://ja.wikipedia.org/wiki/東京メトロ有楽町線",
+    "https://ja.wikipedia.org/wiki/S-TRAIN",
+    "https://ja.wikipedia.org/wiki/東京メトロ副都心線",
+    "https://www.wikidata.org/ (station sitelinks to kowiki, fallback coordinates)",
+    "https://web.archive.org/web/2025/https://www.tokyometro.jp/lang_en/station/index.html (English station names)"
+  ],
+  "notes": "和光市〜小竹向原（Y01〜Y06）は副都心線（F01〜F06）と線路・駅を共用。有楽町線の一般列車は全区間各駅停車（線内の通過種別はS-TRAINのみ）。throughTermini.startには、和光市から東武東上線への行先（森林公園・川越市・志木）と、小竹向原で分岐する西武有楽町線・池袋線への行先（飯能・小手指・所沢・清瀬・保谷・石神井公園、イベント時の西武球場前）をまとめて入れている。西武線方面は和光市（01側）より先ではなく小竹向原から分岐する点に注意。東上線直通の行先は主に川越市・志木で、森林公園は朝夕のみ。新木場より先への直通は無い。"
+}

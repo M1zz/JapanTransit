@@ -1,0 +1,189 @@
+{
+  "id": "MO",
+  "operator": "東京モノレール",
+  "operatorKo": "도쿄 모노레일",
+  "nameJa": "東京モノレール羽田空港線",
+  "nameKo": "도쿄 모노레일 하네다 공항선",
+  "nameEn": "Tokyo Monorail Haneda Airport Line",
+  "color": "#003686",
+  "circular": false,
+  "stations": [
+    {
+      "code": "MO01",
+      "ja": "モノレール浜松町",
+      "kana": "ものれーるはままつちょう",
+      "ko": "모노레일 하마마쓰초",
+      "koSource": "rule",
+      "en": "Monorail Hamamatsucho",
+      "lat": 35.655,
+      "lng": 139.756944
+    },
+    {
+      "code": "MO02",
+      "ja": "天王洲アイル",
+      "kana": "てんのうずあいる",
+      "ko": "덴노즈 아일",
+      "koSource": "wiki",
+      "en": "Tennozu Isle",
+      "lat": 35.623194,
+      "lng": 139.750472
+    },
+    {
+      "code": "MO03",
+      "ja": "大井競馬場前",
+      "kana": "おおいけいばじょうまえ",
+      "ko": "오이케이바조마에",
+      "koSource": "wiki",
+      "en": "Oi Keibajo Mae",
+      "lat": 35.595028,
+      "lng": 139.747056
+    },
+    {
+      "code": "MO04",
+      "ja": "流通センター",
+      "kana": "りゅうつうせんたー",
+      "ko": "류쓰 센터",
+      "koSource": "wiki",
+      "en": "Ryutsu Center",
+      "lat": 35.581444,
+      "lng": 139.749167
+    },
+    {
+      "code": "MO05",
+      "ja": "昭和島",
+      "kana": "しょうわじま",
+      "ko": "쇼와지마",
+      "koSource": "wiki",
+      "en": "Showajima",
+      "lat": 35.5704,
+      "lng": 139.7499
+    },
+    {
+      "code": "MO06",
+      "ja": "整備場",
+      "kana": "せいびじょう",
+      "ko": "세이비조",
+      "koSource": "wiki",
+      "en": "Seibijo",
+      "lat": 35.5554,
+      "lng": 139.7534
+    },
+    {
+      "code": "MO07",
+      "ja": "天空橋",
+      "kana": "てんくうばし",
+      "ko": "덴쿠바시",
+      "koSource": "wiki",
+      "en": "Tenkubashi",
+      "lat": 35.5491,
+      "lng": 139.754
+    },
+    {
+      "code": "MO08",
+      "ja": "羽田空港第3ターミナル",
+      "kana": "はねだくうこうだいさんたーみなる",
+      "ko": "하네다 공항 제3터미널",
+      "koSource": "wiki",
+      "en": "Haneda Airport Terminal 3",
+      "lat": 35.544612,
+      "lng": 139.767988
+    },
+    {
+      "code": "MO09",
+      "ja": "新整備場",
+      "kana": "しんせいびじょう",
+      "ko": "신세이비조",
+      "koSource": "wiki",
+      "en": "Shin Seibijo",
+      "lat": 35.5429,
+      "lng": 139.7875
+    },
+    {
+      "code": "MO10",
+      "ja": "羽田空港第1ターミナル",
+      "kana": "はねだくうこうだいいちたーみなる",
+      "ko": "하네다 공항 제1터미널",
+      "koSource": "rule",
+      "en": "Haneda Airport Terminal 1",
+      "lat": 35.549083,
+      "lng": 139.784597
+    },
+    {
+      "code": "MO11",
+      "ja": "羽田空港第2ターミナル",
+      "kana": "はねだくうこうだいにたーみなる",
+      "ko": "하네다 공항 제2터미널",
+      "koSource": "rule",
+      "en": "Haneda Airport Terminal 2",
+      "lat": 35.550849,
+      "lng": 139.78825
+    }
+  ],
+  "throughTermini": {
+    "start": [],
+    "end": []
+  },
+  "services": [
+    {
+      "id": "airportRapid",
+      "signWords": [
+        "空港快速"
+      ],
+      "nameKo": "공항쾌속",
+      "nameEn": "Haneda Express",
+      "stops": [
+        "モノレール浜松町",
+        "羽田空港第3ターミナル",
+        "羽田空港第1ターミナル",
+        "羽田空港第2ターミナル"
+      ],
+      "note": "日中約10分間隔。昭和島で普通を追い抜く。大井競馬場のGI開催日やイベント日に大井競馬場前・流通センター・天王洲アイルへ臨時停車することがある。"
+    },
+    {
+      "id": "sectionRapid",
+      "signWords": [
+        "区間快速"
+      ],
+      "nameKo": "구간쾌속",
+      "nameEn": "Rapid",
+      "stops": [
+        "モノレール浜松町",
+        "天王洲アイル",
+        "大井競馬場前",
+        "流通センター",
+        "羽田空港第3ターミナル",
+        "羽田空港第1ターミナル",
+        "羽田空港第2ターミナル"
+      ],
+      "note": "本数は少ない（2024年3月改正時点で平日下り4本・上り7本、土休日下り1本・上り2本）。"
+    },
+    {
+      "id": "local",
+      "signWords": [
+        "普通"
+      ],
+      "nameKo": "보통",
+      "nameEn": "Local",
+      "stops": [
+        "モノレール浜松町",
+        "天王洲アイル",
+        "大井競馬場前",
+        "流通センター",
+        "昭和島",
+        "整備場",
+        "天空橋",
+        "羽田空港第3ターミナル",
+        "新整備場",
+        "羽田空港第1ターミナル",
+        "羽田空港第2ターミナル"
+      ],
+      "note": "全駅停車。日中は昭和島で空港快速の通過待ちをする。"
+    }
+  ],
+  "sources": [
+    "https://ja.wikipedia.org/wiki/東京モノレール羽田空港線",
+    "https://www.tokyo-monorail.co.jp/",
+    "https://www.wikidata.org/"
+  ],
+  "notes": "停車駅は日本語版Wikipedia『東京モノレール羽田空港線』駅一覧の表（区間快速・空港快速の列）による。MO01の正式駅名は『モノレール浜松町』（JRの浜松町駅とは別駅名）。2025年11月1日から路線愛称『東京パノラマライン』を導入済み、案内でこの名が使われる可能性あり。路線色#003686はWikipedia掲載値。区間快速の本数は2024年3月時点の記述で、最新ダイヤは未確認。MO10/MO11の韓国語版記事名は旧駅名（『제1빌딩』『제2빌딩』）のままなので使わず規則表記にした。MO01の韓国語も規則表記。英語表記は東京モノレール公式表記に倣い長音記号なしとしたが、駅名標の実物は未確認。座標はWikipedia/Wikidataの駅代表点で、MO01はJR浜松町駅の座標を流用（モノレール駅はJR駅の西側に隣接）。"
+}

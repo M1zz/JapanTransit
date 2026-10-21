@@ -1,0 +1,264 @@
+{
+  "id": "F",
+  "operator": "東京メトロ",
+  "operatorKo": "도쿄메트로",
+  "nameJa": "副都心線",
+  "nameKo": "후쿠토신선",
+  "nameEn": "Fukutoshin Line",
+  "color": "#9C5E31",
+  "circular": false,
+  "stations": [
+    {
+      "code": "F01",
+      "ja": "和光市",
+      "kana": "わこうし",
+      "ko": "와코시",
+      "koSource": "wiki",
+      "en": "Wakoshi",
+      "lat": 35.78847,
+      "lng": 139.6125
+    },
+    {
+      "code": "F02",
+      "ja": "地下鉄成増",
+      "kana": "ちかてつなります",
+      "ko": "지카테쓰나리마스",
+      "koSource": "wiki",
+      "en": "Chikatetsu-narimasu",
+      "lat": 35.77653,
+      "lng": 139.63153
+    },
+    {
+      "code": "F03",
+      "ja": "地下鉄赤塚",
+      "kana": "ちかてつあかつか",
+      "ko": "지카테쓰아카쓰카",
+      "koSource": "wiki",
+      "en": "Chikatetsu-akatsuka",
+      "lat": 35.76997,
+      "lng": 139.64403
+    },
+    {
+      "code": "F04",
+      "ja": "平和台",
+      "kana": "へいわだい",
+      "ko": "헤이와다이",
+      "koSource": "wiki",
+      "en": "Heiwadai",
+      "lat": 35.75786,
+      "lng": 139.65378
+    },
+    {
+      "code": "F05",
+      "ja": "氷川台",
+      "kana": "ひかわだい",
+      "ko": "히카와다이",
+      "koSource": "wiki",
+      "en": "Hikawadai",
+      "lat": 35.74981,
+      "lng": 139.665
+    },
+    {
+      "code": "F06",
+      "ja": "小竹向原",
+      "kana": "こたけむかいはら",
+      "ko": "고타케무카이하라",
+      "koSource": "wiki",
+      "en": "Kotake-mukaihara",
+      "lat": 35.74333,
+      "lng": 139.67949
+    },
+    {
+      "code": "F07",
+      "ja": "千川",
+      "kana": "せんかわ",
+      "ko": "센카와",
+      "koSource": "wiki",
+      "en": "Senkawa",
+      "lat": 35.73842,
+      "lng": 139.68917
+    },
+    {
+      "code": "F08",
+      "ja": "要町",
+      "kana": "かなめちょう",
+      "ko": "가나메초",
+      "koSource": "wiki",
+      "en": "Kanamecho",
+      "lat": 35.73322,
+      "lng": 139.69872
+    },
+    {
+      "code": "F09",
+      "ja": "池袋",
+      "kana": "いけぶくろ",
+      "ko": "이케부쿠로",
+      "koSource": "wiki",
+      "en": "Ikebukuro",
+      "lat": 35.73083,
+      "lng": 139.70986
+    },
+    {
+      "code": "F10",
+      "ja": "雑司が谷",
+      "kana": "ぞうしがや",
+      "ko": "조시가야",
+      "koSource": "wiki",
+      "en": "Zoshigaya",
+      "lat": 35.72017,
+      "lng": 139.71478
+    },
+    {
+      "code": "F11",
+      "ja": "西早稲田",
+      "kana": "にしわせだ",
+      "ko": "니시와세다",
+      "koSource": "wiki",
+      "en": "Nishi-waseda",
+      "lat": 35.70794,
+      "lng": 139.70903
+    },
+    {
+      "code": "F12",
+      "ja": "東新宿",
+      "kana": "ひがししんじゅく",
+      "ko": "히가시신주쿠",
+      "koSource": "wiki",
+      "en": "Higashi-shinjuku",
+      "lat": 35.6995,
+      "lng": 139.70772
+    },
+    {
+      "code": "F13",
+      "ja": "新宿三丁目",
+      "kana": "しんじゅくさんちょうめ",
+      "ko": "신주쿠산초메",
+      "koSource": "wiki",
+      "en": "Shinjuku-sanchome",
+      "lat": 35.68953,
+      "lng": 139.70394
+    },
+    {
+      "code": "F14",
+      "ja": "北参道",
+      "kana": "きたさんどう",
+      "ko": "기타산도",
+      "koSource": "wiki",
+      "en": "Kita-sando",
+      "lat": 35.67817,
+      "lng": 139.70569
+    },
+    {
+      "code": "F15",
+      "ja": "明治神宮前",
+      "kana": "めいじじんぐうまえ",
+      "ko": "메이지진구마에",
+      "koSource": "wiki",
+      "en": "Meiji-jingumae",
+      "lat": 35.66844,
+      "lng": 139.70536,
+      "jaSub": "原宿",
+      "enSub": "Harajuku"
+    },
+    {
+      "code": "F16",
+      "ja": "渋谷",
+      "kana": "しぶや",
+      "ko": "시부야",
+      "koSource": "wiki",
+      "en": "Shibuya",
+      "lat": 35.65944,
+      "lng": 139.70194
+    }
+  ],
+  "throughTermini": {
+    "start": [
+      "森林公園",
+      "川越市",
+      "小川町",
+      "志木",
+      "飯能",
+      "小手指",
+      "所沢",
+      "清瀬",
+      "保谷",
+      "石神井公園",
+      "西武球場前"
+    ],
+    "end": [
+      "元町・中華街",
+      "横浜",
+      "菊名",
+      "武蔵小杉",
+      "元住吉",
+      "湘南台",
+      "海老名",
+      "大和"
+    ]
+  },
+  "services": [
+    {
+      "id": "commuter-express",
+      "signWords": [
+        "通勤急行",
+        "通急"
+      ],
+      "nameKo": "통근급행",
+      "stops": [
+        "和光市",
+        "地下鉄成増",
+        "地下鉄赤塚",
+        "平和台",
+        "氷川台",
+        "小竹向原",
+        "池袋",
+        "新宿三丁目",
+        "明治神宮前",
+        "渋谷"
+      ],
+      "note": "平日朝夕ラッシュ時のみ。和光市〜小竹向原は各駅に停車し、小竹向原〜渋谷で通過運転（千川・要町・雑司が谷・西早稲田・東新宿・北参道を通過）。北行（和光市方面）は小竹向原から先「各駅停車」と表示が変わる。西武線直通の通勤急行は無い。"
+    },
+    {
+      "id": "express",
+      "signWords": [
+        "急行",
+        "Fライナー"
+      ],
+      "nameKo": "급행",
+      "stops": [
+        "和光市",
+        "小竹向原",
+        "池袋",
+        "新宿三丁目",
+        "明治神宮前",
+        "渋谷"
+      ],
+      "note": "終日運転。地下鉄成増・地下鉄赤塚・平和台・氷川台・千川・要町・雑司が谷・西早稲田・東新宿・北参道を通過。日中の東武東上線（森林公園）・西武池袋線（小手指）〜元町・中華街の直通急行は「Fライナー 急行」と案内される（停車駅は急行と同じ）。西武線直通の急行は小竹向原で分岐するため和光市には行かない。"
+    },
+    {
+      "id": "s-train",
+      "signWords": [
+        "S-TRAIN"
+      ],
+      "nameKo": "S-TRAIN(좌석지정)",
+      "stops": [
+        "池袋",
+        "新宿三丁目",
+        "渋谷"
+      ],
+      "note": "土休日のみ。元町・中華街〜西武秩父・飯能・所沢間を運転し、小竹向原から西武有楽町線へ入る（和光市〜氷川台は走らない）。座席指定券が必要。池袋は降車専用（乗車不可）、小竹向原は運転停車（乗降不可）。副都心線内だけの座席指定券は発売されない。",
+      "paid": true
+    }
+  ],
+  "sources": [
+    "https://ja.wikipedia.org/wiki/東京メトロ副都心線",
+    "https://ja.wikipedia.org/wiki/Fライナー",
+    "https://ja.wikipedia.org/wiki/S-TRAIN",
+    "https://ja.wikipedia.org/wiki/東京メトロ有楽町線",
+    "https://ja.wikipedia.org/wiki/相鉄新横浜線",
+    "https://ja.wikipedia.org/wiki/東急東横線",
+    "https://www.wikidata.org/ (station sitelinks to kowiki, fallback coordinates)",
+    "https://web.archive.org/web/2025/https://www.tokyometro.jp/lang_en/station/index.html (English station names)"
+  ],
+  "notes": "和光市〜小竹向原（F01〜F06）は有楽町線（Y01〜Y06）と線路・駅を共用し、同じ駅に両方の番号が付く。急行・通勤急行の停車駅は日本語版Wikipedia「東京メトロ副都心線」駅一覧の停車駅表（2023年3月改正で通勤急行も明治神宮前に停車）。駅名標表記は「明治神宮前〈原宿〉」（kanaは本名「めいじじんぐうまえ」のみ）。throughTermini.startには和光市から先の東武東上線（森林公園・川越市・小川町・志木）と、小竹向原で分岐する西武線（飯能・小手指・所沢・清瀬・保谷・石神井公園・西武球場前）の行先をまとめて入れている。end側は東急東横線・みなとみらい線（元町・中華街・横浜・菊名・武蔵小杉・元住吉）と、東急新横浜線経由の相鉄線（湘南台・海老名・大和）。小川町行きは土休日のみ、大和・海老名・菊名・横浜・元住吉行きは本数が少ない。新横浜止まりの副都心線直通列車は資料で確認できなかったため入れていない。"
+}
