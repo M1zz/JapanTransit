@@ -1,4 +1,213 @@
 {
   "about": "이름이 다른 역끼리 역 안에서 걸어서 갈아탈 수 있는 곳. 같은 이름의 역은 따로 적지 않아도 이어진다. 그룹마다 근거를 적는다.",
-  "groups": []
+  "groups": [
+    {
+      "stations": [
+        "大門",
+        "浜松町",
+        "モノレール浜松町"
+      ],
+      "outside": false,
+      "source": "https://web.archive.org/web/2024/https://www.kotsu.metro.tokyo.jp/subway/stations/daimon.html",
+      "note": "도에이 다이몬역 공식 환승 안내에 JR·모노레일 하마마쓰초가 있다. 개찰구 밖으로 나가 세계무역센터 빌딩 통로로 이어진다."
+    },
+    {
+      "stations": [
+        "浜松町",
+        "モノレール浜松町"
+      ],
+      "outside": false,
+      "source": "https://ja.wikipedia.org/wiki/浜松町駅",
+      "note": "JR 하마마쓰초 개찰구에서 연결 통로로 모노레일역에 간다."
+    },
+    {
+      "stations": [
+        "三田",
+        "田町"
+      ],
+      "outside": true,
+      "source": "https://web.archive.org/web/2024/https://www.kotsu.metro.tokyo.jp/subway/stations/mita.html",
+      "note": "도에이 미타역 공식 환승 안내에 JR 다마치가 있다. A4 출구가 JR 다마치 미타 출구 옆이라 지상으로 잠깐 걷는다."
+    },
+    {
+      "stations": [
+        "東日本橋",
+        "馬喰横山"
+      ],
+      "outside": false,
+      "source": "https://ja.wikipedia.org/wiki/馬喰横山駅",
+      "note": "둘 다 도에이 역이지만 개찰구 밖 지하 통로로 갈아탄다."
+    },
+    {
+      "stations": [
+        "明治神宮前",
+        "原宿"
+      ],
+      "outside": true,
+      "source": "https://ja.wikipedia.org/wiki/明治神宮前駅",
+      "note": "JR 하라주쿠역과 공식 환승역. 개찰구를 나와 길 건너 바로 옆 역으로 걷는다."
+    },
+    {
+      "stations": [
+        "日比谷",
+        "有楽町"
+      ],
+      "outside": false,
+      "source": "https://web.archive.org/web/2024/https://www.kotsu.metro.tokyo.jp/subway/stations/hibiya.html",
+      "note": "도에이·도쿄메트로 공식 환승. 지하 통로로 유라쿠초선과 JR 유라쿠초에 이어진다. JR 환승 안내는 미타선 쪽만 한다."
+    },
+    {
+      "stations": [
+        "銀座",
+        "銀座一丁目"
+      ],
+      "outside": true,
+      "source": "https://web.archive.org/web/2024/https://www.tokyometro.jp/station/ginza/index.html",
+      "note": "2020년부터 공식 환승. 지하 통로가 없어 지상으로 약 200~300m 걷는다 (긴자 A13 또는 C6 출구)."
+    },
+    {
+      "stations": [
+        "築地",
+        "新富町"
+      ],
+      "outside": true,
+      "source": "https://web.archive.org/web/2024/https://www.tokyometro.jp/station/tsukiji/index.html",
+      "note": "2018년부터 도쿄메트로 공식 환승. 개찰구를 나와 걷는다."
+    },
+    {
+      "stations": [
+        "人形町",
+        "水天宮前"
+      ],
+      "outside": true,
+      "source": "https://web.archive.org/web/2024/https://www.kotsu.metro.tokyo.jp/subway/stations/ningyocho.html",
+      "note": "2018년부터 공식 환승. 약 300m 떨어져 있어 개찰구를 나와 걷는다."
+    },
+    {
+      "stations": [
+        "新宿西口",
+        "新宿"
+      ],
+      "outside": false,
+      "source": "https://web.archive.org/web/2024/https://www.kotsu.metro.tokyo.jp/subway/stations/shinjuku-nishiguchi.html",
+      "note": "도에이 신주쿠니시구치역 공식 환승 안내에 마루노우치선·JR 신주쿠가 있다. 지하로 이어진다."
+    },
+    {
+      "stations": [
+        "春日",
+        "後楽園"
+      ],
+      "outside": false,
+      "source": "https://web.archive.org/web/2024/https://www.kotsu.metro.tokyo.jp/subway/stations/kasuga.html",
+      "note": "연락 개찰구로 바로 이어진다 (오에도선 승강장 가운데 계단 아래)."
+    },
+    {
+      "stations": [
+        "上野御徒町",
+        "上野広小路",
+        "仲御徒町"
+      ],
+      "outside": false,
+      "source": "https://web.archive.org/web/2024/https://www.kotsu.metro.tokyo.jp/subway/stations/ueno-okachimachi.html",
+      "note": "세 역 모두 서로 공식 환승. 개찰구 밖 지하 통로로 이어진다. 히비야선 쪽은 거리가 꽤 있다."
+    },
+    {
+      "stations": [
+        "御徒町",
+        "上野御徒町"
+      ],
+      "outside": true,
+      "source": "https://web.archive.org/web/2024/https://www.kotsu.metro.tokyo.jp/subway/stations/ueno-okachimachi.html",
+      "note": "도에이 공식 환승 안내에 JR 오카치마치가 있다. 개찰구를 나와 걷는다."
+    },
+    {
+      "stations": [
+        "御徒町",
+        "上野広小路"
+      ],
+      "outside": true,
+      "source": "https://ja.wikipedia.org/wiki/上野広小路駅",
+      "note": "개찰구 밖 통로로 JR 오카치마치에 이어진다."
+    },
+    {
+      "stations": [
+        "赤坂見附",
+        "永田町"
+      ],
+      "outside": false,
+      "source": "https://web.archive.org/web/2024/https://www.tokyometro.jp/station/akasaka-mitsuke/index.html",
+      "note": "개찰구 안에서 갈아탄다. 다만 노선에 따라 250~610m를 걷는다."
+    },
+    {
+      "stations": [
+        "国会議事堂前",
+        "溜池山王"
+      ],
+      "outside": false,
+      "source": "https://web.archive.org/web/2024/https://www.tokyometro.jp/station/kokkai-gijidomae/index.html",
+      "note": "도쿄메트로 공식 환승. 개찰구 안 지하 통로로 이어진다."
+    },
+    {
+      "stations": [
+        "淡路町",
+        "小川町",
+        "新御茶ノ水"
+      ],
+      "outside": false,
+      "source": "https://web.archive.org/web/2024/https://www.kotsu.metro.tokyo.jp/subway/stations/ogawamachi.html",
+      "note": "세 역 모두 서로 공식 환승. 지하로 이어진다."
+    },
+    {
+      "stations": [
+        "岩本町",
+        "秋葉原"
+      ],
+      "outside": true,
+      "source": "https://web.archive.org/web/2024/https://www.kotsu.metro.tokyo.jp/subway/stations/iwamotocho.html",
+      "note": "도에이 공식 환승 안내에 JR·히비야선 아키하바라가 있다. 지하 통로가 없어 간다강을 건너 길로 걷는다."
+    },
+    {
+      "stations": [
+        "大手町",
+        "東京"
+      ],
+      "outside": false,
+      "source": "https://ja.wikipedia.org/wiki/大手町駅_(東京都)",
+      "note": "지하 통로로 이어진다. 공식 안내는 도자이선만 하므로 다른 노선 승강장에서는 꽤 걷는다."
+    },
+    {
+      "stations": [
+        "市ヶ谷",
+        "市ケ谷"
+      ],
+      "outside": false,
+      "source": "https://web.archive.org/web/2024/https://www.kotsu.metro.tokyo.jp/subway/stations/ichigaya.html",
+      "note": "같은 역인데 표기만 다르다 (도에이 市ヶ谷, 메트로 市ケ谷). 연락 개찰구로 이어진다."
+    },
+    {
+      "stations": [
+        "羽田空港第1・第2ターミナル",
+        "羽田空港第1ターミナル"
+      ],
+      "outside": false,
+      "source": "https://ja.wikipedia.org/wiki/羽田空港第1・第2ターミナル駅",
+      "note": "게이큐역과 모노레일 제1터미널역은 공항 터미널 안 지하 통로로 이어진다."
+    },
+    {
+      "stations": [
+        "羽田空港第1・第2ターミナル",
+        "羽田空港第2ターミナル"
+      ],
+      "outside": false,
+      "source": "https://ja.wikipedia.org/wiki/羽田空港第1・第2ターミナル駅",
+      "note": "게이큐역과 모노레일 제2터미널역은 공항 터미널 안 지하 통로로 이어진다."
+    }
+  ],
+  "separateSameName": [
+    {
+      "station": "蔵前",
+      "note": "아사쿠사선(A)과 오에도선(E) 역이 따로 있어 개찰구를 나와 길로 걷는다. 공식 환승역이다.",
+      "source": "https://ja.wikipedia.org/wiki/蔵前駅"
+    }
+  ]
 }

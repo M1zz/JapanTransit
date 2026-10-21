@@ -41,7 +41,7 @@ struct PlannerView: View {
                 if from != nil, to != nil {
                     if routes.isEmpty {
                         Section {
-                            Text(from?.id == to?.id ? "출발역과 도착역이 같아요" : "이 두 역을 잇는 길을 찾지 못했어요")
+                            Text(emptyMessage)
                                 .foregroundStyle(.secondary)
                         }
                     } else {
@@ -73,6 +73,17 @@ struct PlannerView: View {
                 }
             }
         }
+    }
+
+    private var emptyMessage: String {
+        guard let from, let to else { return "" }
+        if from.id == to.id { return "출발역과 도착역이 같아요" }
+        if network.transferNames(at: from.ja).contains(to.id) {
+            return network.isOutsideTransfer(from: from.ja, to: to.ja)
+                ? "두 역은 가까워요. 개찰구를 나와 걸어서 가세요"
+                : "두 역은 역 안 통로로 이어져 있어요. 걸어서 가세요"
+        }
+        return "이 두 역을 잇는 길을 찾지 못했어요"
     }
 
     private func fieldRow(_ field: Field, place: Place?, placeholder: String, icon: String) -> some View {

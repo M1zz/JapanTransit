@@ -64,10 +64,19 @@ struct RoutePlanner {
 
     private func shortest(from: String, to: String, transferCost: Double) -> Route? {
         let lines = network.lines
-        guard let origin = network.place(from), let dest = network.place(to) else { return nil }
+        guard network.place(from) != nil, network.place(to) != nil else { return nil }
         let lineIndex = Dictionary(lines.enumerated().map { ($1.id, $0) }, uniquingKeysWith: { a, _ in a })
-        let starts = origin.stops.compactMap { s in lineIndex[s.lineID].map { Node(line: $0, index: s.index) } }
-        let goals = Set(dest.stops.compactMap { s in lineIndex[s.lineID].map { Node(line: $0, index: s.index) } })
+        // A station joined by an indoor passage counts as the same place to start
+        // from or arrive at: reaching モノレール 羽田空港第1ターミナル is reaching
+        // 京急 羽田空港第1・第2ターミナル. Street walks (outside) don't.
+        func nodes(around name: String) -> [Node] {
+            network.transferNames(at: name)
+                .filter { $0 == RailNetwork.key(name) || !network.isOutsideTransfer(from: name, to: $0) }
+                .flatMap { network.place($0)?.stops ?? [] }
+                .compactMap { s in lineIndex[s.lineID].map { Node(line: $0, index: s.index) } }
+        }
+        let starts = nodes(around: from)
+        let goals = Set(nodes(around: to))
 
         var dist: [Node: Double] = [:]
         var prev: [Node: Node] = [:]
@@ -90,7 +99,8 @@ struct RoutePlanner {
             // you walk to inside (浜松町 → 大門) for a little more.
             let name = RailNetwork.key(line.stations[n.index].ja)
             for other in network.transferNames(at: name) {
-                let walk = other == name ? 0 : 2.0
+                // Walking to a differently named station, or out on the street, costs more.
+                let walk = (other == name ? 0 : 2.0) + (network.isOutsideTransfer(from: name, to: other) ? 4 : 0)
                 for s in network.place(other)?.stops ?? [] {
                     guard let li = lineIndex[s.lineID], li != n.line || other != name else { continue }
                     out.append((Node(line: li, index: s.index), transferCost + walk))
@@ -124,7 +134,8 @@ struct RoutePlanner {
             cur = p
         }
         path.reverse()
-        return Route(segments: segments(of: path))
+        let segs = segments(of: path)
+        return segs.isEmpty ? nil : Route(segments: segs)
     }
 
     /// Splits a node path into rides: a run of nodes on one line is one segment;

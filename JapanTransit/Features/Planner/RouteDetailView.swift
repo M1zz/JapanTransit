@@ -225,8 +225,12 @@ private struct TransferCard: View {
                 Image(systemName: "arrow.triangle.swap").foregroundStyle(.secondary)
                 Text("\(from.alighting.ko)에서 갈아타요").font(.subheadline.weight(.bold))
             }
-            if from.alighting.ja != to.boarding.ja {
-                Text("역 안에서 걸어서 \(to.boarding.ko)(\(to.boarding.ja))역으로 가요")
+            if RailNetwork.shared.isOutsideTransfer(from: from.alighting.ja, to: to.boarding.ja) {
+                Label("개찰구를 나와 길을 걸어서 \(to.boarding.ko)(\(to.boarding.ja))역으로 가요. 역 밖으로 나가는 게 맞아요",
+                      systemImage: "figure.walk")
+                    .font(.caption.weight(.semibold))
+            } else if from.alighting.ja != to.boarding.ja {
+                Label("역 안 통로로 걸어서 \(to.boarding.ko)(\(to.boarding.ja))역으로 가요", systemImage: "figure.walk")
                     .font(.caption.weight(.semibold))
             }
             if from.line.id == to.line.id {

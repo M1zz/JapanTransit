@@ -129,16 +129,32 @@ final class RailNetwork {
     /// Stations with different names you can walk between inside the station
     /// (浜松町 ↔ 大門, 原宿 ↔ 明治神宮前). From data/transfers.json.
     let walkLinks: [String: [String]]
+    /// Transfers that leave the ticket gates and use the street ("a|b", sorted),
+    /// and same-name stations that are really two separate stations (蔵前).
+    private let outsidePairs: Set<String>
+    private let separateSameName: Set<String>
 
-    init(lines: [RailLine], walkGroups: [[String]] = []) {
+    struct WalkGroup {
+        let stations: [String]
+        let outside: Bool
+    }
+
+    init(lines: [RailLine], walkGroups: [WalkGroup] = [], separateSameName: [String] = []) {
         self.lines = lines
         var links: [String: [String]] = [:]
-        for group in walkGroups.map({ $0.map(Self.key) }) {
-            for name in group {
-                links[name, default: []].append(contentsOf: group.filter { $0 != name })
+        var outside = Set<String>()
+        for group in walkGroups {
+            let names = group.stations.map(Self.key)
+            for name in names {
+                links[name, default: []].append(contentsOf: names.filter { $0 != name })
+                if group.outside {
+                    for other in names where other != name { outside.insert(Self.pair(name, other)) }
+                }
             }
         }
         walkLinks = links
+        outsidePairs = outside
+        self.separateSameName = Set(separateSameName.map(Self.key))
         linesByID = Dictionary(lines.map { ($0.id, $0) }, uniquingKeysWith: { a, _ in a })
 
         var stops: [String: [Place.Stop]] = [:]
@@ -168,19 +184,35 @@ final class RailNetwork {
     }
 
     private convenience init() {
-        self.init(lines: Self.loadBundledLines(), walkGroups: Self.loadBundledWalkGroups())
+        let transfers = Self.loadBundledTransfers()
+        self.init(lines: Self.loadBundledLines(), walkGroups: transfers.groups,
+                  separateSameName: transfers.separateSameName)
     }
 
-    /// data/transfers.json: {"groups": [{"stations": [...], "source": "..."}]}
-    static func loadBundledWalkGroups(bundle: Bundle = .main) -> [[String]] {
+    /// data/transfers.json: {"groups": [{"stations": [...], "outside": bool, "source": "..."}],
+    ///                       "separateSameName": [{"station": "蔵前"}]}
+    static func loadBundledTransfers(bundle: Bundle = .main) -> (groups: [WalkGroup], separateSameName: [String]) {
         struct File: Decodable {
-            struct Group: Decodable { let stations: [String] }
+            struct Group: Decodable { let stations: [String]; let outside: Bool? }
+            struct Separate: Decodable { let station: String }
             let groups: [Group]
+            let separateSameName: [Separate]?
         }
         guard let url = bundle.url(forResource: "transfers", withExtension: "json"),
               let data = try? Data(contentsOf: url),
-              let file = try? JSONDecoder().decode(File.self, from: data) else { return [] }
-        return file.groups.map(\.stations)
+              let file = try? JSONDecoder().decode(File.self, from: data) else { return ([], []) }
+        return (file.groups.map { WalkGroup(stations: $0.stations, outside: $0.outside ?? false) },
+                (file.separateSameName ?? []).map(\.station))
+    }
+
+    private static func pair(_ a: String, _ b: String) -> String {
+        a < b ? "\(a)|\(b)" : "\(b)|\(a)"
+    }
+
+    /// Changing from `a` to `b` means leaving the gates and walking on the street.
+    func isOutsideTransfer(from a: String, to b: String) -> Bool {
+        let ka = Self.key(a), kb = Self.key(b)
+        return ka == kb ? separateSameName.contains(ka) : outsidePairs.contains(Self.pair(ka, kb))
     }
 
     /// Lines in the order riders expect: Tokyo Metro, Toei, JR, others.

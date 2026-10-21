@@ -36,6 +36,13 @@ final class RailDataTests: XCTestCase {
         }
     }
 
+    func testOutsideTransfers() {
+        let n = network
+        XCTAssertTrue(n.isOutsideTransfer(from: "蔵前", to: "蔵前"), "蔵前 는 두 역이 떨어져 있다")
+        XCTAssertFalse(n.isOutsideTransfer(from: "新宿", to: "新宿"))
+        XCTAssertTrue(n.transferNames(at: "市ヶ谷").contains(RailNetwork.key("市ケ谷")))
+    }
+
     func testWalkLinksNameRealStations() {
         for (name, others) in network.walkLinks {
             XCTAssertNotNil(network.place(name), "transfers.json: \(name) 없는 역")
@@ -112,6 +119,14 @@ final class RoutePlannerTests: XCTestCase {
                 XCTAssertLessThan(r.transferCount, first.transferCount, "\(a)→\(b)")
             }
         }
+    }
+
+    func testArrivingAtAPassageLinkedStationIsArriving() throws {
+        // 모노레일로 하네다 제1·제2터미널에 닿으면 게이큐 하네다역까지 한 번 더 타지 않는다.
+        let r = try XCTUnwrap(planner.routes(from: "新宿", to: "羽田空港第1・第2ターミナル").first)
+        let names = RailNetwork.shared.transferNames(at: "羽田空港第1・第2ターミナル")
+        XCTAssertTrue(names.contains(RailNetwork.key(r.segments.last?.alighting.ja ?? "")))
+        XCTAssertLessThanOrEqual(r.transferCount, 1)
     }
 
     func testSameStationHasNoRoute() {
