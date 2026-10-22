@@ -25,8 +25,8 @@ struct PlannerView: View {
         NavigationStack(path: $path) {
             List {
                 Section {
-                    fieldRow(.from, place: from, placeholder: "출발역", icon: "circle")
-                    fieldRow(.to, place: to, placeholder: "도착역", icon: "mappin.circle.fill")
+                    fieldRow(.from, place: from, placeholder: String(localized: "출발역"), icon: "circle")
+                    fieldRow(.to, place: to, placeholder: String(localized: "도착역"), icon: "mappin.circle.fill")
                 } footer: {
                     if from != nil || to != nil {
                         Button {
@@ -68,7 +68,7 @@ struct PlannerView: View {
                 }
             }
             .sheet(item: $picking) { field in
-                StationPickerView(title: field == .from ? "출발역" : "도착역") { place in
+                StationPickerView(title: field == .from ? String(localized: "출발역") : String(localized: "도착역")) { place in
                     if field == .from { fromJa = place.id } else { toJa = place.id }
                 }
             }
@@ -77,13 +77,13 @@ struct PlannerView: View {
 
     private var emptyMessage: String {
         guard let from, let to else { return "" }
-        if from.id == to.id { return "출발역과 도착역이 같아요" }
+        if from.id == to.id { return String(localized: "출발역과 도착역이 같아요") }
         if network.transferNames(at: from.ja).contains(to.id) {
             return network.isOutsideTransfer(from: from.ja, to: to.ja)
-                ? "두 역은 가까워요. 개찰구를 나와 걸어서 가세요"
-                : "두 역은 역 안 통로로 이어져 있어요. 걸어서 가세요"
+                ? String(localized: "두 역은 가까워요. 개찰구를 나와 걸어서 가세요")
+                : String(localized: "두 역은 역 안 통로로 이어져 있어요. 걸어서 가세요")
         }
-        return "이 두 역을 잇는 길을 찾지 못했어요"
+        return String(localized: "이 두 역을 잇는 길을 찾지 못했어요")
     }
 
     private func fieldRow(_ field: Field, place: Place?, placeholder: String, icon: String) -> some View {
@@ -104,7 +104,7 @@ struct PlannerView: View {
             .contentShape(Rectangle())
         }
         .buttonStyle(.plain)
-        .accessibilityLabel(place.map { "\(placeholder): \($0.ko)" } ?? "\(placeholder) 고르기")
+        .accessibilityLabel(place.map { "\(placeholder): \($0.ko)" } ?? String(localized: "\(placeholder) 고르기"))
     }
 
     private var tips: some View {
@@ -154,9 +154,9 @@ struct RouteSummaryRow: View {
     }
 
     private var summary: String {
-        var parts = ["\(route.stopCount)정거장"]
-        parts.append(route.transferCount == 0 ? "환승 없음" : "환승 \(route.transferCount)번")
-        if route.operatorChanges > 0 { parts.append("회사가 바뀌어 요금이 따로 붙어요") }
+        var parts = [String(localized: "\(route.stopCount)정거장")]
+        parts.append(route.transferCount == 0 ? String(localized: "환승 없음") : String(localized: "환승 \(route.transferCount)번"))
+        if route.operatorChanges > 0 { parts.append(String(localized: "회사가 바뀌어 요금이 따로 붙어요")) }
         return parts.joined(separator: " · ")
     }
 }

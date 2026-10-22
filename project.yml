@@ -40,7 +40,7 @@ targets:
         CFBundleShortVersionString: $(MARKETING_VERSION)
         CFBundleVersion: $(CURRENT_PROJECT_VERSION)
         CFBundleDevelopmentRegion: en
-        CFBundleLocalizations: [en, ko]
+        CFBundleLocalizations: [en, ko, en-GB, zh-Hans, zh-Hant, ja, ru, es, de, fr, it, pt-BR, th, vi, cs, da, el, fi, id, nb, nl, pl, sv, tr]
         NSCameraUsageDescription: Reads the departure board and train front so we can tell you whether to board.
         NSLocationWhenInUseUsageDescription: Finds the station nearest to you.
         UILaunchScreen: {}

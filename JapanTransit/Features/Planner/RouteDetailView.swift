@@ -32,9 +32,9 @@ struct RouteDetailView: View {
 
     private var header: some View {
         HStack(spacing: 16) {
-            stat("\(route.estimatedMinutes)분", "예상")
-            stat("\(route.stopCount)", "정거장")
-            stat(route.transferCount == 0 ? "없음" : "\(route.transferCount)번", "환승")
+            stat(String(localized: "\(route.estimatedMinutes)분"), String(localized: "예상"))
+            stat("\(route.stopCount)", String(localized: "정거장"))
+            stat(route.transferCount == 0 ? String(localized: "없음") : String(localized: "\(route.transferCount)번"), String(localized: "환승"))
         }
         .frame(maxWidth: .infinity)
         .padding(.vertical, 12)
@@ -54,7 +54,7 @@ struct RouteDetailView: View {
         HStack(spacing: 10) {
             Image(systemName: "mappin.circle.fill").font(.title2).foregroundStyle(.tint)
             if let last = route.segments.last?.alighting {
-                StationTitle(ko: "\(last.ko)에서 내려요", ja: last.ja, codes: [last.code])
+                StationTitle(ko: String(localized: "\(last.ko)에서 내려요"), ja: last.ja, codes: [last.code])
             }
             Spacer()
         }
@@ -82,7 +82,7 @@ private struct SegmentCard: View {
                 Spacer()
             }
 
-            StationTitle(ko: "\(segment.boarding.ko)에서 타요", ja: segment.boarding.ja, codes: [segment.boarding.code])
+            StationTitle(ko: String(localized: "\(segment.boarding.ko)에서 타요"), ja: segment.boarding.ja, codes: [segment.boarding.code])
 
             signBox
 
@@ -133,7 +133,7 @@ private struct SegmentCard: View {
 
     /// 표지판에서 찾을 글자. 일본어를 못 읽어도 모양으로 맞춰 볼 수 있게 크게.
     private var signBox: some View {
-        let numbers = segment.step > 0 ? "역 번호가 커지는 쪽" : "역 번호가 작아지는 쪽"
+        let numbers = segment.step > 0 ? String(localized: "역 번호가 커지는 쪽") : String(localized: "역 번호가 작아지는 쪽")
         let nextCode = segment.stations.count > 1 ? segment.stations[1].code : ""
         return VStack(alignment: .leading, spacing: 6) {
             Text("표지판에서 이 글자를 찾으세요")
@@ -173,8 +173,8 @@ private struct SegmentCard: View {
                         VStack(alignment: .leading, spacing: 1) {
                             Text("\(item.service.signWords.first ?? "") (\(item.service.nameKo))")
                                 .font(.subheadline.weight(.bold))
-                            Text(item.service.isPaid ? "지정석 유료 열차라 일반 표로는 못 타요"
-                                 : item.ok ? "타도 돼요. 두 역에 다 서요" : skipText(item.service))
+                            Text(item.service.isPaid ? String(localized: "지정석 유료 열차라 일반 표로는 못 타요")
+                                 : item.ok ? String(localized: "타도 돼요. 두 역에 다 서요") : skipText(item.service))
                                 .font(.caption)
                                 .foregroundStyle(.secondary)
                         }
@@ -193,7 +193,7 @@ private struct SegmentCard: View {
 
     private func skipText(_ s: RailService) -> String {
         let skipped = [segment.boarding, segment.alighting].filter { !s.stops.contains($0.ja) }.map(\.ko)
-        return "타지 마세요. \(skipped.joined(separator: ", "))에 서지 않아요"
+        return String(localized: "타지 마세요. \(skipped.joined(separator: ", "))에 서지 않아요")
     }
 }
 

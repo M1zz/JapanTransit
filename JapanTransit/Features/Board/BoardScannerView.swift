@@ -77,28 +77,28 @@ struct BoardScannerView: View {
 
     @ViewBuilder private var verdictCard: some View {
         if camera.denied {
-            card(icon: "video.slash.fill", title: "카메라 권한이 필요해요",
-                 detail: "설정 ▸ 일본길찾기 ▸ 카메라를 켜 주세요", color: .orange)
+            card(icon: "video.slash.fill", title: String(localized: "카메라 권한이 필요해요"),
+                 detail: String(localized: "설정 ▸ 일본길찾기 ▸ 카메라를 켜 주세요"), color: .orange)
         } else {
             switch model.verdict {
             case .board(let matched):
-                card(icon: "checkmark.circle.fill", title: "타세요",
-                     detail: reading(matched).map { "\(matched) (\($0)) 방향이 맞아요" } ?? "\(matched) 방향이 맞아요",
+                card(icon: "checkmark.circle.fill", title: String(localized: "타세요"),
+                     detail: reading(matched).map { String(localized: "\(matched) (\($0)) 방향이 맞아요") } ?? String(localized: "\(matched) 방향이 맞아요"),
                      color: .green)
             case .wrongDirection(let matched):
-                card(icon: "xmark.octagon.fill", title: "반대 방향이에요",
-                     detail: reading(matched).map { "\(matched) (\($0)) 쪽으로 가는 열차예요" } ?? "\(matched) 쪽으로 가는 열차예요",
+                card(icon: "xmark.octagon.fill", title: String(localized: "반대 방향이에요"),
+                     detail: reading(matched).map { String(localized: "\(matched) (\($0)) 쪽으로 가는 열차예요") } ?? String(localized: "\(matched) 쪽으로 가는 열차예요"),
                      color: .red)
             case .skipsStop(let word, let station):
-                card(icon: "forward.fill", title: "이 열차는 타지 마세요",
-                     detail: "\(word) 열차는 \(reading(station) ?? station)에서 탈 수 없어요. 各停(각역정차)을 타세요",
+                card(icon: "forward.fill", title: String(localized: "이 열차는 타지 마세요"),
+                     detail: String(localized: "\(word) 열차는 \(reading(station) ?? station)에서 탈 수 없어요. 各停(각역정차)을 타세요"),
                      color: .red)
             case .ambiguous:
-                card(icon: "questionmark.circle", title: "양쪽 역 이름이 다 보여요",
-                     detail: "열차 앞의 행선지나 전광판을 비춰 주세요", color: .white)
+                card(icon: "questionmark.circle", title: String(localized: "양쪽 역 이름이 다 보여요"),
+                     detail: String(localized: "열차 앞의 행선지나 전광판을 비춰 주세요"), color: .white)
             case nil:
-                card(icon: "viewfinder", title: "행선지를 찾는 중…",
-                     detail: "\(segment.headingStations[0].ja) 같은 글자가 화면에 들어오게 해 주세요", color: .white)
+                card(icon: "viewfinder", title: String(localized: "행선지를 찾는 중…"),
+                     detail: String(localized: "\(segment.headingStations[0].ja) 같은 글자가 화면에 들어오게 해 주세요"), color: .white)
             }
         }
     }

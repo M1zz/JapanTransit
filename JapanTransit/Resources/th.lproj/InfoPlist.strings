@@ -1,0 +1,2 @@
+"NSCameraUsageDescription" = "อ่านป้ายแสดงเวลาและป้ายหน้ารถไฟ เพื่อบอกว่าขึ้นรถไฟขบวนนั้นได้หรือไม่";
+"NSLocationWhenInUseUsageDescription" = "ใช้ค้นหาสถานีที่ใกล้คุณที่สุด";

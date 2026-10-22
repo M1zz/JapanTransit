@@ -1,0 +1,2 @@
+"NSCameraUsageDescription" = "读取电子显示屏和列车车头的显示，告诉您能否乘坐这趟列车。";
+"NSLocationWhenInUseUsageDescription" = "用于查找离您最近的车站。";

@@ -87,7 +87,7 @@ struct StationPickerView: View {
             Button {
                 location.locate()
             } label: {
-                Label(location.state == .failed ? "다시 찾기: 내 근처 역" : "내 근처 역 찾기", systemImage: "location")
+                Label(location.state == .failed ? String(localized: "다시 찾기: 내 근처 역") : String(localized: "내 근처 역 찾기"), systemImage: "location")
             }
         }
     }

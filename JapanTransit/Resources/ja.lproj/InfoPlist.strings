@@ -1,0 +1,2 @@
+"NSCameraUsageDescription" = "電光掲示板や列車前面の表示を読み取り、その列車に乗ってよいかをお知らせします。";
+"NSLocationWhenInUseUsageDescription" = "いちばん近い駅を探すために使います。";

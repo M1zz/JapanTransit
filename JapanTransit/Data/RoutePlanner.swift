@@ -58,8 +58,8 @@ struct RoutePlanner {
     /// Label for a route in a list sorted by `routes(from:to:)`: the first is the
     /// pick; a later one earns "환승 적게" only if it really has fewer transfers.
     static func label(for route: Route, in routes: [Route]) -> String {
-        guard let first = routes.first, route != first else { return "추천" }
-        return route.transferCount < first.transferCount ? "환승 적게" : "다른 길"
+        guard let first = routes.first, route != first else { return String(localized: "추천") }
+        return route.transferCount < first.transferCount ? String(localized: "환승 적게") : String(localized: "다른 길")
     }
 
     private func shortest(from: String, to: String, transferCost: Double) -> Route? {
@@ -202,7 +202,7 @@ extension RouteSegment {
     /// "上野・池袋方面" — the text to look for on the sign.
     var headingSign: String { headingStations.map(\.ja).joined(separator: "・") + "方面" }
     /// "우에노·이케부쿠로 방면"
-    var headingKo: String { headingStations.map(\.ko).joined(separator: "·") + " 방면" }
+    var headingKo: String { String(localized: "\(headingStations.map(\.ko).joined(separator: "·")) 방면") }
 
     /// Loop direction word on the sign (外回り / 内回り), if the line has one.
     var loopSign: String? {

@@ -60,15 +60,15 @@ struct LineDetailView: View {
                 Section("역을 건너뛰는 열차") {
                     ForEach(line.skippingServices, id: \.id) { s in
                         VStack(alignment: .leading, spacing: 2) {
-                            Text("\(s.signWords.first ?? "") (\(s.nameKo))\(s.isPaid ? " · 지정석 유료" : "")")
+                            Text("\(s.signWords.first ?? "") (\(s.nameKo))\(s.isPaid ? String(localized: " · 지정석 유료") : "")")
                                 .font(.subheadline.weight(.bold))
-                            Text("서는 역: " + s.stops.map { network.place($0)?.ko ?? $0 }.joined(separator: ", "))
+                            Text(String(localized: "서는 역: \(s.stops.map { network.place($0)?.ko ?? $0 }.joined(separator: ", "))"))
                                 .font(.caption).foregroundStyle(.secondary)
                         }
                     }
                 }
             }
-            Section(line.circular ? "순환선" : "\(line.stations.first?.ko ?? "") ↔ \(line.stations.last?.ko ?? "")") {
+            Section(line.circular ? String(localized: "순환선") : "\(line.stations.first?.ko ?? "") ↔ \(line.stations.last?.ko ?? "")") {
                 ForEach(line.stations, id: \.code) { s in
                     HStack(spacing: 10) {
                         Text(s.code)
