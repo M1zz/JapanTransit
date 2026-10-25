@@ -1,0 +1,136 @@
+{
+  "id": "osaka.Y",
+  "region": "osaka",
+  "operator": "Osaka Metro",
+  "operatorKo": "오사카 메트로",
+  "nameJa": "四つ橋線",
+  "nameKo": "요쓰바시선",
+  "nameEn": "Yotsubashi Line",
+  "color": "#0078BA",
+  "circular": false,
+  "stations": [
+    {
+      "code": "Y11",
+      "ja": "西梅田",
+      "jaSub": "ヒルトンプラザ前",
+      "kana": "にしうめだ",
+      "ko": "니시우메다",
+      "koSource": "wiki",
+      "en": "Nishi-Umeda",
+      "lat": 34.699583,
+      "lng": 135.495667
+    },
+    {
+      "code": "Y12",
+      "ja": "肥後橋",
+      "kana": "ひごばし",
+      "ko": "히고바시",
+      "koSource": "wiki",
+      "en": "Higobashi",
+      "lat": 34.691353,
+      "lng": 135.496386
+    },
+    {
+      "code": "Y13",
+      "ja": "本町",
+      "kana": "ほんまち",
+      "ko": "혼마치",
+      "koSource": "wiki",
+      "en": "Hommachi",
+      "lat": 34.681936,
+      "lng": 135.498983
+    },
+    {
+      "code": "Y14",
+      "ja": "四ツ橋",
+      "kana": "よつばし",
+      "ko": "요쓰바시",
+      "koSource": "wiki",
+      "en": "Yotsubashi",
+      "lat": 34.674111,
+      "lng": 135.496781
+    },
+    {
+      "code": "Y15",
+      "ja": "なんば",
+      "kana": "なんば",
+      "ko": "난바",
+      "koSource": "wiki",
+      "en": "Namba",
+      "lat": 34.666317,
+      "lng": 135.500314
+    },
+    {
+      "code": "Y16",
+      "ja": "大国町",
+      "kana": "だいこくちょう",
+      "ko": "다이코쿠초",
+      "koSource": "wiki",
+      "en": "Daikokucho",
+      "lat": 34.656072,
+      "lng": 135.497803
+    },
+    {
+      "code": "Y17",
+      "ja": "花園町",
+      "kana": "はなぞのちょう",
+      "ko": "하나조노초",
+      "koSource": "wiki",
+      "en": "Hanazonocho",
+      "lat": 34.644369,
+      "lng": 135.496636
+    },
+    {
+      "code": "Y18",
+      "ja": "岸里",
+      "kana": "きしのさと",
+      "ko": "기시노사토",
+      "koSource": "wiki",
+      "en": "Kishinosato",
+      "lat": 34.634369,
+      "lng": 135.493858
+    },
+    {
+      "code": "Y19",
+      "ja": "玉出",
+      "kana": "たまで",
+      "ko": "다마데",
+      "koSource": "wiki",
+      "en": "Tamade",
+      "lat": 34.623619,
+      "lng": 135.490361
+    },
+    {
+      "code": "Y20",
+      "ja": "北加賀屋",
+      "kana": "きたかがや",
+      "ko": "기타카가야",
+      "koSource": "wiki",
+      "en": "Kitakagaya",
+      "lat": 34.621364,
+      "lng": 135.479464
+    },
+    {
+      "code": "Y21",
+      "ja": "住之江公園",
+      "kana": "すみのえこうえん",
+      "ko": "스미노에코엔",
+      "koSource": "wiki",
+      "en": "Suminoekoen",
+      "lat": 34.609167,
+      "lng": 135.473056
+    }
+  ],
+  "throughTermini": {
+    "start": [],
+    "end": []
+  },
+  "services": [],
+  "sources": [
+    "https://ja.wikipedia.org/wiki/Osaka Metro四つ橋線",
+    "https://subway.osakametro.co.jp/station_guide/",
+    "https://subway.osakametro.co.jp/en/station_guide/",
+    "https://ja.wikipedia.org/w/api.php (langlinks/coordinates)"
+  ],
+  "notes": "他社直通なし。路線名は「四つ橋線」、Y14の駅名は「四ツ橋」（表記が異なる）。Y15「なんば」は公式・旅客案内表記（正式名 難波）。Wikipediaによれば四つ橋線本町駅ホームの駅名標には副駅名「船場西」が付いていないため Y13 には jaSub を付けていない。Y11 西梅田の副名「ヒルトンプラザ前」はWikipedia駅一覧の記載によるもので駅名標での表示は未確認。 駅名(ja)・駅番号・英語表記はOsaka Metro公式「路線情報」ページ（日本語版・英語版）の駅一覧の表記に従った。韓国語名は日本語版Wikipedia各駅記事の韓国語版リンク先記事名から「역」と曖昧さ回避括弧を除いたもの。kanaは日本語版Wikipedia各駅記事冒頭の読み。座標は日本語版Wikipedia各駅記事の座標で、複数事業者・複数路線の駅では可能な限りOsaka Metro（該当路線）側の座標を選んだ（ホーム位置ではなく駅代表点）。jaSubは日本語版Wikipedia路線記事の駅一覧に括弧書きされた副駅名で、実際の駅名標に必ず表示されているかは個別確認していない。全列車各駅停車（種別による通過駅なし）。"
+}

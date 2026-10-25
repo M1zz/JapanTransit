@@ -1,0 +1,125 @@
+{
+  "id": "osaka.P",
+  "region": "osaka",
+  "operator": "Osaka Metro",
+  "operatorKo": "오사카 메트로",
+  "nameJa": "南港ポートタウン線",
+  "nameKo": "난코 포트타운선",
+  "nameEn": "Nanko Port Town Line",
+  "color": "#00A0DE",
+  "circular": false,
+  "stations": [
+    {
+      "code": "P09",
+      "ja": "コスモスクエア",
+      "kana": "こすもすくえあ",
+      "ko": "코스모스퀘어",
+      "koSource": "wiki",
+      "en": "Cosmosquare",
+      "lat": 34.642608,
+      "lng": 135.412197
+    },
+    {
+      "code": "P10",
+      "ja": "トレードセンター前",
+      "kana": "とれーどせんたーまえ",
+      "ko": "트레이드 센터마에",
+      "koSource": "wiki",
+      "en": "Trade Center-mae",
+      "lat": 34.63875,
+      "lng": 135.412092
+    },
+    {
+      "code": "P11",
+      "ja": "中ふ頭",
+      "kana": "なかふとう",
+      "ko": "나카후토",
+      "koSource": "wiki",
+      "en": "Nakafuto",
+      "lat": 34.634028,
+      "lng": 135.417478
+    },
+    {
+      "code": "P12",
+      "ja": "ポートタウン西",
+      "kana": "ぽーとたうんにし",
+      "ko": "포트 타운 니시",
+      "koSource": "wiki",
+      "en": "Port Town-nishi",
+      "lat": 34.630914,
+      "lng": 135.422847
+    },
+    {
+      "code": "P13",
+      "ja": "ポートタウン東",
+      "kana": "ぽーとたうんひがし",
+      "ko": "포트 타운 히가시",
+      "koSource": "wiki",
+      "en": "Port Town-higashi",
+      "lat": 34.630914,
+      "lng": 135.429167
+    },
+    {
+      "code": "P14",
+      "ja": "フェリーターミナル",
+      "kana": "ふぇりーたーみなる",
+      "ko": "페리 터미널",
+      "koSource": "wiki",
+      "en": "Ferry Terminal",
+      "lat": 34.619356,
+      "lng": 135.434892
+    },
+    {
+      "code": "P15",
+      "ja": "南港東",
+      "kana": "なんこうひがし",
+      "ko": "난코히가시",
+      "koSource": "wiki",
+      "en": "Nanko-higashi",
+      "lat": 34.61385,
+      "lng": 135.438686
+    },
+    {
+      "code": "P16",
+      "ja": "南港口",
+      "kana": "なんこうぐち",
+      "ko": "난코구치",
+      "koSource": "wiki",
+      "en": "Nanko-guchi",
+      "lat": 34.613825,
+      "lng": 135.445994
+    },
+    {
+      "code": "P17",
+      "ja": "平林",
+      "kana": "ひらばやし",
+      "ko": "히라바야시",
+      "koSource": "wiki",
+      "en": "Hirabayashi",
+      "lat": 34.610697,
+      "lng": 135.458656
+    },
+    {
+      "code": "P18",
+      "ja": "住之江公園",
+      "kana": "すみのえこうえん",
+      "ko": "스미노에코엔",
+      "koSource": "wiki",
+      "en": "Suminoekoen",
+      "lat": 34.609167,
+      "lng": 135.473056
+    }
+  ],
+  "throughTermini": {
+    "start": [],
+    "end": []
+  },
+  "services": [],
+  "sources": [
+    "https://ja.wikipedia.org/wiki/Osaka Metro南港ポートタウン線",
+    "https://subway.osakametro.co.jp/station_guide/",
+    "https://subway.osakametro.co.jp/en/station_guide/",
+    "https://ja.wikipedia.org/w/api.php (langlinks/coordinates)"
+  ],
+  "notes": "愛称「ニュートラム」（新交通システム・無人運転）。他社直通なし。駅番号はP09 コスモスクエア〜P18 住之江公園（コスモスクエアは中央線C10、住之江公園は四つ橋線Y21と同じ駅名）。路線色はWikipedia路線記事の路線色 #00a0de（資料により #00B2E5 とするものもあり未確定）。英語表記はOsaka Metro英語版サイトの駅名（Trade Center-mae 等）。 駅名(ja)・駅番号・英語表記はOsaka Metro公式「路線情報」ページ（日本語版・英語版）の駅一覧の表記に従った。韓国語名は日本語版Wikipedia各駅記事の韓国語版リンク先記事名から「역」と曖昧さ回避括弧を除いたもの。kanaは日本語版Wikipedia各駅記事冒頭の読み。座標は日本語版Wikipedia各駅記事の座標で、複数事業者・複数路線の駅では可能な限りOsaka Metro（該当路線）側の座標を選んだ（ホーム位置ではなく駅代表点）。jaSubは日本語版Wikipedia路線記事の駅一覧に括弧書きされた副駅名で、実際の駅名標に必ず表示されているかは個別確認していない。全列車各駅停車（種別による通過駅なし）。"
+}

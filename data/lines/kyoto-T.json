@@ -1,0 +1,200 @@
+{
+  "id": "kyoto.T",
+  "region": "kyoto",
+  "operator": "京都市営地下鉄",
+  "operatorKo": "교토 시영 지하철",
+  "nameJa": "東西線",
+  "nameKo": "도자이선",
+  "nameEn": "Tozai Line",
+  "color": "#FF4500",
+  "circular": false,
+  "stations": [
+    {
+      "code": "T01",
+      "ja": "六地蔵",
+      "kana": "ろくじぞう",
+      "ko": "로쿠지조",
+      "koSource": "wiki",
+      "en": "Rokujizo",
+      "lat": 34.933733,
+      "lng": 135.796411
+    },
+    {
+      "code": "T02",
+      "ja": "石田",
+      "kana": "いしだ",
+      "ko": "이시다",
+      "koSource": "wiki",
+      "en": "Ishida",
+      "lat": 34.940569,
+      "lng": 135.803994
+    },
+    {
+      "code": "T03",
+      "ja": "醍醐",
+      "kana": "だいご",
+      "ko": "다이고",
+      "koSource": "wiki",
+      "en": "Daigo",
+      "lat": 34.950858,
+      "lng": 135.810631
+    },
+    {
+      "code": "T04",
+      "ja": "小野",
+      "kana": "おの",
+      "ko": "오노",
+      "koSource": "wiki",
+      "en": "Ono",
+      "lat": 34.961217,
+      "lng": 135.812731
+    },
+    {
+      "code": "T05",
+      "ja": "椥辻",
+      "kana": "なぎつじ",
+      "ko": "나기쓰지",
+      "koSource": "wiki",
+      "en": "Nagitsuji",
+      "lat": 34.972714,
+      "lng": 135.814886
+    },
+    {
+      "code": "T06",
+      "ja": "東野",
+      "kana": "ひがしの",
+      "ko": "히가시노",
+      "koSource": "wiki",
+      "en": "Higashino",
+      "lat": 34.982208,
+      "lng": 135.816761
+    },
+    {
+      "code": "T07",
+      "ja": "山科",
+      "kana": "やましな",
+      "ko": "야마시나",
+      "koSource": "wiki",
+      "en": "Yamashina",
+      "lat": 34.991219,
+      "lng": 135.817342
+    },
+    {
+      "code": "T08",
+      "ja": "御陵",
+      "kana": "みささぎ",
+      "ko": "미사사기",
+      "koSource": "wiki",
+      "en": "Misasagi",
+      "lat": 34.996122,
+      "lng": 135.801622
+    },
+    {
+      "code": "T09",
+      "ja": "蹴上",
+      "kana": "けあげ",
+      "ko": "게아게",
+      "koSource": "wiki",
+      "en": "Keage",
+      "lat": 35.008036,
+      "lng": 135.790228
+    },
+    {
+      "code": "T10",
+      "ja": "東山",
+      "kana": "ひがしやま",
+      "ko": "히가시야마",
+      "koSource": "wiki",
+      "en": "Higashiyama",
+      "lat": 35.009419,
+      "lng": 135.779708
+    },
+    {
+      "code": "T11",
+      "ja": "三条京阪",
+      "kana": "さんじょうけいはん",
+      "ko": "산조케이한",
+      "koSource": "wiki",
+      "en": "Sanjo Keihan",
+      "lat": 35.009278,
+      "lng": 135.77375
+    },
+    {
+      "code": "T12",
+      "ja": "京都市役所前",
+      "jaSub": "河原町御池",
+      "kana": "きょうとしやくしょまえ",
+      "ko": "교토시야쿠쇼마에",
+      "koSource": "wiki",
+      "en": "Kyoto Shiyakusho-mae",
+      "lat": 35.011003,
+      "lng": 135.768828
+    },
+    {
+      "code": "T13",
+      "ja": "烏丸御池",
+      "kana": "からすまおいけ",
+      "ko": "가라스마오이케",
+      "koSource": "wiki",
+      "en": "Karasuma Oike",
+      "lat": 35.010517,
+      "lng": 135.759639
+    },
+    {
+      "code": "T14",
+      "ja": "二条城前",
+      "kana": "にじょうじょうまえ",
+      "ko": "니조조마에",
+      "koSource": "wiki",
+      "en": "Nijojo-mae",
+      "lat": 35.011892,
+      "lng": 135.750475
+    },
+    {
+      "code": "T15",
+      "ja": "二条",
+      "kana": "にじょう",
+      "ko": "니조",
+      "koSource": "wiki",
+      "en": "Nijo",
+      "lat": 35.011878,
+      "lng": 135.741314
+    },
+    {
+      "code": "T16",
+      "ja": "西大路御池",
+      "kana": "にしおおじおいけ",
+      "ko": "니시오지오이케",
+      "koSource": "wiki",
+      "en": "Nishioji-Oike",
+      "lat": 35.010933,
+      "lng": 135.730464
+    },
+    {
+      "code": "T17",
+      "ja": "太秦天神川",
+      "kana": "うずまさてんじんがわ",
+      "ko": "우즈마사텐진가와",
+      "koSource": "wiki",
+      "en": "Uzumasa Tenjingawa",
+      "lat": 35.010808,
+      "lng": 135.715558
+    }
+  ],
+  "throughTermini": {
+    "start": [],
+    "end": []
+  },
+  "junctionTermini": {
+    "atStation": "御陵",
+    "towardStart": [
+      "びわ湖浜大津"
+    ]
+  },
+  "services": [],
+  "sources": [
+    "https://ja.wikipedia.org/wiki/京都市営地下鉄東西線",
+    "https://ja.wikipedia.org/wiki/京阪京津線"
+  ],
+  "notes": "京阪京津線の列車がびわ湖浜大津から御陵（T08、途中駅）で東西線に入り太秦天神川まで乗り入れる片乗り入れ。交通局車は六地蔵–太秦天神川間のみで京津線に入らない。そのため太秦天神川方面から来るびわ湖浜大津行きは御陵で東西線を離れ、山科・六地蔵方面へは行かない（junctionTermini.towardStart）。京津線直通列車は平日朝・土休日6時台までの京都市役所前発着を除き太秦天神川発着（2018年3月17日改正以降、昼間20分間隔）。深夜のびわ湖浜大津発御陵行き、四宮–びわ湖浜大津間の線内列車は東西線の行先表示に影響しない。全列車各駅停車。英語表記: 太秦天神川は路線図では Uzumasa-Tenjingawa だが駅名標はハイフンなし（Wikipedia注記）なので駅名標に合わせた。京都市役所前の副駅名〈河原町御池〉は jaSub。路線色 #FF4500 は交通局路線図の「朱」をWikipediaがHEX化したもの、公式HEXは未確認。座標は日本語版Wikipedia各駅記事の座標（複数事業者の駅は当該地下鉄側の座標を選択）。韓国語名は日本語版記事の韓国語版リンク先記事名から「역」と曖昧さ回避括弧を除いたもの。かなは各駅記事インフォボックスのよみがな。"
+}

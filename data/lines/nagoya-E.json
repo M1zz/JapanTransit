@@ -1,0 +1,104 @@
+{
+  "id": "nagoya.E",
+  "region": "nagoya",
+  "operator": "名古屋市営地下鉄",
+  "operatorKo": "나고야 시영 지하철",
+  "nameJa": "名港線",
+  "nameKo": "메이코선",
+  "nameEn": "Meiko Line",
+  "color": "#B074D6",
+  "circular": false,
+  "stations": [
+    {
+      "code": "E01",
+      "ja": "金山",
+      "kana": "かなやま",
+      "ko": "가나야마",
+      "koSource": "wiki",
+      "en": "Kanayama",
+      "lat": 35.143028,
+      "lng": 136.900833
+    },
+    {
+      "code": "E02",
+      "ja": "日比野",
+      "kana": "ひびの",
+      "ko": "히비노",
+      "koSource": "wiki",
+      "en": "Hibino",
+      "lat": 35.132778,
+      "lng": 136.893139,
+      "jaSub": "中央卸売市場"
+    },
+    {
+      "code": "E03",
+      "ja": "六番町",
+      "kana": "ろくばんちょう",
+      "ko": "로쿠반초",
+      "koSource": "wiki",
+      "en": "Rokuban-cho",
+      "lat": 35.124167,
+      "lng": 136.888389
+    },
+    {
+      "code": "E04",
+      "ja": "東海通",
+      "kana": "とうかいどおり",
+      "ko": "도카이도리",
+      "koSource": "wiki",
+      "en": "Tokai-dori",
+      "lat": 35.113333,
+      "lng": 136.886056
+    },
+    {
+      "code": "E05",
+      "ja": "港区役所",
+      "kana": "みなとくやくしょ",
+      "ko": "미나토쿠야쿠쇼",
+      "koSource": "wiki",
+      "en": "Minato Kuyakusho",
+      "lat": 35.106333,
+      "lng": 136.884667
+    },
+    {
+      "code": "E06",
+      "ja": "築地口",
+      "kana": "つきじぐち",
+      "ko": "쓰키지구치",
+      "koSource": "wiki",
+      "en": "Tsukiji-guchi",
+      "lat": 35.099667,
+      "lng": 136.883278
+    },
+    {
+      "code": "E07",
+      "ja": "名古屋港",
+      "kana": "なごやこう",
+      "ko": "나고야코",
+      "koSource": "wiki",
+      "en": "Nagoyako",
+      "lat": 35.093056,
+      "lng": 136.881944
+    }
+  ],
+  "throughTermini": {
+    "start": [],
+    "end": []
+  },
+  "services": [],
+  "sources": [
+    "https://ja.wikipedia.org/wiki/名古屋市営地下鉄名港線",
+    "https://ja.wikipedia.org/w/api.php (coordinates/langlinks/infobox)",
+    "https://ja.wikipedia.org/wiki/名古屋市営地下鉄名城線"
+  ],
+  "notes": "全列車各駅停車。日中は名城線に直通し名古屋港⇔大曽根（栄経由）が基本、ラッシュ時は名城線ナゴヤドーム前矢田以遠・右回り直通もあり。早朝・夜間は金山折り返し（行先表示「金山（名城線金山のりかえ）」）。駅番号: 金山は名港線としてE01（Wikipedia駅一覧の表記）。 座標は日本語版Wikipedia各駅記事の座標（複数事業者の駅は記事代表座標）。韓国語名は日本語版記事の韓国語版リンク先記事名から「역」と曖昧さ回避括弧を除いたもの。色は日本語版Wikipediaの路線インフォボックス値（名古屋市交通局旅客サインマニュアル準拠とされる）で公式HEXの直接確認はしていない。jaSub（副駅名）は日本語版Wikipedia駅記事インフォボックス「副駅名」の値で、現地サイン表記との照合はしていない。",
+  "continuations": [
+    {
+      "step": -1,
+      "atStation": "金山",
+      "intoLine": "nagoya.M",
+      "intoStep": 1,
+      "note": "名古屋港 발 열차는 金山 에서 끝나지 않고 名城線 우회전(번호 증가) 방향 栄·大曽根 쪽으로 직진(낮 시간 大曽根行き). 이른 아침·밤에는 金山 종착."
+    }
+  ]
+}

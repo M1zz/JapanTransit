@@ -1,0 +1,123 @@
+{
+  "id": "yokohama.G",
+  "region": "yokohama",
+  "operator": "横浜市交通局",
+  "operatorKo": "요코하마시 교통국",
+  "nameJa": "グリーンライン",
+  "nameKo": "그린라인",
+  "nameEn": "Green Line",
+  "color": "#048D58",
+  "circular": false,
+  "stations": [
+    {
+      "code": "G01",
+      "ja": "中山",
+      "kana": "なかやま",
+      "ko": "나카야마",
+      "koSource": "wiki",
+      "en": "Nakayama",
+      "lat": 35.514861,
+      "lng": 139.540278
+    },
+    {
+      "code": "G02",
+      "ja": "川和町",
+      "kana": "かわわちょう",
+      "ko": "가와와초",
+      "koSource": "wiki",
+      "en": "Kawawacho",
+      "lat": 35.5285,
+      "lng": 139.549278
+    },
+    {
+      "code": "G03",
+      "ja": "都筑ふれあいの丘",
+      "kana": "つづきふれあいのおか",
+      "ko": "쓰즈키후레아이노오카",
+      "koSource": "wiki",
+      "en": "Tsuzuki-fureainooka",
+      "lat": 35.536528,
+      "lng": 139.56125
+    },
+    {
+      "code": "G04",
+      "ja": "センター南",
+      "kana": "せんたーみなみ",
+      "ko": "센터 미나미",
+      "koSource": "wiki",
+      "en": "Center Minami",
+      "lat": 35.545556,
+      "lng": 139.574444
+    },
+    {
+      "code": "G05",
+      "ja": "センター北",
+      "kana": "せんたーきた",
+      "ko": "센터 기타",
+      "koSource": "wiki",
+      "en": "Center Kita",
+      "lat": 35.553472,
+      "lng": 139.5785
+    },
+    {
+      "code": "G06",
+      "ja": "北山田",
+      "kana": "きたやまた",
+      "ko": "기타야마타",
+      "koSource": "wiki",
+      "en": "Kita-yamata",
+      "lat": 35.560972,
+      "lng": 139.592583
+    },
+    {
+      "code": "G07",
+      "ja": "東山田",
+      "kana": "ひがしやまた",
+      "ko": "히가시야마타",
+      "koSource": "wiki",
+      "en": "Higashi-yamata",
+      "lat": 35.554111,
+      "lng": 139.6045
+    },
+    {
+      "code": "G08",
+      "ja": "高田",
+      "kana": "たかた",
+      "ko": "다카타",
+      "koSource": "wiki",
+      "en": "Takata",
+      "lat": 35.549611,
+      "lng": 139.620139
+    },
+    {
+      "code": "G09",
+      "ja": "日吉本町",
+      "kana": "ひよしほんちょう",
+      "ko": "히요시혼초",
+      "koSource": "wiki",
+      "en": "Hiyoshi-honcho",
+      "lat": 35.55,
+      "lng": 139.633667
+    },
+    {
+      "code": "G10",
+      "ja": "日吉",
+      "kana": "ひよし",
+      "ko": "히요시",
+      "koSource": "wiki",
+      "en": "Hiyoshi",
+      "lat": 35.553333,
+      "lng": 139.646806
+    }
+  ],
+  "throughTermini": {
+    "start": [],
+    "end": []
+  },
+  "services": [],
+  "sources": [
+    "https://ja.wikipedia.org/wiki/横浜市営地下鉄グリーンライン",
+    "https://ja.wikipedia.org/w/api.php (coordinates/langlinks)"
+  ],
+  "notes": "全列車各駅停車、他社直通なし。座標は日本語版Wikipedia各駅記事の座標（複数事業者駅は当該事業者・路線の座標を優先）。韓国語名は日本語版記事の韓国語版リンク先記事名から「역」と曖昧さ回避括弧を除いたもの。jaSubは日本語版路線記事の駅一覧に記載の副駅名（ネーミングライツを含む。契約更新で変わり得る）。英語名は日本語版Wikipedia各駅記事のローマ字欄からマクロンを除いたもの（駅名標の実際の表記と大文字・ハイフンの細部は未確認）。センター南・センター北はブルーラインと同一駅（同じ座標値）。路線色は日本語版Wikipediaインフォボックスの値（公式HEX未確認）。"
+}

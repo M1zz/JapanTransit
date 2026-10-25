@@ -1,0 +1,236 @@
+{
+  "id": "nagoya.S",
+  "region": "nagoya",
+  "operator": "名古屋市営地下鉄",
+  "operatorKo": "나고야 시영 지하철",
+  "nameJa": "桜通線",
+  "nameKo": "사쿠라도리선",
+  "nameEn": "Sakura-dori Line",
+  "color": "#C92F44",
+  "circular": false,
+  "stations": [
+    {
+      "code": "S01",
+      "ja": "太閤通",
+      "kana": "たいこうどおり",
+      "ko": "다이코도리",
+      "koSource": "wiki",
+      "en": "Taiko-dori",
+      "lat": 35.167556,
+      "lng": 136.873333
+    },
+    {
+      "code": "S02",
+      "ja": "名古屋",
+      "kana": "なごや",
+      "ko": "나고야",
+      "koSource": "wiki",
+      "en": "Nagoya",
+      "lat": 35.170694,
+      "lng": 136.881637
+    },
+    {
+      "code": "S03",
+      "ja": "国際センター",
+      "kana": "こくさいせんたー",
+      "ko": "고쿠사이센터",
+      "koSource": "wiki",
+      "en": "Kokusai Center",
+      "lat": 35.172222,
+      "lng": 136.889444
+    },
+    {
+      "code": "S04",
+      "ja": "丸の内",
+      "kana": "まるのうち",
+      "ko": "마루노우치",
+      "koSource": "wiki",
+      "en": "Marunouchi",
+      "lat": 35.173333,
+      "lng": 136.897222
+    },
+    {
+      "code": "S05",
+      "ja": "久屋大通",
+      "kana": "ひさやおおどおり",
+      "ko": "히사야오도리",
+      "koSource": "wiki",
+      "en": "Hisaya-odori",
+      "lat": 35.173611,
+      "lng": 136.908333
+    },
+    {
+      "code": "S06",
+      "ja": "高岳",
+      "kana": "たかおか",
+      "ko": "다카오카",
+      "koSource": "wiki",
+      "en": "Takaoka",
+      "lat": 35.174167,
+      "lng": 136.915833
+    },
+    {
+      "code": "S07",
+      "ja": "車道",
+      "kana": "くるまみち",
+      "ko": "구루마미치",
+      "koSource": "wiki",
+      "en": "Kurumamichi",
+      "lat": 35.173417,
+      "lng": 136.929667
+    },
+    {
+      "code": "S08",
+      "ja": "今池",
+      "kana": "いまいけ",
+      "ko": "이마이케",
+      "koSource": "wiki",
+      "en": "Imaike",
+      "lat": 35.169861,
+      "lng": 136.937222
+    },
+    {
+      "code": "S09",
+      "ja": "吹上",
+      "kana": "ふきあげ",
+      "ko": "후키아게",
+      "koSource": "wiki",
+      "en": "Fukiage",
+      "lat": 35.158889,
+      "lng": 136.935278
+    },
+    {
+      "code": "S10",
+      "ja": "御器所",
+      "kana": "ごきそ",
+      "ko": "고키소",
+      "koSource": "wiki",
+      "en": "Gokiso",
+      "lat": 35.1494,
+      "lng": 136.9344,
+      "jaSub": "昭和区役所"
+    },
+    {
+      "code": "S11",
+      "ja": "桜山",
+      "kana": "さくらやま",
+      "ko": "사쿠라야마",
+      "koSource": "wiki",
+      "en": "Sakurayama",
+      "lat": 35.14,
+      "lng": 136.933333,
+      "jaSub": "市立大学病院"
+    },
+    {
+      "code": "S12",
+      "ja": "瑞穂区役所",
+      "kana": "みずほくやくしょ",
+      "ko": "미즈호쿠야쿠쇼",
+      "koSource": "wiki",
+      "en": "Mizuho Kuyakusho",
+      "lat": 35.1316,
+      "lng": 136.9344
+    },
+    {
+      "code": "S13",
+      "ja": "瑞穂運動場西",
+      "kana": "みずほうんどうじょうにし",
+      "ko": "미즈호운도조니시",
+      "koSource": "wiki",
+      "en": "Mizuho Undojo Nishi",
+      "lat": 35.125,
+      "lng": 136.935556,
+      "jaSub": "パロマ瑞穂スポーツパーク前"
+    },
+    {
+      "code": "S14",
+      "ja": "新瑞橋",
+      "kana": "あらたまばし",
+      "ko": "아라타마바시",
+      "koSource": "wiki",
+      "en": "Aratama-bashi",
+      "lat": 35.117778,
+      "lng": 136.936667
+    },
+    {
+      "code": "S15",
+      "ja": "桜本町",
+      "kana": "さくらほんまち",
+      "ko": "사쿠라혼마치",
+      "koSource": "wiki",
+      "en": "Sakura-hommachi",
+      "lat": 35.109444,
+      "lng": 136.936944
+    },
+    {
+      "code": "S16",
+      "ja": "鶴里",
+      "kana": "つるさと",
+      "ko": "쓰루사토",
+      "koSource": "wiki",
+      "en": "Tsurusato",
+      "lat": 35.105639,
+      "lng": 136.943806
+    },
+    {
+      "code": "S17",
+      "ja": "野並",
+      "kana": "のなみ",
+      "ko": "노나미",
+      "koSource": "wiki",
+      "en": "Nonami",
+      "lat": 35.102,
+      "lng": 136.9557
+    },
+    {
+      "code": "S18",
+      "ja": "鳴子北",
+      "kana": "なるこきた",
+      "ko": "나루코키타",
+      "koSource": "wiki",
+      "en": "Naruko Kita",
+      "lat": 35.102683,
+      "lng": 136.966208
+    },
+    {
+      "code": "S19",
+      "ja": "相生山",
+      "kana": "あいおいやま",
+      "ko": "아이오이야마",
+      "koSource": "wiki",
+      "en": "Aioiyama",
+      "lat": 35.102544,
+      "lng": 136.976206
+    },
+    {
+      "code": "S20",
+      "ja": "神沢",
+      "kana": "かみさわ",
+      "ko": "가미사와",
+      "koSource": "wiki",
+      "en": "Kamisawa",
+      "lat": 35.098517,
+      "lng": 136.989539
+    },
+    {
+      "code": "S21",
+      "ja": "徳重",
+      "kana": "とくしげ",
+      "ko": "도쿠시게",
+      "koSource": "wiki",
+      "en": "Tokushige",
+      "lat": 35.094489,
+      "lng": 136.99815
+    }
+  ],
+  "throughTermini": {
+    "start": [],
+    "end": []
+  },
+  "services": [],
+  "sources": [
+    "https://ja.wikipedia.org/wiki/名古屋市営地下鉄桜通線",
+    "https://ja.wikipedia.org/w/api.php (coordinates/langlinks/infobox)"
+  ],
+  "notes": "全列車各駅停車。他社直通なし。S01は2023年1月4日に中村区役所駅から太閤通駅へ改称（ユーザー指示の「中村区役所」は旧称）。終電は今池止まり、ほか桜山・野並・今池発着の区間列車あり。 座標は日本語版Wikipedia各駅記事の座標（複数事業者の駅は記事代表座標）。韓国語名は日本語版記事の韓国語版リンク先記事名から「역」と曖昧さ回避括弧を除いたもの。色は日本語版Wikipediaの路線インフォボックス値（名古屋市交通局旅客サインマニュアル準拠とされる）で公式HEXの直接確認はしていない。jaSub（副駅名）は日本語版Wikipedia駅記事インフォボックス「副駅名」の値で、現地サイン表記との照合はしていない。"
+}

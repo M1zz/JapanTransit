@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		013BEF3B3D9AB0B0EDEC43CF /* BoardTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6834FC7750DBADC2BBCE4FFB /* BoardTestView.swift */; };
+		17B695E5EC01F3A86863D645 /* spots in Resources */ = {isa = PBXBuildFile; fileRef = 4805C2DACBC370EF45B5E615 /* spots */; };
 		190426973C769A26A4886452 /* RouteDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 851DA975B85EC05B380C81CD /* RouteDetailView.swift */; };
 		24C0AACD11E27AF8906BD4BC /* LinesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A05DA3DB508FD51BAB1C9721 /* LinesView.swift */; };
 		24E2F3CBF5CFE0881861A705 /* Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD04B12F93CB68B179AD658F /* Components.swift */; };
@@ -16,12 +17,15 @@
 		3626C44DC953F76363EAF43E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CEFEFE97FE01A8EDFF372CE /* Assets.xcassets */; };
 		5C434EFC3E06EFB483CAA36D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 53E8002144E771EFC16356B9 /* InfoPlist.strings */; };
 		6E5587466DE2510907CC344D /* JapanTransitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB5E3ED5C62BBB63BAB1900 /* JapanTransitTests.swift */; };
+		803B9ACA4AD42D1DAA583B03 /* MapPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39308FE571003909DBBA685E /* MapPickerView.swift */; };
 		885E6F19FD9D4B1C240A65CF /* BoardScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61DEC47787F3B2EC4A143B94 /* BoardScannerView.swift */; };
 		8AB7170486823CBF5808025E /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880CB79DCE8264A710FB9FFD /* Theme.swift */; };
 		9E2A0D23E09B2D4FFA6064CD /* transfers.json in Resources */ = {isa = PBXBuildFile; fileRef = 9AD297C0DA128F06454FFD69 /* transfers.json */; };
 		9EEBF98C5C88A1350D6BAA97 /* JapanTransitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE5B2738F3684EC1CEA09BA /* JapanTransitApp.swift */; };
 		A7D32BEA75090FF7A8D9DA40 /* TrainBoardKit in Frameworks */ = {isa = PBXBuildFile; productRef = F8424BD879EA3E144DFE00D1 /* TrainBoardKit */; };
 		AA0DA774D9E6D67C05F0B09D /* TrainBoardKit in Frameworks */ = {isa = PBXBuildFile; productRef = 98FFD97337BFE7C18E380635 /* TrainBoardKit */; };
+		B0B4EF87B935F0F82B2DE805 /* SpotCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CE41959974F98A9AC53FA7 /* SpotCard.swift */; };
+		BE20CB81F8E74AC10AAFA416 /* Spots.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97D5FD6DDC8007D70960F09 /* Spots.swift */; };
 		CB5402643D9C2447B58A8981 /* RailNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD2FD13BED8EDA11DE0C546 /* RailNetwork.swift */; };
 		E4AF358A3758CAA012958D85 /* lines in Resources */ = {isa = PBXBuildFile; fileRef = 4A94026393C4A0B10B50F65A /* lines */; };
 		F4D0065AB9AF85CF206468D4 /* StationPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC4AD5D7938AF9CE492F19A /* StationPickerView.swift */; };
@@ -40,6 +44,8 @@
 /* Begin PBXFileReference section */
 		1D71D3F38002124DE6720827 /* RoutePlanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutePlanner.swift; sourceTree = "<group>"; };
 		1ED0E35625AE1BF7FEBB65EB /* PlannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlannerView.swift; sourceTree = "<group>"; };
+		39308FE571003909DBBA685E /* MapPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapPickerView.swift; sourceTree = "<group>"; };
+		4805C2DACBC370EF45B5E615 /* spots */ = {isa = PBXFileReference; lastKnownFileType = folder; name = spots; path = data/spots; sourceTree = SOURCE_ROOT; };
 		4A94026393C4A0B10B50F65A /* lines */ = {isa = PBXFileReference; lastKnownFileType = folder; name = lines; path = data/lines; sourceTree = SOURCE_ROOT; };
 		4AC73DAD1575021E5193C5D0 /* TrainBoardKit */ = {isa = PBXFileReference; lastKnownFileType = folder; name = TrainBoardKit; path = ../TrainBoardKit; sourceTree = SOURCE_ROOT; };
 		61DEC47787F3B2EC4A143B94 /* BoardScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardScannerView.swift; sourceTree = "<group>"; };
@@ -55,10 +61,12 @@
 		ACE5B2738F3684EC1CEA09BA /* JapanTransitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JapanTransitApp.swift; sourceTree = "<group>"; };
 		AD19A7C529CE64B4C2038316 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		AFD2FD13BED8EDA11DE0C546 /* RailNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RailNetwork.swift; sourceTree = "<group>"; };
+		C97D5FD6DDC8007D70960F09 /* Spots.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spots.swift; sourceTree = "<group>"; };
 		CD04B12F93CB68B179AD658F /* Components.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Components.swift; sourceTree = "<group>"; };
 		DA3740E2F15EA12B1D1F9083 /* Version.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Version.xcconfig; sourceTree = "<group>"; };
 		E1274C58CDE5F77132107958 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		ECB5E3ED5C62BBB63BAB1900 /* JapanTransitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JapanTransitTests.swift; sourceTree = "<group>"; };
+		F8CE41959974F98A9AC53FA7 /* SpotCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotCard.swift; sourceTree = "<group>"; };
 		FC75089C14B69DDBF54624C4 /* JapanTransit.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = JapanTransit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -87,6 +95,7 @@
 			children = (
 				AFD2FD13BED8EDA11DE0C546 /* RailNetwork.swift */,
 				1D71D3F38002124DE6720827 /* RoutePlanner.swift */,
+				C97D5FD6DDC8007D70960F09 /* Spots.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -156,6 +165,7 @@
 			isa = PBXGroup;
 			children = (
 				4A94026393C4A0B10B50F65A /* lines */,
+				4805C2DACBC370EF45B5E615 /* spots */,
 				9AD297C0DA128F06454FFD69 /* transfers.json */,
 			);
 			path = data;
@@ -178,8 +188,10 @@
 		C831678C9D23FD262E2C88F1 /* Planner */ = {
 			isa = PBXGroup;
 			children = (
+				39308FE571003909DBBA685E /* MapPickerView.swift */,
 				1ED0E35625AE1BF7FEBB65EB /* PlannerView.swift */,
 				851DA975B85EC05B380C81CD /* RouteDetailView.swift */,
+				F8CE41959974F98A9AC53FA7 /* SpotCard.swift */,
 				9FC4AD5D7938AF9CE492F19A /* StationPickerView.swift */,
 			);
 			path = Planner;
@@ -323,6 +335,7 @@
 				3626C44DC953F76363EAF43E /* Assets.xcassets in Resources */,
 				5C434EFC3E06EFB483CAA36D /* InfoPlist.strings in Resources */,
 				E4AF358A3758CAA012958D85 /* lines in Resources */,
+				17B695E5EC01F3A86863D645 /* spots in Resources */,
 				9E2A0D23E09B2D4FFA6064CD /* transfers.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -339,10 +352,13 @@
 				24E2F3CBF5CFE0881861A705 /* Components.swift in Sources */,
 				9EEBF98C5C88A1350D6BAA97 /* JapanTransitApp.swift in Sources */,
 				24C0AACD11E27AF8906BD4BC /* LinesView.swift in Sources */,
+				803B9ACA4AD42D1DAA583B03 /* MapPickerView.swift in Sources */,
 				3534EA86D8372C7FAD0F5D42 /* PlannerView.swift in Sources */,
 				CB5402643D9C2447B58A8981 /* RailNetwork.swift in Sources */,
 				190426973C769A26A4886452 /* RouteDetailView.swift in Sources */,
 				24FD7F1D56B3435DF4A55A6D /* RoutePlanner.swift in Sources */,
+				B0B4EF87B935F0F82B2DE805 /* SpotCard.swift in Sources */,
+				BE20CB81F8E74AC10AAFA416 /* Spots.swift in Sources */,
 				F4D0065AB9AF85CF206468D4 /* StationPickerView.swift in Sources */,
 				8AB7170486823CBF5808025E /* Theme.swift in Sources */,
 			);

@@ -1,0 +1,165 @@
+{
+  "id": "osaka.S",
+  "region": "osaka",
+  "operator": "Osaka Metro",
+  "operatorKo": "오사카 메트로",
+  "nameJa": "千日前線",
+  "nameKo": "센니치마에선",
+  "nameEn": "Sennichimae Line",
+  "color": "#E44D93",
+  "circular": false,
+  "stations": [
+    {
+      "code": "S11",
+      "ja": "野田阪神",
+      "kana": "のだはんしん",
+      "ko": "노다한신",
+      "koSource": "wiki",
+      "en": "Nodahanshin",
+      "lat": 34.694608,
+      "lng": 135.474847
+    },
+    {
+      "code": "S12",
+      "ja": "玉川",
+      "kana": "たまがわ",
+      "ko": "다마가와",
+      "koSource": "wiki",
+      "en": "Tamagawa",
+      "lat": 34.689625,
+      "lng": 135.4762
+    },
+    {
+      "code": "S13",
+      "ja": "阿波座",
+      "kana": "あわざ",
+      "ko": "아와자",
+      "koSource": "wiki",
+      "en": "Awaza",
+      "lat": 34.681444,
+      "lng": 135.486361
+    },
+    {
+      "code": "S14",
+      "ja": "西長堀",
+      "kana": "にしながほり",
+      "ko": "니시나가호리",
+      "koSource": "wiki",
+      "en": "Nishinagahori",
+      "lat": 34.675256,
+      "lng": 135.487222
+    },
+    {
+      "code": "S15",
+      "ja": "桜川",
+      "kana": "さくらがわ",
+      "ko": "사쿠라가와",
+      "koSource": "wiki",
+      "en": "Sakuragawa",
+      "lat": 34.66845,
+      "lng": 135.488839
+    },
+    {
+      "code": "S16",
+      "ja": "なんば",
+      "kana": "なんば",
+      "ko": "난바",
+      "koSource": "wiki",
+      "en": "Namba",
+      "lat": 34.666317,
+      "lng": 135.500314
+    },
+    {
+      "code": "S17",
+      "ja": "日本橋",
+      "kana": "にっぽんばし",
+      "ko": "닛폰바시",
+      "koSource": "wiki",
+      "en": "Nippombashi",
+      "lat": 34.667147,
+      "lng": 135.506636
+    },
+    {
+      "code": "S18",
+      "ja": "谷町九丁目",
+      "kana": "たにまちきゅうちょうめ",
+      "ko": "다니마치 9초메",
+      "koSource": "wiki",
+      "en": "Tanimachi 9-chome",
+      "lat": 34.667144,
+      "lng": 135.515842
+    },
+    {
+      "code": "S19",
+      "ja": "鶴橋",
+      "kana": "つるはし",
+      "ko": "쓰루하시",
+      "koSource": "wiki",
+      "en": "Tsuruhashi",
+      "lat": 34.666011,
+      "lng": 135.529864
+    },
+    {
+      "code": "S20",
+      "ja": "今里",
+      "kana": "いまざと",
+      "ko": "이마자토",
+      "koSource": "wiki",
+      "en": "Imazato",
+      "lat": 34.668658,
+      "lng": 135.544289
+    },
+    {
+      "code": "S21",
+      "ja": "新深江",
+      "kana": "しんふかえ",
+      "ko": "신후카에",
+      "koSource": "wiki",
+      "en": "Shin-Fukae",
+      "lat": 34.668156,
+      "lng": 135.553836
+    },
+    {
+      "code": "S22",
+      "ja": "小路",
+      "kana": "しょうじ",
+      "ko": "쇼지",
+      "koSource": "wiki",
+      "en": "Shoji",
+      "lat": 34.661531,
+      "lng": 135.556244
+    },
+    {
+      "code": "S23",
+      "ja": "北巽",
+      "kana": "きたたつみ",
+      "ko": "기타타쓰미",
+      "koSource": "wiki",
+      "en": "Kita-Tatsumi",
+      "lat": 34.652981,
+      "lng": 135.554964
+    },
+    {
+      "code": "S24",
+      "ja": "南巽",
+      "kana": "みなみたつみ",
+      "ko": "미나미타쓰미",
+      "koSource": "wiki",
+      "en": "Minami-Tatsumi",
+      "lat": 34.643261,
+      "lng": 135.553297
+    }
+  ],
+  "throughTermini": {
+    "start": [],
+    "end": []
+  },
+  "services": [],
+  "sources": [
+    "https://ja.wikipedia.org/wiki/Osaka Metro千日前線",
+    "https://subway.osakametro.co.jp/station_guide/",
+    "https://subway.osakametro.co.jp/en/station_guide/",
+    "https://ja.wikipedia.org/w/api.php (langlinks/coordinates)"
+  ],
+  "notes": "他社直通なし。S16「なんば」は公式・旅客案内表記（正式名 難波）。 駅名(ja)・駅番号・英語表記はOsaka Metro公式「路線情報」ページ（日本語版・英語版）の駅一覧の表記に従った。韓国語名は日本語版Wikipedia各駅記事の韓国語版リンク先記事名から「역」と曖昧さ回避括弧を除いたもの。kanaは日本語版Wikipedia各駅記事冒頭の読み。座標は日本語版Wikipedia各駅記事の座標で、複数事業者・複数路線の駅では可能な限りOsaka Metro（該当路線）側の座標を選んだ（ホーム位置ではなく駅代表点）。jaSubは日本語版Wikipedia路線記事の駅一覧に括弧書きされた副駅名で、実際の駅名標に必ず表示されているかは個別確認していない。全列車各駅停車（種別による通過駅なし）。"
+}

@@ -1,0 +1,321 @@
+{
+  "id": "nagoya.M",
+  "region": "nagoya",
+  "operator": "名古屋市営地下鉄",
+  "operatorKo": "나고야 시영 지하철",
+  "nameJa": "名城線",
+  "nameKo": "메이조선",
+  "nameEn": "Meijo Line",
+  "color": "#B074D6",
+  "circular": true,
+  "stations": [
+    {
+      "code": "M01",
+      "ja": "金山",
+      "kana": "かなやま",
+      "ko": "가나야마",
+      "koSource": "wiki",
+      "en": "Kanayama",
+      "lat": 35.143028,
+      "lng": 136.900833
+    },
+    {
+      "code": "M02",
+      "ja": "東別院",
+      "kana": "ひがしべついん",
+      "ko": "히가시베쓰인",
+      "koSource": "wiki",
+      "en": "Higashi Betsuin",
+      "lat": 35.150278,
+      "lng": 136.904722
+    },
+    {
+      "code": "M03",
+      "ja": "上前津",
+      "kana": "かみまえづ",
+      "ko": "가미마에즈",
+      "koSource": "wiki",
+      "en": "Kamimaezu",
+      "lat": 35.157222,
+      "lng": 136.906667
+    },
+    {
+      "code": "M04",
+      "ja": "矢場町",
+      "kana": "やばちょう",
+      "ko": "야바초",
+      "koSource": "wiki",
+      "en": "Yaba-cho",
+      "lat": 35.163611,
+      "lng": 136.908889,
+      "jaSub": "松坂屋前"
+    },
+    {
+      "code": "M05",
+      "ja": "栄",
+      "kana": "さかえ",
+      "ko": "사카에",
+      "koSource": "wiki",
+      "en": "Sakae",
+      "lat": 35.169722,
+      "lng": 136.908611
+    },
+    {
+      "code": "M06",
+      "ja": "久屋大通",
+      "kana": "ひさやおおどおり",
+      "ko": "히사야오도리",
+      "koSource": "wiki",
+      "en": "Hisaya-odori",
+      "lat": 35.173611,
+      "lng": 136.908333
+    },
+    {
+      "code": "M07",
+      "ja": "名古屋城",
+      "kana": "なごやじょう",
+      "ko": "나고야조",
+      "koSource": "wiki",
+      "en": "Nagoyajo",
+      "lat": 35.181667,
+      "lng": 136.905278,
+      "jaSub": "市役所・県庁"
+    },
+    {
+      "code": "M08",
+      "ja": "名城公園",
+      "kana": "めいじょうこうえん",
+      "ko": "메이조코엔",
+      "koSource": "wiki",
+      "en": "Meijo Koen",
+      "lat": 35.190556,
+      "lng": 136.904722
+    },
+    {
+      "code": "M09",
+      "ja": "黒川",
+      "kana": "くろかわ",
+      "ko": "구로카와",
+      "koSource": "wiki",
+      "en": "Kurokawa",
+      "lat": 35.197222,
+      "lng": 136.910278
+    },
+    {
+      "code": "M10",
+      "ja": "志賀本通",
+      "kana": "しがほんどおり",
+      "ko": "시가혼도리",
+      "koSource": "wiki",
+      "en": "Shiga-hondori",
+      "lat": 35.196389,
+      "lng": 136.921111
+    },
+    {
+      "code": "M11",
+      "ja": "平安通",
+      "kana": "へいあんどおり",
+      "ko": "헤이안도리",
+      "koSource": "wiki",
+      "en": "Heian-dori",
+      "lat": 35.195833,
+      "lng": 136.929722
+    },
+    {
+      "code": "M12",
+      "ja": "大曽根",
+      "kana": "おおぞね",
+      "ko": "오조네",
+      "koSource": "wiki",
+      "en": "Ozone",
+      "lat": 35.190114,
+      "lng": 136.937164
+    },
+    {
+      "code": "M13",
+      "ja": "ナゴヤドーム前矢田",
+      "kana": "なごやどーむまえやだ",
+      "ko": "나고야돔마에야다",
+      "koSource": "wiki",
+      "en": "Nagoya Dome-mae Yada",
+      "lat": 35.190833,
+      "lng": 136.944444,
+      "jaSub": "名城大学前"
+    },
+    {
+      "code": "M14",
+      "ja": "砂田橋",
+      "kana": "すなだばし",
+      "ko": "스나다바시",
+      "koSource": "wiki",
+      "en": "Sunada-bashi",
+      "lat": 35.188889,
+      "lng": 136.954056
+    },
+    {
+      "code": "M15",
+      "ja": "茶屋ヶ坂",
+      "kana": "ちゃやがさか",
+      "ko": "자야가사카",
+      "koSource": "wiki",
+      "en": "Chayagasaka",
+      "lat": 35.184667,
+      "lng": 136.962222
+    },
+    {
+      "code": "M16",
+      "ja": "自由ヶ丘",
+      "kana": "じゆうがおか",
+      "ko": "지유가오카",
+      "koSource": "wiki",
+      "en": "Jiyugaoka",
+      "lat": 35.175472,
+      "lng": 136.966722
+    },
+    {
+      "code": "M17",
+      "ja": "本山",
+      "kana": "もとやま",
+      "ko": "모토야마",
+      "koSource": "wiki",
+      "en": "Motoyama",
+      "lat": 35.163889,
+      "lng": 136.963611
+    },
+    {
+      "code": "M18",
+      "ja": "名古屋大学",
+      "kana": "なごやだいがく",
+      "ko": "나고야다이가쿠",
+      "koSource": "wiki",
+      "en": "Nagoya Daigaku",
+      "lat": 35.154639,
+      "lng": 136.966778
+    },
+    {
+      "code": "M19",
+      "ja": "八事日赤",
+      "kana": "やごとにっせき",
+      "ko": "야고토닛세키",
+      "koSource": "wiki",
+      "en": "Yagoto Nisseki",
+      "lat": 35.144722,
+      "lng": 136.964889
+    },
+    {
+      "code": "M20",
+      "ja": "八事",
+      "kana": "やごと",
+      "ko": "야고토",
+      "koSource": "wiki",
+      "en": "Yagoto",
+      "lat": 35.136667,
+      "lng": 136.964167
+    },
+    {
+      "code": "M21",
+      "ja": "総合リハビリセンター",
+      "kana": "そうごうりはびりせんたー",
+      "ko": "소고리하비리센터",
+      "koSource": "wiki",
+      "en": "Sogo Rihabiri Center",
+      "lat": 35.130556,
+      "lng": 136.954556
+    },
+    {
+      "code": "M22",
+      "ja": "瑞穂運動場東",
+      "kana": "みずほうんどうじょうひがし",
+      "ko": "미즈호운도조히가시",
+      "koSource": "wiki",
+      "en": "Mizuho Undojo Higashi",
+      "lat": 35.122778,
+      "lng": 136.948389,
+      "jaSub": "パロマ瑞穂スポーツパーク前"
+    },
+    {
+      "code": "M23",
+      "ja": "新瑞橋",
+      "kana": "あらたまばし",
+      "ko": "아라타마바시",
+      "koSource": "wiki",
+      "en": "Aratama-bashi",
+      "lat": 35.117778,
+      "lng": 136.936667
+    },
+    {
+      "code": "M24",
+      "ja": "妙音通",
+      "kana": "みょうおんどおり",
+      "ko": "묘온도리",
+      "koSource": "wiki",
+      "en": "Myoon-dori",
+      "lat": 35.117222,
+      "lng": 136.929444
+    },
+    {
+      "code": "M25",
+      "ja": "堀田",
+      "kana": "ほりた",
+      "ko": "호리타",
+      "koSource": "wiki",
+      "en": "Horita",
+      "lat": 35.116528,
+      "lng": 136.921722
+    },
+    {
+      "code": "M26",
+      "ja": "熱田神宮伝馬町",
+      "kana": "あつたじんぐうてんまちょう",
+      "ko": "아쓰타진구텐마초",
+      "koSource": "wiki",
+      "en": "Atsuta Jingu Temma-cho",
+      "lat": 35.120833,
+      "lng": 136.910556
+    },
+    {
+      "code": "M27",
+      "ja": "熱田神宮西",
+      "kana": "あつたじんぐうにし",
+      "ko": "아쓰타진구니시",
+      "koSource": "wiki",
+      "en": "Atsuta Jingu Nishi",
+      "lat": 35.127778,
+      "lng": 136.906667
+    },
+    {
+      "code": "M28",
+      "ja": "西高蔵",
+      "kana": "にしたかくら",
+      "ko": "니시타카쿠라",
+      "koSource": "wiki",
+      "en": "Nishi Takakura",
+      "lat": 35.134444,
+      "lng": 136.901944
+    }
+  ],
+  "throughTermini": {
+    "start": [],
+    "end": []
+  },
+  "services": [],
+  "sources": [
+    "https://ja.wikipedia.org/wiki/名古屋市営地下鉄名城線",
+    "https://ja.wikipedia.org/w/api.php (coordinates/langlinks/infobox)",
+    "https://ja.wikipedia.org/wiki/名古屋市営地下鉄名港線"
+  ],
+  "notes": "環状線。駅番号は金山(M01)から右回り(時計回り)方向に増加: 金山→栄→大曽根→本山→八事→新瑞橋→金山。発車標・方向幕は「名城線（右回り）」「名城線（左回り）」。M28 西高蔵の次は M01 金山に戻る。全列車各駅停車。名港線直通: 名古屋港発の列車は金山から右回り方向(番号増加)へ直進し主に大曽根行き（夕ラッシュ時はナゴヤドーム前矢田行き、名城線一周するものもある）。逆に左回りの一部は金山から名港線名古屋港行きとなる（左回り方向の全列車ではない。環状運転の左回り列車は新瑞橋方面へ進む）。早朝・夜間は名港線直通なし（名港線は金山折り返し）。深夜に金山・新瑞橋・瑞穂運動場東・名古屋大学止まりあり。2023年1月4日に市役所駅→名古屋城駅に改称、副駅名「市役所・県庁」。M13ナゴヤドーム前矢田の副駅名「名城大学前」はWikipediaインフォボックス値で未確認。 座標は日本語版Wikipedia各駅記事の座標（複数事業者の駅は記事代表座標）。韓国語名は日本語版記事の韓国語版リンク先記事名から「역」と曖昧さ回避括弧を除いたもの。色は日本語版Wikipediaの路線インフォボックス値（名古屋市交通局旅客サインマニュアル準拠とされる）で公式HEXの直接確認はしていない。jaSub（副駅名）は日本語版Wikipedia駅記事インフォボックス「副駅名」の値で、現地サイン表記との照合はしていない。 / 앱: 名城線→名港線 continuation 은 名古屋港行き 만 해당해 뺐다(金山 에서 갈아타라고 안내하는 쪽이 안전).",
+  "circularForwardSign": "右回り",
+  "circularBackwardSign": "左回り",
+  "directionLandmarks": {
+    "majorStations": [
+      "金山",
+      "栄",
+      "大曽根",
+      "本山",
+      "八事",
+      "新瑞橋"
+    ]
+  },
+  "continuations": []
+}

@@ -1,0 +1,245 @@
+{
+  "id": "nagoya.H",
+  "region": "nagoya",
+  "operator": "名古屋市営地下鉄",
+  "operatorKo": "나고야 시영 지하철",
+  "nameJa": "東山線",
+  "nameKo": "히가시야마선",
+  "nameEn": "Higashiyama Line",
+  "color": "#FAB123",
+  "circular": false,
+  "stations": [
+    {
+      "code": "H01",
+      "ja": "高畑",
+      "kana": "たかばた",
+      "ko": "다카바타",
+      "koSource": "wiki",
+      "en": "Takabata",
+      "lat": 35.139444,
+      "lng": 136.853528,
+      "jaSub": "中川区役所"
+    },
+    {
+      "code": "H02",
+      "ja": "八田",
+      "kana": "はった",
+      "ko": "핫타",
+      "koSource": "wiki",
+      "en": "Hatta",
+      "lat": 35.148889,
+      "lng": 136.852222
+    },
+    {
+      "code": "H03",
+      "ja": "岩塚",
+      "kana": "いわつか",
+      "ko": "이와쓰카",
+      "koSource": "wiki",
+      "en": "Iwatsuka",
+      "lat": 35.158056,
+      "lng": 136.854444
+    },
+    {
+      "code": "H04",
+      "ja": "中村公園",
+      "kana": "なかむらこうえん",
+      "ko": "나카무라코엔",
+      "koSource": "wiki",
+      "en": "Nakamura Koen",
+      "lat": 35.167833,
+      "lng": 136.855139
+    },
+    {
+      "code": "H05",
+      "ja": "中村日赤",
+      "kana": "なかむらにっせき",
+      "ko": "나카무라닛세키",
+      "koSource": "wiki",
+      "en": "Nakamura Nisseki",
+      "lat": 35.172361,
+      "lng": 136.861944
+    },
+    {
+      "code": "H06",
+      "ja": "本陣",
+      "kana": "ほんじん",
+      "ko": "혼진",
+      "koSource": "wiki",
+      "en": "Honjin",
+      "lat": 35.177222,
+      "lng": 136.866944,
+      "jaSub": "中村区役所"
+    },
+    {
+      "code": "H07",
+      "ja": "亀島",
+      "kana": "かめじま",
+      "ko": "가메지마",
+      "koSource": "wiki",
+      "en": "Kamejima",
+      "lat": 35.1775,
+      "lng": 136.876944
+    },
+    {
+      "code": "H08",
+      "ja": "名古屋",
+      "kana": "なごや",
+      "ko": "나고야",
+      "koSource": "wiki",
+      "en": "Nagoya",
+      "lat": 35.170694,
+      "lng": 136.881637
+    },
+    {
+      "code": "H09",
+      "ja": "伏見",
+      "kana": "ふしみ",
+      "ko": "후시미",
+      "koSource": "wiki",
+      "en": "Fushimi",
+      "lat": 35.169167,
+      "lng": 136.8975
+    },
+    {
+      "code": "H10",
+      "ja": "栄",
+      "kana": "さかえ",
+      "ko": "사카에",
+      "koSource": "wiki",
+      "en": "Sakae",
+      "lat": 35.169722,
+      "lng": 136.908611
+    },
+    {
+      "code": "H11",
+      "ja": "新栄町",
+      "kana": "しんさかえまち",
+      "ko": "신사카에마치",
+      "koSource": "wiki",
+      "en": "Shinsakae-machi",
+      "lat": 35.170833,
+      "lng": 136.92
+    },
+    {
+      "code": "H12",
+      "ja": "千種",
+      "kana": "ちくさ",
+      "ko": "지쿠사",
+      "koSource": "wiki",
+      "en": "Chikusa",
+      "lat": 35.170167,
+      "lng": 136.930639
+    },
+    {
+      "code": "H13",
+      "ja": "今池",
+      "kana": "いまいけ",
+      "ko": "이마이케",
+      "koSource": "wiki",
+      "en": "Imaike",
+      "lat": 35.169861,
+      "lng": 136.937222
+    },
+    {
+      "code": "H14",
+      "ja": "池下",
+      "kana": "いけした",
+      "ko": "이케시타",
+      "koSource": "wiki",
+      "en": "Ikeshita",
+      "lat": 35.167917,
+      "lng": 136.946111
+    },
+    {
+      "code": "H15",
+      "ja": "覚王山",
+      "kana": "かくおうざん",
+      "ko": "가쿠오잔",
+      "koSource": "wiki",
+      "en": "Kakuozan",
+      "lat": 35.166528,
+      "lng": 136.953056
+    },
+    {
+      "code": "H16",
+      "ja": "本山",
+      "kana": "もとやま",
+      "ko": "모토야마",
+      "koSource": "wiki",
+      "en": "Motoyama",
+      "lat": 35.163889,
+      "lng": 136.963611
+    },
+    {
+      "code": "H17",
+      "ja": "東山公園",
+      "kana": "ひがしやまこうえん",
+      "ko": "히가시야마코엔",
+      "koSource": "wiki",
+      "en": "Higashiyama Koen",
+      "lat": 35.160556,
+      "lng": 136.973056
+    },
+    {
+      "code": "H18",
+      "ja": "星ヶ丘",
+      "kana": "ほしがおか",
+      "ko": "호시가오카",
+      "koSource": "wiki",
+      "en": "Hoshigaoka",
+      "lat": 35.162222,
+      "lng": 136.985
+    },
+    {
+      "code": "H19",
+      "ja": "一社",
+      "kana": "いっしゃ",
+      "ko": "잇샤",
+      "koSource": "wiki",
+      "en": "Issha",
+      "lat": 35.168333,
+      "lng": 136.996111
+    },
+    {
+      "code": "H20",
+      "ja": "上社",
+      "kana": "かみやしろ",
+      "ko": "가미야시로",
+      "koSource": "wiki",
+      "en": "Kamiyashiro",
+      "lat": 35.173611,
+      "lng": 137.006667
+    },
+    {
+      "code": "H21",
+      "ja": "本郷",
+      "kana": "ほんごう",
+      "ko": "혼고",
+      "koSource": "wiki",
+      "en": "Hongo",
+      "lat": 35.175278,
+      "lng": 137.013611
+    },
+    {
+      "code": "H22",
+      "ja": "藤が丘",
+      "kana": "ふじがおか",
+      "ko": "후지가오카",
+      "koSource": "wiki",
+      "en": "Fujigaoka",
+      "lat": 35.1825,
+      "lng": 137.021389
+    }
+  ],
+  "throughTermini": {
+    "start": [],
+    "end": []
+  },
+  "services": [],
+  "sources": [
+    "https://ja.wikipedia.org/wiki/名古屋市営地下鉄東山線",
+    "https://ja.wikipedia.org/w/api.php (coordinates/langlinks/infobox)"
+  ],
+  "notes": "全列車各駅停車（種別なし）。他社直通なし。始終発のみ岩塚・星ヶ丘・池下発着の区間列車あり。H01高畑の副駅名「中川区役所」、H06本陣の副駅名「中村区役所」（2023年1月の区役所移転に伴う）。名古屋駅の切符表記は「なごや」と平仮名。 座標は日本語版Wikipedia各駅記事の座標（複数事業者の駅は記事代表座標）。韓国語名は日本語版記事の韓国語版リンク先記事名から「역」と曖昧さ回避括弧を除いたもの。色は日本語版Wikipediaの路線インフォボックス値（名古屋市交通局旅客サインマニュアル準拠とされる）で公式HEXの直接確認はしていない。jaSub（副駅名）は日本語版Wikipedia駅記事インフォボックス「副駅名」の値で、現地サイン表記との照合はしていない。"
+}

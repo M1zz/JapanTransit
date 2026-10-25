@@ -8,7 +8,7 @@
 1. 표지판 부제를 따로 뺀다: "押上〈スカイツリー前〉" → ja "押上", jaSub "スカイツリー前".
    같은 역이 노선마다 다르게 적혀 환승이 끊기는 것을 막는다.
 2. ヶ/ケ 표기 차이를 알린다 (앱은 둘을 같은 역으로 본다).
-3. 이름은 다른데 300m 안에 있는 역 쌍을 뽑는다: data/transfers.json 에 넣을 환승 후보.
+3. 같은 도시에서 이름은 다른데 300m 안에 있는 역 쌍을 뽑는다: data/transfers.json 에 넣을 환승 후보.
    후보일 뿐이다. 역 안에서 걸어서 갈아탈 수 있는지는 근거를 찾아 확인한 뒤 넣는다.
 """
 import glob, json, math, pathlib, re, sys
@@ -18,8 +18,8 @@ FIX = "--fix" in sys.argv
 SUB = re.compile(r"^(.*?)[〈<（(](.+?)[〉>）)]$")
 
 
-def key(ja):
-    return ja.replace("ヶ", "ケ").replace("ヵ", "カ")
+def key(ja, region="tokyo"):
+    return region + "/" + ja.replace("ヶ", "ケ").replace("ヵ", "カ")
 
 
 def dist(a, b):
@@ -43,8 +43,9 @@ for f in sorted(glob.glob(str(ROOT / "data/lines/*.json"))):
             if em:
                 s["en"], s["enSub"] = em.group(1).strip(), em.group(2)
             changed = True
-        places.setdefault(key(s["ja"]), {"names": set(), "pts": [], "lines": set(), "ko": s["ko"]})
-        p = places[key(s["ja"])]
+        region = d.get("region", "tokyo")
+        places.setdefault(key(s["ja"], region), {"names": set(), "pts": [], "lines": set(), "ko": s["ko"], "region": region})
+        p = places[key(s["ja"], region)]
         p["names"].add(s["ja"])
         p["pts"].append((s["lat"], s["lng"]))
         p["lines"].add(d["id"])
@@ -79,6 +80,8 @@ print("\n환승 후보 (이름 다름, 300m 이내):")
 items = list(places.items())
 for i, (ka, a) in enumerate(items):
     for kb, b in items[i + 1:]:
+        if a["region"] != b["region"]:
+            continue
         d = min(dist(x, y) for x in a["pts"] for y in b["pts"])
         if d <= 300:
             print(f"  {ka}({a['ko']}) {sorted(a['lines'])}  ↔  {kb}({b['ko']}) {sorted(b['lines'])}  {int(d)}m")

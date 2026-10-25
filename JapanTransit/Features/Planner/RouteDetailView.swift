@@ -272,6 +272,11 @@ private struct ServiceAdvice: View {
                                  : item.ok ? "타도 돼요. 두 역에 다 서요" : skipText(item.service))
                                 .font(.caption)
                                 .foregroundStyle(Theme.inkSoft)
+                            if let skips = item.service.holidaySkips, !skips.isEmpty {
+                                Text("토·일·공휴일에는 \(Josa.eul(skips.map { ko($0) }.joined(separator: "·"))) 지나쳐요")
+                                    .font(.caption.weight(.semibold))
+                                    .foregroundStyle(Theme.caution)
+                            }
                         }
                     }
                 }
@@ -287,8 +292,13 @@ private struct ServiceAdvice: View {
         }
     }
 
+    private func ko(_ ja: String) -> String {
+        RailNetwork.shared.place(ja: ja, region: segment.line.regionID)?.ko ?? ja
+    }
+
     private func skipText(_ s: RailService) -> String {
-        let skipped = [segment.boarding, segment.alighting].filter { !s.stops.contains($0.ja) }.map(\.ko)
+        let stops = s.stops(on: .now)
+        let skipped = [segment.boarding, segment.alighting].filter { !stops.contains($0.ja) }.map(\.ko)
         return "타지 마세요. \(skipped.joined(separator: ", "))에 서지 않아요"
     }
 }
@@ -304,10 +314,15 @@ private struct TransferBlock: View {
         if staysOnTrain {
             HStack(spacing: 12) {
                 Rail(color: from.line.swiftColor)
-                Label("\(from.alighting.ko)에서 내리지 말고 그대로 타고 가요", systemImage: "arrow.down")
-                    .font(.footnote.weight(.bold))
-                    .foregroundStyle(Theme.ink)
-                    .padding(.vertical, 12)
+                VStack(alignment: .leading, spacing: 4) {
+                    Label("\(Josa.ro(to.line.nameKo)) 이어 가는 열차면 그대로 타고 가요", systemImage: "arrow.down")
+                        .font(.footnote.weight(.bold))
+                        .foregroundStyle(Theme.ink)
+                    Text("\(from.alighting.ko)에서 끝나는 열차면 내려서 \(to.headingSign) 열차로 갈아타세요")
+                        .font(.caption)
+                        .foregroundStyle(Theme.inkSoft)
+                }
+                .padding(.vertical, 12)
             }
         } else {
             VStack(alignment: .leading, spacing: 0) {
@@ -341,13 +356,13 @@ private struct TransferBlock: View {
                     .font(.caption)
                     .foregroundStyle(Theme.inkSoft)
             }
-            if RailNetwork.shared.isOutsideTransfer(from: from.alighting.ja, to: to.boarding.ja) {
-                note("figure.walk", "개찰구를 나와 길을 걸어서 \(to.boarding.ko)(\(to.boarding.ja))역으로 가요. 역 밖으로 나가는 게 맞아요")
+            if RailNetwork.shared.isOutsideTransfer(from: from.line.placeID(from.alighting), to: to.line.placeID(to.boarding)) {
+                note("figure.walk", "개찰구를 나와 걸어서 \(to.boarding.ko)(\(to.boarding.ja))역으로 가요. 개찰구 밖으로 나가는 게 맞아요")
             } else if from.alighting.ja != to.boarding.ja {
                 note("figure.walk", "역 안 통로로 걸어서 \(to.boarding.ko)(\(to.boarding.ja))역으로 가요")
             }
             if from.line.operator != to.line.operator {
-                note("yensign.circle", "\(from.line.operatorKo)에서 \(to.line.operatorKo)로 회사가 바뀌어요. 개찰구를 한 번 더 지나고 요금이 따로 붙어요. 교통카드(Suica·PASMO)는 그대로 찍으면 돼요")
+                note("yensign.circle", "\(from.line.operatorKo)에서 \(Josa.ro(to.line.operatorKo)) 회사가 바뀌어요. 개찰구를 한 번 더 지나고 요금이 따로 붙어요. 교통카드(Suica·ICOCA 등)는 그대로 찍으면 돼요")
             }
         }
         .accessibilityElement(children: .combine)

@@ -3,11 +3,12 @@ import SwiftUI
 /// 노선: 회사별 노선 목록과 노선마다 역 순서.
 struct LinesView: View {
     private let network = RailNetwork.shared
+    @AppStorage("lines.region") private var region = Region.tokyo.id
 
     private var groups: [(String, [RailLine])] {
         var order: [String] = []
         var byOperator: [String: [RailLine]] = [:]
-        for line in network.lines {
+        for line in network.lines where line.regionID == region {
             if byOperator[line.operatorKo] == nil { order.append(line.operatorKo) }
             byOperator[line.operatorKo, default: []].append(line)
         }
@@ -48,6 +49,7 @@ struct LinesView: View {
             }
             .scrollContentBackground(.hidden)
             .background(Theme.paper)
+            .safeAreaInset(edge: .top, spacing: 0) { RegionBar(selection: $region) }
             .navigationTitle("노선")
         }
     }
@@ -65,7 +67,7 @@ struct LineDetailView: View {
                         VStack(alignment: .leading, spacing: 2) {
                             Text("\(s.signWords.first ?? "") (\(s.nameKo))\(s.isPaid ? " · 지정석 유료" : "")")
                                 .font(.subheadline.weight(.bold))
-                            Text("서는 역: " + s.stops.map { network.place($0)?.ko ?? $0 }.joined(separator: ", "))
+                            Text("서는 역: " + s.stops.map { network.place(ja: $0, region: line.regionID)?.ko ?? $0 }.joined(separator: ", "))
                                 .font(.caption).foregroundStyle(.secondary)
                         }
                     }
@@ -108,6 +110,6 @@ struct LineDetailView: View {
     }
 
     private func transfers(at s: RailStation) -> [RailLine] {
-        network.transferLines(at: s.ja).filter { $0.id != line.id }
+        network.transferLines(at: line.placeID(s)).filter { $0.id != line.id }
     }
 }

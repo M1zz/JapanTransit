@@ -1,0 +1,177 @@
+{
+  "id": "kyoto.K",
+  "region": "kyoto",
+  "operator": "京都市営地下鉄",
+  "operatorKo": "교토 시영 지하철",
+  "nameJa": "烏丸線",
+  "nameKo": "가라스마선",
+  "nameEn": "Karasuma Line",
+  "color": "#3CB371",
+  "circular": false,
+  "stations": [
+    {
+      "code": "K01",
+      "ja": "国際会館",
+      "kana": "こくさいかいかん",
+      "ko": "고쿠사이카이칸",
+      "koSource": "wiki",
+      "en": "Kokusaikaikan",
+      "lat": 35.062942,
+      "lng": 135.785217
+    },
+    {
+      "code": "K02",
+      "ja": "松ヶ崎",
+      "kana": "まつがさき",
+      "ko": "마쓰가사키",
+      "koSource": "wiki",
+      "en": "Matsugasaki",
+      "lat": 35.051656,
+      "lng": 135.777114
+    },
+    {
+      "code": "K03",
+      "ja": "北山",
+      "kana": "きたやま",
+      "ko": "기타야마",
+      "koSource": "wiki",
+      "en": "Kitayama",
+      "lat": 35.051275,
+      "lng": 135.766328
+    },
+    {
+      "code": "K04",
+      "ja": "北大路",
+      "kana": "きたおおじ",
+      "ko": "기타오지",
+      "koSource": "wiki",
+      "en": "Kitaoji",
+      "lat": 35.044975,
+      "lng": 135.758658
+    },
+    {
+      "code": "K05",
+      "ja": "鞍馬口",
+      "kana": "くらまぐち",
+      "ko": "구라마구치",
+      "koSource": "wiki",
+      "en": "Kuramaguchi",
+      "lat": 35.037156,
+      "lng": 135.759289
+    },
+    {
+      "code": "K06",
+      "ja": "今出川",
+      "kana": "いまでがわ",
+      "ko": "이마데가와",
+      "koSource": "wiki",
+      "en": "Imadegawa",
+      "lat": 35.030167,
+      "lng": 135.759386
+    },
+    {
+      "code": "K07",
+      "ja": "丸太町",
+      "kana": "まるたまち",
+      "ko": "마루타마치",
+      "koSource": "wiki",
+      "en": "Marutamachi",
+      "lat": 35.016572,
+      "lng": 135.759528
+    },
+    {
+      "code": "K08",
+      "ja": "烏丸御池",
+      "kana": "からすまおいけ",
+      "ko": "가라스마오이케",
+      "koSource": "wiki",
+      "en": "Karasuma Oike",
+      "lat": 35.010517,
+      "lng": 135.759639
+    },
+    {
+      "code": "K09",
+      "ja": "四条",
+      "kana": "しじょう",
+      "ko": "시조",
+      "koSource": "wiki",
+      "en": "Shijo",
+      "lat": 35.002389,
+      "lng": 135.759667
+    },
+    {
+      "code": "K10",
+      "ja": "五条",
+      "kana": "ごじょう",
+      "ko": "고조",
+      "koSource": "wiki",
+      "en": "Gojo",
+      "lat": 34.995172,
+      "lng": 135.759739
+    },
+    {
+      "code": "K11",
+      "ja": "京都",
+      "kana": "きょうと",
+      "ko": "교토",
+      "koSource": "wiki",
+      "en": "Kyoto",
+      "lat": 34.985547,
+      "lng": 135.760122
+    },
+    {
+      "code": "K12",
+      "ja": "九条",
+      "kana": "くじょう",
+      "ko": "구조",
+      "koSource": "wiki",
+      "en": "Kujo",
+      "lat": 34.979064,
+      "lng": 135.759664
+    },
+    {
+      "code": "K13",
+      "ja": "十条",
+      "kana": "じゅうじょう",
+      "ko": "주조",
+      "koSource": "wiki",
+      "en": "Jujo",
+      "lat": 34.972117,
+      "lng": 135.759664
+    },
+    {
+      "code": "K14",
+      "ja": "くいな橋",
+      "kana": "くいなばし",
+      "ko": "구이나바시",
+      "koSource": "wiki",
+      "en": "Kuinabashi",
+      "lat": 34.962672,
+      "lng": 135.757439
+    },
+    {
+      "code": "K15",
+      "ja": "竹田",
+      "kana": "たけだ",
+      "ko": "다케다",
+      "koSource": "wiki",
+      "en": "Takeda",
+      "lat": 34.956894,
+      "lng": 135.756114
+    }
+  ],
+  "throughTermini": {
+    "start": [],
+    "end": [
+      "新田辺",
+      "近鉄奈良"
+    ]
+  },
+  "services": [],
+  "sources": [
+    "https://ja.wikipedia.org/wiki/京都市営地下鉄烏丸線",
+    "https://ja.wikipedia.org/wiki/近鉄京都線",
+    "https://web.archive.org/web/20180417182425/https://www.city.kyoto.lg.jp/kotsu/cmsfiles/contents/0000008/8995/300317route_map.pdf"
+  ],
+  "notes": "全列車が国際会館–竹田間を通し運転し、線内は全列車各駅停車（Wikipedia駅一覧注記「普通・急行：烏丸線内は各駅に停車」）。竹田から近鉄京都線へ相互直通: 新田辺発着の普通（昼間毎時2本）と近鉄奈良発着の急行（2025年2月22日改正以降は平日・土休日とも朝夕のみ）。急行は近鉄線内のみ通過運転で、地下鉄線内は各停のため services には入れない。国際会館行きの急行は竹田で種別表示が消え、線内折り返し列車は種別表示なしで行先のみ表示。平日朝に近鉄宮津発国際会館行き普通が1本あるが逆方向（近鉄宮津行き）はないため throughTermini には入れていない。近鉄特急は乗り入れない。竹田は京都市交通局管轄の共同使用駅（内側が地下鉄、外側が近鉄）。路線色は交通局路線図の「緑」をWikipediaが #3CB371 として表記、公式HEXは未確認。英語表記は交通局HP路線図の表記（駅名標は大文字表記）。今出川〈同志社前〉・竹田〈城南宮前〉等の駅名標併記は2013年からの広告のため jaSub に入れていない。座標は日本語版Wikipedia各駅記事の座標（複数事業者の駅は当該地下鉄側の座標を選択）。韓国語名は日本語版記事の韓国語版リンク先記事名から「역」と曖昧さ回避括弧を除いたもの。かなは各駅記事インフォボックスのよみがな。"
+}

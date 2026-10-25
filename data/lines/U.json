@@ -1,0 +1,184 @@
+{
+  "id": "U",
+  "region": "tokyo",
+  "operator": "ゆりかもめ",
+  "operatorKo": "유리카모메",
+  "nameJa": "ゆりかもめ",
+  "nameKo": "유리카모메",
+  "nameEn": "Yurikamome",
+  "color": "#0067C0",
+  "circular": false,
+  "stations": [
+    {
+      "code": "U01",
+      "ja": "新橋",
+      "kana": "しんばし",
+      "ko": "신바시",
+      "koSource": "wiki",
+      "en": "Shimbashi",
+      "lat": 35.666389,
+      "lng": 139.758056
+    },
+    {
+      "code": "U02",
+      "ja": "汐留",
+      "kana": "しおどめ",
+      "ko": "시오도메",
+      "koSource": "wiki",
+      "en": "Shiodome",
+      "lat": 35.66292,
+      "lng": 139.75997
+    },
+    {
+      "code": "U03",
+      "ja": "竹芝",
+      "kana": "たけしば",
+      "ko": "다케시바",
+      "koSource": "wiki",
+      "en": "Takeshiba",
+      "lat": 35.653972,
+      "lng": 139.761917
+    },
+    {
+      "code": "U04",
+      "ja": "日の出",
+      "kana": "ひので",
+      "ko": "히노데",
+      "koSource": "wiki",
+      "en": "Hinode",
+      "lat": 35.649194,
+      "lng": 139.759083
+    },
+    {
+      "code": "U05",
+      "ja": "芝浦ふ頭",
+      "kana": "しばうらふとう",
+      "ko": "시바우라후토",
+      "koSource": "wiki",
+      "en": "Shibaura-futo",
+      "lat": 35.64175,
+      "lng": 139.757833
+    },
+    {
+      "code": "U06",
+      "ja": "お台場海浜公園",
+      "kana": "おだいばかいひんこうえん",
+      "ko": "오다이바카이힌코엔",
+      "koSource": "wiki",
+      "en": "Odaiba-kaihinkoen",
+      "lat": 35.629889,
+      "lng": 139.778778
+    },
+    {
+      "code": "U07",
+      "ja": "台場",
+      "kana": "だいば",
+      "ko": "다이바",
+      "koSource": "wiki",
+      "en": "Daiba",
+      "lat": 35.625889,
+      "lng": 139.771417
+    },
+    {
+      "code": "U08",
+      "ja": "東京国際クルーズターミナル",
+      "kana": "とうきょうこくさいくるーずたーみなる",
+      "ko": "도쿄국제크루즈터미널",
+      "koSource": "wiki",
+      "en": "Tokyo International Cruise Terminal",
+      "lat": 35.621333,
+      "lng": 139.773083
+    },
+    {
+      "code": "U09",
+      "ja": "テレコムセンター",
+      "kana": "てれこむせんたー",
+      "ko": "텔레컴 센터",
+      "koSource": "wiki",
+      "en": "Telecom Center",
+      "lat": 35.617556,
+      "lng": 139.779389
+    },
+    {
+      "code": "U10",
+      "ja": "青海",
+      "kana": "あおみ",
+      "ko": "아오미",
+      "koSource": "wiki",
+      "en": "Aomi",
+      "lat": 35.62475,
+      "lng": 139.781306
+    },
+    {
+      "code": "U11",
+      "ja": "東京ビッグサイト",
+      "kana": "とうきょうびっぐさいと",
+      "ko": "도쿄빅사이트",
+      "koSource": "wiki",
+      "en": "Tokyo Big Sight",
+      "lat": 35.630222,
+      "lng": 139.791361
+    },
+    {
+      "code": "U12",
+      "ja": "有明",
+      "kana": "ありあけ",
+      "ko": "아리아케",
+      "koSource": "wiki",
+      "en": "Ariake",
+      "lat": 35.634639,
+      "lng": 139.79325
+    },
+    {
+      "code": "U13",
+      "ja": "有明テニスの森",
+      "kana": "ありあけてにすのもり",
+      "ko": "아리아케테니스노모리",
+      "koSource": "wiki",
+      "en": "Ariake-tennis-no-mori",
+      "lat": 35.639944,
+      "lng": 139.788889
+    },
+    {
+      "code": "U14",
+      "ja": "市場前",
+      "kana": "しじょうまえ",
+      "ko": "시조마에",
+      "koSource": "wiki",
+      "en": "Shijo-mae",
+      "lat": 35.645667,
+      "lng": 139.785639
+    },
+    {
+      "code": "U15",
+      "ja": "新豊洲",
+      "kana": "しんとよす",
+      "ko": "신토요스",
+      "koSource": "wiki",
+      "en": "Shin-toyosu",
+      "lat": 35.648667,
+      "lng": 139.790056
+    },
+    {
+      "code": "U16",
+      "ja": "豊洲",
+      "kana": "とよす",
+      "ko": "도요스",
+      "koSource": "wiki",
+      "en": "Toyosu",
+      "lat": 35.655,
+      "lng": 139.79611
+    }
+  ],
+  "throughTermini": {
+    "start": [],
+    "end": []
+  },
+  "services": [],
+  "sources": [
+    "https://ja.wikipedia.org/wiki/ゆりかもめ東京臨海新交通臨海線",
+    "https://www.yurikamome.co.jp/en/ (English station names)",
+    "https://ja.wikipedia.org/w/api.php (coordinates/langlinks)"
+  ],
+  "notes": "正式名は東京臨海新交通臨海線、案内名ゆりかもめ。駅番号は公式U01〜U16。全列車が各駅に停車し、発車標の種別は全列車『普通』(英字Loc.)。システム上は急行運転に対応しているが運行実績なし(Wikipedia)。他社直通なし(新交通システム)。途中の有明などで折り返す区間列車があるかは未確認(行先は線内の駅名なので判定に影響しない)。旧駅名: 東京ビッグサイト=旧国際展示場正門、東京国際クルーズターミナル=旧船の科学館。路線色はWikipediaインフォボックスの#0067C0(駅番号テンプレートは#0073bc、公式HEXは未確認)。英語表記はゆりかもめ公式英語サイトの表記(長音記号なし、Shimbashi, Shibaura-futo, Shijo-mae など)。韓国語名は韓国語版Wikipedia記事名(曖昧さ回避の括弧を除去)。座標は日本語版Wikipediaの駅座標、汐留・豊洲は既存E/Yファイル、新橋はJYと同じ値(ゆりかもめ新橋駅はJR駅の東側の高架上で実際の位置は少し異なる)。"
+}

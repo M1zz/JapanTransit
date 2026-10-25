@@ -1,0 +1,377 @@
+{
+  "id": "yokohama.B",
+  "region": "yokohama",
+  "operator": "横浜市交通局",
+  "operatorKo": "요코하마시 교통국",
+  "nameJa": "ブルーライン",
+  "nameKo": "블루라인",
+  "nameEn": "Blue Line",
+  "color": "#005BA5",
+  "circular": false,
+  "stations": [
+    {
+      "code": "B01",
+      "ja": "湘南台",
+      "kana": "しょうなんだい",
+      "ko": "쇼난다이",
+      "koSource": "wiki",
+      "en": "Shonandai",
+      "lat": 35.396389,
+      "lng": 139.466667
+    },
+    {
+      "code": "B02",
+      "ja": "下飯田",
+      "jaSub": "ゆめが丘ソラトス前",
+      "kana": "しもいいだ",
+      "ko": "시모이다",
+      "koSource": "wiki",
+      "en": "Shimoiida",
+      "lat": 35.403472,
+      "lng": 139.483194
+    },
+    {
+      "code": "B03",
+      "ja": "立場",
+      "kana": "たてば",
+      "ko": "다테바",
+      "koSource": "wiki",
+      "en": "Tateba",
+      "lat": 35.414278,
+      "lng": 139.500167
+    },
+    {
+      "code": "B04",
+      "ja": "中田",
+      "kana": "なかだ",
+      "ko": "나카다",
+      "koSource": "wiki",
+      "en": "Nakada",
+      "lat": 35.411194,
+      "lng": 139.511306
+    },
+    {
+      "code": "B05",
+      "ja": "踊場",
+      "kana": "おどりば",
+      "ko": "오도리바",
+      "koSource": "wiki",
+      "en": "Odoriba",
+      "lat": 35.405667,
+      "lng": 139.518528
+    },
+    {
+      "code": "B06",
+      "ja": "戸塚",
+      "kana": "とつか",
+      "ko": "도쓰카",
+      "koSource": "wiki",
+      "en": "Totsuka",
+      "lat": 35.400917,
+      "lng": 139.534167
+    },
+    {
+      "code": "B07",
+      "ja": "舞岡",
+      "kana": "まいおか",
+      "ko": "마이오카",
+      "koSource": "wiki",
+      "en": "Maioka",
+      "lat": 35.402583,
+      "lng": 139.551528
+    },
+    {
+      "code": "B08",
+      "ja": "下永谷",
+      "kana": "しもながや",
+      "ko": "시모나가야",
+      "koSource": "wiki",
+      "en": "Shimonagaya",
+      "lat": 35.402556,
+      "lng": 139.559361
+    },
+    {
+      "code": "B09",
+      "ja": "上永谷",
+      "kana": "かみながや",
+      "ko": "가미나가야",
+      "koSource": "wiki",
+      "en": "Kaminagaya",
+      "lat": 35.401444,
+      "lng": 139.572583
+    },
+    {
+      "code": "B10",
+      "ja": "港南中央",
+      "kana": "こうなんちゅうおう",
+      "ko": "고난추오",
+      "koSource": "wiki",
+      "en": "Konanchuo",
+      "lat": 35.401111,
+      "lng": 139.590944
+    },
+    {
+      "code": "B11",
+      "ja": "上大岡",
+      "kana": "かみおおおか",
+      "ko": "가미오오카",
+      "koSource": "wiki",
+      "en": "Kamiooka",
+      "lat": 35.40925,
+      "lng": 139.595972
+    },
+    {
+      "code": "B12",
+      "ja": "弘明寺",
+      "kana": "ぐみょうじ",
+      "ko": "구묘지",
+      "koSource": "wiki",
+      "en": "Gumyoji",
+      "lat": 35.42325,
+      "lng": 139.602111
+    },
+    {
+      "code": "B13",
+      "ja": "蒔田",
+      "kana": "まいた",
+      "ko": "마이타",
+      "koSource": "wiki",
+      "en": "Maita",
+      "lat": 35.43,
+      "lng": 139.610056
+    },
+    {
+      "code": "B14",
+      "ja": "吉野町",
+      "kana": "よしのちょう",
+      "ko": "요시노초",
+      "koSource": "wiki",
+      "en": "Yoshinocho",
+      "lat": 35.435417,
+      "lng": 139.618472
+    },
+    {
+      "code": "B15",
+      "ja": "阪東橋",
+      "kana": "ばんどうばし",
+      "ko": "반도바시",
+      "koSource": "wiki",
+      "en": "Bandobashi",
+      "lat": 35.437361,
+      "lng": 139.624889
+    },
+    {
+      "code": "B16",
+      "ja": "伊勢佐木長者町",
+      "kana": "いせざきちょうじゃまち",
+      "ko": "이세자키초자마치",
+      "koSource": "wiki",
+      "en": "Isezaki-chojamachi",
+      "lat": 35.441083,
+      "lng": 139.633139
+    },
+    {
+      "code": "B17",
+      "ja": "関内",
+      "kana": "かんない",
+      "ko": "간나이",
+      "koSource": "wiki",
+      "en": "Kannai",
+      "lat": 35.446139,
+      "lng": 139.635167
+    },
+    {
+      "code": "B18",
+      "ja": "桜木町",
+      "kana": "さくらぎちょう",
+      "ko": "사쿠라기초",
+      "koSource": "wiki",
+      "en": "Sakuragicho",
+      "lat": 35.450278,
+      "lng": 139.630278
+    },
+    {
+      "code": "B19",
+      "ja": "高島町",
+      "kana": "たかしまちょう",
+      "ko": "다카시마초",
+      "koSource": "wiki",
+      "en": "Takashimacho",
+      "lat": 35.458583,
+      "lng": 139.62375
+    },
+    {
+      "code": "B20",
+      "ja": "横浜",
+      "jaSub": "相鉄ジョイナス前",
+      "kana": "よこはま",
+      "ko": "요코하마",
+      "koSource": "wiki",
+      "en": "Yokohama",
+      "lat": 35.465,
+      "lng": 139.620278
+    },
+    {
+      "code": "B21",
+      "ja": "三ツ沢下町",
+      "kana": "みつざわしもちょう",
+      "ko": "미쓰자와시모초",
+      "koSource": "wiki",
+      "en": "Mitsuzawa-shimocho",
+      "lat": 35.4765,
+      "lng": 139.614806
+    },
+    {
+      "code": "B22",
+      "ja": "三ツ沢上町",
+      "kana": "みつざわかみちょう",
+      "ko": "미쓰자와카미초",
+      "koSource": "wiki",
+      "en": "Mitsuzawa-kamicho",
+      "lat": 35.476472,
+      "lng": 139.605389
+    },
+    {
+      "code": "B23",
+      "ja": "片倉町",
+      "kana": "かたくらちょう",
+      "ko": "가타쿠라초",
+      "koSource": "wiki",
+      "en": "Katakuracho",
+      "lat": 35.490139,
+      "lng": 139.606528
+    },
+    {
+      "code": "B24",
+      "ja": "岸根公園",
+      "kana": "きしねこうえん",
+      "ko": "기시네코엔",
+      "koSource": "wiki",
+      "en": "Kishine-koen",
+      "lat": 35.496056,
+      "lng": 139.616972
+    },
+    {
+      "code": "B25",
+      "ja": "新横浜",
+      "kana": "しんよこはま",
+      "ko": "신요코하마",
+      "koSource": "wiki",
+      "en": "Shin-yokohama",
+      "lat": 35.508333,
+      "lng": 139.617917
+    },
+    {
+      "code": "B26",
+      "ja": "北新横浜",
+      "kana": "きたしんよこはま",
+      "ko": "기타신요코하마",
+      "koSource": "wiki",
+      "en": "Kita-shin-yokohama",
+      "lat": 35.51925,
+      "lng": 139.612806
+    },
+    {
+      "code": "B27",
+      "ja": "新羽",
+      "kana": "にっぱ",
+      "ko": "닛파",
+      "koSource": "wiki",
+      "en": "Nippa",
+      "lat": 35.5275,
+      "lng": 139.612
+    },
+    {
+      "code": "B28",
+      "ja": "仲町台",
+      "kana": "なかまちだい",
+      "ko": "나카마치다이",
+      "koSource": "wiki",
+      "en": "Nakamachidai",
+      "lat": 35.535306,
+      "lng": 139.589472
+    },
+    {
+      "code": "B29",
+      "ja": "センター南",
+      "kana": "せんたーみなみ",
+      "ko": "센터 미나미",
+      "koSource": "wiki",
+      "en": "Center Minami",
+      "lat": 35.545556,
+      "lng": 139.574444
+    },
+    {
+      "code": "B30",
+      "ja": "センター北",
+      "jaSub": "モザイクモール港北前",
+      "kana": "せんたーきた",
+      "ko": "센터 기타",
+      "koSource": "wiki",
+      "en": "Center Kita",
+      "lat": 35.553472,
+      "lng": 139.5785
+    },
+    {
+      "code": "B31",
+      "ja": "中川",
+      "jaSub": "東京都市大横浜キャンパス前",
+      "kana": "なかがわ",
+      "ko": "나카가와",
+      "koSource": "wiki",
+      "en": "Nakagawa",
+      "lat": 35.562917,
+      "lng": 139.569806
+    },
+    {
+      "code": "B32",
+      "ja": "あざみ野",
+      "kana": "あざみの",
+      "ko": "아자미노",
+      "koSource": "wiki",
+      "en": "Azamino",
+      "lat": 35.568083,
+      "lng": 139.553472
+    }
+  ],
+  "throughTermini": {
+    "start": [],
+    "end": []
+  },
+  "services": [
+    {
+      "id": "rapid",
+      "signWords": [
+        "快速"
+      ],
+      "nameKo": "쾌속",
+      "stops": [
+        "湘南台",
+        "下飯田",
+        "立場",
+        "中田",
+        "踊場",
+        "戸塚",
+        "上永谷",
+        "上大岡",
+        "関内",
+        "桜木町",
+        "横浜",
+        "新横浜",
+        "新羽",
+        "仲町台",
+        "センター南",
+        "センター北",
+        "中川",
+        "あざみ野"
+      ],
+      "note": "戸塚–新羽間で通過運転（舞岡・下永谷・港南中央・弘明寺・蒔田・吉野町・阪東橋・伊勢佐木長者町・高島町・三ツ沢下町・三ツ沢上町・片倉町・岸根公園・北新横浜を通過）。湘南台–戸塚間と新羽–あざみ野間は各駅に停車。全列車湘南台–あざみ野間の通し運転で30分間隔、平日10–17時・土休日9–21時のみ。上永谷・新羽で普通と接続。横浜–新横浜間はノンストップ。"
+    }
+  ],
+  "sources": [
+    "https://ja.wikipedia.org/wiki/横浜市営地下鉄ブルーライン",
+    "https://www.city.yokohama.lg.jp/city-info/koho-kocho/press/koutuu/2015/20150513-026-21064.files/20150513.pdf",
+    "https://ja.wikipedia.org/w/api.php (coordinates/langlinks)"
+  ],
+  "notes": "他社直通なし。座標は日本語版Wikipedia各駅記事の座標（複数事業者駅は当該事業者・路線の座標を優先）。韓国語名は日本語版記事の韓国語版リンク先記事名から「역」と曖昧さ回避括弧を除いたもの。jaSubは日本語版路線記事の駅一覧に記載の副駅名（ネーミングライツを含む。契約更新で変わり得る）。英語名は日本語版Wikipedia各駅記事のローマ字欄からマクロンを除いたもの（駅名標の実際の表記と大文字・ハイフンの細部は未確認）。湘南台(B01)は記事に横浜市営地下鉄側の座標が無く駅全体の代表点。路線色は日本語版Wikipediaインフォボックスの値#005BA5（同記事の色見本は#2F56A5、公式HEX未確認）。桜木町（横浜市役所下車駅）・新横浜（日産スタジアム下車駅）の「下車駅」表記は副駅名ではなく案内表記と判断しjaSubから除外（未確認）。快速は2015年7月18日運転開始、2025年11月から土休日深夜に新横浜発上永谷行き快速1本あり（新横浜→上永谷間は快速停車駅のみ）。"
+}

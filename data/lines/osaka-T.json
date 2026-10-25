@@ -1,0 +1,285 @@
+{
+  "id": "osaka.T",
+  "region": "osaka",
+  "operator": "Osaka Metro",
+  "operatorKo": "오사카 메트로",
+  "nameJa": "谷町線",
+  "nameKo": "다니마치선",
+  "nameEn": "Tanimachi Line",
+  "color": "#522886",
+  "circular": false,
+  "stations": [
+    {
+      "code": "T11",
+      "ja": "大日",
+      "kana": "だいにち",
+      "ko": "다이니치",
+      "koSource": "wiki",
+      "en": "Dainichi",
+      "lat": 34.749406,
+      "lng": 135.578275
+    },
+    {
+      "code": "T12",
+      "ja": "守口",
+      "kana": "もりぐち",
+      "ko": "모리구치",
+      "koSource": "wiki",
+      "en": "Moriguchi",
+      "lat": 34.738075,
+      "lng": 135.563778
+    },
+    {
+      "code": "T13",
+      "ja": "太子橋今市",
+      "kana": "たいしばしいまいち",
+      "ko": "다이시바시이마이치",
+      "koSource": "wiki",
+      "en": "Taishibashi-Imaichi",
+      "lat": 34.731381,
+      "lng": 135.554936
+    },
+    {
+      "code": "T14",
+      "ja": "千林大宮",
+      "kana": "せんばやしおおみや",
+      "ko": "센바야시오미야",
+      "koSource": "wiki",
+      "en": "Sembayashi-Omiya",
+      "lat": 34.723806,
+      "lng": 135.549128
+    },
+    {
+      "code": "T15",
+      "ja": "関目高殿",
+      "kana": "せきめたかどの",
+      "ko": "세키메타카도노",
+      "koSource": "wiki",
+      "en": "Sekime-Takadono",
+      "lat": 34.715194,
+      "lng": 135.545794
+    },
+    {
+      "code": "T16",
+      "ja": "野江内代",
+      "kana": "のえうちんだい",
+      "ko": "노에우친다이",
+      "koSource": "wiki",
+      "en": "Noe-Uchindai",
+      "lat": 34.70895,
+      "lng": 135.538136
+    },
+    {
+      "code": "T17",
+      "ja": "都島",
+      "kana": "みやこじま",
+      "ko": "미야코지마",
+      "koSource": "wiki",
+      "en": "Miyakojima",
+      "lat": 34.708958,
+      "lng": 135.525967
+    },
+    {
+      "code": "T18",
+      "ja": "天神橋筋六丁目",
+      "kana": "てんじんばしすじろくちょうめ",
+      "ko": "덴진바시스지 6초메",
+      "koSource": "wiki",
+      "en": "Tenjimbashisuji 6-chome",
+      "lat": 34.710603,
+      "lng": 135.510783
+    },
+    {
+      "code": "T19",
+      "ja": "中崎町",
+      "kana": "なかざきちょう",
+      "ko": "나카자키초",
+      "koSource": "wiki",
+      "en": "Nakazakicho",
+      "lat": 34.706864,
+      "lng": 135.505244
+    },
+    {
+      "code": "T20",
+      "ja": "東梅田",
+      "kana": "ひがしうめだ",
+      "ko": "히가시우메다",
+      "koSource": "wiki",
+      "en": "Higashi-Umeda",
+      "lat": 34.700972,
+      "lng": 135.499556
+    },
+    {
+      "code": "T21",
+      "ja": "南森町",
+      "kana": "みなみもりまち",
+      "ko": "미나미모리마치",
+      "koSource": "wiki",
+      "en": "Minamimorimachi",
+      "lat": 34.697697,
+      "lng": 135.511019
+    },
+    {
+      "code": "T22",
+      "ja": "天満橋",
+      "kana": "てんまばし",
+      "ko": "덴마바시",
+      "koSource": "wiki",
+      "en": "Temmabashi",
+      "lat": 34.690197,
+      "lng": 135.516631
+    },
+    {
+      "code": "T23",
+      "ja": "谷町四丁目",
+      "kana": "たにまちよんちょうめ",
+      "ko": "다니마치 4초메",
+      "koSource": "wiki",
+      "en": "Tanimachi 4-chome",
+      "lat": 34.681914,
+      "lng": 135.517286
+    },
+    {
+      "code": "T24",
+      "ja": "谷町六丁目",
+      "kana": "たにまちろくちょうめ",
+      "ko": "다니마치 6초메",
+      "koSource": "wiki",
+      "en": "Tanimachi 6-chome",
+      "lat": 34.674917,
+      "lng": 135.516958
+    },
+    {
+      "code": "T25",
+      "ja": "谷町九丁目",
+      "kana": "たにまちきゅうちょうめ",
+      "ko": "다니마치 9초메",
+      "koSource": "wiki",
+      "en": "Tanimachi 9-chome",
+      "lat": 34.667144,
+      "lng": 135.515842
+    },
+    {
+      "code": "T26",
+      "ja": "四天王寺前夕陽ケ丘",
+      "kana": "してんのうじまえゆうひがおか",
+      "ko": "시텐노지마에유히가오카",
+      "koSource": "wiki",
+      "en": "Shitennoji-mae Yuhigaoka",
+      "lat": 34.658536,
+      "lng": 135.514133
+    },
+    {
+      "code": "T27",
+      "ja": "天王寺",
+      "kana": "てんのうじ",
+      "ko": "덴노지",
+      "koSource": "wiki",
+      "en": "Tennoji",
+      "lat": 34.647464,
+      "lng": 135.513167
+    },
+    {
+      "code": "T28",
+      "ja": "阿倍野",
+      "kana": "あべの",
+      "ko": "아베노",
+      "koSource": "wiki",
+      "en": "Abeno",
+      "lat": 34.642972,
+      "lng": 135.512194
+    },
+    {
+      "code": "T29",
+      "ja": "文の里",
+      "kana": "ふみのさと",
+      "ko": "후미노사토",
+      "koSource": "wiki",
+      "en": "Fuminosato",
+      "lat": 34.636039,
+      "lng": 135.518022
+    },
+    {
+      "code": "T30",
+      "ja": "田辺",
+      "kana": "たなべ",
+      "ko": "다나베",
+      "koSource": "wiki",
+      "en": "Tanabe",
+      "lat": 34.628214,
+      "lng": 135.525514
+    },
+    {
+      "code": "T31",
+      "ja": "駒川中野",
+      "kana": "こまがわなかの",
+      "ko": "고마가와나카노",
+      "koSource": "wiki",
+      "en": "Komagawa-Nakano",
+      "lat": 34.621508,
+      "lng": 135.533036
+    },
+    {
+      "code": "T32",
+      "ja": "平野",
+      "kana": "ひらの",
+      "ko": "히라노",
+      "koSource": "wiki",
+      "en": "Hirano",
+      "lat": 34.621039,
+      "lng": 135.548853
+    },
+    {
+      "code": "T33",
+      "ja": "喜連瓜破",
+      "kana": "きれうりわり",
+      "ko": "기레우리와리",
+      "koSource": "wiki",
+      "en": "Kire-Uriwari",
+      "lat": 34.609272,
+      "lng": 135.550944
+    },
+    {
+      "code": "T34",
+      "ja": "出戸",
+      "kana": "でと",
+      "ko": "데토",
+      "koSource": "wiki",
+      "en": "Deto",
+      "lat": 34.608858,
+      "lng": 135.566228
+    },
+    {
+      "code": "T35",
+      "ja": "長原",
+      "kana": "ながはら",
+      "ko": "나가하라",
+      "koSource": "wiki",
+      "en": "Nagahara",
+      "lat": 34.602453,
+      "lng": 135.573753
+    },
+    {
+      "code": "T36",
+      "ja": "八尾南",
+      "kana": "やおみなみ",
+      "ko": "야오미나미",
+      "koSource": "wiki",
+      "en": "Yao-minami",
+      "lat": 34.597389,
+      "lng": 135.582569
+    }
+  ],
+  "throughTermini": {
+    "start": [],
+    "end": []
+  },
+  "services": [],
+  "sources": [
+    "https://ja.wikipedia.org/wiki/Osaka Metro谷町線",
+    "https://subway.osakametro.co.jp/station_guide/",
+    "https://subway.osakametro.co.jp/en/station_guide/",
+    "https://ja.wikipedia.org/w/api.php (langlinks/coordinates)"
+  ],
+  "notes": "他社直通なし。T26 は公式サイト表記「四天王寺前夕陽ケ丘」（Wikipediaは「夕陽ヶ丘」、アプリはヶ/ケを同一視）。駅名標の表記がヶかケかは未確認。T20 東梅田は御堂筋線「梅田」・四つ橋線「西梅田」と別名の駅。 駅名(ja)・駅番号・英語表記はOsaka Metro公式「路線情報」ページ（日本語版・英語版）の駅一覧の表記に従った。韓国語名は日本語版Wikipedia各駅記事の韓国語版リンク先記事名から「역」と曖昧さ回避括弧を除いたもの。kanaは日本語版Wikipedia各駅記事冒頭の読み。座標は日本語版Wikipedia各駅記事の座標で、複数事業者・複数路線の駅では可能な限りOsaka Metro（該当路線）側の座標を選んだ（ホーム位置ではなく駅代表点）。jaSubは日本語版Wikipedia路線記事の駅一覧に括弧書きされた副駅名で、実際の駅名標に必ず表示されているかは個別確認していない。全列車各駅停車（種別による通過駅なし）。"
+}

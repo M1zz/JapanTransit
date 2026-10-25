@@ -1,0 +1,135 @@
+{
+  "id": "osaka.I",
+  "region": "osaka",
+  "operator": "Osaka Metro",
+  "operatorKo": "오사카 메트로",
+  "nameJa": "今里筋線",
+  "nameKo": "이마자토스지선",
+  "nameEn": "Imazatosuji Line",
+  "color": "#EE7B1A",
+  "circular": false,
+  "stations": [
+    {
+      "code": "I11",
+      "ja": "井高野",
+      "kana": "いたかの",
+      "ko": "이타카노",
+      "koSource": "wiki",
+      "en": "Itakano",
+      "lat": 34.760167,
+      "lng": 135.547353
+    },
+    {
+      "code": "I12",
+      "ja": "瑞光四丁目",
+      "kana": "ずいこうよんちょうめ",
+      "ko": "즈이코 4초메",
+      "koSource": "wiki",
+      "en": "Zuiko 4-chome",
+      "lat": 34.752314,
+      "lng": 135.544614
+    },
+    {
+      "code": "I13",
+      "ja": "だいどう豊里",
+      "kana": "だいどうとよさと",
+      "ko": "다이도토요사토",
+      "koSource": "wiki",
+      "en": "Daido-Toyosato",
+      "lat": 34.743769,
+      "lng": 135.544644
+    },
+    {
+      "code": "I14",
+      "ja": "太子橋今市",
+      "kana": "たいしばしいまいち",
+      "ko": "다이시바시이마이치",
+      "koSource": "wiki",
+      "en": "Taishibashi-Imaichi",
+      "lat": 34.731381,
+      "lng": 135.554936
+    },
+    {
+      "code": "I15",
+      "ja": "清水",
+      "kana": "しみず",
+      "ko": "시미즈",
+      "koSource": "wiki",
+      "en": "Shimizu",
+      "lat": 34.721644,
+      "lng": 135.560772
+    },
+    {
+      "code": "I16",
+      "ja": "新森古市",
+      "kana": "しんもりふるいち",
+      "ko": "신모리후루이치",
+      "koSource": "wiki",
+      "en": "Shimmori-Furuichi",
+      "lat": 34.715219,
+      "lng": 135.558256
+    },
+    {
+      "code": "I17",
+      "ja": "関目成育",
+      "kana": "せきめせいいく",
+      "ko": "세키메세이이쿠",
+      "koSource": "wiki",
+      "en": "Sekime-Seiiku",
+      "lat": 34.712761,
+      "lng": 135.546464
+    },
+    {
+      "code": "I18",
+      "ja": "蒲生四丁目",
+      "kana": "がもうよんちょうめ",
+      "ko": "가모 4초메",
+      "koSource": "wiki",
+      "en": "Gamo 4-chome",
+      "lat": 34.700367,
+      "lng": 135.547708
+    },
+    {
+      "code": "I19",
+      "ja": "鴫野",
+      "kana": "しぎの",
+      "ko": "시기노",
+      "koSource": "wiki",
+      "en": "Shigino",
+      "lat": 34.693119,
+      "lng": 135.546214
+    },
+    {
+      "code": "I20",
+      "ja": "緑橋",
+      "kana": "みどりばし",
+      "ko": "미도리바시",
+      "koSource": "wiki",
+      "en": "Midoribashi",
+      "lat": 34.68075,
+      "lng": 135.544581
+    },
+    {
+      "code": "I21",
+      "ja": "今里",
+      "kana": "いまざと",
+      "ko": "이마자토",
+      "koSource": "wiki",
+      "en": "Imazato",
+      "lat": 34.668658,
+      "lng": 135.544289
+    }
+  ],
+  "throughTermini": {
+    "start": [],
+    "end": []
+  },
+  "services": [],
+  "sources": [
+    "https://ja.wikipedia.org/wiki/Osaka Metro今里筋線",
+    "https://subway.osakametro.co.jp/station_guide/",
+    "https://subway.osakametro.co.jp/en/station_guide/",
+    "https://ja.wikipedia.org/w/api.php (langlinks/coordinates)"
+  ],
+  "notes": "他社直通なし（リニア地下鉄）。I17 関目成育は上下線ホームが別階（地下2階・地下4階）。 駅名(ja)・駅番号・英語表記はOsaka Metro公式「路線情報」ページ（日本語版・英語版）の駅一覧の表記に従った。韓国語名は日本語版Wikipedia各駅記事の韓国語版リンク先記事名から「역」と曖昧さ回避括弧を除いたもの。kanaは日本語版Wikipedia各駅記事冒頭の読み。座標は日本語版Wikipedia各駅記事の座標で、複数事業者・複数路線の駅では可能な限りOsaka Metro（該当路線）側の座標を選んだ（ホーム位置ではなく駅代表点）。jaSubは日本語版Wikipedia路線記事の駅一覧に括弧書きされた副駅名で、実際の駅名標に必ず表示されているかは個別確認していない。全列車各駅停車（種別による通過駅なし）。"
+}

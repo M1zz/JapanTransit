@@ -1,0 +1,1884 @@
+{
+  "region": "tokyo",
+  "spots": [
+    {
+      "id": "tokyo.big-sight",
+      "ko": "도쿄 빅사이트",
+      "ja": "東京ビッグサイト",
+      "en": "Tokyo Big Sight",
+      "aliases": [
+        "빅사이트",
+        "국제전시장",
+        "코믹마켓",
+        "코미케"
+      ],
+      "category": "전시·공연",
+      "lat": 35.6302,
+      "lng": 139.7937,
+      "stations": [
+        {
+          "ja": "国際展示場",
+          "line": "R",
+          "walkMinutes": 7,
+          "exit": null,
+          "note": "린카이선. 신주쿠·오사키에서 한 번에"
+        },
+        {
+          "ja": "東京ビッグサイト",
+          "line": "U",
+          "walkMinutes": 3,
+          "exit": null,
+          "note": "유리카모메. 신바시에서"
+        }
+      ],
+      "tip": "린카이선 역 이름은 '국제전시장(国際展示場)', 유리카모메 역 이름은 '도쿄 빅사이트'입니다.",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/東京国際展示場"
+      ]
+    },
+    {
+      "id": "tokyo.skytree",
+      "ko": "도쿄 스카이트리",
+      "ja": "東京スカイツリー",
+      "en": "Tokyo Skytree",
+      "aliases": [
+        "스카이트리",
+        "소라마치",
+        "도쿄 소라마치",
+        "오시아게"
+      ],
+      "category": "전망대",
+      "lat": 35.7101,
+      "lng": 139.8108,
+      "stations": [
+        {
+          "ja": "押上",
+          "line": "Z",
+          "walkMinutes": 7,
+          "exit": null,
+          "note": "한조몬선 오시아게(스카이트리마에). 역과 직결, 지하 3층 개찰구에서 4층 정면 입구까지 약 7분. 東武スカイツリーライン とうきょうスカイツリー駅도 바로 앞(데이터 없음)"
+        },
+        {
+          "ja": "押上",
+          "line": "A",
+          "walkMinutes": 7,
+          "exit": null,
+          "note": "아사쿠사선. 하네다·나리타 공항에서 직통 열차. 4층 정면 입구까지 약 7분"
+        }
+      ],
+      "tip": "전망대 매표소는 4층 정면 입구입니다. 역 개찰구에서 에스컬레이터로 4층까지 올라가세요.",
+      "sources": [
+        "https://www.tokyo-skytree.jp/access/public-transport/",
+        "https://www.tokyo-skytree.jp/access/ticket-counter/",
+        "https://ja.wikipedia.org/wiki/東京スカイツリー"
+      ]
+    },
+    {
+      "id": "tokyo.sensoji",
+      "ko": "센소지",
+      "ja": "浅草寺",
+      "en": "Senso-ji Temple",
+      "aliases": [
+        "아사쿠사",
+        "아사쿠사 절",
+        "가미나리몬",
+        "카미나리몬",
+        "나카미세",
+        "센소지 절"
+      ],
+      "category": "신사·절",
+      "lat": 35.7111,
+      "lng": 139.7964,
+      "stations": [
+        {
+          "ja": "浅草",
+          "line": "G",
+          "walkMinutes": 5,
+          "exit": null,
+          "note": "긴자선. 東武スカイツリーライン·つくばエクスプレス 浅草역도 약 5분"
+        },
+        {
+          "ja": "浅草",
+          "line": "A",
+          "walkMinutes": 5,
+          "exit": "A4",
+          "note": "아사쿠사선"
+        }
+      ],
+      "tip": "좌표는 가미나리몬(정문). 본당까지는 나카미세 거리를 따라 약 5분 더 걷습니다.",
+      "sources": [
+        "https://www.senso-ji.jp/access/",
+        "https://ja.wikipedia.org/wiki/雷門",
+        "https://ja.wikipedia.org/wiki/浅草寺"
+      ]
+    },
+    {
+      "id": "tokyo.tokyo-tower",
+      "ko": "도쿄 타워",
+      "ja": "東京タワー",
+      "en": "Tokyo Tower",
+      "aliases": [
+        "도쿄타워",
+        "시바공원",
+        "조조지"
+      ],
+      "category": "전망대",
+      "lat": 35.6586,
+      "lng": 139.7456,
+      "stations": [
+        {
+          "ja": "赤羽橋",
+          "line": "E",
+          "walkMinutes": 5,
+          "exit": "赤羽橋口",
+          "note": "오에도선"
+        },
+        {
+          "ja": "御成門",
+          "line": "I",
+          "walkMinutes": 6,
+          "exit": "A1",
+          "note": "미타선"
+        },
+        {
+          "ja": "神谷町",
+          "line": "H",
+          "walkMinutes": 7,
+          "exit": "1",
+          "note": "히비야선"
+        }
+      ],
+      "tip": "",
+      "sources": [
+        "https://www.tokyotower.co.jp/access/",
+        "https://ja.wikipedia.org/wiki/東京タワー"
+      ]
+    },
+    {
+      "id": "tokyo.meiji-jingu",
+      "ko": "메이지 신궁",
+      "ja": "明治神宮",
+      "en": "Meiji Jingu",
+      "aliases": [
+        "메이지진구",
+        "메이지 진구",
+        "메이지신궁",
+        "요요기 공원"
+      ],
+      "category": "신사·절",
+      "lat": 35.6761,
+      "lng": 139.6992,
+      "stations": [
+        {
+          "ja": "原宿",
+          "line": "JY",
+          "walkMinutes": 1,
+          "exit": "表参道口",
+          "note": "야마노테선. 남쪽 참배길 입구(하라주쿠 입구)까지 1분"
+        },
+        {
+          "ja": "明治神宮前",
+          "line": "C",
+          "walkMinutes": 1,
+          "exit": "2",
+          "note": "지요다선·후쿠토신선 메이지진구마에(하라주쿠)"
+        },
+        {
+          "ja": "明治神宮前",
+          "line": "F",
+          "walkMinutes": 1,
+          "exit": "2",
+          "note": ""
+        }
+      ],
+      "tip": "입구에서 본전까지는 숲길로 약 10분 걸립니다. 좌표는 본전.",
+      "sources": [
+        "https://www.meijijingu.or.jp/access/",
+        "https://www.meijijingu.or.jp/access/images/access_map01.jpg",
+        "https://www.meijijingu.or.jp/en/access/",
+        "https://ja.wikipedia.org/wiki/明治神宮"
+      ]
+    },
+    {
+      "id": "tokyo.shibuya-crossing",
+      "ko": "시부야 스크램블 교차로",
+      "ja": "渋谷スクランブル交差点",
+      "en": "Shibuya Scramble Crossing",
+      "aliases": [
+        "시부야",
+        "스크램블 교차로",
+        "시부야 교차로",
+        "하치코",
+        "하치코 동상"
+      ],
+      "category": "명소",
+      "lat": 35.6595,
+      "lng": 139.7006,
+      "stations": [
+        {
+          "ja": "渋谷",
+          "line": "JY",
+          "walkMinutes": 1,
+          "exit": "ハチ公口",
+          "note": "약. 야마노테선. 하치코 출구로 나오면 바로"
+        },
+        {
+          "ja": "渋谷",
+          "line": "G",
+          "walkMinutes": 2,
+          "exit": null,
+          "note": "약. 긴자선. 승강장이 스크램블 스퀘어 3층이라 내려와서 건넘"
+        },
+        {
+          "ja": "渋谷",
+          "line": "Z",
+          "walkMinutes": 2,
+          "exit": null,
+          "note": "약. 한조몬선·후쿠토신선 지하역"
+        }
+      ],
+      "tip": "JR은 '하치코 출구(ハチ公口)'로 나오세요. 시부야역은 출구가 많아 다른 쪽으로 나오면 한참 돕니다.",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/渋谷スクランブル交差点",
+        "https://ja.wikipedia.org/wiki/渋谷駅"
+      ]
+    },
+    {
+      "id": "tokyo.shibuya-sky",
+      "ko": "시부야 스카이",
+      "ja": "SHIBUYA SKY",
+      "en": "Shibuya Sky",
+      "aliases": [
+        "시부야 스크램블 스퀘어",
+        "스크램블 스퀘어",
+        "시부야 전망대"
+      ],
+      "category": "전망대",
+      "lat": 35.6583,
+      "lng": 139.7016,
+      "stations": [
+        {
+          "ja": "渋谷",
+          "line": "JY",
+          "walkMinutes": 0,
+          "exit": null,
+          "note": "직결. JR 시부야역 바로 위 건물"
+        },
+        {
+          "ja": "渋谷",
+          "line": "G",
+          "walkMinutes": 0,
+          "exit": null,
+          "note": "직결. 긴자선 승강장이 스크램블 스퀘어 3층에 걸쳐 있음"
+        },
+        {
+          "ja": "渋谷",
+          "line": "F",
+          "walkMinutes": 0,
+          "exit": "B6",
+          "note": "직결. 후쿠토신선·한조몬선. 渋谷ヒカリエ1 개찰구를 나와 오른쪽, 지하 출구 B6"
+        }
+      ],
+      "tip": "전망대 입구는 스크램블 스퀘어 14층입니다. 해 질 녘은 미리 예매하세요.",
+      "sources": [
+        "https://www.shibuya-scramble-square.com/access/",
+        "https://ja.wikipedia.org/wiki/渋谷スクランブルスクエア",
+        "https://ja.wikipedia.org/wiki/渋谷駅"
+      ]
+    },
+    {
+      "id": "tokyo.shinjuku-gyoen",
+      "ko": "신주쿠 교엔",
+      "ja": "新宿御苑",
+      "en": "Shinjuku Gyoen National Garden",
+      "aliases": [
+        "신주쿠교엔",
+        "신주쿠 공원",
+        "벚꽃 명소"
+      ],
+      "category": "공원·자연",
+      "lat": 35.6853,
+      "lng": 139.7097,
+      "stations": [
+        {
+          "ja": "新宿御苑前",
+          "line": "M",
+          "walkMinutes": 5,
+          "exit": "1",
+          "note": "마루노우치선. 신주쿠문(新宿門)까지. 2번 출구는 오키도문까지 5분"
+        },
+        {
+          "ja": "新宿三丁目",
+          "line": "S",
+          "walkMinutes": 5,
+          "exit": "C1",
+          "note": "신주쿠선. 신주쿠문까지. C5 출구도 가능"
+        },
+        {
+          "ja": "千駄ケ谷",
+          "line": "JB",
+          "walkMinutes": 5,
+          "exit": null,
+          "note": "주오·소부선 각역정차. 센다가야문(千駄ヶ谷門)까지"
+        }
+      ],
+      "tip": "문이 세 개(신주쿠문·오키도문·센다가야문)라 역마다 가까운 문이 다릅니다. 좌표는 신주쿠문. 술 반입 금지.",
+      "sources": [
+        "https://policies.env.go.jp/national-garden/shinjukugyoen/guide/access/",
+        "https://ja.wikipedia.org/wiki/新宿御苑"
+      ]
+    },
+    {
+      "id": "tokyo.tsukiji-outer-market",
+      "ko": "쓰키지 장외시장",
+      "ja": "築地場外市場",
+      "en": "Tsukiji Outer Market",
+      "aliases": [
+        "쓰키지",
+        "츠키지",
+        "츠키지 시장",
+        "쓰키지 시장",
+        "츠키지 장외시장"
+      ],
+      "category": "먹거리",
+      "lat": 35.6654,
+      "lng": 139.7705,
+      "stations": [
+        {
+          "ja": "築地",
+          "line": "H",
+          "walkMinutes": 1,
+          "exit": "1",
+          "note": "히비야선. 2번 출구도 1분"
+        },
+        {
+          "ja": "築地市場",
+          "line": "E",
+          "walkMinutes": 1,
+          "exit": "A1",
+          "note": "오에도선"
+        }
+      ],
+      "tip": "참치 경매가 있는 도매시장은 도요스로 옮겨 갔습니다. 쓰키지에는 식당·노점 거리만 남아 있어요. 가게 대부분이 오후 2시쯤 닫습니다.",
+      "sources": [
+        "https://www.tsukiji.or.jp/access/",
+        "https://nominatim.openstreetmap.org/search?q=築地場外市場&format=json"
+      ]
+    },
+    {
+      "id": "tokyo.toyosu-market",
+      "ko": "도요스 시장",
+      "ja": "豊洲市場",
+      "en": "Toyosu Market",
+      "aliases": [
+        "도요스",
+        "도요스 수산시장",
+        "참치 경매",
+        "센캬쿠반라이",
+        "도요스 센캬쿠반라이"
+      ],
+      "category": "먹거리",
+      "lat": 35.6442,
+      "lng": 139.7836,
+      "stations": [
+        {
+          "ja": "市場前",
+          "line": "U",
+          "walkMinutes": 4,
+          "exit": null,
+          "note": "유리카모메 시조마에. 개찰구를 나와 보행자 데크로 바로 이어짐"
+        }
+      ],
+      "tip": "역 이름이 '도요스'가 아니라 '시조마에(市場前)'입니다. 일요일·공휴일·휴시장일은 쉽니다.",
+      "sources": [
+        "https://www.shijou.metro.tokyo.lg.jp/documents/d/shijou/toyosu_access",
+        "https://ja.wikipedia.org/wiki/豊洲市場"
+      ]
+    },
+    {
+      "id": "tokyo.ueno-park",
+      "ko": "우에노 공원",
+      "ja": "上野恩賜公園",
+      "en": "Ueno Park",
+      "aliases": [
+        "우에노",
+        "우에노 동물원",
+        "시노바즈 연못",
+        "우에노 벚꽃"
+      ],
+      "category": "공원·자연",
+      "lat": 35.7122,
+      "lng": 139.7711,
+      "stations": [
+        {
+          "ja": "上野",
+          "line": "JY",
+          "walkMinutes": 2,
+          "exit": "公園口",
+          "note": "야마노테선. 공원 출구로 나오면 공원과 바로 이어짐"
+        },
+        {
+          "ja": "京成上野",
+          "line": "KS",
+          "walkMinutes": 1,
+          "exit": null,
+          "note": "게이세이선. 나리타 공항에서 바로"
+        },
+        {
+          "ja": "上野",
+          "line": "G",
+          "walkMinutes": 4,
+          "exit": null,
+          "note": "긴자선·히비야선"
+        }
+      ],
+      "tip": "JR은 '공원 출구(公園口)'로 나오세요. 다른 출구로 나오면 계단을 올라 돌아가야 합니다.",
+      "sources": [
+        "https://www.kensetsu.metro.tokyo.lg.jp/jimusho/toubuk/ueno/access",
+        "https://ja.wikipedia.org/wiki/上野恩賜公園",
+        "https://ja.wikipedia.org/wiki/上野駅"
+      ]
+    },
+    {
+      "id": "tokyo.ameyoko",
+      "ko": "아메요코 시장",
+      "ja": "アメ横商店街",
+      "en": "Ameyoko Shopping Street",
+      "aliases": [
+        "아메요코",
+        "아메야요코초",
+        "우에노 시장"
+      ],
+      "category": "쇼핑",
+      "lat": 35.7103,
+      "lng": 139.7746,
+      "stations": [
+        {
+          "ja": "御徒町",
+          "line": "JY",
+          "walkMinutes": 1,
+          "exit": "北口",
+          "note": "야마노테선 오카치마치. 북쪽 출구 바로"
+        },
+        {
+          "ja": "上野",
+          "line": "JY",
+          "walkMinutes": 1,
+          "exit": "不忍口",
+          "note": "시노바즈 출구 바로"
+        },
+        {
+          "ja": "上野",
+          "line": "G",
+          "walkMinutes": 2,
+          "exit": "7",
+          "note": "긴자선·히비야선"
+        }
+      ],
+      "tip": "우에노역과 오카치마치역 사이 고가 철로 아래 약 400m 거리입니다.",
+      "sources": [
+        "https://www.ameyoko.net/access/",
+        "https://ja.wikipedia.org/wiki/アメ横"
+      ]
+    },
+    {
+      "id": "tokyo.national-museum",
+      "ko": "도쿄 국립박물관",
+      "ja": "東京国立博物館",
+      "en": "Tokyo National Museum",
+      "aliases": [
+        "국립박물관",
+        "도쿄국립박물관",
+        "도하쿠"
+      ],
+      "category": "박물관·미술관",
+      "lat": 35.7191,
+      "lng": 139.7767,
+      "stations": [
+        {
+          "ja": "上野",
+          "line": "JY",
+          "walkMinutes": 10,
+          "exit": "公園口",
+          "note": "우에노 공원을 가로질러"
+        },
+        {
+          "ja": "鶯谷",
+          "line": "JY",
+          "walkMinutes": 10,
+          "exit": null,
+          "note": ""
+        },
+        {
+          "ja": "京成上野",
+          "line": "KS",
+          "walkMinutes": 15,
+          "exit": null,
+          "note": ""
+        }
+      ],
+      "tip": "",
+      "sources": [
+        "https://www.tnm.jp/modules/r_free_page/index.php?id=113",
+        "https://ja.wikipedia.org/wiki/東京国立博物館",
+        "https://ja.wikipedia.org/wiki/上野駅",
+        "https://ja.wikipedia.org/wiki/鶯谷駅"
+      ]
+    },
+    {
+      "id": "tokyo.akihabara",
+      "ko": "아키하바라",
+      "ja": "秋葉原電気街",
+      "en": "Akihabara Electric Town",
+      "aliases": [
+        "아키바",
+        "아키하바라 전자상가",
+        "전자상가",
+        "메이드 카페",
+        "애니 굿즈"
+      ],
+      "category": "쇼핑",
+      "lat": 35.6984,
+      "lng": 139.7731,
+      "stations": [
+        {
+          "ja": "秋葉原",
+          "line": "JY",
+          "walkMinutes": 1,
+          "exit": "電気街口",
+          "note": "약. 야마노테선·소부선. 좌표가 JR역 앞"
+        },
+        {
+          "ja": "秋葉原",
+          "line": "H",
+          "walkMinutes": 3,
+          "exit": null,
+          "note": "약. 히비야선(좌표 거리로 계산)"
+        },
+        {
+          "ja": "末広町",
+          "line": "G",
+          "walkMinutes": 7,
+          "exit": null,
+          "note": "약. 긴자선. 역이 전기거리 북쪽 끝이라 내리면 바로 상점가. JR역 앞까지 약 7분"
+        }
+      ],
+      "tip": "JR은 '전기거리 출구(電気街口)'로 나와야 상점가 쪽입니다.",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/秋葉原",
+        "https://ja.wikipedia.org/wiki/秋葉原駅",
+        "https://ja.wikipedia.org/wiki/末広町駅_(東京都)"
+      ]
+    },
+    {
+      "id": "tokyo.takeshita-dori",
+      "ko": "다케시타 거리",
+      "ja": "竹下通り",
+      "en": "Takeshita Street",
+      "aliases": [
+        "하라주쿠",
+        "타케시타 거리",
+        "다케시타도리",
+        "하라주쿠 거리"
+      ],
+      "category": "쇼핑",
+      "lat": 35.6713,
+      "lng": 139.7048,
+      "stations": [
+        {
+          "ja": "原宿",
+          "line": "JY",
+          "walkMinutes": 1,
+          "exit": "竹下口",
+          "note": "야마노테선. 다케시타 출구 바로 앞이 거리 입구"
+        },
+        {
+          "ja": "明治神宮前",
+          "line": "C",
+          "walkMinutes": 4,
+          "exit": null,
+          "note": "약. 지요다선·후쿠토신선. 메이지도리 쪽 끝으로 나옴(좌표 거리로 계산)"
+        }
+      ],
+      "tip": "약 350m 길이의 거리입니다. 11시부터 18시까지는 차가 못 들어오는 보행자 거리입니다.",
+      "sources": [
+        "https://www.takeshita-street.com/",
+        "https://ja.wikipedia.org/wiki/竹下通り",
+        "https://ja.wikipedia.org/wiki/明治神宮前駅",
+        "https://ja.wikipedia.org/wiki/原宿駅"
+      ]
+    },
+    {
+      "id": "tokyo.omotesando",
+      "ko": "오모테산도",
+      "ja": "表参道",
+      "en": "Omotesando",
+      "aliases": [
+        "오모테산도 힐즈",
+        "오모테산도힐스",
+        "아오야마",
+        "캣 스트리트"
+      ],
+      "category": "쇼핑",
+      "lat": 35.6672,
+      "lng": 139.7089,
+      "stations": [
+        {
+          "ja": "表参道",
+          "line": "G",
+          "walkMinutes": 2,
+          "exit": "A2",
+          "note": "긴자선·지요다선·한조몬선. 오모테산도 힐즈까지"
+        },
+        {
+          "ja": "明治神宮前",
+          "line": "F",
+          "walkMinutes": 3,
+          "exit": "5",
+          "note": "후쿠토신선·지요다선. 하라주쿠 쪽 끝"
+        },
+        {
+          "ja": "原宿",
+          "line": "JY",
+          "walkMinutes": 7,
+          "exit": "表参道口",
+          "note": "야마노테선"
+        }
+      ],
+      "tip": "좌표와 도보 시간은 오모테산도 힐즈 기준입니다.",
+      "sources": [
+        "https://www.omotesandohills.com/access/train.html",
+        "https://ja.wikipedia.org/wiki/表参道ヒルズ"
+      ]
+    },
+    {
+      "id": "tokyo.ginza",
+      "ko": "긴자",
+      "ja": "銀座",
+      "en": "Ginza",
+      "aliases": [
+        "긴자 식스",
+        "긴자식스",
+        "와코",
+        "긴자 쇼핑",
+        "유니클로 긴자"
+      ],
+      "category": "쇼핑",
+      "lat": 35.6712,
+      "lng": 139.7651,
+      "stations": [
+        {
+          "ja": "銀座",
+          "line": "G",
+          "walkMinutes": 1,
+          "exit": null,
+          "note": "긴자선·마루노우치선·히비야선. 역이 긴자 4초메 교차로 바로 아래"
+        },
+        {
+          "ja": "銀座一丁目",
+          "line": "Y",
+          "walkMinutes": 5,
+          "exit": null,
+          "note": "약(직선 약 400m). 유라쿠초선"
+        },
+        {
+          "ja": "有楽町",
+          "line": "JY",
+          "walkMinutes": 6,
+          "exit": "銀座口",
+          "note": "약(직선 약 460m). 야마노테선"
+        }
+      ],
+      "tip": "좌표는 긴자 4초메 교차로(와코 시계탑).",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/銀座",
+        "https://ja.wikipedia.org/wiki/銀座四丁目交差点",
+        "https://ja.wikipedia.org/wiki/銀座一丁目駅",
+        "https://ja.wikipedia.org/wiki/有楽町駅"
+      ]
+    },
+    {
+      "id": "tokyo.teamlab-planets",
+      "ko": "팀랩 플래닛",
+      "ja": "チームラボプラネッツ TOKYO",
+      "en": "teamLab Planets TOKYO",
+      "aliases": [
+        "팀랩 플래닛츠",
+        "팀랩",
+        "팀랩 도요스",
+        "물에 들어가는 미술관"
+      ],
+      "category": "박물관·미술관",
+      "lat": 35.6491,
+      "lng": 139.7895,
+      "stations": [
+        {
+          "ja": "新豊洲",
+          "line": "U",
+          "walkMinutes": 1,
+          "exit": null,
+          "note": "유리카모메 신토요스"
+        },
+        {
+          "ja": "豊洲",
+          "line": "Y",
+          "walkMinutes": 10,
+          "exit": null,
+          "note": "유라쿠초선"
+        }
+      ],
+      "tip": "팀랩 '보더리스'(아자부다이 힐스)와는 다른 곳입니다.",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/チームラボプラネッツ_TOKYO_DMM"
+      ]
+    },
+    {
+      "id": "tokyo.azabudai-hills",
+      "ko": "아자부다이 힐스",
+      "ja": "麻布台ヒルズ",
+      "en": "Azabudai Hills",
+      "aliases": [
+        "아자부다이힐스",
+        "팀랩 보더리스",
+        "팀랩"
+      ],
+      "category": "명소",
+      "lat": 35.6606,
+      "lng": 139.7403,
+      "stations": [
+        {
+          "ja": "神谷町",
+          "line": "H",
+          "walkMinutes": 0,
+          "exit": "5",
+          "note": "히비야선. 5번 출구 직결"
+        },
+        {
+          "ja": "六本木一丁目",
+          "line": "N",
+          "walkMinutes": 0,
+          "exit": "4",
+          "note": "난보쿠선. 4번 출구 직결"
+        }
+      ],
+      "tip": "팀랩 '보더리스'는 오다이바에서 이곳으로 옮겨 왔습니다. 도요스의 '플래닛'과 다른 곳이에요.",
+      "sources": [
+        "https://www.azabudai-hills.com/access/",
+        "https://ja.wikipedia.org/wiki/麻布台ヒルズ"
+      ]
+    },
+    {
+      "id": "tokyo.divercity",
+      "ko": "다이버시티 도쿄 플라자 (건담)",
+      "ja": "ダイバーシティ東京 プラザ",
+      "en": "DiverCity Tokyo Plaza",
+      "aliases": [
+        "다이버시티",
+        "오다이바 건담",
+        "건담",
+        "유니콘 건담",
+        "오다이바"
+      ],
+      "category": "쇼핑",
+      "lat": 35.6252,
+      "lng": 139.7754,
+      "stations": [
+        {
+          "ja": "東京テレポート",
+          "line": "R",
+          "walkMinutes": 3,
+          "exit": "B",
+          "note": "린카이선. B 출구"
+        },
+        {
+          "ja": "台場",
+          "line": "U",
+          "walkMinutes": 5,
+          "exit": null,
+          "note": "유리카모메"
+        }
+      ],
+      "tip": "실물 크기 건담은 건물 앞 광장에 있습니다.",
+      "sources": [
+        "https://mitsui-shopping-park.com/divercity-tokyo/access/train.html",
+        "https://ja.wikipedia.org/wiki/ダイバーシティ東京"
+      ]
+    },
+    {
+      "id": "tokyo.odaiba-seaside-park",
+      "ko": "오다이바 해변공원",
+      "ja": "お台場海浜公園",
+      "en": "Odaiba Seaside Park",
+      "aliases": [
+        "오다이바",
+        "자유의 여신상",
+        "레인보우 브리지",
+        "아쿠아시티",
+        "덱스 도쿄 비치",
+        "오다이바 해변"
+      ],
+      "category": "공원·자연",
+      "lat": 35.6308,
+      "lng": 139.7766,
+      "stations": [
+        {
+          "ja": "お台場海浜公園",
+          "line": "U",
+          "walkMinutes": 3,
+          "exit": null,
+          "note": "유리카모메"
+        },
+        {
+          "ja": "東京テレポート",
+          "line": "R",
+          "walkMinutes": 5,
+          "exit": null,
+          "note": "약(직선 약 420m). 린카이선. A 출구 쪽 텔레포트 다리로 이어짐"
+        }
+      ],
+      "tip": "",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/お台場海浜公園",
+        "https://ja.wikipedia.org/wiki/東京テレポート駅"
+      ]
+    },
+    {
+      "id": "tokyo.roppongi-hills",
+      "ko": "롯폰기 힐즈",
+      "ja": "六本木ヒルズ",
+      "en": "Roppongi Hills",
+      "aliases": [
+        "롯폰기힐스",
+        "롯폰기",
+        "도쿄 시티뷰",
+        "모리 미술관",
+        "모리타워"
+      ],
+      "category": "명소",
+      "lat": 35.6605,
+      "lng": 139.7293,
+      "stations": [
+        {
+          "ja": "六本木",
+          "line": "H",
+          "walkMinutes": 0,
+          "exit": "1C",
+          "note": "히비야선. 1C 출구 직결"
+        },
+        {
+          "ja": "六本木",
+          "line": "E",
+          "walkMinutes": 5,
+          "exit": "3",
+          "note": "약(직선 약 410m, 모리타워까지). 오에도선. 지하로 바로 이어지지 않아 지상으로 걸어감"
+        },
+        {
+          "ja": "麻布十番",
+          "line": "E",
+          "walkMinutes": 9,
+          "exit": "7",
+          "note": "약(직선 약 760m, 모리타워까지). 오에도선"
+        }
+      ],
+      "tip": "전망대(도쿄 시티뷰)와 모리 미술관은 모리타워 52~53층입니다.",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/六本木ヒルズ",
+        "https://ja.wikipedia.org/wiki/六本木駅",
+        "https://ja.wikipedia.org/wiki/麻布十番駅",
+        "https://nominatim.openstreetmap.org/search?q=六本木ヒルズ森タワー&format=json"
+      ]
+    },
+    {
+      "id": "tokyo.tokyo-station-marunouchi",
+      "ko": "도쿄역 마루노우치 역사",
+      "ja": "東京駅丸の内駅舎",
+      "en": "Tokyo Station Marunouchi Building",
+      "aliases": [
+        "도쿄역",
+        "마루노우치",
+        "키테",
+        "도쿄역 붉은 벽돌",
+        "도쿄 캐릭터 스트리트",
+        "도쿄역 라멘 스트리트"
+      ],
+      "category": "명소",
+      "lat": 35.6812,
+      "lng": 139.7661,
+      "stations": [
+        {
+          "ja": "東京",
+          "line": "JY",
+          "walkMinutes": 0,
+          "exit": "丸の内中央口",
+          "note": "야마노테선·주오선. 이 역 건물 자체(직결). 丸の内北口·南口도 같은 건물"
+        },
+        {
+          "ja": "東京",
+          "line": "M",
+          "walkMinutes": 2,
+          "exit": null,
+          "note": "약(직선 약 120m). 마루노우치선. 丸の内 쪽 지하 개찰구와 이어짐"
+        }
+      ],
+      "tip": "붉은 벽돌 역사는 '마루노우치(丸の内)' 쪽 출구입니다. 캐릭터 스트리트·라멘 스트리트는 반대편 '야에스(八重洲)' 쪽 지하.",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/東京駅",
+        "https://nominatim.openstreetmap.org/search?q=東京駅丸の内駅舎&format=json"
+      ]
+    },
+    {
+      "id": "tokyo.imperial-palace",
+      "ko": "고쿄 (일본 왕궁)",
+      "ja": "皇居",
+      "en": "Imperial Palace",
+      "aliases": [
+        "고쿄",
+        "황거",
+        "일왕궁",
+        "왕궁",
+        "니주바시",
+        "히가시교엔",
+        "고쿄 외원"
+      ],
+      "category": "명소",
+      "lat": 35.6801,
+      "lng": 139.7579,
+      "stations": [
+        {
+          "ja": "二重橋前",
+          "line": "C",
+          "walkMinutes": 2,
+          "exit": "6",
+          "note": "지요다선. 고쿄 외원 광장까지. 2번 출구도 2분"
+        },
+        {
+          "ja": "大手町",
+          "line": "T",
+          "walkMinutes": 5,
+          "exit": "C13a",
+          "note": "도자이선 등. 히가시교엔 오테몬(大手門)까지"
+        },
+        {
+          "ja": "東京",
+          "line": "JY",
+          "walkMinutes": 10,
+          "exit": null,
+          "note": "야마노테선. 외원 광장까지. 오테몬까지는 丸の内北口에서 약 15분"
+        }
+      ],
+      "tip": "좌표는 고쿄 외원 광장. 정원(히가시교엔)은 월·금요일에 닫습니다.",
+      "sources": [
+        "https://www.kunaicho.go.jp/event/higashigyoen/higashigyoen.html",
+        "https://visit-chiyoda.tokyo/app/spot/detail/405",
+        "https://ja.wikipedia.org/wiki/皇居外苑",
+        "https://nominatim.openstreetmap.org/search?q=皇居外苑&format=json"
+      ]
+    },
+    {
+      "id": "tokyo.tokyo-dome",
+      "ko": "도쿄 돔",
+      "ja": "東京ドーム",
+      "en": "Tokyo Dome",
+      "aliases": [
+        "도쿄돔",
+        "도쿄 돔 시티",
+        "요미우리 자이언츠",
+        "도쿄돔 콘서트"
+      ],
+      "category": "전시·공연",
+      "lat": 35.7058,
+      "lng": 139.7519,
+      "stations": [
+        {
+          "ja": "後楽園",
+          "line": "M",
+          "walkMinutes": 2,
+          "exit": null,
+          "note": "약(직선 약 190m). 마루노우치선·난보쿠선"
+        },
+        {
+          "ja": "水道橋",
+          "line": "I",
+          "walkMinutes": 5,
+          "exit": "A2",
+          "note": "약(직선 약 380m). 미타선"
+        },
+        {
+          "ja": "水道橋",
+          "line": "JB",
+          "walkMinutes": 6,
+          "exit": "西口",
+          "note": "약(직선 약 450m). 주오·소부선 각역정차. 東口로도 갈 수 있음"
+        }
+      ],
+      "tip": "",
+      "sources": [
+        "https://www.tokyo-dome.co.jp/dome/access/",
+        "https://www.tokyo-dome.co.jp/access/train",
+        "https://ja.wikipedia.org/wiki/東京ドーム",
+        "https://ja.wikipedia.org/wiki/水道橋駅",
+        "https://ja.wikipedia.org/wiki/後楽園駅"
+      ]
+    },
+    {
+      "id": "tokyo.sunshine-city",
+      "ko": "선샤인 시티",
+      "ja": "サンシャインシティ",
+      "en": "Sunshine City",
+      "aliases": [
+        "이케부쿠로",
+        "선샤인 60",
+        "선샤인 수족관",
+        "포켓몬 센터 메가 도쿄",
+        "포켓몬센터"
+      ],
+      "category": "명소",
+      "lat": 35.7292,
+      "lng": 139.7181,
+      "stations": [
+        {
+          "ja": "東池袋",
+          "line": "Y",
+          "walkMinutes": 3,
+          "exit": "6",
+          "note": "유라쿠초선. 6·7번 출구에서 지하 통로로 이어짐(7:00~23:00)"
+        },
+        {
+          "ja": "池袋",
+          "line": "JY",
+          "walkMinutes": 8,
+          "exit": "35",
+          "note": "야마노테선. 지하 35번 출구에서 선샤인60 거리를 따라"
+        }
+      ],
+      "tip": "",
+      "sources": [
+        "https://sunshinecity.jp/",
+        "https://sunshinecity.jp/information/access_train.html",
+        "https://ja.wikipedia.org/wiki/サンシャインシティ"
+      ]
+    },
+    {
+      "id": "tokyo.nakano-broadway",
+      "ko": "나카노 브로드웨이",
+      "ja": "中野ブロードウェイ",
+      "en": "Nakano Broadway",
+      "aliases": [
+        "나카노",
+        "만다라케",
+        "피규어 쇼핑"
+      ],
+      "category": "쇼핑",
+      "lat": 35.7092,
+      "lng": 139.6656,
+      "stations": [
+        {
+          "ja": "中野",
+          "line": "JC",
+          "walkMinutes": 5,
+          "exit": "北口",
+          "note": "주오선 쾌속. 선몰 상점가 끝"
+        },
+        {
+          "ja": "中野",
+          "line": "T",
+          "walkMinutes": 5,
+          "exit": "北口",
+          "note": "도자이선(JR 나카노역과 같은 역)"
+        }
+      ],
+      "tip": "",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/中野ブロードウェイ"
+      ]
+    },
+    {
+      "id": "tokyo.inokashira-park",
+      "ko": "이노카시라 공원 (기치조지)",
+      "ja": "井の頭恩賜公園",
+      "en": "Inokashira Park",
+      "aliases": [
+        "이노카시라 공원",
+        "기치조지",
+        "키치조지",
+        "하모니카 요코초"
+      ],
+      "category": "공원·자연",
+      "lat": 35.7008,
+      "lng": 139.5742,
+      "stations": [
+        {
+          "ja": "吉祥寺",
+          "line": "JC",
+          "walkMinutes": 5,
+          "exit": "公園口",
+          "note": "주오선. 京王井の頭線 井の頭公園駅은 1분(데이터 없음)"
+        },
+        {
+          "ja": "吉祥寺",
+          "line": "JB",
+          "walkMinutes": 5,
+          "exit": "公園口",
+          "note": "주오·소부선 각역정차"
+        }
+      ],
+      "tip": "기치조지역 남쪽 '공원 출구(公園口)'로 나오세요.",
+      "sources": [
+        "https://www.kensetsu.metro.tokyo.lg.jp/jimusho/seibuk/inokashira/access",
+        "https://ja.wikipedia.org/wiki/井の頭恩賜公園"
+      ]
+    },
+    {
+      "id": "tokyo.ghibli-museum",
+      "ko": "지브리 미술관",
+      "ja": "三鷹の森ジブリ美術館",
+      "en": "Ghibli Museum, Mitaka",
+      "aliases": [
+        "지브리",
+        "미타카 지브리 미술관",
+        "미타카"
+      ],
+      "category": "박물관·미술관",
+      "lat": 35.6962,
+      "lng": 139.5704,
+      "stations": [
+        {
+          "ja": "三鷹",
+          "line": "JC",
+          "walkMinutes": 15,
+          "exit": "南口",
+          "note": "주오선. 다마가와 상수(玉川上水)를 따라 걸어서. 남쪽 출구에서 커뮤니티 버스로 약 5분('만스케바시(万助橋)' 하차)"
+        },
+        {
+          "ja": "吉祥寺",
+          "line": "JC",
+          "walkMinutes": 15,
+          "exit": null,
+          "note": "이노카시라 공원을 지나서. 남쪽 출구에서 노선버스도 있음"
+        }
+      ],
+      "tip": "입장권은 날짜·시간 지정 예약제입니다. 현장에서는 살 수 없어요.",
+      "sources": [
+        "https://www.ghibli-museum.jp/howtogo/",
+        "https://ja.wikipedia.org/wiki/三鷹の森ジブリ美術館"
+      ]
+    },
+    {
+      "id": "tokyo.yanaka-ginza",
+      "ko": "야나카 긴자",
+      "ja": "谷中銀座商店街",
+      "en": "Yanaka Ginza",
+      "aliases": [
+        "야나카",
+        "야네센",
+        "고양이 마을",
+        "유야케 단단"
+      ],
+      "category": "쇼핑",
+      "lat": 35.7277,
+      "lng": 139.7653,
+      "stations": [
+        {
+          "ja": "日暮里",
+          "line": "JY",
+          "walkMinutes": 5,
+          "exit": null,
+          "note": "야마노테선. 게이세이선 닛포리도 같은 역"
+        },
+        {
+          "ja": "千駄木",
+          "line": "C",
+          "walkMinutes": 5,
+          "exit": null,
+          "note": "지요다선"
+        }
+      ],
+      "tip": "닛포리역에서 오면 계단 '유야케 단단(夕やけだんだん)'을 내려가면 상점가입니다.",
+      "sources": [
+        "https://www.yanakaginza.com/アクセス/",
+        "https://ja.wikipedia.org/wiki/谷中銀座商店街",
+        "https://nominatim.openstreetmap.org/search?q=谷中銀座&format=json"
+      ]
+    },
+    {
+      "id": "tokyo.nezu-shrine",
+      "ko": "네즈 신사",
+      "ja": "根津神社",
+      "en": "Nezu Shrine",
+      "aliases": [
+        "네즈 진자",
+        "철쭉 축제",
+        "네즈"
+      ],
+      "category": "신사·절",
+      "lat": 35.7202,
+      "lng": 139.7607,
+      "stations": [
+        {
+          "ja": "根津",
+          "line": "C",
+          "walkMinutes": 5,
+          "exit": null,
+          "note": "지요다선"
+        },
+        {
+          "ja": "千駄木",
+          "line": "C",
+          "walkMinutes": 5,
+          "exit": null,
+          "note": "지요다선"
+        },
+        {
+          "ja": "東大前",
+          "line": "N",
+          "walkMinutes": 5,
+          "exit": null,
+          "note": "난보쿠선"
+        }
+      ],
+      "tip": "",
+      "sources": [
+        "https://nedujinja.or.jp/access/",
+        "https://ja.wikipedia.org/wiki/根津神社"
+      ]
+    },
+    {
+      "id": "tokyo.kappabashi",
+      "ko": "갓파바시 도구 거리",
+      "ja": "かっぱ橋道具街",
+      "en": "Kappabashi Kitchen Town",
+      "aliases": [
+        "갓파바시",
+        "캇파바시",
+        "주방용품 거리",
+        "식품 모형"
+      ],
+      "category": "쇼핑",
+      "lat": 35.7159,
+      "lng": 139.7891,
+      "stations": [
+        {
+          "ja": "田原町",
+          "line": "G",
+          "walkMinutes": 5,
+          "exit": null,
+          "note": "긴자선"
+        },
+        {
+          "ja": "入谷",
+          "line": "H",
+          "walkMinutes": 6,
+          "exit": null,
+          "note": "히비야선"
+        },
+        {
+          "ja": "浅草",
+          "line": "A",
+          "walkMinutes": 13,
+          "exit": null,
+          "note": "아사쿠사선. 센소지와 묶어 걷기 좋음. つくばエクスプレス 浅草駅은 5분(데이터 없음)"
+        }
+      ],
+      "tip": "일요일엔 쉬는 가게가 많습니다.",
+      "sources": [
+        "https://www.kappabashi.or.jp/access/",
+        "https://ja.wikipedia.org/wiki/かっぱ橋道具街"
+      ]
+    },
+    {
+      "id": "tokyo.sumida-hokusai-museum",
+      "ko": "스미다 호쿠사이 미술관",
+      "ja": "すみだ北斎美術館",
+      "en": "Sumida Hokusai Museum",
+      "aliases": [
+        "호쿠사이 미술관",
+        "가쓰시카 호쿠사이",
+        "호쿠사이"
+      ],
+      "category": "박물관·미술관",
+      "lat": 35.6968,
+      "lng": 139.8004,
+      "stations": [
+        {
+          "ja": "両国",
+          "line": "E",
+          "walkMinutes": 5,
+          "exit": "A3",
+          "note": "오에도선"
+        },
+        {
+          "ja": "両国",
+          "line": "JB",
+          "walkMinutes": 9,
+          "exit": "東口",
+          "note": "주오·소부선 각역정차"
+        }
+      ],
+      "tip": "",
+      "sources": [
+        "https://hokusai-museum.jp/access/",
+        "https://ja.wikipedia.org/wiki/すみだ北斎美術館"
+      ]
+    },
+    {
+      "id": "tokyo.ryogoku-kokugikan",
+      "ko": "료고쿠 국기관",
+      "ja": "両国国技館",
+      "en": "Ryogoku Kokugikan",
+      "aliases": [
+        "국기관",
+        "료고쿠",
+        "스모",
+        "스모 경기장",
+        "스모 관람"
+      ],
+      "category": "전시·공연",
+      "lat": 35.6969,
+      "lng": 139.7935,
+      "stations": [
+        {
+          "ja": "両国",
+          "line": "JB",
+          "walkMinutes": 2,
+          "exit": "西口",
+          "note": "주오·소부선 각역정차. 역 북쪽 바로 옆"
+        },
+        {
+          "ja": "両国",
+          "line": "E",
+          "walkMinutes": 7,
+          "exit": "A3",
+          "note": "오에도선"
+        }
+      ],
+      "tip": "",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/両国国技館",
+        "https://btimes.jp/column/access-kokugikan.html",
+        "https://nominatim.openstreetmap.org/search?q=両国国技館&format=json&limit=5"
+      ]
+    },
+    {
+      "id": "tokyo.shimokitazawa",
+      "ko": "시모키타자와",
+      "ja": "下北沢",
+      "en": "Shimokitazawa",
+      "aliases": [
+        "시모키타",
+        "시모키타자와 빈티지",
+        "구제 쇼핑",
+        "보너스 트랙"
+      ],
+      "category": "쇼핑",
+      "lat": 35.6615,
+      "lng": 139.6674,
+      "stations": [
+        {
+          "ja": "代々木上原",
+          "line": "C",
+          "walkMinutes": 17,
+          "exit": null,
+          "note": "약. 직선 약 1.3km라 실제 걸음은 더 걸릴 수 있음. 가장 가까운 역은 小田急小田原線・京王井の頭線 下北沢駅(데이터 없음). 요요기우에하라에서 오다큐선으로 2정거장"
+        },
+        {
+          "ja": "渋谷",
+          "line": "JY",
+          "walkMinutes": 38,
+          "exit": null,
+          "note": "약. 걸어가기엔 멂(井の頭線 선로로 3.0km). 京王井の頭線으로 시모키타자와까지 가는 편이 좋음"
+        }
+      ],
+      "tip": "시부야에서 게이오 이노카시라선을 타면 가장 빠릅니다.",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/下北沢",
+        "https://ja.wikipedia.org/wiki/下北沢駅",
+        "https://nominatim.openstreetmap.org/search?q=代々木上原駅&format=json&limit=3"
+      ]
+    },
+    {
+      "id": "tokyo.daikanyama",
+      "ko": "다이칸야마",
+      "ja": "代官山",
+      "en": "Daikanyama",
+      "aliases": [
+        "다이칸야마 츠타야",
+        "다이칸야마 티사이트",
+        "츠타야 서점"
+      ],
+      "category": "쇼핑",
+      "lat": 35.6493,
+      "lng": 139.6998,
+      "stations": [
+        {
+          "ja": "中目黒",
+          "line": "H",
+          "walkMinutes": 8,
+          "exit": null,
+          "note": "약. 직선 약 570m 기준. 히비야선. 언덕을 올라감. 가장 가까운 역은 東急東横線 代官山駅(티사이트까지 5분, 데이터 없음)"
+        },
+        {
+          "ja": "恵比寿",
+          "line": "JY",
+          "walkMinutes": 10,
+          "exit": null,
+          "note": "약. 직선 약 780m 기준. 야마노테선"
+        }
+      ],
+      "tip": "좌표는 다이칸야마 티사이트(츠타야 서점).",
+      "sources": [
+        "https://store.tsite.jp/daikanyama/access/",
+        "https://ja.wikipedia.org/wiki/代官山駅",
+        "https://ja.wikipedia.org/wiki/代官山町",
+        "https://nominatim.openstreetmap.org/search?q=代官山T-SITE&format=json",
+        "https://nominatim.openstreetmap.org/search?q=中目黒駅&format=json&limit=3",
+        "https://nominatim.openstreetmap.org/search?q=恵比寿駅&format=json&limit=3"
+      ]
+    },
+    {
+      "id": "tokyo.nakameguro",
+      "ko": "나카메구로 (메구로강)",
+      "ja": "目黒川",
+      "en": "Nakameguro / Meguro River",
+      "aliases": [
+        "나카메구로",
+        "메구로강",
+        "메구로강 벚꽃",
+        "스타벅스 리저브 로스터리"
+      ],
+      "category": "공원·자연",
+      "lat": 35.6443,
+      "lng": 139.6992,
+      "stations": [
+        {
+          "ja": "中目黒",
+          "line": "H",
+          "walkMinutes": 1,
+          "exit": null,
+          "note": "히비야선. 東急東横線 같은 역. 승강장 끝이 메구로강 바로 위"
+        }
+      ],
+      "tip": "벚꽃 철 주말엔 역 앞부터 몹시 붐빕니다.",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/中目黒駅",
+        "https://ja.wikipedia.org/wiki/目黒川"
+      ]
+    },
+    {
+      "id": "tokyo.kiyosumi-gardens",
+      "ko": "기요스미 정원 (기요스미시라카와)",
+      "ja": "清澄庭園",
+      "en": "Kiyosumi Gardens",
+      "aliases": [
+        "기요스미시라카와",
+        "기요스미 정원",
+        "블루보틀 1호점",
+        "기요스미 카페 거리"
+      ],
+      "category": "공원·자연",
+      "lat": 35.6799,
+      "lng": 139.7977,
+      "stations": [
+        {
+          "ja": "清澄白河",
+          "line": "E",
+          "walkMinutes": 3,
+          "exit": "A3",
+          "note": "오에도선"
+        },
+        {
+          "ja": "清澄白河",
+          "line": "Z",
+          "walkMinutes": 3,
+          "exit": "A3",
+          "note": "한조몬선"
+        }
+      ],
+      "tip": "",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/清澄庭園"
+      ]
+    },
+    {
+      "id": "tokyo.fukagawa-fudodo",
+      "ko": "몬젠나카초 (후카가와 후도도·도미오카 하치만구)",
+      "ja": "深川不動堂",
+      "en": "Fukagawa Fudodo",
+      "aliases": [
+        "몬젠나카초",
+        "후카가와 후도도",
+        "도미오카 하치만구",
+        "후카가와"
+      ],
+      "category": "신사·절",
+      "lat": 35.6729,
+      "lng": 139.7983,
+      "stations": [
+        {
+          "ja": "門前仲町",
+          "line": "T",
+          "walkMinutes": 2,
+          "exit": "1",
+          "note": "도자이선"
+        },
+        {
+          "ja": "門前仲町",
+          "line": "E",
+          "walkMinutes": 5,
+          "exit": "6",
+          "note": "오에도선"
+        }
+      ],
+      "tip": "",
+      "sources": [
+        "https://www.fukagawafudou.gr.jp/",
+        "https://ja.wikipedia.org/wiki/深川不動堂"
+      ]
+    },
+    {
+      "id": "tokyo.tokyo-disney-resort",
+      "ko": "도쿄 디즈니 리조트",
+      "ja": "東京ディズニーリゾート",
+      "en": "Tokyo Disney Resort",
+      "aliases": [
+        "도쿄 디즈니랜드",
+        "디즈니랜드",
+        "디즈니씨",
+        "도쿄 디즈니씨",
+        "마이하마"
+      ],
+      "category": "테마파크",
+      "lat": 35.6328,
+      "lng": 139.8806,
+      "stations": [
+        {
+          "ja": "新木場",
+          "line": "R",
+          "walkMinutes": null,
+          "exit": null,
+          "note": "걸어갈 수 없음. 여기서 JR京葉線으로 갈아타 舞浜駅(데이터 없음)까지 각역정차 2정거장, 쾌속은 1정거장. 舞浜역에서 디즈니랜드까지 걸어서 4분"
+        },
+        {
+          "ja": "新木場",
+          "line": "Y",
+          "walkMinutes": null,
+          "exit": null,
+          "note": "걸어갈 수 없음. 유라쿠초선에서 JR京葉線으로 갈아타 舞浜駅까지"
+        }
+      ],
+      "tip": "가장 가까운 역은 JR 게이요선 마이하마역입니다. 도쿄역 게이요선 승강장은 다른 노선과 많이 떨어져 있어 갈아타는 데 10분 넘게 걸려요.",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/東京ディズニーリゾート",
+        "https://ja.wikipedia.org/wiki/舞浜駅",
+        "https://ja.wikipedia.org/wiki/新木場駅"
+      ]
+    },
+    {
+      "id": "tokyo.omoide-yokocho",
+      "ko": "오모이데 요코초",
+      "ja": "思い出横丁",
+      "en": "Omoide Yokocho",
+      "aliases": [
+        "오모이데요코초",
+        "추억의 골목",
+        "신주쿠 꼬치 골목",
+        "신주쿠 니시구치"
+      ],
+      "category": "먹거리",
+      "lat": 35.6931,
+      "lng": 139.6995,
+      "stations": [
+        {
+          "ja": "新宿",
+          "line": "JY",
+          "walkMinutes": 3,
+          "exit": "西口",
+          "note": "약. 야마노테선. 서쪽 출구 북쪽 선로 옆"
+        },
+        {
+          "ja": "新宿西口",
+          "line": "E",
+          "walkMinutes": 1,
+          "exit": null,
+          "note": "약. 오에도선"
+        }
+      ],
+      "tip": "",
+      "sources": [
+        "https://shinjuku-omoide.com/",
+        "https://shinjuku-omoide.com/access",
+        "https://ja.wikipedia.org/wiki/思い出横丁",
+        "https://nominatim.openstreetmap.org/search?q=新宿駅西口&format=json&limit=4",
+        "https://nominatim.openstreetmap.org/search?q=新宿西口駅&format=json&limit=4"
+      ]
+    },
+    {
+      "id": "tokyo.kabukicho",
+      "ko": "가부키초 (신주쿠 고질라)",
+      "ja": "歌舞伎町",
+      "en": "Kabukicho",
+      "aliases": [
+        "가부키초",
+        "신주쿠 고질라",
+        "고질라 헤드",
+        "신주쿠 동쪽 출구",
+        "골든가이"
+      ],
+      "category": "명소",
+      "lat": 35.6954,
+      "lng": 139.7021,
+      "stations": [
+        {
+          "ja": "新宿",
+          "line": "JY",
+          "walkMinutes": 5,
+          "exit": "東口",
+          "note": "약. 야마노테선. 西武新宿駅(데이터 없음)은 歌舞伎町 바로 앞"
+        },
+        {
+          "ja": "東新宿",
+          "line": "E",
+          "walkMinutes": 8,
+          "exit": null,
+          "note": "약. 오에도선·후쿠토신선"
+        }
+      ],
+      "tip": "좌표는 고질라 머리가 있는 신주쿠 도호 빌딩.",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/歌舞伎町",
+        "https://nominatim.openstreetmap.org/search?q=新宿東宝ビル&format=json&limit=4",
+        "https://nominatim.openstreetmap.org/search?q=新宿駅東口&format=json&limit=4",
+        "https://nominatim.openstreetmap.org/search?q=東新宿駅&format=json&limit=4"
+      ]
+    },
+    {
+      "id": "tokyo.tocho-observatory",
+      "ko": "도쿄도청 전망대",
+      "ja": "東京都庁展望室",
+      "en": "Tokyo Metropolitan Government Building Observatory",
+      "aliases": [
+        "도청 전망대",
+        "도쿄도청",
+        "무료 전망대",
+        "도청 프로젝션 매핑"
+      ],
+      "category": "전망대",
+      "lat": 35.6895,
+      "lng": 139.6918,
+      "stations": [
+        {
+          "ja": "都庁前",
+          "line": "E",
+          "walkMinutes": 2,
+          "exit": null,
+          "note": "약. 오에도선. 제1본청사 바로 앞"
+        },
+        {
+          "ja": "新宿",
+          "line": "JY",
+          "walkMinutes": 8,
+          "exit": "西口",
+          "note": "약. 야마노테선. 직선 약 640m 기준"
+        }
+      ],
+      "tip": "무료입니다. 제1본청사 1층에서 전망대 전용 엘리베이터를 탑니다.",
+      "sources": [
+        "https://www.zaimu.metro.tokyo.lg.jp/tochousha/goannai/tenbou",
+        "https://ja.wikipedia.org/wiki/東京都庁舎",
+        "https://nominatim.openstreetmap.org/search?q=都庁前駅&format=json&limit=4",
+        "https://nominatim.openstreetmap.org/search?q=新宿駅 西口&format=json&limit=4"
+      ]
+    },
+    {
+      "id": "tokyo.tsukishima-monja",
+      "ko": "쓰키시마 몬자 거리",
+      "ja": "月島もんじゃストリート",
+      "en": "Tsukishima Monja Street",
+      "aliases": [
+        "쓰키시마",
+        "츠키시마",
+        "몬자야키",
+        "몬자 거리"
+      ],
+      "category": "먹거리",
+      "lat": 35.6636,
+      "lng": 139.7815,
+      "stations": [
+        {
+          "ja": "月島",
+          "line": "Y",
+          "walkMinutes": 1,
+          "exit": "7",
+          "note": "유라쿠초선. 7번 출구에서 서쪽으로 뻗은 약 400m 거리"
+        },
+        {
+          "ja": "月島",
+          "line": "E",
+          "walkMinutes": 1,
+          "exit": "7",
+          "note": "오에도선"
+        }
+      ],
+      "tip": "",
+      "sources": [
+        "https://www.mec-h.com/town/mh-harumi/47",
+        "https://ja.wikipedia.org/wiki/月島",
+        "https://nominatim.openstreetmap.org/search?q=月島西仲通り&format=json&limit=5"
+      ]
+    },
+    {
+      "id": "tokyo.budokan",
+      "ko": "닛폰 부도칸",
+      "ja": "日本武道館",
+      "en": "Nippon Budokan",
+      "aliases": [
+        "부도칸",
+        "무도관",
+        "일본 무도관",
+        "부도칸 콘서트"
+      ],
+      "category": "전시·공연",
+      "lat": 35.6931,
+      "lng": 139.7494,
+      "stations": [
+        {
+          "ja": "九段下",
+          "line": "T",
+          "walkMinutes": 5,
+          "exit": "2",
+          "note": "도자이선·한조몬선·신주쿠선. 붐빌 때는 언덕 아래 4번 출구도 이용 가능"
+        },
+        {
+          "ja": "九段下",
+          "line": "S",
+          "walkMinutes": 5,
+          "exit": "2",
+          "note": "신주쿠선"
+        }
+      ],
+      "tip": "",
+      "sources": [
+        "https://www.nipponbudokan.or.jp/access",
+        "https://ja.wikipedia.org/wiki/日本武道館"
+      ]
+    },
+    {
+      "id": "tokyo.ariake-arena",
+      "ko": "아리아케 아레나",
+      "ja": "有明アリーナ",
+      "en": "Ariake Arena",
+      "aliases": [
+        "아리아케",
+        "아리아케 콘서트"
+      ],
+      "category": "전시·공연",
+      "lat": 35.6436,
+      "lng": 139.7943,
+      "stations": [
+        {
+          "ja": "新豊洲",
+          "line": "U",
+          "walkMinutes": 8,
+          "exit": null,
+          "note": "유리카모메"
+        },
+        {
+          "ja": "有明テニスの森",
+          "line": "U",
+          "walkMinutes": 8,
+          "exit": null,
+          "note": "유리카모메"
+        },
+        {
+          "ja": "国際展示場",
+          "line": "R",
+          "walkMinutes": 17,
+          "exit": null,
+          "note": "린카이선"
+        }
+      ],
+      "tip": "",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/有明アリーナ",
+        "https://nominatim.openstreetmap.org/search?q=有明アリーナ&format=json&limit=4"
+      ]
+    },
+    {
+      "id": "tokyo.shibuya-parco",
+      "ko": "시부야 파르코 (닌텐도 도쿄)",
+      "ja": "渋谷PARCO",
+      "en": "Shibuya PARCO",
+      "aliases": [
+        "시부야 파르코",
+        "닌텐도 도쿄",
+        "포켓몬센터 시부야",
+        "점프샵"
+      ],
+      "category": "쇼핑",
+      "lat": 35.6621,
+      "lng": 139.6989,
+      "stations": [
+        {
+          "ja": "渋谷",
+          "line": "JY",
+          "walkMinutes": 5,
+          "exit": "ハチ公口",
+          "note": "야마노테선"
+        },
+        {
+          "ja": "渋谷",
+          "line": "F",
+          "walkMinutes": 5,
+          "exit": null,
+          "note": "후쿠토신선·한조몬선. 하치코 출구 기준 약 5분"
+        }
+      ],
+      "tip": "",
+      "sources": [
+        "https://shibuya.parco.jp/info/access/",
+        "https://ja.wikipedia.org/wiki/渋谷PARCO"
+      ]
+    },
+    {
+      "id": "tokyo.kabukiza",
+      "ko": "가부키자",
+      "ja": "歌舞伎座",
+      "en": "Kabukiza Theatre",
+      "aliases": [
+        "가부키",
+        "가부키 공연",
+        "가부키좌"
+      ],
+      "category": "전시·공연",
+      "lat": 35.6695,
+      "lng": 139.7681,
+      "stations": [
+        {
+          "ja": "東銀座",
+          "line": "H",
+          "walkMinutes": 0,
+          "exit": "3",
+          "note": "히비야선. 역 바로 위, 지하 고비키초 광장과 직결"
+        },
+        {
+          "ja": "東銀座",
+          "line": "A",
+          "walkMinutes": 0,
+          "exit": "3",
+          "note": "아사쿠사선. 직결"
+        },
+        {
+          "ja": "銀座",
+          "line": "G",
+          "walkMinutes": 5,
+          "exit": "A7",
+          "note": "긴자선·마루노우치선·히비야선"
+        }
+      ],
+      "tip": "",
+      "sources": [
+        "https://www.kabuki-bito.jp/theaters/kabukiza/",
+        "https://ja.wikipedia.org/wiki/歌舞伎座"
+      ]
+    }
+  ]
+}

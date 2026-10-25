@@ -201,6 +201,129 @@
       "outside": false,
       "source": "https://ja.wikipedia.org/wiki/羽田空港第1・第2ターミナル駅",
       "note": "게이큐역과 모노레일 제2터미널역은 공항 터미널 안 지하 통로로 이어진다."
+    },
+    {
+      "region": "kobe",
+      "stations": [
+        "三宮",
+        "三宮・花時計前"
+      ],
+      "outside": true,
+      "source": "https://ja.wikipedia.org/wiki/三宮・花時計前駅",
+      "note": "개찰구를 나와 지하상가 さんちか 를 지나 갈아탄다(지상으로는 나가지 않음). 90분 안에 다시 들어가면 운임이 이어진다."
+    },
+    {
+      "region": "tokyo",
+      "stations": [
+        "国際展示場",
+        "有明"
+      ],
+      "outside": true,
+      "source": "https://ja.wikipedia.org/wiki/国際展示場駅",
+      "note": "서로 환승역으로 지정. 지상으로 약 130m."
+    },
+    {
+      "region": "tokyo",
+      "stations": [
+        "京成上野",
+        "上野"
+      ],
+      "outside": true,
+      "source": "https://ja.wikipedia.org/wiki/京成上野駅",
+      "note": "메트로까지는 지하 연결통로, JR 시노바즈 출구는 길 건너."
+    },
+    {
+      "region": "tokyo",
+      "stations": [
+        "御茶ノ水",
+        "新御茶ノ水"
+      ],
+      "outside": true,
+      "source": "https://ja.wikipedia.org/wiki/新御茶ノ水駅",
+      "note": "연계 승차권 있음. 세이바시 출구 앞 길로 걷는다."
+    },
+    {
+      "region": "tokyo",
+      "stations": [
+        "船橋",
+        "京成船橋"
+      ],
+      "outside": true,
+      "source": "https://ja.wikipedia.org/wiki/京成船橋駅",
+      "note": "보행자 데크로 연결."
+    },
+    {
+      "region": "tokyo",
+      "stations": [
+        "京成八幡",
+        "本八幡"
+      ],
+      "outside": true,
+      "source": "https://ja.wikipedia.org/wiki/京成八幡駅",
+      "note": "공식 환승은 신주쿠선과. A6 지하통로로 걷는다."
+    },
+    {
+      "region": "osaka",
+      "stations": [
+        "梅田",
+        "東梅田",
+        "西梅田"
+      ],
+      "outside": true,
+      "source": "https://ja.wikipedia.org/wiki/東梅田駅",
+      "note": "같은 역으로 취급. 개찰구를 나와 지하도로, 30분 안이면 운임이 이어진다(녹색 자동개찰기)."
+    },
+    {
+      "region": "osaka",
+      "stations": [
+        "大阪",
+        "梅田",
+        "東梅田",
+        "西梅田"
+      ],
+      "outside": true,
+      "source": "https://ja.wikipedia.org/wiki/大阪駅",
+      "note": "JR 오사카역과 지하·지붕 있는 통로로 연결."
+    },
+    {
+      "region": "osaka",
+      "stations": [
+        "心斎橋",
+        "四ツ橋"
+      ],
+      "outside": false,
+      "source": "https://ja.wikipedia.org/wiki/心斎橋駅",
+      "note": "같은 역 취급, 개찰구 안 연결."
+    },
+    {
+      "region": "osaka",
+      "stations": [
+        "新今宮",
+        "動物園前"
+      ],
+      "outside": true,
+      "source": "https://ja.wikipedia.org/wiki/新今宮駅",
+      "note": "공식 환승역. 길로 걷는다."
+    },
+    {
+      "region": "osaka",
+      "stations": [
+        "天満",
+        "扇町"
+      ],
+      "outside": true,
+      "source": "https://ja.wikipedia.org/wiki/天満駅",
+      "note": "지상 1번 출구로 도보 약 5분."
+    },
+    {
+      "region": "osaka",
+      "stations": [
+        "野田",
+        "玉川"
+      ],
+      "outside": true,
+      "source": "https://ja.wikipedia.org/wiki/野田駅_(JR西日本)",
+      "note": "공식 환승. 길로 걷는다."
     }
   ],
   "separateSameName": [
@@ -208,6 +331,18 @@
       "station": "蔵前",
       "note": "아사쿠사선(A)과 오에도선(E) 역이 따로 있어 개찰구를 나와 길로 걷는다. 공식 환승역이다.",
       "source": "https://ja.wikipedia.org/wiki/蔵前駅"
+    },
+    {
+      "region": "tokyo",
+      "station": "両国",
+      "note": "JR 역과 오에도선 역이 300m 넘게 떨어져 길로 걷는다.",
+      "source": "https://ja.wikipedia.org/wiki/両国駅"
+    },
+    {
+      "region": "osaka",
+      "station": "京橋",
+      "note": "JR 과 메트로 사이 연결 개찰구가 없어 개찰구를 나와 지하도로 간다.",
+      "source": "https://ja.wikipedia.org/wiki/京橋駅_(大阪府)"
     }
   ]
 }

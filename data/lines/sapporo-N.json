@@ -1,0 +1,187 @@
+{
+  "id": "sapporo.N",
+  "region": "sapporo",
+  "operator": "札幌市交通局",
+  "operatorKo": "삿포로시 교통국",
+  "nameJa": "南北線",
+  "nameKo": "난보쿠선",
+  "nameEn": "Namboku Line",
+  "color": "#008000",
+  "circular": false,
+  "stations": [
+    {
+      "code": "N01",
+      "ja": "麻生",
+      "kana": "あさぶ",
+      "ko": "아사부",
+      "koSource": "wiki",
+      "en": "Asabu",
+      "lat": 43.109056,
+      "lng": 141.338139
+    },
+    {
+      "code": "N02",
+      "ja": "北34条",
+      "kana": "きたさんじゅうよじょう",
+      "ko": "기타34조",
+      "koSource": "wiki",
+      "en": "Kita-Sanjuyo-Jo",
+      "lat": 43.099917,
+      "lng": 141.342111
+    },
+    {
+      "code": "N03",
+      "ja": "北24条",
+      "kana": "きたにじゅうよじょう",
+      "ko": "기타24조",
+      "koSource": "wiki",
+      "en": "Kita-Nijuyo-Jo",
+      "lat": 43.089944,
+      "lng": 141.344639
+    },
+    {
+      "code": "N04",
+      "ja": "北18条",
+      "kana": "きたじゅうはちじょう",
+      "ko": "기타18조",
+      "koSource": "wiki",
+      "en": "Kita-Juhachi-Jo",
+      "lat": 43.081556,
+      "lng": 141.34675
+    },
+    {
+      "code": "N05",
+      "ja": "北12条",
+      "jaSub": "明和住建前",
+      "kana": "きたじゅうにじょう",
+      "ko": "기타12조",
+      "koSource": "wiki",
+      "en": "Kita-Juni-Jo",
+      "lat": 43.074833,
+      "lng": 141.348444
+    },
+    {
+      "code": "N06",
+      "ja": "さっぽろ",
+      "kana": "さっぽろ",
+      "ko": "삿포로",
+      "koSource": "rule",
+      "en": "Sapporo",
+      "lat": 43.066417,
+      "lng": 141.350556
+    },
+    {
+      "code": "N07",
+      "ja": "大通",
+      "kana": "おおどおり",
+      "ko": "오도리",
+      "koSource": "wiki",
+      "en": "Odori",
+      "lat": 43.060444,
+      "lng": 141.3545
+    },
+    {
+      "code": "N08",
+      "ja": "すすきの",
+      "kana": "すすきの",
+      "ko": "스스키노",
+      "koSource": "wiki",
+      "en": "Susukino",
+      "lat": 43.055694,
+      "lng": 141.353278
+    },
+    {
+      "code": "N09",
+      "ja": "中島公園",
+      "jaSub": "Zepp Sapporo前",
+      "kana": "なかじまこうえん",
+      "ko": "나카지마 공원",
+      "koSource": "wiki",
+      "en": "Nakajima-Koen",
+      "lat": 43.048889,
+      "lng": 141.354972
+    },
+    {
+      "code": "N10",
+      "ja": "幌平橋",
+      "kana": "ほろひらばし",
+      "ko": "호로히라바시",
+      "koSource": "wiki",
+      "en": "Horohira-Bashi",
+      "lat": 43.040222,
+      "lng": 141.355972
+    },
+    {
+      "code": "N11",
+      "ja": "中の島",
+      "jaSub": "エクシオグループ前",
+      "kana": "なかのしま",
+      "ko": "나카노시마",
+      "koSource": "wiki",
+      "en": "Nakanoshima",
+      "lat": 43.03775,
+      "lng": 141.36075
+    },
+    {
+      "code": "N12",
+      "ja": "平岸",
+      "kana": "ひらぎし",
+      "ko": "히라기시",
+      "koSource": "wiki",
+      "en": "Hiragishi",
+      "lat": 43.034611,
+      "lng": 141.368028
+    },
+    {
+      "code": "N13",
+      "ja": "南平岸",
+      "kana": "みなみひらぎし",
+      "ko": "미나미히라기시",
+      "koSource": "wiki",
+      "en": "Minami-Hiragishi",
+      "lat": 43.026778,
+      "lng": 141.371333
+    },
+    {
+      "code": "N14",
+      "ja": "澄川",
+      "kana": "すみかわ",
+      "ko": "스미카와",
+      "koSource": "wiki",
+      "en": "Sumikawa",
+      "lat": 43.016806,
+      "lng": 141.367306
+    },
+    {
+      "code": "N15",
+      "ja": "自衛隊前",
+      "kana": "じえいたいまえ",
+      "ko": "지에이타이마에",
+      "koSource": "wiki",
+      "en": "Jieitai-Mae",
+      "lat": 43.006222,
+      "lng": 141.364806
+    },
+    {
+      "code": "N16",
+      "ja": "真駒内",
+      "kana": "まこまない",
+      "ko": "마코마나이",
+      "koSource": "wiki",
+      "en": "Makomanai",
+      "lat": 42.991194,
+      "lng": 141.358444
+    }
+  ],
+  "throughTermini": {
+    "start": [],
+    "end": []
+  },
+  "services": [],
+  "sources": [
+    "https://ja.wikipedia.org/wiki/札幌市営地下鉄南北線",
+    "https://en.wikipedia.org/wiki/Namboku_Line_(Sapporo)",
+    "https://ja.wikipedia.org/w/api.php (coordinates/langlinks)"
+  ],
+  "notes": "全列車各駅停車、他社直通なし。座標は日本語版Wikipedia各駅記事の座標（複数事業者駅は当該事業者・路線の座標を優先）。韓国語名は日本語版記事の韓国語版リンク先記事名から「역」と曖昧さ回避括弧を除いたもの。jaSubは日本語版路線記事の駅一覧に記載の副駅名（ネーミングライツを含む。契約更新で変わり得る）。英語名は英語版Wikipedia路線記事の駅名からマクロンを除いたもの（駅名標の実際の表記・ハイフン位置は未確認）。「さっぽろ」(N06/H07)はJR札幌駅とは別駅で平仮名表記（JRとの区別のため）。路線色は日本語版Wikipediaインフォボックスの値（グリーン）。koSource=ruleの「さっぽろ」は韓国語版に独立記事がないため表記法で転写。すすきの(N08)の座標は記事の代表点（市電すすきの停留場と共通値）。"
+}

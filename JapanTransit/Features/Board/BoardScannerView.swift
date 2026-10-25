@@ -104,7 +104,7 @@ struct BoardScannerView: View {
     }
 
     private func reading(_ ja: String) -> String? {
-        RailNetwork.shared.place(ja)?.ko
+        RailNetwork.shared.place(ja: ja, region: segment.line.regionID)?.ko
     }
 
     private func card(icon: String, title: String, detail: String, color: Color) -> some View {

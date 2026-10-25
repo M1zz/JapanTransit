@@ -1,0 +1,124 @@
+{
+  "id": "kobe.K",
+  "region": "kobe",
+  "operator": "神戸市営地下鉄",
+  "operatorKo": "고베 시영 지하철",
+  "nameJa": "海岸線",
+  "nameKo": "가이간선",
+  "nameEn": "Kaigan Line",
+  "color": "#267DCE",
+  "circular": false,
+  "stations": [
+    {
+      "code": "K01",
+      "ja": "三宮・花時計前",
+      "kana": "さんのみや・はなどけいまえ",
+      "ko": "산노미야하나도케이마에",
+      "koSource": "wiki",
+      "en": "Sannomiya-Hanadokeimae",
+      "lat": 34.691581,
+      "lng": 135.19555
+    },
+    {
+      "code": "K02",
+      "ja": "旧居留地・大丸前",
+      "kana": "きゅうきょりゅうち・だいまるまえ",
+      "ko": "큐쿄류치다이마루마에",
+      "koSource": "wiki",
+      "en": "Kyūkyoryūchi-Daimarumae",
+      "lat": 34.689575,
+      "lng": 135.190675
+    },
+    {
+      "code": "K03",
+      "ja": "みなと元町",
+      "kana": "みなともとまち",
+      "ko": "미나토모토마치",
+      "koSource": "wiki",
+      "en": "Minatomotomachi",
+      "lat": 34.685875,
+      "lng": 135.183972
+    },
+    {
+      "code": "K04",
+      "ja": "ハーバーランド",
+      "kana": "はーばーらんど",
+      "ko": "하버랜드",
+      "koSource": "wiki",
+      "en": "Harborland",
+      "lat": 34.678536,
+      "lng": 135.178711
+    },
+    {
+      "code": "K05",
+      "ja": "中央市場前",
+      "kana": "ちゅうおういちばまえ",
+      "ko": "주오이치바마에",
+      "koSource": "wiki",
+      "en": "Chūōichibamae",
+      "lat": 34.666197,
+      "lng": 135.175864
+    },
+    {
+      "code": "K06",
+      "ja": "和田岬",
+      "kana": "わだみさき",
+      "ko": "와다미사키",
+      "koSource": "wiki",
+      "en": "Wadamisaki",
+      "lat": 34.657694,
+      "lng": 135.175883
+    },
+    {
+      "code": "K07",
+      "ja": "御崎公園",
+      "kana": "みさきこうえん",
+      "ko": "미사키코엔",
+      "koSource": "wiki",
+      "en": "Misakikōen",
+      "lat": 34.654642,
+      "lng": 135.165
+    },
+    {
+      "code": "K08",
+      "ja": "苅藻",
+      "kana": "かるも",
+      "ko": "가루모",
+      "koSource": "wiki",
+      "en": "Karumo",
+      "lat": 34.65365,
+      "lng": 135.156597
+    },
+    {
+      "code": "K09",
+      "ja": "駒ヶ林",
+      "jaSub": "三国志のまち",
+      "kana": "こまがばやし",
+      "ko": "고마가바야시",
+      "koSource": "wiki",
+      "en": "Komagabayashi",
+      "lat": 34.652106,
+      "lng": 135.149553
+    },
+    {
+      "code": "K10",
+      "ja": "新長田",
+      "jaSub": "鉄人28号前",
+      "kana": "しんながた",
+      "ko": "신나가타",
+      "koSource": "wiki",
+      "en": "Shin-Nagata",
+      "lat": 34.656667,
+      "lng": 135.145083
+    }
+  ],
+  "throughTermini": {
+    "start": [],
+    "end": []
+  },
+  "services": [],
+  "sources": [
+    "https://ja.wikipedia.org/wiki/神戸市営地下鉄海岸線"
+  ],
+  "notes": "K01 三宮・花時計前 – K10 新長田。線内折り返しのみ、他社直通なし、全列車各駅停車。朝夕・始発終電に御崎公園発着の区間列車あり。副駅名: 新長田〈鉄人28号前〉・駒ヶ林〈三国志のまち〉は jaSub。三宮・花時計前と西神・山手線の三宮は別駅名（改札外、さんちか経由で乗り換え）。座標は日本語版Wikipedia各駅記事の座標（複数事業者の駅は当該地下鉄側の座標を選択）。韓国語名は日本語版記事の韓国語版リンク先記事名から「역」と曖昧さ回避括弧を除いたもの。かなは各駅記事インフォボックスのよみがな。"
+}

@@ -1,0 +1,222 @@
+{
+  "id": "sapporo.T",
+  "region": "sapporo",
+  "operator": "札幌市交通局",
+  "operatorKo": "삿포로시 교통국",
+  "nameJa": "東西線",
+  "nameKo": "도자이선",
+  "nameEn": "Tozai Line",
+  "color": "#FFA500",
+  "circular": false,
+  "stations": [
+    {
+      "code": "T01",
+      "ja": "宮の沢",
+      "kana": "みやのさわ",
+      "ko": "미야노사와",
+      "koSource": "wiki",
+      "en": "Miyanosawa",
+      "lat": 43.090028,
+      "lng": 141.277194
+    },
+    {
+      "code": "T02",
+      "ja": "発寒南",
+      "kana": "はっさむみなみ",
+      "ko": "핫사무미나미",
+      "koSource": "wiki",
+      "en": "Hassamu-Minami",
+      "lat": 43.081733,
+      "lng": 141.289311
+    },
+    {
+      "code": "T03",
+      "ja": "琴似",
+      "kana": "ことに",
+      "ko": "고토니",
+      "koSource": "wiki",
+      "en": "Kotoni",
+      "lat": 43.075769,
+      "lng": 141.303853
+    },
+    {
+      "code": "T04",
+      "ja": "二十四軒",
+      "jaSub": "メディカルスクエア北円山前",
+      "kana": "にじゅうよんけん",
+      "ko": "니주욘켄",
+      "koSource": "wiki",
+      "en": "Nijuyon-Ken",
+      "lat": 43.070222,
+      "lng": 141.314094
+    },
+    {
+      "code": "T05",
+      "ja": "西28丁目",
+      "kana": "にしにじゅうはっちょうめ",
+      "ko": "니시 28초메",
+      "koSource": "wiki",
+      "en": "Nishi-Nijuhatchome",
+      "lat": 43.060344,
+      "lng": 141.314522
+    },
+    {
+      "code": "T06",
+      "ja": "円山公園",
+      "jaSub": "マルヤマクラス前",
+      "kana": "まるやまこうえん",
+      "ko": "마루야마코엔",
+      "koSource": "wiki",
+      "en": "Maruyama-Koen",
+      "lat": 43.055639,
+      "lng": 141.318833
+    },
+    {
+      "code": "T07",
+      "ja": "西18丁目",
+      "jaSub": "札幌メディケアビル桂和前",
+      "kana": "にしじゅうはっちょうめ",
+      "ko": "니시 18초메",
+      "koSource": "wiki",
+      "en": "Nishi-Juhatchome",
+      "lat": 43.057167,
+      "lng": 141.330194
+    },
+    {
+      "code": "T08",
+      "ja": "西11丁目",
+      "kana": "にしじゅういっちょうめ",
+      "ko": "니시 11초메",
+      "koSource": "wiki",
+      "en": "Nishi-Juitchome",
+      "lat": 43.058611,
+      "lng": 141.341028
+    },
+    {
+      "code": "T09",
+      "ja": "大通",
+      "kana": "おおどおり",
+      "ko": "오도리",
+      "koSource": "wiki",
+      "en": "Odori",
+      "lat": 43.060444,
+      "lng": 141.3545
+    },
+    {
+      "code": "T10",
+      "ja": "バスセンター前",
+      "kana": "ばすせんたーまえ",
+      "ko": "버스센터마에",
+      "koSource": "wiki",
+      "en": "Bus Center-Mae",
+      "lat": 43.061269,
+      "lng": 141.360472
+    },
+    {
+      "code": "T11",
+      "ja": "菊水",
+      "jaSub": "ホシザキ北海道前",
+      "kana": "きくすい",
+      "ko": "기쿠스이",
+      "koSource": "wiki",
+      "en": "Kikusui",
+      "lat": 43.057211,
+      "lng": 141.372831
+    },
+    {
+      "code": "T12",
+      "ja": "東札幌",
+      "jaSub": "札幌コンベンションセンター前",
+      "kana": "ひがしさっぽろ",
+      "ko": "히가시삿포로",
+      "koSource": "wiki",
+      "en": "Higashi-Sapporo",
+      "lat": 43.051644,
+      "lng": 141.384606
+    },
+    {
+      "code": "T13",
+      "ja": "白石",
+      "kana": "しろいし",
+      "ko": "시로이시",
+      "koSource": "wiki",
+      "en": "Shiroishi",
+      "lat": 43.046208,
+      "lng": 141.396269
+    },
+    {
+      "code": "T14",
+      "ja": "南郷7丁目",
+      "kana": "なんごうななちょうめ",
+      "ko": "난고 7초메",
+      "koSource": "wiki",
+      "en": "Nango-Nana-Chome",
+      "lat": 43.040242,
+      "lng": 141.411114
+    },
+    {
+      "code": "T15",
+      "ja": "南郷13丁目",
+      "jaSub": "恵佑会第2病院前",
+      "kana": "なんごうじゅうさんちょうめ",
+      "ko": "난고 13초메",
+      "koSource": "wiki",
+      "en": "Nango-Jusan-Chome",
+      "lat": 43.035897,
+      "lng": 141.422414
+    },
+    {
+      "code": "T16",
+      "ja": "南郷18丁目",
+      "jaSub": "おおしま内科胃腸科クリニック前",
+      "kana": "なんごうじゅうはっちょうめ",
+      "ko": "난고 18초메",
+      "koSource": "wiki",
+      "en": "Nango-Juhatchome",
+      "lat": 43.030361,
+      "lng": 141.434964
+    },
+    {
+      "code": "T17",
+      "ja": "大谷地",
+      "jaSub": "北星学園大学前",
+      "kana": "おおやち",
+      "ko": "오야치",
+      "koSource": "wiki",
+      "en": "Oyachi",
+      "lat": 43.0279,
+      "lng": 141.453081
+    },
+    {
+      "code": "T18",
+      "ja": "ひばりが丘",
+      "kana": "ひばりがおか",
+      "ko": "히바리가오카",
+      "koSource": "wiki",
+      "en": "Hibarigaoka",
+      "lat": 43.032175,
+      "lng": 141.464639
+    },
+    {
+      "code": "T19",
+      "ja": "新さっぽろ",
+      "kana": "しんさっぽろ",
+      "ko": "신삿포로",
+      "koSource": "rule",
+      "en": "Shin-Sapporo",
+      "lat": 43.038917,
+      "lng": 141.473944
+    }
+  ],
+  "throughTermini": {
+    "start": [],
+    "end": []
+  },
+  "services": [],
+  "sources": [
+    "https://ja.wikipedia.org/wiki/札幌市営地下鉄東西線",
+    "https://en.wikipedia.org/wiki/Tōzai_Line_(Sapporo)",
+    "https://ja.wikipedia.org/w/api.php (coordinates/langlinks)"
+  ],
+  "notes": "全列車各駅停車、他社直通なし。座標は日本語版Wikipedia各駅記事の座標（複数事業者駅は当該事業者・路線の座標を優先）。韓国語名は日本語版記事の韓国語版リンク先記事名から「역」と曖昧さ回避括弧を除いたもの。jaSubは日本語版路線記事の駅一覧に記載の副駅名（ネーミングライツを含む。契約更新で変わり得る）。英語名は英語版Wikipedia路線記事の駅名からマクロンを除いたもの（駅名標の実際の表記・ハイフン位置は未確認）。「新さっぽろ」(T19)はJR新札幌駅とは別駅で平仮名表記。韓国語版に独立記事がないためkoSource=rule。路線色は日本語版Wikipediaインフォボックスの値（オレンジ）。"
+}

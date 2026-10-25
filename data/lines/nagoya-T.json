@@ -1,0 +1,233 @@
+{
+  "id": "nagoya.T",
+  "region": "nagoya",
+  "operator": "名古屋市営地下鉄",
+  "operatorKo": "나고야 시영 지하철",
+  "nameJa": "鶴舞線",
+  "nameKo": "쓰루마이선",
+  "nameEn": "Tsurumai Line",
+  "color": "#009BBF",
+  "circular": false,
+  "stations": [
+    {
+      "code": "T01",
+      "ja": "上小田井",
+      "kana": "かみおたい",
+      "ko": "가미오타이",
+      "koSource": "wiki",
+      "en": "Kamiotai",
+      "lat": 35.223722,
+      "lng": 136.876889
+    },
+    {
+      "code": "T02",
+      "ja": "庄内緑地公園",
+      "kana": "しょうないりょくちこうえん",
+      "ko": "쇼나이료쿠치코엔",
+      "koSource": "wiki",
+      "en": "Shonai Ryokuchi Koen",
+      "lat": 35.215278,
+      "lng": 136.886944
+    },
+    {
+      "code": "T03",
+      "ja": "庄内通",
+      "kana": "しょうないどおり",
+      "ko": "쇼나이도리",
+      "koSource": "wiki",
+      "en": "Shonai-dori",
+      "lat": 35.204444,
+      "lng": 136.891111
+    },
+    {
+      "code": "T04",
+      "ja": "浄心",
+      "kana": "じょうしん",
+      "ko": "조신",
+      "koSource": "wiki",
+      "en": "Joshin",
+      "lat": 35.192222,
+      "lng": 136.890833
+    },
+    {
+      "code": "T05",
+      "ja": "浅間町",
+      "kana": "せんげんちょう",
+      "ko": "센겐초",
+      "koSource": "wiki",
+      "en": "Sengen-cho",
+      "lat": 35.183611,
+      "lng": 136.890361
+    },
+    {
+      "code": "T06",
+      "ja": "丸の内",
+      "kana": "まるのうち",
+      "ko": "마루노우치",
+      "koSource": "wiki",
+      "en": "Marunouchi",
+      "lat": 35.173333,
+      "lng": 136.897222
+    },
+    {
+      "code": "T07",
+      "ja": "伏見",
+      "kana": "ふしみ",
+      "ko": "후시미",
+      "koSource": "wiki",
+      "en": "Fushimi",
+      "lat": 35.169167,
+      "lng": 136.8975
+    },
+    {
+      "code": "T08",
+      "ja": "大須観音",
+      "kana": "おおすかんのん",
+      "ko": "오스칸논",
+      "koSource": "wiki",
+      "en": "Osu Kannon",
+      "lat": 35.160833,
+      "lng": 136.89825
+    },
+    {
+      "code": "T09",
+      "ja": "上前津",
+      "kana": "かみまえづ",
+      "ko": "가미마에즈",
+      "koSource": "wiki",
+      "en": "Kamimaezu",
+      "lat": 35.157222,
+      "lng": 136.906667
+    },
+    {
+      "code": "T10",
+      "ja": "鶴舞",
+      "kana": "つるまい",
+      "ko": "쓰루마이",
+      "koSource": "wiki",
+      "en": "Tsurumai",
+      "lat": 35.156409,
+      "lng": 136.917445
+    },
+    {
+      "code": "T11",
+      "ja": "荒畑",
+      "kana": "あらはた",
+      "ko": "아라하타",
+      "koSource": "wiki",
+      "en": "Arahata",
+      "lat": 35.149722,
+      "lng": 136.925556
+    },
+    {
+      "code": "T12",
+      "ja": "御器所",
+      "kana": "ごきそ",
+      "ko": "고키소",
+      "koSource": "wiki",
+      "en": "Gokiso",
+      "lat": 35.1494,
+      "lng": 136.9344,
+      "jaSub": "昭和区役所"
+    },
+    {
+      "code": "T13",
+      "ja": "川名",
+      "kana": "かわな",
+      "ko": "가와나",
+      "koSource": "wiki",
+      "en": "Kawana",
+      "lat": 35.148722,
+      "lng": 136.948333
+    },
+    {
+      "code": "T14",
+      "ja": "いりなか",
+      "kana": "いりなか",
+      "ko": "이리나카",
+      "koSource": "wiki",
+      "en": "Irinaka",
+      "lat": 35.143333,
+      "lng": 136.955278
+    },
+    {
+      "code": "T15",
+      "ja": "八事",
+      "kana": "やごと",
+      "ko": "야고토",
+      "koSource": "wiki",
+      "en": "Yagoto",
+      "lat": 35.136667,
+      "lng": 136.964167
+    },
+    {
+      "code": "T16",
+      "ja": "塩釜口",
+      "kana": "しおがまぐち",
+      "ko": "시오가마구치",
+      "koSource": "wiki",
+      "en": "Shiogama-guchi",
+      "lat": 35.132472,
+      "lng": 136.977694,
+      "jaSub": "名城大学前"
+    },
+    {
+      "code": "T17",
+      "ja": "植田",
+      "kana": "うえだ",
+      "ko": "우에다",
+      "koSource": "wiki",
+      "en": "Ueda",
+      "lat": 35.128528,
+      "lng": 136.988333
+    },
+    {
+      "code": "T18",
+      "ja": "原",
+      "kana": "はら",
+      "ko": "하라",
+      "koSource": "wiki",
+      "en": "Hara",
+      "lat": 35.126,
+      "lng": 136.997139
+    },
+    {
+      "code": "T19",
+      "ja": "平針",
+      "kana": "ひらばり",
+      "ko": "히라바리",
+      "koSource": "wiki",
+      "en": "Hirabari",
+      "lat": 35.122972,
+      "lng": 137.006389
+    },
+    {
+      "code": "T20",
+      "ja": "赤池",
+      "kana": "あかいけ",
+      "ko": "아카이케",
+      "koSource": "wiki",
+      "en": "Akaike",
+      "lat": 35.121111,
+      "lng": 137.018611
+    }
+  ],
+  "throughTermini": {
+    "start": [
+      "岩倉",
+      "犬山",
+      "扶桑"
+    ],
+    "end": [
+      "豊田市"
+    ]
+  },
+  "services": [],
+  "sources": [
+    "https://ja.wikipedia.org/wiki/名古屋市営地下鉄鶴舞線",
+    "https://ja.wikipedia.org/w/api.php (coordinates/langlinks/infobox)",
+    "https://ja.wikipedia.org/wiki/名鉄豊田線",
+    "https://ja.wikipedia.org/wiki/名鉄犬山線"
+  ],
+  "notes": "全列車普通（各駅停車）。上小田井から名鉄犬山線へ直通（2024年3月以降は平日朝夕・休日早朝深夜の一部のみ。行先は主に岩倉、朝と深夜に犬山、平日朝1本扶桑行き。犬山線内で急行になる列車あり＝名鉄線内の話）。土休日朝に布袋始発あり（布袋行きは無し）。赤池から名鉄豊田線へ直通（三河線経由で豊田市行き、日中毎時4本程度、半数は赤池止まり。豊田線内に途中折り返しなし）。始終発に浄心・八事発着あり。T16塩釜口の副駅名「名城大学前」、T12御器所「昭和区役所」。T10鶴舞の副駅名「STATION Ai 前」(2024年11月〜)はJR東海駅のもので地下鉄側の表示は未確認のため省略。 座標は日本語版Wikipedia各駅記事の座標（複数事業者の駅は記事代表座標）。韓国語名は日本語版記事の韓国語版リンク先記事名から「역」と曖昧さ回避括弧を除いたもの。色は日本語版Wikipediaの路線インフォボックス値（名古屋市交通局旅客サインマニュアル準拠とされる）で公式HEXの直接確認はしていない。jaSub（副駅名）は日本語版Wikipedia駅記事インフォボックス「副駅名」の値で、現地サイン表記との照合はしていない。"
+}

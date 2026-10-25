@@ -28,6 +28,9 @@ targets:
         buildPhase: resources
       - path: data/transfers.json
         buildPhase: resources
+      - path: data/spots
+        type: folder
+        buildPhase: resources
     dependencies:
       - package: TrainBoardKit
     configFiles:

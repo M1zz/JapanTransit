@@ -1,0 +1,167 @@
+{
+  "id": "fukuoka.K",
+  "region": "fukuoka",
+  "operator": "福岡市地下鉄",
+  "operatorKo": "후쿠오카시 지하철",
+  "nameJa": "空港線",
+  "nameKo": "공항선",
+  "nameEn": "Airport Line",
+  "color": "#EE5511",
+  "circular": false,
+  "stations": [
+    {
+      "code": "K01",
+      "ja": "姪浜",
+      "kana": "めいのはま",
+      "ko": "메이노하마",
+      "koSource": "wiki",
+      "en": "Meinohama",
+      "lat": 33.583703,
+      "lng": 130.325236
+    },
+    {
+      "code": "K02",
+      "ja": "室見",
+      "kana": "むろみ",
+      "ko": "무로미",
+      "koSource": "wiki",
+      "en": "Muromi",
+      "lat": 33.580961,
+      "lng": 130.340075
+    },
+    {
+      "code": "K03",
+      "ja": "藤崎",
+      "kana": "ふじさき",
+      "ko": "후지사키",
+      "koSource": "wiki",
+      "en": "Fujisaki",
+      "lat": 33.581361,
+      "lng": 130.348169
+    },
+    {
+      "code": "K04",
+      "ja": "西新",
+      "kana": "にしじん",
+      "ko": "니시진",
+      "koSource": "wiki",
+      "en": "Nishijin",
+      "lat": 33.583803,
+      "lng": 130.359742
+    },
+    {
+      "code": "K05",
+      "ja": "唐人町",
+      "kana": "とうじんまち",
+      "ko": "도진마치",
+      "koSource": "wiki",
+      "en": "Tojinmachi",
+      "lat": 33.590264,
+      "lng": 130.370533
+    },
+    {
+      "code": "K06",
+      "ja": "大濠公園",
+      "jaSub": "福岡市美術館口",
+      "kana": "おおほりこうえん",
+      "ko": "오호리 공원",
+      "koSource": "wiki",
+      "en": "Ohori Park",
+      "lat": 33.590083,
+      "lng": 130.378853
+    },
+    {
+      "code": "K07",
+      "ja": "赤坂",
+      "kana": "あかさか",
+      "ko": "아카사카",
+      "koSource": "wiki",
+      "en": "Akasaka",
+      "lat": 33.589117,
+      "lng": 130.39085
+    },
+    {
+      "code": "K08",
+      "ja": "天神",
+      "kana": "てんじん",
+      "ko": "덴진",
+      "koSource": "wiki",
+      "en": "Tenjin",
+      "lat": 33.591489,
+      "lng": 130.399358
+    },
+    {
+      "code": "K09",
+      "ja": "中洲川端",
+      "kana": "なかすかわばた",
+      "ko": "나카스카와바타",
+      "koSource": "wiki",
+      "en": "Nakasu-Kawabata",
+      "lat": 33.594983,
+      "lng": 130.406603
+    },
+    {
+      "code": "K10",
+      "ja": "祇園",
+      "jaSub": "博多旧市街口",
+      "kana": "ぎおん",
+      "ko": "기온",
+      "koSource": "wiki",
+      "en": "Gion",
+      "lat": 33.594044,
+      "lng": 130.414678
+    },
+    {
+      "code": "K11",
+      "ja": "博多",
+      "kana": "はかた",
+      "ko": "하카타",
+      "koSource": "wiki",
+      "en": "Hakata",
+      "lat": 33.590139,
+      "lng": 130.420611
+    },
+    {
+      "code": "K12",
+      "ja": "東比恵",
+      "kana": "ひがしひえ",
+      "ko": "히가시히에",
+      "koSource": "wiki",
+      "en": "Higashi-Hie",
+      "lat": 33.589894,
+      "lng": 130.431278
+    },
+    {
+      "code": "K13",
+      "ja": "福岡空港",
+      "kana": "ふくおかくうこう",
+      "ko": "후쿠오카 공항",
+      "koSource": "wiki",
+      "en": "Fukuoka Airport",
+      "lat": 33.597078,
+      "lng": 130.448542
+    }
+  ],
+  "throughTermini": {
+    "start": [
+      "筑前前原",
+      "筑前深江",
+      "唐津",
+      "西唐津"
+    ],
+    "end": []
+  },
+  "junctionTermini": {
+    "atStation": "中洲川端",
+    "towardEnd": [
+      "貝塚"
+    ]
+  },
+  "services": [],
+  "sources": [
+    "https://ja.wikipedia.org/wiki/福岡市地下鉄空港線",
+    "https://ja.wikipedia.org/wiki/福岡市地下鉄箱崎線",
+    "https://ja.wikipedia.org/wiki/筑肥線"
+  ],
+  "notes": "姪浜からJR筑肥線へ相互直通: 日中は筑前前原–福岡空港（毎時4本）、朝夕に唐津・西唐津発着、平日のみ筑前深江発着が上下1本。筑肥線の快速も地下鉄線内は各駅停車のため services は空。2021年改正で博多発筑前前原行きも設定。中洲川端（途中駅）から箱崎線へ直通: 朝夕は貝塚–姪浜、日中は貝塚–西新。これらの貝塚行きは中洲川端で空港線を離れ博多・福岡空港へは行かない（junctionTermini.towardEnd）。逆に姪浜方面の箱崎線直通列車は西新行き・姪浜行き（いずれも線内の駅名）。注意: 日中の西新行きは西新止まりで、室見・姪浜へは行かない。直通は一部列車のみなので continuations には入れていない。路線色はWikipedia値 #e51 を6桁に展開（オレンジ）、公式HEXは未確認。英語表記はWikipediaのローマ字欄（福岡市地下鉄は大濠公園 Ohori Park・福岡空港 Fukuoka Airport など英語名を駅名標に使う）。副駅名: 大濠公園〈福岡市美術館口〉・祇園〈博多旧市街口〉は jaSub。座標は日本語版Wikipedia各駅記事の座標（複数事業者の駅は当該地下鉄側の座標を選択）。韓国語名は日本語版記事の韓国語版リンク先記事名から「역」と曖昧さ回避括弧を除いたもの。かなは各駅記事インフォボックスのよみがな。"
+}

@@ -1,0 +1,513 @@
+{
+  "region": "sapporo",
+  "spots": [
+    {
+      "id": "sapporo.odori-park",
+      "ko": "오도리 공원",
+      "ja": "大通公園",
+      "en": "Odori Park",
+      "aliases": [
+        "오도리공원",
+        "오도리",
+        "삿포로 눈축제",
+        "눈축제",
+        "삿포로 화이트 일루미네이션"
+      ],
+      "category": "공원·자연",
+      "lat": 43.0597,
+      "lng": 141.3464,
+      "stations": [
+        {
+          "ja": "大通",
+          "line": "sapporo.N",
+          "walkMinutes": 1,
+          "exit": null,
+          "note": "공원 바로 아래 역. 난보쿠선·도자이선·도호선 모두 오도리역(공식 안내 출구 2·5·6·8·27번)"
+        },
+        {
+          "ja": "西11丁目",
+          "line": "sapporo.T",
+          "walkMinutes": 1,
+          "exit": null,
+          "note": "공원 서쪽 끝(공식 안내 출구 1·4번)"
+        }
+      ],
+      "tip": "공원이 동서로 1.5km 길다. 동쪽 끝이 TV 타워, 서쪽 끝은 니시11초메역",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/大通公園",
+        "https://odori-park.jp/access/"
+      ]
+    },
+    {
+      "id": "sapporo.tv-tower",
+      "ko": "삿포로 TV 타워",
+      "ja": "さっぽろテレビ塔",
+      "en": "Sapporo TV Tower",
+      "aliases": [
+        "티비타워",
+        "티브이 타워",
+        "삿포로 테레비탑",
+        "테레비탑",
+        "삿포로 티비 타워"
+      ],
+      "category": "전망대",
+      "lat": 43.0611,
+      "lng": 141.3564,
+      "stations": [
+        {
+          "ja": "大通",
+          "line": "sapporo.N",
+          "walkMinutes": 1,
+          "exit": "27",
+          "note": "공식: 27번 출구 바로. 지하상가 오로라타운으로 삿포로역·스스키노에서 지하로 올 수 있다"
+        },
+        {
+          "ja": "大通",
+          "line": "sapporo.T",
+          "walkMinutes": 0,
+          "exit": null,
+          "note": "직결. 테레비탑 지하 남쪽이 도자이선 콘코스와 바로 연결"
+        }
+      ],
+      "tip": "",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/さっぽろテレビ塔",
+        "https://www.tv-tower.co.jp/access.html"
+      ]
+    },
+    {
+      "id": "sapporo.clock-tower",
+      "ko": "삿포로 시계탑",
+      "ja": "札幌市時計台",
+      "en": "Sapporo Clock Tower",
+      "aliases": [
+        "시계탑",
+        "삿포로시 시계탑",
+        "구 삿포로 농학교 연무장"
+      ],
+      "category": "명소",
+      "lat": 43.0626,
+      "lng": 141.3536,
+      "stations": [
+        {
+          "ja": "大通",
+          "line": "sapporo.N",
+          "walkMinutes": 5,
+          "exit": null,
+          "note": "공식: 시청 쪽 출구에서 약 5분. 난보쿠·도자이·도호선 모두 오도리역"
+        },
+        {
+          "ja": "さっぽろ",
+          "line": "sapporo.N",
+          "walkMinutes": 10,
+          "exit": null,
+          "note": "공식: JR 삿포로역에서 지하보행공간(치카호)으로 오도리 방면 약 10분, 9번 출구"
+        }
+      ],
+      "tip": "",
+      "sources": [
+        "https://sapporoshi-tokeidai.jp/access/",
+        "https://ja.wikipedia.org/wiki/札幌市時計台"
+      ]
+    },
+    {
+      "id": "sapporo.susukino",
+      "ko": "스스키노",
+      "ja": "すすきの",
+      "en": "Susukino",
+      "aliases": [
+        "스스키노 거리",
+        "니카상 간판",
+        "삿포로 유흥가",
+        "라멘 요코초",
+        "스스키노 라멘골목"
+      ],
+      "category": "먹거리",
+      "lat": 43.0553,
+      "lng": 141.3531,
+      "stations": [
+        {
+          "ja": "すすきの",
+          "line": "sapporo.N",
+          "walkMinutes": 1,
+          "exit": null,
+          "note": "역 바로 위가 스스키노 교차로"
+        },
+        {
+          "ja": "豊水すすきの",
+          "line": "sapporo.H",
+          "walkMinutes": 4,
+          "exit": null,
+          "note": "약. 스스키노역에서 동쪽으로 약 300m. 지하로 이어지지 않은 다른 역"
+        }
+      ],
+      "tip": "난보쿠선 스스키노역과 도호선 호스이스스키노역은 다른 역이다",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/すすきの",
+        "https://ja.wikipedia.org/wiki/すすきの駅",
+        "https://ja.wikipedia.org/wiki/豊水すすきの駅"
+      ]
+    },
+    {
+      "id": "sapporo.nijo-market",
+      "ko": "니조 시장",
+      "ja": "二条市場",
+      "en": "Nijo Market",
+      "aliases": [
+        "니조시장",
+        "삿포로 수산시장",
+        "니조 시장 카이센동"
+      ],
+      "category": "먹거리",
+      "lat": 43.0583,
+      "lng": 141.3584,
+      "stations": [
+        {
+          "ja": "バスセンター前",
+          "line": "sapporo.T",
+          "walkMinutes": 5,
+          "exit": null,
+          "note": "약 5분(삿포로시 관광 사이트)"
+        },
+        {
+          "ja": "大通",
+          "line": "sapporo.N",
+          "walkMinutes": 10,
+          "exit": null,
+          "note": "약 10분. 난보쿠·도자이·도호선 모두 오도리역"
+        }
+      ],
+      "tip": "시장은 아침 7시쯤 열고 오후 5시쯤 닫는다. 식당은 밤 9시쯤까지 하는 곳도 있다",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/二条市場",
+        "https://www.sapporo.travel/choose/keywords/sapporo-nijo-market-curb-market/?lang=ja"
+      ]
+    },
+    {
+      "id": "sapporo.tanukikoji",
+      "ko": "다누키코지 상점가",
+      "ja": "狸小路商店街",
+      "en": "Tanukikoji Shopping Street",
+      "aliases": [
+        "타누키코지",
+        "다누키코지",
+        "너구리 골목",
+        "돈키호테 다누키코지"
+      ],
+      "category": "쇼핑",
+      "lat": 43.0575,
+      "lng": 141.35302,
+      "stations": [
+        {
+          "ja": "すすきの",
+          "line": "sapporo.N",
+          "walkMinutes": 3,
+          "exit": null,
+          "note": "약 3분, 3·4초메까지"
+        },
+        {
+          "ja": "豊水すすきの",
+          "line": "sapporo.H",
+          "walkMinutes": 3,
+          "exit": null,
+          "note": "약 3분, 1·2초메까지"
+        },
+        {
+          "ja": "大通",
+          "line": "sapporo.N",
+          "walkMinutes": 4,
+          "exit": null,
+          "note": "약 4분, 3·4초메까지"
+        }
+      ],
+      "tip": "",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/狸小路",
+        "https://nominatim.openstreetmap.org/search?q=狸小路&format=json&countrycodes=jp&limit=5"
+      ]
+    },
+    {
+      "id": "sapporo.sapporo-factory",
+      "ko": "삿포로 팩토리",
+      "ja": "サッポロファクトリー",
+      "en": "Sapporo Factory",
+      "aliases": [
+        "삿포로팩토리",
+        "팩토리 아트리움"
+      ],
+      "category": "쇼핑",
+      "lat": 43.0656,
+      "lng": 141.3627,
+      "stations": [
+        {
+          "ja": "バスセンター前",
+          "line": "sapporo.T",
+          "walkMinutes": 3,
+          "exit": "8",
+          "note": "공식: 8번 출구에서 도보 3분"
+        }
+      ],
+      "tip": "",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/サッポロファクトリー",
+        "https://sapporofactory.jp/access/"
+      ]
+    },
+    {
+      "id": "sapporo.beer-museum",
+      "ko": "삿포로 맥주 박물관",
+      "ja": "サッポロビール博物館",
+      "en": "Sapporo Beer Museum",
+      "aliases": [
+        "맥주 박물관",
+        "삿포로 맥주박물관",
+        "삿포로 비루엔",
+        "삿포로 맥주 정원",
+        "징기스칸 맥주정원"
+      ],
+      "category": "박물관·미술관",
+      "lat": 43.0714,
+      "lng": 141.3688,
+      "stations": [
+        {
+          "ja": "東区役所前",
+          "line": "sapporo.H",
+          "walkMinutes": 10,
+          "exit": null,
+          "note": "약 10분. JR函館本線 苗穂駅에서는 걸어서 약 8분"
+        }
+      ],
+      "tip": "삿포로역 앞에서 주오버스를 타고 サッポロビール園 정류장에 내리면 가깝다",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/サッポロビール博物館"
+      ]
+    },
+    {
+      "id": "sapporo.hokkaido-jingu",
+      "ko": "홋카이도 신궁",
+      "ja": "北海道神宮",
+      "en": "Hokkaido Shrine",
+      "aliases": [
+        "홋카이도신궁",
+        "홋카이도 진구",
+        "마루야마 공원"
+      ],
+      "category": "신사·절",
+      "lat": 43.0544,
+      "lng": 141.3079,
+      "stations": [
+        {
+          "ja": "円山公園",
+          "line": "sapporo.T",
+          "walkMinutes": 15,
+          "exit": null,
+          "note": "마루야마 공원을 지나 걸어감. 버스 神宮前 정류장에서는 1분"
+        }
+      ],
+      "tip": "",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/北海道神宮"
+      ]
+    },
+    {
+      "id": "sapporo.maruyama-zoo",
+      "ko": "마루야마 동물원",
+      "ja": "札幌市円山動物園",
+      "en": "Sapporo Maruyama Zoo",
+      "aliases": [
+        "마루야마동물원",
+        "삿포로 동물원",
+        "북극곰"
+      ],
+      "category": "테마파크",
+      "lat": 43.0514,
+      "lng": 141.3074,
+      "stations": [
+        {
+          "ja": "円山公園",
+          "line": "sapporo.T",
+          "walkMinutes": 15,
+          "exit": null,
+          "note": "약 15분. 역 버스터미널에서 JR버스 円15(동물원선)로 약 7분, 円山動物園西門 하차"
+        }
+      ],
+      "tip": "",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/札幌市円山動物園",
+        "https://rurubu.jp/andmore/spot/80000094"
+      ]
+    },
+    {
+      "id": "sapporo.shiroi-koibito-park",
+      "ko": "시로이 코이비토 파크",
+      "ja": "白い恋人パーク",
+      "en": "Shiroi Koibito Park",
+      "aliases": [
+        "시로이코이비토 파크",
+        "하얀 연인 공장",
+        "시로이 코이비토 공장",
+        "이시야 초콜릿 공장"
+      ],
+      "category": "테마파크",
+      "lat": 43.08905,
+      "lng": 141.2717,
+      "stations": [
+        {
+          "ja": "宮の沢",
+          "line": "sapporo.T",
+          "walkMinutes": 7,
+          "exit": null,
+          "note": "약 7분. 도자이선 서쪽 종점"
+        }
+      ],
+      "tip": "",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/白い恋人パーク"
+      ]
+    },
+    {
+      "id": "sapporo.red-brick",
+      "ko": "홋카이도청 구 본청사",
+      "ja": "北海道庁旧本庁舎",
+      "en": "Former Hokkaido Government Office",
+      "aliases": [
+        "아카렌가",
+        "빨간 벽돌 청사",
+        "붉은 벽돌 청사",
+        "구 도청사",
+        "아카렌가 청사"
+      ],
+      "category": "명소",
+      "lat": 43.0637,
+      "lng": 141.3479,
+      "stations": [
+        {
+          "ja": "さっぽろ",
+          "line": "sapporo.N",
+          "walkMinutes": 6,
+          "exit": null,
+          "note": "난보쿠선 삿포로역에서 6분"
+        },
+        {
+          "ja": "さっぽろ",
+          "line": "sapporo.H",
+          "walkMinutes": 9,
+          "exit": null,
+          "note": "도호선 삿포로역에서 9분"
+        },
+        {
+          "ja": "大通",
+          "line": "sapporo.N",
+          "walkMinutes": 9,
+          "exit": null,
+          "note": "9분"
+        }
+      ],
+      "tip": "2019년부터 대규모 보수로 닫았다가 2025년 7월 25일 다시 열었다",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/北海道庁旧本庁舎",
+        "https://summer.walkerplus.com/odekake/detail/ar0101s574667/map.html"
+      ]
+    },
+    {
+      "id": "sapporo.jr-tower-t38",
+      "ko": "JR 타워 전망실 T38",
+      "ja": "JRタワー展望室 T38",
+      "en": "JR Tower Observatory T38",
+      "aliases": [
+        "제이알 타워",
+        "티 삼십팔",
+        "삿포로역 전망대",
+        "삿포로 스텔라 플레이스"
+      ],
+      "category": "전망대",
+      "lat": 43.0686,
+      "lng": 141.3519,
+      "stations": [
+        {
+          "ja": "さっぽろ",
+          "line": "sapporo.N",
+          "walkMinutes": 0,
+          "exit": null,
+          "note": "직결. JR 삿포로역·지하철 삿포로역과 바로 연결, 6층에서 전용 엘리베이터로 38층"
+        },
+        {
+          "ja": "さっぽろ",
+          "line": "sapporo.H",
+          "walkMinutes": 0,
+          "exit": null,
+          "note": "직결"
+        }
+      ],
+      "tip": "",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/JRタワー",
+        "https://www.visit-hokkaido.jp/spot/detail_10012.html",
+        "https://www.sapporo.travel/?p=16895"
+      ]
+    },
+    {
+      "id": "sapporo.dome",
+      "ko": "삿포로 돔",
+      "ja": "大和ハウス プレミストドーム",
+      "en": "Daiwa House Premist Dome (Sapporo Dome)",
+      "aliases": [
+        "삿포로돔",
+        "프레미스트 돔",
+        "삿포로 돔 콘서트"
+      ],
+      "category": "전시·공연",
+      "lat": 43.0151,
+      "lng": 141.4097,
+      "stations": [
+        {
+          "ja": "福住",
+          "line": "sapporo.H",
+          "walkMinutes": 10,
+          "exit": null,
+          "note": "공식: 도호선 종점 福住駅에서 도보 10분. さっぽろ駅에서 약 13분"
+        }
+      ],
+      "tip": "",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/札幌ドーム",
+        "https://www.sapporo-dome.co.jp/access/"
+      ]
+    },
+    {
+      "id": "sapporo.nakajima-park",
+      "ko": "나카지마 공원",
+      "ja": "中島公園",
+      "en": "Nakajima Park",
+      "aliases": [
+        "나카지마공원",
+        "호헤이칸"
+      ],
+      "category": "공원·자연",
+      "lat": 43.0442,
+      "lng": 141.35501,
+      "stations": [
+        {
+          "ja": "中島公園",
+          "line": "sapporo.N",
+          "walkMinutes": 1,
+          "exit": null,
+          "note": "역이 공원 북쪽 끝 아래. 3번 출구가 공원 쪽"
+        },
+        {
+          "ja": "幌平橋",
+          "line": "sapporo.N",
+          "walkMinutes": 1,
+          "exit": null,
+          "note": "역 출구가 공원 남쪽 입구"
+        }
+      ],
+      "tip": "",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/中島公園",
+        "https://ja.wikipedia.org/wiki/中島公園駅",
+        "https://ja.wikipedia.org/wiki/幌平橋駅"
+      ]
+    }
+  ]
+}

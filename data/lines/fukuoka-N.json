@@ -1,0 +1,206 @@
+{
+  "id": "fukuoka.N",
+  "region": "fukuoka",
+  "operator": "福岡市地下鉄",
+  "operatorKo": "후쿠오카시 지하철",
+  "nameJa": "七隈線",
+  "nameKo": "나나쿠마선",
+  "nameEn": "Nanakuma Line",
+  "color": "#00936B",
+  "circular": false,
+  "stations": [
+    {
+      "code": "N01",
+      "ja": "橋本",
+      "kana": "はしもと",
+      "ko": "하시모토",
+      "koSource": "wiki",
+      "en": "Hashimoto",
+      "lat": 33.555206,
+      "lng": 130.321064
+    },
+    {
+      "code": "N02",
+      "ja": "次郎丸",
+      "kana": "じろうまる",
+      "ko": "지로마루",
+      "koSource": "wiki",
+      "en": "Jiromaru",
+      "lat": 33.552728,
+      "lng": 130.329544
+    },
+    {
+      "code": "N03",
+      "ja": "賀茂",
+      "kana": "かも",
+      "ko": "가모",
+      "koSource": "wiki",
+      "en": "Kamo",
+      "lat": 33.550481,
+      "lng": 130.337878
+    },
+    {
+      "code": "N04",
+      "ja": "野芥",
+      "kana": "のけ",
+      "ko": "노케",
+      "koSource": "wiki",
+      "en": "Noke",
+      "lat": 33.548331,
+      "lng": 130.346558
+    },
+    {
+      "code": "N05",
+      "ja": "梅林",
+      "kana": "うめばやし",
+      "ko": "우메바야시",
+      "koSource": "wiki",
+      "en": "Umebayashi",
+      "lat": 33.545806,
+      "lng": 130.354939
+    },
+    {
+      "code": "N06",
+      "ja": "福大前",
+      "kana": "ふくだいまえ",
+      "ko": "후쿠다이마에",
+      "koSource": "wiki",
+      "en": "Fukuoka University",
+      "lat": 33.547469,
+      "lng": 130.362228
+    },
+    {
+      "code": "N07",
+      "ja": "七隈",
+      "kana": "ななくま",
+      "ko": "나나쿠마",
+      "koSource": "wiki",
+      "en": "Nanakuma",
+      "lat": 33.553264,
+      "lng": 130.361681
+    },
+    {
+      "code": "N08",
+      "ja": "金山",
+      "kana": "かなやま",
+      "ko": "가나야마",
+      "koSource": "wiki",
+      "en": "Kanayama",
+      "lat": 33.559372,
+      "lng": 130.361561
+    },
+    {
+      "code": "N09",
+      "ja": "茶山",
+      "kana": "ちゃやま",
+      "ko": "자야마",
+      "koSource": "wiki",
+      "en": "Chayama",
+      "lat": 33.566064,
+      "lng": 130.365431
+    },
+    {
+      "code": "N10",
+      "ja": "別府",
+      "kana": "べふ",
+      "ko": "베후",
+      "koSource": "wiki",
+      "en": "Befu",
+      "lat": 33.574169,
+      "lng": 130.369628
+    },
+    {
+      "code": "N11",
+      "ja": "六本松",
+      "jaSub": "科学館前",
+      "kana": "ろっぽんまつ",
+      "ko": "롯폰마쓰",
+      "koSource": "wiki",
+      "en": "Ropponmatsu",
+      "lat": 33.577678,
+      "lng": 130.377286
+    },
+    {
+      "code": "N12",
+      "ja": "桜坂",
+      "kana": "さくらざか",
+      "ko": "사쿠라자카",
+      "koSource": "wiki",
+      "en": "Sakurazaka",
+      "lat": 33.577292,
+      "lng": 130.386819
+    },
+    {
+      "code": "N13",
+      "ja": "薬院大通",
+      "jaSub": "動植物園口",
+      "kana": "やくいんおおどおり",
+      "ko": "야쿠인오도리",
+      "koSource": "wiki",
+      "en": "Yakuin-odori",
+      "lat": 33.580406,
+      "lng": 130.396158
+    },
+    {
+      "code": "N14",
+      "ja": "薬院",
+      "kana": "やくいん",
+      "ko": "야쿠인",
+      "koSource": "wiki",
+      "en": "Yakuin",
+      "lat": 33.581728,
+      "lng": 130.401681
+    },
+    {
+      "code": "N15",
+      "ja": "渡辺通",
+      "kana": "わたなべどおり",
+      "ko": "와타나베도리",
+      "koSource": "wiki",
+      "en": "Watanabe-dori",
+      "lat": 33.583969,
+      "lng": 130.404844
+    },
+    {
+      "code": "N16",
+      "ja": "天神南",
+      "kana": "てんじんみなみ",
+      "ko": "덴진미나미",
+      "koSource": "wiki",
+      "en": "Tenjin-minami",
+      "lat": 33.588197,
+      "lng": 130.401728
+    },
+    {
+      "code": "N17",
+      "ja": "櫛田神社前",
+      "kana": "くしだじんじゃまえ",
+      "ko": "구시다진자마에",
+      "koSource": "wiki",
+      "en": "Kushida Shrine",
+      "lat": 33.591333,
+      "lng": 130.411583
+    },
+    {
+      "code": "N18",
+      "ja": "博多",
+      "kana": "はかた",
+      "ko": "하카타",
+      "koSource": "wiki",
+      "en": "Hakata",
+      "lat": 33.590139,
+      "lng": 130.420611
+    }
+  ],
+  "throughTermini": {
+    "start": [],
+    "end": []
+  },
+  "services": [],
+  "sources": [
+    "https://ja.wikipedia.org/wiki/福岡市地下鉄七隈線",
+    "https://ja.wikipedia.org/wiki/博多駅",
+    "https://ja.wikipedia.org/wiki/天神南駅"
+  ],
+  "notes": "駅番号は N01 橋本 – N18 博多（2023年3月27日に天神南–博多間延伸、櫛田神社前 N17・博多 N18 が開業）。全列車が橋本–博多間の通し運転で、他社直通なし、全列車各駅停車（ATO運転）。路線色 #00936B は DIC-2568（Wikipedia記載）。博多は空港線と同名で、乗り換え通路に改札はない（改札内乗り換え、標準乗換時分は長め）。天神南と空港線天神の改札外乗継制度は2023年3月26日限りで廃止。英語表記はWikipediaのローマ字欄（櫛田神社前 Kushida Shrine・福大前 Fukuoka University など英語名）。副駅名: 六本松〈科学館前〉・薬院大通〈動植物園口〉は jaSub。座標は日本語版Wikipedia各駅記事の座標（複数事業者の駅は当該地下鉄側の座標を選択）。韓国語名は日本語版記事の韓国語版リンク先記事名から「역」と曖昧さ回避括弧を除いたもの。かなは各駅記事インフォボックスのよみがな。"
+}

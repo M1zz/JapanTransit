@@ -1,0 +1,204 @@
+{
+  "id": "sendai.N",
+  "region": "sendai",
+  "operator": "仙台市交通局",
+  "operatorKo": "센다이시 교통국",
+  "nameJa": "南北線",
+  "nameKo": "난보쿠선",
+  "nameEn": "Namboku Line",
+  "color": "#317C66",
+  "circular": false,
+  "stations": [
+    {
+      "code": "N01",
+      "ja": "泉中央",
+      "jaSub": "ベガルタ仙台・ユアスタ前",
+      "kana": "いずみちゅうおう",
+      "ko": "이즈미추오",
+      "koSource": "wiki",
+      "en": "Izumi-chuo",
+      "lat": 38.323108,
+      "lng": 140.880764
+    },
+    {
+      "code": "N02",
+      "ja": "八乙女",
+      "jaSub": "セレニティホスピス八乙女前",
+      "kana": "やおとめ",
+      "ko": "야오토메",
+      "koSource": "wiki",
+      "en": "Yaotome",
+      "lat": 38.312889,
+      "lng": 140.884056
+    },
+    {
+      "code": "N03",
+      "ja": "黒松",
+      "jaSub": "平和住宅情報センター本店前",
+      "kana": "くろまつ",
+      "ko": "구로마쓰",
+      "koSource": "wiki",
+      "en": "Kuromatsu",
+      "lat": 38.303342,
+      "lng": 140.886483
+    },
+    {
+      "code": "N04",
+      "ja": "旭ヶ丘",
+      "jaSub": "日立システムズホール仙台前",
+      "kana": "あさひがおか",
+      "ko": "아사히가오카",
+      "koSource": "wiki",
+      "en": "Asahigaoka",
+      "lat": 38.295403,
+      "lng": 140.883628
+    },
+    {
+      "code": "N05",
+      "ja": "台原",
+      "kana": "だいのはら",
+      "ko": "다이노하라",
+      "koSource": "wiki",
+      "en": "Dainohara",
+      "lat": 38.288464,
+      "lng": 140.878528
+    },
+    {
+      "code": "N06",
+      "ja": "北仙台",
+      "kana": "きたせんだい",
+      "ko": "기타센다이",
+      "koSource": "wiki",
+      "en": "Kita-Sendai",
+      "lat": 38.282222,
+      "lng": 140.868472
+    },
+    {
+      "code": "N07",
+      "ja": "北四番丁",
+      "jaSub": "イオンモール仙台上杉前",
+      "kana": "きたよばんちょう",
+      "ko": "기타요반초",
+      "koSource": "wiki",
+      "en": "Kita-Yobancho",
+      "lat": 38.272192,
+      "lng": 140.868964
+    },
+    {
+      "code": "N08",
+      "ja": "勾当台公園",
+      "jaSub": "県庁市役所前／久保田ホールディングス前",
+      "kana": "こうとうだいこうえん",
+      "ko": "고토다이코엔",
+      "koSource": "wiki",
+      "en": "Kotodai-koen",
+      "lat": 38.266389,
+      "lng": 140.871342
+    },
+    {
+      "code": "N09",
+      "ja": "広瀬通",
+      "jaSub": "一番町 中央通り",
+      "kana": "ひろせどおり",
+      "ko": "히로세도리",
+      "koSource": "wiki",
+      "en": "Hirose-dori",
+      "lat": 38.263008,
+      "lng": 140.875208
+    },
+    {
+      "code": "N10",
+      "ja": "仙台",
+      "kana": "せんだい",
+      "ko": "센다이",
+      "koSource": "wiki",
+      "en": "Sendai",
+      "lat": 38.260139,
+      "lng": 140.87975
+    },
+    {
+      "code": "N11",
+      "ja": "五橋",
+      "jaSub": "東北学院大学前",
+      "kana": "いつつばし",
+      "ko": "이쓰쓰바시",
+      "koSource": "wiki",
+      "en": "Itsutsubashi",
+      "lat": 38.251658,
+      "lng": 140.881011
+    },
+    {
+      "code": "N12",
+      "ja": "愛宕橋",
+      "kana": "あたごばし",
+      "ko": "아타고바시",
+      "koSource": "wiki",
+      "en": "Atago-bashi",
+      "lat": 38.247208,
+      "lng": 140.882281
+    },
+    {
+      "code": "N13",
+      "ja": "河原町",
+      "kana": "かわらまち",
+      "ko": "가와라마치",
+      "koSource": "wiki",
+      "en": "Kawaramachi",
+      "lat": 38.240658,
+      "lng": 140.887892
+    },
+    {
+      "code": "N14",
+      "ja": "長町一丁目",
+      "jaSub": "市立病院前",
+      "kana": "ながまちいっちょうめ",
+      "ko": "나가마치 1초메",
+      "koSource": "wiki",
+      "en": "Nagamachi-Itchome",
+      "lat": 38.234228,
+      "lng": 140.887486
+    },
+    {
+      "code": "N15",
+      "ja": "長町",
+      "jaSub": "IKEA仙台前",
+      "kana": "ながまち",
+      "ko": "나가마치",
+      "koSource": "wiki",
+      "en": "Nagamachi",
+      "lat": 38.228306,
+      "lng": 140.884861
+    },
+    {
+      "code": "N16",
+      "ja": "長町南",
+      "kana": "ながまちみなみ",
+      "ko": "나가마치미나미",
+      "koSource": "wiki",
+      "en": "Nagamachi-minami",
+      "lat": 38.224644,
+      "lng": 140.876569
+    },
+    {
+      "code": "N17",
+      "ja": "富沢",
+      "jaSub": "カメイアリーナ仙台前",
+      "kana": "とみざわ",
+      "ko": "도미자와",
+      "koSource": "wiki",
+      "en": "Tomizawa",
+      "lat": 38.214403,
+      "lng": 140.870642
+    }
+  ],
+  "throughTermini": {
+    "start": [],
+    "end": []
+  },
+  "services": [],
+  "sources": [
+    "https://ja.wikipedia.org/wiki/仙台市地下鉄南北線",
+    "https://ja.wikipedia.org/w/api.php (coordinates/langlinks)"
+  ],
+  "notes": "全列車各駅停車、他社直通なし。座標は日本語版Wikipedia各駅記事の座標（複数事業者駅は当該事業者・路線の座標を優先）。韓国語名は日本語版記事の韓国語版リンク先記事名から「역」と曖昧さ回避括弧を除いたもの。jaSubは日本語版路線記事の駅一覧に記載の副駅名（ネーミングライツを含む。契約更新で変わり得る）。英語名は日本語版Wikipedia各駅記事のローマ字欄（駅名標・公式HP準拠と注記あり）。仙台(N10)の座標は仙台駅記事の「仙台市地下鉄南北線 仙台駅」の値で東西線仙台(T07)とは別点。路線色は日本語版Wikipediaインフォボックスの値（公式HEX未確認）。勾当台公園の副駅名は2つ併記（県庁市役所前／久保田ホールディングス前）。"
+}

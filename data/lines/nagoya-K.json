@@ -1,0 +1,47 @@
+{
+  "id": "nagoya.K",
+  "region": "nagoya",
+  "operator": "名古屋市営地下鉄",
+  "operatorKo": "나고야 시영 지하철",
+  "nameJa": "上飯田線",
+  "nameKo": "가미이다선",
+  "nameEn": "Kamiiida Line",
+  "color": "#EC78B4",
+  "circular": false,
+  "stations": [
+    {
+      "code": "K01",
+      "ja": "上飯田",
+      "kana": "かみいいだ",
+      "ko": "가미이다",
+      "koSource": "wiki",
+      "en": "Kamiiida",
+      "lat": 35.203611,
+      "lng": 136.929639
+    },
+    {
+      "code": "K02",
+      "ja": "平安通",
+      "kana": "へいあんどおり",
+      "ko": "헤이안도리",
+      "koSource": "wiki",
+      "en": "Heian-dori",
+      "lat": 35.195833,
+      "lng": 136.929722
+    }
+  ],
+  "throughTermini": {
+    "start": [
+      "犬山",
+      "小牧"
+    ],
+    "end": []
+  },
+  "services": [],
+  "sources": [
+    "https://ja.wikipedia.org/wiki/名古屋市営地下鉄上飯田線",
+    "https://ja.wikipedia.org/w/api.php (coordinates/langlinks/infobox)",
+    "https://ja.wikipedia.org/wiki/名鉄小牧線"
+  ],
+  "notes": "ほぼ全列車が上飯田から名鉄小牧線へ直通（日中は犬山発着のみ毎時4本、朝夕に小牧折り返しあり）。平安通0:28発の最終上飯田行きと上飯田5:35発平安通行き始発のみ線内運転。全列車普通。ワンマン運転、運転業務は名鉄に委託。 座標は日本語版Wikipedia各駅記事の座標（複数事業者の駅は記事代表座標）。韓国語名は日本語版記事の韓国語版リンク先記事名から「역」と曖昧さ回避括弧を除いたもの。色は日本語版Wikipediaの路線インフォボックス値（名古屋市交通局旅客サインマニュアル準拠とされる）で公式HEXの直接確認はしていない。jaSub（副駅名）は日本語版Wikipedia駅記事インフォボックス「副駅名」の値で、現地サイン表記との照合はしていない。"
+}

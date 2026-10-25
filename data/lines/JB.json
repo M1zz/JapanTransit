@@ -1,0 +1,424 @@
+{
+  "id": "JB",
+  "region": "tokyo",
+  "operator": "JR東日本",
+  "operatorKo": "JR 동일본",
+  "nameJa": "中央・総武線各駅停車",
+  "nameKo": "주오·소부선 각역정차",
+  "nameEn": "Chuo-Sobu Line (Local)",
+  "color": "#FFD400",
+  "circular": false,
+  "stations": [
+    {
+      "code": "JB01",
+      "ja": "三鷹",
+      "kana": "みたか",
+      "ko": "미타카",
+      "koSource": "wiki",
+      "en": "Mitaka",
+      "lat": 35.702694,
+      "lng": 139.560833
+    },
+    {
+      "code": "JB02",
+      "ja": "吉祥寺",
+      "kana": "きちじょうじ",
+      "ko": "기치조지",
+      "koSource": "wiki",
+      "en": "Kichijōji",
+      "lat": 35.703056,
+      "lng": 139.58
+    },
+    {
+      "code": "JB03",
+      "ja": "西荻窪",
+      "kana": "にしおぎくぼ",
+      "ko": "니시오기쿠보",
+      "koSource": "wiki",
+      "en": "Nishi-Ogikubo",
+      "lat": 35.703833,
+      "lng": 139.599361
+    },
+    {
+      "code": "JB04",
+      "ja": "荻窪",
+      "kana": "おぎくぼ",
+      "ko": "오기쿠보",
+      "koSource": "wiki",
+      "en": "Ogikubo",
+      "lat": 35.704639,
+      "lng": 139.62
+    },
+    {
+      "code": "JB05",
+      "ja": "阿佐ケ谷",
+      "kana": "あさがや",
+      "ko": "아사가야",
+      "koSource": "wiki",
+      "en": "Asagaya",
+      "lat": 35.704778,
+      "lng": 139.635278
+    },
+    {
+      "code": "JB06",
+      "ja": "高円寺",
+      "kana": "こうえんじ",
+      "ko": "고엔지",
+      "koSource": "wiki",
+      "en": "Kōenji",
+      "lat": 35.705389,
+      "lng": 139.649861
+    },
+    {
+      "code": "JB07",
+      "ja": "中野",
+      "kana": "なかの",
+      "ko": "나카노",
+      "koSource": "wiki",
+      "en": "Nakano",
+      "lat": 35.705833,
+      "lng": 139.665556
+    },
+    {
+      "code": "JB08",
+      "ja": "東中野",
+      "kana": "ひがしなかの",
+      "ko": "히가시나카노",
+      "koSource": "wiki",
+      "en": "Higashi-Nakano",
+      "lat": 35.706222,
+      "lng": 139.685833
+    },
+    {
+      "code": "JB09",
+      "ja": "大久保",
+      "kana": "おおくぼ",
+      "ko": "오쿠보",
+      "koSource": "wiki",
+      "en": "Ōkubo",
+      "lat": 35.700722,
+      "lng": 139.697361
+    },
+    {
+      "code": "JB10",
+      "ja": "新宿",
+      "kana": "しんじゅく",
+      "ko": "신주쿠",
+      "koSource": "wiki",
+      "en": "Shinjuku",
+      "lat": 35.690833,
+      "lng": 139.700278
+    },
+    {
+      "code": "JB11",
+      "ja": "代々木",
+      "kana": "よよぎ",
+      "ko": "요요기",
+      "koSource": "wiki",
+      "en": "Yoyogi",
+      "lat": 35.683056,
+      "lng": 139.702083
+    },
+    {
+      "code": "JB12",
+      "ja": "千駄ケ谷",
+      "kana": "せんだがや",
+      "ko": "센다가야",
+      "koSource": "wiki",
+      "en": "Sendagaya",
+      "lat": 35.681167,
+      "lng": 139.711444
+    },
+    {
+      "code": "JB13",
+      "ja": "信濃町",
+      "kana": "しなのまち",
+      "ko": "시나노마치",
+      "koSource": "wiki",
+      "en": "Shinanomachi",
+      "lat": 35.680083,
+      "lng": 139.72025
+    },
+    {
+      "code": "JB14",
+      "ja": "四ツ谷",
+      "kana": "よつや",
+      "ko": "요쓰야",
+      "koSource": "wiki",
+      "en": "Yotsuya",
+      "lat": 35.686,
+      "lng": 139.730667
+    },
+    {
+      "code": "JB15",
+      "ja": "市ケ谷",
+      "kana": "いちがや",
+      "ko": "이치가야",
+      "koSource": "wiki",
+      "en": "Ichigaya",
+      "lat": 35.691,
+      "lng": 139.735583
+    },
+    {
+      "code": "JB16",
+      "ja": "飯田橋",
+      "kana": "いいだばし",
+      "ko": "이다바시",
+      "koSource": "wiki",
+      "en": "Iidabashi",
+      "lat": 35.702056,
+      "lng": 139.745
+    },
+    {
+      "code": "JB17",
+      "ja": "水道橋",
+      "kana": "すいどうばし",
+      "ko": "스이도바시",
+      "koSource": "wiki",
+      "en": "Suidōbashi",
+      "lat": 35.702,
+      "lng": 139.753611
+    },
+    {
+      "code": "JB18",
+      "ja": "御茶ノ水",
+      "kana": "おちゃのみず",
+      "ko": "오차노미즈",
+      "koSource": "wiki",
+      "en": "Ochanomizu",
+      "lat": 35.699861,
+      "lng": 139.763889
+    },
+    {
+      "code": "JB19",
+      "ja": "秋葉原",
+      "kana": "あきはばら",
+      "ko": "아키하바라",
+      "koSource": "wiki",
+      "en": "Akihabara",
+      "lat": 35.698333,
+      "lng": 139.773056
+    },
+    {
+      "code": "JB20",
+      "ja": "浅草橋",
+      "kana": "あさくさばし",
+      "ko": "아사쿠사바시",
+      "koSource": "wiki",
+      "en": "Asakusabashi",
+      "lat": 35.697361,
+      "lng": 139.784833
+    },
+    {
+      "code": "JB21",
+      "ja": "両国",
+      "kana": "りょうごく",
+      "ko": "료고쿠",
+      "koSource": "wiki",
+      "en": "Ryōgoku",
+      "lat": 35.696111,
+      "lng": 139.7925
+    },
+    {
+      "code": "JB22",
+      "ja": "錦糸町",
+      "kana": "きんしちょう",
+      "ko": "긴시초",
+      "koSource": "wiki",
+      "en": "Kinshichō",
+      "lat": 35.696667,
+      "lng": 139.813889
+    },
+    {
+      "code": "JB23",
+      "ja": "亀戸",
+      "kana": "かめいど",
+      "ko": "가메이도",
+      "koSource": "wiki",
+      "en": "Kameido",
+      "lat": 35.697306,
+      "lng": 139.826583
+    },
+    {
+      "code": "JB24",
+      "ja": "平井",
+      "kana": "ひらい",
+      "ko": "히라이",
+      "koSource": "wiki",
+      "en": "Hirai",
+      "lat": 35.706444,
+      "lng": 139.8425
+    },
+    {
+      "code": "JB25",
+      "ja": "新小岩",
+      "kana": "しんこいわ",
+      "ko": "신코이와",
+      "koSource": "wiki",
+      "en": "Shin-Koiwa",
+      "lat": 35.716806,
+      "lng": 139.858278
+    },
+    {
+      "code": "JB26",
+      "ja": "小岩",
+      "kana": "こいわ",
+      "ko": "고이와",
+      "koSource": "wiki",
+      "en": "Koiwa",
+      "lat": 35.732972,
+      "lng": 139.881667
+    },
+    {
+      "code": "JB27",
+      "ja": "市川",
+      "kana": "いちかわ",
+      "ko": "이치카와",
+      "koSource": "wiki",
+      "en": "Ichikawa",
+      "lat": 35.729167,
+      "lng": 139.907778
+    },
+    {
+      "code": "JB28",
+      "ja": "本八幡",
+      "kana": "もとやわた",
+      "ko": "모토야와타",
+      "koSource": "wiki",
+      "en": "Moto-Yawata",
+      "lat": 35.720833,
+      "lng": 139.927361
+    },
+    {
+      "code": "JB29",
+      "ja": "下総中山",
+      "kana": "しもうさなかやま",
+      "ko": "시모사나카야마",
+      "koSource": "wiki",
+      "en": "Shimōsa-Nakayama",
+      "lat": 35.714167,
+      "lng": 139.943333
+    },
+    {
+      "code": "JB30",
+      "ja": "西船橋",
+      "kana": "にしふなばし",
+      "ko": "니시후나바시",
+      "koSource": "wiki",
+      "en": "Nishi-Funabashi",
+      "lat": 35.707417,
+      "lng": 139.959083
+    },
+    {
+      "code": "JB31",
+      "ja": "船橋",
+      "kana": "ふなばし",
+      "ko": "후나바시",
+      "koSource": "wiki",
+      "en": "Funabashi",
+      "lat": 35.701667,
+      "lng": 139.985278
+    },
+    {
+      "code": "JB32",
+      "ja": "東船橋",
+      "kana": "ひがしふなばし",
+      "ko": "히가시후나바시",
+      "koSource": "wiki",
+      "en": "Higashi-Funabashi",
+      "lat": 35.699722,
+      "lng": 140.004167
+    },
+    {
+      "code": "JB33",
+      "ja": "津田沼",
+      "kana": "つだぬま",
+      "ko": "쓰다누마",
+      "koSource": "wiki",
+      "en": "Tsudanuma",
+      "lat": 35.691111,
+      "lng": 140.020556
+    },
+    {
+      "code": "JB34",
+      "ja": "幕張本郷",
+      "kana": "まくはりほんごう",
+      "ko": "마쿠하리혼고",
+      "koSource": "wiki",
+      "en": "Makuharihongō",
+      "lat": 35.672778,
+      "lng": 140.042222
+    },
+    {
+      "code": "JB35",
+      "ja": "幕張",
+      "kana": "まくはり",
+      "ko": "마쿠하리",
+      "koSource": "wiki",
+      "en": "Makuhari",
+      "lat": 35.659444,
+      "lng": 140.057917
+    },
+    {
+      "code": "JB36",
+      "ja": "新検見川",
+      "kana": "しんけみがわ",
+      "ko": "신케미가와",
+      "koSource": "wiki",
+      "en": "Shin-Kemigawa",
+      "lat": 35.651806,
+      "lng": 140.073056
+    },
+    {
+      "code": "JB37",
+      "ja": "稲毛",
+      "kana": "いなげ",
+      "ko": "이나게",
+      "koSource": "wiki",
+      "en": "Inage",
+      "lat": 35.637222,
+      "lng": 140.0925
+    },
+    {
+      "code": "JB38",
+      "ja": "西千葉",
+      "kana": "にしちば",
+      "ko": "니시치바",
+      "koSource": "wiki",
+      "en": "Nishi-Chiba",
+      "lat": 35.622583,
+      "lng": 140.103278
+    },
+    {
+      "code": "JB39",
+      "ja": "千葉",
+      "kana": "ちば",
+      "ko": "지바",
+      "koSource": "wiki",
+      "en": "Chiba",
+      "lat": 35.613056,
+      "lng": 140.113889
+    }
+  ],
+  "throughTermini": {
+    "start": [],
+    "end": []
+  },
+  "junctionTermini": {
+    "atStation": "中野",
+    "towardEnd": [
+      "東陽町",
+      "妙典",
+      "西船橋",
+      "東葉勝田台",
+      "津田沼"
+    ]
+  },
+  "services": [],
+  "sources": [
+    "https://ja.wikipedia.org/wiki/中央・総武緩行線",
+    "https://ja.wikipedia.org/wiki/東京メトロ東西線",
+    "https://ja.wikipedia.org/w/api.php (coordinates/langlinks)"
+  ],
+  "notes": "역 순서·번호는 일본어 위키백과 『中央・総武緩行線』 駅一覧(JB01 三鷹〜JB39 千葉). 모든 열차가 각 역 정차라 services 는 비웠다. 운행 계통: 三鷹〜千葉 직통 외에 中野·御茶ノ水(첫차)·西船橋·津田沼·幕張 발착 구간 열차가 있다. 이 노선은 神田·東京에 가지 않는다(両国·浅草橋에서 東京 방면은 錦糸町에서 総武快速線 환승). 【도쿄메트로 東西線 직통】 中野〜三鷹 구간은 이른 아침·심야를 빼고 東西線 직통 열차가 들어오며(日中 약 30분 간격, 2026년 3월 개정으로 日中 직통 감축), 西船橋〜津田沼 구간은 평일 아침·저녁에만 들어온다. 직통 열차는 JB 선로를 달리며 JB 구간에서는 각 역에 선다(東西線의 快速·通勤快速이 JB 구간에서도 '快速'·'通勤快速'로 표시되지만 JB 안에서는 통과역이 없다). 행선지 예: 三鷹 쪽에서 東陽町·妙典·西船橋·東葉勝田台·津田沼(東西線 경유), 津田沼 쪽에서 中野·三鷹(東西線 경유). 주의: 三鷹 쪽의 '津田沼'행 직통과 津田沼 쪽의 '中野'·'三鷹'행 직통은 新宿·御茶ノ水·秋葉原을 지나지 않는다. junctionTermini 는 하나만 적을 수 있어 中野 분기(東西線으로 가는 쪽)만 넣었고 西船橋 분기(津田沼 쪽에서 東西線으로 가는 '中野'·'三鷹'행 등)는 넣지 못했다. 또 '津田沼'는 이 노선의 역이기도 해 앱이 東西線 경유 津田沼행을 JB 직행으로 오인할 수 있다. 2026년 기준 三鷹발 東葉高速線 직통은 모두 東葉勝田台행(八千代緑が丘행 없음). 【유료】 千葉 발착 특급 あずさ·富士回遊 1왕복과 임시 특급(新宿さざなみ 등)이 錦糸町〜御茶ノ水 사이 이 노선 선로를 지나가지만 JB 전용역에 서지 않아 넣지 않았다. 【표기】 en 은 영어 위키백과 역명(장음 부호 포함), ko 는 한국어 위키백과 제목에서 '역'·'(도쿄도)' 를 뺐다. JR 표기에 맞춰 市ケ谷·千駄ケ谷·阿佐ケ谷 는 큰 ケ(都営 新宿線 S.json 은 市ヶ谷, 앱이 같은 역으로 본다). 좌표는 일본어 위키백과 역 대표점."
+}

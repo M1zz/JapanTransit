@@ -1,0 +1,481 @@
+{
+  "region": "nagoya",
+  "spots": [
+    {
+      "id": "nagoya.nagoya-castle",
+      "ko": "나고야성",
+      "ja": "名古屋城",
+      "en": "Nagoya Castle",
+      "aliases": [
+        "나고야 성",
+        "혼마루 어전",
+        "긴샤치",
+        "나고야조"
+      ],
+      "category": "명소",
+      "lat": 35.1856,
+      "lng": 136.8986,
+      "stations": [
+        {
+          "ja": "名古屋城",
+          "line": "nagoya.M",
+          "walkMinutes": 5,
+          "exit": "7",
+          "note": "약. 2023년 '市役所'에서 역 이름이 바뀌었다"
+        },
+        {
+          "ja": "浅間町",
+          "line": "nagoya.T",
+          "walkMinutes": 10,
+          "exit": "1",
+          "note": "약"
+        }
+      ],
+      "tip": "옛 역 이름 '시야쿠쇼(市役所)'로 안내된 글이 많은데 지금은 '나고야조(名古屋城)'역이다",
+      "sources": [
+        "https://www.nagoya-info.jp/education/facility/detail/1/",
+        "https://matcha-jp.com/jp/22578",
+        "https://ja.wikipedia.org/wiki/名古屋城駅",
+        "https://ja.wikipedia.org/wiki/名古屋城"
+      ]
+    },
+    {
+      "id": "nagoya.atsuta-jingu",
+      "ko": "아쓰타 신궁",
+      "ja": "熱田神宮",
+      "en": "Atsuta Jingu",
+      "aliases": [
+        "아츠타 신궁",
+        "아쓰타 진구",
+        "아츠타 진구"
+      ],
+      "category": "신사·절",
+      "lat": 35.1279,
+      "lng": 136.9086,
+      "stations": [
+        {
+          "ja": "熱田神宮西",
+          "line": "nagoya.M",
+          "walkMinutes": 7,
+          "exit": "2",
+          "note": "약. 서문(西門)까지. 名鉄 名古屋本線 神宮前역(동문 약 3분)이 더 가깝다"
+        },
+        {
+          "ja": "熱田神宮伝馬町",
+          "line": "nagoya.M",
+          "walkMinutes": 7,
+          "exit": "1",
+          "note": "약. 정문(南門)까지"
+        }
+      ],
+      "tip": "名鉄 神宮前역도 가깝다. 지하철역 이름은 2023년 '神宮西', '伝馬町'에서 바뀌었다",
+      "sources": [
+        "https://www.nagoya-info.jp/education/facility/detail/11/",
+        "https://ja.wikipedia.org/wiki/熱田神宮西駅"
+      ]
+    },
+    {
+      "id": "nagoya.osu-kannon",
+      "ko": "오스 칸논",
+      "ja": "大須観音",
+      "en": "Osu Kannon",
+      "aliases": [
+        "오스관음",
+        "오스 간논",
+        "호쇼인"
+      ],
+      "category": "신사·절",
+      "lat": 35.1597,
+      "lng": 136.8993,
+      "stations": [
+        {
+          "ja": "大須観音",
+          "line": "nagoya.T",
+          "walkMinutes": 1,
+          "exit": "2",
+          "note": "2번 출구 바로 앞"
+        }
+      ],
+      "tip": "",
+      "sources": [
+        "https://www.osu-kannon.jp/access/index.html",
+        "https://www.openstreetmap.org/way/923032216"
+      ]
+    },
+    {
+      "id": "nagoya.osu-shopping-street",
+      "ko": "오스 상점가",
+      "ja": "大須商店街",
+      "en": "Osu Shopping District",
+      "aliases": [
+        "오스",
+        "오스 상가",
+        "반쇼지 거리",
+        "오스 아케이드"
+      ],
+      "category": "쇼핑",
+      "lat": 35.1593,
+      "lng": 136.9031,
+      "stations": [
+        {
+          "ja": "上前津",
+          "line": "nagoya.M",
+          "walkMinutes": 2,
+          "exit": "8",
+          "note": "약. 8번 또는 12번 출구"
+        },
+        {
+          "ja": "上前津",
+          "line": "nagoya.T",
+          "walkMinutes": 2,
+          "exit": "8",
+          "note": "약. 8번 또는 12번 출구"
+        },
+        {
+          "ja": "大須観音",
+          "line": "nagoya.T",
+          "walkMinutes": 3,
+          "exit": "2",
+          "note": "약. 상점가 서쪽 끝"
+        }
+      ],
+      "tip": "",
+      "sources": [
+        "https://recommend.jr-central.co.jp/oshi-tabi/ichioshi-trip/modal_2.html"
+      ]
+    },
+    {
+      "id": "nagoya.oasis21",
+      "ko": "오아시스 21",
+      "ja": "オアシス21",
+      "en": "Oasis 21",
+      "aliases": [
+        "사카에",
+        "물의 우주선",
+        "나고야 사카에"
+      ],
+      "category": "명소",
+      "lat": 35.1708,
+      "lng": 136.9101,
+      "stations": [
+        {
+          "ja": "栄",
+          "line": "nagoya.H",
+          "walkMinutes": 0,
+          "exit": null,
+          "note": "직결. 동쪽 개찰구로 나옴"
+        },
+        {
+          "ja": "栄",
+          "line": "nagoya.M",
+          "walkMinutes": 0,
+          "exit": null,
+          "note": "직결. 동쪽 개찰구로 나옴"
+        }
+      ],
+      "tip": "",
+      "sources": [
+        "https://www.sakaepark.co.jp/access/"
+      ]
+    },
+    {
+      "id": "nagoya.mirai-tower",
+      "ko": "나고야 TV 타워",
+      "ja": "中部電力 MIRAI TOWER",
+      "en": "Chubu Electric Power MIRAI TOWER",
+      "aliases": [
+        "미라이 타워",
+        "나고야 티비 타워",
+        "나고야 텔레비전 탑",
+        "히사야오도리 공원"
+      ],
+      "category": "전망대",
+      "lat": 35.1724,
+      "lng": 136.9083,
+      "stations": [
+        {
+          "ja": "久屋大通",
+          "line": "nagoya.M",
+          "walkMinutes": 1,
+          "exit": "4B",
+          "note": "남쪽 개찰구에서 4B 출구로 나오면 바로"
+        },
+        {
+          "ja": "久屋大通",
+          "line": "nagoya.S",
+          "walkMinutes": 1,
+          "exit": "4B",
+          "note": "남쪽 개찰구에서 4B 출구로 나오면 바로"
+        },
+        {
+          "ja": "栄",
+          "line": "nagoya.H",
+          "walkMinutes": 3,
+          "exit": "4",
+          "note": "약. 3번 또는 4번 출구"
+        }
+      ],
+      "tip": "",
+      "sources": [
+        "https://recommend.jr-central.co.jp/oshi-tabi/ichioshi-trip/modal_2.html"
+      ]
+    },
+    {
+      "id": "nagoya.port-aquarium",
+      "ko": "나고야항 수족관",
+      "ja": "名古屋港水族館",
+      "en": "Port of Nagoya Public Aquarium",
+      "aliases": [
+        "나고야 수족관",
+        "나고야항",
+        "가든 부두",
+        "범고래 수족관"
+      ],
+      "category": "명소",
+      "lat": 35.0908,
+      "lng": 136.8785,
+      "stations": [
+        {
+          "ja": "名古屋港",
+          "line": "nagoya.E",
+          "walkMinutes": 5,
+          "exit": "3",
+          "note": "약"
+        }
+      ],
+      "tip": "",
+      "sources": [
+        "https://nagoyaaqua.jp/access/"
+      ]
+    },
+    {
+      "id": "nagoya.toyota-museum",
+      "ko": "도요타 산업기술 기념관",
+      "ja": "トヨタ産業技術記念館",
+      "en": "Toyota Commemorative Museum of Industry and Technology",
+      "aliases": [
+        "도요타 기념관",
+        "토요타 박물관",
+        "토요타 산업기술 기념관"
+      ],
+      "category": "박물관·미술관",
+      "lat": 35.1825,
+      "lng": 136.8765,
+      "stations": [
+        {
+          "ja": "亀島",
+          "line": "nagoya.H",
+          "walkMinutes": 7,
+          "exit": null,
+          "note": "약. 공식 안내에 이 역 도보 시간 없음, 직선 약 0.55km로 계산. 名鉄 名古屋本線 栄生역이 더 가깝다(약 3분)"
+        }
+      ],
+      "tip": "",
+      "sources": [
+        "https://www.tcmit.org/visit/access/",
+        "https://www.openstreetmap.org/way/582752051"
+      ]
+    },
+    {
+      "id": "nagoya.noritake-garden",
+      "ko": "노리타케의 숲",
+      "ja": "ノリタケの森",
+      "en": "Noritake Garden",
+      "aliases": [
+        "노리타케 가든",
+        "노리타케",
+        "노리타케 숲"
+      ],
+      "category": "공원·자연",
+      "lat": 35.1795,
+      "lng": 136.8813,
+      "stations": [
+        {
+          "ja": "亀島",
+          "line": "nagoya.H",
+          "walkMinutes": 5,
+          "exit": "2",
+          "note": "약. 동문(東門)까지"
+        },
+        {
+          "ja": "名古屋",
+          "line": "nagoya.H",
+          "walkMinutes": 15,
+          "exit": null,
+          "note": "약. JR 名古屋역 사쿠라도리 출구(桜通口) 기준"
+        }
+      ],
+      "tip": "",
+      "sources": [
+        "https://www.noritake.co.jp/mori/access/",
+        "https://ja.wikipedia.org/wiki/ノリタケの森"
+      ]
+    },
+    {
+      "id": "nagoya.tokugawa-art-museum",
+      "ko": "도쿠가와 미술관",
+      "ja": "徳川美術館",
+      "en": "Tokugawa Art Museum",
+      "aliases": [
+        "도쿠가와엔",
+        "도쿠가와 정원",
+        "겐지 이야기 두루마리"
+      ],
+      "category": "박물관·미술관",
+      "lat": 35.1837,
+      "lng": 136.9331,
+      "stations": [
+        {
+          "ja": "大曽根",
+          "line": "nagoya.M",
+          "walkMinutes": 15,
+          "exit": "E5",
+          "note": "약. JR 中央本線 大曽根역 南口가 약 10분으로 더 가깝다"
+        }
+      ],
+      "tip": "나고야역에서는 기간 2계통 버스 '徳川園新出来' 정류장(도보 3분)이 편하다",
+      "sources": [
+        "https://www.tokugawa-art-museum.jp/visitor-information/",
+        "https://www.openstreetmap.org/node/1423985718"
+      ]
+    },
+    {
+      "id": "nagoya.higashiyama-zoo",
+      "ko": "히가시야마 동식물원",
+      "ja": "東山動植物園",
+      "en": "Higashiyama Zoo and Botanical Gardens",
+      "aliases": [
+        "히가시야마 동물원",
+        "히가시야마 스카이타워",
+        "나고야 동물원"
+      ],
+      "category": "공원·자연",
+      "lat": 35.1589,
+      "lng": 136.9741,
+      "stations": [
+        {
+          "ja": "東山公園",
+          "line": "nagoya.H",
+          "walkMinutes": 3,
+          "exit": "3",
+          "note": "약. 정문까지"
+        },
+        {
+          "ja": "星ヶ丘",
+          "line": "nagoya.H",
+          "walkMinutes": 7,
+          "exit": "6",
+          "note": "약. 식물원 쪽은 星が丘門이 편함"
+        }
+      ],
+      "tip": "",
+      "sources": [
+        "https://www.walkerplus.com/spot/ar0623s03797/map.html",
+        "https://www.museum.or.jp/museum/4799",
+        "https://www.openstreetmap.org/way/352739621"
+      ]
+    },
+    {
+      "id": "nagoya.vantelin-dome",
+      "ko": "반테린 돔 나고야",
+      "ja": "バンテリンドーム ナゴヤ",
+      "en": "Vantelin Dome Nagoya",
+      "aliases": [
+        "나고야 돔",
+        "주니치 드래건스 홈",
+        "반테린 돔"
+      ],
+      "category": "전시·공연",
+      "lat": 35.1859,
+      "lng": 136.9474,
+      "stations": [
+        {
+          "ja": "ナゴヤドーム前矢田",
+          "line": "nagoya.M",
+          "walkMinutes": 5,
+          "exit": null,
+          "note": "약"
+        },
+        {
+          "ja": "大曽根",
+          "line": "nagoya.M",
+          "walkMinutes": 15,
+          "exit": null,
+          "note": "약. JR 中央本線 大曽根역 기준"
+        }
+      ],
+      "tip": "",
+      "sources": [
+        "https://eplus.jp/sf/venue/4610060"
+      ]
+    },
+    {
+      "id": "nagoya.science-museum",
+      "ko": "나고야시 과학관",
+      "ja": "名古屋市科学館",
+      "en": "Nagoya City Science Museum",
+      "aliases": [
+        "나고야 과학관",
+        "나고야 플라네타륨",
+        "브라더 어스"
+      ],
+      "category": "박물관·미술관",
+      "lat": 35.1652,
+      "lng": 136.8996,
+      "stations": [
+        {
+          "ja": "伏見",
+          "line": "nagoya.H",
+          "walkMinutes": 5,
+          "exit": "4",
+          "note": "약. 4번 또는 5번 출구에서 남쪽으로"
+        },
+        {
+          "ja": "伏見",
+          "line": "nagoya.T",
+          "walkMinutes": 5,
+          "exit": "4",
+          "note": "약. 4번 또는 5번 출구에서 남쪽으로"
+        }
+      ],
+      "tip": "플라네타륨 표는 아침에 매진되는 일이 많다",
+      "sources": [
+        "https://www.knt.co.jp/meito/sp/nagoya_kagakukan/"
+      ]
+    },
+    {
+      "id": "nagoya.midland-square",
+      "ko": "미드랜드 스퀘어 스카이 프롬나드",
+      "ja": "ミッドランドスクエア スカイプロムナード",
+      "en": "Midland Square Sky Promenade",
+      "aliases": [
+        "미드랜드 스퀘어",
+        "스카이 프롬나드",
+        "나고야역 전망대"
+      ],
+      "category": "전망대",
+      "lat": 35.1705,
+      "lng": 136.8857,
+      "stations": [
+        {
+          "ja": "名古屋",
+          "line": "nagoya.H",
+          "walkMinutes": 1,
+          "exit": null,
+          "note": "약. JR 名古屋역 사쿠라도리 출구(桜通口)에서는 약 5분"
+        },
+        {
+          "ja": "名古屋",
+          "line": "nagoya.S",
+          "walkMinutes": 1,
+          "exit": null,
+          "note": "약"
+        }
+      ],
+      "tip": "",
+      "sources": [
+        "https://www.walkerplus.com/spot/ar0623s408801/data.html"
+      ]
+    }
+  ]
+}

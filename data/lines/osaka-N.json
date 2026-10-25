@@ -1,0 +1,196 @@
+{
+  "id": "osaka.N",
+  "region": "osaka",
+  "operator": "Osaka Metro",
+  "operatorKo": "오사카 메트로",
+  "nameJa": "長堀鶴見緑地線",
+  "nameKo": "나가호리쓰루미료쿠치선",
+  "nameEn": "Nagahori Tsurumi-ryokuchi Line",
+  "color": "#A9CC51",
+  "circular": false,
+  "stations": [
+    {
+      "code": "N11",
+      "ja": "大正",
+      "kana": "たいしょう",
+      "ko": "다이쇼",
+      "koSource": "wiki",
+      "en": "Taisho",
+      "lat": 34.666119,
+      "lng": 135.479053
+    },
+    {
+      "code": "N12",
+      "ja": "ドーム前千代崎",
+      "jaSub": "京セラドーム大阪",
+      "kana": "どーむまえちよざき",
+      "ko": "도무마에치요자키",
+      "koSource": "wiki",
+      "en": "Dome-mae Chiyozaki",
+      "lat": 34.670769,
+      "lng": 135.479386
+    },
+    {
+      "code": "N13",
+      "ja": "西長堀",
+      "kana": "にしながほり",
+      "ko": "니시나가호리",
+      "koSource": "wiki",
+      "en": "Nishinagahori",
+      "lat": 34.675256,
+      "lng": 135.487222
+    },
+    {
+      "code": "N14",
+      "ja": "西大橋",
+      "kana": "にしおおはし",
+      "ko": "니시오하시",
+      "koSource": "wiki",
+      "en": "Nishiohashi",
+      "lat": 34.675442,
+      "lng": 135.493575
+    },
+    {
+      "code": "N15",
+      "ja": "心斎橋",
+      "kana": "しんさいばし",
+      "ko": "신사이바시",
+      "koSource": "wiki",
+      "en": "Shinsaibashi",
+      "lat": 34.675011,
+      "lng": 135.500328
+    },
+    {
+      "code": "N16",
+      "ja": "長堀橋",
+      "kana": "ながほりばし",
+      "ko": "나가호리바시",
+      "koSource": "wiki",
+      "en": "Nagahoribashi",
+      "lat": 34.674647,
+      "lng": 135.506322
+    },
+    {
+      "code": "N17",
+      "ja": "松屋町",
+      "kana": "まつやまち",
+      "ko": "마쓰야마치",
+      "koSource": "wiki",
+      "en": "Matsuyamachi",
+      "lat": 34.675478,
+      "lng": 135.512467
+    },
+    {
+      "code": "N18",
+      "ja": "谷町六丁目",
+      "kana": "たにまちろくちょうめ",
+      "ko": "다니마치 6초메",
+      "koSource": "wiki",
+      "en": "Tanimachi 6-chome",
+      "lat": 34.674917,
+      "lng": 135.516958
+    },
+    {
+      "code": "N19",
+      "ja": "玉造",
+      "kana": "たまつくり",
+      "ko": "다마쓰쿠리",
+      "koSource": "wiki",
+      "en": "Tamatsukuri",
+      "lat": 34.674625,
+      "lng": 135.530217
+    },
+    {
+      "code": "N20",
+      "ja": "森ノ宮",
+      "kana": "もりのみや",
+      "ko": "모리노미야",
+      "koSource": "wiki",
+      "en": "Morinomiya",
+      "lat": 34.681456,
+      "lng": 135.533844
+    },
+    {
+      "code": "N21",
+      "ja": "大阪ビジネスパーク",
+      "kana": "おおさかびじねすぱーく",
+      "ko": "오사카 비즈니스파크",
+      "koSource": "wiki",
+      "en": "Osaka Business Park",
+      "lat": 34.692142,
+      "lng": 135.529686
+    },
+    {
+      "code": "N22",
+      "ja": "京橋",
+      "kana": "きょうばし",
+      "ko": "교바시",
+      "koSource": "wiki",
+      "en": "Kyobashi",
+      "lat": 34.696717,
+      "lng": 135.529811
+    },
+    {
+      "code": "N23",
+      "ja": "蒲生四丁目",
+      "kana": "がもうよんちょうめ",
+      "ko": "가모 4초메",
+      "koSource": "wiki",
+      "en": "Gamo 4-chome",
+      "lat": 34.700367,
+      "lng": 135.547708
+    },
+    {
+      "code": "N24",
+      "ja": "今福鶴見",
+      "kana": "いまふくつるみ",
+      "ko": "이마후쿠쓰루미",
+      "koSource": "wiki",
+      "en": "Imafuku-Tsurumi",
+      "lat": 34.701911,
+      "lng": 135.560042
+    },
+    {
+      "code": "N25",
+      "ja": "横堤",
+      "kana": "よこづつみ",
+      "ko": "요코즈쓰미",
+      "koSource": "wiki",
+      "en": "Yokozutsumi",
+      "lat": 34.703592,
+      "lng": 135.572789
+    },
+    {
+      "code": "N26",
+      "ja": "鶴見緑地",
+      "kana": "つるみりょくち",
+      "ko": "쓰루미료쿠치",
+      "koSource": "wiki",
+      "en": "Tsurumi-ryokuchi",
+      "lat": 34.710753,
+      "lng": 135.580239
+    },
+    {
+      "code": "N27",
+      "ja": "門真南",
+      "kana": "かどまみなみ",
+      "ko": "가도마미나미",
+      "koSource": "wiki",
+      "en": "Kadoma-minami",
+      "lat": 34.716864,
+      "lng": 135.592458
+    }
+  ],
+  "throughTermini": {
+    "start": [],
+    "end": []
+  },
+  "services": [],
+  "sources": [
+    "https://ja.wikipedia.org/wiki/Osaka Metro長堀鶴見緑地線",
+    "https://subway.osakametro.co.jp/station_guide/",
+    "https://subway.osakametro.co.jp/en/station_guide/",
+    "https://ja.wikipedia.org/w/api.php (langlinks/coordinates)"
+  ],
+  "notes": "他社直通なし（リニア地下鉄）。N12 の副名「京セラドーム大阪」はWikipedia駅一覧の括弧書きによる。 駅名(ja)・駅番号・英語表記はOsaka Metro公式「路線情報」ページ（日本語版・英語版）の駅一覧の表記に従った。韓国語名は日本語版Wikipedia各駅記事の韓国語版リンク先記事名から「역」と曖昧さ回避括弧を除いたもの。kanaは日本語版Wikipedia各駅記事冒頭の読み。座標は日本語版Wikipedia各駅記事の座標で、複数事業者・複数路線の駅では可能な限りOsaka Metro（該当路線）側の座標を選んだ（ホーム位置ではなく駅代表点）。jaSubは日本語版Wikipedia路線記事の駅一覧に括弧書きされた副駅名で、実際の駅名標に必ず表示されているかは個別確認していない。全列車各駅停車（種別による通過駅なし）。"
+}

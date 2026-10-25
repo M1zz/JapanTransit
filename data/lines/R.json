@@ -1,0 +1,126 @@
+{
+  "id": "R",
+  "region": "tokyo",
+  "operator": "東京臨海高速鉄道",
+  "operatorKo": "도쿄 임해고속철도",
+  "nameJa": "りんかい線",
+  "nameKo": "린카이선",
+  "nameEn": "Rinkai Line",
+  "color": "#00418E",
+  "circular": false,
+  "stations": [
+    {
+      "code": "R01",
+      "ja": "新木場",
+      "kana": "しんきば",
+      "ko": "신키바",
+      "koSource": "wiki",
+      "en": "Shin-kiba",
+      "lat": 35.64592,
+      "lng": 139.82694
+    },
+    {
+      "code": "R02",
+      "ja": "東雲",
+      "kana": "しののめ",
+      "ko": "시노노메",
+      "koSource": "wiki",
+      "en": "Shinonome",
+      "lat": 35.640639,
+      "lng": 139.803389
+    },
+    {
+      "code": "R03",
+      "ja": "国際展示場",
+      "jaSub": "東京ビッグサイト前",
+      "kana": "こくさいてんじじょう",
+      "ko": "고쿠사이텐지조",
+      "koSource": "wiki",
+      "en": "Kokusai-tenjijo",
+      "lat": 35.634463,
+      "lng": 139.791792
+    },
+    {
+      "code": "R04",
+      "ja": "東京テレポート",
+      "jaSub": "ダイバーシティ東京プラザ前",
+      "kana": "とうきょうてれぽーと",
+      "ko": "도쿄 텔레포트",
+      "koSource": "wiki",
+      "en": "Tokyo Teleport",
+      "lat": 35.6275,
+      "lng": 139.778889
+    },
+    {
+      "code": "R05",
+      "ja": "天王洲アイル",
+      "jaSub": "寺田倉庫本社前",
+      "kana": "てんのうずあいる",
+      "ko": "덴노즈 아일",
+      "koSource": "wiki",
+      "en": "Tennozu Isle",
+      "lat": 35.623194,
+      "lng": 139.750472
+    },
+    {
+      "code": "R06",
+      "ja": "品川シーサイド",
+      "jaSub": "ビッグローブ本社前",
+      "kana": "しながわしーさいど",
+      "ko": "시나가와 시사이드",
+      "koSource": "wiki",
+      "en": "Shinagawa Seaside",
+      "lat": 35.609722,
+      "lng": 139.749722
+    },
+    {
+      "code": "R07",
+      "ja": "大井町",
+      "kana": "おおいまち",
+      "ko": "오이마치",
+      "koSource": "wiki",
+      "en": "Oimachi",
+      "lat": 35.606222,
+      "lng": 139.734861
+    },
+    {
+      "code": "R08",
+      "ja": "大崎",
+      "kana": "おおさき",
+      "ko": "오사키",
+      "koSource": "wiki",
+      "en": "Osaki",
+      "lat": 35.619722,
+      "lng": 139.728556
+    }
+  ],
+  "throughTermini": {
+    "start": [],
+    "end": [
+      "川越",
+      "大宮",
+      "武蔵浦和",
+      "赤羽",
+      "池袋"
+    ]
+  },
+  "services": [],
+  "continuations": [
+    {
+      "step": 1,
+      "atStation": "大崎",
+      "intoLine": "JA",
+      "intoStep": 1,
+      "note": "大崎より先の行先(川越・大宮・武蔵浦和・赤羽・池袋)を出した列車は、大崎でそのまま埼京線(恵比寿・渋谷・新宿・池袋方面)に入る。無印(大崎行き)の各駅停車は大崎止まりなので、新宿方面へは大崎で乗り換え。日中は1時間7本中3本(快速 川越行き)が直通。"
+    }
+  ],
+  "sources": [
+    "https://ja.wikipedia.org/wiki/東京臨海高速鉄道りんかい線",
+    "https://www.twr.co.jp/route/tabid/111/Default.aspx (国際展示場駅 標準時刻表 2026年版: 大崎・埼京線方面の行先 川越/大宮/武蔵浦和/赤羽/池袋/東京テレポート、無印=大崎)",
+    "https://www.twr.co.jp/en/tabid/233/Default.aspx (English station names)",
+    "https://timetables.jreast.co.jp/2611/timetable/tt0319/0319060.html (JR大崎駅 りんかい線 新木場方面: 直通列車は全て新木場行き)",
+    "https://www.yurikamome.co.jp/en/",
+    "https://ja.wikipedia.org/w/api.php (coordinates/langlinks)"
+  ],
+  "notes": "駅番号はTWR公式のR01〜R08(2016年導入)。線内は快速・通勤快速を含め全定期列車が各駅停車(Wikipedia駅一覧・運行形態節に明記)なので services は空。ただし直通列車は線内でも種別表示が「快速」「通勤快速」のまま走る(線内は全駅停車)。日中は1時間に快速 川越行き3本+新木場〜大崎の各駅停車4本。大崎方面には八潮車両基地への入庫のため東京テレポート行きもある(線内終着)。throughTermini.end は国際展示場駅公式時刻表で確認した大崎より先の行先。大崎行き(無印)は大崎止まり。新宿行き・大宮より先は時刻表に無かった(川越は川越線経由)。新木場から先(京葉線)への定期直通は無い(線路はつながっているが団体臨時列車のみ。Wikipedia『京葉線との関係』)ので start は空。路線色はWikipedia駅番号テンプレートのR記号色#00418E(路線インフォボックスは#00b19dと#00389eの2色を載せており、公式HEXは確認できていない)。英語表記はTWR英語サイト(Shin-kiba, Oimachi, Osaki)とWikipediaのTWR表記(Kokusai-tenjijo, Tokyo Teleport, Tennozu Isle)。jaSubは駅名標・路線図に付く副駅名(Wikipedia駅一覧の括弧書き)。品川シーサイドの副駅名『ビッグローブ本社前』が現在も掲示されているかは未確認。座標はWikipediaの駅座標、共有駅(新木場・大崎)は既存Y/JYのファイルと同じ値。"
+}

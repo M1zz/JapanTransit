@@ -1,0 +1,165 @@
+{
+  "id": "sendai.T",
+  "region": "sendai",
+  "operator": "仙台市交通局",
+  "operatorKo": "센다이시 교통국",
+  "nameJa": "東西線",
+  "nameKo": "도자이선",
+  "nameEn": "Tozai Line",
+  "color": "#00B1DD",
+  "circular": false,
+  "stations": [
+    {
+      "code": "T01",
+      "ja": "八木山動物公園",
+      "jaSub": "ベニーランド前",
+      "kana": "やぎやまどうぶつこうえん",
+      "ko": "야기야마도부쓰코엔",
+      "koSource": "wiki",
+      "en": "Yagiyama Zoological Park",
+      "lat": 38.242778,
+      "lng": 140.843472
+    },
+    {
+      "code": "T02",
+      "ja": "青葉山",
+      "jaSub": "東北大学青葉山キャンパス前",
+      "kana": "あおばやま",
+      "ko": "아오바야마",
+      "koSource": "wiki",
+      "en": "Aobayama",
+      "lat": 38.254972,
+      "lng": 140.835222
+    },
+    {
+      "code": "T03",
+      "ja": "川内",
+      "jaSub": "東北大学川内キャンパス前",
+      "kana": "かわうち",
+      "ko": "가와우치",
+      "koSource": "wiki",
+      "en": "Kawauchi",
+      "lat": 38.260556,
+      "lng": 140.85
+    },
+    {
+      "code": "T04",
+      "ja": "国際センター",
+      "jaSub": "仙台城跡入口",
+      "kana": "こくさいせんたー",
+      "ko": "고쿠사이센터",
+      "koSource": "wiki",
+      "en": "International Center",
+      "lat": 38.260167,
+      "lng": 140.856944
+    },
+    {
+      "code": "T05",
+      "ja": "大町西公園",
+      "jaSub": "菓匠三全 本店前",
+      "kana": "おおまちにしこうえん",
+      "ko": "오마치니시코엔",
+      "koSource": "wiki",
+      "en": "Omachi Nishi-koen",
+      "lat": 38.258889,
+      "lng": 140.864167
+    },
+    {
+      "code": "T06",
+      "ja": "青葉通一番町",
+      "jaSub": "藤崎前",
+      "kana": "あおばどおりいちばんちょう",
+      "ko": "아오바도리이치반초",
+      "koSource": "wiki",
+      "en": "Aoba-dori Ichibancho",
+      "lat": 38.259722,
+      "lng": 140.872222
+    },
+    {
+      "code": "T07",
+      "ja": "仙台",
+      "kana": "せんだい",
+      "ko": "센다이",
+      "koSource": "wiki",
+      "en": "Sendai",
+      "lat": 38.25975,
+      "lng": 140.880278
+    },
+    {
+      "code": "T08",
+      "ja": "宮城野通",
+      "jaSub": "ユアテック本社前",
+      "kana": "みやぎのどおり",
+      "ko": "미야기노도리",
+      "koSource": "wiki",
+      "en": "Miyagino-dori",
+      "lat": 38.258333,
+      "lng": 140.885833
+    },
+    {
+      "code": "T09",
+      "ja": "連坊",
+      "jaSub": "仙台一高前",
+      "kana": "れんぼう",
+      "ko": "렌보",
+      "koSource": "wiki",
+      "en": "Rembo",
+      "lat": 38.251111,
+      "lng": 140.893056
+    },
+    {
+      "code": "T10",
+      "ja": "薬師堂",
+      "jaSub": "聖和学園前",
+      "kana": "やくしどう",
+      "ko": "야쿠시도",
+      "koSource": "wiki",
+      "en": "Yakushido",
+      "lat": 38.249583,
+      "lng": 140.906111
+    },
+    {
+      "code": "T11",
+      "ja": "卸町",
+      "jaSub": "仙台卸商センター前",
+      "kana": "おろしまち",
+      "ko": "오로시마치",
+      "koSource": "wiki",
+      "en": "Oroshimachi",
+      "lat": 38.251528,
+      "lng": 140.920833
+    },
+    {
+      "code": "T12",
+      "ja": "六丁の目",
+      "jaSub": "サンピア仙台前",
+      "kana": "ろくちょうのめ",
+      "ko": "로쿠초노메",
+      "koSource": "wiki",
+      "en": "Rokuchonome",
+      "lat": 38.250972,
+      "lng": 140.935556
+    },
+    {
+      "code": "T13",
+      "ja": "荒井",
+      "jaSub": "大成ハウジング本店前",
+      "kana": "あらい",
+      "ko": "아라이",
+      "koSource": "wiki",
+      "en": "Arai",
+      "lat": 38.244861,
+      "lng": 140.948611
+    }
+  ],
+  "throughTermini": {
+    "start": [],
+    "end": []
+  },
+  "services": [],
+  "sources": [
+    "https://ja.wikipedia.org/wiki/仙台市地下鉄東西線",
+    "https://ja.wikipedia.org/w/api.php (coordinates/langlinks)"
+  ],
+  "notes": "全列車各駅停車、他社直通なし。座標は日本語版Wikipedia各駅記事の座標（複数事業者駅は当該事業者・路線の座標を優先）。韓国語名は日本語版記事の韓国語版リンク先記事名から「역」と曖昧さ回避括弧を除いたもの。jaSubは日本語版路線記事の駅一覧に記載の副駅名（ネーミングライツを含む。契約更新で変わり得る）。英語名は日本語版Wikipedia各駅記事のローマ字欄（駅名標・公式HP準拠と注記あり）。八木山動物公園・国際センターの英語名は駅名標どおり意訳（Yagiyama Zoological Park / International Center）。路線色は日本語版Wikipediaインフォボックスの値（公式HEX未確認）。"
+}

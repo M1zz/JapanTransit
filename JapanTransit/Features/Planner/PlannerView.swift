@@ -41,12 +41,20 @@ struct PlannerView: View {
             .navigationDestination(for: Route.self) { RouteDetailView(route: $0) }
             .onAppear {
                 // 스크린샷·시험용: `-openFirstRoute` 로 띄우면 첫 경로를 바로 연다.
-                if ProcessInfo.processInfo.arguments.contains("-openFirstRoute"), path.isEmpty, let r = routes.first {
+                let args = ProcessInfo.processInfo.arguments
+                if args.contains("-openFirstRoute"), path.isEmpty, let r = routes.first {
                     path = [r]
                 }
             }
+            .task {
+                // `-openPicker` 로 도착역 고르기를 연다 (스크린샷용). 첫 화면이 뜬 뒤에.
+                guard ProcessInfo.processInfo.arguments.contains("-openPicker") else { return }
+                try? await Task.sleep(for: .milliseconds(600))
+                picking = .to
+            }
             .sheet(item: $picking) { field in
-                StationPickerView(title: field == .from ? "출발역" : "도착역") { place in
+                StationPickerView(title: field == .from ? "출발역" : "도착역",
+                                  region: (field == .from ? to ?? from : from ?? to)?.region ?? Region.tokyo.id) { place in
                     if field == .from { fromJa = place.id } else { toJa = place.id }
                 }
             }
@@ -125,6 +133,7 @@ struct PlannerView: View {
     // MARK: Results
 
     @ViewBuilder private var results: some View {
+        let routes = self.routes   // one search per render
         if routes.isEmpty {
             Text(emptyMessage)
                 .font(.subheadline)
@@ -148,8 +157,12 @@ struct PlannerView: View {
     private var emptyMessage: String {
         guard let from, let to else { return "" }
         if from.id == to.id { return "출발역과 도착역이 같아요" }
-        if network.transferNames(at: from.ja).contains(to.id) {
-            return network.isOutsideTransfer(from: from.ja, to: to.ja)
+        if from.region != to.region {
+            let a = Region.named(from.region)?.ko ?? from.region, b = Region.named(to.region)?.ko ?? to.region
+            return "\(a)와 \(b)는 다른 도시예요. 도시 사이(신칸센 등)는 아직 안내하지 않아요"
+        }
+        if network.transferNames(at: from.id).contains(to.id) {
+            return network.isOutsideTransfer(from: from.id, to: to.id)
                 ? "두 역은 가까워요. 개찰구를 나와 걸어서 가세요"
                 : "두 역은 역 안 통로로 이어져 있어요. 걸어서 가세요"
         }

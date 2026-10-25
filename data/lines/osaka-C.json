@@ -1,0 +1,181 @@
+{
+  "id": "osaka.C",
+  "region": "osaka",
+  "operator": "Osaka Metro",
+  "operatorKo": "오사카 메트로",
+  "nameJa": "中央線",
+  "nameKo": "주오선",
+  "nameEn": "Chuo Line",
+  "color": "#019A66",
+  "circular": false,
+  "stations": [
+    {
+      "code": "C09",
+      "ja": "夢洲",
+      "kana": "ゆめしま",
+      "ko": "유메시마",
+      "koSource": "wiki",
+      "en": "Yumeshima",
+      "lat": 34.652356,
+      "lng": 135.38995
+    },
+    {
+      "code": "C10",
+      "ja": "コスモスクエア",
+      "kana": "こすもすくえあ",
+      "ko": "코스모스퀘어",
+      "koSource": "wiki",
+      "en": "Cosmosquare",
+      "lat": 34.642608,
+      "lng": 135.412197
+    },
+    {
+      "code": "C11",
+      "ja": "大阪港",
+      "jaSub": "海遊館前",
+      "kana": "おおさかこう",
+      "ko": "오사카코",
+      "koSource": "wiki",
+      "en": "Osakako",
+      "lat": 34.653892,
+      "lng": 135.434361
+    },
+    {
+      "code": "C12",
+      "ja": "朝潮橋",
+      "kana": "あさしおばし",
+      "ko": "아사시오바시",
+      "koSource": "wiki",
+      "en": "Asashiobashi",
+      "lat": 34.660875,
+      "lng": 135.448753
+    },
+    {
+      "code": "C13",
+      "ja": "弁天町",
+      "kana": "べんてんちょう",
+      "ko": "벤텐초",
+      "koSource": "wiki",
+      "en": "Bentencho",
+      "lat": 34.668511,
+      "lng": 135.462317
+    },
+    {
+      "code": "C14",
+      "ja": "九条",
+      "kana": "くじょう",
+      "ko": "구조",
+      "koSource": "wiki",
+      "en": "Kujo",
+      "lat": 34.675553,
+      "lng": 135.473772
+    },
+    {
+      "code": "C15",
+      "ja": "阿波座",
+      "kana": "あわざ",
+      "ko": "아와자",
+      "koSource": "wiki",
+      "en": "Awaza",
+      "lat": 34.681444,
+      "lng": 135.486361
+    },
+    {
+      "code": "C16",
+      "ja": "本町",
+      "jaSub": "船場西",
+      "kana": "ほんまち",
+      "ko": "혼마치",
+      "koSource": "wiki",
+      "en": "Hommachi",
+      "lat": 34.681936,
+      "lng": 135.498983
+    },
+    {
+      "code": "C17",
+      "ja": "堺筋本町",
+      "jaSub": "船場東",
+      "kana": "さかいすじほんまち",
+      "ko": "사카이스지혼마치",
+      "koSource": "wiki",
+      "en": "Sakaisuji-Hommachi",
+      "lat": 34.681847,
+      "lng": 135.506519
+    },
+    {
+      "code": "C18",
+      "ja": "谷町四丁目",
+      "kana": "たにまちよんちょうめ",
+      "ko": "다니마치 4초메",
+      "koSource": "wiki",
+      "en": "Tanimachi 4-chome",
+      "lat": 34.681914,
+      "lng": 135.517286
+    },
+    {
+      "code": "C19",
+      "ja": "森ノ宮",
+      "kana": "もりのみや",
+      "ko": "모리노미야",
+      "koSource": "wiki",
+      "en": "Morinomiya",
+      "lat": 34.681456,
+      "lng": 135.533844
+    },
+    {
+      "code": "C20",
+      "ja": "緑橋",
+      "kana": "みどりばし",
+      "ko": "미도리바시",
+      "koSource": "wiki",
+      "en": "Midoribashi",
+      "lat": 34.68075,
+      "lng": 135.544581
+    },
+    {
+      "code": "C21",
+      "ja": "深江橋",
+      "kana": "ふかえばし",
+      "ko": "후카에바시",
+      "koSource": "wiki",
+      "en": "Fukaebashi",
+      "lat": 34.679092,
+      "lng": 135.557186
+    },
+    {
+      "code": "C22",
+      "ja": "高井田",
+      "kana": "たかいだ",
+      "ko": "다카이다",
+      "koSource": "wiki",
+      "en": "Takaida",
+      "lat": 34.678575,
+      "lng": 135.573028
+    },
+    {
+      "code": "C23",
+      "ja": "長田",
+      "kana": "ながた",
+      "ko": "나가타",
+      "koSource": "wiki",
+      "en": "Nagata",
+      "lat": 34.678764,
+      "lng": 135.591911
+    }
+  ],
+  "throughTermini": {
+    "start": [],
+    "end": [
+      "学研奈良登美ヶ丘",
+      "生駒"
+    ]
+  },
+  "services": [],
+  "sources": [
+    "https://ja.wikipedia.org/wiki/Osaka Metro中央線",
+    "https://subway.osakametro.co.jp/station_guide/",
+    "https://subway.osakametro.co.jp/en/station_guide/",
+    "https://ja.wikipedia.org/w/api.php (langlinks/coordinates)"
+  ],
+  "notes": "2025年1月19日に夢洲(C09)–コスモスクエア(C10)間が開業済み（日本語版Wikipedia・Osaka Metro公式駅一覧で確認、C09 夢洲は公式サイトに掲載）。万博閉幕後の2025年10月14日以降、夢洲発着の半数がコスモスクエア発着に変更（夢洲–コスモスクエア間は昼間毎時4本程度）。駅番号はOTSからの編入の経緯で大阪港がC11、コスモスクエアがC10、夢洲がC09。長田(C23)から近鉄けいはんな線と相互直通運転（学研奈良登美ヶ丘行き、昼間は半数が生駒行き）。森ノ宮発着の区間列車もある。 駅名(ja)・駅番号・英語表記はOsaka Metro公式「路線情報」ページ（日本語版・英語版）の駅一覧の表記に従った。韓国語名は日本語版Wikipedia各駅記事の韓国語版リンク先記事名から「역」と曖昧さ回避括弧を除いたもの。kanaは日本語版Wikipedia各駅記事冒頭の読み。座標は日本語版Wikipedia各駅記事の座標で、複数事業者・複数路線の駅では可能な限りOsaka Metro（該当路線）側の座標を選んだ（ホーム位置ではなく駅代表点）。jaSubは日本語版Wikipedia路線記事の駅一覧に括弧書きされた副駅名で、実際の駅名標に必ず表示されているかは個別確認していない。全列車各駅停車（種別による通過駅なし）。"
+}

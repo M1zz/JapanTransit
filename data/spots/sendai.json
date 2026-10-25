@@ -1,0 +1,364 @@
+{
+  "region": "sendai",
+  "spots": [
+    {
+      "id": "sendai.zuihoden",
+      "ko": "즈이호덴",
+      "ja": "瑞鳳殿",
+      "en": "Zuihoden",
+      "aliases": [
+        "주이호덴",
+        "다테 마사무네 묘",
+        "마사무네 영묘"
+      ],
+      "category": "신사·절",
+      "lat": 38.2504,
+      "lng": 140.8667,
+      "stations": [
+        {
+          "ja": "大町西公園",
+          "line": "sendai.T",
+          "walkMinutes": 20,
+          "exit": null,
+          "note": "안내 기준 徒歩20分. 히로세강을 건너 언덕을 오른다"
+        }
+      ],
+      "tip": "센다이역에서 관광 순환버스 루플 센다이(るーぷる仙台)로 瑞鳳殿前에 내리면 편하다",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/瑞鳳殿",
+        "https://koyo.walkerplus.com/detail/ar0204e478830/map.html"
+      ]
+    },
+    {
+      "id": "sendai.sendai-castle",
+      "ko": "센다이성 터",
+      "ja": "仙台城跡",
+      "en": "Sendai Castle Ruins",
+      "aliases": [
+        "센다이성",
+        "아오바성",
+        "아오바야마 공원",
+        "다테 마사무네 기마상",
+        "마사무네 동상"
+      ],
+      "category": "명소",
+      "lat": 38.2525,
+      "lng": 140.8562,
+      "stations": [
+        {
+          "ja": "国際センター",
+          "line": "sendai.T",
+          "walkMinutes": 20,
+          "exit": null,
+          "note": "센다이시 안내 기준 혼마루까지 徒歩約20分, 오르막. 青葉山駅에서는 시영버스로 약 6분 仙台城跡南 하차(1시간 1편)"
+        }
+      ],
+      "tip": "걷기엔 오르막이 길어 센다이역에서 루플 센다이(るーぷる仙台)로 仙台城跡에 내리는 게 편하다",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/仙台城",
+        "https://www.city.sendai.jp/shisekichosa/sendaijoaccess.html"
+      ]
+    },
+    {
+      "id": "sendai.jozenji-dori",
+      "ko": "조젠지 거리",
+      "ja": "定禅寺通",
+      "en": "Jozenji-dori Avenue",
+      "aliases": [
+        "조젠지도리",
+        "빛의 페이전트",
+        "센다이 빛의 축제",
+        "느티나무 가로수길"
+      ],
+      "category": "명소",
+      "lat": 38.2661,
+      "lng": 140.8685,
+      "stations": [
+        {
+          "ja": "勾当台公園",
+          "line": "sendai.N",
+          "walkMinutes": 1,
+          "exit": null,
+          "note": "역이 定禅寺通와 東二番丁通 교차점 바로 아래"
+        }
+      ],
+      "tip": "",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/定禅寺通",
+        "https://ja.wikipedia.org/wiki/勾当台公園駅",
+        "https://ja.wikipedia.org/wiki/せんだいメディアテーク"
+      ]
+    },
+    {
+      "id": "sendai.ichibancho",
+      "ko": "이치반초·크리스로드 상점가",
+      "ja": "一番町商店街",
+      "en": "Ichibancho Shopping Arcades",
+      "aliases": [
+        "이치반초",
+        "크리스로드",
+        "선몰 이치반초",
+        "센다이 아케이드"
+      ],
+      "category": "쇼핑",
+      "lat": 38.26103,
+      "lng": 140.8727,
+      "stations": [
+        {
+          "ja": "青葉通一番町",
+          "line": "sendai.T",
+          "walkMinutes": 1,
+          "exit": "北1",
+          "note": "역이 サンモール一番町와 青葉通 교차점 바로 아래. 北1 출구가 サンモール·ぶらんど〜む 쪽"
+        },
+        {
+          "ja": "広瀬通",
+          "line": "sendai.N",
+          "walkMinutes": 3,
+          "exit": null,
+          "note": "약. 역에서 서쪽으로 약 220m"
+        },
+        {
+          "ja": "勾当台公園",
+          "line": "sendai.N",
+          "walkMinutes": 2,
+          "exit": null,
+          "note": "약. 南1 출구가 북쪽 끝(一番町四丁目, 141빌딩)과 연결"
+        }
+      ],
+      "tip": "",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/一番町_(仙台市)",
+        "https://ja.wikipedia.org/wiki/青葉通一番町駅",
+        "https://ja.wikipedia.org/wiki/広瀬通駅",
+        "https://ja.wikipedia.org/wiki/勾当台公園駅"
+      ]
+    },
+    {
+      "id": "sendai.asaichi",
+      "ko": "센다이 아사이치",
+      "ja": "仙台朝市",
+      "en": "Sendai Asaichi Market",
+      "aliases": [
+        "아사이치",
+        "센다이 아침시장",
+        "센다이 시장"
+      ],
+      "category": "먹거리",
+      "lat": 38.2586,
+      "lng": 140.8784,
+      "stations": [
+        {
+          "ja": "仙台",
+          "line": "sendai.N",
+          "walkMinutes": 5,
+          "exit": null,
+          "note": "JR仙台駅 西口から徒歩約5分 기준. 미나미마치도리 한 블록 남쪽 골목"
+        },
+        {
+          "ja": "仙台",
+          "line": "sendai.T",
+          "walkMinutes": 5,
+          "exit": null,
+          "note": "JR仙台駅 西口から徒歩約5分 기준"
+        }
+      ],
+      "tip": "",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/仙台朝市",
+        "https://www.gltjp.com/ja/directory/item/13598/"
+      ]
+    },
+    {
+      "id": "sendai.gyutan-street",
+      "ko": "센다이역 규탄 거리",
+      "ja": "牛たん通り",
+      "en": "Gyutan Street (Sendai Station)",
+      "aliases": [
+        "규탄 거리",
+        "우설 거리",
+        "센다이 규탄",
+        "규탄도리",
+        "스시 거리"
+      ],
+      "category": "먹거리",
+      "lat": 38.2603,
+      "lng": 140.8822,
+      "stations": [
+        {
+          "ja": "仙台",
+          "line": "sendai.N",
+          "walkMinutes": 3,
+          "exit": null,
+          "note": "약. JR 센다이역 3층 신칸센 중앙 개찰구 옆"
+        },
+        {
+          "ja": "仙台",
+          "line": "sendai.T",
+          "walkMinutes": 3,
+          "exit": null,
+          "note": "약"
+        }
+      ],
+      "tip": "JR 센다이역 건물 3층, 신칸센 중앙 개찰구 옆에 있다",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/仙台駅"
+      ]
+    },
+    {
+      "id": "sendai.aer",
+      "ko": "아에르 전망 테라스",
+      "ja": "AER展望テラス",
+      "en": "AER Observation Terrace",
+      "aliases": [
+        "아에르",
+        "아에르 전망대",
+        "센다이 무료 전망대"
+      ],
+      "category": "전망대",
+      "lat": 38.2627,
+      "lng": 140.8815,
+      "stations": [
+        {
+          "ja": "仙台",
+          "line": "sendai.N",
+          "walkMinutes": 2,
+          "exit": null,
+          "note": "JR仙台駅 西口 보행자 데크에서 徒歩2分 기준. 무료 전망 테라스는 31층"
+        }
+      ],
+      "tip": "",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/アエル_(仙台市)",
+        "https://www.gltjp.com/ja/directory/item/13723/"
+      ]
+    },
+    {
+      "id": "sendai.mediatheque",
+      "ko": "센다이 미디어테크",
+      "ja": "せんだいメディアテーク",
+      "en": "Sendai Mediatheque",
+      "aliases": [
+        "미디어테크",
+        "센다이 메디아테크",
+        "이토 도요 건축"
+      ],
+      "category": "박물관·미술관",
+      "lat": 38.2655,
+      "lng": 140.8655,
+      "stations": [
+        {
+          "ja": "勾当台公園",
+          "line": "sendai.N",
+          "walkMinutes": 7,
+          "exit": "公園2",
+          "note": "공식 公園2 출구에서 徒歩約7分(약 450m). 조젠지 거리를 따라 서쪽으로"
+        },
+        {
+          "ja": "大町西公園",
+          "line": "sendai.T",
+          "walkMinutes": 13,
+          "exit": "東1",
+          "note": "공식 東1 출구에서 徒歩約13分"
+        }
+      ],
+      "tip": "",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/せんだいメディアテーク",
+        "https://www.smt.jp/info/access/"
+      ]
+    },
+    {
+      "id": "sendai.city-museum",
+      "ko": "센다이시 박물관",
+      "ja": "仙台市博物館",
+      "en": "Sendai City Museum",
+      "aliases": [
+        "센다이 박물관",
+        "다테 마사무네 갑옷"
+      ],
+      "category": "박물관·미술관",
+      "lat": 38.2561,
+      "lng": 140.8569,
+      "stations": [
+        {
+          "ja": "国際センター",
+          "line": "sendai.T",
+          "walkMinutes": 8,
+          "exit": "南1",
+          "note": "공식 南1 출구에서 徒歩8分"
+        }
+      ],
+      "tip": "",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/仙台市博物館",
+        "https://www.city.sendai.jp/museum/shisetsuannai/access.html"
+      ]
+    },
+    {
+      "id": "sendai.osaki-hachimangu",
+      "ko": "오사키 하치만구",
+      "ja": "大崎八幡宮",
+      "en": "Osaki Hachimangu Shrine",
+      "aliases": [
+        "오사키하치만구",
+        "오사키 하치만 신사",
+        "돈토사이"
+      ],
+      "category": "신사·절",
+      "lat": 38.2722,
+      "lng": 140.84502,
+      "stations": [
+        {
+          "ja": "川内",
+          "line": "sendai.T",
+          "walkMinutes": 25,
+          "exit": null,
+          "note": "약. 걷기엔 멀다(직선 약 1.4km, 히로세강 건너). JR仙山線 東北福祉大前駅에서 北参道까지 徒歩約12分이 더 가깝다"
+        },
+        {
+          "ja": "北四番丁",
+          "line": "sendai.N",
+          "walkMinutes": 28,
+          "exit": null,
+          "note": "약. 걷기엔 멀다(직선 약 2.1km). 근처 二日町北四番丁 정류장에서 시영버스 840~888계통으로 大崎八幡宮前"
+        }
+      ],
+      "tip": "센다이역 서쪽 출구 버스 정류장에서 시영버스나 루플 센다이로 大崎八幡宮前에 내리는 게 가장 쉽다",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/大崎八幡宮",
+        "https://ja.wikipedia.org/wiki/川内駅_(宮城県)",
+        "https://ja.wikipedia.org/wiki/北四番丁駅"
+      ]
+    },
+    {
+      "id": "sendai.yagiyama-zoo",
+      "ko": "야기야마 동물공원",
+      "ja": "仙台市八木山動物公園",
+      "en": "Sendai Yagiyama Zoological Park",
+      "aliases": [
+        "야기야마 동물원",
+        "센다이 동물원",
+        "후지사키노모리"
+      ],
+      "category": "테마파크",
+      "lat": 38.2443,
+      "lng": 140.8443,
+      "stations": [
+        {
+          "ja": "八木山動物公園",
+          "line": "sendai.T",
+          "walkMinutes": 1,
+          "exit": "中央1",
+          "note": "공식: 中央1 출구 엘리베이터에서 내리면 바로"
+        }
+      ],
+      "tip": "",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/仙台市八木山動物公園",
+        "https://www.city.sendai.jp/zoo/information/3-access.html",
+        "https://ja.wikipedia.org/wiki/八木山動物公園駅"
+      ]
+    }
+  ]
+}

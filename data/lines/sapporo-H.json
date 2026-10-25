@@ -1,0 +1,166 @@
+{
+  "id": "sapporo.H",
+  "region": "sapporo",
+  "operator": "札幌市交通局",
+  "operatorKo": "삿포로시 교통국",
+  "nameJa": "東豊線",
+  "nameKo": "도호선",
+  "nameEn": "Toho Line",
+  "color": "#0080FF",
+  "circular": false,
+  "stations": [
+    {
+      "code": "H01",
+      "ja": "栄町",
+      "kana": "さかえまち",
+      "ko": "사카에마치",
+      "koSource": "wiki",
+      "en": "Sakaemachi",
+      "lat": 43.112994,
+      "lng": 141.367142
+    },
+    {
+      "code": "H02",
+      "ja": "新道東",
+      "jaSub": "プロノ札幌本店前",
+      "kana": "しんどうひがし",
+      "ko": "신도히가시",
+      "koSource": "wiki",
+      "en": "Shindo-Higashi",
+      "lat": 43.104664,
+      "lng": 141.369086
+    },
+    {
+      "code": "H03",
+      "ja": "元町",
+      "kana": "もとまち",
+      "ko": "모토마치",
+      "koSource": "wiki",
+      "en": "Motomachi",
+      "lat": 43.094386,
+      "lng": 141.371586
+    },
+    {
+      "code": "H04",
+      "ja": "環状通東",
+      "kana": "かんじょうどおりひがし",
+      "ko": "간조도리히가시",
+      "koSource": "wiki",
+      "en": "Kanjo-Dori-Higashi",
+      "lat": 43.082167,
+      "lng": 141.374644
+    },
+    {
+      "code": "H05",
+      "ja": "東区役所前",
+      "kana": "ひがしくやくしょまえ",
+      "ko": "히가시쿠야쿠쇼마에",
+      "koSource": "wiki",
+      "en": "Higashi-Kuyakusho-Mae",
+      "lat": 43.078197,
+      "lng": 141.364769
+    },
+    {
+      "code": "H06",
+      "ja": "北13条東",
+      "jaSub": "天使大学前",
+      "kana": "きたじゅうさんじょうひがし",
+      "ko": "기타13조히가시",
+      "koSource": "wiki",
+      "en": "Kita-Jusan-Jo-Higashi",
+      "lat": 43.076883,
+      "lng": 141.354847
+    },
+    {
+      "code": "H07",
+      "ja": "さっぽろ",
+      "kana": "さっぽろ",
+      "ko": "삿포로",
+      "koSource": "rule",
+      "en": "Sapporo",
+      "lat": 43.066417,
+      "lng": 141.350556
+    },
+    {
+      "code": "H08",
+      "ja": "大通",
+      "kana": "おおどおり",
+      "ko": "오도리",
+      "koSource": "wiki",
+      "en": "Odori",
+      "lat": 43.060444,
+      "lng": 141.3545
+    },
+    {
+      "code": "H09",
+      "ja": "豊水すすきの",
+      "kana": "ほうすいすすきの",
+      "ko": "호스이스스키노",
+      "koSource": "wiki",
+      "en": "Hosui-Susukino",
+      "lat": 43.055008,
+      "lng": 141.356839
+    },
+    {
+      "code": "H10",
+      "ja": "学園前",
+      "kana": "がくえんまえ",
+      "ko": "가쿠엔마에",
+      "koSource": "wiki",
+      "en": "Gakuen-Mae",
+      "lat": 43.047447,
+      "lng": 141.369089
+    },
+    {
+      "code": "H11",
+      "ja": "豊平公園",
+      "kana": "とよひらこうえん",
+      "ko": "도요히라코엔",
+      "koSource": "wiki",
+      "en": "Toyohira-Koen",
+      "lat": 43.041928,
+      "lng": 141.376572
+    },
+    {
+      "code": "H12",
+      "ja": "美園",
+      "kana": "みその",
+      "ko": "미소노",
+      "koSource": "wiki",
+      "en": "Misono",
+      "lat": 43.036339,
+      "lng": 141.385756
+    },
+    {
+      "code": "H13",
+      "ja": "月寒中央",
+      "kana": "つきさむちゅうおう",
+      "ko": "쓰키사무추오",
+      "koSource": "wiki",
+      "en": "Tsukisamu-Chuo",
+      "lat": 43.030553,
+      "lng": 141.396264
+    },
+    {
+      "code": "H14",
+      "ja": "福住",
+      "kana": "ふくずみ",
+      "ko": "후쿠즈미",
+      "koSource": "wiki",
+      "en": "Fukuzumi",
+      "lat": 43.021622,
+      "lng": 141.403106
+    }
+  ],
+  "throughTermini": {
+    "start": [],
+    "end": []
+  },
+  "services": [],
+  "sources": [
+    "https://ja.wikipedia.org/wiki/札幌市営地下鉄東豊線",
+    "https://en.wikipedia.org/wiki/Tōhō_Line",
+    "https://ja.wikipedia.org/w/api.php (coordinates/langlinks)"
+  ],
+  "notes": "全列車各駅停車、他社直通なし。座標は日本語版Wikipedia各駅記事の座標（複数事業者駅は当該事業者・路線の座標を優先）。韓国語名は日本語版記事の韓国語版リンク先記事名から「역」と曖昧さ回避括弧を除いたもの。jaSubは日本語版路線記事の駅一覧に記載の副駅名（ネーミングライツを含む。契約更新で変わり得る）。英語名は英語版Wikipedia路線記事の駅名からマクロンを除いたもの（駅名標の実際の表記・ハイフン位置は未確認）。豊水すすきの(H09)と南北線すすきの(N08)は別駅で地下通路も無く、乗換駅ではない。路線色は日本語版Wikipediaインフォボックスの値（スカイブルー）。"
+}

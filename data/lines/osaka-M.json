@@ -1,0 +1,231 @@
+{
+  "id": "osaka.M",
+  "region": "osaka",
+  "operator": "Osaka Metro",
+  "operatorKo": "오사카 메트로",
+  "nameJa": "御堂筋線",
+  "nameKo": "미도스지선",
+  "nameEn": "Midosuji Line",
+  "color": "#E5171F",
+  "circular": false,
+  "stations": [
+    {
+      "code": "M11",
+      "ja": "江坂",
+      "kana": "えさか",
+      "ko": "에사카",
+      "koSource": "wiki",
+      "en": "Esaka",
+      "lat": 34.757903,
+      "lng": 135.497019
+    },
+    {
+      "code": "M12",
+      "ja": "東三国",
+      "kana": "ひがしみくに",
+      "ko": "히가시미쿠니",
+      "koSource": "wiki",
+      "en": "Higashimikuni",
+      "lat": 34.741033,
+      "lng": 135.498511
+    },
+    {
+      "code": "M13",
+      "ja": "新大阪",
+      "kana": "しんおおさか",
+      "ko": "신오사카",
+      "koSource": "wiki",
+      "en": "Shin-Osaka",
+      "lat": 34.733475,
+      "lng": 135.498536
+    },
+    {
+      "code": "M14",
+      "ja": "西中島南方",
+      "kana": "にしなかじまみなみがた",
+      "ko": "니시나카지마미나미가타",
+      "koSource": "wiki",
+      "en": "Nishinakajima-Minamigata",
+      "lat": 34.726478,
+      "lng": 135.498575
+    },
+    {
+      "code": "M15",
+      "ja": "中津",
+      "kana": "なかつ",
+      "ko": "나카쓰",
+      "koSource": "wiki",
+      "en": "Nakatsu",
+      "lat": 34.711028,
+      "lng": 135.496911
+    },
+    {
+      "code": "M16",
+      "ja": "梅田",
+      "kana": "うめだ",
+      "ko": "우메다",
+      "koSource": "wiki",
+      "en": "Umeda",
+      "lat": 34.702833,
+      "lng": 135.497722
+    },
+    {
+      "code": "M17",
+      "ja": "淀屋橋",
+      "jaSub": "市役所前",
+      "kana": "よどやばし",
+      "ko": "요도야바시",
+      "koSource": "wiki",
+      "en": "Yodoyabashi",
+      "lat": 34.69235,
+      "lng": 135.500994
+    },
+    {
+      "code": "M18",
+      "ja": "本町",
+      "jaSub": "船場西",
+      "kana": "ほんまち",
+      "ko": "혼마치",
+      "koSource": "wiki",
+      "en": "Hommachi",
+      "lat": 34.681936,
+      "lng": 135.498983
+    },
+    {
+      "code": "M19",
+      "ja": "心斎橋",
+      "kana": "しんさいばし",
+      "ko": "신사이바시",
+      "koSource": "wiki",
+      "en": "Shinsaibashi",
+      "lat": 34.675011,
+      "lng": 135.500328
+    },
+    {
+      "code": "M20",
+      "ja": "なんば",
+      "kana": "なんば",
+      "ko": "난바",
+      "koSource": "wiki",
+      "en": "Namba",
+      "lat": 34.666317,
+      "lng": 135.500314
+    },
+    {
+      "code": "M21",
+      "ja": "大国町",
+      "kana": "だいこくちょう",
+      "ko": "다이코쿠초",
+      "koSource": "wiki",
+      "en": "Daikokucho",
+      "lat": 34.656072,
+      "lng": 135.497803
+    },
+    {
+      "code": "M22",
+      "ja": "動物園前",
+      "jaSub": "新世界",
+      "kana": "どうぶつえんまえ",
+      "ko": "도부쓰엔마에",
+      "koSource": "wiki",
+      "en": "Dobutsuen-mae",
+      "lat": 34.648814,
+      "lng": 135.504411
+    },
+    {
+      "code": "M23",
+      "ja": "天王寺",
+      "kana": "てんのうじ",
+      "ko": "덴노지",
+      "koSource": "wiki",
+      "en": "Tennoji",
+      "lat": 34.646553,
+      "lng": 135.513761
+    },
+    {
+      "code": "M24",
+      "ja": "昭和町",
+      "kana": "しょうわちょう",
+      "ko": "쇼와초",
+      "koSource": "wiki",
+      "en": "Showacho",
+      "lat": 34.633558,
+      "lng": 135.516964
+    },
+    {
+      "code": "M25",
+      "ja": "西田辺",
+      "kana": "にしたなべ",
+      "ko": "니시타나베",
+      "koSource": "wiki",
+      "en": "Nishitanabe",
+      "lat": 34.621625,
+      "lng": 135.51515
+    },
+    {
+      "code": "M26",
+      "ja": "長居",
+      "kana": "ながい",
+      "ko": "나가이",
+      "koSource": "wiki",
+      "en": "Nagai",
+      "lat": 34.609542,
+      "lng": 135.513714
+    },
+    {
+      "code": "M27",
+      "ja": "あびこ",
+      "kana": "あびこ",
+      "ko": "아비코",
+      "koSource": "wiki",
+      "en": "Abiko",
+      "lat": 34.599167,
+      "lng": 135.512778
+    },
+    {
+      "code": "M28",
+      "ja": "北花田",
+      "kana": "きたはなだ",
+      "ko": "기타하나다",
+      "koSource": "wiki",
+      "en": "Kitahanada",
+      "lat": 34.5825,
+      "lng": 135.516389
+    },
+    {
+      "code": "M29",
+      "ja": "新金岡",
+      "kana": "しんかなおか",
+      "ko": "신카나오카",
+      "koSource": "wiki",
+      "en": "Shinkanaoka",
+      "lat": 34.567778,
+      "lng": 135.515
+    },
+    {
+      "code": "M30",
+      "ja": "なかもず",
+      "kana": "なかもず",
+      "ko": "나카모즈",
+      "koSource": "wiki",
+      "en": "Nakamozu",
+      "lat": 34.556253,
+      "lng": 135.506008
+    }
+  ],
+  "throughTermini": {
+    "start": [
+      "箕面萱野",
+      "千里中央"
+    ],
+    "end": []
+  },
+  "services": [],
+  "sources": [
+    "https://ja.wikipedia.org/wiki/Osaka Metro御堂筋線",
+    "https://subway.osakametro.co.jp/station_guide/",
+    "https://subway.osakametro.co.jp/en/station_guide/",
+    "https://ja.wikipedia.org/w/api.php (langlinks/coordinates)"
+  ],
+  "notes": "江坂(M11)から北大阪急行電鉄南北線（箕面萱野まで）と相互直通運転。直通列車の行先は主に箕面萱野、一部（早朝など）千里中央。途中駅折り返し（新大阪・中津・天王寺・あびこ・新金岡など）がある。公式・旅客案内では M20 は「なんば」（正式名 難波）、M27 は「あびこ」（正式名 我孫子）、M30 は「なかもず」（正式名 中百舌鳥）と平仮名表記のため、ja はそれに合わせた。M16「梅田」は JR「大阪」、谷町線「東梅田」、四つ橋線「西梅田」とは別の駅。梅田駅(M16)の韓国語版単独記事はなく、韓国語版「우메다역」（梅田地区の鉄道駅をまとめた記事）の表記を用いた。 駅名(ja)・駅番号・英語表記はOsaka Metro公式「路線情報」ページ（日本語版・英語版）の駅一覧の表記に従った。韓国語名は日本語版Wikipedia各駅記事の韓国語版リンク先記事名から「역」と曖昧さ回避括弧を除いたもの。kanaは日本語版Wikipedia各駅記事冒頭の読み。座標は日本語版Wikipedia各駅記事の座標で、複数事業者・複数路線の駅では可能な限りOsaka Metro（該当路線）側の座標を選んだ（ホーム位置ではなく駅代表点）。jaSubは日本語版Wikipedia路線記事の駅一覧に括弧書きされた副駅名で、実際の駅名標に必ず表示されているかは個別確認していない。全列車各駅停車（種別による通過駅なし）。"
+}

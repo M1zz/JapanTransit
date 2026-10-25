@@ -1,0 +1,1046 @@
+{
+  "region": "osaka",
+  "spots": [
+    {
+      "id": "osaka.dotonbori",
+      "ko": "도톤보리",
+      "ja": "道頓堀",
+      "en": "Dotonbori",
+      "aliases": [
+        "글리코",
+        "글리코 간판",
+        "에비스바시",
+        "난바",
+        "도톤보리 강"
+      ],
+      "category": "명소",
+      "lat": 34.6687,
+      "lng": 135.5013,
+      "stations": [
+        {
+          "ja": "なんば",
+          "line": "osaka.M",
+          "walkMinutes": 6,
+          "exit": "14",
+          "note": "약. 14번 출구에서 미도스지를 따라 북쪽, 에비스바시까지"
+        },
+        {
+          "ja": "日本橋",
+          "line": "osaka.S",
+          "walkMinutes": 9,
+          "exit": "2",
+          "note": "약. 도톤보리 동쪽 끝으로 나옴"
+        }
+      ],
+      "tip": "글리코 간판은 에비스바시 다리 위나 강변 산책로에서 봅니다.",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/道頓堀",
+        "https://matcha-jp.com/jp/17939",
+        "https://www.nap-camp.com/mag/11352"
+      ]
+    },
+    {
+      "id": "osaka.shinsaibashi",
+      "ko": "신사이바시스지 상점가",
+      "ja": "心斎橋筋商店街",
+      "en": "Shinsaibashi-suji Shopping Street",
+      "aliases": [
+        "신사이바시",
+        "신사이바시 쇼핑",
+        "다이마루 신사이바시",
+        "파르코 신사이바시"
+      ],
+      "category": "쇼핑",
+      "lat": 34.6724,
+      "lng": 135.5008,
+      "stations": [
+        {
+          "ja": "心斎橋",
+          "line": "osaka.M",
+          "walkMinutes": 1,
+          "exit": null,
+          "note": "약. 북쪽 입구가 역 바로 앞. 상점가 길이 약 580m, 남쪽 끝은 도톤보리 바로 위"
+        }
+      ],
+      "tip": "아케이드가 도톤보리까지 600m쯤 이어져 걸어서 둘러보기 좋습니다.",
+      "sources": [
+        "https://osaka-info.jp/spot/shinsaibashi-suji-shopping-street/",
+        "https://ja.wikipedia.org/wiki/心斎橋筋"
+      ]
+    },
+    {
+      "id": "osaka.kuromon",
+      "ko": "구로몬 시장",
+      "ja": "黒門市場",
+      "en": "Kuromon Market",
+      "aliases": [
+        "구로몬",
+        "오사카의 부엌",
+        "구로몬시장"
+      ],
+      "category": "먹거리",
+      "lat": 34.6654,
+      "lng": 135.5066,
+      "stations": [
+        {
+          "ja": "日本橋",
+          "line": "osaka.S",
+          "walkMinutes": 2,
+          "exit": "10",
+          "note": "약. 10번 출구 바로 앞"
+        },
+        {
+          "ja": "日本橋",
+          "line": "osaka.K",
+          "walkMinutes": 2,
+          "exit": "10",
+          "note": "약. 10번 출구 바로 앞"
+        }
+      ],
+      "tip": "가게 대부분이 오후 늦게 닫으니 오전에서 이른 오후에 가세요.",
+      "sources": [
+        "https://osaka-info.jp/experience/ja/osaka/spot/208",
+        "https://rurubu.jp/andmore/spot/80028577",
+        "https://ja.wikipedia.org/wiki/黒門市場"
+      ]
+    },
+    {
+      "id": "osaka.osaka-castle",
+      "ko": "오사카성",
+      "ja": "大阪城",
+      "en": "Osaka Castle",
+      "aliases": [
+        "오사카성 천수각",
+        "천수각",
+        "오사카성 공원",
+        "미라이자"
+      ],
+      "category": "명소",
+      "lat": 34.6873,
+      "lng": 135.5262,
+      "stations": [
+        {
+          "ja": "谷町四丁目",
+          "line": "osaka.T",
+          "walkMinutes": 15,
+          "exit": "1-B",
+          "note": "약. 공식 안내: 어느 역에서든 천수각까지 15~20분"
+        },
+        {
+          "ja": "大阪城公園",
+          "line": "osaka.JR-O",
+          "walkMinutes": 20,
+          "exit": null,
+          "note": "약. 공식 안내: 천수각까지 15~20분"
+        },
+        {
+          "ja": "森ノ宮",
+          "line": "osaka.C",
+          "walkMinutes": 20,
+          "exit": "1",
+          "note": "약. 공식 안내: 천수각까지 15~20분"
+        }
+      ],
+      "tip": "공원이 넓어 어느 역에서 내려도 천수각까지 15~20분은 걸어야 합니다.",
+      "sources": [
+        "https://www.osakacastle.net/access",
+        "https://osaka-info.jp/spot/osaka-castle-main-keep/",
+        "https://ja.wikipedia.org/wiki/大阪城"
+      ]
+    },
+    {
+      "id": "osaka.umeda-sky",
+      "ko": "우메다 스카이빌딩 공중정원",
+      "ja": "梅田スカイビル 空中庭園展望台",
+      "en": "Umeda Sky Building Floating Garden Observatory",
+      "aliases": [
+        "공중정원",
+        "우메다 스카이빌딩",
+        "스카이빌딩",
+        "우메다 전망대"
+      ],
+      "category": "전망대",
+      "lat": 34.7053,
+      "lng": 135.4896,
+      "stations": [
+        {
+          "ja": "大阪",
+          "line": "osaka.JR-O",
+          "walkMinutes": 7,
+          "exit": null,
+          "note": "공식 안내 기준. 그랜드 프런트 오사카 옆 지하도로 가면 편함"
+        },
+        {
+          "ja": "梅田",
+          "line": "osaka.M",
+          "walkMinutes": 9,
+          "exit": null,
+          "note": "공식 안내 기준"
+        }
+      ],
+      "tip": "역 북서쪽 신우메다시티 안에 있고, 3층에서 엘리베이터를 갈아탑니다.",
+      "sources": [
+        "https://www.skybldg.co.jp/access/",
+        "https://ja.wikipedia.org/wiki/梅田スカイビル"
+      ]
+    },
+    {
+      "id": "osaka.abeno-harukas",
+      "ko": "아베노 하루카스",
+      "ja": "あべのハルカス",
+      "en": "Abeno Harukas",
+      "aliases": [
+        "하루카스 300",
+        "하루카스",
+        "덴노지 전망대",
+        "긴테쓰 백화점"
+      ],
+      "category": "전망대",
+      "lat": 34.6458,
+      "lng": 135.5139,
+      "stations": [
+        {
+          "ja": "天王寺",
+          "line": "osaka.M",
+          "walkMinutes": 0,
+          "exit": null,
+          "note": "직결. 긴테쓰 오사카아베노바시역(大阪阿部野橋駅)도 직결"
+        },
+        {
+          "ja": "天王寺",
+          "line": "osaka.JR-O",
+          "walkMinutes": 0,
+          "exit": null,
+          "note": "직결"
+        }
+      ],
+      "tip": "전망대(하루카스 300)는 16층에서 표를 사고 올라갑니다.",
+      "sources": [
+        "https://happyell.co.jp/spot/abeno-harukas",
+        "https://ja.wikipedia.org/wiki/あべのハルカス"
+      ]
+    },
+    {
+      "id": "osaka.tsutenkaku",
+      "ko": "쓰텐카쿠·신세카이",
+      "ja": "通天閣・新世界",
+      "en": "Tsutenkaku & Shinsekai",
+      "aliases": [
+        "쓰텐카쿠",
+        "츠텐카쿠",
+        "통천각",
+        "신세카이",
+        "쿠시카츠 거리"
+      ],
+      "category": "명소",
+      "lat": 34.6525,
+      "lng": 135.5063,
+      "stations": [
+        {
+          "ja": "恵美須町",
+          "line": "osaka.K",
+          "walkMinutes": 3,
+          "exit": "3",
+          "note": "공식 안내 기준"
+        },
+        {
+          "ja": "動物園前",
+          "line": "osaka.M",
+          "walkMinutes": 6,
+          "exit": "1",
+          "note": "공식 안내 기준"
+        },
+        {
+          "ja": "新今宮",
+          "line": "osaka.JR-O",
+          "walkMinutes": 6,
+          "exit": "通天閣口",
+          "note": "공식 안내 기준. 동쪽 출구"
+        }
+      ],
+      "tip": "",
+      "sources": [
+        "https://www.tsutenkaku.co.jp/access",
+        "https://ja.wikipedia.org/wiki/通天閣"
+      ]
+    },
+    {
+      "id": "osaka.usj",
+      "ko": "유니버설 스튜디오 재팬",
+      "ja": "ユニバーサル・スタジオ・ジャパン",
+      "en": "Universal Studios Japan",
+      "aliases": [
+        "유니버설",
+        "유니버셜",
+        "유에스제이",
+        "닌텐도 월드",
+        "해리포터"
+      ],
+      "category": "테마파크",
+      "lat": 34.6654,
+      "lng": 135.4323,
+      "stations": [
+        {
+          "ja": "西九条",
+          "line": "osaka.JR-O",
+          "walkMinutes": 40,
+          "exit": null,
+          "note": "약. 걸어갈 거리가 아님. 여기서 JR 유메사키선(JRゆめ咲線, 桜島線)으로 갈아타 ユニバーサルシティ역에서 메인 입구까지 도보 약 5분"
+        }
+      ],
+      "tip": "오사카역에서 유니버설시티행 직통 열차도 있어요. 西九条에서 갈아탈 때 사쿠라지마 방면을 타세요.",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/ユニバーサル・スタジオ・ジャパン",
+        "https://ja.wikipedia.org/wiki/ユニバーサルシティ駅"
+      ]
+    },
+    {
+      "id": "osaka.kaiyukan",
+      "ko": "가이유칸",
+      "ja": "海遊館",
+      "en": "Osaka Aquarium Kaiyukan",
+      "aliases": [
+        "오사카 수족관",
+        "가이유칸 수족관",
+        "덴포잔",
+        "덴포잔 대관람차",
+        "덴포잔 하버빌리지"
+      ],
+      "category": "박물관·미술관",
+      "lat": 34.6545,
+      "lng": 135.4289,
+      "stations": [
+        {
+          "ja": "大阪港",
+          "line": "osaka.C",
+          "walkMinutes": 5,
+          "exit": "1",
+          "note": "약"
+        }
+      ],
+      "tip": "역에서 나와 덴포잔 대관람차를 보고 걸어가면 됩니다.",
+      "sources": [
+        "http://osaka-info.jp/spot/osaka-aquarium-kaiyukan/"
+      ]
+    },
+    {
+      "id": "osaka.namba-parks",
+      "ko": "난바 파크스",
+      "ja": "なんばパークス",
+      "en": "Namba Parks",
+      "aliases": [
+        "난바파크스",
+        "난바 쇼핑",
+        "옥상정원"
+      ],
+      "category": "쇼핑",
+      "lat": 34.6616,
+      "lng": 135.5019,
+      "stations": [
+        {
+          "ja": "なんば",
+          "line": "osaka.M",
+          "walkMinutes": 7,
+          "exit": null,
+          "note": "약. 난카이 난바역(南海難波駅)과 직결"
+        }
+      ],
+      "tip": "",
+      "sources": [
+        "http://nambaparks.com/access"
+      ]
+    },
+    {
+      "id": "osaka.den-den-town",
+      "ko": "덴덴타운",
+      "ja": "でんでんタウン（日本橋電気街）",
+      "en": "Den Den Town",
+      "aliases": [
+        "닛폰바시 전자상가",
+        "오타로드",
+        "오사카 아키하바라",
+        "피규어 거리"
+      ],
+      "category": "쇼핑",
+      "lat": 34.6593,
+      "lng": 135.5058,
+      "stations": [
+        {
+          "ja": "恵美須町",
+          "line": "osaka.K",
+          "walkMinutes": 1,
+          "exit": null,
+          "note": "약. 북쪽 출구(北A·1B) 바로 앞"
+        },
+        {
+          "ja": "日本橋",
+          "line": "osaka.K",
+          "walkMinutes": 5,
+          "exit": "5",
+          "note": "약"
+        }
+      ],
+      "tip": "",
+      "sources": [
+        "https://osaka-info.jp/spot/nippombashi-denden-town/",
+        "https://ja.wikipedia.org/wiki/でんでんタウン"
+      ]
+    },
+    {
+      "id": "osaka.amerikamura",
+      "ko": "아메리카무라",
+      "ja": "アメリカ村",
+      "en": "Amerikamura",
+      "aliases": [
+        "아메무라",
+        "미국촌",
+        "삼각공원"
+      ],
+      "category": "쇼핑",
+      "lat": 34.6722,
+      "lng": 135.4983,
+      "stations": [
+        {
+          "ja": "心斎橋",
+          "line": "osaka.M",
+          "walkMinutes": 3,
+          "exit": null,
+          "note": "약"
+        },
+        {
+          "ja": "四ツ橋",
+          "line": "osaka.Y",
+          "walkMinutes": 3,
+          "exit": null,
+          "note": "약"
+        }
+      ],
+      "tip": "",
+      "sources": [
+        "https://www.knt.co.jp/meito/sp/osaka_americamura/shutoken.html",
+        "https://ja.wikipedia.org/wiki/アメリカ村"
+      ]
+    },
+    {
+      "id": "osaka.tenjinbashisuji",
+      "ko": "덴진바시스지 상점가",
+      "ja": "天神橋筋商店街",
+      "en": "Tenjinbashisuji Shopping Street",
+      "aliases": [
+        "덴진바시스지",
+        "일본에서 가장 긴 상점가",
+        "덴마"
+      ],
+      "category": "쇼핑",
+      "lat": 34.7045,
+      "lng": 135.5118,
+      "stations": [
+        {
+          "ja": "天神橋筋六丁目",
+          "line": "osaka.K",
+          "walkMinutes": 1,
+          "exit": null,
+          "note": "약. 북쪽 끝(6초메)이 역 바로 옆"
+        },
+        {
+          "ja": "天満",
+          "line": "osaka.JR-O",
+          "walkMinutes": 1,
+          "exit": null,
+          "note": "약. 중간(4·5초메) 부근"
+        },
+        {
+          "ja": "南森町",
+          "line": "osaka.T",
+          "walkMinutes": 1,
+          "exit": null,
+          "note": "약. 남쪽 부분(1~3초메)"
+        }
+      ],
+      "tip": "길이가 2.6km라 원하는 구간에 가까운 역에서 내리세요.",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/天神橋筋商店街",
+        "https://osaka-info.jp/experience/ja/osaka/spot/237"
+      ]
+    },
+    {
+      "id": "osaka.nakanoshima-museum",
+      "ko": "나카노시마 미술관",
+      "ja": "大阪中之島美術館",
+      "en": "Nakanoshima Museum of Art, Osaka",
+      "aliases": [
+        "나카노시마",
+        "국립국제미술관",
+        "나카노시마 뮤지엄"
+      ],
+      "category": "박물관·미술관",
+      "lat": 34.6918,
+      "lng": 135.4917,
+      "stations": [
+        {
+          "ja": "肥後橋",
+          "line": "osaka.Y",
+          "walkMinutes": 10,
+          "exit": "4",
+          "note": "공식 안내 기준. 게이한 나카노시마선(京阪中之島線) 渡辺橋역 2번 출구가 더 가까움(도보 약 5분)"
+        },
+        {
+          "ja": "福島",
+          "line": "osaka.JR-O",
+          "walkMinutes": 10,
+          "exit": null,
+          "note": "공식 안내 기준"
+        }
+      ],
+      "tip": "국립국제미술관과 오사카 시립과학관이 바로 옆에 있습니다.",
+      "sources": [
+        "https://nakka-art.jp/access/"
+      ]
+    },
+    {
+      "id": "osaka.science-museum",
+      "ko": "오사카 시립과학관",
+      "ja": "大阪市立科学館",
+      "en": "Osaka Science Museum",
+      "aliases": [
+        "과학관",
+        "플라네타리움",
+        "나카노시마 과학관"
+      ],
+      "category": "박물관·미술관",
+      "lat": 34.6911,
+      "lng": 135.4914,
+      "stations": [
+        {
+          "ja": "肥後橋",
+          "line": "osaka.Y",
+          "walkMinutes": 7,
+          "exit": "3",
+          "note": "약. 서쪽으로 약 500m. 게이한 나카노시마선(京阪中之島線) 渡辺橋역도 가까움"
+        },
+        {
+          "ja": "淀屋橋",
+          "line": "osaka.M",
+          "walkMinutes": 13,
+          "exit": "7",
+          "note": "약. 서쪽으로 약 1km"
+        }
+      ],
+      "tip": "",
+      "sources": [
+        "https://www.sci-museum.jp/access/"
+      ]
+    },
+    {
+      "id": "osaka.shitennoji",
+      "ko": "시텐노지",
+      "ja": "四天王寺",
+      "en": "Shitennoji Temple",
+      "aliases": [
+        "사천왕사",
+        "시텐노지 절"
+      ],
+      "category": "신사·절",
+      "lat": 34.6536,
+      "lng": 135.5164,
+      "stations": [
+        {
+          "ja": "四天王寺前夕陽ケ丘",
+          "line": "osaka.T",
+          "walkMinutes": 5,
+          "exit": null,
+          "note": "공식 안내 기준. 남쪽으로"
+        },
+        {
+          "ja": "天王寺",
+          "line": "osaka.M",
+          "walkMinutes": 12,
+          "exit": null,
+          "note": "공식 안내 기준. 북쪽으로"
+        },
+        {
+          "ja": "天王寺",
+          "line": "osaka.JR-O",
+          "walkMinutes": 12,
+          "exit": null,
+          "note": "공식 안내 기준"
+        }
+      ],
+      "tip": "",
+      "sources": [
+        "https://www.shitennoji.or.jp/access.html"
+      ]
+    },
+    {
+      "id": "osaka.sumiyoshi-taisha",
+      "ko": "스미요시 다이샤",
+      "ja": "住吉大社",
+      "en": "Sumiyoshi Taisha",
+      "aliases": [
+        "스미요시 신사",
+        "스미요시타이샤",
+        "소리하시 다리"
+      ],
+      "category": "신사·절",
+      "lat": 34.6124,
+      "lng": 135.4938,
+      "stations": [
+        {
+          "ja": "玉出",
+          "line": "osaka.Y",
+          "walkMinutes": 17,
+          "exit": null,
+          "note": "약. 출처에 도보 시간 없음, 직선 약 1.3km로 계산. 난카이 본선(南海本線) 住吉大社역 도보 약 3분, 한카이선(阪堺線) 住吉鳥居前 바로 앞이 훨씬 가까움"
+        }
+      ],
+      "tip": "난바에서 난카이 본선 보통 열차로 住吉大社역까지 가는 게 가장 편합니다.",
+      "sources": [
+        "https://www.sumiyoshitaisha.net/access/",
+        "https://ja.wikipedia.org/wiki/住吉大社"
+      ]
+    },
+    {
+      "id": "osaka.hozenji",
+      "ko": "호젠지 요코초",
+      "ja": "法善寺横丁",
+      "en": "Hozenji Yokocho",
+      "aliases": [
+        "호젠지",
+        "미즈카케 부동",
+        "이끼 부동"
+      ],
+      "category": "신사·절",
+      "lat": 34.6681,
+      "lng": 135.5034,
+      "stations": [
+        {
+          "ja": "なんば",
+          "line": "osaka.M",
+          "walkMinutes": 5,
+          "exit": null,
+          "note": "약"
+        }
+      ],
+      "tip": "도톤보리 한 블록 남쪽 좁은 골목이라 지나치기 쉬워요.",
+      "sources": [
+        "https://osaka-info.jp/special/coolosaka/cool-night/1178/",
+        "https://ja.wikipedia.org/wiki/法善寺横丁"
+      ]
+    },
+    {
+      "id": "osaka.namba-yasaka",
+      "ko": "난바 야사카 신사",
+      "ja": "難波八阪神社",
+      "en": "Namba Yasaka Shrine",
+      "aliases": [
+        "사자머리 신사",
+        "사자 신사",
+        "야사카 신사"
+      ],
+      "category": "신사·절",
+      "lat": 34.6612,
+      "lng": 135.4966,
+      "stations": [
+        {
+          "ja": "なんば",
+          "line": "osaka.M",
+          "walkMinutes": 6,
+          "exit": null,
+          "note": "약"
+        },
+        {
+          "ja": "なんば",
+          "line": "osaka.Y",
+          "walkMinutes": 6,
+          "exit": null,
+          "note": "약"
+        }
+      ],
+      "tip": "",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/難波八阪神社"
+      ]
+    },
+    {
+      "id": "osaka.kyocera-dome",
+      "ko": "교세라 돔 오사카",
+      "ja": "京セラドーム大阪",
+      "en": "Kyocera Dome Osaka",
+      "aliases": [
+        "오사카 돔",
+        "교세라돔",
+        "오릭스 버펄로스"
+      ],
+      "category": "전시·공연",
+      "lat": 34.6693,
+      "lng": 135.4761,
+      "stations": [
+        {
+          "ja": "ドーム前千代崎",
+          "line": "osaka.N",
+          "walkMinutes": 1,
+          "exit": null,
+          "note": "바로 앞. 한신 난바선(阪神なんば線) ドーム前역도 바로 앞"
+        },
+        {
+          "ja": "大正",
+          "line": "osaka.JR-O",
+          "walkMinutes": 7,
+          "exit": null,
+          "note": "약"
+        }
+      ],
+      "tip": "공연 끝난 뒤엔 大正역보다 ドーム前千代崎역이 덜 붐비는 편입니다.",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/京セラドーム大阪"
+      ]
+    },
+    {
+      "id": "osaka.hep-five",
+      "ko": "헵파이브",
+      "ja": "HEP FIVE",
+      "en": "HEP FIVE",
+      "aliases": [
+        "헵 파이브",
+        "빨간 관람차",
+        "우메다 관람차"
+      ],
+      "category": "쇼핑",
+      "lat": 34.7039,
+      "lng": 135.5003,
+      "stations": [
+        {
+          "ja": "梅田",
+          "line": "osaka.M",
+          "walkMinutes": 5,
+          "exit": null,
+          "note": "약. 한큐 오사카우메다역(阪急大阪梅田駅)에서는 약 3분"
+        },
+        {
+          "ja": "東梅田",
+          "line": "osaka.T",
+          "walkMinutes": 5,
+          "exit": null,
+          "note": "약"
+        },
+        {
+          "ja": "大阪",
+          "line": "osaka.JR-O",
+          "walkMinutes": 4,
+          "exit": "御堂筋口",
+          "note": "약"
+        }
+      ],
+      "tip": "",
+      "sources": [
+        "https://osaka-info.jp/special/universal/tourism/hep-five/"
+      ]
+    },
+    {
+      "id": "osaka.grand-front",
+      "ko": "그랜드 프런트 오사카",
+      "ja": "グランフロント大阪",
+      "en": "Grand Front Osaka",
+      "aliases": [
+        "그랜드프런트",
+        "우메키타",
+        "포켓몬 센터 오사카"
+      ],
+      "category": "쇼핑",
+      "lat": 34.7058,
+      "lng": 135.4944,
+      "stations": [
+        {
+          "ja": "大阪",
+          "line": "osaka.JR-O",
+          "walkMinutes": 5,
+          "exit": null,
+          "note": "약 5분 이내. JR 오사카역과 바로 이어짐"
+        }
+      ],
+      "tip": "",
+      "sources": [
+        "https://osaka-info.jp/experience/ja/osaka/spot/215",
+        "https://www.wikidata.org/wiki/Q24899387"
+      ]
+    },
+    {
+      "id": "osaka.history-museum",
+      "ko": "오사카 역사박물관",
+      "ja": "大阪歴史博物館",
+      "en": "Osaka Museum of History",
+      "aliases": [
+        "역사박물관",
+        "오사카 역사 박물관"
+      ],
+      "category": "박물관·미술관",
+      "lat": 34.6827,
+      "lng": 135.5208,
+      "stations": [
+        {
+          "ja": "谷町四丁目",
+          "line": "osaka.C",
+          "walkMinutes": 1,
+          "exit": "9",
+          "note": "9번 출구 바로 앞"
+        },
+        {
+          "ja": "谷町四丁目",
+          "line": "osaka.T",
+          "walkMinutes": 4,
+          "exit": "2",
+          "note": "약. 2번 출구에서 동쪽으로 약 300m"
+        }
+      ],
+      "tip": "10층에서 오사카성이 잘 보여 성과 함께 둘러보기 좋습니다.",
+      "sources": [
+        "https://osaka-info.jp/special/universal/tourism/osakahistory/",
+        "https://ja.wikipedia.org/wiki/大阪歴史博物館"
+      ]
+    },
+    {
+      "id": "osaka.kids-plaza",
+      "ko": "키즈 플라자 오사카",
+      "ja": "キッズプラザ大阪",
+      "en": "Kids Plaza Osaka",
+      "aliases": [
+        "키즈플라자",
+        "어린이 박물관"
+      ],
+      "category": "박물관·미술관",
+      "lat": 34.7047,
+      "lng": 135.5103,
+      "stations": [
+        {
+          "ja": "扇町",
+          "line": "osaka.K",
+          "walkMinutes": 1,
+          "exit": "2",
+          "note": "공식: 2번 출구 바로"
+        },
+        {
+          "ja": "天満",
+          "line": "osaka.JR-O",
+          "walkMinutes": 3,
+          "exit": null,
+          "note": "공식 안내 기준. 서쪽으로"
+        }
+      ],
+      "tip": "",
+      "sources": [
+        "https://www.kidsplaza.or.jp/access/",
+        "https://ja.wikipedia.org/wiki/キッズプラザ大阪"
+      ]
+    },
+    {
+      "id": "osaka.tsuruhashi",
+      "ko": "쓰루하시 코리아타운",
+      "ja": "鶴橋・生野コリアタウン",
+      "en": "Tsuruhashi & Ikuno Koreatown",
+      "aliases": [
+        "쓰루하시",
+        "츠루하시",
+        "코리아타운",
+        "이쿠노",
+        "쓰루하시 시장"
+      ],
+      "category": "먹거리",
+      "lat": 34.6609,
+      "lng": 135.5343,
+      "stations": [
+        {
+          "ja": "桃谷",
+          "line": "osaka.JR-O",
+          "walkMinutes": 10,
+          "exit": null,
+          "note": "약. 출처는 10~15분"
+        },
+        {
+          "ja": "鶴橋",
+          "line": "osaka.JR-O",
+          "walkMinutes": 15,
+          "exit": null,
+          "note": "약. 출처는 10~15분. 역 앞이 쓰루하시 시장"
+        },
+        {
+          "ja": "鶴橋",
+          "line": "osaka.S",
+          "walkMinutes": 15,
+          "exit": null,
+          "note": "약. 출처는 10~15분"
+        }
+      ],
+      "tip": "쓰루하시 시장은 역 바로 앞, 코리아타운 거리는 남동쪽으로 10분쯤 더 걸어야 합니다.",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/大阪コリアタウン"
+      ]
+    },
+    {
+      "id": "osaka.nakazakicho",
+      "ko": "나카자키초",
+      "ja": "中崎町",
+      "en": "Nakazakicho",
+      "aliases": [
+        "나카자키쵸",
+        "카페 거리",
+        "우메다 골목"
+      ],
+      "category": "명소",
+      "lat": 34.7072,
+      "lng": 135.5056,
+      "stations": [
+        {
+          "ja": "中崎町",
+          "line": "osaka.T",
+          "walkMinutes": 2,
+          "exit": "2",
+          "note": "약. 동네 안 가게 기준 2번 출구에서 2~3분. 한큐 오사카우메다역에서도 약 10분"
+        }
+      ],
+      "tip": "",
+      "sources": [
+        "https://jp.trip.com/blog/nakazaki/",
+        "https://osaka-info.jp/experience/ja/osaka/spot/203"
+      ]
+    },
+    {
+      "id": "osaka.housing-museum",
+      "ko": "오사카 주택박물관",
+      "ja": "大阪くらしの今昔館",
+      "en": "Osaka Museum of Housing and Living",
+      "aliases": [
+        "주택박물관",
+        "기모노 체험",
+        "쿠라시노 콘자쿠칸"
+      ],
+      "category": "박물관·미술관",
+      "lat": 34.7103,
+      "lng": 135.5117,
+      "stations": [
+        {
+          "ja": "天神橋筋六丁目",
+          "line": "osaka.K",
+          "walkMinutes": 0,
+          "exit": "3",
+          "note": "직결. 3번 출구에서 건물 지하로 이어지고 엘리베이터로 8층"
+        },
+        {
+          "ja": "天神橋筋六丁目",
+          "line": "osaka.T",
+          "walkMinutes": 0,
+          "exit": "3",
+          "note": "직결. 3번 출구에서 건물 지하로 연결"
+        }
+      ],
+      "tip": "",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/大阪くらしの今昔館",
+        "https://www.wikidata.org/wiki/Q11439926"
+      ]
+    },
+    {
+      "id": "osaka.tennoji-zoo",
+      "ko": "덴노지 동물원",
+      "ja": "天王寺動物園",
+      "en": "Tennoji Zoo",
+      "aliases": [
+        "덴노지 공원",
+        "텐시바"
+      ],
+      "category": "공원·자연",
+      "lat": 34.6511,
+      "lng": 135.5083,
+      "stations": [
+        {
+          "ja": "動物園前",
+          "line": "osaka.M",
+          "walkMinutes": 5,
+          "exit": null,
+          "note": "약. 신세카이 게이트"
+        },
+        {
+          "ja": "天王寺",
+          "line": "osaka.M",
+          "walkMinutes": 10,
+          "exit": null,
+          "note": "약. 덴시바 게이트"
+        }
+      ],
+      "tip": "",
+      "sources": [
+        "https://osaka-info.jp/experience/ja/osaka/spot/221"
+      ]
+    },
+    {
+      "id": "osaka.nakanoshima-park",
+      "ko": "나카노시마 공원",
+      "ja": "中之島公園",
+      "en": "Nakanoshima Park",
+      "aliases": [
+        "장미 정원",
+        "오사카 중앙공회당",
+        "나카노시마"
+      ],
+      "category": "공원·자연",
+      "lat": 34.6927,
+      "lng": 135.5065,
+      "stations": [
+        {
+          "ja": "北浜",
+          "line": "osaka.K",
+          "walkMinutes": 5,
+          "exit": null,
+          "note": "약. 게이한 나카노시마선(京阪中之島線) なにわ橋역에서 공원 동쪽 끝까지 약 3분"
+        },
+        {
+          "ja": "淀屋橋",
+          "line": "osaka.M",
+          "walkMinutes": 5,
+          "exit": null,
+          "note": "약"
+        }
+      ],
+      "tip": "",
+      "sources": [
+        "https://osaka-info.jp/experience/ja/osaka/spot/244",
+        "https://happyell.co.jp/spot/nakanoshima-park"
+      ]
+    },
+    {
+      "id": "osaka.tenmangu",
+      "ko": "오사카 덴만구",
+      "ja": "大阪天満宮",
+      "en": "Osaka Tenmangu Shrine",
+      "aliases": [
+        "덴만구",
+        "텐진마츠리",
+        "천만궁"
+      ],
+      "category": "신사·절",
+      "lat": 34.6957,
+      "lng": 135.5127,
+      "stations": [
+        {
+          "ja": "南森町",
+          "line": "osaka.T",
+          "walkMinutes": 5,
+          "exit": "4",
+          "note": "약. 4번 출구에서 상점가를 따라 남쪽. JR 도자이선(JR東西線) 大阪天満宮역 7번 출구도 약 5분"
+        },
+        {
+          "ja": "南森町",
+          "line": "osaka.K",
+          "walkMinutes": 5,
+          "exit": "4",
+          "note": "약"
+        }
+      ],
+      "tip": "",
+      "sources": [
+        "https://osakatemmangu.or.jp/access",
+        "https://osaka-info.jp/experience/ja/osaka/spot/261",
+        "https://ja.wikipedia.org/wiki/大阪天満宮"
+      ]
+    }
+  ]
+}

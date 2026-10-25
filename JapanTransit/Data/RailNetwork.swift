@@ -5,8 +5,9 @@ import SwiftUI
 //
 // One JSON file per line, collected from Japanese/Korean Wikipedia with the
 // sources listed in each file. The app bundles the folder as-is ("lines/").
-// Stations are identified across lines by their Japanese name (what's on the
-// sign): 新宿 on Marunouchi, Shinjuku and Oedo lines is one place to transfer at.
+// Stations are identified across lines by region + Japanese name (what's on the
+// sign): 新宿 on Marunouchi, Shinjuku and Oedo lines is one place to transfer at,
+// while 本町 in Osaka never joins a station of the same name in another city.
 
 struct RailStation: Codable, Hashable {
     let code: String
@@ -28,8 +29,23 @@ struct RailService: Codable, Hashable {
     let note: String?
     /// Reserved-seat trains (TH ライナー, ロマンスカー): a regular ticket isn't enough.
     let paid: Bool?
+    /// Stops this type passes on Saturdays, Sundays and holidays (中央線快速: 高円寺 …).
+    let holidaySkips: [String]?
 
     var isPaid: Bool { paid ?? false }
+
+    /// Where it stops on `date` (Japan time). National holidays aren't known to
+    /// the app, so they count as weekdays — the advice text says so.
+    func stops(on date: Date = .now) -> [String] {
+        guard let skips = holidaySkips, !skips.isEmpty, Self.isWeekendInJapan(date) else { return stops }
+        return stops.filter { !skips.contains($0) }
+    }
+
+    static func isWeekendInJapan(_ date: Date) -> Bool {
+        var c = Calendar(identifier: .gregorian)
+        c.timeZone = TimeZone(identifier: "Asia/Tokyo") ?? .current
+        return c.isDateInWeekend(date)
+    }
 }
 
 struct RailLine: Codable, Identifiable, Hashable {
@@ -46,6 +62,8 @@ struct RailLine: Codable, Identifiable, Hashable {
     }
 
     let id: String
+    /// City network (tokyo, osaka …). Routes never cross regions. Old Tokyo files omit it.
+    let region: String?
     let `operator`: String
     let operatorKo: String
     let nameJa: String
@@ -82,10 +100,17 @@ struct RailLine: Codable, Identifiable, Hashable {
 
     /// Train types that skip stations — the ones a rider has to look out for.
     var skippingServices: [RailService] {
-        (services ?? []).filter { !$0.signWords.isEmpty && Set($0.stops).count < stations.count }
+        (services ?? []).filter {
+            !$0.signWords.isEmpty && (Set($0.stops(on: .now)).count < stations.count || !($0.holidaySkips ?? []).isEmpty)
+        }
     }
 
     var swiftColor: Color { Color(hex: color) }
+
+    var regionID: String { region ?? Region.tokyo.id }
+
+    /// The place a station of this line belongs to.
+    func placeID(_ station: RailStation) -> String { RailNetwork.key(station.ja, region: regionID) }
 
     /// Badge letter(s) — the station-code prefix (G, M, JY…).
     var badge: String {
@@ -105,7 +130,8 @@ struct Place: Identifiable, Hashable {
         let code: String
     }
 
-    var id: String { RailNetwork.key(ja) }
+    var id: String { RailNetwork.key(ja, region: region) }
+    let region: String
     let ja: String
     let ko: String
     let en: String
@@ -135,6 +161,7 @@ final class RailNetwork {
     private let separateSameName: Set<String>
 
     struct WalkGroup {
+        let region: String
         let stations: [String]
         let outside: Bool
     }
@@ -144,7 +171,7 @@ final class RailNetwork {
         var links: [String: [String]] = [:]
         var outside = Set<String>()
         for group in walkGroups {
-            let names = group.stations.map(Self.key)
+            let names = group.stations.map { Self.key($0, region: group.region) }
             for name in names {
                 links[name, default: []].append(contentsOf: names.filter { $0 != name })
                 if group.outside {
@@ -154,23 +181,24 @@ final class RailNetwork {
         }
         walkLinks = links
         outsidePairs = outside
-        self.separateSameName = Set(separateSameName.map(Self.key))
+        self.separateSameName = Set(separateSameName)
         linesByID = Dictionary(lines.map { ($0.id, $0) }, uniquingKeysWith: { a, _ in a })
 
         var stops: [String: [Place.Stop]] = [:]
-        var first: [String: RailStation] = [:]
+        var first: [String: (RailStation, String)] = [:]
         var coords: [String: [(Double, Double)]] = [:]
         for line in lines {
             for (i, s) in line.stations.enumerated() {
-                let k = Self.key(s.ja)
+                let k = line.placeID(s)
                 stops[k, default: []].append(.init(lineID: line.id, index: i, code: s.code))
-                if first[k] == nil { first[k] = s }
+                if first[k] == nil { first[k] = (s, line.regionID) }
                 coords[k, default: []].append((s.lat, s.lng))
             }
         }
-        places = first.map { k, s in
+        places = first.map { k, entry in
+            let (s, region) = entry
             let c = coords[k] ?? [(s.lat, s.lng)]
-            return Place(ja: s.ja, ko: s.ko, en: s.en, kana: s.kana, stops: stops[k] ?? [],
+            return Place(region: region, ja: s.ja, ko: s.ko, en: s.en, kana: s.kana, stops: stops[k] ?? [],
                          lat: c.map(\.0).reduce(0, +) / Double(c.count),
                          lng: c.map(\.1).reduce(0, +) / Double(c.count))
         }
@@ -178,9 +206,9 @@ final class RailNetwork {
         placesByJa = Dictionary(places.map { ($0.id, $0) }, uniquingKeysWith: { a, _ in a })
     }
 
-    /// One spelling per station: 市ヶ谷 and 市ケ谷 are the same place.
-    static func key(_ ja: String) -> String {
-        ja.replacingOccurrences(of: "ヶ", with: "ケ").replacingOccurrences(of: "ヵ", with: "カ")
+    /// A place id: region + one spelling per name ("tokyo/市ケ谷" for 市ヶ谷 and 市ケ谷).
+    static func key(_ ja: String, region: String) -> String {
+        region + "/" + ja.replacingOccurrences(of: "ヶ", with: "ケ").replacingOccurrences(of: "ヵ", with: "カ")
     }
 
     private convenience init() {
@@ -189,30 +217,30 @@ final class RailNetwork {
                   separateSameName: transfers.separateSameName)
     }
 
-    /// data/transfers.json: {"groups": [{"stations": [...], "outside": bool, "source": "..."}],
-    ///                       "separateSameName": [{"station": "蔵前"}]}
+    /// data/transfers.json: {"groups": [{"region": "tokyo", "stations": [...], "outside": bool, "source": "..."}],
+    ///                       "separateSameName": [{"region": "tokyo", "station": "蔵前"}]}
+    /// `region` defaults to tokyo. Returns separate-same-name stations as place ids.
     static func loadBundledTransfers(bundle: Bundle = .main) -> (groups: [WalkGroup], separateSameName: [String]) {
         struct File: Decodable {
-            struct Group: Decodable { let stations: [String]; let outside: Bool? }
-            struct Separate: Decodable { let station: String }
+            struct Group: Decodable { let region: String?; let stations: [String]; let outside: Bool? }
+            struct Separate: Decodable { let region: String?; let station: String }
             let groups: [Group]
             let separateSameName: [Separate]?
         }
         guard let url = bundle.url(forResource: "transfers", withExtension: "json"),
               let data = try? Data(contentsOf: url),
               let file = try? JSONDecoder().decode(File.self, from: data) else { return ([], []) }
-        return (file.groups.map { WalkGroup(stations: $0.stations, outside: $0.outside ?? false) },
-                (file.separateSameName ?? []).map(\.station))
+        return (file.groups.map { WalkGroup(region: $0.region ?? Region.tokyo.id, stations: $0.stations, outside: $0.outside ?? false) },
+                (file.separateSameName ?? []).map { key($0.station, region: $0.region ?? Region.tokyo.id) })
     }
 
     private static func pair(_ a: String, _ b: String) -> String {
         a < b ? "\(a)|\(b)" : "\(b)|\(a)"
     }
 
-    /// Changing from `a` to `b` means leaving the gates and walking on the street.
+    /// Changing from place `a` to place `b` means leaving the gates and walking on the street.
     func isOutsideTransfer(from a: String, to b: String) -> Bool {
-        let ka = Self.key(a), kb = Self.key(b)
-        return ka == kb ? separateSameName.contains(ka) : outsidePairs.contains(Self.pair(ka, kb))
+        a == b ? separateSameName.contains(a) : outsidePairs.contains(Self.pair(a, b))
     }
 
     /// Lines in the order riders expect: Tokyo Metro, Toei, JR, others.
@@ -223,7 +251,7 @@ final class RailNetwork {
             guard let data = try? Data(contentsOf: url) else { return nil }
             return try? decoder.decode(RailLine.self, from: data)
         }
-        let operatorOrder = ["東京メトロ", "都営地下鉄", "JR東日本"]
+        let operatorOrder = ["東京メトロ", "都営地下鉄", "JR東日本", "Osaka Metro", "JR西日本"]
         return lines.sorted { a, b in
             let oa = operatorOrder.firstIndex(of: a.operator) ?? operatorOrder.count
             let ob = operatorOrder.firstIndex(of: b.operator) ?? operatorOrder.count
@@ -233,20 +261,57 @@ final class RailNetwork {
 
     func line(_ id: String) -> RailLine? { linesByID[id] }
 
-    func place(_ ja: String) -> Place? { placesByJa[Self.key(ja)] }
-
-    /// Station names you can transfer to from `ja` without leaving: itself plus walk links.
-    func transferNames(at ja: String) -> [String] {
-        [Self.key(ja)] + (walkLinks[Self.key(ja)] ?? [])
+    /// A place by id ("tokyo/新宿"). A bare name is read as Tokyo — what earlier
+    /// versions saved before there were other cities.
+    func place(_ id: String) -> Place? {
+        if let p = placesByJa[id] { return p }
+        return id.contains("/") ? nil : placesByJa[Self.key(id, region: Region.tokyo.id)]
     }
 
-    /// Every line you can change to at `ja`, walk links included.
-    func transferLines(at ja: String) -> [RailLine] {
-        transferNames(at: ja)
+    func place(ja: String, region: String) -> Place? { placesByJa[Self.key(ja, region: region)] }
+
+    /// Places you can transfer to from `id` without leaving: itself plus walk links.
+    func transferNames(at id: String) -> [String] {
+        [id] + (walkLinks[id] ?? [])
+    }
+
+    /// Every line you can change to at place `id`, walk links included.
+    func transferLines(at id: String) -> [RailLine] {
+        transferNames(at: id)
             .flatMap { place($0)?.stops ?? [] }
             .compactMap { line($0.lineID) }
             .uniqued()
     }
+
+    /// Regions that have lines, in display order.
+    var regions: [Region] {
+        let present = Set(lines.map(\.regionID))
+        return Region.all.filter { present.contains($0.id) }
+    }
+}
+
+// MARK: - Regions
+
+/// A city network. Lines in one region connect; regions never do.
+struct Region: Identifiable, Hashable {
+    let id: String
+    let ko: String
+    let ja: String
+
+    static let tokyo = Region(id: "tokyo", ko: "도쿄", ja: "東京")
+    static let all: [Region] = [
+        tokyo,
+        Region(id: "yokohama", ko: "요코하마", ja: "横浜"),
+        Region(id: "osaka", ko: "오사카", ja: "大阪"),
+        Region(id: "kyoto", ko: "교토", ja: "京都"),
+        Region(id: "kobe", ko: "고베", ja: "神戸"),
+        Region(id: "nagoya", ko: "나고야", ja: "名古屋"),
+        Region(id: "fukuoka", ko: "후쿠오카", ja: "福岡"),
+        Region(id: "sapporo", ko: "삿포로", ja: "札幌"),
+        Region(id: "sendai", ko: "센다이", ja: "仙台"),
+    ]
+
+    static func named(_ id: String) -> Region? { all.first { $0.id == id } }
 }
 
 // MARK: - Search
@@ -254,13 +319,16 @@ final class RailNetwork {
 extension RailNetwork {
     /// Matches Korean (신주쿠), Japanese (新宿, しんじゅく, シンジュク), English
     /// (Shinjuku) and station codes (M08, m8). Prefix matches first.
-    func search(_ query: String) -> [Place] {
+    /// `region` limits the search to one city; `preferring` keeps every city but
+    /// lists that one first (M08 is 新宿 in Tokyo and 名城公園 in Nagoya).
+    func search(_ query: String, region: String? = nil, preferring: String? = nil) -> [Place] {
+        let pool = region.map { r in places.filter { $0.region == r } } ?? places
         let q = Self.searchKey(query)
-        guard !q.isEmpty else { return places }
+        guard !q.isEmpty else { return pool }
         let codeQuery = Self.codeKey(query)
         var prefix: [Place] = []
         var contains: [Place] = []
-        for p in places {
+        for p in pool {
             let keys = [Self.searchKey(p.ko), Self.searchKey(p.ja), Self.searchKey(p.kana), Self.searchKey(p.en)]
             if keys.contains(where: { $0.hasPrefix(q) }) || p.codes.contains(where: { Self.codeKey($0) == codeQuery }) {
                 prefix.append(p)
@@ -268,7 +336,11 @@ extension RailNetwork {
                 contains.append(p)
             }
         }
-        return prefix + contains
+        guard let preferring else { return prefix + contains }
+        func ordered(_ list: [Place]) -> [Place] {
+            list.filter { $0.region == preferring } + list.filter { $0.region != preferring }
+        }
+        return ordered(prefix) + ordered(contains)
     }
 
     /// Lowercased, no spaces/hyphens/dots, katakana folded to hiragana.

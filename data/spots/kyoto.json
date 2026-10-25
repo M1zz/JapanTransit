@@ -1,0 +1,928 @@
+{
+  "region": "kyoto",
+  "spots": [
+    {
+      "id": "kyoto.fushimi-inari",
+      "ko": "후시미이나리 신사",
+      "ja": "伏見稲荷大社",
+      "en": "Fushimi Inari Taisha",
+      "aliases": [
+        "후시미이나리",
+        "후시미이나리 대사",
+        "센본도리이",
+        "천 개의 도리이",
+        "여우 신사"
+      ],
+      "category": "신사·절",
+      "lat": 34.9669,
+      "lng": 135.7731,
+      "stations": [
+        {
+          "ja": "十条",
+          "line": "kyoto.K",
+          "walkMinutes": 22,
+          "exit": null,
+          "note": "약. 출처에 도보 시간이 없어 좌표 직선거리로 어림. 걷기엔 멀다(20분 넘음). JR奈良線 稲荷駅 바로 앞, 京阪本線 伏見稲荷駅 徒歩約5分(공식)"
+        }
+      ],
+      "tip": "교토역에서 JR 나라선으로 두 정거장, 이나리역에서 내리면 바로 정문입니다.",
+      "sources": [
+        "https://inari.jp/access/",
+        "https://ja.wikipedia.org/wiki/伏見稲荷大社"
+      ]
+    },
+    {
+      "id": "kyoto.kiyomizu-dera",
+      "ko": "기요미즈데라",
+      "ja": "清水寺",
+      "en": "Kiyomizu-dera",
+      "aliases": [
+        "기요미즈",
+        "청수사",
+        "기요미즈 무대",
+        "기요미즈자카"
+      ],
+      "category": "신사·절",
+      "lat": 34.994831,
+      "lng": 135.785003,
+      "stations": [
+        {
+          "ja": "東山",
+          "line": "kyoto.T",
+          "walkMinutes": 28,
+          "exit": null,
+          "note": "약. 출처에 도보 시간이 없어 좌표 직선거리로 어림. 걷기엔 멀다(20분 넘음). 京阪本線 清水五条駅 徒歩約25分, 市バス 五条坂·清水道 徒歩10分(공식)"
+        }
+      ],
+      "tip": "교토역에서 시버스 206번(또는 100번)으로 고조자카·기요미즈미치에서 내려 언덕을 10분 오릅니다.",
+      "sources": [
+        "https://www.kiyomizudera.or.jp/access.php",
+        "https://ja.wikipedia.org/wiki/清水寺"
+      ]
+    },
+    {
+      "id": "kyoto.kinkakuji",
+      "ko": "금각사",
+      "ja": "金閣寺",
+      "en": "Kinkaku-ji",
+      "aliases": [
+        "킨카쿠지",
+        "금각",
+        "로쿠온지",
+        "녹원사",
+        "황금 절"
+      ],
+      "category": "신사·절",
+      "lat": 35.0394,
+      "lng": 135.7294,
+      "stations": [
+        {
+          "ja": "北大路",
+          "line": "kyoto.K",
+          "walkMinutes": 44,
+          "exit": null,
+          "note": "약. 출처에 도보 시간이 없어 좌표 직선거리로 어림. 걸어가기엔 멀다(20분 넘음). 역 위 北大路バスターミナル에서 市バス 102·204·205·M1로 金閣寺道 하차, 徒歩約2分"
+        }
+      ],
+      "tip": "지하철역에서 바로 갈 수 없습니다. 기타오지역 버스터미널에서 버스로 갈아타세요. 은각사(긴카쿠지)와 헷갈리지 마세요.",
+      "sources": [
+        "https://www.shokoku-ji.jp/kinkakuji/access/",
+        "https://ja.wikipedia.org/wiki/鹿苑寺",
+        "https://ja.wikipedia.org/wiki/北大路バスターミナル"
+      ]
+    },
+    {
+      "id": "kyoto.ginkakuji",
+      "ko": "은각사",
+      "ja": "銀閣寺",
+      "en": "Ginkaku-ji",
+      "aliases": [
+        "긴카쿠지",
+        "지쇼지",
+        "자조사",
+        "은각"
+      ],
+      "category": "신사·절",
+      "lat": 35.0269,
+      "lng": 135.7983,
+      "stations": [
+        {
+          "ja": "蹴上",
+          "line": "kyoto.T",
+          "walkMinutes": 36,
+          "exit": null,
+          "note": "약. 출처에 도보 시간이 없어 좌표 직선거리로 어림. 걷기엔 멀다(20분 넘음). 난젠지와 철학의 길을 따라 걷는 경로. 市バス 銀閣寺道 徒歩約10分, 銀閣寺前 徒歩約6分"
+        }
+      ],
+      "tip": "교토역에서는 시버스 5번으로 긴카쿠지미치, 급행 100번으로 긴카쿠지마에에서 내립니다. 금각사(킨카쿠지)와 다른 절입니다.",
+      "sources": [
+        "https://www.shokoku-ji.jp/ginkakuji/access/",
+        "https://ja.wikipedia.org/wiki/慈照寺",
+        "https://ja.wikipedia.org/wiki/平安神宮"
+      ]
+    },
+    {
+      "id": "kyoto.philosophers-path",
+      "ko": "철학의 길",
+      "ja": "哲学の道",
+      "en": "Philosopher's Path",
+      "aliases": [
+        "테츠가쿠노미치",
+        "철학자의 길",
+        "벚꽃길"
+      ],
+      "category": "공원·자연",
+      "lat": 35.0251,
+      "lng": 135.7962,
+      "stations": [
+        {
+          "ja": "蹴上",
+          "line": "kyoto.T",
+          "walkMinutes": 32,
+          "exit": null,
+          "note": "약. 출처에 도보 시간이 없어 좌표 직선거리로 어림(길 중간 지점 기준). 걷기엔 멀다(20분 넘음). 남쪽 끝 若王子橋는 난젠지를 지나 더 가깝다"
+        },
+        {
+          "ja": "東山",
+          "line": "kyoto.T",
+          "walkMinutes": 37,
+          "exit": null,
+          "note": "약. 출처에 도보 시간이 없어 좌표 직선거리로 어림(길 중간 지점 기준). 걷기엔 멀다(20분 넘음)"
+        }
+      ],
+      "tip": "남쪽 끝은 냐쿠오지바시(구마노냐쿠오지 신사 옆), 북쪽 끝은 은각사 서쪽 긴카쿠지바시입니다. 약 1.5km라 한쪽에서 내려 반대쪽으로 걸으면 됩니다.",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/哲学の道"
+      ]
+    },
+    {
+      "id": "kyoto.arashiyama",
+      "ko": "아라시야마",
+      "ja": "嵐山",
+      "en": "Arashiyama",
+      "aliases": [
+        "도게쓰교",
+        "도게츠쿄",
+        "아라시야마 도월교",
+        "사가노"
+      ],
+      "category": "공원·자연",
+      "lat": 35.0128,
+      "lng": 135.6777,
+      "stations": [
+        {
+          "ja": "太秦天神川",
+          "line": "kyoto.T",
+          "walkMinutes": 56,
+          "exit": null,
+          "note": "약. 출처에 도보 시간이 없어 좌표 직선거리로 어림(도게쓰교 기준). 걸어가기엔 멀다(20분 넘음). 같은 곳의 京福嵐山本線(嵐電) 嵐電天神川駅에서 종점 嵐山駅까지. JR嵯峨野線 嵯峨嵐山駅, 阪急嵐山線 嵐山駅도 가깝다"
+        }
+      ],
+      "tip": "교토역에서는 JR 사가노선 사가아라시야마역, 시내에서는 지하철 우즈마사텐진가와역에서 란덴으로 갈아타 아라시야마역이 편합니다.",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/渡月橋",
+        "https://ja.wikipedia.org/wiki/嵐山"
+      ]
+    },
+    {
+      "id": "kyoto.arashiyama-bamboo",
+      "ko": "아라시야마 대나무숲",
+      "ja": "竹林の小径",
+      "en": "Arashiyama Bamboo Grove",
+      "aliases": [
+        "대나무숲",
+        "치쿠린",
+        "대나무 숲길",
+        "사가노 대나무숲"
+      ],
+      "category": "공원·자연",
+      "lat": 35.0168,
+      "lng": 135.6716,
+      "stations": [
+        {
+          "ja": "太秦天神川",
+          "line": "kyoto.T",
+          "walkMinutes": 59,
+          "exit": null,
+          "note": "약. 출처에 도보 시간이 없어 좌표 직선거리로 어림. 걸어가기엔 멀다(20분 넘음). 嵐電天神川駅에서 京福嵐山本線으로 嵐山駅 徒歩約10分. JR嵯峨野線 嵯峨嵐山駅 徒歩約13分"
+        }
+      ],
+      "tip": "란덴 아라시야마역에서 덴류지 북문 쪽으로 걸어가면 대나무숲이 나옵니다. 아침 일찍 가야 덜 붐빕니다.",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/嵐山竹林の小径",
+        "https://ja.wikipedia.org/wiki/嵐山"
+      ]
+    },
+    {
+      "id": "kyoto.tenryuji",
+      "ko": "덴류지",
+      "ja": "天龍寺",
+      "en": "Tenryu-ji",
+      "aliases": [
+        "천룡사",
+        "텐류지",
+        "아라시야마 정원"
+      ],
+      "category": "신사·절",
+      "lat": 35.015964,
+      "lng": 135.673772,
+      "stations": [
+        {
+          "ja": "太秦天神川",
+          "line": "kyoto.T",
+          "walkMinutes": 63,
+          "exit": null,
+          "note": "약. 출처에 도보 시간이 없어 좌표 직선거리로 어림. 걸어가기엔 멀다(20분 넘음). 嵐電天神川駅에서 京福嵐山本線으로 嵐山駅 徒歩約6分. JR嵯峨野線 嵯峨嵐山駅 徒歩約13分, 阪急嵐山線 嵐山駅 徒歩約15分"
+        }
+      ],
+      "tip": "란덴 아라시야마역에서 걸어서 약 6분입니다. 버스는 아라시야마 텐류지마에 정류장이 바로 앞입니다.",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/天龍寺"
+      ]
+    },
+    {
+      "id": "kyoto.gion",
+      "ko": "기온",
+      "ja": "祇園",
+      "en": "Gion",
+      "aliases": [
+        "하나미코지",
+        "기온 거리",
+        "게이샤 거리",
+        "기온시조",
+        "시라카와"
+      ],
+      "category": "명소",
+      "lat": 35.0035,
+      "lng": 135.7751,
+      "stations": [
+        {
+          "ja": "三条京阪",
+          "line": "kyoto.T",
+          "walkMinutes": 11,
+          "exit": null,
+          "note": "약. 출처에 도보 시간이 없어 좌표 직선거리로 어림. 가장 가까운 역은 京阪本線 祇園四条駅"
+        },
+        {
+          "ja": "東山",
+          "line": "kyoto.T",
+          "walkMinutes": 13,
+          "exit": null,
+          "note": "약. 출처에 도보 시간이 없어 좌표 직선거리로 어림"
+        }
+      ],
+      "tip": "가장 가까운 역은 게이한 기온시조역입니다. 지하철 시조역(가라스마선)과 이름이 비슷하니 주의하세요.",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/祇園",
+        "https://ja.wikipedia.org/wiki/花見小路通"
+      ]
+    },
+    {
+      "id": "kyoto.yasaka-shrine",
+      "ko": "야사카 신사",
+      "ja": "八坂神社",
+      "en": "Yasaka Shrine",
+      "aliases": [
+        "야사카진자",
+        "기온 신사",
+        "기온마쓰리"
+      ],
+      "category": "신사·절",
+      "lat": 35.0036,
+      "lng": 135.7786,
+      "stations": [
+        {
+          "ja": "東山",
+          "line": "kyoto.T",
+          "walkMinutes": 11,
+          "exit": null,
+          "note": "약. 출처에 도보 시간이 없어 좌표 직선거리로 어림. 京阪本線 祇園四条駅 徒歩約5分, 阪急京都線 京都河原町駅 徒歩約8分(공식)"
+        },
+        {
+          "ja": "三条京阪",
+          "line": "kyoto.T",
+          "walkMinutes": 13,
+          "exit": null,
+          "note": "약. 출처에 도보 시간이 없어 좌표 직선거리로 어림"
+        }
+      ],
+      "tip": "시조도리 동쪽 끝의 붉은 문이 야사카 신사입니다. 기요미즈데라까지 걸어서 이어 가기 좋습니다.",
+      "sources": [
+        "https://www.yasaka-jinja.or.jp/about/access/",
+        "https://ja.wikipedia.org/wiki/八坂神社"
+      ]
+    },
+    {
+      "id": "kyoto.nishiki-market",
+      "ko": "니시키 시장",
+      "ja": "錦市場",
+      "en": "Nishiki Market",
+      "aliases": [
+        "니시키 시장",
+        "교토의 부엌",
+        "니시키이치바"
+      ],
+      "category": "먹거리",
+      "lat": 35.005024,
+      "lng": 135.76557,
+      "stations": [
+        {
+          "ja": "四条",
+          "line": "kyoto.K",
+          "walkMinutes": 3,
+          "exit": null,
+          "note": "공식 약 3분. 阪急京都線 烏丸駅 徒歩約3分, 京都河原町駅 徒歩約4分"
+        },
+        {
+          "ja": "京都市役所前",
+          "line": "kyoto.T",
+          "walkMinutes": 12,
+          "exit": null,
+          "note": "약. 출처에 도보 시간이 없어 좌표 직선거리로 어림"
+        }
+      ],
+      "tip": "시장 서쪽 입구(다카쿠라)는 시조역, 동쪽 입구(데라마치)는 가와라마치에서 가깝습니다.",
+      "sources": [
+        "https://www.kyoto-nishiki.or.jp/access/",
+        "https://ja.wikipedia.org/wiki/錦市場",
+        "https://nominatim.openstreetmap.org/search?q=錦市場&countrycodes=jp&format=json&limit=10"
+      ]
+    },
+    {
+      "id": "kyoto.nijo-castle",
+      "ko": "니조성",
+      "ja": "二条城",
+      "en": "Nijo Castle",
+      "aliases": [
+        "니조조",
+        "니조 성"
+      ],
+      "category": "명소",
+      "lat": 35.0142,
+      "lng": 135.7475,
+      "stations": [
+        {
+          "ja": "二条城前",
+          "line": "kyoto.T",
+          "walkMinutes": 1,
+          "exit": null,
+          "note": "약 1분"
+        },
+        {
+          "ja": "二条",
+          "line": "kyoto.T",
+          "walkMinutes": 10,
+          "exit": null,
+          "note": "약. 출처에 도보 시간이 없어 좌표 직선거리로 어림. JR嵯峨野線 二条駅도 같은 곳"
+        }
+      ],
+      "tip": "비슷한 이름의 니조역보다 니조조마에역이 정문에 훨씬 가깝습니다.",
+      "sources": [
+        "https://nijo-jocastle.city.kyoto.lg.jp/access/",
+        "https://ja.wikipedia.org/wiki/二条城",
+        "https://kitanotenmangu.or.jp/access/"
+      ]
+    },
+    {
+      "id": "kyoto.kyoto-imperial-palace",
+      "ko": "교토 고쇼",
+      "ja": "京都御所",
+      "en": "Kyoto Imperial Palace",
+      "aliases": [
+        "교토 어소",
+        "교토 황궁",
+        "교토 교엔",
+        "고쇼"
+      ],
+      "category": "명소",
+      "lat": 35.0253,
+      "lng": 135.7622,
+      "stations": [
+        {
+          "ja": "今出川",
+          "line": "kyoto.K",
+          "walkMinutes": 8,
+          "exit": null,
+          "note": "공개 입구 세이쇼몬(清所門)까지 乾御門을 지나 남쪽으로 약 8분"
+        },
+        {
+          "ja": "丸太町",
+          "line": "kyoto.K",
+          "walkMinutes": 16,
+          "exit": null,
+          "note": "약. 출처에 도보 시간이 없어 좌표 직선거리로 어림. 교엔이 넓어 공개 입구까지는 더 걸린다"
+        }
+      ],
+      "tip": "일반 공개 입구는 서쪽 세이쇼몬입니다. 교엔(공원)은 넓어서 남쪽 마루타마치역에서 걸으면 오래 걸립니다.",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/京都御所"
+      ]
+    },
+    {
+      "id": "kyoto.sanjusangendo",
+      "ko": "산주산겐도",
+      "ja": "三十三間堂",
+      "en": "Sanjusangen-do",
+      "aliases": [
+        "삼십삼간당",
+        "렌게오인",
+        "천 개의 관음상",
+        "천수관음"
+      ],
+      "category": "신사·절",
+      "lat": 34.9879,
+      "lng": 135.7717,
+      "stations": [
+        {
+          "ja": "京都",
+          "line": "kyoto.K",
+          "walkMinutes": 18,
+          "exit": null,
+          "note": "약. 출처에 도보 시간이 없어 좌표 직선거리로 어림. 京阪本線 七条駅 徒歩約5分이 더 가깝다"
+        }
+      ],
+      "tip": "교토역에서는 시버스 206·208번으로 하쿠부쓰칸 산주산겐도마에에서 내리면 바로입니다.",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/三十三間堂"
+      ]
+    },
+    {
+      "id": "kyoto.toji",
+      "ko": "도지",
+      "ja": "東寺",
+      "en": "To-ji",
+      "aliases": [
+        "동사",
+        "교오고코쿠지",
+        "오층탑",
+        "도지 오층탑"
+      ],
+      "category": "신사·절",
+      "lat": 34.9804,
+      "lng": 135.7477,
+      "stations": [
+        {
+          "ja": "九条",
+          "line": "kyoto.K",
+          "walkMinutes": 18,
+          "exit": null,
+          "note": "약. 출처에 도보 시간이 없어 좌표 직선거리로 어림. 近鉄京都線 東寺駅 徒歩約10分이 더 가깝다"
+        },
+        {
+          "ja": "京都",
+          "line": "kyoto.K",
+          "walkMinutes": 15,
+          "exit": null,
+          "note": "공식: JR京都駅 八条口에서 약 15분(약 1.1km)"
+        }
+      ],
+      "tip": "교토역 하치조 출구(남쪽)에서 서남쪽으로 걸어가면 오층탑이 보입니다.",
+      "sources": [
+        "https://toji.or.jp/access/",
+        "https://ja.wikipedia.org/wiki/東寺"
+      ]
+    },
+    {
+      "id": "kyoto.heian-jingu",
+      "ko": "헤이안 신궁",
+      "ja": "平安神宮",
+      "en": "Heian Shrine",
+      "aliases": [
+        "헤이안진구",
+        "오카자키",
+        "대형 도리이"
+      ],
+      "category": "신사·절",
+      "lat": 35.0159,
+      "lng": 135.7824,
+      "stations": [
+        {
+          "ja": "東山",
+          "line": "kyoto.T",
+          "walkMinutes": 10,
+          "exit": "1",
+          "note": "공식 1번 출구에서 도보 약 10분. 京阪鴨東線 三条駅·神宮丸太町駅 徒歩約15分"
+        }
+      ],
+      "tip": "오카자키 공원의 커다란 붉은 도리이를 지나 북쪽으로 가면 됩니다.",
+      "sources": [
+        "https://www.heianjingu.or.jp/access/",
+        "https://ja.wikipedia.org/wiki/平安神宮"
+      ]
+    },
+    {
+      "id": "kyoto.nanzenji",
+      "ko": "난젠지",
+      "ja": "南禅寺",
+      "en": "Nanzen-ji",
+      "aliases": [
+        "남선사",
+        "수로각",
+        "난젠지 수로"
+      ],
+      "category": "신사·절",
+      "lat": 35.0113,
+      "lng": 135.7943,
+      "stations": [
+        {
+          "ja": "蹴上",
+          "line": "kyoto.T",
+          "walkMinutes": 5,
+          "exit": null,
+          "note": "약 5분. 인클라인(옛 철길) 옆 터널로 간다"
+        }
+      ],
+      "tip": "게아게역에서 나와 벽돌 터널(네지리만포)을 지나면 가깝습니다. 철학의 길 남쪽 끝과 이어집니다.",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/南禅寺"
+      ]
+    },
+    {
+      "id": "kyoto.ninenzaka-sannenzaka",
+      "ko": "니넨자카·산넨자카",
+      "ja": "二年坂・三年坂",
+      "en": "Ninenzaka and Sannenzaka",
+      "aliases": [
+        "니넨자카",
+        "산넨자카",
+        "산네이자카",
+        "히가시야마 골목",
+        "기요미즈 가는 길"
+      ],
+      "category": "명소",
+      "lat": 34.9971,
+      "lng": 135.7809,
+      "stations": [
+        {
+          "ja": "東山",
+          "line": "kyoto.T",
+          "walkMinutes": 23,
+          "exit": null,
+          "note": "약. 출처에 도보 시간이 없어 좌표 직선거리로 어림. 걷기엔 멀다(20분 넘음). 京阪本線 祇園四条駅이나 阪急京都線 京都河原町駅에서 걸어 오는 길이 흔하다"
+        }
+      ],
+      "tip": "기요미즈데라로 오르는 옛 돌계단 거리입니다. 야사카 신사에서 남쪽으로 걸어오면 자연스럽게 지납니다.",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/産寧坂"
+      ]
+    },
+    {
+      "id": "kyoto.kodaiji",
+      "ko": "고다이지",
+      "ja": "高台寺",
+      "en": "Kodai-ji",
+      "aliases": [
+        "고대사",
+        "네네의 길",
+        "네네노미치"
+      ],
+      "category": "신사·절",
+      "lat": 35.0005,
+      "lng": 135.7811,
+      "stations": [
+        {
+          "ja": "東山",
+          "line": "kyoto.T",
+          "walkMinutes": 16,
+          "exit": null,
+          "note": "약. 출처에 도보 시간이 없어 좌표 직선거리로 어림. 京阪本線 祇園四条駅 徒歩約18分, 阪急京都線 京都河原町駅 徒歩約21分"
+        }
+      ],
+      "tip": "",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/高台寺"
+      ]
+    },
+    {
+      "id": "kyoto.pontocho",
+      "ko": "폰토초",
+      "ja": "先斗町",
+      "en": "Pontocho",
+      "aliases": [
+        "폰토초 골목",
+        "가모가와 노료유카",
+        "강변 식당가"
+      ],
+      "category": "먹거리",
+      "lat": 35.007969,
+      "lng": 135.771111,
+      "stations": [
+        {
+          "ja": "三条京阪",
+          "line": "kyoto.T",
+          "walkMinutes": 5,
+          "exit": null,
+          "note": "약. 출처에 도보 시간이 없어 좌표 직선거리로 어림"
+        },
+        {
+          "ja": "京都市役所前",
+          "line": "kyoto.T",
+          "walkMinutes": 6,
+          "exit": null,
+          "note": "약. 출처에 도보 시간이 없어 좌표 직선거리로 어림"
+        }
+      ],
+      "tip": "가모가와 서쪽 강변의 좁은 골목입니다. 북쪽 끝은 산조도리 한 블록 아래, 남쪽 끝은 시조도리입니다.",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/先斗町"
+      ]
+    },
+    {
+      "id": "kyoto.kyoto-tower",
+      "ko": "교토 타워",
+      "ja": "京都タワー",
+      "en": "Kyoto Tower",
+      "aliases": [
+        "교토타워",
+        "타워 전망대"
+      ],
+      "category": "전망대",
+      "lat": 34.9875,
+      "lng": 135.7593,
+      "stations": [
+        {
+          "ja": "京都",
+          "line": "kyoto.K",
+          "walkMinutes": 2,
+          "exit": null,
+          "note": "공식: JR京都駅 中央口에서 徒歩2分. 지하철 개찰구 쪽 지하상가 포르타에서 타워 지하 입구(11~23시)로 이어진다"
+        }
+      ],
+      "tip": "교토역 중앙 출구(가라스마 출구) 맞은편입니다.",
+      "sources": [
+        "https://www.kyoto-tower.jp/access/",
+        "https://ja.wikipedia.org/wiki/京都タワー"
+      ]
+    },
+    {
+      "id": "kyoto.kyoto-station-building",
+      "ko": "교토역 빌딩",
+      "ja": "京都駅ビル",
+      "en": "Kyoto Station Building",
+      "aliases": [
+        "교토역",
+        "대계단",
+        "스카이웨이",
+        "교토역 전망"
+      ],
+      "category": "명소",
+      "lat": 34.9855,
+      "lng": 135.7578,
+      "stations": [
+        {
+          "ja": "京都",
+          "line": "kyoto.K",
+          "walkMinutes": 0,
+          "exit": null,
+          "note": "직결. 역 건물 지하상가 포르타가 지하철 개찰구와 바로 이어진다"
+        }
+      ],
+      "tip": "대계단은 행사장으로도 쓰이고, 꼭대기에는 지상 45m 높이의 공중 통로(약 185m)가 지나갑니다.",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/京都駅ビル"
+      ]
+    },
+    {
+      "id": "kyoto.tofukuji",
+      "ko": "도후쿠지",
+      "ja": "東福寺",
+      "en": "Tofuku-ji",
+      "aliases": [
+        "동복사",
+        "쓰텐교",
+        "교토 단풍 명소"
+      ],
+      "category": "신사·절",
+      "lat": 34.9771,
+      "lng": 135.7741,
+      "stations": [
+        {
+          "ja": "九条",
+          "line": "kyoto.K",
+          "walkMinutes": 22,
+          "exit": null,
+          "note": "약. 출처에 도보 시간이 없어 좌표 직선거리로 어림. 걷기엔 멀다(20분 넘음). JR奈良線·京阪本線 東福寺駅 徒歩約10分, 京阪本線 鳥羽街道駅 徒歩約8分이 더 가깝다"
+        }
+      ],
+      "tip": "교토역에서 JR 나라선으로 한 정거장 도후쿠지역에서 내리세요. 후시미이나리와 같은 노선입니다.",
+      "sources": [
+        "https://tofukuji.jp/access/",
+        "https://ja.wikipedia.org/wiki/東福寺"
+      ]
+    },
+    {
+      "id": "kyoto.daigoji",
+      "ko": "다이고지",
+      "ja": "醍醐寺",
+      "en": "Daigo-ji",
+      "aliases": [
+        "제호사",
+        "다이고 벚꽃",
+        "다이고지 오층탑"
+      ],
+      "category": "신사·절",
+      "lat": 34.9515,
+      "lng": 135.8218,
+      "stations": [
+        {
+          "ja": "醍醐",
+          "line": "kyoto.T",
+          "walkMinutes": 10,
+          "exit": "2",
+          "note": "공식 2번 출구에서 도보 약 10분"
+        }
+      ],
+      "tip": "교토역에서는 JR로 야마시나역까지 간 뒤 지하철 도자이선으로 갈아타는 게 빠릅니다.",
+      "sources": [
+        "https://www.daigoji.or.jp/access/",
+        "https://ja.wikipedia.org/wiki/醍醐寺"
+      ]
+    },
+    {
+      "id": "kyoto.kyoto-railway-museum",
+      "ko": "교토 철도박물관",
+      "ja": "京都鉄道博物館",
+      "en": "Kyoto Railway Museum",
+      "aliases": [
+        "철도박물관",
+        "기차 박물관",
+        "우메코지"
+      ],
+      "category": "박물관·미술관",
+      "lat": 34.9874,
+      "lng": 135.7426,
+      "stations": [
+        {
+          "ja": "京都",
+          "line": "kyoto.K",
+          "walkMinutes": 20,
+          "exit": null,
+          "note": "JR京都駅 烏丸中央口 徒歩約20分. JR嵯峨野線 梅小路京都西駅 徒歩約2分이 가장 가깝다"
+        }
+      ],
+      "tip": "교토역에서 JR 사가노선으로 한 정거장 우메코지교토니시역에서 내리면 바로입니다.",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/京都鉄道博物館"
+      ]
+    },
+    {
+      "id": "kyoto.toei-eigamura",
+      "ko": "도에이 우즈마사 영화마을",
+      "ja": "東映太秦映画村",
+      "en": "Toei Kyoto Studio Park",
+      "aliases": [
+        "영화마을",
+        "우즈마사 영화마을",
+        "에도 테마파크",
+        "닌자 영화마을"
+      ],
+      "category": "테마파크",
+      "lat": 35.0163,
+      "lng": 135.7083,
+      "stations": [
+        {
+          "ja": "太秦天神川",
+          "line": "kyoto.T",
+          "walkMinutes": 15,
+          "exit": null,
+          "note": "약. 출처에 도보 시간이 없어 좌표 직선거리로 어림. 京福嵐山本線(嵐電) 太秦広隆寺駅 徒歩約5分(정문), JR嵯峨野線 太秦駅 徒歩約5分(撮影所口)"
+        }
+      ],
+      "tip": "란덴 우즈마사코류지역에서 내리면 정문이 가깝습니다.",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/東映太秦映画村"
+      ]
+    },
+    {
+      "id": "kyoto.ryoanji",
+      "ko": "료안지",
+      "ja": "龍安寺",
+      "en": "Ryoan-ji",
+      "aliases": [
+        "용안사",
+        "돌 정원",
+        "석정",
+        "가레산스이"
+      ],
+      "category": "신사·절",
+      "lat": 35.0345,
+      "lng": 135.7182,
+      "stations": [
+        {
+          "ja": "太秦天神川",
+          "line": "kyoto.T",
+          "walkMinutes": 43,
+          "exit": null,
+          "note": "약. 출처에 도보 시간이 없어 좌표 직선거리로 어림. 걸어가기엔 멀다(20분 넘음). 嵐電天神川駅에서 帷子ノ辻 갈아타 京福北野線 龍安寺駅 徒歩約7分"
+        }
+      ],
+      "tip": "란덴 기타노선 료안지역에서 걸어서 약 7분입니다.",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/龍安寺"
+      ]
+    },
+    {
+      "id": "kyoto.shimogamo-shrine",
+      "ko": "시모가모 신사",
+      "ja": "下鴨神社",
+      "en": "Shimogamo Shrine",
+      "aliases": [
+        "시모가모진자",
+        "가모미오야 신사",
+        "다다스노모리",
+        "다다스 숲"
+      ],
+      "category": "신사·절",
+      "lat": 35.0389,
+      "lng": 135.7728,
+      "stations": [
+        {
+          "ja": "鞍馬口",
+          "line": "kyoto.K",
+          "walkMinutes": 20,
+          "exit": null,
+          "note": "약. 출처에 도보 시간이 없어 좌표 직선거리로 어림. 가모가와를 건너야 한다. 京阪鴨東線 出町柳駅 徒歩約10~12分이 더 가깝다"
+        }
+      ],
+      "tip": "게이한 데마치야나기역에서 다다스 숲을 지나 북쪽으로 걸어가는 길이 일반적입니다.",
+      "sources": [
+        "https://www.shimogamo-jinja.or.jp/access/",
+        "https://ja.wikipedia.org/wiki/賀茂御祖神社"
+      ]
+    },
+    {
+      "id": "kyoto.kitano-tenmangu",
+      "ko": "기타노텐만구",
+      "ja": "北野天満宮",
+      "en": "Kitano Tenmangu",
+      "aliases": [
+        "기타노 텐만구",
+        "학문의 신 신사",
+        "매화 신사",
+        "덴진상"
+      ],
+      "category": "신사·절",
+      "lat": 35.029194,
+      "lng": 135.735001,
+      "stations": [
+        {
+          "ja": "今出川",
+          "line": "kyoto.K",
+          "walkMinutes": 36,
+          "exit": null,
+          "note": "약. 출처에 도보 시간이 없어 좌표 직선거리로 어림. 걸어가기엔 멀다(20분 넘음). 市バス 51·203으로 北野天満宮前까지 약 15분(공식). 京福北野線 北野白梅町駅 徒歩約5分"
+        },
+        {
+          "ja": "二条",
+          "line": "kyoto.T",
+          "walkMinutes": 33,
+          "exit": null,
+          "note": "약. 출처에 도보 시간이 없어 좌표 직선거리로 어림. 걸어가기엔 멀다(20분 넘음). 市バス 55로 北野天満宮前까지 약 15분(공식)"
+        }
+      ],
+      "tip": "교토역에서는 시버스 50번으로 기타노텐만구마에에서 내립니다(약 35분). 금각사와 묶어 다니기 좋습니다.",
+      "sources": [
+        "https://kitanotenmangu.or.jp/access/",
+        "https://ja.wikipedia.org/wiki/北野天満宮"
+      ]
+    },
+    {
+      "id": "kyoto.teramachi-shinkyogoku",
+      "ko": "데라마치·신쿄고쿠 상점가",
+      "ja": "寺町京極・新京極商店街",
+      "en": "Teramachi and Shinkyogoku Shopping Streets",
+      "aliases": [
+        "데라마치",
+        "신쿄고쿠",
+        "가와라마치 쇼핑",
+        "교토 상점가",
+        "아케이드"
+      ],
+      "category": "쇼핑",
+      "lat": 35.0061,
+      "lng": 135.7673,
+      "stations": [
+        {
+          "ja": "京都市役所前",
+          "line": "kyoto.T",
+          "walkMinutes": 9,
+          "exit": null,
+          "note": "약. 출처에 도보 시간이 없어 좌표 직선거리로 어림(상점가 중간 기준). 북쪽 끝 산조도리 쪽 역. 남쪽 끝 시조도리 쪽은 阪急京都線 京都河原町駅"
+        },
+        {
+          "ja": "三条京阪",
+          "line": "kyoto.T",
+          "walkMinutes": 11,
+          "exit": null,
+          "note": "약. 출처에 도보 시간이 없어 좌표 직선거리로 어림"
+        }
+      ],
+      "tip": "남쪽 끝은 시조도리, 니시키 시장 동쪽 입구와 바로 이어집니다.",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/新京極",
+        "https://ja.wikipedia.org/wiki/寺町通",
+        "https://nominatim.openstreetmap.org/search?q=新京極通&countrycodes=jp&format=json&limit=10"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "id": "fukuoka.H",
+  "region": "fukuoka",
+  "operator": "福岡市地下鉄",
+  "operatorKo": "후쿠오카시 지하철",
+  "nameJa": "箱崎線",
+  "nameKo": "하코자키선",
+  "nameEn": "Hakozaki Line",
+  "color": "#0077CC",
+  "circular": false,
+  "stations": [
+    {
+      "code": "H01",
+      "ja": "中洲川端",
+      "kana": "なかすかわばた",
+      "ko": "나카스카와바타",
+      "koSource": "wiki",
+      "en": "Nakasu-Kawabata",
+      "lat": 33.594983,
+      "lng": 130.406603
+    },
+    {
+      "code": "H02",
+      "ja": "呉服町",
+      "kana": "ごふくまち",
+      "ko": "고후쿠마치",
+      "koSource": "wiki",
+      "en": "Gofukumachi",
+      "lat": 33.598217,
+      "lng": 130.409889
+    },
+    {
+      "code": "H03",
+      "ja": "千代県庁口",
+      "kana": "ちよけんちょうぐち",
+      "ko": "지요켄초구치",
+      "koSource": "wiki",
+      "en": "Chiyo-Kenchoguchi",
+      "lat": 33.6028,
+      "lng": 130.414558
+    },
+    {
+      "code": "H04",
+      "ja": "馬出九大病院前",
+      "kana": "まいだしきゅうだいびょういんまえ",
+      "ko": "마이다시큐다이뵤인마에",
+      "koSource": "wiki",
+      "en": "Maidashi-Kyudaibyoinmae",
+      "lat": 33.609214,
+      "lng": 130.419317
+    },
+    {
+      "code": "H05",
+      "ja": "箱崎宮前",
+      "kana": "はこざきみやまえ",
+      "ko": "하코자키미야마에",
+      "koSource": "wiki",
+      "en": "Hakozaki-Miyamae",
+      "lat": 33.615833,
+      "lng": 130.419581
+    },
+    {
+      "code": "H06",
+      "ja": "箱崎九大前",
+      "kana": "はこざききゅうだいまえ",
+      "ko": "하코자키큐다이마에",
+      "koSource": "wiki",
+      "en": "Hakozaki-Kyudaimae",
+      "lat": 33.622111,
+      "lng": 130.421039
+    },
+    {
+      "code": "H07",
+      "ja": "貝塚",
+      "kana": "かいづか",
+      "ko": "가이즈카",
+      "koSource": "wiki",
+      "en": "Kaizuka",
+      "lat": 33.632175,
+      "lng": 130.425578
+    }
+  ],
+  "throughTermini": {
+    "start": [
+      "天神",
+      "西新",
+      "姪浜"
+    ],
+    "end": []
+  },
+  "services": [],
+  "sources": [
+    "https://ja.wikipedia.org/wiki/福岡市地下鉄箱崎線",
+    "https://ja.wikipedia.org/wiki/福岡市地下鉄空港線",
+    "https://ja.wikipedia.org/wiki/中洲川端駅"
+  ],
+  "notes": "H01 中洲川端 – H07 貝塚。線内完結（貝塚–中洲川端）と空港線直通（日中は西新まで、それ以外は姪浜まで主体、天神行きもあり）が交互に運行。直通先の天神・西新・姪浜は空港線（fukuoka.K）の駅で、中洲川端で H01 から空港線の姪浜方向（番号が減る方向）へ進む。直通は約半数なので continuations には入れていない。貝塚から筑肥線への直通列車は定期では設定なし。全列車各駅停車。貝塚で西鉄貝塚線と接続（直通なし）。中洲川端は空港線と同一駅（重層式2面4線）で、2023年3月27日から箱崎線⇔空港線福岡空港方面の乗り換えは隣の天神でも認められている（中洲川端–天神間の運賃不要）。路線色はWikipedia値 #0077cc（青）、公式HEXは未確認。座標は日本語版Wikipedia各駅記事の座標（複数事業者の駅は当該地下鉄側の座標を選択）。韓国語名は日本語版記事の韓国語版リンク先記事名から「역」と曖昧さ回避括弧を除いたもの。かなは各駅記事インフォボックスのよみがな。"
+}

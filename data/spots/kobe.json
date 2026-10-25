@@ -1,0 +1,385 @@
+{
+  "region": "kobe",
+  "spots": [
+    {
+      "id": "kobe.kitano-ijinkan",
+      "ko": "기타노 이진칸",
+      "ja": "北野異人館街",
+      "en": "Kitano Ijinkan",
+      "aliases": [
+        "이진칸",
+        "기타노",
+        "풍향계의 집",
+        "가자미도리노야카타",
+        "비늘의 집"
+      ],
+      "category": "명소",
+      "lat": 34.7006,
+      "lng": 135.1904,
+      "stations": [
+        {
+          "ja": "三宮",
+          "line": "kobe.S",
+          "walkMinutes": 15,
+          "exit": "東8",
+          "note": "약. 언덕길 오르막. JR 三ノ宮·阪急 神戸三宮역도 약 15분"
+        },
+        {
+          "ja": "新神戸",
+          "line": "kobe.S",
+          "walkMinutes": 15,
+          "exit": null,
+          "note": "약. 신칸센 新神戸역에서 서쪽으로"
+        }
+      ],
+      "tip": "산노미야에서 계속 오르막이다. 시티루프 버스 '北野異人館' 정류장에서 내리면 1분",
+      "sources": [
+        "https://www.kobe-ijinkan.net/access/"
+      ]
+    },
+    {
+      "id": "kobe.harborland",
+      "ko": "고베 하버랜드",
+      "ja": "神戸ハーバーランド",
+      "en": "Kobe Harborland",
+      "aliases": [
+        "하버랜드",
+        "우미에",
+        "모자이크",
+        "고베 모자이크",
+        "모자이크 대관람차"
+      ],
+      "category": "쇼핑",
+      "lat": 34.6791,
+      "lng": 135.1818,
+      "stations": [
+        {
+          "ja": "ハーバーランド",
+          "line": "kobe.K",
+          "walkMinutes": 3,
+          "exit": "2",
+          "note": "약. 2·3번 출구로 나와 오른쪽, 지하상가 듀오 고베에서 남쪽으로 몇 분. JR 神戸역 중앙 출구에서도 가깝다"
+        }
+      ],
+      "tip": "JR 고베역(神戸)이 하버랜드 바로 앞이다. 산노미야(三宮)와 다른 역이니 주의",
+      "sources": [
+        "https://harborland.co.jp/access/",
+        "https://ja.wikipedia.org/wiki/神戸ハーバーランド"
+      ]
+    },
+    {
+      "id": "kobe.anpanman-museum",
+      "ko": "고베 호빵맨 어린이 박물관",
+      "ja": "神戸アンパンマンこどもミュージアム&モール",
+      "en": "Kobe Anpanman Children's Museum & Mall",
+      "aliases": [
+        "호빵맨 박물관",
+        "앙팡맨 뮤지엄",
+        "고베 앙팡맨",
+        "호빵맨 뮤지엄"
+      ],
+      "category": "테마파크",
+      "lat": 34.6786,
+      "lng": 135.1849,
+      "stations": [
+        {
+          "ja": "ハーバーランド",
+          "line": "kobe.K",
+          "walkMinutes": 8,
+          "exit": null,
+          "note": "약. JR 神戸역에서도 약 8분"
+        }
+      ],
+      "tip": "하버랜드 모자이크 대관람차 쪽으로 걸으면 된다",
+      "sources": [
+        "https://www.kobe-anpanman.jp/access/",
+        "https://ja.wikipedia.org/wiki/神戸アンパンマンこどもミュージアム&モール"
+      ]
+    },
+    {
+      "id": "kobe.port-tower",
+      "ko": "고베 포트 타워",
+      "ja": "神戸ポートタワー",
+      "en": "Kobe Port Tower",
+      "aliases": [
+        "포트 타워",
+        "포트타워",
+        "고베 타워"
+      ],
+      "category": "전망대",
+      "lat": 34.6826,
+      "lng": 135.1867,
+      "stations": [
+        {
+          "ja": "みなと元町",
+          "line": "kobe.K",
+          "walkMinutes": 5,
+          "exit": "2",
+          "note": "약. JR·한신 元町역 서쪽 출구에서는 약 15분"
+        }
+      ],
+      "tip": "",
+      "sources": [
+        "https://www.kobe-port-tower.com/",
+        "https://ja.wikipedia.org/wiki/神戸ポートタワー"
+      ]
+    },
+    {
+      "id": "kobe.meriken-park",
+      "ko": "메리켄 파크",
+      "ja": "メリケンパーク",
+      "en": "Meriken Park",
+      "aliases": [
+        "메리켄 공원",
+        "비 코베",
+        "고베 해양박물관",
+        "가와사키 월드"
+      ],
+      "category": "공원·자연",
+      "lat": 34.6818,
+      "lng": 135.1888,
+      "stations": [
+        {
+          "ja": "みなと元町",
+          "line": "kobe.K",
+          "walkMinutes": 10,
+          "exit": null,
+          "note": "약. JR·한신 元町역에서는 약 15분"
+        },
+        {
+          "ja": "県庁前",
+          "line": "kobe.S",
+          "walkMinutes": 20,
+          "exit": null,
+          "note": "약"
+        }
+      ],
+      "tip": "",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/メリケンパーク"
+      ]
+    },
+    {
+      "id": "kobe.nankinmachi",
+      "ko": "난킨마치",
+      "ja": "南京町",
+      "en": "Nankinmachi (Kobe Chinatown)",
+      "aliases": [
+        "고베 차이나타운",
+        "고베 중화가",
+        "난징마치",
+        "남경정"
+      ],
+      "category": "먹거리",
+      "lat": 34.6881,
+      "lng": 135.1879,
+      "stations": [
+        {
+          "ja": "旧居留地・大丸前",
+          "line": "kobe.K",
+          "walkMinutes": 2,
+          "exit": null,
+          "note": "약. JR·한신 元町역에서도 약 5분"
+        },
+        {
+          "ja": "県庁前",
+          "line": "kobe.S",
+          "walkMinutes": 7,
+          "exit": null,
+          "note": "약"
+        }
+      ],
+      "tip": "JR이면 산노미야가 아니라 모토마치(元町)역에서 내린다",
+      "sources": [
+        "https://www.nankinmachi.or.jp/access/"
+      ]
+    },
+    {
+      "id": "kobe.sannomiya-center-gai",
+      "ko": "산노미야 센터가이",
+      "ja": "三宮センター街",
+      "en": "Sannomiya Center Street",
+      "aliases": [
+        "센터가이",
+        "산노미야",
+        "산노미야 상점가",
+        "모토마치 상점가"
+      ],
+      "category": "쇼핑",
+      "lat": 34.6912,
+      "lng": 135.1926,
+      "stations": [
+        {
+          "ja": "三宮・花時計前",
+          "line": "kobe.K",
+          "walkMinutes": 1,
+          "exit": null,
+          "note": "약"
+        },
+        {
+          "ja": "三宮",
+          "line": "kobe.S",
+          "walkMinutes": 3,
+          "exit": null,
+          "note": "약"
+        }
+      ],
+      "tip": "",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/三宮センター街"
+      ]
+    },
+    {
+      "id": "kobe.ikuta-shrine",
+      "ko": "이쿠타 신사",
+      "ja": "生田神社",
+      "en": "Ikuta Shrine",
+      "aliases": [
+        "이쿠타 진자",
+        "인연 신사",
+        "고베 신사"
+      ],
+      "category": "신사·절",
+      "lat": 34.6948,
+      "lng": 135.1907,
+      "stations": [
+        {
+          "ja": "三宮",
+          "line": "kobe.S",
+          "walkMinutes": 10,
+          "exit": null,
+          "note": "약. 공식 안내는 JR·사철 산노미야역에서 북쪽으로 약 10분"
+        }
+      ],
+      "tip": "",
+      "sources": [
+        "https://ikutajinja.or.jp/access/",
+        "https://ja.wikipedia.org/wiki/生田神社"
+      ]
+    },
+    {
+      "id": "kobe.nunobiki-herb-garden",
+      "ko": "누노비키 허브원",
+      "ja": "神戸布引ハーブ園",
+      "en": "Kobe Nunobiki Herb Gardens",
+      "aliases": [
+        "허브원",
+        "누노비키 허브 가든",
+        "고베 로프웨이",
+        "누노비키 폭포",
+        "고베 허브원"
+      ],
+      "category": "공원·자연",
+      "lat": 34.7045,
+      "lng": 135.1938,
+      "stations": [
+        {
+          "ja": "新神戸",
+          "line": "kobe.S",
+          "walkMinutes": 5,
+          "exit": null,
+          "note": "약. 로프웨이 산기슭역(ハーブ園山麓駅)까지, 거기서 로프웨이로 약 10분. 좌표는 산기슭역"
+        }
+      ],
+      "tip": "신칸센 신고베역 바로 옆에서 로프웨이를 탄다",
+      "sources": [
+        "https://www.kobeherb.com/access/",
+        "https://www.openstreetmap.org/way/288605656"
+      ]
+    },
+    {
+      "id": "kobe.kyukyoryuchi",
+      "ko": "구 거류지",
+      "ja": "旧居留地",
+      "en": "Former Foreign Settlement",
+      "aliases": [
+        "규쿄류치",
+        "고베 구거류지",
+        "고베 루미나리에",
+        "루미나리에",
+        "다이마루 고베"
+      ],
+      "category": "명소",
+      "lat": 34.6881,
+      "lng": 135.1926,
+      "stations": [
+        {
+          "ja": "旧居留地・大丸前",
+          "line": "kobe.K",
+          "walkMinutes": 1,
+          "exit": null,
+          "note": "약. 역 바로 옆. JR 三ノ宮·한큐/한신 神戸三宮역에서는 약 10분"
+        }
+      ],
+      "tip": "",
+      "sources": [
+        "https://happyell.co.jp/spot/sannomiya-kyukyoryuuchi",
+        "https://ja.wikipedia.org/wiki/神戸外国人居留地"
+      ]
+    },
+    {
+      "id": "kobe.city-hall-observation",
+      "ko": "고베 시청 전망 로비",
+      "ja": "神戸市役所1号館24階展望ロビー",
+      "en": "Kobe City Hall Observation Lobby",
+      "aliases": [
+        "고베 시청",
+        "시청 전망대",
+        "무료 전망대"
+      ],
+      "category": "전망대",
+      "lat": 34.6894,
+      "lng": 135.1956,
+      "stations": [
+        {
+          "ja": "三宮・花時計前",
+          "line": "kobe.K",
+          "walkMinutes": 3,
+          "exit": "4",
+          "note": "약. 4번 출구가 시청과 이어짐"
+        },
+        {
+          "ja": "三宮",
+          "line": "kobe.S",
+          "walkMinutes": 6,
+          "exit": null,
+          "note": "약. 남쪽으로"
+        }
+      ],
+      "tip": "무료다. 1호관 1층에서 전망 로비 전용 엘리베이터를 탄다",
+      "sources": [
+        "https://www.minnacamera.com/spots/2230",
+        "https://ja.wikipedia.org/wiki/三宮・花時計前駅",
+        "https://ja.wikipedia.org/wiki/神戸市役所"
+      ]
+    },
+    {
+      "id": "kobe.noevir-stadium",
+      "ko": "노에비어 스타디움 고베",
+      "ja": "ノエビアスタジアム神戸",
+      "en": "Noevir Stadium Kobe",
+      "aliases": [
+        "노에비어 스타디움",
+        "고베 윙 스타디움",
+        "비셀 고베 홈구장",
+        "미사키 공원"
+      ],
+      "category": "전시·공연",
+      "lat": 34.6567,
+      "lng": 135.1692,
+      "stations": [
+        {
+          "ja": "御崎公園",
+          "line": "kobe.K",
+          "walkMinutes": 5,
+          "exit": null,
+          "note": "약. 和田岬역에서도 약 6분이지만 운행 편수가 적어 권하지 않음"
+        }
+      ],
+      "tip": "",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/ノエビアスタジアム神戸"
+      ]
+    }
+  ]
+}

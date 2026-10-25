@@ -1,0 +1,136 @@
+{
+  "id": "osaka.K",
+  "region": "osaka",
+  "operator": "Osaka Metro",
+  "operatorKo": "오사카 메트로",
+  "nameJa": "堺筋線",
+  "nameKo": "사카이스지선",
+  "nameEn": "Sakaisuji Line",
+  "color": "#814721",
+  "circular": false,
+  "stations": [
+    {
+      "code": "K11",
+      "ja": "天神橋筋六丁目",
+      "kana": "てんじんばしすじろくちょうめ",
+      "ko": "덴진바시스지 6초메",
+      "koSource": "wiki",
+      "en": "Tenjimbashisuji 6-chome",
+      "lat": 34.710603,
+      "lng": 135.510783
+    },
+    {
+      "code": "K12",
+      "ja": "扇町",
+      "kana": "おうぎまち",
+      "ko": "오기마치",
+      "koSource": "wiki",
+      "en": "Ogimachi",
+      "lat": 34.703808,
+      "lng": 135.510833
+    },
+    {
+      "code": "K13",
+      "ja": "南森町",
+      "kana": "みなみもりまち",
+      "ko": "미나미모리마치",
+      "koSource": "wiki",
+      "en": "Minamimorimachi",
+      "lat": 34.697697,
+      "lng": 135.511019
+    },
+    {
+      "code": "K14",
+      "ja": "北浜",
+      "kana": "きたはま",
+      "ko": "기타하마",
+      "koSource": "wiki",
+      "en": "Kitahama",
+      "lat": 34.691586,
+      "lng": 135.506617
+    },
+    {
+      "code": "K15",
+      "ja": "堺筋本町",
+      "jaSub": "船場東",
+      "kana": "さかいすじほんまち",
+      "ko": "사카이스지혼마치",
+      "koSource": "wiki",
+      "en": "Sakaisuji-Hommachi",
+      "lat": 34.681847,
+      "lng": 135.506519
+    },
+    {
+      "code": "K16",
+      "ja": "長堀橋",
+      "kana": "ながほりばし",
+      "ko": "나가호리바시",
+      "koSource": "wiki",
+      "en": "Nagahoribashi",
+      "lat": 34.674647,
+      "lng": 135.506322
+    },
+    {
+      "code": "K17",
+      "ja": "日本橋",
+      "kana": "にっぽんばし",
+      "ko": "닛폰바시",
+      "koSource": "wiki",
+      "en": "Nippombashi",
+      "lat": 34.667147,
+      "lng": 135.506636
+    },
+    {
+      "code": "K18",
+      "ja": "恵美須町",
+      "jaSub": "日本橋筋",
+      "kana": "えびすちょう",
+      "ko": "에비스초",
+      "koSource": "wiki",
+      "en": "Ebisucho",
+      "lat": 34.656244,
+      "lng": 135.505639
+    },
+    {
+      "code": "K19",
+      "ja": "動物園前",
+      "jaSub": "新世界",
+      "kana": "どうぶつえんまえ",
+      "ko": "도부쓰엔마에",
+      "koSource": "wiki",
+      "en": "Dobutsuen-mae",
+      "lat": 34.648814,
+      "lng": 135.504411
+    },
+    {
+      "code": "K20",
+      "ja": "天下茶屋",
+      "kana": "てんがちゃや",
+      "ko": "덴가차야",
+      "koSource": "wiki",
+      "en": "Tengachaya",
+      "lat": 34.637194,
+      "lng": 135.49675
+    }
+  ],
+  "throughTermini": {
+    "start": [
+      "北千里",
+      "高槻市",
+      "京都河原町",
+      "淡路",
+      "正雀",
+      "茨木市",
+      "相川"
+    ],
+    "end": []
+  },
+  "services": [],
+  "sources": [
+    "https://ja.wikipedia.org/wiki/Osaka Metro堺筋線",
+    "https://subway.osakametro.co.jp/station_guide/",
+    "https://subway.osakametro.co.jp/en/station_guide/",
+    "https://ja.wikipedia.org/w/api.php (langlinks/coordinates)"
+  ],
+  "notes": "天神橋筋六丁目(K11)から阪急千里線（北千里）・京都本線（高槻市、一部京都河原町）と相互直通運転。昼間は北千里行きと高槻市行きが交互、朝夜に淡路・正雀・茨木市・相川発着、京都河原町発着もある。阪急直通の「準急」（堺筋準急：天下茶屋–京都河原町、平日朝の天下茶屋行き・夕方の京都河原町行き、土休日昼間毎時3本）は堺筋線内では各駅停車のため services には入れていない（「準急」の表示でも堺筋線内は全駅に停車）。堺筋線内折り返し（天神橋筋六丁目–天下茶屋）は平日昼間のみ。 駅名(ja)・駅番号・英語表記はOsaka Metro公式「路線情報」ページ（日本語版・英語版）の駅一覧の表記に従った。韓国語名は日本語版Wikipedia各駅記事の韓国語版リンク先記事名から「역」と曖昧さ回避括弧を除いたもの。kanaは日本語版Wikipedia各駅記事冒頭の読み。座標は日本語版Wikipedia各駅記事の座標で、複数事業者・複数路線の駅では可能な限りOsaka Metro（該当路線）側の座標を選んだ（ホーム位置ではなく駅代表点）。jaSubは日本語版Wikipedia路線記事の駅一覧に括弧書きされた副駅名で、実際の駅名標に必ず表示されているかは個別確認していない。全列車各駅停車（種別による通過駅なし）。"
+}

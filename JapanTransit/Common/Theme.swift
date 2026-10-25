@@ -243,3 +243,37 @@ struct Eyebrow: View {
         }
     }
 }
+
+// MARK: - Region bar
+
+/// 도시 고르기: 도쿄 · 요코하마 · 오사카 … (only cities that have lines).
+struct RegionBar: View {
+    @Binding var selection: String
+
+    var body: some View {
+        ScrollView(.horizontal, showsIndicators: false) {
+            HStack(spacing: 8) {
+                ForEach(RailNetwork.shared.regions) { r in
+                    let on = selection == r.id
+                    Button {
+                        withAnimation(.snappy) { selection = r.id }
+                    } label: {
+                        HStack(spacing: 4) {
+                            Text(r.ko).font(.subheadline.weight(.bold))
+                            Text(r.ja).font(.caption)
+                        }
+                        .padding(.horizontal, 14).padding(.vertical, 8)
+                        .foregroundStyle(on ? .white : Theme.ink)
+                        .background(on ? Theme.indigoFill : Theme.card, in: Capsule())
+                        .overlay(Capsule().stroke(Theme.hairline))
+                    }
+                    .buttonStyle(.plain)
+                    .accessibilityAddTraits(on ? .isSelected : [])
+                }
+            }
+            .padding(.horizontal, 16)
+            .padding(.vertical, 8)
+        }
+        .background(Theme.paper)
+    }
+}

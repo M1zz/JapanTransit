@@ -1,0 +1,486 @@
+{
+  "region": "yokohama",
+  "spots": [
+    {
+      "id": "yokohama.chinatown",
+      "ko": "요코하마 중화가",
+      "ja": "横浜中華街",
+      "en": "Yokohama Chinatown",
+      "aliases": [
+        "중화가",
+        "차이나타운",
+        "요코하마 차이나타운",
+        "관제묘"
+      ],
+      "category": "먹거리",
+      "lat": 35.4427,
+      "lng": 139.6459,
+      "stations": [
+        {
+          "ja": "元町・中華街",
+          "line": "yokohama.MM",
+          "walkMinutes": 5,
+          "exit": "3",
+          "note": "약. 역에서 중화가 중심까지 약 400m. 3번 출구 이름이 '中華街口'. JR 根岸線 石川町역도 가깝다"
+        }
+      ],
+      "tip": "역 이름이 '모토마치·주카가이'다. JR로 오면 石川町역(부역명 元町・中華街)에서 내린다",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/横浜中華街",
+        "https://ja.wikipedia.org/wiki/元町・中華街駅",
+        "https://en.wikipedia.org/wiki/Yokohama_Chinatown"
+      ]
+    },
+    {
+      "id": "yokohama.red-brick",
+      "ko": "아카렌가 창고",
+      "ja": "横浜赤レンガ倉庫",
+      "en": "Yokohama Red Brick Warehouse",
+      "aliases": [
+        "빨간 벽돌 창고",
+        "아카렌가",
+        "요코하마 아카렌가",
+        "붉은 벽돌 창고"
+      ],
+      "category": "쇼핑",
+      "lat": 35.4527,
+      "lng": 139.6427,
+      "stations": [
+        {
+          "ja": "馬車道",
+          "line": "yokohama.MM",
+          "walkMinutes": 6,
+          "exit": null,
+          "note": ""
+        },
+        {
+          "ja": "日本大通り",
+          "line": "yokohama.MM",
+          "walkMinutes": 6,
+          "exit": null,
+          "note": ""
+        },
+        {
+          "ja": "桜木町",
+          "line": "yokohama.B",
+          "walkMinutes": 15,
+          "exit": null,
+          "note": "기샤미치(汽車道) 산책로를 따라 걷는다. JR 桜木町역도 같은 거리. 関内역도 약 15분"
+        }
+      ],
+      "tip": "",
+      "sources": [
+        "https://www.yokohama-akarenga.jp/access/",
+        "https://ja.wikipedia.org/wiki/横浜赤レンガ倉庫",
+        "https://www.openstreetmap.org/node/10216454044"
+      ]
+    },
+    {
+      "id": "yokohama.cosmo-world",
+      "ko": "요코하마 코스모월드",
+      "ja": "よこはまコスモワールド",
+      "en": "Yokohama Cosmo World",
+      "aliases": [
+        "코스모월드",
+        "코스모클락",
+        "요코하마 관람차",
+        "대관람차"
+      ],
+      "category": "테마파크",
+      "lat": 35.4552,
+      "lng": 139.6367,
+      "stations": [
+        {
+          "ja": "みなとみらい",
+          "line": "yokohama.MM",
+          "walkMinutes": 2,
+          "exit": null,
+          "note": ""
+        },
+        {
+          "ja": "桜木町",
+          "line": "yokohama.B",
+          "walkMinutes": 10,
+          "exit": null,
+          "note": "JR 桜木町역도 약 10분"
+        }
+      ],
+      "tip": "",
+      "sources": [
+        "https://cosmoworld.jp/access/",
+        "https://ja.wikipedia.org/wiki/よこはまコスモワールド"
+      ]
+    },
+    {
+      "id": "yokohama.cupnoodles-museum",
+      "ko": "컵누들 박물관 요코하마",
+      "ja": "カップヌードルミュージアム 横浜",
+      "en": "Cupnoodles Museum Yokohama",
+      "aliases": [
+        "컵누들 뮤지엄",
+        "컵라면 박물관",
+        "닛신 컵누들 박물관",
+        "마이 컵누들"
+      ],
+      "category": "박물관·미술관",
+      "lat": 35.4555,
+      "lng": 139.6389,
+      "stations": [
+        {
+          "ja": "みなとみらい",
+          "line": "yokohama.MM",
+          "walkMinutes": 8,
+          "exit": null,
+          "note": ""
+        },
+        {
+          "ja": "馬車道",
+          "line": "yokohama.MM",
+          "walkMinutes": 8,
+          "exit": null,
+          "note": ""
+        },
+        {
+          "ja": "桜木町",
+          "line": "yokohama.B",
+          "walkMinutes": 12,
+          "exit": null,
+          "note": "JR 桜木町역도 약 12분"
+        }
+      ],
+      "tip": "",
+      "sources": [
+        "https://www.cupnoodles-museum.jp/ja/yokohama/guide/access/",
+        "https://www.cupnoodles-museum.jp/ja/yokohama/",
+        "https://ja.wikipedia.org/wiki/カップヌードルミュージアム_横浜"
+      ]
+    },
+    {
+      "id": "yokohama.landmark-sky-garden",
+      "ko": "요코하마 랜드마크 타워 스카이가든",
+      "ja": "横浜ランドマークタワー 69階展望フロア スカイガーデン",
+      "en": "Yokohama Landmark Tower Sky Garden",
+      "aliases": [
+        "랜드마크 타워",
+        "스카이가든",
+        "랜드마크 전망대",
+        "랜드마크 플라자"
+      ],
+      "category": "전망대",
+      "lat": 35.4546,
+      "lng": 139.6315,
+      "stations": [
+        {
+          "ja": "みなとみらい",
+          "line": "yokohama.MM",
+          "walkMinutes": 3,
+          "exit": null,
+          "note": "역은 이웃한 퀸즈스퀘어 지하에 있다"
+        },
+        {
+          "ja": "桜木町",
+          "line": "yokohama.B",
+          "walkMinutes": 5,
+          "exit": null,
+          "note": "무빙워크(動く歩道)로 이어짐. JR 桜木町역도 같은 거리"
+        }
+      ],
+      "tip": "",
+      "sources": [
+        "https://yokohama-landmark.jp/access/",
+        "https://ja.wikipedia.org/wiki/横浜ランドマークタワー"
+      ]
+    },
+    {
+      "id": "yokohama.yamashita-park",
+      "ko": "야마시타 공원",
+      "ja": "山下公園",
+      "en": "Yamashita Park",
+      "aliases": [
+        "야마시타코엔",
+        "히카와마루",
+        "빨간 구두 소녀상"
+      ],
+      "category": "공원·자연",
+      "lat": 35.4458,
+      "lng": 139.6498,
+      "stations": [
+        {
+          "ja": "元町・中華街",
+          "line": "yokohama.MM",
+          "walkMinutes": 3,
+          "exit": "1",
+          "note": "1번 출구 이름이 '山下公園口'"
+        },
+        {
+          "ja": "日本大通り",
+          "line": "yokohama.MM",
+          "walkMinutes": 5,
+          "exit": null,
+          "note": ""
+        }
+      ],
+      "tip": "",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/山下公園",
+        "https://ja.wikipedia.org/wiki/元町・中華街駅"
+      ]
+    },
+    {
+      "id": "yokohama.osanbashi",
+      "ko": "오산바시",
+      "ja": "横浜港大さん橋国際客船ターミナル",
+      "en": "Osanbashi Yokohama International Passenger Terminal",
+      "aliases": [
+        "오산바시 부두",
+        "대잔교",
+        "오산바시 여객터미널",
+        "크루즈 터미널"
+      ],
+      "category": "명소",
+      "lat": 35.4517,
+      "lng": 139.6478,
+      "stations": [
+        {
+          "ja": "日本大通り",
+          "line": "yokohama.MM",
+          "walkMinutes": 7,
+          "exit": "3",
+          "note": "3번 또는 4번 출구"
+        },
+        {
+          "ja": "関内",
+          "line": "yokohama.B",
+          "walkMinutes": 15,
+          "exit": "1",
+          "note": "1번 출구. JR 関内역 南口에서도 15분"
+        }
+      ],
+      "tip": "",
+      "sources": [
+        "https://osanbashi.jp/access/",
+        "https://ja.wikipedia.org/wiki/大さん橋"
+      ]
+    },
+    {
+      "id": "yokohama.ramen-museum",
+      "ko": "신요코하마 라멘 박물관",
+      "ja": "新横浜ラーメン博物館",
+      "en": "Shin-Yokohama Raumen Museum",
+      "aliases": [
+        "라멘 박물관",
+        "라멘 뮤지엄",
+        "라박",
+        "신요코하마"
+      ],
+      "category": "먹거리",
+      "lat": 35.5098,
+      "lng": 139.6145,
+      "stations": [
+        {
+          "ja": "新横浜",
+          "line": "yokohama.B",
+          "walkMinutes": 1,
+          "exit": "10",
+          "note": "10번 출구에서 1분. JR 新横浜역(신칸센)에서는 약 5분"
+        }
+      ],
+      "tip": "신칸센 신요코하마역에서 걸어서 갈 수 있다",
+      "sources": [
+        "https://www.raumen.co.jp/access/",
+        "https://www.openstreetmap.org/node/1838113117"
+      ]
+    },
+    {
+      "id": "yokohama.nissan-stadium",
+      "ko": "닛산 스타디움",
+      "ja": "日産スタジアム",
+      "en": "Nissan Stadium",
+      "aliases": [
+        "요코하마 국제종합경기장",
+        "마리노스 홈구장"
+      ],
+      "category": "전시·공연",
+      "lat": 35.5103,
+      "lng": 139.6062,
+      "stations": [
+        {
+          "ja": "新横浜",
+          "line": "yokohama.B",
+          "walkMinutes": 12,
+          "exit": null,
+          "note": "12~14분. JR 横浜線 小机역이 더 가깝다(약 7분)"
+        }
+      ],
+      "tip": "콘서트 날은 新横浜역이 매우 붐빈다. JR 横浜線 小机역도 고려",
+      "sources": [
+        "https://www.nissan-stadium.jp/access/",
+        "https://ja.wikipedia.org/wiki/横浜国際総合競技場"
+      ]
+    },
+    {
+      "id": "yokohama.motomachi",
+      "ko": "모토마치 쇼핑 스트리트",
+      "ja": "元町ショッピングストリート",
+      "en": "Motomachi Shopping Street",
+      "aliases": [
+        "모토마치",
+        "요코하마 모토마치",
+        "모토마치 상점가"
+      ],
+      "category": "쇼핑",
+      "lat": 35.4408,
+      "lng": 139.6478,
+      "stations": [
+        {
+          "ja": "元町・中華街",
+          "line": "yokohama.MM",
+          "walkMinutes": 1,
+          "exit": "5",
+          "note": "5번 출구(元町口). JR 石川町역 元町口에서도 약 3분"
+        }
+      ],
+      "tip": "",
+      "sources": [
+        "https://www.motomachi.or.jp/access/",
+        "https://ja.wikipedia.org/wiki/元町・中華街駅",
+        "https://ja.wikipedia.org/wiki/元町_(横浜市)",
+        "https://www.openstreetmap.org/way/26491553"
+      ]
+    },
+    {
+      "id": "yokohama.harbor-view-park",
+      "ko": "미나토노미에루오카 공원",
+      "ja": "港の見える丘公園",
+      "en": "Harbor View Park",
+      "aliases": [
+        "항구가 보이는 언덕 공원",
+        "미나토노미에루오카",
+        "야마테",
+        "요코하마 야마테 서양관"
+      ],
+      "category": "공원·자연",
+      "lat": 35.4399,
+      "lng": 139.6551,
+      "stations": [
+        {
+          "ja": "元町・中華街",
+          "line": "yokohama.MM",
+          "walkMinutes": 7,
+          "exit": "6",
+          "note": "6번 출구(アメリカ山公園口)는 아메리카야마 공원 엘리베이터로 야마테 언덕 위와 이어진다"
+        }
+      ],
+      "tip": "걸어서 오르면 야토바자카(谷戸坂)라는 가파른 언덕길이다. 6번 출구 쪽 아메리카야마 공원의 엘리베이터를 쓰면 편하다",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/港の見える丘公園",
+        "https://ja.wikipedia.org/wiki/アメリカ山公園",
+        "https://ja.wikipedia.org/wiki/元町・中華街駅"
+      ]
+    },
+    {
+      "id": "yokohama.yokohama-stadium",
+      "ko": "요코하마 스타디움",
+      "ja": "横浜スタジアム",
+      "en": "Yokohama Stadium",
+      "aliases": [
+        "하마스타",
+        "요코하마 베이스타스 홈",
+        "요코하마 야구장"
+      ],
+      "category": "전시·공연",
+      "lat": 35.4434,
+      "lng": 139.6401,
+      "stations": [
+        {
+          "ja": "日本大通り",
+          "line": "yokohama.MM",
+          "walkMinutes": 3,
+          "exit": "2",
+          "note": "2번 출구(スタジアム口)"
+        },
+        {
+          "ja": "関内",
+          "line": "yokohama.B",
+          "walkMinutes": 5,
+          "exit": "1",
+          "note": "1번 출구. JR 関内역 南口에서는 약 2분"
+        }
+      ],
+      "tip": "",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/横浜スタジアム",
+        "https://ja.wikipedia.org/wiki/日本大通り駅"
+      ]
+    },
+    {
+      "id": "yokohama.anpanman-museum",
+      "ko": "요코하마 호빵맨 어린이 박물관",
+      "ja": "横浜アンパンマンこどもミュージアム",
+      "en": "Yokohama Anpanman Children's Museum",
+      "aliases": [
+        "호빵맨 박물관",
+        "앙팡맨 뮤지엄",
+        "호빵맨 뮤지엄",
+        "요코하마 앙팡맨"
+      ],
+      "category": "테마파크",
+      "lat": 35.4627,
+      "lng": 139.6288,
+      "stations": [
+        {
+          "ja": "新高島",
+          "line": "yokohama.MM",
+          "walkMinutes": 3,
+          "exit": "3",
+          "note": "3번 출구"
+        },
+        {
+          "ja": "横浜",
+          "line": "yokohama.B",
+          "walkMinutes": 10,
+          "exit": null,
+          "note": "JR 横浜역 東口에서 10분"
+        }
+      ],
+      "tip": "",
+      "sources": [
+        "https://www.yokohama-anpanman.jp/access/"
+      ]
+    },
+    {
+      "id": "yokohama.museum-of-art",
+      "ko": "요코하마 미술관",
+      "ja": "横浜美術館",
+      "en": "Yokohama Museum of Art",
+      "aliases": [
+        "요코하마 트리엔날레",
+        "미나토미라이 미술관"
+      ],
+      "category": "박물관·미술관",
+      "lat": 35.4573,
+      "lng": 139.6313,
+      "stations": [
+        {
+          "ja": "みなとみらい",
+          "line": "yokohama.MM",
+          "walkMinutes": 3,
+          "exit": "3",
+          "note": "3번 출구에서 마크이즈 미나토미라이 그랜드 갤러리아를 지나서"
+        },
+        {
+          "ja": "桜木町",
+          "line": "yokohama.B",
+          "walkMinutes": 10,
+          "exit": null,
+          "note": "무빙워크 또는 보행자 데크로. JR 桜木町역도 같은 거리"
+        }
+      ],
+      "tip": "",
+      "sources": [
+        "https://yokohama.art.museum/visit/access/",
+        "https://yokohama.art.museum/"
+      ]
+    }
+  ]
+}

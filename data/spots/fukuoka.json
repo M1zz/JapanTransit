@@ -1,0 +1,443 @@
+{
+  "region": "fukuoka",
+  "spots": [
+    {
+      "id": "fukuoka.canal-city",
+      "ko": "캐널시티 하카타",
+      "ja": "キャナルシティ博多",
+      "en": "Canal City Hakata",
+      "aliases": [
+        "캐널시티",
+        "캐널시티하카타",
+        "분수쇼"
+      ],
+      "category": "쇼핑",
+      "lat": 33.5911,
+      "lng": 130.4106,
+      "stations": [
+        {
+          "ja": "櫛田神社前",
+          "line": "fukuoka.N",
+          "walkMinutes": 3,
+          "exit": "1",
+          "note": "공식 1번 출구에서 도보 약 3분(북쪽 건물). 하카타역에서 한 정거장"
+        },
+        {
+          "ja": "中洲川端",
+          "line": "fukuoka.K",
+          "walkMinutes": 10,
+          "exit": "5",
+          "note": "공식 5번 출구에서 가와바타 상점가를 따라 약 7분, 구시다 신사 쪽 출구에서 약 3분"
+        },
+        {
+          "ja": "博多",
+          "line": "fukuoka.K",
+          "walkMinutes": 10,
+          "exit": null,
+          "note": "공식 약 10분. 하카타구치에서 하카타에키마에도리를 따라 걷는다"
+        }
+      ],
+      "tip": "공항선 중간에 하카타역에서 나나쿠마선으로 갈아타 구시다진자마에역에서 내리면 가장 가깝다",
+      "sources": [
+        "https://canalcity.co.jp/access/",
+        "https://ja.wikipedia.org/wiki/キャナルシティ博多"
+      ]
+    },
+    {
+      "id": "fukuoka.nakasu-yatai",
+      "ko": "나카스 포장마차 거리",
+      "ja": "中洲屋台",
+      "en": "Nakasu Yatai Stalls",
+      "aliases": [
+        "나카스",
+        "나카스 야타이",
+        "야타이",
+        "포장마차",
+        "후쿠오카 포장마차"
+      ],
+      "category": "먹거리",
+      "lat": 33.5914,
+      "lng": 130.4071,
+      "stations": [
+        {
+          "ja": "中洲川端",
+          "line": "fukuoka.K",
+          "walkMinutes": 5,
+          "exit": null,
+          "note": "포장마차마다 다르다. 공항선 中洲川端駅 徒歩5~10分"
+        }
+      ],
+      "tip": "포장마차는 저녁 6시쯤 열고 가게마다 쉬는 날이 다르다",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/中洲",
+        "https://nominatim.openstreetmap.org/search?q=中洲屋台&format=json",
+        "https://yokanavi.com/yatai/",
+        "https://yokanavi.com/spots/yatai",
+        "https://yokanavi.com/spots/161395",
+        "https://yokanavi.com/spots/197089"
+      ]
+    },
+    {
+      "id": "fukuoka.tenjin-chikagai",
+      "ko": "텐진 지하상가",
+      "ja": "天神地下街",
+      "en": "Tenjin Underground Shopping Center",
+      "aliases": [
+        "텐진",
+        "덴진",
+        "텐진지하상가",
+        "덴진 지하상가"
+      ],
+      "category": "쇼핑",
+      "lat": 33.5897,
+      "lng": 130.3995,
+      "stations": [
+        {
+          "ja": "天神",
+          "line": "fukuoka.K",
+          "walkMinutes": 0,
+          "exit": null,
+          "note": "직결. 공항선 天神駅와 지하로 이어진다"
+        },
+        {
+          "ja": "天神南",
+          "line": "fukuoka.N",
+          "walkMinutes": 0,
+          "exit": null,
+          "note": "직결. 나나쿠마선 天神南駅 콘코스 서쪽 끝과 연결"
+        }
+      ],
+      "tip": "",
+      "sources": [
+        "https://www.tenchika.com/access/",
+        "https://ja.wikipedia.org/wiki/天神地下街",
+        "https://ja.wikipedia.org/wiki/天神南駅",
+        "https://nominatim.openstreetmap.org/search?q=天神地下街&format=json"
+      ]
+    },
+    {
+      "id": "fukuoka.ohori-park",
+      "ko": "오호리 공원",
+      "ja": "大濠公園",
+      "en": "Ohori Park",
+      "aliases": [
+        "오호리공원",
+        "오호리",
+        "후쿠오카시 미술관"
+      ],
+      "category": "공원·자연",
+      "lat": 33.5859,
+      "lng": 130.3763,
+      "stations": [
+        {
+          "ja": "大濠公園",
+          "line": "fukuoka.K",
+          "walkMinutes": 5,
+          "exit": null,
+          "note": "약 5분"
+        },
+        {
+          "ja": "唐人町",
+          "line": "fukuoka.K",
+          "walkMinutes": 8,
+          "exit": null,
+          "note": "약 8분"
+        },
+        {
+          "ja": "六本松",
+          "line": "fukuoka.N",
+          "walkMinutes": 10,
+          "exit": null,
+          "note": "약 10분. 나나쿠마선"
+        }
+      ],
+      "tip": "",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/大濠公園"
+      ]
+    },
+    {
+      "id": "fukuoka.castle-ruins",
+      "ko": "후쿠오카성 터",
+      "ja": "福岡城跡",
+      "en": "Fukuoka Castle Ruins",
+      "aliases": [
+        "후쿠오카성",
+        "마이즈루 공원",
+        "후쿠오카성 벚꽃"
+      ],
+      "category": "명소",
+      "lat": 33.5844,
+      "lng": 130.3831,
+      "stations": [
+        {
+          "ja": "赤坂",
+          "line": "fukuoka.K",
+          "walkMinutes": 10,
+          "exit": "2",
+          "note": "공식 2번 출구에서 도보 약 10분"
+        },
+        {
+          "ja": "大濠公園",
+          "line": "fukuoka.K",
+          "walkMinutes": 10,
+          "exit": "5",
+          "note": "공식 5번 출구에서 산노마루 광장(안내소)까지 도보 약 10분. 오호리 공원과 함께 둘러보기 좋다"
+        }
+      ],
+      "tip": "",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/福岡城",
+        "https://fukuokajyo.com/"
+      ]
+    },
+    {
+      "id": "fukuoka.fukuoka-tower",
+      "ko": "후쿠오카 타워",
+      "ja": "福岡タワー",
+      "en": "Fukuoka Tower",
+      "aliases": [
+        "후쿠오카타워",
+        "모모치 해변",
+        "시사이드 모모치",
+        "모모치하마"
+      ],
+      "category": "전망대",
+      "lat": 33.5931,
+      "lng": 130.3514,
+      "stations": [
+        {
+          "ja": "西新",
+          "line": "fukuoka.K",
+          "walkMinutes": 20,
+          "exit": null,
+          "note": "약 20분. 걷기엔 멀어 버스가 편하다"
+        }
+      ],
+      "tip": "하카타역(306번)이나 텐진(W1·302번)에서 니시테쓰 버스로 福岡タワー南口에 내리는 게 빠르다",
+      "sources": [
+        "https://www.fukuokatower.co.jp/access/",
+        "https://ja.wikipedia.org/wiki/福岡タワー"
+      ]
+    },
+    {
+      "id": "fukuoka.paypay-dome",
+      "ko": "미즈호 페이페이 돔",
+      "ja": "みずほPayPayドーム福岡",
+      "en": "Mizuho PayPay Dome Fukuoka",
+      "aliases": [
+        "페이페이돔",
+        "후쿠오카 돔",
+        "야후오크 돔",
+        "소프트뱅크 호크스",
+        "후쿠오카 돔 콘서트"
+      ],
+      "category": "전시·공연",
+      "lat": 33.5955,
+      "lng": 130.3621,
+      "stations": [
+        {
+          "ja": "唐人町",
+          "line": "fukuoka.K",
+          "walkMinutes": 15,
+          "exit": "3",
+          "note": "3번 출구에서 도보 약 15분"
+        }
+      ],
+      "tip": "",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/福岡PayPayドーム"
+      ]
+    },
+    {
+      "id": "fukuoka.kushida-shrine",
+      "ko": "구시다 신사",
+      "ja": "櫛田神社",
+      "en": "Kushida Shrine",
+      "aliases": [
+        "구시다신사",
+        "쿠시다 신사",
+        "하카타 기온 야마카사"
+      ],
+      "category": "신사·절",
+      "lat": 33.5931,
+      "lng": 130.4107,
+      "stations": [
+        {
+          "ja": "櫛田神社前",
+          "line": "fukuoka.N",
+          "walkMinutes": 1,
+          "exit": null,
+          "note": "약 140m"
+        },
+        {
+          "ja": "祇園",
+          "line": "fukuoka.K",
+          "walkMinutes": 5,
+          "exit": null,
+          "note": "약 400m"
+        },
+        {
+          "ja": "中洲川端",
+          "line": "fukuoka.K",
+          "walkMinutes": 8,
+          "exit": null,
+          "note": "약 660m. 가와바타 상점가를 지나 걷는다"
+        }
+      ],
+      "tip": "",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/櫛田神社_(福岡市)"
+      ]
+    },
+    {
+      "id": "fukuoka.kawabata-shotengai",
+      "ko": "가와바타 상점가",
+      "ja": "上川端商店街",
+      "en": "Kawabata Shopping Arcade",
+      "aliases": [
+        "카와바타 상점가",
+        "가와바타",
+        "가와바타 젠자이"
+      ],
+      "category": "쇼핑",
+      "lat": 33.5926,
+      "lng": 130.4102,
+      "stations": [
+        {
+          "ja": "中洲川端",
+          "line": "fukuoka.K",
+          "walkMinutes": 0,
+          "exit": "5",
+          "note": "직결. 5번 출구가 상점가 북쪽 입구이고, 남쪽 끝(구시다 신사 쪽)까지 상점가를 따라 약 7분"
+        }
+      ],
+      "tip": "",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/川端通商店街",
+        "https://canalcity.co.jp/access/",
+        "https://nominatim.openstreetmap.org/search?q=上川端商店街&format=json"
+      ]
+    },
+    {
+      "id": "fukuoka.jr-hakata-city",
+      "ko": "하카타역 아뮤플라자",
+      "ja": "JR博多シティ",
+      "en": "JR Hakata City",
+      "aliases": [
+        "하카타역",
+        "아뮤플라자 하카타",
+        "하카타 한큐",
+        "하카타역 쇼핑",
+        "츠바메노모리 광장"
+      ],
+      "category": "쇼핑",
+      "lat": 33.5904,
+      "lng": 130.4199,
+      "stations": [
+        {
+          "ja": "博多",
+          "line": "fukuoka.K",
+          "walkMinutes": 0,
+          "exit": null,
+          "note": "직결. 지하 1층에서 공항선 콘코스와 연결"
+        },
+        {
+          "ja": "博多",
+          "line": "fukuoka.N",
+          "walkMinutes": 0,
+          "exit": null,
+          "note": "직결. 하카타역 지하가를 통해 나나쿠마선 출구와 연결"
+        }
+      ],
+      "tip": "",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/JR博多シティ"
+      ]
+    },
+    {
+      "id": "fukuoka.yanagibashi-market",
+      "ko": "야나기바시 연합시장",
+      "ja": "柳橋連合市場",
+      "en": "Yanagibashi Rengo Market",
+      "aliases": [
+        "야나기바시 시장",
+        "야나기바시",
+        "후쿠오카 수산시장",
+        "하카타의 부엌"
+      ],
+      "category": "먹거리",
+      "lat": 33.5831,
+      "lng": 130.4083,
+      "stations": [
+        {
+          "ja": "渡辺通",
+          "line": "fukuoka.N",
+          "walkMinutes": 6,
+          "exit": null,
+          "note": "약 480m"
+        }
+      ],
+      "tip": "가게 대부분이 일요일과 공휴일에 쉬고 토요일은 연다",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/柳橋連合市場"
+      ]
+    },
+    {
+      "id": "fukuoka.tochoji",
+      "ko": "도초지",
+      "ja": "東長寺",
+      "en": "Tochoji Temple",
+      "aliases": [
+        "토초지",
+        "후쿠오카 대불",
+        "도초지 대불"
+      ],
+      "category": "신사·절",
+      "lat": 33.5951,
+      "lng": 130.4141,
+      "stations": [
+        {
+          "ja": "祇園",
+          "line": "fukuoka.K",
+          "walkMinutes": 1,
+          "exit": null,
+          "note": "역 바로 옆"
+        }
+      ],
+      "tip": "",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/東長寺"
+      ]
+    },
+    {
+      "id": "fukuoka.hakozakigu",
+      "ko": "하코자키구",
+      "ja": "筥崎宮",
+      "en": "Hakozaki Shrine",
+      "aliases": [
+        "하코자키 신사",
+        "하코자키궁",
+        "하코자키"
+      ],
+      "category": "신사·절",
+      "lat": 33.6147,
+      "lng": 130.4229,
+      "stations": [
+        {
+          "ja": "箱崎宮前",
+          "line": "fukuoka.H",
+          "walkMinutes": 3,
+          "exit": "1",
+          "note": "1번 출구에서 도보 3분. JR鹿児島本線 箱崎駅 西口에서도 徒歩8分"
+        }
+      ],
+      "tip": "",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/筥崎宮",
+        "https://www.hakozakigu.or.jp/",
+        "https://www.hakozakigu.or.jp/access/"
+      ]
+    }
+  ]
+}
