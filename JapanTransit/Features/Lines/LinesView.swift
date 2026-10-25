@@ -23,14 +23,15 @@ struct LinesView: View {
                             NavigationLink {
                                 LineDetailView(line: line)
                             } label: {
-                                HStack(spacing: 12) {
-                                    LineBadge(line: line)
+                                HStack(spacing: 14) {
+                                    LineBadge(line: line, size: 34)
                                     VStack(alignment: .leading, spacing: 1) {
-                                        Text(line.nameKo).font(.body.weight(.semibold))
+                                        Text(line.nameKo).font(.body.weight(.bold)).foregroundStyle(Theme.ink)
                                         Text("\(line.nameJa) · \(line.stations.count)개 역")
-                                            .font(.caption).foregroundStyle(.secondary)
+                                            .font(.caption).foregroundStyle(Theme.inkSoft)
                                     }
                                 }
+                                .padding(.vertical, 2)
                             }
                         }
                     }
@@ -45,6 +46,8 @@ struct LinesView: View {
                 }
                 #endif
             }
+            .scrollContentBackground(.hidden)
+            .background(Theme.paper)
             .navigationTitle("노선")
         }
     }
@@ -69,22 +72,37 @@ struct LineDetailView: View {
                 }
             }
             Section(line.circular ? "순환선" : "\(line.stations.first?.ko ?? "") ↔ \(line.stations.last?.ko ?? "")") {
-                ForEach(line.stations, id: \.code) { s in
-                    HStack(spacing: 10) {
-                        Text(s.code)
-                            .font(.caption.monospaced().weight(.bold))
-                            .foregroundStyle(.white)
-                            .frame(width: 44, height: 22)
-                            .background(line.swiftColor, in: RoundedRectangle(cornerRadius: 5))
-                        StationTitle(ko: s.ko, ja: s.ja)
-                        Spacer()
-                        HStack(spacing: 3) {
-                            ForEach(transfers(at: s), id: \.id) { LineBadge(line: $0, size: 18) }
+                VStack(alignment: .leading, spacing: 0) {
+                    ForEach(Array(line.stations.enumerated()), id: \.element.code) { i, s in
+                        HStack(spacing: 14) {
+                            StationMark(code: s.code, color: line.swiftColor, size: 36)
+                            VStack(alignment: .leading, spacing: 0) {
+                                Text(s.ja).font(.system(size: 18, weight: .bold)).foregroundStyle(Theme.ink)
+                                Text(s.ko).font(.caption).foregroundStyle(Theme.inkSoft)
+                            }
+                            Spacer()
+                            HStack(spacing: 3) {
+                                ForEach(transfers(at: s), id: \.id) { LineBadge(line: $0, size: 20) }
+                            }
                         }
+                        .padding(.vertical, 7)
+                        // The line runs behind the marks, like a route map.
+                        .background(alignment: .leading) {
+                            VStack(spacing: 0) {
+                                line.swiftColor.opacity(i == 0 && !line.circular ? 0 : 1)
+                                line.swiftColor.opacity(i == line.stations.count - 1 && !line.circular ? 0 : 1)
+                            }
+                            .frame(width: 6)
+                            .padding(.leading, 15)
+                        }
+                        .accessibilityElement(children: .combine)
                     }
                 }
+                .listRowBackground(Theme.card)
             }
         }
+        .scrollContentBackground(.hidden)
+        .background(Theme.paper)
         .navigationTitle(line.nameKo)
         .navigationBarTitleDisplayMode(.inline)
     }

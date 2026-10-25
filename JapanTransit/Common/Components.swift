@@ -1,52 +1,6 @@
 import SwiftUI
 import CoreLocation
 
-// MARK: - Line badge
-
-/// Rounded square in the line colour with its letter (G, M, JY…) — the same
-/// mark riders see on Tokyo signs.
-struct LineBadge: View {
-    let line: RailLine
-    var size: CGFloat = 28
-
-    var body: some View {
-        Text(line.badge)
-            .font(.system(size: size * (line.badge.count > 1 ? 0.42 : 0.55), weight: .heavy, design: .rounded))
-            .foregroundStyle(.white)
-            .frame(width: size, height: size)
-            .background(line.swiftColor, in: RoundedRectangle(cornerRadius: size * 0.28))
-            .accessibilityLabel(line.nameKo)
-    }
-}
-
-/// "신주쿠" with the sign's Japanese "新宿" and codes beneath.
-struct StationTitle: View {
-    let ko: String
-    let ja: String
-    var codes: [String] = []
-    var large = false
-
-    var body: some View {
-        VStack(alignment: .leading, spacing: 2) {
-            Text(ko)
-                .font(large ? .title2.bold() : .body.weight(.semibold))
-            HStack(spacing: 6) {
-                Text(ja)
-                    .font(large ? .headline : .subheadline)
-                    .foregroundStyle(.secondary)
-                ForEach(codes, id: \.self) { code in
-                    Text(code)
-                        .font(.caption2.monospaced().weight(.bold))
-                        .padding(.horizontal, 4).padding(.vertical, 1)
-                        .overlay(RoundedRectangle(cornerRadius: 4).stroke(.secondary.opacity(0.5)))
-                        .foregroundStyle(.secondary)
-                }
-            }
-        }
-        .accessibilityElement(children: .combine)
-    }
-}
-
 // MARK: - Location
 
 /// One-shot current location for "nearest station".

@@ -17,6 +17,7 @@ struct RootView: View {
             LinesView()
                 .tabItem { Label("노선", systemImage: "tram.fill") }
         }
+        .tint(Theme.indigo)
     }
 }
 

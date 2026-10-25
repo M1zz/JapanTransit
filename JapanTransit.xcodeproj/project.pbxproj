@@ -17,6 +17,7 @@
 		5C434EFC3E06EFB483CAA36D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 53E8002144E771EFC16356B9 /* InfoPlist.strings */; };
 		6E5587466DE2510907CC344D /* JapanTransitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB5E3ED5C62BBB63BAB1900 /* JapanTransitTests.swift */; };
 		885E6F19FD9D4B1C240A65CF /* BoardScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61DEC47787F3B2EC4A143B94 /* BoardScannerView.swift */; };
+		8AB7170486823CBF5808025E /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880CB79DCE8264A710FB9FFD /* Theme.swift */; };
 		9E2A0D23E09B2D4FFA6064CD /* transfers.json in Resources */ = {isa = PBXBuildFile; fileRef = 9AD297C0DA128F06454FFD69 /* transfers.json */; };
 		9EEBF98C5C88A1350D6BAA97 /* JapanTransitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE5B2738F3684EC1CEA09BA /* JapanTransitApp.swift */; };
 		A7D32BEA75090FF7A8D9DA40 /* TrainBoardKit in Frameworks */ = {isa = PBXBuildFile; productRef = F8424BD879EA3E144DFE00D1 /* TrainBoardKit */; };
@@ -46,6 +47,7 @@
 		6EF75739630CB9F0464CA269 /* JapanTransitTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = JapanTransitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		851DA975B85EC05B380C81CD /* RouteDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteDetailView.swift; sourceTree = "<group>"; };
 		8617328BEF96A26E836F8D3A /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		880CB79DCE8264A710FB9FFD /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		9AD297C0DA128F06454FFD69 /* transfers.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = transfers.json; sourceTree = "<group>"; };
 		9CEFEFE97FE01A8EDFF372CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9FC4AD5D7938AF9CE492F19A /* StationPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationPickerView.swift; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				CD04B12F93CB68B179AD658F /* Components.swift */,
+				880CB79DCE8264A710FB9FFD /* Theme.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -341,6 +344,7 @@
 				190426973C769A26A4886452 /* RouteDetailView.swift in Sources */,
 				24FD7F1D56B3435DF4A55A6D /* RoutePlanner.swift in Sources */,
 				F4D0065AB9AF85CF206468D4 /* StationPickerView.swift in Sources */,
+				8AB7170486823CBF5808025E /* Theme.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

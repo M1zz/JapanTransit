@@ -1,28 +1,36 @@
 import SwiftUI
 
-/// 경로 안내: 탈 노선, 방향(표지판 글자), 정거장, 환승, 급행 주의, 카메라 확인.
+/// 경로 안내: 노선도처럼 위에서 아래로. 노선색 선이 탄 역과 내릴 역을 잇고,
+/// 갈아타는 곳은 걷는 점선으로 잇는다. 탈 때마다 찾을 표지판을 그 자리에 보여 준다.
 struct RouteDetailView: View {
     let route: Route
     @State private var scanning: RouteSegment?
 
-    private let network = RailNetwork.shared
-
     var body: some View {
         ScrollView {
-            VStack(alignment: .leading, spacing: 16) {
-                header
+            VStack(alignment: .leading, spacing: 0) {
+                summary
+                    .padding(.bottom, 24)
                 ForEach(Array(route.segments.enumerated()), id: \.element.id) { i, seg in
                     if i > 0 {
-                        TransferCard(from: route.segments[i - 1], to: seg,
-                                     staysOnTrain: route.staysOnTrain(between: route.segments[i - 1], and: seg))
+                        let prev = route.segments[i - 1]
+                        TransferBlock(from: prev, to: seg,
+                                      staysOnTrain: route.staysOnTrain(between: prev, and: seg))
+                    } else {
+                        StopNode(station: seg.boarding, line: seg.line, title: "\(seg.boarding.ko)에서 타요", kind: .start,
+                                 below: (seg.line.swiftColor, .ride))
                     }
-                    SegmentCard(segment: seg) { scanning = seg }
+                    RideBlock(segment: seg) { scanning = seg }
                 }
-                arrival
+                if let last = route.segments.last {
+                    StopNode(station: last.alighting, line: last.line, title: "\(last.alighting.ko)에서 내려요", kind: .end,
+                             above: (last.line.swiftColor, .ride))
+                }
             }
-            .padding(16)
+            .padding(.horizontal, 20)
+            .padding(.vertical, 16)
         }
-        .background(Color(.systemGroupedBackground))
+        .background(Theme.paper.ignoresSafeArea())
         .navigationTitle("\(route.segments.first?.boarding.ko ?? "") → \(route.segments.last?.alighting.ko ?? "")")
         .navigationBarTitleDisplayMode(.inline)
         .fullScreenCover(item: $scanning) { seg in
@@ -30,164 +38,252 @@ struct RouteDetailView: View {
         }
     }
 
-    private var header: some View {
-        HStack(spacing: 16) {
-            stat("\(route.estimatedMinutes)분", "예상")
-            stat("\(route.stopCount)", "정거장")
-            stat(route.transferCount == 0 ? "없음" : "\(route.transferCount)번", "환승")
+    private var summary: some View {
+        VStack(alignment: .leading, spacing: 14) {
+            HStack(alignment: .firstTextBaseline, spacing: 18) {
+                stat("\(route.estimatedMinutes)", "분")
+                stat("\(route.stopCount)", "정거장")
+                stat("\(route.transferCount)", "번 환승")
+                Spacer()
+            }
+            RouteStrip(route: route, height: 10)
         }
-        .frame(maxWidth: .infinity)
-        .padding(.vertical, 12)
-        .background(.background, in: RoundedRectangle(cornerRadius: 14))
+        .card(padding: 18)
     }
 
-    private func stat(_ value: String, _ label: String) -> some View {
-        VStack(spacing: 2) {
-            Text(value).font(.title3.bold())
-            Text(label).font(.caption).foregroundStyle(.secondary)
+    private func stat(_ value: String, _ unit: String) -> some View {
+        HStack(alignment: .firstTextBaseline, spacing: 3) {
+            Text(value)
+                .font(.system(size: 30, weight: .heavy, design: .rounded))
+                .monospacedDigit()
+            Text(unit).font(.subheadline.weight(.semibold)).foregroundStyle(Theme.inkSoft)
         }
-        .frame(maxWidth: .infinity)
+        .foregroundStyle(Theme.ink)
         .accessibilityElement(children: .combine)
     }
+}
 
-    private var arrival: some View {
-        HStack(spacing: 10) {
-            Image(systemName: "mappin.circle.fill").font(.title2).foregroundStyle(.tint)
-            if let last = route.segments.last?.alighting {
-                StationTitle(ko: "\(last.ko)에서 내려요", ja: last.ja, codes: [last.code])
+// MARK: - Rail column
+
+/// The left column of the timeline: a vertical line in the line colour, solid
+/// for a ride and dotted for a walk.
+private struct Rail: View {
+    enum Style { case ride, walk }
+    let color: Color
+    var style: Style = .ride
+
+    var body: some View {
+        GeometryReader { geo in
+            Path { p in
+                p.move(to: CGPoint(x: geo.size.width / 2, y: 0))
+                p.addLine(to: CGPoint(x: geo.size.width / 2, y: geo.size.height))
             }
-            Spacer()
+            .stroke(color, style: style == .ride
+                    ? StrokeStyle(lineWidth: 6, lineCap: .round)
+                    : StrokeStyle(lineWidth: 3, lineCap: .round, dash: [1, 7]))
         }
-        .padding(14)
-        .background(.background, in: RoundedRectangle(cornerRadius: 14))
+        .frame(width: railWidth)
+        .accessibilityHidden(true)
+    }
+}
+
+private let railWidth: CGFloat = 40
+
+// MARK: - Station node
+
+/// A station on the timeline: a round node on the rail and the station name
+/// as it appears on the sign. Start and end are a bit bolder.
+private struct StopNode: View {
+    enum Kind { case start, end, transfer }
+    let station: RailStation
+    let line: RailLine
+    let title: String
+    let kind: Kind
+    /// The rail coming in from above and going out below the node.
+    var above: (Color, Rail.Style)?
+    var below: (Color, Rail.Style)?
+
+    var body: some View {
+        HStack(alignment: .center, spacing: 12) {
+            Color.clear.frame(width: railWidth)
+            VStack(alignment: .leading, spacing: 2) {
+                Text(title)
+                    .font(.footnote.weight(.bold))
+                    .foregroundStyle(kind == .end ? Theme.vermilion : Theme.inkSoft)
+                HStack(spacing: 8) {
+                    Text(station.ja)
+                        .font(.system(size: 24, weight: .heavy))
+                        .foregroundStyle(Theme.ink)
+                    StationMark(code: station.code, color: line.swiftColor, size: 28)
+                }
+            }
+            .padding(.vertical, 8)
+            Spacer(minLength: 0)
+        }
+        // The rail runs the full height of the row, behind the node.
+        .background(alignment: .leading) {
+            VStack(spacing: 0) {
+                railPiece(above)
+                railPiece(below)
+            }
+            .frame(width: railWidth)
+        }
+        .overlay(alignment: .leading) {
+            node.frame(width: railWidth)
+        }
+        .accessibilityElement(children: .ignore)
+        .accessibilityLabel("\(title). \(station.ja), 역 번호 \(station.code)")
+    }
+
+    @ViewBuilder private func railPiece(_ piece: (Color, Rail.Style)?) -> some View {
+        if let piece { Rail(color: piece.0, style: piece.1) } else { Color.clear }
+    }
+
+    private var node: some View {
+        ZStack {
+            Circle()
+                .fill(kind == .end ? Theme.vermilionFill : Theme.card)
+            Circle()
+                .strokeBorder(kind == .end ? Theme.vermilionFill : line.swiftColor, lineWidth: 6)
+            if kind == .end {
+                Circle().fill(.white).frame(width: 8, height: 8)
+            }
+        }
+        .frame(width: 26, height: 26)
     }
 }
 
 // MARK: - Ride
 
-private struct SegmentCard: View {
+private struct RideBlock: View {
     let segment: RouteSegment
     let onScan: () -> Void
     @State private var showStops = false
 
     var body: some View {
-        VStack(alignment: .leading, spacing: 12) {
-            HStack(spacing: 10) {
-                LineBadge(line: segment.line, size: 34)
-                VStack(alignment: .leading, spacing: 1) {
-                    Text(segment.line.nameKo).font(.headline)
-                    Text("\(segment.line.nameJa) · \(segment.line.operatorKo)")
-                        .font(.caption).foregroundStyle(.secondary)
+        HStack(alignment: .top, spacing: 12) {
+            Rail(color: segment.line.swiftColor)
+            VStack(alignment: .leading, spacing: 14) {
+                HStack {
+                    LineChip(line: segment.line)
+                    Spacer()
+                    Text(segment.line.operatorKo)
+                        .font(.caption2.weight(.semibold))
+                        .foregroundStyle(Theme.inkSoft)
                 }
-                Spacer()
+
+                VStack(alignment: .leading, spacing: 6) {
+                    Text("표지판에서 이 글자를 찾으세요")
+                        .font(.caption.weight(.bold))
+                        .foregroundStyle(Theme.inkSoft)
+                    DirectionSign(segment: segment)
+                }
+
+                if !segment.throughTermini.isEmpty {
+                    Text("다른 회사 노선까지 가는 열차는 행선지가 이렇게도 나와요: \(segment.throughTermini.prefix(4).joined(separator: " · "))")
+                        .font(.caption)
+                        .foregroundStyle(Theme.inkSoft)
+                }
+
+                ServiceAdvice(segment: segment)
+
+                stops
+
+                Button(action: onScan) {
+                    HStack(spacing: 8) {
+                        Image(systemName: "camera.viewfinder")
+                        Text("승강장에서 열차 비춰 보기")
+                    }
+                    .font(.subheadline.weight(.bold))
+                    .foregroundStyle(.white)
+                    .frame(maxWidth: .infinity)
+                    .padding(.vertical, 13)
+                    .background(Theme.indigoFill, in: RoundedRectangle(cornerRadius: 14, style: .continuous))
+                }
+                .buttonStyle(.plain)
             }
+            .card(padding: 16)
+            .padding(.vertical, 10)
+        }
+    }
 
-            StationTitle(ko: "\(segment.boarding.ko)에서 타요", ja: segment.boarding.ja, codes: [segment.boarding.code])
-
-            signBox
-
-            serviceAdvice
-
+    private var stops: some View {
+        VStack(alignment: .leading, spacing: 8) {
             Button {
-                withAnimation { showStops.toggle() }
+                withAnimation(.snappy) { showStops.toggle() }
             } label: {
                 HStack {
-                    Text("\(segment.stopCount)정거장 가서 \(segment.alighting.ko)")
-                        .font(.subheadline.weight(.semibold))
+                    Text("\(segment.stopCount)정거장")
+                        .font(.subheadline.weight(.bold))
+                        .foregroundStyle(Theme.ink)
+                    Text("\(segment.alighting.ko)까지")
+                        .font(.subheadline)
+                        .foregroundStyle(Theme.inkSoft)
                     Spacer()
-                    Image(systemName: showStops ? "chevron.up" : "chevron.down")
+                    Image(systemName: "chevron.down")
+                        .font(.caption.weight(.bold))
+                        .rotationEffect(.degrees(showStops ? 180 : 0))
+                        .foregroundStyle(Theme.inkSoft)
                 }
                 .contentShape(Rectangle())
             }
             .buttonStyle(.plain)
 
             if showStops {
-                VStack(alignment: .leading, spacing: 6) {
-                    ForEach(segment.stations, id: \.code) { s in
-                        HStack(spacing: 8) {
-                            Circle().fill(segment.line.swiftColor).frame(width: 8, height: 8)
-                            Text(s.code).font(.caption.monospaced()).foregroundStyle(.secondary)
-                            Text(s.ko).font(.subheadline)
-                            Text(s.ja).font(.caption).foregroundStyle(.secondary)
+                VStack(alignment: .leading, spacing: 0) {
+                    ForEach(Array(segment.stations.enumerated()), id: \.element.code) { i, s in
+                        HStack(spacing: 10) {
+                            StationMark(code: s.code, color: segment.line.swiftColor, size: 24)
+                            Text(s.ja).font(.subheadline.weight(.semibold)).foregroundStyle(Theme.ink)
+                            Text(s.ko).font(.caption).foregroundStyle(Theme.inkSoft)
+                            Spacer()
                         }
+                        .padding(.vertical, 4)
+                        .opacity(i == 0 || i == segment.stations.count - 1 ? 1 : 0.85)
                     }
                 }
-                .padding(.leading, 4)
+                .transition(.opacity)
             }
-
-            Button(action: onScan) {
-                Label("승강장에서 카메라로 열차 확인", systemImage: "camera.viewfinder")
-                    .font(.subheadline.weight(.bold))
-                    .frame(maxWidth: .infinity)
-                    .padding(.vertical, 10)
-            }
-            .buttonStyle(.borderedProminent)
-            .tint(segment.line.swiftColor)
-        }
-        .padding(14)
-        .background(.background, in: RoundedRectangle(cornerRadius: 14))
-        .overlay(alignment: .leading) {
-            RoundedRectangle(cornerRadius: 2).fill(segment.line.swiftColor).frame(width: 4).padding(.vertical, 14)
         }
     }
+}
 
-    /// 표지판에서 찾을 글자. 일본어를 못 읽어도 모양으로 맞춰 볼 수 있게 크게.
-    private var signBox: some View {
-        let numbers = segment.step > 0 ? "역 번호가 커지는 쪽" : "역 번호가 작아지는 쪽"
-        let nextCode = segment.stations.count > 1 ? segment.stations[1].code : ""
-        return VStack(alignment: .leading, spacing: 6) {
-            Text("표지판에서 이 글자를 찾으세요")
-                .font(.caption.weight(.semibold))
-                .foregroundStyle(.secondary)
-            HStack(alignment: .firstTextBaseline, spacing: 8) {
-                if let loop = segment.loopSign {
-                    Text(loop).font(.system(size: 30, weight: .heavy))
-                }
-                Text(segment.headingSign)
-                    .font(.system(size: 30, weight: .heavy))
-                    .minimumScaleFactor(0.5)
-                    .lineLimit(1)
-            }
-            Text("\(segment.headingKo) · \(numbers) (\(segment.boarding.code) → \(nextCode))")
-                .font(.subheadline)
-            if !segment.throughTermini.isEmpty {
-                Text("다른 회사 노선으로 이어 달리는 열차는 행선지가 이렇게 나와요: \(segment.throughTermini.prefix(5).joined(separator: " · "))")
-                    .font(.caption)
-                    .foregroundStyle(.secondary)
-            }
-        }
-        .padding(12)
-        .frame(maxWidth: .infinity, alignment: .leading)
-        .background(segment.line.swiftColor.opacity(0.12), in: RoundedRectangle(cornerRadius: 10))
-        .accessibilityElement(children: .combine)
-    }
+/// 역을 건너뛰는 열차 주의.
+private struct ServiceAdvice: View {
+    let segment: RouteSegment
 
-    @ViewBuilder private var serviceAdvice: some View {
+    var body: some View {
         let advice = segment.serviceAdvice
         if !advice.isEmpty {
-            VStack(alignment: .leading, spacing: 6) {
+            VStack(alignment: .leading, spacing: 10) {
                 ForEach(advice, id: \.service.id) { item in
-                    HStack(alignment: .top, spacing: 8) {
-                        Image(systemName: item.ok ? "checkmark.circle.fill" : "exclamationmark.triangle.fill")
-                            .foregroundStyle(item.ok ? .green : .orange)
+                    HStack(alignment: .top, spacing: 10) {
+                        Text(item.service.signWords.first ?? "")
+                            .font(.system(size: 13, weight: .heavy))
+                            .foregroundStyle(.white)
+                            .padding(.horizontal, 7).padding(.vertical, 3)
+                            .background(item.ok ? Theme.indigoFill : Theme.vermilionFill,
+                                        in: RoundedRectangle(cornerRadius: 5, style: .continuous))
                         VStack(alignment: .leading, spacing: 1) {
-                            Text("\(item.service.signWords.first ?? "") (\(item.service.nameKo))")
-                                .font(.subheadline.weight(.bold))
+                            Text(item.service.nameKo)
+                                .font(.footnote.weight(.bold))
+                                .foregroundStyle(Theme.ink)
                             Text(item.service.isPaid ? "지정석 유료 열차라 일반 표로는 못 타요"
                                  : item.ok ? "타도 돼요. 두 역에 다 서요" : skipText(item.service))
                                 .font(.caption)
-                                .foregroundStyle(.secondary)
+                                .foregroundStyle(Theme.inkSoft)
                         }
                     }
                 }
                 if advice.contains(where: { !$0.ok }) {
-                    Text("모르겠으면 各駅停車(각역정차) 또는 各停 이라고 적힌 열차를 타세요")
-                        .font(.caption.weight(.semibold))
+                    Text("모르겠으면 各停(각역정차)을 타세요")
+                        .font(.caption.weight(.bold))
+                        .foregroundStyle(Theme.caution)
                 }
             }
-            .padding(10)
+            .padding(12)
             .frame(maxWidth: .infinity, alignment: .leading)
-            .background(Color.orange.opacity(0.08), in: RoundedRectangle(cornerRadius: 10))
+            .background(Theme.caution.opacity(0.08), in: RoundedRectangle(cornerRadius: 12, style: .continuous))
         }
     }
 
@@ -199,59 +295,69 @@ private struct SegmentCard: View {
 
 // MARK: - Transfer
 
-private struct TransferCard: View {
+private struct TransferBlock: View {
     let from: RouteSegment
     let to: RouteSegment
     let staysOnTrain: Bool
 
     var body: some View {
         if staysOnTrain {
-            HStack(spacing: 8) {
-                Image(systemName: "arrow.down").foregroundStyle(.secondary)
-                Text("\(from.alighting.ko)에서 내리지 말고 그대로 타고 가요")
-                    .font(.subheadline.weight(.bold))
+            HStack(spacing: 12) {
+                Rail(color: from.line.swiftColor)
+                Label("\(from.alighting.ko)에서 내리지 말고 그대로 타고 가요", systemImage: "arrow.down")
+                    .font(.footnote.weight(.bold))
+                    .foregroundStyle(Theme.ink)
+                    .padding(.vertical, 12)
             }
-            .padding(12)
-            .frame(maxWidth: .infinity, alignment: .leading)
-            .background(Color(.secondarySystemGroupedBackground).opacity(0.6), in: RoundedRectangle(cornerRadius: 12))
         } else {
-            change
+            VStack(alignment: .leading, spacing: 0) {
+                StopNode(station: from.alighting, line: from.line, title: "\(from.alighting.ko)에서 내려 갈아타요", kind: .transfer,
+                         above: (from.line.swiftColor, .ride), below: (Theme.inkSoft, .walk))
+                HStack(alignment: .top, spacing: 12) {
+                    Rail(color: Theme.inkSoft, style: .walk)
+                    walk
+                        .padding(.vertical, 8)
+                }
+                StopNode(station: to.boarding, line: to.line, title: "\(to.line.nameKo) 타는 곳", kind: .transfer,
+                         above: (Theme.inkSoft, .walk), below: (to.line.swiftColor, .ride))
+            }
         }
     }
 
-    private var change: some View {
+    private var walk: some View {
         VStack(alignment: .leading, spacing: 8) {
-            HStack(spacing: 8) {
-                Image(systemName: "arrow.triangle.swap").foregroundStyle(.secondary)
-                Text("\(from.alighting.ko)에서 갈아타요").font(.subheadline.weight(.bold))
+            if from.line.id == to.line.id {
+                Text("같은 \(to.line.nameKo)이지만 여기서 열차가 끝나요. 내려서 \(to.headingSign) 열차로 바꿔 타세요")
+                    .font(.footnote.weight(.semibold))
+                    .foregroundStyle(Theme.ink)
+            } else {
+                HStack(spacing: 8) {
+                    LineBadge(line: to.line, size: 22)
+                    Text("\(to.line.nameJa) のりかえ")
+                        .font(.system(size: 17, weight: .heavy))
+                        .foregroundStyle(Theme.ink)
+                }
+                Text("이 글자가 적힌 안내판을 따라가세요")
+                    .font(.caption)
+                    .foregroundStyle(Theme.inkSoft)
             }
             if RailNetwork.shared.isOutsideTransfer(from: from.alighting.ja, to: to.boarding.ja) {
-                Label("개찰구를 나와 길을 걸어서 \(to.boarding.ko)(\(to.boarding.ja))역으로 가요. 역 밖으로 나가는 게 맞아요",
-                      systemImage: "figure.walk")
-                    .font(.caption.weight(.semibold))
+                note("figure.walk", "개찰구를 나와 길을 걸어서 \(to.boarding.ko)(\(to.boarding.ja))역으로 가요. 역 밖으로 나가는 게 맞아요")
             } else if from.alighting.ja != to.boarding.ja {
-                Label("역 안 통로로 걸어서 \(to.boarding.ko)(\(to.boarding.ja))역으로 가요", systemImage: "figure.walk")
-                    .font(.caption.weight(.semibold))
-            }
-            if from.line.id == to.line.id {
-                Text("같은 \(to.line.nameKo)이지만 이 역에서 열차가 끝나요. 내려서 \(to.headingSign) 열차로 바꿔 타세요")
-                    .font(.caption.weight(.semibold))
-            } else {
-                HStack(spacing: 6) {
-                    Text("이 글자를 따라가세요:").font(.caption).foregroundStyle(.secondary)
-                    LineBadge(line: to.line, size: 20)
-                    Text("\(to.line.nameJa) のりかえ").font(.headline)
-                }
+                note("figure.walk", "역 안 통로로 걸어서 \(to.boarding.ko)(\(to.boarding.ja))역으로 가요")
             }
             if from.line.operator != to.line.operator {
-                Text("\(from.line.operatorKo)에서 \(to.line.operatorKo)로 회사가 바뀌어요. 개찰구를 한 번 더 지나고 요금이 따로 붙어요. 교통카드(Suica·PASMO)는 그대로 찍으면 돼요")
-                    .font(.caption)
-                    .foregroundStyle(.secondary)
+                note("yensign.circle", "\(from.line.operatorKo)에서 \(to.line.operatorKo)로 회사가 바뀌어요. 개찰구를 한 번 더 지나고 요금이 따로 붙어요. 교통카드(Suica·PASMO)는 그대로 찍으면 돼요")
             }
         }
-        .padding(12)
-        .frame(maxWidth: .infinity, alignment: .leading)
-        .background(Color(.secondarySystemGroupedBackground).opacity(0.6), in: RoundedRectangle(cornerRadius: 12))
         .accessibilityElement(children: .combine)
+    }
+
+    private func note(_ icon: String, _ text: String) -> some View {
+        HStack(alignment: .top, spacing: 6) {
+            Image(systemName: icon).font(.caption.weight(.bold))
+            Text(text).font(.caption)
+        }
+        .foregroundStyle(Theme.inkSoft)
     }
 }

@@ -33,6 +33,8 @@ struct StationPickerView: View {
             }
             .searchable(text: $query, placement: .navigationBarDrawer(displayMode: .always),
                         prompt: "신주쿠, 新宿, Shinjuku, M08")
+            .scrollContentBackground(.hidden)
+            .background(Theme.paper)
             .navigationTitle(title)
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
@@ -44,16 +46,9 @@ struct StationPickerView: View {
     }
 
     private func row(_ place: Place) -> some View {
-        HStack(spacing: 10) {
-            StationTitle(ko: place.ko, ja: place.ja, codes: place.codes)
-            Spacer()
-            HStack(spacing: 3) {
-                ForEach(place.stops.compactMap { network.line($0.lineID) }.uniqued(), id: \.id) {
-                    LineBadge(line: $0, size: 20)
-                }
-            }
-        }
-        .contentShape(Rectangle())
+        StationName(ko: place.ko, ja: place.ja, marks: place.marks)
+            .padding(.vertical, 2)
+            .contentShape(Rectangle())
     }
 
     @ViewBuilder private var nearbyRow: some View {
@@ -70,9 +65,12 @@ struct StationPickerView: View {
                     dismiss()
                 } label: {
                     HStack {
-                        Image(systemName: "location.fill").foregroundStyle(.tint)
+                        VStack(spacing: 2) {
+                            Image(systemName: "location.fill").font(.caption).foregroundStyle(Theme.indigo)
+                            Text("\(Int(item.meters))m").font(.caption2.monospacedDigit()).foregroundStyle(Theme.inkSoft)
+                        }
+                        .frame(width: 40)
                         row(item.place)
-                        Text("\(Int(item.meters))m").font(.caption).foregroundStyle(.secondary)
                     }
                 }
                 .buttonStyle(.plain)
