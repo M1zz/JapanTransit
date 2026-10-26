@@ -3,7 +3,7 @@
 일본 지하철·전철에서 "눈앞의 이 열차 타도 돼?" 를 카메라로 확인해 주는 앱.
 KORA(한국길찾기)의 형제 앱이다. 판정 엔진은 `../TrainBoardKit` 을 함께 쓴다.
 
-- 번들 ID: `com.leeo.japantransit` (스토어 이름은 아직 정하지 않았다)
+- 번들 ID: `com.leeo.japantransit`, 스토어 이름 `일본길찾기: 일본 지하철 안내`
 - 첫 사용자: 일본에 가는 한국인. 그다음 대만·홍콩·중국 여행자
 
 ## 왜 따로 내는가
@@ -36,7 +36,13 @@ xcodegen generate
 
 1. 실제 역에서 카메라 확인 시험 (줄 묶기, 행선지 글자 인식)
 2. LeeoKit 연결 (앱 안 의견 보내기, 앞으로 만들 기능). App ID 에 iCloud 기능을 켜야 한다
-3. 지원·개인정보 페이지(GitHub Pages), 스토어 문구, 스크린샷, DeployBar 배포 설정
-4. 막차 시각, 출구 안내, 실시간 운행 정보 (ODPT 등 데이터 출처 확인 필요)
-5. JR 다른 노선(주오선·소부선 등)과 오사카·교토
-6. 영어·중국어(번체·간체) 화면
+3. 막차 시각, 실시간 운행 정보 (ODPT 등 데이터 출처 확인 필요)
+4. 빠진 노선: 교토 게이한·한큐·JR 나라선·사가노선·란덴, JR 게이요선(디즈니), JR 유메사키선(USJ)
+5. 영어·중국어(번체·간체) 화면
+
+## 배포
+
+DeployBar 가 한다(`deploy.env`). 스토어 문구는 `APPSTORE.md`, 릴리즈 노트는 `RELEASE_NOTES.md`,
+소개·지원·개인정보 페이지는 `python3 scripts/make_docs.py` 로 만드는 `docs/`(GitHub Pages).
+스크린샷은 `docs/screenshots/raw/ko/` 원본으로 `scripts/make_marketing_screenshots.py`,
+헤더·검색 결과 그림은 `scripts/make_creative_assets.py`.

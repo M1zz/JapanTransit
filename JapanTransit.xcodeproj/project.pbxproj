@@ -47,7 +47,6 @@
 		39308FE571003909DBBA685E /* MapPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapPickerView.swift; sourceTree = "<group>"; };
 		4805C2DACBC370EF45B5E615 /* spots */ = {isa = PBXFileReference; lastKnownFileType = folder; name = spots; path = data/spots; sourceTree = SOURCE_ROOT; };
 		4A94026393C4A0B10B50F65A /* lines */ = {isa = PBXFileReference; lastKnownFileType = folder; name = lines; path = data/lines; sourceTree = SOURCE_ROOT; };
-		4AC73DAD1575021E5193C5D0 /* TrainBoardKit */ = {isa = PBXFileReference; lastKnownFileType = folder; name = TrainBoardKit; path = ../TrainBoardKit; sourceTree = SOURCE_ROOT; };
 		61DEC47787F3B2EC4A143B94 /* BoardScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardScannerView.swift; sourceTree = "<group>"; };
 		6834FC7750DBADC2BBCE4FFB /* BoardTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardTestView.swift; sourceTree = "<group>"; };
 		6EF75739630CB9F0464CA269 /* JapanTransitTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = JapanTransitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -127,14 +126,6 @@
 			path = Common;
 			sourceTree = "<group>";
 		};
-		59EE016F91F350C3E016DBCA /* Packages */ = {
-			isa = PBXGroup;
-			children = (
-				4AC73DAD1575021E5193C5D0 /* TrainBoardKit */,
-			);
-			name = Packages;
-			sourceTree = "<group>";
-		};
 		7886955D3DCBE891DBE16E2D /* Features */ = {
 			isa = PBXGroup;
 			children = (
@@ -204,7 +195,6 @@
 				A5A3BAC8065B47F3DF456B7D /* data */,
 				B1B3E3E9A7298E9697E5DBA5 /* JapanTransit */,
 				F51AEBBF80D5991960069CBC /* JapanTransitTests */,
-				59EE016F91F350C3E016DBCA /* Packages */,
 				1E433B1AE0E6DEA83FE945C7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -315,7 +305,7 @@
 			mainGroup = CA11E0A8E00879191CAC32EC;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				DD8F43F4BEF3F6AF0470A821 /* XCLocalSwiftPackageReference "../TrainBoardKit" */,
+				FCBD33C62FAAE0D5822E91AC /* XCRemoteSwiftPackageReference "TrainBoardKit" */,
 			);
 			preferredProjectObjectVersion = 77;
 			projectDirPath = "";
@@ -622,20 +612,26 @@
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCLocalSwiftPackageReference section */
-		DD8F43F4BEF3F6AF0470A821 /* XCLocalSwiftPackageReference "../TrainBoardKit" */ = {
-			isa = XCLocalSwiftPackageReference;
-			relativePath = ../TrainBoardKit;
+/* Begin XCRemoteSwiftPackageReference section */
+		FCBD33C62FAAE0D5822E91AC /* XCRemoteSwiftPackageReference "TrainBoardKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/M1zz/TrainBoardKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.0;
+			};
 		};
-/* End XCLocalSwiftPackageReference section */
+/* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
 		98FFD97337BFE7C18E380635 /* TrainBoardKit */ = {
 			isa = XCSwiftPackageProductDependency;
+			package = FCBD33C62FAAE0D5822E91AC /* XCRemoteSwiftPackageReference "TrainBoardKit" */;
 			productName = TrainBoardKit;
 		};
 		F8424BD879EA3E144DFE00D1 /* TrainBoardKit */ = {
 			isa = XCSwiftPackageProductDependency;
+			package = FCBD33C62FAAE0D5822E91AC /* XCRemoteSwiftPackageReference "TrainBoardKit" */;
 			productName = TrainBoardKit;
 		};
 /* End XCSwiftPackageProductDependency section */

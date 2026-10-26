@@ -17,16 +17,36 @@ struct RouteSegment: Hashable, Identifiable {
     var alighting: RailStation { line.stations[indices[indices.count - 1]] }
     var stopCount: Int { indices.count - 1 }
 
-    /// Riding time from the distance between stations: ~36 km/h between
-    /// stations plus half a minute standing at each one.
+    /// Riding time on the everyday train: the free service that stops at both
+    /// ends and skips some stations in between (the most stopping of those, so
+    /// a rare 特快 doesn't set the time). With none, every station counts.
     var rideMinutes: Double {
-        zip(indices, indices.dropFirst()).reduce(0) { sum, pair in
-            sum + RouteSegment.minutes(line.stations[pair.0], line.stations[pair.1])
+        let stations = self.stations
+        let inside = Set(stations.map(\.ja))
+        let stopping = (line.services ?? [])
+            .filter { !$0.isPaid }
+            .map { Set($0.stops(on: .now)).intersection(inside) }
+            .filter { $0.contains(boarding.ja) && $0.contains(alighting.ja) && $0.count < stations.count }
+            .max { $0.count < $1.count } ?? inside
+        var total = 0.0, run = 0.0
+        for (a, b) in zip(stations, stations.dropFirst()) {
+            run += RailNetwork.haversine(a.lat, a.lng, b.lat, b.lng)
+            if stopping.contains(b.ja) {
+                total += Self.minutes(run: run)
+                run = 0
+            }
         }
+        return total
     }
 
     static func minutes(_ a: RailStation, _ b: RailStation) -> Double {
-        0.5 + RailNetwork.haversine(a.lat, a.lng, b.lat, b.lng) / 600
+        minutes(run: RailNetwork.haversine(a.lat, a.lng, b.lat, b.lng))
+    }
+
+    /// One run between two stops of `meters`: half a minute standing, ~36 km/h
+    /// for the first 1.5 km while the train speeds up, ~90 km/h after that.
+    static func minutes(run meters: Double) -> Double {
+        0.5 + min(meters, 1500) / 600 + max(meters - 1500, 0) / 1500
     }
 }
 

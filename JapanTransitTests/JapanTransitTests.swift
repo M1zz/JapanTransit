@@ -132,6 +132,16 @@ final class RoutePlannerTests: XCTestCase {
         XCTAssertEqual(route.segments.first?.headingSign, "浅草方面")
     }
 
+    func testMinutesFollowTheEverydayTrain() throws {
+        // 지하철은 역마다 서는 시간 그대로(긴자선 약 32분), 교외 노선은 급행 기준.
+        // 모든 역에 서는 셈이면 나리타 공항이 2시간을 넘었다.
+        let ginza = try XCTUnwrap(planner.routes(from: "渋谷", to: "浅草").first)
+        XCTAssertEqual(ginza.estimatedMinutes, 32, accuracy: 3)
+        let narita = try XCTUnwrap(planner.routes(from: "京成上野", to: "成田空港").first)
+        XCTAssertLessThan(narita.estimatedMinutes, 90)
+        XCTAssertGreaterThan(narita.estimatedMinutes, 45)
+    }
+
     func testRouteWithTransfer() throws {
         let routes = planner.routes(from: "池袋", to: "銀座")
         XCTAssertFalse(routes.isEmpty)

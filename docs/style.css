@@ -1,0 +1,46 @@
+:root {
+  --paper: #F4F1EA; --card: #FFFFFF; --ink: #1A2233; --ink-soft: #5D6678;
+  --hairline: #E4DFD4; --indigo: #345698; --vermilion: #D6333F; --sign: #1B2744;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper: #0E131E; --card: #182030; --ink: #ECEEF3; --ink-soft: #A3ABBB;
+    --hairline: #273042; --indigo: #8FAEEE; --vermilion: #FF6B73; --sign: #222F4F;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; background: var(--paper); color: var(--ink);
+  font: 17px/1.7 -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+  word-break: keep-all;
+}
+.container { max-width: 760px; margin: 0 auto; padding: 0 16px 48px; }
+a { color: var(--indigo); }
+header.site { display: flex; align-items: center; gap: 14px; padding: 28px 0 12px; }
+header.site img { width: 56px; height: 56px; border-radius: 13px; }
+header.site .title { font-size: 22px; font-weight: 800; }
+header.site .subtitle { color: var(--ink-soft); font-size: 15px; }
+nav.pages { display: flex; gap: 6px; flex-wrap: wrap; margin: 8px 0 24px; }
+nav.pages a {
+  padding: 6px 14px; border-radius: 999px; text-decoration: none; font-size: 15px;
+  color: var(--ink); background: var(--card); border: 1px solid var(--hairline);
+}
+nav.pages a[aria-current] { background: var(--sign); color: #fff; border-color: var(--sign); }
+h1 { font-size: 30px; line-height: 1.3; margin: 8px 0 8px; }
+h2 { font-size: 21px; margin: 36px 0 12px; }
+h3 { font-size: 18px; margin: 0 0 6px; }
+.lead { color: var(--ink-soft); font-size: 18px; }
+.sign {
+  background: var(--sign); color: #fff; border-radius: 14px; padding: 18px 20px; margin: 20px 0;
+  border-bottom: 5px solid var(--vermilion);
+}
+.sign .eyebrow { font-size: 13px; letter-spacing: .08em; opacity: .75; }
+.sign .big { font-size: 24px; font-weight: 800; line-height: 1.35; }
+.card {
+  background: var(--card); border: 1px solid var(--hairline); border-radius: 14px;
+  padding: 18px 20px; margin: 12px 0;
+}
+.card p { margin: 0; }
+.card ul { margin: 6px 0 0; padding-left: 20px; }
+.contact { margin-top: 32px; padding: 18px 20px; border-radius: 14px; background: var(--card); border-left: 5px solid var(--indigo); }
+footer.site { margin-top: 48px; color: var(--ink-soft); font-size: 14px; }
