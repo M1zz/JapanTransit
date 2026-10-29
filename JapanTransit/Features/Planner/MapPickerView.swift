@@ -12,6 +12,7 @@ struct MapPickerView: View {
     @State private var selection: Selection?
 
     private let network = RailNetwork.shared
+    @Environment(\.accessibilityReduceMotion) private var reduceMotion
 
     enum Selection: Hashable {
         case place(String)
@@ -57,6 +58,7 @@ struct MapPickerView: View {
                         .background(Theme.vermilionFill, in: Circle())
                         .overlay(Circle().stroke(.white, lineWidth: 2))
                         .scaleEffect(selection == .spot(s.id) ? 1.3 : 1)
+                        .accessibilityLabel(s.ko)
                 }
                 .tag(Selection.spot(s.id))
             }
@@ -75,7 +77,7 @@ struct MapPickerView: View {
                 card(for: selection)
                     .padding(.horizontal, 12)
                     .padding(.bottom, 8)
-                    .transition(.move(edge: .bottom).combined(with: .opacity))
+                    .transition(reduceMotion ? .opacity : .move(edge: .bottom).combined(with: .opacity))
             }
         }
         .animation(.snappy, value: selection)

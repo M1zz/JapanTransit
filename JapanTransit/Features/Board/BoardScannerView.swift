@@ -37,6 +37,11 @@ struct BoardScannerView: View {
             }
         }
         .animation(.easeOut(duration: 0.2), value: model.verdict)
+        // 화면을 볼 수 없어도 판정이 바뀌면 VoiceOver 가 바로 읽어 준다
+        .onChange(of: model.verdict) { _, verdict in
+            guard verdict != nil else { return }
+            AccessibilityNotification.Announcement(verdictTitle).post()
+        }
         .onChange(of: model.verdict) { _, verdict in
             guard case .board = verdict, !countedBoarding else { return }
             countedBoarding = true
@@ -89,24 +94,34 @@ struct BoardScannerView: View {
         } else {
             switch model.verdict {
             case .board(let matched):
-                card(icon: "checkmark.circle.fill", title: "타세요",
+                card(icon: "checkmark.circle.fill", title: verdictTitle,
                      detail: reading(matched).map { "\(matched) (\($0)) 방향이 맞아요" } ?? "\(matched) 방향이 맞아요",
                      color: .green)
             case .wrongDirection(let matched):
-                card(icon: "xmark.octagon.fill", title: "반대 방향이에요",
+                card(icon: "xmark.octagon.fill", title: verdictTitle,
                      detail: reading(matched).map { "\(matched) (\($0)) 쪽으로 가는 열차예요" } ?? "\(matched) 쪽으로 가는 열차예요",
                      color: .red)
             case .skipsStop(let word, let station):
-                card(icon: "forward.fill", title: "이 열차는 타지 마세요",
+                card(icon: "forward.fill", title: verdictTitle,
                      detail: "\(word) 열차는 \(reading(station) ?? station)에서 탈 수 없어요. 各停(각역정차)을 타세요",
                      color: .red)
             case .ambiguous:
-                card(icon: "questionmark.circle", title: "양쪽 역 이름이 다 보여요",
+                card(icon: "questionmark.circle", title: verdictTitle,
                      detail: "열차 앞의 행선지나 전광판을 비춰 주세요", color: .white)
             case nil:
-                card(icon: "viewfinder", title: "행선지를 찾는 중…",
+                card(icon: "viewfinder", title: verdictTitle,
                      detail: "\(segment.headingStations[0].ja) 같은 글자가 화면에 들어오게 해 주세요", color: .white)
             }
+        }
+    }
+
+    private var verdictTitle: String {
+        switch model.verdict {
+        case .board: "타세요"
+        case .wrongDirection: "반대 방향이에요"
+        case .skipsStop: "이 열차는 타지 마세요"
+        case .ambiguous: "양쪽 역 이름이 다 보여요"
+        case nil: "행선지를 찾는 중…"
         }
     }
 
@@ -119,6 +134,7 @@ struct BoardScannerView: View {
             Image(systemName: icon)
                 .font(.system(size: 36, weight: .black))
                 .foregroundStyle(color)
+                .accessibilityHidden(true)
             VStack(alignment: .leading, spacing: 3) {
                 Text(title).font(.title2.weight(.black)).foregroundStyle(.white)
                 Text(detail).font(.callout.weight(.semibold)).foregroundStyle(.white.opacity(0.85))

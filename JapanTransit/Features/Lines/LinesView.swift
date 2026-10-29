@@ -79,7 +79,7 @@ struct LineDetailView: View {
                         HStack(spacing: 14) {
                             StationMark(code: s.code, color: line.swiftColor, size: 36)
                             VStack(alignment: .leading, spacing: 0) {
-                                Text(s.ja).font(.system(size: 18, weight: .bold)).foregroundStyle(Theme.ink)
+                                Text(s.ja).font(.title3.weight(.bold)).foregroundStyle(Theme.ink)
                                 Text(s.ko).font(.caption).foregroundStyle(Theme.inkSoft)
                             }
                             Spacer()

@@ -60,7 +60,7 @@ struct RouteDetailView: View {
     private func stat(_ value: String, _ unit: String) -> some View {
         HStack(alignment: .firstTextBaseline, spacing: 3) {
             Text(value)
-                .font(.system(size: 30, weight: .heavy, design: .rounded))
+                .font(.system(.title, design: .rounded, weight: .heavy))
                 .monospacedDigit()
             Text(unit).font(.subheadline.weight(.semibold)).foregroundStyle(Theme.inkSoft)
         }
@@ -118,7 +118,7 @@ private struct StopNode: View {
                     .foregroundStyle(kind == .end ? Theme.vermilion : Theme.inkSoft)
                 HStack(spacing: 8) {
                     Text(station.ja)
-                        .font(.system(size: 24, weight: .heavy))
+                        .font(.title2.weight(.heavy))
                         .foregroundStyle(Theme.ink)
                     StationMark(code: station.code, color: line.swiftColor, size: 28)
                 }
@@ -234,6 +234,7 @@ private struct RideBlock: View {
                 .contentShape(Rectangle())
             }
             .buttonStyle(.plain)
+            .accessibilityValue(showStops ? "펼침" : "접힘")
 
             if showStops {
                 VStack(alignment: .leading, spacing: 0) {
@@ -265,7 +266,7 @@ private struct ServiceAdvice: View {
                 ForEach(advice, id: \.service.id) { item in
                     HStack(alignment: .top, spacing: 10) {
                         Text(item.service.signWords.first ?? "")
-                            .font(.system(size: 13, weight: .heavy))
+                            .font(.footnote.weight(.heavy))
                             .foregroundStyle(.white)
                             .padding(.horizontal, 7).padding(.vertical, 3)
                             .background(item.ok ? Theme.indigoFill : Theme.vermilionFill,
@@ -355,7 +356,7 @@ private struct TransferBlock: View {
                 HStack(spacing: 8) {
                     LineBadge(line: to.line, size: 22)
                     Text("\(to.line.nameJa) のりかえ")
-                        .font(.system(size: 17, weight: .heavy))
+                        .font(.body.weight(.heavy))
                         .foregroundStyle(Theme.ink)
                 }
                 Text("이 글자가 적힌 안내판을 따라가세요")

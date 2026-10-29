@@ -53,7 +53,7 @@ struct SpotCard: View {
                 }
                 VStack(alignment: .leading, spacing: 1) {
                     HStack(spacing: 6) {
-                        Text(access.ja).font(.system(size: 17, weight: .bold)).foregroundStyle(Theme.ink)
+                        Text(access.ja).font(.body.weight(.bold)).foregroundStyle(Theme.ink)
                         Text(place?.ko ?? "").font(.caption).foregroundStyle(Theme.inkSoft)
                     }
                     Text(detail(access, line: line))

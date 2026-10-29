@@ -130,6 +130,9 @@ struct StationName: View {
     let ja: String
     var marks: [(code: String, color: Color)] = []
     var large = false
+    /// 역명판 글씨도 글자 크기 설정을 따라 커진다
+    @ScaledMetric(relativeTo: .title2) private var jaSize: CGFloat = 21
+    @ScaledMetric(relativeTo: .largeTitle) private var jaLargeSize: CGFloat = 30
 
     var body: some View {
         HStack(alignment: .center, spacing: 12) {
@@ -138,7 +141,7 @@ struct StationName: View {
                     .font(large ? .subheadline.weight(.semibold) : .caption.weight(.semibold))
                     .foregroundStyle(Theme.inkSoft)
                 Text(ja)
-                    .font(.system(size: large ? 30 : 21, weight: .bold))
+                    .font(.system(size: large ? jaLargeSize : jaSize, weight: .bold))
                     .foregroundStyle(Theme.ink)
                     .minimumScaleFactor(0.6)
                     .lineLimit(1)
@@ -168,6 +171,7 @@ extension Place {
 /// white type on deep navy, the line mark on the left, an arrow on the right.
 struct DirectionSign: View {
     let segment: RouteSegment
+    @ScaledMetric(relativeTo: .largeTitle) private var signSize: CGFloat = 30
 
     var body: some View {
         VStack(alignment: .leading, spacing: 10) {
@@ -177,11 +181,11 @@ struct DirectionSign: View {
                 VStack(alignment: .leading, spacing: 0) {
                     if let loop = segment.loopSign {
                         Text(loop)
-                            .font(.system(size: 15, weight: .bold))
+                            .font(.subheadline.weight(.bold))
                             .foregroundStyle(.white.opacity(0.85))
                     }
                     Text(segment.headingSign)
-                        .font(.system(size: 30, weight: .heavy))
+                        .font(.system(size: signSize, weight: .heavy))
                         .foregroundStyle(.white)
                         .minimumScaleFactor(0.45)
                         .lineLimit(1)

@@ -73,7 +73,8 @@ struct PlannerView: View {
                 .tracking(1)
                 .foregroundStyle(Theme.indigo)
             Text("어디로 갈까요?")
-                .font(.system(size: 32, weight: .heavy))
+                .font(.largeTitle.weight(.heavy))
+                .accessibilityAddTraits(.isHeader)
                 .foregroundStyle(Theme.ink)
         }
         .padding(.top, 24)
@@ -121,9 +122,9 @@ struct PlannerView: View {
                     StationName(ko: place.ko, ja: place.ja, marks: place.marks)
                 } else {
                     Text(field == .from ? "출발역 고르기" : "도착역 고르기")
-                        .font(.system(size: 21, weight: .bold))
+                        .font(.title3.weight(.bold))
                         .foregroundStyle(Theme.inkSoft.opacity(0.6))
-                        .frame(height: 44, alignment: .leading)
+                        .frame(minHeight: 44, alignment: .leading)
                 }
             }
             .padding(.horizontal, 20)
@@ -212,7 +213,7 @@ struct RouteSummaryCard: View {
         VStack(alignment: .leading, spacing: 14) {
             HStack(alignment: .firstTextBaseline, spacing: 8) {
                 Text("\(route.estimatedMinutes)")
-                    .font(.system(size: 34, weight: .heavy, design: .rounded))
+                    .font(.system(.largeTitle, design: .rounded, weight: .heavy))
                     .monospacedDigit()
                 Text("분").font(.headline)
                 Spacer()
