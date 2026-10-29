@@ -1,0 +1,14 @@
+{
+  "name": {"en": "일본길찾기", "ko": "일본길찾기"},
+  "url": "https://m1zz.github.io/JapanTransit/",
+  "appStoreId": "6827173470",
+  "email": "mizzking75@gmail.com",
+  "copyright": "Leeo",
+  "year": 2026,
+  "color": {"light": "#345698", "dark": "#8FAEEE", "darkBg": "#0E131E"},
+  "shots": ["route", "place", "express", "map"],
+  "shotsFallback": "ko",
+  "locales": [
+    {"code": "ko", "path": "", "name": "한국어"}
+  ]
+}

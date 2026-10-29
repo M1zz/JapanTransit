@@ -1,0 +1,41 @@
+/* 일본길찾기 웹 체험. 전광판은 역의 LED 발차 안내처럼 남색 바탕, 판정은 앱의 카메라 화면처럼 초록과 빨강. */
+.demo-card { display: grid; grid-template-columns: 1fr 1.1fr; gap: var(--s5); align-items: start; }
+.jt-label { font-weight: 600; margin-bottom: var(--s3); }
+.jt-dests { display: grid; grid-template-columns: 1fr 1fr; gap: var(--s2); margin-bottom: var(--s4); }
+.jt-dest { display: flex; align-items: center; gap: var(--s3); min-height: 56px; padding: var(--s2) var(--s3);
+           font: inherit; text-align: left; color: var(--text); background: var(--bg); border: 2px solid transparent;
+           border-radius: var(--r-inner); cursor: pointer; transition: border-color .15s var(--ease), transform .15s var(--ease); }
+.jt-dest:active { transform: scale(.97); }
+.jt-dest[aria-checked="true"] { border-color: var(--accent); }
+.jt-dest small { display: block; font-size: .75rem; color: var(--muted); }
+.jt-code { flex: none; display: grid; place-items: center; width: 40px; height: 40px; border-radius: 8px;
+           border: 3px solid #005AAA; background: #fff; color: #111; font-size: .7rem; font-weight: 800; }
+
+.jt-board { background: #121a2e; border-radius: var(--r-inner); padding: var(--s3); color: #fff;
+            font-family: "Hiragino Sans", "Noto Sans JP", sans-serif; }
+.jt-head { font-size: .875rem; color: #b9c3d9; padding: var(--s1) var(--s2) var(--s3); letter-spacing: .08em; }
+.jt-row { display: grid; grid-template-columns: 3.5em 7.5em 1fr; align-items: center; gap: var(--s3); width: 100%;
+          min-height: 48px; padding: var(--s2); font: inherit; font-size: 1.05rem; color: #fff; text-align: left;
+          background: transparent; border: 0; border-top: 1px solid rgb(255 255 255 / .08); cursor: pointer;
+          border-radius: 8px; transition: background .15s var(--ease); }
+.jt-row:hover { background: rgb(255 255 255 / .06); }
+.jt-row.on { background: rgb(255 255 255 / .14); }
+.jt-time { font-variant-numeric: tabular-nums; color: #ffd36b; }
+.jt-type { font-weight: 700; white-space: nowrap; }
+.jt-type.sky { color: #6cc4ff; } .jt-type.kt { color: #ff6a6a; } .jt-type.ac { color: #ffa94d; }
+.jt-type.ks { color: #ff8fd0; } .jt-type.lo { color: #fff; }
+.jt-to { font-weight: 600; }
+.demo-card:not([data-used]) .jt-row:nth-child(3) { animation: jt-hint 1.6s var(--ease) infinite; }
+@keyframes jt-hint { 50% { background: rgb(255 255 255 / .12); } }
+
+.jt-verdict { border-radius: var(--r-inner); padding: var(--s4); margin-bottom: var(--s3); background: var(--bg);
+              transition: background .2s var(--ease), color .2s var(--ease); }
+.jt-verdict strong { display: block; font-size: 1.25rem; }
+.jt-verdict p { margin: var(--s1) 0 0; }
+.jt-verdict p:empty { display: none; }
+.jt-verdict.ok { background: #1f8f4a; color: #fff; }
+.jt-verdict.no { background: #c42d3a; color: #fff; }
+
+@media (prefers-reduced-motion: reduce) { .demo-card .jt-row { animation: none; } }
+@media (max-width: 760px) { .demo-card { grid-template-columns: 1fr; } .jt-board { order: -1; } }
+@media (max-width: 380px) { .jt-row { grid-template-columns: 3.2em 6.6em 1fr; font-size: .95rem; gap: var(--s2); } }
