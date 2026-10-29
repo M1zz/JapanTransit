@@ -626,7 +626,7 @@
 			repositoryURL = "https://github.com/M1zz/LeeoKit.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 3.26.0;
+				minimumVersion = 3.26.1;
 			};
 		};
 		FCBD33C62FAAE0D5822E91AC /* XCRemoteSwiftPackageReference "TrainBoardKit" */ = {
