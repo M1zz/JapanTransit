@@ -1,15 +1,21 @@
 import SwiftUI
+import LeeoKit
 
 /// 경로 안내: 노선도처럼 위에서 아래로. 노선색 선이 탄 역과 내릴 역을 잇고,
 /// 갈아타는 곳은 걷는 점선으로 잇는다. 탈 때마다 찾을 표지판을 그 자리에 보여 준다.
 struct RouteDetailView: View {
     let route: Route
     @State private var scanning: RouteSegment?
+    @AppStorage(JapanTransitTipMoments.boardedKey) private var boardedCount = 0
 
     var body: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: 0) {
                 summary
+                    .padding(.bottom, 24)
+                // 카메라로 확인하고 탄 열차가 쌓였을 때만, 드물게 응원을 부탁한다. 카메라를 닫고 돌아온 자리다 (모달 아님)
+                LeeoTipAskSlot<JapanTransitSpec>(tipJar: JapanTransitSpec.tipJar,
+                                                 reached: JapanTransitTipMoments.reached(boardedCount: boardedCount))
                     .padding(.bottom, 24)
                 ForEach(Array(route.segments.enumerated()), id: \.element.id) { i, seg in
                     if i > 0 {

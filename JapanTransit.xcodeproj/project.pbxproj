@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		013BEF3B3D9AB0B0EDEC43CF /* BoardTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6834FC7750DBADC2BBCE4FFB /* BoardTestView.swift */; };
+		07C892041C1D79FBBFF3D88E /* LeeoKit in Frameworks */ = {isa = PBXBuildFile; productRef = 269090ED22B2941A1F8F96E1 /* LeeoKit */; };
+		0B44007B3DEC7E082D5DE58E /* JapanTransitSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7952A9ECDBD2CDE3CD2B624D /* JapanTransitSpec.swift */; };
 		17B695E5EC01F3A86863D645 /* spots in Resources */ = {isa = PBXBuildFile; fileRef = 4805C2DACBC370EF45B5E615 /* spots */; };
 		190426973C769A26A4886452 /* RouteDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 851DA975B85EC05B380C81CD /* RouteDetailView.swift */; };
 		24C0AACD11E27AF8906BD4BC /* LinesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A05DA3DB508FD51BAB1C9721 /* LinesView.swift */; };
@@ -50,6 +52,7 @@
 		61DEC47787F3B2EC4A143B94 /* BoardScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardScannerView.swift; sourceTree = "<group>"; };
 		6834FC7750DBADC2BBCE4FFB /* BoardTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardTestView.swift; sourceTree = "<group>"; };
 		6EF75739630CB9F0464CA269 /* JapanTransitTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = JapanTransitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7952A9ECDBD2CDE3CD2B624D /* JapanTransitSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JapanTransitSpec.swift; sourceTree = "<group>"; };
 		851DA975B85EC05B380C81CD /* RouteDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteDetailView.swift; sourceTree = "<group>"; };
 		8617328BEF96A26E836F8D3A /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		880CB79DCE8264A710FB9FFD /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
@@ -75,6 +78,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA0DA774D9E6D67C05F0B09D /* TrainBoardKit in Frameworks */,
+				07C892041C1D79FBBFF3D88E /* LeeoKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				ACE5B2738F3684EC1CEA09BA /* JapanTransitApp.swift */,
+				7952A9ECDBD2CDE3CD2B624D /* JapanTransitSpec.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -269,6 +274,7 @@
 			name = JapanTransit;
 			packageProductDependencies = (
 				98FFD97337BFE7C18E380635 /* TrainBoardKit */,
+				269090ED22B2941A1F8F96E1 /* LeeoKit */,
 			);
 			productName = JapanTransit;
 			productReference = FC75089C14B69DDBF54624C4 /* JapanTransit.app */;
@@ -305,6 +311,7 @@
 			mainGroup = CA11E0A8E00879191CAC32EC;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
+				4663A54CD5AC77B5B01779FB /* XCRemoteSwiftPackageReference "LeeoKit" */,
 				FCBD33C62FAAE0D5822E91AC /* XCRemoteSwiftPackageReference "TrainBoardKit" */,
 			);
 			preferredProjectObjectVersion = 77;
@@ -341,6 +348,7 @@
 				013BEF3B3D9AB0B0EDEC43CF /* BoardTestView.swift in Sources */,
 				24E2F3CBF5CFE0881861A705 /* Components.swift in Sources */,
 				9EEBF98C5C88A1350D6BAA97 /* JapanTransitApp.swift in Sources */,
+				0B44007B3DEC7E082D5DE58E /* JapanTransitSpec.swift in Sources */,
 				24C0AACD11E27AF8906BD4BC /* LinesView.swift in Sources */,
 				803B9ACA4AD42D1DAA583B03 /* MapPickerView.swift in Sources */,
 				3534EA86D8372C7FAD0F5D42 /* PlannerView.swift in Sources */,
@@ -613,6 +621,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		4663A54CD5AC77B5B01779FB /* XCRemoteSwiftPackageReference "LeeoKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/M1zz/LeeoKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.25.1;
+			};
+		};
 		FCBD33C62FAAE0D5822E91AC /* XCRemoteSwiftPackageReference "TrainBoardKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/M1zz/TrainBoardKit";
@@ -624,6 +640,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		269090ED22B2941A1F8F96E1 /* LeeoKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4663A54CD5AC77B5B01779FB /* XCRemoteSwiftPackageReference "LeeoKit" */;
+			productName = LeeoKit;
+		};
 		98FFD97337BFE7C18E380635 /* TrainBoardKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = FCBD33C62FAAE0D5822E91AC /* XCRemoteSwiftPackageReference "TrainBoardKit" */;

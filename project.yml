@@ -12,6 +12,10 @@ packages:
   TrainBoardKit:
     url: https://github.com/M1zz/TrainBoardKit
     from: 1.2.0
+  # 팁(개발자 응원하기) 화면에만 쓴다. bootstrap · 피드백 · 분석은 켜지 않았다.
+  LeeoKit:
+    url: https://github.com/M1zz/LeeoKit.git
+    from: 3.25.1
 settings:
   base:
     SWIFT_VERSION: "5.0"
@@ -34,6 +38,7 @@ targets:
         buildPhase: resources
     dependencies:
       - package: TrainBoardKit
+      - package: LeeoKit
     configFiles:
       Debug: Config/Version.xcconfig
       Release: Config/Version.xcconfig

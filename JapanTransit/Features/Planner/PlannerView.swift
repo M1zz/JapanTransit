@@ -1,4 +1,5 @@
 import SwiftUI
+import LeeoKit
 
 /// 길찾기: 출발역과 도착역을 고르면 경로를 보여 준다.
 struct PlannerView: View {
@@ -32,6 +33,10 @@ struct PlannerView: View {
                     } else {
                         tips
                     }
+                    // 개발자 응원하기 — 판매 중인 팁이 있어야 선다. 앱에 설정 화면이 없어 첫 화면 맨 아래에 둔다.
+                    LeeoTipJarLink<JapanTransitSpec>(tipJar: JapanTransitSpec.tipJar)
+                        .font(.subheadline.weight(.semibold))
+                        .foregroundStyle(Theme.inkSoft)
                 }
                 .padding(.horizontal, 20)
                 .padding(.bottom, 32)

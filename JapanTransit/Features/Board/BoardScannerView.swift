@@ -9,6 +9,8 @@ struct BoardScannerView: View {
     @Environment(\.dismiss) private var dismiss
     @StateObject private var camera = BoardCamera(recognitionLanguages: ["ja-JP", "en-US"])
     @StateObject private var model = ScannerModel()
+    /// 이번에 비춘 동안 "타세요" 를 이미 셌는가. 한 번 비추기에 한 번만 센다(팁 부탁의 숫자).
+    @State private var countedBoarding = false
 
     var body: some View {
         ZStack {
@@ -35,6 +37,11 @@ struct BoardScannerView: View {
             }
         }
         .animation(.easeOut(duration: 0.2), value: model.verdict)
+        .onChange(of: model.verdict) { _, verdict in
+            guard case .board = verdict, !countedBoarding else { return }
+            countedBoarding = true
+            JapanTransitTipMoments.recordBoarding()
+        }
         .task {
             let judge = segment.boardJudge()
             camera.onRows = { [weak model] rows in
