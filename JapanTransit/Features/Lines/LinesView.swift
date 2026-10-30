@@ -1,9 +1,14 @@
 import SwiftUI
+import LeeoKit
 
 /// 노선: 회사별 노선 목록과 노선마다 역 순서.
 struct LinesView: View {
     private let network = RailNetwork.shared
     @AppStorage("lines.region") private var region = Region.tokyo.id
+    @State private var path: [RailLine] = []
+    /// 아이폰 듀오를 폈을 때 결과 쪽 판에 펼친 노선. 없거나 다른 도시면 그 도시 첫 노선.
+    @State private var shownLine: RailLine?
+    @Environment(\.foldLayout) private var fold
 
     private var groups: [(String, [RailLine])] {
         var order: [String] = []
@@ -16,14 +21,51 @@ struct LinesView: View {
     }
 
     var body: some View {
-        NavigationStack {
+        // 아이폰 듀오를 펴면 고르는 쪽(왼쪽 · 아래)에 노선 목록, 결과 쪽(오른쪽 · 위)에 그 노선의 역 순서.
+        // 접혀 있거나 보통 아이폰이면 목록만 그린다. 지금 화면 그대로.
+        FoldSplitView {
+            list
+        } result: {
+            NavigationStack {
+                if let line = shown {
+                    LineDetailView(line: line)
+                        .id(line.id)
+                }
+            }
+        }
+        .onChange(of: fold.isUnfolded) { _, unfolded in
+            // 접힌 채 보던 노선이 있으면 펴는 순간 결과 쪽으로 옮긴다.
+            guard unfolded, let last = path.last else { return }
+            shownLine = last
+            path.removeAll()
+        }
+    }
+
+    private var shown: RailLine? {
+        if let shownLine, shownLine.regionID == region { return shownLine }
+        return groups.first?.1.first
+    }
+
+    /// 노선을 누르면: 접혀 있으면 밀어 넣고, 펴져 있으면 결과 쪽 판에 펼친다.
+    private var linePath: Binding<[RailLine]> {
+        Binding {
+            path
+        } set: { newPath in
+            if fold.isUnfolded, newPath.count > path.count, let line = newPath.last {
+                shownLine = line
+            } else {
+                path = newPath
+            }
+        }
+    }
+
+    private var list: some View {
+        NavigationStack(path: linePath) {
             List {
                 ForEach(groups, id: \.0) { name, lines in
                     Section(name) {
                         ForEach(lines) { line in
-                            NavigationLink {
-                                LineDetailView(line: line)
-                            } label: {
+                            NavigationLink(value: line) {
                                 HStack(spacing: 14) {
                                     LineBadge(line: line, size: 34)
                                     VStack(alignment: .leading, spacing: 1) {
@@ -34,6 +76,9 @@ struct LinesView: View {
                                 }
                                 .padding(.vertical, 2)
                             }
+                            // 펼친 화면에서 결과 쪽에 열린 노선
+                            .listRowBackground(fold.isUnfolded && line == shown ? Theme.indigo.opacity(0.12) : nil)
+                            .accessibilityAddTraits(fold.isUnfolded && line == shown ? .isSelected : [])
                         }
                     }
                 }
@@ -51,6 +96,7 @@ struct LinesView: View {
             .background(Theme.paper)
             .safeAreaInset(edge: .top, spacing: 0) { RegionBar(selection: $region) }
             .navigationTitle("노선")
+            .navigationDestination(for: RailLine.self) { LineDetailView(line: $0) }
         }
     }
 }

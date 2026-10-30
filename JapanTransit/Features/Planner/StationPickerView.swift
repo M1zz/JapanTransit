@@ -46,7 +46,7 @@ struct StationPickerView: View {
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .cancellationAction) {
-                    Button("닫기") { dismiss() }
+                    Button("닫기", systemImage: "xmark") { dismiss() }
                 }
                 ToolbarItem(placement: .principal) {
                     Picker("보기", selection: $mode) {

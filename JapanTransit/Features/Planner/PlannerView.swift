@@ -7,6 +7,9 @@ struct PlannerView: View {
     @AppStorage("planner.to") private var toJa = ""
     @State private var picking: Field?
     @State private var path: [Route] = []
+    /// 아이폰 듀오를 폈을 때 결과 쪽 판에 펼친 경로. 없거나 지금 경로에 없으면 첫 경로.
+    @State private var shownRoute: Route?
+    @Environment(\.foldLayout) private var fold
 
     private enum Field: String, Identifiable {
         case from, to
@@ -23,14 +26,59 @@ struct PlannerView: View {
     }
 
     var body: some View {
-        NavigationStack(path: $path) {
+        // 아이폰 듀오를 펴면 고르는 쪽(왼쪽 · 아래)에 출발 · 도착과 경로 목록, 결과 쪽(오른쪽 · 위)에 고른 경로.
+        // 접혀 있거나 보통 아이폰이면 고르는 쪽만 그린다. 지금 화면 그대로.
+        let routes = self.routes
+        FoldSplitView {
+            planner
+        } result: {
+            NavigationStack {
+                if let route = shown(in: routes) {
+                    RouteDetailView(route: route)
+                        .id(route)
+                } else {
+                    ScrollView { tips.padding(20) }
+                        .background(Theme.paper.ignoresSafeArea())
+                        .toolbar(.hidden, for: .navigationBar)
+                }
+            }
+        }
+        .onChange(of: fold.isUnfolded) { _, unfolded in
+            // 접힌 채 보던 경로가 있으면 펴는 순간 결과 쪽으로 옮긴다.
+            guard unfolded, let last = path.last else { return }
+            shownRoute = last
+            path.removeAll()
+        }
+    }
+
+    /// 결과 쪽 판에 설 경로. 고른 것이 지금 경로에 없으면(역을 바꿨으면) 첫 경로.
+    private func shown(in routes: [Route]) -> Route? {
+        shownRoute.flatMap { routes.contains($0) ? $0 : nil } ?? routes.first
+    }
+
+    /// 경로를 누르면: 접혀 있으면 밀어 넣고, 펴져 있으면 결과 쪽 판에 펼친다.
+    private var routePath: Binding<[Route]> {
+        Binding {
+            path
+        } set: { newPath in
+            if fold.isUnfolded, newPath.count > path.count, let route = newPath.last {
+                shownRoute = route
+            } else {
+                path = newPath
+            }
+        }
+    }
+
+    private var planner: some View {
+        NavigationStack(path: routePath) {
             ScrollView {
                 VStack(alignment: .leading, spacing: 20) {
                     header
                     ticket
                     if from != nil, to != nil {
                         results
-                    } else {
+                    } else if !fold.isUnfolded {
+                        // 펴면 결과 쪽 판에 선다.
                         tips
                     }
                     // 개발자 응원하기 — 판매 중인 팁이 있어야 선다. 앱에 설정 화면이 없어 첫 화면 맨 아래에 둔다.
@@ -155,6 +203,7 @@ struct PlannerView: View {
                         RouteSummaryCard(route: route, label: RoutePlanner.label(for: route, in: routes))
                     }
                     .buttonStyle(.plain)
+                    .foldShown(fold.isUnfolded && route == shown(in: routes))
                 }
             }
         }
@@ -199,6 +248,22 @@ struct PlannerView: View {
             }
         }
         .accessibilityElement(children: .combine)
+    }
+}
+
+// MARK: - 아이폰 듀오
+
+extension View {
+    /// 펼친 화면에서 결과 쪽에 열린 카드에 테두리를 세운다.
+    func foldShown(_ isShown: Bool) -> some View {
+        overlay {
+            if isShown {
+                RoundedRectangle(cornerRadius: Theme.corner, style: .continuous)
+                    .strokeBorder(Theme.indigo, lineWidth: 2)
+                    .allowsHitTesting(false)
+            }
+        }
+        .accessibilityAddTraits(isShown ? .isSelected : [])
     }
 }
 

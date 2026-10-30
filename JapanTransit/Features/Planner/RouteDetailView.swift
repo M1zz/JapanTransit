@@ -41,6 +41,8 @@ struct RouteDetailView: View {
         .navigationBarTitleDisplayMode(.inline)
         .fullScreenCover(item: $scanning) { seg in
             BoardScannerView(segment: seg)
+                // 아이폰 듀오를 펴면 카메라는 고르는 쪽 판에만 선다.
+                .foldConfined()
         }
     }
 
