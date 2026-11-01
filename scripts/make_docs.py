@@ -47,7 +47,7 @@ def page(name, title, description, body):
   <main>
 {body}
     <div class="contact">
-      궁금한 점이나 틀린 역 정보는 <a href="mailto:mizzking75@gmail.com">mizzking75@gmail.com</a> 으로 보내 주세요.
+      궁금한 점이나 틀린 역 정보는 <a href="mailto:leeo@kakao.com">leeo@kakao.com</a> 으로 보내 주세요.
     </div>
   </main>
 

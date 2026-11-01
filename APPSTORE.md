@@ -46,7 +46,7 @@ DeployBar 가 이 파일을 읽어 App Store Connect 의 스토어 페이지를 
 개인정보를 모으지 않습니다
 회원가입, 광고, 이용 통계가 없습니다. 위치와 카메라는 기기 안에서만 쓰고 저장하거나 보내지 않습니다.
 
-문의: mizzking75@gmail.com
+문의: leeo@kakao.com
 
 ### 키워드
 
