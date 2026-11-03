@@ -17,6 +17,7 @@ struct JapanTransitApp: App {
 struct RootView: View {
     private enum Tab { case planner, lines }
     @State private var tab = Tab.planner
+    @Bindable private var router = TransitRouter.shared
 
     var body: some View {
         TabView(selection: $tab) {
@@ -35,6 +36,8 @@ struct RootView: View {
             .init(value: Tab.lines, title: String(localized: "노선"), symbol: "tram.fill"),
         ], selected: tab) { tab = $0 }
         .tint(Theme.indigo)
+        // Siri 로 길찾기를 시작하면 길찾기 탭으로 (→ TransitIntents.swift)
+        .onChange(of: router.showPlannerRequest) { tab = .planner }
     }
 
     private static let plannerSymbol = "point.topleft.down.to.point.bottomright.curvepath"

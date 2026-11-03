@@ -1,0 +1,46 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "Get directions to ${station} with ${applicationName}" : {
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "${applicationName}로 ${station} 가는 법"
+          }
+        }
+      }
+    },
+    "Route to a station with ${applicationName}" : {
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "${applicationName}로 길찾기"
+          }
+        }
+      }
+    },
+    "Nearest station with ${applicationName}" : {
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "${applicationName}로 가까운 역 찾아줘"
+          }
+        }
+      }
+    },
+    "${applicationName} nearest station" : {
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "${applicationName} 가까운 역"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}

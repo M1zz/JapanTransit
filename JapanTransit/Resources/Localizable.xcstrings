@@ -1,0 +1,26 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "Route to Station" : {
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "역까지 길찾기"
+          }
+        }
+      }
+    },
+    "Nearest Station" : {
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "가까운 역"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}
