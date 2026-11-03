@@ -3,6 +3,11 @@ import LeeoKit
 
 @main
 struct JapanTransitApp: App {
+    init() {
+        // 백업 금고: 예약된 복원 · 업데이트 직전 백업을 저장소가 열리기 전에 한다
+        LeeoVault.start(JapanTransitSpec.self)
+    }
+
     var body: some Scene {
         WindowGroup {
             RootView()

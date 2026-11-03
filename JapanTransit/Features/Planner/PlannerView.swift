@@ -85,6 +85,12 @@ struct PlannerView: View {
                     LeeoTipJarLink<JapanTransitSpec>(tipJar: JapanTransitSpec.tipJar)
                         .font(.subheadline.weight(.semibold))
                         .foregroundStyle(Theme.inkSoft)
+                    // 백업 및 복원 — 설정 화면이 없어 팁 아래에 둔다.
+                    NavigationLink { LeeoVaultView(appName: JapanTransitSpec.displayName) } label: {
+                        Label(LeeoVaultText.entry, systemImage: "externaldrive.badge.timemachine")
+                    }
+                    .font(.subheadline.weight(.semibold))
+                    .foregroundStyle(Theme.inkSoft)
                 }
                 .padding(.horizontal, 20)
                 .padding(.bottom, 32)
