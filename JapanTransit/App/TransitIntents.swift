@@ -72,7 +72,7 @@ struct RouteToStationIntent: AppIntent {
     static let description = IntentDescription("지금 있는 곳에서 가장 가까운 역부터 고른 역까지 가는 길을 엽니다.")
     static let openAppWhenRun = true
 
-    @Parameter(title: "도착역", requestValueDialog: "어느 역으로 갈까요?")
+    @Parameter(title: "도착역", description: "가려는 역. 한국어 · 일본어 · 영어 이름이나 역 번호(M08)로 찾아요.", requestValueDialog: "어느 역으로 갈까요?")
     var station: StationEntity
 
     @MainActor
