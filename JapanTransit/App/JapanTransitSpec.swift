@@ -15,9 +15,6 @@ enum JapanTransitSpec: LeeoAppSpec {
         supportURL: URL(string: "https://m1zz.github.io/JapanTransit/support.html")!
     )
     static let monetization = LeeoMonetization.free
-    /// 피드백 허브 iCloud 컨테이너가 entitlements 에 없다. 금고는 파일로만 내보낸다.
-    static let vaultUsesICloud = false
-
     /// 무료 앱이라 LeeoStore 가 없다 — 팁만 혼자 받는다(앱을 열 때 `startStandalone()`, → JapanTransitApp).
     /// 소모성 상품 셋, 작은 것부터. ⚠️ 기능을 여는 상품이 아니다.
     @MainActor static let tipJar = LeeoTipJar(config: LeeoTipJarConfig(productIDs: [
