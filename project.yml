@@ -73,7 +73,12 @@ targets:
     type: bundle.unit-test
     platform: iOS
     sources:
-      - JapanTransitTests
+      - path: JapanTransitTests
+        excludes: ["Boards/**"]
+      # 카메라 시험용 전광판 그림 (scripts/make_test_boards.py 가 만든다)
+      - path: JapanTransitTests/Boards
+        type: folder
+        buildPhase: resources
     dependencies:
       - target: JapanTransit
       - package: TrainBoardKit

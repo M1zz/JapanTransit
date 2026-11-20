@@ -97,6 +97,10 @@ struct BoardScannerView: View {
                 card(icon: "checkmark.circle.fill", title: verdictTitle,
                      detail: reading(matched).map { "\(matched) (\($0)) 방향이 맞아요" } ?? "\(matched) 방향이 맞아요",
                      color: .green)
+            case .wrongDirection(let matched) where segment.endsShort(at: matched):
+                card(icon: "xmark.octagon.fill", title: verdictTitle,
+                     detail: "\(reading(matched) ?? matched)에서 끝나는 열차예요. \(segment.alighting.ko)까지 가지 않아요",
+                     color: .red)
             case .wrongDirection(let matched):
                 card(icon: "xmark.octagon.fill", title: verdictTitle,
                      detail: reading(matched).map { "\(matched) (\($0)) 쪽으로 가는 열차예요" } ?? "\(matched) 쪽으로 가는 열차예요",
@@ -118,6 +122,7 @@ struct BoardScannerView: View {
     private var verdictTitle: String {
         switch model.verdict {
         case .board: "타세요"
+        case .wrongDirection(let matched) where segment.endsShort(at: matched): "여기까지 안 가요"
         case .wrongDirection: "반대 방향이에요"
         case .skipsStop: "이 열차는 타지 마세요"
         case .ambiguous: "양쪽 역 이름이 다 보여요"

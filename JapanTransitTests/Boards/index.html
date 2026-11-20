@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="ko"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>전광판 시험</title>
+<style>
+  :root { color-scheme: light dark; --bg:#F4F1EA; --card:#fff; --ink:#1A2233; --soft:#5D6678; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#0E131E; --card:#182030; --ink:#ECEEF3; --soft:#A3ABBB; } }
+  body { margin:0; padding:24px 16px; background:var(--bg); color:var(--ink); font:15px/1.5 -apple-system,sans-serif; }
+  main { max-width:1200px; margin:auto; }
+  h1 { font-size:22px; margin:0 0 4px; } p { color:var(--soft); margin:0 0 20px; }
+  .grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(340px,1fr)); gap:16px; }
+  figure { margin:0; background:var(--card); border-radius:16px; overflow:hidden; }
+  img { width:100%; display:block; cursor:zoom-in; background:#000; }
+  img:fullscreen { object-fit:contain; cursor:zoom-out; }
+  figcaption { padding:12px 14px; display:grid; gap:4px; }
+  .v { justify-self:start; color:#fff; font-weight:700; font-size:13px; padding:2px 10px; border-radius:99px; }
+  small { color:var(--soft); }
+</style>
+<main>
+<h1>전광판 시험</h1>
+<p>앱에서 위 경로를 찾고 '승강장에서 열차 비춰 보기'를 누른 뒤, 그림을 눌러 화면 가득 띄우고 아이폰으로 비추세요. 색 딱지가 앱이 내야 할 답이에요.</p>
+<div class="grid">
+  <figure>
+    <img src="01-chuo-tokkai.png" alt="中央特快는 하치오지에 서요. 빠른 열차를 타도 되는 경우" onclick="this.requestFullscreen?.()">
+    <figcaption>
+      <b>신주쿠 → 하치오지</b>
+      <span class="v" style="background:#1E9E5A">타세요</span>
+      <small>문제 2 · 中央特快는 하치오지에 서요. 빠른 열차를 타도 되는 경우</small>
+    </figcaption>
+  </figure>
+  <figure>
+    <img src="02-chuo-branch.png" alt="青梅行은 다치카와에서 갈라져 하치오지에 가지 않아요" onclick="this.requestFullscreen?.()">
+    <figcaption>
+      <b>신주쿠 → 하치오지</b>
+      <span class="v" style="background:#D6333F">반대 방향</span>
+      <small>문제 3 · 青梅行은 다치카와에서 갈라져 하치오지에 가지 않아요</small>
+    </figcaption>
+  </figure>
+  <figure>
+    <img src="03-chuo-short.png" alt="立川에서 끝나는 열차라 하치오지까지 가지 않아요" onclick="this.requestFullscreen?.()">
+    <figcaption>
+      <b>신주쿠 → 하치오지</b>
+      <span class="v" style="background:#D6333F">여기까지 안 가요</span>
+      <small>문제 1 · 立川에서 끝나는 열차라 하치오지까지 가지 않아요</small>
+    </figcaption>
+  </figure>
+  <figure>
+    <img src="04-chuo-skip.png" alt="中央特快는 니시오기쿠보를 지나쳐요" onclick="this.requestFullscreen?.()">
+    <figcaption>
+      <b>신주쿠 → 니시오기쿠보</b>
+      <span class="v" style="background:#D6333F">타지 마세요</span>
+      <small>문제 2 · 中央特快는 니시오기쿠보를 지나쳐요</small>
+    </figcaption>
+  </figure>
+  <figure>
+    <img src="05-chuo-paid.png" alt="특급 あずさ는 특급권이 있어야 해요. 일반 표로는 못 타요" onclick="this.requestFullscreen?.()">
+    <figcaption>
+      <b>신주쿠 → 하치오지</b>
+      <span class="v" style="background:#D6333F">타지 마세요</span>
+      <small>문제 2 · 특급 あずさ는 특급권이 있어야 해요. 일반 표로는 못 타요</small>
+    </figcaption>
+  </figure>
+  <figure>
+    <img src="06-fukutoshin-express.png" alt="急行는 기타산도를 지나쳐요. 各停를 타야 해요" onclick="this.requestFullscreen?.()">
+    <figcaption>
+      <b>시부야 → 기타산도</b>
+      <span class="v" style="background:#D6333F">타지 마세요</span>
+      <small>문제 2 · 急行는 기타산도를 지나쳐요. 各停를 타야 해요</small>
+    </figcaption>
+  </figure>
+  <figure>
+    <img src="07-fukutoshin-local.png" alt="다른 회사 노선(도부선) 끝까지 가는 各停. 낯선 행선지여도 타요" onclick="this.requestFullscreen?.()">
+    <figcaption>
+      <b>시부야 → 기타산도</b>
+      <span class="v" style="background:#1E9E5A">타세요</span>
+      <small>문제 1 · 다른 회사 노선(도부선) 끝까지 가는 各停. 낯선 행선지여도 타요</small>
+    </figcaption>
+  </figure>
+  <figure>
+    <img src="08-asakusa-junction.png" alt="羽田空港行은 센가쿠지에서 게이큐선으로 갈라져 니시마고메에 가지 않아요" onclick="this.requestFullscreen?.()">
+    <figcaption>
+      <b>신바시 → 니시마고메</b>
+      <span class="v" style="background:#D6333F">반대 방향</span>
+      <small>문제 3 · 羽田空港行은 센가쿠지에서 게이큐선으로 갈라져 니시마고메에 가지 않아요</small>
+    </figcaption>
+  </figure>
+  <figure>
+    <img src="09-chiyoda-through.png" alt="오다큐선까지 가는 열차. 지요다선 안에서는 모든 역에 서요" onclick="this.requestFullscreen?.()">
+    <figcaption>
+      <b>오모테산도 → 요요기우에하라</b>
+      <span class="v" style="background:#1E9E5A">타세요</span>
+      <small>문제 1 · 오다큐선까지 가는 열차. 지요다선 안에서는 모든 역에 서요</small>
+    </figcaption>
+  </figure>
+  <figure>
+    <img src="10-fukuoka-branch.png" alt="貝塚行은 나카스카와바타에서 하코자키선으로 갈라져요" onclick="this.requestFullscreen?.()">
+    <figcaption>
+      <b>후쿠오카 덴진 → 하카타</b>
+      <span class="v" style="background:#D6333F">반대 방향</span>
+      <small>문제 3 · 貝塚行은 나카스카와바타에서 하코자키선으로 갈라져요</small>
+    </figcaption>
+  </figure>
+  <figure>
+    <img src="11-fukuoka-airport.png" alt="福岡空港行은 하카타에 서요" onclick="this.requestFullscreen?.()">
+    <figcaption>
+      <b>후쿠오카 덴진 → 하카타</b>
+      <span class="v" style="background:#1E9E5A">타세요</span>
+      <small>문제 1 · 福岡空港行은 하카타에 서요</small>
+    </figcaption>
+  </figure>
+  <figure>
+    <img src="12-yamanote-inner.png" alt="순환선은 内回り · 外回り 글자로 방향을 정해요" onclick="this.requestFullscreen?.()">
+    <figcaption>
+      <b>시나가와 → 다마치</b>
+      <span class="v" style="background:#1E9E5A">타세요</span>
+      <small>문제 1 · 순환선은 内回り · 外回り 글자로 방향을 정해요</small>
+    </figcaption>
+  </figure>
+  <figure>
+    <img src="13-yamanote-outer.png" alt="外回り는 반대쪽으로 도는 열차예요" onclick="this.requestFullscreen?.()">
+    <figcaption>
+      <b>시나가와 → 다마치</b>
+      <span class="v" style="background:#D6333F">반대 방향</span>
+      <small>문제 1 · 外回り는 반대쪽으로 도는 열차예요</small>
+    </figcaption>
+  </figure>
+  <figure>
+    <img src="14-front-fukutoshin.png" alt="열차 앞 표시. 急行는 기타산도를 지나쳐요" onclick="this.requestFullscreen?.()">
+    <figcaption>
+      <b>시부야 → 기타산도</b>
+      <span class="v" style="background:#D6333F">타지 마세요</span>
+      <small>문제 2 · 열차 앞 표시. 急行는 기타산도를 지나쳐요</small>
+    </figcaption>
+  </figure>
+  <figure>
+    <img src="15-front-chuo.png" alt="열차 앞 표시. 青梅行은 다치카와에서 갈라져요" onclick="this.requestFullscreen?.()">
+    <figcaption>
+      <b>신주쿠 → 하치오지</b>
+      <span class="v" style="background:#D6333F">반대 방향</span>
+      <small>문제 3 · 열차 앞 표시. 青梅行은 다치카와에서 갈라져요</small>
+    </figcaption>
+  </figure>
+</div>
+</main>
+</html>

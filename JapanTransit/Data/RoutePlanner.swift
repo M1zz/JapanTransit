@@ -366,6 +366,14 @@ extension RouteSegment {
     }
 }
 
+extension RouteSegment {
+    /// The camera read `name` as a wrong destination: is it a station on this
+    /// ride short of yours (a train that ends early) rather than the other way?
+    func endsShort(at name: String) -> Bool {
+        destinationGuide.shortOfStop.contains { TrainBoardJudge.normalizeStation($0.ja) == name }
+    }
+}
+
 // MARK: - Train types (各停 · 急行 · 快速)
 
 /// One train type over this ride: where it stops, whether to board, how long.
