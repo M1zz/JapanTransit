@@ -106,13 +106,14 @@ struct PlannerView: View {
                 }
             }
             .task {
-                // `-openPicker` 로 도착역 고르기를 연다 (스크린샷용). 첫 화면이 뜬 뒤에.
-                guard ProcessInfo.processInfo.arguments.contains("-openPicker") else { return }
+                // `-openPicker` 로 도착역, `-openPickerFrom` 으로 출발역 고르기를 연다 (스크린샷용). 첫 화면이 뜬 뒤에.
+                let args = ProcessInfo.processInfo.arguments
+                guard args.contains("-openPicker") || args.contains("-openPickerFrom") else { return }
                 try? await Task.sleep(for: .milliseconds(600))
-                picking = .to
+                picking = args.contains("-openPickerFrom") ? .from : .to
             }
             .sheet(item: $picking) { field in
-                StationPickerView(title: field == .from ? "출발역" : "도착역",
+                StationPickerView(purpose: field == .from ? .departure : .arrival,
                                   region: (field == .from ? to ?? from : from ?? to)?.region ?? Region.tokyo.id) { place in
                     if field == .from { fromJa = place.id } else { toJa = place.id }
                 }

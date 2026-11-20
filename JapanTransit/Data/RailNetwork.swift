@@ -360,6 +360,38 @@ extension RailNetwork {
     }
 }
 
+// MARK: - Lookalike stations
+
+extension RailNetwork {
+    /// A bigger station whose name is inside this one's and that lies nearby:
+    /// 新宿三丁目 → 新宿 (350 m). Riders pick one for the other.
+    struct Lookalike: Hashable {
+        let place: Place
+        let meters: Int
+        /// Joined by a passage inside the gates (新宿西口 ↔ 新宿).
+        let linked: Bool
+    }
+
+    /// The lookalike of `place`, if any: same city, its name contained in this
+    /// one's, within 1.5 km. The one with the most lines wins — the station
+    /// people mean when they say the short name.
+    func lookalike(of place: Place) -> Lookalike? {
+        // A place id is "region/name" with one spelling of ヶ: compare the name part.
+        func name(_ p: Place) -> Substring { p.id.drop { $0 != "/" }.dropFirst() }
+        let near = places.compactMap { other -> Lookalike? in
+            guard other.region == place.region, other.id != place.id, name(other).count >= 2,
+                  name(place).contains(name(other)) else { return nil }
+            let m = Self.haversine(place.lat, place.lng, other.lat, other.lng)
+            guard m <= 1500 else { return nil }
+            let linked = transferNames(at: place.id).contains(other.id) && !isOutsideTransfer(from: place.id, to: other.id)
+            return Lookalike(place: other, meters: Int((m / 10).rounded()) * 10, linked: linked)
+        }
+        return near.max { a, b in
+            (Set(a.place.stops.map(\.lineID)).count, -a.meters) < (Set(b.place.stops.map(\.lineID)).count, -b.meters)
+        }
+    }
+}
+
 // MARK: - Nearest station
 
 extension RailNetwork {

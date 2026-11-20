@@ -345,3 +345,30 @@ final class RouteGuideTests: XCTestCase {
         XCTAssertFalse(LastTrain.isNear(at(21)))
     }
 }
+
+/// 이름이 비슷한 역: 신주쿠에 역이 많아 출발역을 잘못 고른다.
+final class LookalikeStationTests: XCTestCase {
+    private let network = RailNetwork.shared
+    private func place(_ ja: String, _ region: String = "tokyo") throws -> Place {
+        try XCTUnwrap(network.place(ja: ja, region: region), ja)
+    }
+
+    func testShinjukuFamily() throws {
+        let sanchome = try XCTUnwrap(network.lookalike(of: place("新宿三丁目")))
+        XCTAssertEqual(sanchome.place.ja, "新宿")
+        XCTAssertFalse(sanchome.linked)
+        XCTAssertTrue((250...600).contains(sanchome.meters), "\(sanchome.meters)m")
+        // 新宿西口 는 新宿 와 역 안으로 이어진다.
+        XCTAssertEqual(try network.lookalike(of: place("新宿西口"))?.linked, true)
+        // 西新宿五丁目 는 西新宿 보다 노선이 많은 新宿 를 가리킨다.
+        XCTAssertEqual(try network.lookalike(of: place("西新宿五丁目"))?.place.ja, "新宿")
+        // 큰 역 자신에는 표시가 없다.
+        XCTAssertNil(try network.lookalike(of: place("新宿")))
+    }
+
+    func testOtherCitiesAndFarNames() throws {
+        XCTAssertEqual(try network.lookalike(of: place("東梅田", "osaka"))?.place.ja, "梅田")
+        // 이름만 같고 먼 역은 표시하지 않는다(1.5km 넘음).
+        XCTAssertNil(try network.lookalike(of: place("新横浜", "yokohama")))
+    }
+}

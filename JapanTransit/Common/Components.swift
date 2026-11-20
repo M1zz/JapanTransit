@@ -17,6 +17,11 @@ final class LocationFinder: NSObject, ObservableObject, CLLocationManagerDelegat
         manager.desiredAccuracy = kCLLocationAccuracyHundredMeters
     }
 
+    /// 위치 권한을 이미 받았는가 — 묻지 않고 바로 찾아도 되는가.
+    var isAuthorized: Bool {
+        [.authorizedWhenInUse, .authorizedAlways].contains(manager.authorizationStatus)
+    }
+
     func locate() {
         state = .locating
         switch manager.authorizationStatus {

@@ -1,8 +1,10 @@
 import SwiftUI
 
-/// 관광지 한 곳과 거기로 가는 역들. 역을 누르면 그 역을 고른다.
+/// 관광지 한 곳과 그 근처 역들. 역을 누르면 그 역을 고른다.
+/// 도착이면 "이 역에서 내리세요", 출발이면 "여기서 가까운 역이에요".
 struct SpotCard: View {
     let spot: Spot
+    var purpose: StationPickPurpose = .arrival
     let onPick: (Place) -> Void
 
     private let network = RailNetwork.shared
@@ -22,7 +24,7 @@ struct SpotCard: View {
                 Spacer(minLength: 0)
             }
 
-            Text("이 역에서 내리세요")
+            Text(purpose.spotCaption)
                 .font(.caption.weight(.bold))
                 .foregroundStyle(Theme.inkSoft)
 

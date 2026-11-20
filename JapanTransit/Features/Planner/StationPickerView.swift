@@ -1,9 +1,22 @@
 import SwiftUI
 
+/// 출발역을 고르는지 도착역을 고르는지. 같은 검색이라도 말이 다르다:
+/// 출발이면 "지금 있는 곳 근처 역", 도착이면 "가고 싶은 곳에서 내릴 역".
+enum StationPickPurpose {
+    case departure, arrival
+
+    var title: String { self == .departure ? "출발역" : "도착역" }
+    var prompt: String {
+        self == .departure ? "지금 있는 역이나 장소 (신주쿠, 新宿, 가부키초)" : "역이나 가고 싶은 곳 (신주쿠, 新宿, 빅사이트)"
+    }
+    var spotSection: String { self == .departure ? "지금 있는 곳" : "가고 싶은 곳" }
+    var spotCaption: String { self == .departure ? "여기서 가까운 역이에요" : "이 역에서 내리세요" }
+}
+
 /// Search a station by Korean, Japanese, English or code, by a place you want
 /// to visit (빅사이트 → 国際展示場), on a map — or pick the nearest.
 struct StationPickerView: View {
-    let title: String
+    let purpose: StationPickPurpose
     let onPick: (Place) -> Void
 
     @Environment(\.dismiss) private var dismiss
@@ -16,8 +29,8 @@ struct StationPickerView: View {
         case map = "지도"
     }
 
-    init(title: String, region: String, onPick: @escaping (Place) -> Void) {
-        self.title = title
+    init(purpose: StationPickPurpose, region: String, onPick: @escaping (Place) -> Void) {
+        self.purpose = purpose
         self.onPick = onPick
         _region = State(initialValue: region)
         // 스크린샷·시험용: `-pickerMap`, `-pickerQuery <말>`.
@@ -37,12 +50,16 @@ struct StationPickerView: View {
                 switch mode {
                 case .list: list
                 case .map:
-                    MapPickerView(region: region) { pick($0) }
+                    MapPickerView(region: region, purpose: purpose) { pick($0) }
                         .id(region)   // recentre when the city changes
                 }
             }
             .safeAreaInset(edge: .top, spacing: 0) { RegionBar(selection: $region) }
-            .navigationTitle(title)
+            .navigationTitle(purpose.title)
+            // 출발역은 대개 지금 있는 역이다. 위치 권한이 이미 있으면 열자마자 근처 역을 찾는다.
+            .task {
+                if purpose == .departure, location.isAuthorized, location.state == .idle { location.locate() }
+            }
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .cancellationAction) {
@@ -66,12 +83,14 @@ struct StationPickerView: View {
         let places = query.isEmpty ? network.search("", region: region) : network.search(query, preferring: region)
         return List {
             if query.isEmpty {
-                Section { nearbyRow }
+                Section { nearbyRow } header: {
+                    if purpose == .departure { Text("지금 있는 역") }
+                }
             }
             if !spots.isEmpty {
-                Section("가고 싶은 곳") {
+                Section(purpose.spotSection) {
                     ForEach(spots.prefix(5)) { spot in
-                        SpotCard(spot: spot) { pick($0) }
+                        SpotCard(spot: spot, purpose: purpose) { pick($0) }
                             .padding(.vertical, 6)
                     }
                 }
@@ -91,7 +110,7 @@ struct StationPickerView: View {
             }
         }
         .searchable(text: $query, placement: .navigationBarDrawer(displayMode: .always),
-                    prompt: "역이나 가고 싶은 곳 (신주쿠, 新宿, 빅사이트)")
+                    prompt: purpose.prompt)
         .scrollContentBackground(.hidden)
         .background(Theme.paper)
     }
@@ -107,9 +126,20 @@ struct StationPickerView: View {
                 Text(r.ko).font(.caption2.weight(.bold)).foregroundStyle(Theme.indigo)
             }
             StationName(ko: place.ko, ja: place.ja, marks: place.marks)
+            if let look = network.lookalike(of: place) {
+                Label(lookalikeText(look), systemImage: look.linked ? "arrow.left.arrow.right" : "exclamationmark.circle")
+                    .font(.caption.weight(.semibold))
+                    .foregroundStyle(look.linked ? Theme.inkSoft : Theme.caution)
+            }
         }
         .padding(.vertical, 2)
         .contentShape(Rectangle())
+    }
+
+    /// "신주쿠역과 다른 역이에요 · 약 350m" — 이름이 비슷해 헷갈리는 큰 역과 구별한다.
+    private func lookalikeText(_ look: RailNetwork.Lookalike) -> String {
+        look.linked ? "\(look.place.ko)역과 역 안 통로로 이어진 다른 역이에요"
+            : "\(look.place.ko)역과 다른 역이에요 · 약 \(look.meters)m"
     }
 
     @ViewBuilder private var nearbyRow: some View {

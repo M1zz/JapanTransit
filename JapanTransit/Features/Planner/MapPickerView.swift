@@ -5,6 +5,7 @@ import MapKit
 /// 멀리서 보면 갈아타는 역과 관광지만, 가까이 가면 모든 역을 보여 준다.
 struct MapPickerView: View {
     let region: String
+    var purpose: StationPickPurpose = .arrival
     let onPick: (Place) -> Void
 
     @State private var camera: MapCameraPosition
@@ -19,8 +20,9 @@ struct MapPickerView: View {
         case spot(String)
     }
 
-    init(region: String, onPick: @escaping (Place) -> Void) {
+    init(region: String, purpose: StationPickPurpose = .arrival, onPick: @escaping (Place) -> Void) {
         self.region = region
+        self.purpose = purpose
         self.onPick = onPick
         let places = RailNetwork.shared.places.filter { $0.region == region }
         let lat = places.map(\.lat).reduce(0, +) / Double(max(places.count, 1))
@@ -106,7 +108,7 @@ struct MapPickerView: View {
             }
         case .spot(let id):
             if let spot = spots.first(where: { $0.id == id }) {
-                SpotCard(spot: spot, onPick: onPick)
+                SpotCard(spot: spot, purpose: purpose, onPick: onPick)
                     .card(padding: 16)
                     .shadow(color: .black.opacity(0.15), radius: 16, y: 6)
             }
