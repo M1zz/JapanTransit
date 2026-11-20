@@ -13,6 +13,10 @@ struct RouteDetailView: View {
             VStack(alignment: .leading, spacing: 0) {
                 summary
                     .padding(.bottom, 24)
+                if LastTrain.isNear() || ProcessInfo.processInfo.arguments.contains("-lateNight") {
+                    LastTrainNotice()
+                        .padding(.bottom, 24)
+                }
                 // 카메라로 확인하고 탄 열차가 쌓였을 때만, 드물게 응원을 부탁한다. 카메라를 닫고 돌아온 자리다 (모달 아님)
                 LeeoTipAskSlot<JapanTransitSpec>(tipJar: JapanTransitSpec.tipJar,
                                                  reached: JapanTransitTipMoments.reached(boardedCount: boardedCount))
@@ -31,7 +35,14 @@ struct RouteDetailView: View {
                 if let last = route.segments.last {
                     StopNode(station: last.alighting, line: last.line, title: "\(last.alighting.ko)에서 내려요", kind: .end,
                              above: (last.line.swiftColor, .ride))
+                    let exits = RailNetwork.shared.exits(at: last.line.placeID(last.alighting), preferring: last.line.id)
+                    if !exits.isEmpty {
+                        ExitSigns(hints: exits, station: last.alighting)
+                            .padding(.top, 16)
+                    }
                 }
+                DisruptionCard(route: route)
+                    .padding(.top, 16)
             }
             .padding(.horizontal, 20)
             .padding(.vertical, 16)
@@ -187,13 +198,9 @@ private struct RideBlock: View {
                     DirectionSign(segment: segment)
                 }
 
-                if !segment.throughTermini.isEmpty {
-                    Text("다른 회사 노선까지 가는 열차는 행선지가 이렇게도 나와요: \(segment.throughTermini.prefix(4).joined(separator: " · "))")
-                        .font(.caption)
-                        .foregroundStyle(Theme.inkSoft)
-                }
+                DestinationMap(segment: segment)
 
-                ServiceAdvice(segment: segment)
+                ServiceChart(segment: segment)
 
                 stops
 
@@ -257,61 +264,6 @@ private struct RideBlock: View {
     }
 }
 
-/// 역을 건너뛰는 열차 주의.
-private struct ServiceAdvice: View {
-    let segment: RouteSegment
-
-    var body: some View {
-        let advice = segment.serviceAdvice
-        if !advice.isEmpty {
-            VStack(alignment: .leading, spacing: 10) {
-                ForEach(advice, id: \.service.id) { item in
-                    HStack(alignment: .top, spacing: 10) {
-                        Text(item.service.signWords.first ?? "")
-                            .font(.footnote.weight(.heavy))
-                            .foregroundStyle(.white)
-                            .padding(.horizontal, 7).padding(.vertical, 3)
-                            .background(item.ok ? Theme.indigoFill : Theme.vermilionFill,
-                                        in: RoundedRectangle(cornerRadius: 5, style: .continuous))
-                        VStack(alignment: .leading, spacing: 1) {
-                            Text(item.service.nameKo)
-                                .font(.footnote.weight(.bold))
-                                .foregroundStyle(Theme.ink)
-                            Text(item.service.isPaid ? "지정석 유료 열차라 일반 표로는 못 타요"
-                                 : item.ok ? "타도 돼요. 두 역에 다 서요" : skipText(item.service))
-                                .font(.caption)
-                                .foregroundStyle(Theme.inkSoft)
-                            if let skips = item.service.holidaySkips, !skips.isEmpty {
-                                Text("토·일·공휴일에는 \(Josa.eul(skips.map { ko($0) }.joined(separator: "·"))) 지나쳐요")
-                                    .font(.caption.weight(.semibold))
-                                    .foregroundStyle(Theme.caution)
-                            }
-                        }
-                    }
-                }
-                if advice.contains(where: { !$0.ok }) {
-                    Text("모르겠으면 各停(각역정차)을 타세요")
-                        .font(.caption.weight(.bold))
-                        .foregroundStyle(Theme.caution)
-                }
-            }
-            .padding(12)
-            .frame(maxWidth: .infinity, alignment: .leading)
-            .background(Theme.caution.opacity(0.08), in: RoundedRectangle(cornerRadius: 12, style: .continuous))
-        }
-    }
-
-    private func ko(_ ja: String) -> String {
-        RailNetwork.shared.place(ja: ja, region: segment.line.regionID)?.ko ?? ja
-    }
-
-    private func skipText(_ s: RailService) -> String {
-        let stops = s.stops(on: .now)
-        let skipped = [segment.boarding, segment.alighting].filter { !stops.contains($0.ja) }.map(\.ko)
-        return "타지 마세요. \(skipped.joined(separator: ", "))에 서지 않아요"
-    }
-}
-
 // MARK: - Transfer
 
 private struct TransferBlock: View {
@@ -365,10 +317,9 @@ private struct TransferBlock: View {
                     .font(.caption)
                     .foregroundStyle(Theme.inkSoft)
             }
-            if RailNetwork.shared.isOutsideTransfer(from: from.line.placeID(from.alighting), to: to.line.placeID(to.boarding)) {
-                note("figure.walk", "개찰구를 나와 걸어서 \(to.boarding.ko)(\(to.boarding.ja))역으로 가요. 개찰구 밖으로 나가는 게 맞아요")
-            } else if from.alighting.ja != to.boarding.ja {
-                note("figure.walk", "역 안 통로로 걸어서 \(to.boarding.ko)(\(to.boarding.ja))역으로 가요")
+            let walk = from.walk(to: to)
+            if TransferWalkDiagram.isWorthDrawing(walk) {
+                TransferWalkDiagram(walk: walk, fromLine: from.line, toLine: to.line)
             }
             if from.line.operator != to.line.operator {
                 note("yensign.circle", "\(from.line.operatorKo)에서 \(Josa.ro(to.line.operatorKo)) 회사가 바뀌어요. 개찰구를 한 번 더 지나고 요금이 따로 붙어요. 교통카드(Suica·ICOCA 등)는 그대로 찍으면 돼요")

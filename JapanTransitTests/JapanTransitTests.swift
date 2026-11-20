@@ -233,3 +233,115 @@ final class BoardJudgeOnRouteTests: XCTestCase {
         XCTAssertNil(judge.judge(row: "銀座"))
     }
 }
+
+/// 길찾기에서 틀리기 쉬운 곳: 행선지 · 열차 종류 · 환승 걷기 · 출구 · 멈춘 노선.
+final class RouteGuideTests: XCTestCase {
+    private let network = RailNetwork.shared
+    private var planner: RoutePlanner { RoutePlanner(network: network) }
+
+    private func segment(_ lineID: String, from: String, to: String) throws -> RouteSegment {
+        let line = try XCTUnwrap(network.line(lineID))
+        let a = try XCTUnwrap(line.stations.firstIndex { $0.ja == from })
+        let b = try XCTUnwrap(line.stations.firstIndex { $0.ja == to })
+        return RouteSegment(line: line, indices: Array(stride(from: a, through: b, by: a < b ? 1 : -1)), step: a < b ? 1 : -1)
+    }
+
+    func testDestinationsThatStopShortOfYours() throws {
+        // 긴자선 시부야 → 긴자: 종점 浅草 는 타고, 그 앞 역에서 끝나는 열차는 닿지 않는다.
+        let guide = try segment("G", from: "渋谷", to: "銀座").destinationGuide
+        XCTAssertEqual(guide.ok, ["浅草"])
+        XCTAssertTrue(guide.shortOfStop.map(\.ja).contains("表参道"))
+        XCTAssertFalse(guide.shortOfStop.map(\.ja).contains("銀座"))
+        XCTAssertNil(guide.junction)
+    }
+
+    func testBranchBeforeYourStopIsDrawnAsWrong() throws {
+        // 주오선 신주쿠 → 하치오지: 青梅行 은 立川 에서 갈라진다.
+        let past = try segment("JC", from: "新宿", to: "八王子").destinationGuide
+        XCTAssertEqual(past.branchingOff, ["青梅"])
+        XCTAssertEqual(past.junction?.ja, "立川")
+        // 立川 까지만 가면 青梅行 도 탄다.
+        let before = try segment("JC", from: "新宿", to: "立川").destinationGuide
+        XCTAssertTrue(before.branchingOff.isEmpty)
+        XCTAssertTrue(before.ok.contains("青梅"))
+        // 반대쪽(도쿄 방면)으로 가면 갈라지는 곳은 뒤에 있어 그리지 않는다.
+        XCTAssertNil(try segment("JC", from: "新宿", to: "東京").destinationGuide.junction)
+    }
+
+    func testExpressIsFasterAndSkipsSmallStations() throws {
+        // 후쿠토신선 시부야 → 이케부쿠로: 급행이 각역정차보다 빠르다.
+        let options = try segment("F", from: "渋谷", to: "池袋").serviceOptions
+        let local = try XCTUnwrap(options.first)
+        let express = try XCTUnwrap(options.first { $0.id == "express" })
+        XCTAssertEqual(local.sign, "各停")
+        XCTAssertTrue(local.stopsAt.allSatisfy { $0 })
+        XCTAssertEqual(express.verdict, .board)
+        XCTAssertLessThan(try XCTUnwrap(express.minutes), try XCTUnwrap(local.minutes))
+        XCTAssertEqual(options.first { $0.id == "s-train" }?.verdict, .needsPaidSeat)
+        // 기타산도에 내리려면 급행은 지나친다.
+        let toKitasando = try segment("F", from: "渋谷", to: "北参道").serviceOptions
+        let skipping = try XCTUnwrap(toKitasando.first { $0.id == "express" })
+        XCTAssertEqual(skipping.verdict, .skipsYourStop)
+        XCTAssertEqual(skipping.stopsAt.last, false)
+        XCTAssertNil(skipping.minutes)
+        // 각역정차만 다니는 노선에는 고를 것이 없다.
+        XCTAssertTrue(try segment("G", from: "渋谷", to: "銀座").serviceOptions.isEmpty)
+    }
+
+    func testAllStationsTrainAppearsOnce() throws {
+        // 주오선 쾌속은 快速 이 모든 역에 서는 열차다. 한 줄만 나온다.
+        let options = try segment("JC", from: "新宿", to: "三鷹").serviceOptions
+        XCTAssertEqual(options.first?.sign, "快速")
+        XCTAssertEqual(options.filter { $0.sign == "快速" }.count, 1)
+        XCTAssertEqual(Set(options.map(\.id)).count, options.count)
+    }
+
+    func testWalkBetweenDifferentlyNamedStations() throws {
+        // 하라주쿠(JR) → 메이지진구마에(지요다선): 이름이 다르고 개찰구를 나간다.
+        let walk = try segment("JY", from: "新宿", to: "原宿").walk(to: segment("C", from: "明治神宮前", to: "表参道"))
+        XCTAssertTrue(walk.renamed)
+        XCTAssertTrue(walk.outside)
+        XCTAssertTrue(walk.changesOperator)
+        // 같은 회사 같은 역: 이름도 같고 거리 숫자도 없다.
+        let same = try segment("G", from: "渋谷", to: "表参道").walk(to: segment("C", from: "表参道", to: "乃木坂"))
+        XCTAssertFalse(same.renamed)
+        XCTAssertFalse(same.outside)
+        XCTAssertNil(same.meters)
+        // 구라마에는 이름이 같아도 떨어진 두 역이다.
+        let kuramae = try segment("A", from: "浅草", to: "蔵前").walk(to: segment("E", from: "蔵前", to: "両国"))
+        XCTAssertTrue(kuramae.outside)
+        XCTAssertGreaterThan(try XCTUnwrap(kuramae.meters), 150)
+        XCTAssertGreaterThan(try XCTUnwrap(kuramae.minutes), 3)
+    }
+
+    func testExitsAtArrival() {
+        // 난바: 도톤보리는 14번 출구.
+        let exits = network.exits(at: RailNetwork.key("なんば", region: "osaka"), preferring: "osaka.M")
+        XCTAssertTrue(exits.contains { $0.spot.id == "osaka.dotonbori" && $0.exit == "14" })
+        XCTAssertEqual(Set(exits.map(\.spot.id)).count, exits.count, "한 곳은 한 번만")
+    }
+
+    func testDetourLeavesTheStoppedLineOut() throws {
+        // 긴자선이 멈추면 시부야 → 아사쿠사는 긴자선 없이 간다.
+        let route = try XCTUnwrap(planner.routes(from: "渋谷", to: "浅草").first)
+        let ginza = try XCTUnwrap(route.segments.first)
+        let detour = try XCTUnwrap(planner.detours(around: ginza, of: route).first)
+        XCTAssertFalse(detour.segments.contains { $0.line.id == "G" })
+        XCTAssertEqual(detour.segments.first?.boarding.ja, "渋谷")
+        // 오에도선은 파일 둘(E · Et)이 한 노선이다. 둘 다 뺀다.
+        let oedo = try segment("E", from: "六本木", to: "大門")
+        let around = planner.detours(around: oedo, of: Route(segments: [oedo]))
+        XCTAssertFalse(around.isEmpty)
+        XCTAssertFalse(around.contains { $0.segments.contains { ["E", "Et"].contains($0.line.id) } })
+    }
+
+    func testLastTrainHours() throws {
+        var c = Calendar(identifier: .gregorian)
+        c.timeZone = try XCTUnwrap(TimeZone(identifier: "Asia/Tokyo"))
+        let at = { (h: Int) in c.date(from: DateComponents(year: 2026, month: 11, day: 20, hour: h, minute: 30))! }
+        XCTAssertTrue(LastTrain.isNear(at(23)))
+        XCTAssertTrue(LastTrain.isNear(at(0)))
+        XCTAssertFalse(LastTrain.isNear(at(12)))
+        XCTAssertFalse(LastTrain.isNear(at(21)))
+    }
+}

@@ -62,6 +62,11 @@ enum Josa {
         word + (batchim(word).map { $0 != 8 } == true ? "으로" : "로")
     }
 
+    /// 이 / 가
+    static func i(_ word: String) -> String {
+        word + (batchim(word) != nil ? "이" : "가")
+    }
+
     /// 을 / 를
     static func eul(_ word: String) -> String {
         word + (batchim(word) != nil ? "을" : "를")

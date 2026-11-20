@@ -28,10 +28,16 @@ struct RouteSegment: Hashable, Identifiable {
             .map { Set($0.stops(on: .now)).intersection(inside) }
             .filter { $0.contains(boarding.ja) && $0.contains(alighting.ja) && $0.count < stations.count }
             .max { $0.count < $1.count } ?? inside
+        return rideMinutes(stoppingAt: stopping)
+    }
+
+    /// Riding time on a train that stops only at `stops` (station names); nil = every station.
+    func rideMinutes(stoppingAt stops: Set<String>?) -> Double {
+        let stations = self.stations
         var total = 0.0, run = 0.0
         for (a, b) in zip(stations, stations.dropFirst()) {
             run += RailNetwork.haversine(a.lat, a.lng, b.lat, b.lng)
-            if stopping.contains(b.ja) {
+            if stops?.contains(b.ja) ?? true {
                 total += Self.minutes(run: run)
                 run = 0
             }
@@ -82,12 +88,13 @@ struct RoutePlanner {
 
     /// Fastest route and, when different, the one with the fewest transfers.
     /// `from` and `to` are place ids; places in different regions have no route.
-    func routes(from: String, to: String) -> [Route] {
+    /// `avoiding` leaves lines out (line ids) — the way round a line that has stopped running.
+    func routes(from: String, to: String, avoiding: Set<String> = []) -> [Route] {
         guard let a = network.place(from), let b = network.place(to), a.id != b.id, a.region == b.region else { return [] }
         let from = a.id, to = b.id
         var result: [Route] = []
         for transferCost in [Self.transferMinutes, 30] {
-            if let r = shortest(from: from, to: to, transferCost: transferCost), !result.contains(r) {
+            if let r = shortest(from: from, to: to, transferCost: transferCost, avoiding: avoiding), !result.contains(r) {
                 result.append(r)
             }
         }
@@ -101,7 +108,7 @@ struct RoutePlanner {
         return route.transferCount < first.transferCount ? "환승 적게" : "다른 길"
     }
 
-    private func shortest(from: String, to: String, transferCost: Double) -> Route? {
+    private func shortest(from: String, to: String, transferCost: Double, avoiding: Set<String>) -> Route? {
         let lines = network.lines
         guard network.place(from) != nil, network.place(to) != nil else { return nil }
         let lineIndex = Dictionary(lines.enumerated().map { ($1.id, $0) }, uniquingKeysWith: { a, _ in a })
@@ -112,6 +119,7 @@ struct RoutePlanner {
             network.transferNames(at: id)
                 .filter { $0 == id || !network.isOutsideTransfer(from: id, to: $0) }
                 .flatMap { network.place($0)?.stops ?? [] }
+                .filter { !avoiding.contains($0.lineID) }
                 .compactMap { s in lineIndex[s.lineID].map { Node(line: $0, index: s.index) } }
         }
         let starts = nodes(around: from)
@@ -143,7 +151,7 @@ struct RoutePlanner {
                 // Walking to a differently named station, or out on the street, costs more.
                 let walk = (other == name ? 0 : 2.0) + (network.isOutsideTransfer(from: name, to: other) ? 4 : 0)
                 for s in network.place(other)?.stops ?? [] {
-                    guard let li = lineIndex[s.lineID], li != n.line || other != name else { continue }
+                    guard !avoiding.contains(s.lineID), let li = lineIndex[s.lineID], li != n.line || other != name else { continue }
                     out.append((Node(line: li, index: s.index), transferCost + walk))
                 }
             }
@@ -266,15 +274,6 @@ extension RouteSegment {
         return branchesBeforeStop ? ([], names) : (names, [])
     }
 
-    /// Station-skipping train types on this line and whether each stops at
-    /// both ends of this ride.
-    var serviceAdvice: [(service: RailService, ok: Bool)] {
-        line.skippingServices.map { s in
-            let stops = s.stops(on: .now)
-            return (s, !s.isPaid && stops.contains(boarding.ja) && stops.contains(alighting.ja))
-        }
-    }
-
     /// The judge for the camera: which destinations on a board mean "board".
     func boardJudge() -> TrainBoardJudge {
         let all = line.stations
@@ -326,6 +325,174 @@ extension RouteSegment {
         }
         return TrainBoardJudge(forward: forward, backward: backward, nextStop: next,
                                boarding: boarding.ja, destination: alighting.ja, services: services)
+    }
+}
+
+// MARK: - Which trains at this platform (行先)
+
+/// What the destination on a train or board means for this ride. One platform
+/// serves trains to many places: only some of them reach your stop.
+struct DestinationGuide: Hashable {
+    /// Destinations that reach your stop: the line's end, places beyond it on
+    /// another company's line, branches that split off after you've got off.
+    let ok: [String]
+    /// Destinations that leave the line before your stop, and where they branch.
+    let branchingOff: [String]
+    let junction: RailStation?
+    /// Stations short of yours: a train that ends at one of these doesn't get there.
+    let shortOfStop: [RailStation]
+    /// The loop word (内回り) on a circular line.
+    let loopSign: String?
+}
+
+extension RouteSegment {
+    var destinationGuide: DestinationGuide {
+        let junctions = junctionTermini
+        let end = line.circular ? [] : headingStations.map(\.ja)
+        // A branch is worth drawing when it splits off before your stop, or
+        // further along the way you're going (not behind where you boarded).
+        let junction = line.stations.firstIndex { $0.ja == line.junctionTermini?.atStation }.flatMap { at -> RailStation? in
+            let dest = indices[indices.count - 1]
+            let ahead = line.circular || indices.contains(at) || (step > 0 ? at > dest : at < dest)
+            return !junctions.wrong.isEmpty || (!junctions.ok.isEmpty && ahead) ? line.stations[at] : nil
+        }
+        return DestinationGuide(
+            ok: (end + throughTermini).uniqued(),
+            branchingOff: junctions.wrong,
+            junction: junction,
+            // Loop trains go all the way round: none ends short of your stop.
+            shortOfStop: line.circular ? [] : Array(stations.dropFirst().dropLast()),
+            loopSign: loopSign)
+    }
+}
+
+// MARK: - Train types (各停 · 急行 · 快速)
+
+/// One train type over this ride: where it stops, whether to board, how long.
+struct ServiceOption: Hashable, Identifiable {
+    enum Verdict: Hashable { case board, skipsYourStop, needsPaidSeat }
+    let id: String
+    /// The word on the train and board: 各停, 急行, 快速.
+    let sign: String
+    let nameKo: String
+    let verdict: Verdict
+    /// One flag per station of the ride, boarding first: does it stop there?
+    let stopsAt: [Bool]
+    /// Riding minutes on this type; nil when you shouldn't board it.
+    let minutes: Int?
+    let holidaySkipsKo: [String]
+}
+
+extension RouteSegment {
+    /// Every train type on this line for this ride, the all-stations train first.
+    /// Empty when the line has only all-stations trains: nothing to choose.
+    var serviceOptions: [ServiceOption] {
+        let skipping = line.skippingServices
+        guard !skipping.isEmpty else { return [] }
+        let stations = self.stations
+        let all = Set(line.stations.map(\.ja))
+        func option(_ s: RailService) -> ServiceOption {
+            let stops = Set(s.stops(on: .now))
+            let verdict: ServiceOption.Verdict = s.isPaid ? .needsPaidSeat
+                : stops.contains(boarding.ja) && stops.contains(alighting.ja) ? .board : .skipsYourStop
+            return ServiceOption(
+                id: s.id, sign: s.signWords.first ?? "", nameKo: s.nameKo, verdict: verdict,
+                stopsAt: stations.map { stops.contains($0.ja) },
+                minutes: verdict == .board ? Int(rideMinutes(stoppingAt: stops).rounded()) : nil,
+                holidaySkipsKo: (s.holidaySkips ?? []).map { ja in line.stations.first { $0.ja == ja }?.ko ?? ja })
+        }
+        // The all-stations train as the line names it (普通; 快速 on 中央線快速,
+        // whose 快速 stops everywhere on weekdays), or 各停 when the data has none.
+        let named = (line.services ?? []).first { Set($0.stops) == all && !$0.signWords.isEmpty }
+        let local = named.map(option) ?? ServiceOption(
+            id: "local", sign: "各停", nameKo: "각역정차", verdict: .board, stopsAt: stations.map { _ in true },
+            minutes: Int(rideMinutes(stoppingAt: nil).rounded()), holidaySkipsKo: [])
+        return [local] + skipping.filter { $0.id != named?.id }.map(option)
+    }
+}
+
+// MARK: - Changing trains: the walk
+
+/// The walk between two rides: same station or a differently named one, inside
+/// the gates or out on the street, and how far when the stations lie apart.
+struct TransferWalk: Hashable {
+    let from: RailStation
+    let to: RailStation
+    /// The sign you follow shows another station name (原宿 → 明治神宮前).
+    let renamed: Bool
+    /// Leaves the ticket gates and walks on the street.
+    let outside: Bool
+    /// Another company: a second gate and a separate fare.
+    let changesOperator: Bool
+    /// Straight-line metres between the two stations, when they lie far enough
+    /// apart for the number to mean something. Stations of one company share a
+    /// coordinate, so short walks have no number.
+    let meters: Int?
+
+    /// Walking minutes for `meters`: corridors and stairs make the way about
+    /// 1.4× the straight line, at 75 m a minute.
+    var minutes: Int? { meters.map { Int((Double($0) * 1.4 / 75).rounded(.up)) } }
+}
+
+extension RouteSegment {
+    func walk(to next: RouteSegment, in network: RailNetwork = .shared) -> TransferWalk {
+        let a = alighting, b = next.boarding
+        let meters = RailNetwork.haversine(a.lat, a.lng, b.lat, b.lng)
+        return TransferWalk(
+            from: a, to: b,
+            renamed: a.ja != b.ja,
+            outside: network.isOutsideTransfer(from: line.placeID(a), to: next.line.placeID(b)),
+            changesOperator: line.operator != next.line.operator,
+            meters: meters >= 150 ? Int((meters / 10).rounded()) * 10 : nil)
+    }
+}
+
+// MARK: - Which exit
+
+/// An exit of the arrival station and the place it leads to.
+struct ExitHint: Hashable, Identifiable {
+    let spot: Spot
+    let exit: String
+    let walkMinutes: Int?
+    var id: String { spot.id + exit }
+}
+
+extension RailNetwork {
+    /// Exits worth knowing at place `id`: one per nearby spot that names its exit,
+    /// nearest first. `preferring` puts spots reached by that line first.
+    func exits(at id: String, preferring lineID: String? = nil) -> [ExitHint] {
+        spots.flatMap { spot -> [(ExitHint, Bool)] in
+            let hits = spot.stations.filter { place(for: $0, in: spot)?.id == id && !($0.exit ?? "").isEmpty }
+            guard let a = hits.first(where: { $0.line == lineID }) ?? hits.first else { return [] }
+            return [(ExitHint(spot: spot, exit: a.exit ?? "", walkMinutes: a.walkMinutes), a.line == lineID)]
+        }
+        .sorted { ($0.1 ? 0 : 1, $0.0.walkMinutes ?? 99, $0.0.spot.ko) < ($1.1 ? 0 : 1, $1.0.walkMinutes ?? 99, $1.0.spot.ko) }
+        .map(\.0)
+    }
+}
+
+// MARK: - When a line stops running
+
+extension RoutePlanner {
+    /// The way round `segment`'s line. A line split over several files
+    /// (大江戸線 E · Et) is left out as a whole.
+    func detours(around segment: RouteSegment, of route: Route) -> [Route] {
+        guard let first = route.segments.first, let last = route.segments.last else { return [] }
+        let stopped = Set(network.lines.filter {
+            $0.operator == segment.line.operator && $0.nameJa == segment.line.nameJa
+        }.map(\.id))
+        return routes(from: first.line.placeID(first.boarding), to: last.line.placeID(last.alighting), avoiding: stopped)
+    }
+}
+
+/// Last trains leave around midnight; the app has no timetable, so late at
+/// night it says to check the board.
+enum LastTrain {
+    static func isNear(_ date: Date = .now) -> Bool {
+        var c = Calendar(identifier: .gregorian)
+        c.timeZone = TimeZone(identifier: "Asia/Tokyo") ?? .current
+        let hour = c.component(.hour, from: date)
+        return hour >= 23 || hour < 5
     }
 }
 
