@@ -43,6 +43,8 @@ struct RootView: View {
         .tint(Theme.indigo)
         // Siri 로 길찾기를 시작하면 길찾기 탭으로 (→ TransitIntents.swift)
         .onChange(of: router.showPlannerRequest) { tab = .planner }
+        // 모든 사용자가 한 번은 감사를 받는다
+        .leeoCelebrations(appName: JapanTransitSpec.displayName)
     }
 
     private static let plannerSymbol = "point.topleft.down.to.point.bottomright.curvepath"
