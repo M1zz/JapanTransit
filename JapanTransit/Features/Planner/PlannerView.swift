@@ -139,8 +139,10 @@ struct PlannerView: View {
 
     /// 출발·도착을 기차표(切符)처럼: 두 칸 사이에 절취선, 오른쪽에 바꾸기.
     private var ticket: some View {
-        VStack(spacing: 0) {
-            ticketRow(.from, place: from, eyebrow: ("출발", "FROM"))
+        // 경로가 있으면 탈 노선 · 내릴 노선의 마크를 앞에 세운다: 같은 노선이면 같은 색 마크가 위아래로 선다.
+        let route = routes.first
+        return VStack(spacing: 0) {
+            ticketRow(.from, place: from, eyebrow: ("출발", "FROM"), highlight: route?.segments.first?.line.id)
             ZStack(alignment: .trailing) {
                 Perforation()
                     .stroke(Theme.hairline, style: StrokeStyle(lineWidth: 1.5, dash: [5, 5]))
@@ -160,21 +162,21 @@ struct PlannerView: View {
                 .disabled(from == nil && to == nil)
                 .accessibilityLabel("출발역과 도착역 바꾸기")
             }
-            ticketRow(.to, place: to, eyebrow: ("도착", "TO"))
+            ticketRow(.to, place: to, eyebrow: ("도착", "TO"), highlight: route?.segments.last?.line.id)
         }
         .background(Theme.card, in: TicketShape(notchY: 0.5))
         .overlay(TicketShape(notchY: 0.5).stroke(Theme.hairline))
         .shadow(color: Theme.ink.opacity(0.06), radius: 14, y: 6)
     }
 
-    private func ticketRow(_ field: Field, place: Place?, eyebrow: (String, String)) -> some View {
+    private func ticketRow(_ field: Field, place: Place?, eyebrow: (String, String), highlight: String?) -> some View {
         Button {
             picking = field
         } label: {
             VStack(alignment: .leading, spacing: 8) {
                 Eyebrow(ko: eyebrow.0, en: eyebrow.1)
                 if let place {
-                    StationName(ko: place.ko, ja: place.ja, marks: place.marks)
+                    StationName(ko: place.ko, ja: place.ja, marks: place.marks, highlight: highlight)
                 } else {
                     Text(field == .from ? "출발역 고르기" : "도착역 고르기")
                         .font(.title3.weight(.bold))

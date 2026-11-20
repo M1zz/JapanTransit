@@ -124,18 +124,30 @@ struct LineChip: View {
 
 // MARK: - Station name
 
-/// The sign's Japanese name big, the Korean reading above it, codes as marks.
+/// The sign's Japanese name big, the Korean reading above it, and every line's
+/// number mark below — 新宿 has seven, so they wrap rather than get cut.
+/// With `highlight` (the line you ride from here), that mark comes first with
+/// the line's name and the rest fade: 新宿 [JY17] 야마노테선 → 原宿 [JY19] 야마노테선.
 struct StationName: View {
     let ko: String
     let ja: String
-    var marks: [(code: String, color: Color)] = []
+    var marks: [Place.Mark] = []
     var large = false
+    var highlight: String?
     /// 역명판 글씨도 글자 크기 설정을 따라 커진다
     @ScaledMetric(relativeTo: .title2) private var jaSize: CGFloat = 21
     @ScaledMetric(relativeTo: .largeTitle) private var jaLargeSize: CGFloat = 30
 
+    private var ordered: [Place.Mark] {
+        marks.filter { $0.lineID == highlight } + marks.filter { $0.lineID != highlight }
+    }
+
+    private var highlightedLine: RailLine? {
+        highlight.flatMap { id in marks.contains { $0.lineID == id } ? RailNetwork.shared.line(id) : nil }
+    }
+
     var body: some View {
-        HStack(alignment: .center, spacing: 12) {
+        VStack(alignment: .leading, spacing: 6) {
             VStack(alignment: .leading, spacing: 1) {
                 Text(ko)
                     .font(large ? .subheadline.weight(.semibold) : .caption.weight(.semibold))
@@ -146,22 +158,44 @@ struct StationName: View {
                     .minimumScaleFactor(0.6)
                     .lineLimit(1)
             }
-            Spacer(minLength: 4)
-            HStack(spacing: 4) {
-                ForEach(Array(marks.prefix(4).enumerated()), id: \.offset) { _, m in
-                    StationMark(code: m.code, color: m.color, size: large ? 32 : 26)
+            if !marks.isEmpty {
+                FlowRow(spacing: 4) {
+                    ForEach(ordered, id: \.code) { m in
+                        let faded = highlightedLine != nil && m.lineID != highlight
+                        StationMark(code: m.code, color: m.color, size: large ? 32 : 26)
+                            .opacity(faded ? 0.3 : 1)
+                        if let line = highlightedLine, m.lineID == line.id {
+                            Text(line.nameKo)
+                                .font(.subheadline.weight(.bold))
+                                .foregroundStyle(Theme.ink)
+                                .padding(.trailing, 6)
+                                .frame(height: large ? 32 : 26)
+                        }
+                    }
                 }
             }
         }
+        .frame(maxWidth: .infinity, alignment: .leading)
         .accessibilityElement(children: .ignore)
-        .accessibilityLabel("\(ko) 역, \(ja)")
+        .accessibilityLabel(accessibilityText)
+    }
+
+    private var accessibilityText: String {
+        if let line = highlightedLine { return "\(ko) 역, \(ja), \(line.nameKo)" }
+        return "\(ko) 역, \(ja)"
     }
 }
 
 extension Place {
+    struct Mark: Hashable {
+        let code: String
+        let color: Color
+        let lineID: String
+    }
+
     /// Number marks for every line at this station, in line colour.
-    var marks: [(code: String, color: Color)] {
-        stops.compactMap { s in RailNetwork.shared.line(s.lineID).map { (s.code, $0.swiftColor) } }
+    var marks: [Mark] {
+        stops.compactMap { s in RailNetwork.shared.line(s.lineID).map { Mark(code: s.code, color: $0.swiftColor, lineID: s.lineID) } }
     }
 }
 
