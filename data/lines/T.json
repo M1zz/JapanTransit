@@ -313,5 +313,14 @@
     "https://www.wikidata.org/ (line-specific station items for some coordinates)",
     "https://ko.wikipedia.org/ (Korean station article titles via ja.wikipedia interlanguage links)"
   ],
-  "notes": "停車駅は日本語版Wikipedia「駅一覧」の通勤快速・快速欄(2026年10月取得)による。東葉快速は2014年3月15日に廃止済み。津田沼直通は平日朝夕のみ。throughTermini.endの八千代緑が丘は平日の一部列車(中野発八千代緑が丘行き2本など)。東西線線内の途中駅止まり(九段下・東陽町・浦安・妙典)の列車も存在する。"
+  "notes": "停車駅は日本語版Wikipedia「駅一覧」の通勤快速・快速欄(2026年10月取得)による。東葉快速は2014年3月15日に廃止済み。津田沼直通は平日朝夕のみ。throughTermini.endの八千代緑が丘は平日の一部列車(中野発八千代緑が丘行き2本など)。東西線線内の途中駅止まり(九段下・東陽町・浦安・妙典)の列車も存在する。",
+  "continuations": [
+    {
+      "step": 1,
+      "atStation": "西船橋",
+      "intoLine": "TR",
+      "intoStep": 1,
+      "note": "直通列車はそのまま乗り入れる"
+    }
+  ]
 }

@@ -141,7 +141,10 @@ struct StationName: View {
     @ScaledMetric(relativeTo: .largeTitle) private var jaLargeSize: CGFloat = 30
 
     private var ordered: [Place.Mark] {
-        marks.filter { $0.lineID == highlight } + marks.filter { $0.lineID != highlight }
+        // 직통 노선은 역 번호를 함께 쓴다 (江坂 M11): 같은 번호는 한 번만 그린다
+        var seen = Set<String>()
+        return (marks.filter { $0.lineID == highlight } + marks.filter { $0.lineID != highlight })
+            .filter { seen.insert($0.code).inserted }
     }
 
     private var highlightedLine: RailLine? {

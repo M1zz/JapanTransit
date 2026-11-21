@@ -206,6 +206,19 @@ final class RoutePlannerTests: XCTestCase {
         XCTAssertTrue(planner.routes(from: "新宿", to: "osaka/梅田").isEmpty)
     }
 
+    func testSubwayRunsThroughOntoPartnerLines() throws {
+        // 지하철이 다른 회사 구간으로 이어 달린다: 갈아타지 않고 그대로 타고 간다.
+        for (from, to, first, second) in [("飯田橋", "浦和美園", "N", "SR"), ("東葉勝田台", "大手町", "TR", "T"),
+                                          ("osaka/梅田", "osaka/箕面萱野", "osaka.M", "osaka.KQ"),
+                                          ("osaka/生駒", "osaka/本町", "osaka.KH", "osaka.C")] {
+            let r = try XCTUnwrap(planner.routes(from: from, to: to).first, "\(from)→\(to)")
+            XCTAssertEqual(r.segments.map(\.line.id), [first, second], "\(from)→\(to)")
+            XCTAssertTrue(r.staysOnTrain(between: r.segments[0], and: r.segments[1]), "\(from)→\(to)")
+        }
+        // 역 번호를 함께 쓰는 역(江坂 M11)은 한 역으로 묶인다.
+        XCTAssertEqual(Set(try XCTUnwrap(RailNetwork.shared.place("osaka/江坂")).stops.map(\.lineID)), ["osaka.M", "osaka.KQ"])
+    }
+
     func testSameStationHasNoRoute() {
         XCTAssertTrue(planner.routes(from: "新宿", to: "新宿").isEmpty)
     }

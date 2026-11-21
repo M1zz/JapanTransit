@@ -1,0 +1,95 @@
+{
+  "id": "osaka.KQ",
+  "region": "osaka",
+  "operator": "北大阪急行電鉄",
+  "operatorKo": "기타오사카 급행",
+  "nameJa": "北大阪急行線",
+  "nameKo": "기타오사카 급행선",
+  "nameEn": "Kita-Osaka Kyuko Line",
+  "color": "#E5171F",
+  "circular": false,
+  "stations": [
+    {
+      "code": "M06",
+      "ja": "箕面萱野",
+      "kana": "みのおかやの",
+      "ko": "미노오카야노",
+      "koSource": "wiki",
+      "en": "Minoh-kayano",
+      "lat": 34.831667,
+      "lng": 135.489167
+    },
+    {
+      "code": "M07",
+      "ja": "箕面船場阪大前",
+      "kana": "みのおせんばはんだいまえ",
+      "ko": "미노오센바한다이마에",
+      "koSource": "wiki",
+      "en": "Minoh-semba handai-mae",
+      "lat": 34.821111,
+      "lng": 135.490278
+    },
+    {
+      "code": "M08",
+      "ja": "千里中央",
+      "kana": "せんりちゅうおう",
+      "ko": "센리추오",
+      "koSource": "wiki",
+      "en": "Senri-Chuo",
+      "lat": 34.80944,
+      "lng": 135.495
+    },
+    {
+      "code": "M09",
+      "ja": "桃山台",
+      "kana": "ももやまだい",
+      "ko": "모모야마다이",
+      "koSource": "wiki",
+      "en": "Momoyamadai",
+      "lat": 34.792639,
+      "lng": 135.497389
+    },
+    {
+      "code": "M10",
+      "ja": "緑地公園",
+      "kana": "りょくちこうえん",
+      "ko": "료쿠치코엔",
+      "koSource": "wiki",
+      "en": "Ryokuchi-koen",
+      "lat": 34.775556,
+      "lng": 135.495444
+    },
+    {
+      "code": "M11",
+      "ja": "江坂",
+      "kana": "えさか",
+      "ko": "에사카",
+      "koSource": "wiki",
+      "en": "Esaka",
+      "lat": 34.757903,
+      "lng": 135.497019
+    }
+  ],
+  "throughTermini": {
+    "start": [],
+    "end": [
+      "なかもず",
+      "天王寺"
+    ]
+  },
+  "continuations": [
+    {
+      "step": 1,
+      "atStation": "江坂",
+      "intoLine": "osaka.M",
+      "intoStep": 1,
+      "note": "全列車が江坂から御堂筋線に直通する"
+    }
+  ],
+  "services": [],
+  "sources": [
+    "https://ja.wikipedia.org/wiki/北大阪急行電鉄南北線",
+    "ja.wikipedia.org 各駅記事（座標・韓国語版リンク）"
+  ],
+  "notes": "正式名は北大阪急行電鉄南北線。駅番号は御堂筋線と通しのM06〜M11で、路線色も御堂筋線の赤に合わせた。2024年3月に千里中央〜箕面萱野が延伸開業。全列車各駅停車。千里中央の座標は近似値。"
+}

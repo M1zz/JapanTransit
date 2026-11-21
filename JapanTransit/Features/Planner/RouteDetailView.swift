@@ -30,7 +30,8 @@ struct RouteDetailView: View {
                         StopNode(station: seg.boarding, line: seg.line, title: "\(seg.boarding.ko)에서 타요", kind: .start,
                                  below: (seg.line.swiftColor, .ride))
                     }
-                    RideBlock(segment: seg) { scanning = seg }
+                    let next = i + 1 < route.segments.count ? route.segments[i + 1] : nil
+                    RideBlock(segment: seg, through: next.flatMap { route.staysOnTrain(between: seg, and: $0) ? $0 : nil }) { scanning = seg }
                 }
                 if let last = route.segments.last {
                     StopNode(station: last.alighting, line: last.line, title: "\(last.alighting.ko)에서 내려요", kind: .end,
@@ -176,6 +177,8 @@ private struct StopNode: View {
 
 private struct RideBlock: View {
     let segment: RouteSegment
+    /// 이 열차가 그대로 이어 달리는 다음 구간 (직통)
+    var through: RouteSegment?
     let onScan: () -> Void
     @State private var showStops = false
 
@@ -198,7 +201,7 @@ private struct RideBlock: View {
                     DirectionSign(segment: segment)
                 }
 
-                DestinationMap(segment: segment)
+                DestinationMap(segment: segment, through: through)
 
                 ServiceChart(segment: segment)
 

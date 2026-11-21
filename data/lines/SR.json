@@ -1,0 +1,121 @@
+{
+  "id": "SR",
+  "operator": "埼玉高速鉄道",
+  "operatorKo": "사이타마 고속철도",
+  "nameJa": "埼玉高速鉄道線",
+  "nameKo": "사이타마 고속철도선",
+  "nameEn": "Saitama Rapid Railway Line",
+  "color": "#345CAA",
+  "circular": false,
+  "stations": [
+    {
+      "code": "SR19",
+      "ja": "赤羽岩淵",
+      "kana": "あかばねいわぶち",
+      "ko": "아카바네이와부치",
+      "koSource": "wiki",
+      "en": "Akabane-iwabuchi",
+      "lat": 35.7833,
+      "lng": 139.7222
+    },
+    {
+      "code": "SR20",
+      "ja": "川口元郷",
+      "kana": "かわぐちもとごう",
+      "ko": "가와구치모토고",
+      "koSource": "wiki",
+      "en": "Kawaguchi-motogo",
+      "lat": 35.800389,
+      "lng": 139.730278
+    },
+    {
+      "code": "SR21",
+      "ja": "南鳩ヶ谷",
+      "kana": "みなみはとがや",
+      "ko": "미나미하토가야",
+      "koSource": "wiki",
+      "en": "Minami-hatogaya",
+      "lat": 35.816778,
+      "lng": 139.736258
+    },
+    {
+      "code": "SR22",
+      "ja": "鳩ヶ谷",
+      "kana": "はとがや",
+      "ko": "하토가야",
+      "koSource": "wiki",
+      "en": "Hatogaya",
+      "lat": 35.830836,
+      "lng": 139.735917
+    },
+    {
+      "code": "SR23",
+      "ja": "新井宿",
+      "kana": "あらいじゅく",
+      "ko": "아라이주쿠",
+      "koSource": "wiki",
+      "en": "Araijuku",
+      "lat": 35.842975,
+      "lng": 139.737908
+    },
+    {
+      "code": "SR24",
+      "ja": "戸塚安行",
+      "kana": "とづかあんぎょう",
+      "ko": "도즈카안교",
+      "koSource": "wiki",
+      "en": "Tozuka-angyo",
+      "lat": 35.858872,
+      "lng": 139.753689
+    },
+    {
+      "code": "SR25",
+      "ja": "東川口",
+      "kana": "ひがしかわぐち",
+      "ko": "히가시카와구치",
+      "koSource": "wiki",
+      "en": "Higashi-kawaguchi",
+      "lat": 35.875222,
+      "lng": 139.744139
+    },
+    {
+      "code": "SR26",
+      "ja": "浦和美園",
+      "kana": "うらわみその",
+      "ko": "우라와미소노",
+      "koSource": "wiki",
+      "en": "Urawa-misono",
+      "lat": 35.893839,
+      "lng": 139.727686
+    }
+  ],
+  "throughTermini": {
+    "start": [
+      "目黒",
+      "白金高輪",
+      "日吉",
+      "新横浜",
+      "武蔵小杉",
+      "奥沢",
+      "海老名",
+      "湘南台",
+      "西谷"
+    ],
+    "end": []
+  },
+  "continuations": [
+    {
+      "step": -1,
+      "atStation": "赤羽岩淵",
+      "intoLine": "N",
+      "intoStep": -1,
+      "note": "全列車が赤羽岩淵から東京メトロ南北線に直通する"
+    }
+  ],
+  "services": [],
+  "sources": [
+    "https://ja.wikipedia.org/wiki/埼玉高速鉄道線",
+    "ja.wikipedia.org 各駅記事（座標・韓国語版リンク）"
+  ],
+  "notes": "愛称は埼玉スタジアム線。全列車各駅停車で、赤羽岩淵から東京メトロ南北線に直通する。鳩ヶ谷止まりの区間列車がある。路線色は近似値。"
+}

@@ -387,7 +387,8 @@ struct FlowRow: Layout {
         var x = bounds.minX, y = bounds.minY, line: CGFloat = 0
         for v in subviews {
             let s = v.sizeThatFits(.unspecified)
-            if x > bounds.minX, x + s.width > bounds.maxX { y += line + spacing; x = bounds.minX; line = 0 }
+            // 반올림 오차로 마지막 칩이 다음 줄로 밀리지 않게 조금 봐준다
+            if x > bounds.minX, x + s.width > bounds.maxX + 0.5 { y += line + spacing; x = bounds.minX; line = 0 }
             v.place(at: CGPoint(x: x, y: y), proposal: ProposedViewSize(s))
             x += s.width + spacing
             line = max(line, s.height)

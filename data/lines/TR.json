@@ -1,0 +1,124 @@
+{
+  "id": "TR",
+  "operator": "東葉高速鉄道",
+  "operatorKo": "도요 고속철도",
+  "nameJa": "東葉高速線",
+  "nameKo": "도요 고속선",
+  "nameEn": "Toyo Rapid Line",
+  "color": "#3FB036",
+  "circular": false,
+  "stations": [
+    {
+      "code": "TR01",
+      "ja": "西船橋",
+      "kana": "にしふなばし",
+      "ko": "니시후나바시",
+      "koSource": "wiki",
+      "en": "Nishi-funabashi",
+      "lat": 35.707417,
+      "lng": 139.959083
+    },
+    {
+      "code": "TR02",
+      "ja": "東海神",
+      "kana": "ひがしかいじん",
+      "ko": "히가시카이진",
+      "koSource": "wiki",
+      "en": "Higashi-kaijin",
+      "lat": 35.706278,
+      "lng": 139.981556
+    },
+    {
+      "code": "TR03",
+      "ja": "飯山満",
+      "kana": "はさま",
+      "ko": "하사마",
+      "koSource": "wiki",
+      "en": "Hasama",
+      "lat": 35.713956,
+      "lng": 140.022331
+    },
+    {
+      "code": "TR04",
+      "ja": "北習志野",
+      "kana": "きたならしの",
+      "ko": "기타나라시노",
+      "koSource": "wiki",
+      "en": "Kita-narashino",
+      "lat": 35.721111,
+      "lng": 140.042361
+    },
+    {
+      "code": "TR05",
+      "ja": "船橋日大前",
+      "kana": "ふなばしにちだいまえ",
+      "ko": "후나바시니치다이마에",
+      "koSource": "wiki",
+      "en": "Funabashi-nichidaimae",
+      "lat": 35.726917,
+      "lng": 140.058986
+    },
+    {
+      "code": "TR06",
+      "ja": "八千代緑が丘",
+      "kana": "やちよみどりがおか",
+      "ko": "야치요미도리가오카",
+      "koSource": "wiki",
+      "en": "Yachiyo-midorigaoka",
+      "lat": 35.728778,
+      "lng": 140.073167
+    },
+    {
+      "code": "TR07",
+      "ja": "八千代中央",
+      "kana": "やちよちゅうおう",
+      "ko": "야치요추오",
+      "koSource": "wiki",
+      "en": "Yachiyo-chuo",
+      "lat": 35.727944,
+      "lng": 140.103417
+    },
+    {
+      "code": "TR08",
+      "ja": "村上",
+      "kana": "むらかみ",
+      "ko": "무라카미",
+      "koSource": "wiki",
+      "en": "Murakami",
+      "lat": 35.723694,
+      "lng": 140.118361
+    },
+    {
+      "code": "TR09",
+      "ja": "東葉勝田台",
+      "kana": "とうようかつただい",
+      "ko": "도요카쓰타다이",
+      "koSource": "wiki",
+      "en": "Toyo-katsutadai",
+      "lat": 35.715361,
+      "lng": 140.126306
+    }
+  ],
+  "throughTermini": {
+    "start": [
+      "中野",
+      "三鷹"
+    ],
+    "end": []
+  },
+  "continuations": [
+    {
+      "step": -1,
+      "atStation": "西船橋",
+      "intoLine": "T",
+      "intoStep": -1,
+      "note": "ほぼ全列車が西船橋から東京メトロ東西線に直通する"
+    }
+  ],
+  "services": [],
+  "sources": [
+    "https://ja.wikipedia.org/wiki/東葉高速鉄道東葉高速線",
+    "ja.wikipedia.org 各駅記事（座標・韓国語版リンク）"
+  ],
+  "notes": "東葉高速線内は全列車各駅停車（東西線内で快速になる列車も線内は各駅に停車）。八千代緑が丘止まりの区間列車がある。東葉勝田台は京成本線 勝田台と地下で連絡。路線色は近似値。"
+}

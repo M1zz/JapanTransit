@@ -14,6 +14,8 @@ import SwiftUI
 /// 내릴 역 앞에서 끝나는 열차 · 도중에 갈라지는 열차 · 끝까지 가는 열차를 그 위에 나눈다.
 struct DestinationMap: View {
     let segment: RouteSegment
+    /// 이 열차가 그대로 이어 달리는 다음 구간: 그 구간 끝까지 가는 행선지를 따로 짚는다
+    var through: RouteSegment?
 
     var body: some View {
         let guide = segment.destinationGuide
@@ -35,6 +37,12 @@ struct DestinationMap: View {
             VStack(alignment: .leading, spacing: 6) {
                 Verdict(ok: true, text: "이 글자면 타세요")
                 DestinationChips(names: names, fill: Theme.signBoard)
+                if let through, case let far = through.destinationGuide.ok.prefix(3), !far.isEmpty {
+                    Text("\(far.joined(separator: " · ")) 행이면 \(through.alighting.ko)까지 갈아타지 않고 가요")
+                        .font(.caption.weight(.bold))
+                        .foregroundStyle(Theme.indigo)
+                        .fixedSize(horizontal: false, vertical: true)
+                }
                 if !segment.line.circular, segment.alighting != segment.headingStations.first {
                     Text("\(segment.alighting.ko)보다 먼 역 이름이면 모두 돼요")
                         .font(.caption)

@@ -324,6 +324,16 @@
       "outside": true,
       "source": "https://ja.wikipedia.org/wiki/野田駅_(JR西日本)",
       "note": "공식 환승. 길로 걷는다."
+    },
+    {
+      "region": "tokyo",
+      "stations": [
+        "勝田台",
+        "東葉勝田台"
+      ],
+      "outside": true,
+      "source": "https://ja.wikipedia.org/wiki/勝田台駅",
+      "note": "게이세이 가쓰타다이와 도요카쓰타다이는 개찰구 밖 지하 통로로 이어진 환승역."
     }
   ],
   "separateSameName": [

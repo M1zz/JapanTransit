@@ -1,0 +1,115 @@
+{
+  "id": "osaka.KH",
+  "region": "osaka",
+  "operator": "近畿日本鉄道",
+  "operatorKo": "긴테쓰",
+  "nameJa": "けいはんな線",
+  "nameKo": "게이한나선",
+  "nameEn": "Keihanna Line",
+  "color": "#019A66",
+  "circular": false,
+  "stations": [
+    {
+      "code": "C23",
+      "ja": "長田",
+      "kana": "ながた",
+      "ko": "나가타",
+      "koSource": "wiki",
+      "en": "Nagata",
+      "lat": 34.678764,
+      "lng": 135.591911
+    },
+    {
+      "code": "C24",
+      "ja": "荒本",
+      "kana": "あらもと",
+      "ko": "아라모토",
+      "koSource": "wiki",
+      "en": "Aramoto",
+      "lat": 34.678628,
+      "lng": 135.604914
+    },
+    {
+      "code": "C25",
+      "ja": "吉田",
+      "kana": "よした",
+      "ko": "요시타",
+      "koSource": "wiki",
+      "en": "Yoshita",
+      "lat": 34.680292,
+      "lng": 135.624139
+    },
+    {
+      "code": "C26",
+      "ja": "新石切",
+      "kana": "しんいしきり",
+      "ko": "신이시키리",
+      "koSource": "wiki",
+      "en": "Shin-Ishikiri",
+      "lat": 34.680186,
+      "lng": 135.640886
+    },
+    {
+      "code": "C27",
+      "ja": "生駒",
+      "kana": "いこま",
+      "ko": "이코마",
+      "koSource": "wiki",
+      "en": "Ikoma",
+      "lat": 34.693181,
+      "lng": 135.698017
+    },
+    {
+      "code": "C28",
+      "ja": "白庭台",
+      "kana": "しらにわだい",
+      "ko": "시라니와다이",
+      "koSource": "wiki",
+      "en": "Shiraniwadai",
+      "lat": 34.721078,
+      "lng": 135.716911
+    },
+    {
+      "code": "C29",
+      "ja": "学研北生駒",
+      "kana": "がっけんきたいこま",
+      "ko": "갓켄키타이코마",
+      "koSource": "wiki",
+      "en": "Gakken Kita-Ikoma",
+      "lat": 34.724914,
+      "lng": 135.723456
+    },
+    {
+      "code": "C30",
+      "ja": "学研奈良登美ヶ丘",
+      "kana": "がっけんならとみがおか",
+      "ko": "갓켄나라토미가오카",
+      "koSource": "wiki",
+      "en": "Gakken Nara-Tomigaoka",
+      "lat": 34.726544,
+      "lng": 135.752436
+    }
+  ],
+  "throughTermini": {
+    "start": [
+      "夢洲",
+      "コスモスクエア"
+    ],
+    "end": []
+  },
+  "continuations": [
+    {
+      "step": -1,
+      "atStation": "長田",
+      "intoLine": "osaka.C",
+      "intoStep": -1,
+      "note": "全列車が長田からOsaka Metro中央線に直通する"
+    }
+  ],
+  "services": [],
+  "sources": [
+    "https://ja.wikipedia.org/wiki/近鉄けいはんな線",
+    "ja.wikipedia.org 各駅記事（座標・韓国語版リンク）"
+  ],
+  "notes": "駅番号はOsaka Metro中央線と通しのC23〜C30で、路線色も中央線の緑に合わせた。全列車各駅停車。生駒止まりの区間列車がある。生駒〜学研奈良登美ヶ丘は奈良県。"
+}
