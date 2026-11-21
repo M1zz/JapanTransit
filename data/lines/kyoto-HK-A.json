@@ -1,0 +1,71 @@
+{
+  "id": "kyoto.HK-A",
+  "region": "kyoto",
+  "operator": "阪急電鉄",
+  "operatorKo": "한큐 전철",
+  "nameJa": "阪急嵐山線",
+  "nameKo": "한큐 아라시야마선",
+  "nameEn": "Hankyu Arashiyama Line",
+  "color": "#2A9B50",
+  "circular": false,
+  "stations": [
+    {
+      "code": "HK-81",
+      "ja": "桂",
+      "kana": "かつら",
+      "ko": "가쓰라",
+      "koSource": "wiki",
+      "en": "Katsura",
+      "lat": 34.979372,
+      "lng": 135.703275
+    },
+    {
+      "code": "HK-96",
+      "ja": "上桂",
+      "kana": "かみかつら",
+      "ko": "가미카쓰라",
+      "koSource": "wiki",
+      "en": "Kami-katsura",
+      "lat": 34.990417,
+      "lng": 135.695917
+    },
+    {
+      "code": "HK-97",
+      "ja": "松尾大社",
+      "kana": "まつおたいしゃ",
+      "ko": "마쓰오타이샤",
+      "koSource": "wiki",
+      "en": "Matsuo-taisha",
+      "lat": 35.000633,
+      "lng": 135.688017
+    },
+    {
+      "code": "HK-98",
+      "ja": "嵐山",
+      "kana": "はんきゅうあらしやま",
+      "ko": "아라시야마",
+      "koSource": "wiki",
+      "en": "Arashiyama",
+      "lat": 35.010272,
+      "lng": 135.681572,
+      "place": {
+        "ja": "阪急嵐山",
+        "ko": "한큐 아라시야마",
+        "en": "Hankyu Arashiyama"
+      }
+    }
+  ],
+  "throughTermini": {
+    "start": [],
+    "end": []
+  },
+  "services": [],
+  "sources": [
+    "https://ja.wikipedia.org/wiki/阪急嵐山線",
+    "https://ja.wikipedia.org/wiki/嵐山駅_(阪急)",
+    "https://www.hankyu.co.jp/station/arashiyama.html",
+    "https://www.hankyu.co.jp/station/pdf/map_railway_kyoto.pdf",
+    "https://ja.wikipedia.org/w/api.php (各駅記事の座標・よみがな・ローマ字・韓国語版リンク)"
+  ],
+  "notes": "桂（HK-81）〜嵐山（HK-98）の4駅。駅順・駅番号は日本語版Wikipedia『阪急嵐山線』駅一覧（2026年8月26日版）と阪急公式の路線図PDF。通常は線内折り返しの普通のみ（朝夕毎時6往復、日中毎時4往復、4両編成）で、全列車が各駅に停車するため services は空。京都本線へは桂で乗り換え。【重要：駅名】終点 HK-98 の正式駅名・駅名標・列車の行先表示はいずれも「嵐山」だが、嵐電（京福）嵐山本線の終点も同名の「嵐山」で、両駅は桂川（渡月橋）を挟んで約800m離れた別の駅である（Wikipedia『嵐山駅 (阪急)』：京福の嵐山駅へは渡月橋を渡って徒歩約15分、「離れているため乗り換えには適さない」）。アプリは同じ都市の同名駅を1つの場所にまとめるため、このファイルでは ja を通称の「阪急嵐山」（ko「한큐 아라시야마」、koSource rule）にして嵐電の「嵐山」と分けた。列車・発車標の行先は「嵐山」と出るので、throughTermini.end に「嵐山」を入れて行先表示の判定に使えるようにしてある（実際に終点の先へ直通する列車があるわけではない）。Wikipediaの駅一覧では副駅名として「嵐山（嵯峨野）」と括弧書きされている。【臨時列車】2019年までは春秋の行楽期に京都本線などから嵐山へ直通する臨時列車（大阪梅田発着の快速特急「さがの」など、嵐山線内は各駅停車）があったが、Wikipediaによれば2020年以降は運転を取りやめ、線内折り返し列車の増発だけになっている。現在の運転有無は公式発表を確認できなかった（未確認）。行楽期は6両編成・約10分間隔に増発されることがある。路線色 #2A9B50 は京都本線と同じWikipedia路線情報の値。en・かな・座標・韓国語名は日本語版Wikipedia各駅記事（韓国語名は韓国語版記事名から「역」と括弧を除いたもの）。"
+}

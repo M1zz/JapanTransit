@@ -43,9 +43,10 @@ for f in sorted(glob.glob(str(ROOT / "data/lines/*.json"))):
             if em:
                 s["en"], s["enSub"] = em.group(1).strip(), em.group(2)
             changed = True
-        region = d.get("region", "tokyo")
-        places.setdefault(key(s["ja"], region), {"names": set(), "pts": [], "lines": set(), "ko": s["ko"], "region": region})
-        p = places[key(s["ja"], region)]
+        region = s.get("region", d.get("region", "tokyo"))  # 도시를 넘는 노선은 역마다 도시가 다르다
+        pj = s.get("place", {}).get("ja", s["ja"])  # 이름만 같은 다른 역은 따로 둔다
+        places.setdefault(key(pj, region), {"names": set(), "pts": [], "lines": set(), "ko": s["ko"], "region": region})
+        p = places[key(pj, region)]
         p["names"].add(s["ja"])
         p["pts"].append((s["lat"], s["lng"]))
         p["lines"].add(d["id"])

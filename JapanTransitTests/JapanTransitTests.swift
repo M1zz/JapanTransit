@@ -47,7 +47,8 @@ final class RailDataTests: XCTestCase {
     func testCitiesDoNotMerge() {
         // 다른 도시의 같은 이름 역은 다른 장소다.
         for p in network.places {
-            let regions = Set(p.stops.compactMap { network.line($0.lineID)?.regionID })
+            // 도시를 넘는 노선(게이한 본선)은 역마다 도시가 다르다.
+            let regions = Set(p.stops.compactMap { s in network.line(s.lineID).map { $0.stations[s.index].region ?? $0.regionID } })
             XCTAssertEqual(regions.count, 1, "\(p.ja) 가 여러 도시에 걸쳐 있다")
         }
     }
@@ -217,6 +218,40 @@ final class RoutePlannerTests: XCTestCase {
         }
         // 역 번호를 함께 쓰는 역(江坂 M11)은 한 역으로 묶인다.
         XCTAssertEqual(Set(try XCTUnwrap(RailNetwork.shared.place("osaka/江坂")).stops.map(\.lineID)), ["osaka.M", "osaka.KQ"])
+    }
+
+    func testTouristAndAirportLines() throws {
+        // 갈아타지 않고 한 줄로 가는 길: 공항 · 테마파크 · 나라 · 아라시야마.
+        for (from, to, line) in [("osaka/なんば", "osaka/関西空港", "osaka.NK"), ("osaka/天王寺", "osaka/関西空港", "osaka.JR-R"),
+                                 ("東京", "舞浜", "JE"), ("osaka/大阪難波", "nara/近鉄奈良", "osaka.KN"),
+                                 ("kyoto/京都", "nara/奈良", "kyoto.JR-D"), ("kyoto/京都", "kyoto/嵯峨嵐山", "kyoto.JR-E"),
+                                 ("osaka/淀屋橋", "kyoto/祇園四条", "kyoto.KH"), ("osaka/大阪梅田", "kyoto/京都河原町", "kyoto.HK"),
+                                 ("秋葉原", "つくば", "TX"), ("hiroshima/本通", "hiroshima/広域公園前", "hiroshima.A")] {
+            let r = try XCTUnwrap(planner.routes(from: from, to: to).first, "\(from)→\(to)")
+            XCTAssertEqual(r.segments.map(\.line.id), [line], "\(from)→\(to)")
+        }
+        // 도시를 넘는 길: 오사카 지하철에서 게이한으로 갈아타 교토로.
+        let cross = try XCTUnwrap(planner.routes(from: "osaka/なんば", to: "kyoto/祇園四条").first)
+        XCTAssertEqual(cross.segments.last?.line.id, "kyoto.KH")
+        // 순환선에서 그대로 타고 USJ · 공항으로.
+        for (to, line) in [("osaka/ユニバーサルシティ", "osaka.JR-P"), ("osaka/関西空港", "osaka.JR-R")] {
+            let r = try XCTUnwrap(planner.routes(from: "osaka/大阪", to: to, avoiding: ["osaka.NK", "osaka.M", "osaka.Y", "osaka.T"])
+                .first { $0.segments.last?.line.id == line }, to)
+            let n = r.segments.count
+            XCTAssertTrue(r.staysOnTrain(between: r.segments[n - 2], and: r.segments[n - 1]), to)
+        }
+    }
+
+    func testSameNameButDifferentStationsStayApart() throws {
+        let n = RailNetwork.shared
+        // 이름만 같은 다른 역은 한 역으로 합쳐지지 않는다. 표지판 글자는 그대로다.
+        for (apart, shared, line) in [("kyoto/阪急嵐山", "kyoto/嵐山", "kyoto.HK-A"), ("TX浅草", "浅草", "TX"),
+                                      ("osaka/近鉄今里", "osaka/今里", "osaka.KN"), ("kobe/阪神尼崎", "kobe/尼崎", "osaka.HS-N")] {
+            XCTAssertEqual(try XCTUnwrap(n.place(apart), apart).stops.map(\.lineID), [line])
+            XCTAssertFalse(try XCTUnwrap(n.place(shared), shared).stops.contains { $0.lineID == line }, shared)
+        }
+        let hankyu = try XCTUnwrap(n.line("kyoto.HK-A"))
+        XCTAssertEqual(hankyu.stations.last?.ja, "嵐山")
     }
 
     func testSameStationHasNoRoute() {

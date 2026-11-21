@@ -66,7 +66,7 @@ extension RailNetwork {
 
     /// The place a spot's access station belongs to (nil if the data doesn't have it).
     func place(for access: Spot.Access, in spot: Spot) -> Place? {
-        place(ja: access.ja, region: line(access.line)?.regionID ?? spot.region)
+        line(access.line).flatMap { place($0.placeID(named: access.ja)) } ?? place(ja: access.ja, region: spot.region)
     }
 }
 

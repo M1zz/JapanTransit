@@ -1,0 +1,175 @@
+{
+  "id": "nagoya.KM",
+  "region": "nagoya",
+  "operator": "名古屋鉄道",
+  "operatorKo": "나고야 철도(메이테쓰)",
+  "nameJa": "名鉄小牧線",
+  "nameKo": "메이테쓰 고마키선",
+  "nameEn": "Meitetsu Komaki Line",
+  "color": "#EF59A1",
+  "circular": false,
+  "stations": [
+    {
+      "code": "KM13",
+      "ja": "上飯田",
+      "kana": "かみいいだ",
+      "ko": "가미이다",
+      "koSource": "wiki",
+      "en": "Kamiiida",
+      "lat": 35.203611,
+      "lng": 136.929639
+    },
+    {
+      "code": "KM12",
+      "ja": "味鋺",
+      "kana": "あじま",
+      "ko": "아지마",
+      "koSource": "wiki",
+      "en": "Ajima",
+      "lat": 35.222778,
+      "lng": 136.936278
+    },
+    {
+      "code": "KM11",
+      "ja": "味美",
+      "kana": "あじよし",
+      "ko": "아지요시",
+      "koSource": "wiki",
+      "en": "Ajiyoshi",
+      "lat": 35.235194,
+      "lng": 136.937139
+    },
+    {
+      "code": "KM10",
+      "ja": "春日井",
+      "kana": "かすがい",
+      "ko": "가스가이",
+      "koSource": "wiki",
+      "en": "Kasugai",
+      "lat": 35.250444,
+      "lng": 136.936222
+    },
+    {
+      "code": "KM09",
+      "ja": "牛山",
+      "kana": "うしやま",
+      "ko": "우시야마",
+      "koSource": "wiki",
+      "en": "Ushiyama",
+      "lat": 35.264167,
+      "lng": 136.931306
+    },
+    {
+      "code": "KM08",
+      "ja": "間内",
+      "kana": "まない",
+      "ko": "마나이",
+      "koSource": "wiki",
+      "en": "Manai",
+      "lat": 35.271667,
+      "lng": 136.931194
+    },
+    {
+      "code": "KM07",
+      "ja": "小牧口",
+      "kana": "こまきぐち",
+      "ko": "고마키구치",
+      "koSource": "wiki",
+      "en": "Komakiguchi",
+      "lat": 35.281944,
+      "lng": 136.9275
+    },
+    {
+      "code": "KM06",
+      "ja": "小牧",
+      "kana": "こまき",
+      "ko": "고마키",
+      "koSource": "wiki",
+      "en": "Komaki",
+      "lat": 35.289167,
+      "lng": 136.928222
+    },
+    {
+      "code": "KM05",
+      "ja": "小牧原",
+      "kana": "こまきはら",
+      "ko": "고마키하라",
+      "koSource": "wiki",
+      "en": "Komakihara",
+      "lat": 35.3,
+      "lng": 136.935833
+    },
+    {
+      "code": "KM04",
+      "ja": "味岡",
+      "kana": "あじおか",
+      "ko": "아지오카",
+      "koSource": "wiki",
+      "en": "Ajioka",
+      "lat": 35.309222,
+      "lng": 136.940278
+    },
+    {
+      "code": "KM03",
+      "ja": "田県神社前",
+      "kana": "たがたじんじゃまえ",
+      "ko": "다가타진자마에",
+      "koSource": "wiki",
+      "en": "Tagata Jinja-mae",
+      "lat": 35.3175,
+      "lng": 136.943889
+    },
+    {
+      "code": "KM02",
+      "ja": "楽田",
+      "kana": "がくでん",
+      "ko": "가쿠덴",
+      "koSource": "wiki",
+      "en": "Gakuden",
+      "lat": 35.330722,
+      "lng": 136.950139
+    },
+    {
+      "code": "KM01",
+      "ja": "羽黒",
+      "kana": "はぐろ",
+      "ko": "하구로",
+      "koSource": "wiki",
+      "en": "Haguro",
+      "lat": 35.351389,
+      "lng": 136.9525
+    },
+    {
+      "code": "IY15",
+      "ja": "犬山",
+      "kana": "いぬやま",
+      "ko": "이누야마",
+      "koSource": "wiki",
+      "en": "Inuyama",
+      "lat": 35.380237,
+      "lng": 136.945664
+    }
+  ],
+  "throughTermini": {
+    "start": [
+      "平安通"
+    ],
+    "end": []
+  },
+  "continuations": [
+    {
+      "step": -1,
+      "atStation": "上飯田",
+      "intoLine": "nagoya.K",
+      "intoStep": 1,
+      "note": "ほぼ全列車が上飯田から地下鉄上飯田線（平安通まで）に直通する"
+    }
+  ],
+  "services": [],
+  "sources": [
+    "https://ja.wikipedia.org/wiki/名鉄小牧線",
+    "https://ja.wikipedia.org/wiki/小牧原駅",
+    "ja.wikipedia.org 各駅記事（読み・座標・韓国語版/英語版リンク、MediaWiki API）"
+  ],
+  "notes": "駅順・駅番号は日本語版Wikipedia「名鉄小牧線」駅一覧による。番号は犬山側から付いており、上飯田がKM13、羽黒がKM01で、終点の犬山は犬山線の番号IY15（KM番号はない）。既存の上飯田線（nagoya.K: 上飯田 K01 → 平安通 K02）とつながるよう、上飯田を先頭に並べた。上飯田のja・ko・enは既存 nagoya-K.json と同じ。普通列車のみで全列車が各駅に停車するためservicesは空。ほぼ全列車が上飯田から名古屋市営地下鉄上飯田線の平安通まで直通し、平安通〜犬山が毎時4本、平日朝などに平安通〜小牧の区間列車が加わる（小牧行きは線内の行先）。小牧〜犬山は単線で、始発付近に小牧発犬山行き、最終に犬山発小牧行きの線内列車がある。犬山から先（犬山線・広見線）への定期直通はない。continuationsは上飯田で上飯田線へ乗り換えなしで続くことを表す。逆向き（上飯田線から小牧線へ）は既存 nagoya-K.json 側に追加が必要（このファイルでは既存ファイルを変更していない）。犬山は名鉄犬山線・広見線との乗換駅だが、アプリにはまだ無い。春日井（KM10）はJR中央本線の春日井駅とは別の駅（アプリにJR春日井を入れるときは同名に注意）で、田県神社前は田県神社の最寄り駅。五郎丸信号場（羽黒〜犬山）は駅ではないので入れていない。koは日本語版各駅記事の韓国語版リンク先記事名から「역」と曖昧さ回避括弧を除いたもの、enは英語版Wikipedia記事名から長音記号・括弧を除いたもの（駅名標の実物とは未照合）。座標は日本語版Wikipedia各駅記事の代表座標。色は日本語版Wikipedia路線インフォボックスの路線色（#ef59a1、名鉄の路線図PDFに基づくとされる）で、上飯田線のピンク（#EC78B4）とは少し違う。"
+}

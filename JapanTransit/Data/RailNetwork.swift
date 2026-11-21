@@ -19,6 +19,19 @@ struct RailStation: Codable, Hashable {
     let en: String
     let lat: Double
     let lng: Double
+    /// The city this station is in, when the line runs on into another city
+    /// (京阪本線: 淀屋橋 is Osaka, 祇園四条 is Kyoto). Nil: the line's region.
+    var region: String? = nil
+    /// Set when another company's station nearby has the same name but is a
+    /// different station (阪急 嵐山 and 嵐電 嵐山 are 650 m apart): the name the
+    /// app files this one under ("阪急嵐山"). `ja` stays what the sign says.
+    var place: PlaceName? = nil
+
+    struct PlaceName: Codable, Hashable {
+        let ja: String
+        let ko: String
+        let en: String
+    }
 }
 
 struct RailService: Codable, Hashable {
@@ -110,12 +123,24 @@ struct RailLine: Codable, Identifiable, Hashable {
     var regionID: String { region ?? Region.tokyo.id }
 
     /// The place a station of this line belongs to.
-    func placeID(_ station: RailStation) -> String { RailNetwork.key(station.ja, region: regionID) }
+    func placeID(_ station: RailStation) -> String { RailNetwork.key(station.place?.ja ?? station.ja, region: station.region ?? regionID) }
+
+    /// The place of a station name seen on this line — a stop of the line, or
+    /// a destination beyond it (looked up in the line's own city).
+    func placeID(named ja: String) -> String {
+        stations.first { $0.ja == ja }.map(placeID) ?? RailNetwork.key(ja, region: regionID)
+    }
+
+    /// Every city the line has a station in.
+    var regionIDs: Set<String> { Set(stations.map { $0.region ?? regionID }) }
 
     /// Badge letter(s) — the station-code prefix (G, M, JY…).
     var badge: String {
+        // "JR-O01" → O: JR 서일본은 노선 글자 하나로 부른다
         let code = stations.first?.code ?? id
-        return String(code.prefix { $0.isLetter })
+        var letters = String(code.dropLast(code.reversed().prefix { $0.isNumber }.count)).trimmingCharacters(in: ["-"])
+        if letters.hasPrefix("JR-") { letters.removeFirst(3) }
+        return letters
     }
 }
 
@@ -191,14 +216,14 @@ final class RailNetwork {
             for (i, s) in line.stations.enumerated() {
                 let k = line.placeID(s)
                 stops[k, default: []].append(.init(lineID: line.id, index: i, code: s.code))
-                if first[k] == nil { first[k] = (s, line.regionID) }
+                if first[k] == nil { first[k] = (s, s.region ?? line.regionID) }
                 coords[k, default: []].append((s.lat, s.lng))
             }
         }
         places = first.map { k, entry in
             let (s, region) = entry
             let c = coords[k] ?? [(s.lat, s.lng)]
-            return Place(region: region, ja: s.ja, ko: s.ko, en: s.en, kana: s.kana, stops: stops[k] ?? [],
+            return Place(region: region, ja: s.place?.ja ?? s.ja, ko: s.place?.ko ?? s.ko, en: s.place?.en ?? s.en, kana: s.kana, stops: stops[k] ?? [],
                          lat: c.map(\.0).reduce(0, +) / Double(c.count),
                          lng: c.map(\.1).reduce(0, +) / Double(c.count))
         }
@@ -285,14 +310,15 @@ final class RailNetwork {
 
     /// Regions that have lines, in display order.
     var regions: [Region] {
-        let present = Set(lines.map(\.regionID))
+        let present = Set(places.map(\.region))
         return Region.all.filter { present.contains($0.id) }
     }
 }
 
 // MARK: - Regions
 
-/// A city network. Lines in one region connect; regions never do.
+/// A city. Station names are unique within one; a few lines run from one city
+/// into the next (Osaka ↔ Kyoto ↔ Nara).
 struct Region: Identifiable, Hashable {
     let id: String
     let ko: String
@@ -305,7 +331,9 @@ struct Region: Identifiable, Hashable {
         Region(id: "osaka", ko: "오사카", ja: "大阪"),
         Region(id: "kyoto", ko: "교토", ja: "京都"),
         Region(id: "kobe", ko: "고베", ja: "神戸"),
+        Region(id: "nara", ko: "나라", ja: "奈良"),
         Region(id: "nagoya", ko: "나고야", ja: "名古屋"),
+        Region(id: "hiroshima", ko: "히로시마", ja: "広島"),
         Region(id: "fukuoka", ko: "후쿠오카", ja: "福岡"),
         Region(id: "sapporo", ko: "삿포로", ja: "札幌"),
         Region(id: "sendai", ko: "센다이", ja: "仙台"),

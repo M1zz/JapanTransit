@@ -69,8 +69,11 @@ struct StationMark: View {
     var size: CGFloat = 34
 
     private var parts: (String, String) {
-        let letters = String(code.prefix { $0.isLetter })
-        return (letters, String(code.dropFirst(letters.count)))
+        // "M08" → M · 08, "HK-61" → HK · 61, "JR-O01" → O · 01 (JR 서일본 표지판은 노선 글자만 쓴다)
+        let number = String(code.reversed().prefix { $0.isNumber }.reversed())
+        var letters = String(code.dropLast(number.count)).trimmingCharacters(in: ["-"])
+        if letters.hasPrefix("JR-") { letters.removeFirst(3) }
+        return (letters, number)
     }
 
     var body: some View {

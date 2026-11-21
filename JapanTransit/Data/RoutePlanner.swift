@@ -87,10 +87,10 @@ struct RoutePlanner {
     static let transferMinutes: Double = 8
 
     /// Fastest route and, when different, the one with the fewest transfers.
-    /// `from` and `to` are place ids; places in different regions have no route.
+    /// `from` and `to` are place ids. Cities connect only where a line runs between them.
     /// `avoiding` leaves lines out (line ids) — the way round a line that has stopped running.
     func routes(from: String, to: String, avoiding: Set<String> = []) -> [Route] {
-        guard let a = network.place(from), let b = network.place(to), a.id != b.id, a.region == b.region else { return [] }
+        guard let a = network.place(from), let b = network.place(to), a.id != b.id else { return [] }
         let from = a.id, to = b.id
         var result: [Route] = []
         for transferCost in [Self.transferMinutes, 30] {

@@ -1,0 +1,163 @@
+{
+  "id": "kyoto.RA",
+  "region": "kyoto",
+  "operator": "京福電気鉄道",
+  "operatorKo": "게이후쿠 전기철도 (란덴)",
+  "nameJa": "嵐電嵐山本線",
+  "nameKo": "란덴 아라시야마 본선",
+  "nameEn": "Randen Arashiyama Line",
+  "color": "#D7003A",
+  "circular": false,
+  "stations": [
+    {
+      "code": "A1",
+      "ja": "四条大宮",
+      "kana": "しじょうおおみや",
+      "ko": "시조오미야",
+      "koSource": "wiki",
+      "en": "Shijo-Omiya",
+      "lat": 35.003353,
+      "lng": 135.748408
+    },
+    {
+      "code": "A2",
+      "ja": "西院",
+      "kana": "さい",
+      "ko": "사이인",
+      "koSource": "wiki",
+      "en": "Sai",
+      "lat": 35.003503,
+      "lng": 135.731894
+    },
+    {
+      "code": "A3",
+      "ja": "西大路三条",
+      "kana": "にしおおじさんじょう",
+      "ko": "니시오지산조",
+      "koSource": "wiki",
+      "en": "Nishioji-Sanjo",
+      "lat": 35.008058,
+      "lng": 135.732114
+    },
+    {
+      "code": "A4",
+      "ja": "山ノ内",
+      "kana": "やまのうち",
+      "ko": "야마노우치",
+      "koSource": "wiki",
+      "en": "Yamanouchi",
+      "lat": 35.008286,
+      "lng": 135.723128
+    },
+    {
+      "code": "A5",
+      "ja": "嵐電天神川",
+      "kana": "らんでんてんじんがわ",
+      "ko": "란덴텐진가와",
+      "koSource": "wiki",
+      "en": "Randen-Tenjingawa",
+      "lat": 35.010217,
+      "lng": 135.715047
+    },
+    {
+      "code": "A6",
+      "ja": "蚕ノ社",
+      "kana": "かいこのやしろ",
+      "ko": "가이코노야시로",
+      "koSource": "wiki",
+      "en": "Kaikonoyashiro",
+      "lat": 35.011867,
+      "lng": 135.713011
+    },
+    {
+      "code": "A7",
+      "ja": "太秦広隆寺",
+      "kana": "うずまさこうりゅうじ",
+      "ko": "우즈마사코류지",
+      "koSource": "wiki",
+      "en": "Uzumasa-Koryuji",
+      "lat": 35.013494,
+      "lng": 135.708247
+    },
+    {
+      "code": "A8",
+      "ja": "帷子ノ辻",
+      "kana": "かたびらのつじ",
+      "ko": "가타비라노쓰지",
+      "koSource": "wiki",
+      "en": "Katabiranotsuji",
+      "lat": 35.015131,
+      "lng": 135.700164
+    },
+    {
+      "code": "A9",
+      "ja": "有栖川",
+      "kana": "ありすがわ",
+      "ko": "아리스가와",
+      "koSource": "wiki",
+      "en": "Arisugawa",
+      "lat": 35.015261,
+      "lng": 135.694442
+    },
+    {
+      "code": "A10",
+      "ja": "車折神社",
+      "kana": "くるまざきじんじゃ",
+      "ko": "구루마자키진자",
+      "koSource": "wiki",
+      "en": "Kurumazaki-jinja",
+      "lat": 35.016792,
+      "lng": 135.6891
+    },
+    {
+      "code": "A11",
+      "ja": "鹿王院",
+      "kana": "ろくおういん",
+      "ko": "로쿠오인",
+      "koSource": "wiki",
+      "en": "Rokuoin",
+      "lat": 35.017036,
+      "lng": 135.685561
+    },
+    {
+      "code": "A12",
+      "ja": "嵐電嵯峨",
+      "kana": "らんでんさが",
+      "ko": "란덴사가",
+      "koSource": "wiki",
+      "en": "Randen-Saga",
+      "lat": 35.016475,
+      "lng": 135.681356
+    },
+    {
+      "code": "A13",
+      "ja": "嵐山",
+      "kana": "あらしやま",
+      "ko": "아라시야마",
+      "koSource": "wiki",
+      "en": "Arashiyama",
+      "lat": 35.015214,
+      "lng": 135.677694
+    }
+  ],
+  "throughTermini": {
+    "start": [],
+    "end": []
+  },
+  "junctionTermini": {
+    "atStation": "帷子ノ辻",
+    "towardEnd": [
+      "北野白梅町"
+    ]
+  },
+  "services": [],
+  "sources": [
+    "https://ja.wikipedia.org/wiki/京福電気鉄道嵐山本線",
+    "https://ja.wikipedia.org/wiki/西院駅",
+    "https://ja.wikipedia.org/wiki/嵐山駅_(京福電気鉄道)",
+    "https://www.keifuku.co.jp/cms/randen_ticket/",
+    "https://www.keifuku.co.jp/cms/randen_howto/",
+    "https://ja.wikipedia.org/w/api.php (各駅記事の座標・よみがな・ローマ字・韓国語版リンク)"
+  ],
+  "notes": "通称「嵐電（らんでん）」の路面電車。四条大宮（A1）〜嵐山（A13）の13駅で、駅順・駅番号は日本語版Wikipedia『京福電気鉄道嵐山本線』駅一覧（2025年11月13日版）。全列車が各駅に停車するため services は空。大部分が四条大宮〜嵐山の通し運転で日中10分間隔、通常は1両（ラッシュ時・観光シーズンは2両で、車両間は通り抜けできない）。運賃は全線均一（大人250円・小児120円、2023年4月改定。京福公式「各種運賃」）で、嵐山本線と北野線を帷子ノ辻で乗り継いでも追加運賃は不要。降りるときに支払う後払い：四条大宮・帷子ノ辻・嵐山・北野白梅町は駅の改札で、その他の駅は車内の運賃箱で支払う。現金のほか全国相互利用の交通系ICカードが使える。【分岐】早朝に西院発北野白梅町行きが2本だけあり、帷子ノ辻から北野線に入るので嵐山へは行かない（junctionTermini.towardEnd）。北野白梅町発の嵐山本線直通はなく、かつての行楽期の北野白梅町〜嵐山直通も現在は運転されていない。西院車庫の出入りで早朝に西院始発、深夜に西院止まりがある。【駅名】西院（A2）は阪急京都線の西院と同じ場所で乗り換えられるが、嵐電は「さい」（Sai）、阪急は「さいいん」と読む。アプリで同じ場所にまとまるよう ja と ko（사이인、韓国語版記事名）は阪急側と揃え、kana・en だけ嵐電の読みにした。終点「嵐山」（A13）は阪急嵐山線の嵐山（このアプリでは「阪急嵐山」）とは約800m離れた別の駅で、渡月橋を渡って徒歩12〜15分。JR嵯峨嵐山・トロッコ嵯峨へは嵐電嵯峨（A12）が近い。四条大宮は阪急の大宮、嵐電天神川は地下鉄東西線の太秦天神川、帷子ノ辻・撮影所前はJR太秦との乗換駅で、名前が違うため transfers.json 側の対応が必要。【表記】路線色 #D7003A はWikipedia路線情報の路線色。en はWikipedia各駅記事のローマ字欄から長音記号を外したもの。座標・かなは日本語版Wikipedia各駅記事、韓国語名は韓国語版記事名から「역」と括弧を除いたもの。"
+}

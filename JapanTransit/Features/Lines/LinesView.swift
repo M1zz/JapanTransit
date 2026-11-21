@@ -13,7 +13,7 @@ struct LinesView: View {
     private var groups: [(String, [RailLine])] {
         var order: [String] = []
         var byOperator: [String: [RailLine]] = [:]
-        for line in network.lines where line.regionID == region {
+        for line in network.lines where line.regionIDs.contains(region) {
             if byOperator[line.operatorKo] == nil { order.append(line.operatorKo) }
             byOperator[line.operatorKo, default: []].append(line)
         }
@@ -42,7 +42,7 @@ struct LinesView: View {
     }
 
     private var shown: RailLine? {
-        if let shownLine, shownLine.regionID == region { return shownLine }
+        if let shownLine, shownLine.regionIDs.contains(region) { return shownLine }
         return groups.first?.1.first
     }
 
@@ -113,7 +113,7 @@ struct LineDetailView: View {
                         VStack(alignment: .leading, spacing: 2) {
                             Text("\(s.signWords.first ?? "") (\(s.nameKo))\(s.isPaid ? " · 지정석 유료" : "")")
                                 .font(.subheadline.weight(.bold))
-                            Text("서는 역: " + s.stops.map { network.place(ja: $0, region: line.regionID)?.ko ?? $0 }.joined(separator: ", "))
+                            Text("서는 역: " + s.stops.map { network.place(line.placeID(named: $0))?.ko ?? $0 }.joined(separator: ", "))
                                 .font(.caption).foregroundStyle(.secondary)
                         }
                     }

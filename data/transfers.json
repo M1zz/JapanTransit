@@ -334,6 +334,274 @@
       "outside": true,
       "source": "https://ja.wikipedia.org/wiki/勝田台駅",
       "note": "게이세이 가쓰타다이와 도요카쓰타다이는 개찰구 밖 지하 통로로 이어진 환승역."
+    },
+    {
+      "region": "kyoto",
+      "stations": [
+        "祇園四条",
+        "京都河原町"
+      ],
+      "outside": true,
+      "source": "https://ja.wikipedia.org/wiki/祇園四条駅",
+      "note": "지상으로 나와 시조대교를 건너 다시 지하로, 걸어서 약 5분."
+    },
+    {
+      "region": "kyoto",
+      "stations": [
+        "三条",
+        "三条京阪"
+      ],
+      "outside": false,
+      "source": "https://ja.wikipedia.org/wiki/三条駅_(京都府)",
+      "note": "개찰구를 나와 지하 통로로 이어진다."
+    },
+    {
+      "region": "kyoto",
+      "stations": [
+        "烏丸",
+        "四条"
+      ],
+      "outside": false,
+      "source": "https://ja.wikipedia.org/wiki/烏丸駅",
+      "note": "개찰구를 나와 지하 연결 통로. 한큐 서쪽 개찰구가 가깝다."
+    },
+    {
+      "region": "kyoto",
+      "stations": [
+        "大宮",
+        "四条大宮"
+      ],
+      "outside": true,
+      "source": "https://ja.wikipedia.org/wiki/四条大宮駅",
+      "note": "시조오미야 교차로 맞은편. 횡단보도를 건넌다."
+    },
+    {
+      "region": "kyoto",
+      "stations": [
+        "嵐電天神川",
+        "太秦天神川"
+      ],
+      "outside": true,
+      "source": "https://ja.wikipedia.org/wiki/嵐電天神川駅",
+      "note": "지하철 출구 바로 옆 노면 정류장."
+    },
+    {
+      "region": "osaka",
+      "stations": [
+        "南方",
+        "西中島南方"
+      ],
+      "outside": true,
+      "source": "https://ja.wikipedia.org/wiki/南方駅_(大阪府)",
+      "note": "바로 옆 역. 길로 약 100m."
+    },
+    {
+      "region": "osaka",
+      "stations": [
+        "関目",
+        "関目成育"
+      ],
+      "outside": true,
+      "source": "https://ja.wikipedia.org/wiki/関目駅",
+      "note": "게이한 서쪽 개찰구 바로 앞에 지하철 출입구."
+    },
+    {
+      "region": "osaka",
+      "stations": [
+        "大阪梅田",
+        "梅田",
+        "東梅田",
+        "西梅田",
+        "大阪"
+      ],
+      "outside": true,
+      "source": "https://ja.wikipedia.org/wiki/阪急京都本線",
+      "note": "한큐 오사카우메다. 개찰구를 나와 걸어서 이어진다."
+    },
+    {
+      "region": "osaka",
+      "stations": [
+        "大阪難波",
+        "なんば"
+      ],
+      "outside": true,
+      "source": "https://ja.wikipedia.org/wiki/大阪難波駅",
+      "note": "개찰구를 나와 지하 통로로 걷는다."
+    },
+    {
+      "region": "osaka",
+      "stations": [
+        "近鉄日本橋",
+        "日本橋"
+      ],
+      "outside": true,
+      "source": "https://ja.wikipedia.org/wiki/日本橋駅_(大阪府)",
+      "note": "개찰구를 나와 지하상가 난바워크로 이어진다."
+    },
+    {
+      "region": "osaka",
+      "stations": [
+        "大阪上本町",
+        "谷町九丁目"
+      ],
+      "outside": true,
+      "source": "https://ja.wikipedia.org/wiki/大阪上本町駅",
+      "note": "개찰구를 나와 지하 연결 통로로 약 500m."
+    },
+    {
+      "region": "kyoto",
+      "stations": [
+        "嵯峨嵐山",
+        "嵐電嵯峨"
+      ],
+      "outside": true,
+      "source": "https://ja.wikipedia.org/wiki/嵯峨野線",
+      "note": "개찰구를 나와 길로 약 250m."
+    },
+    {
+      "region": "kyoto",
+      "stations": [
+        "太秦",
+        "撮影所前"
+      ],
+      "outside": true,
+      "source": "https://ja.wikipedia.org/wiki/嵯峨野線",
+      "note": "길로 약 200m."
+    },
+    {
+      "region": "kyoto",
+      "stations": [
+        "太秦",
+        "帷子ノ辻"
+      ],
+      "outside": true,
+      "source": "https://ja.wikipedia.org/wiki/嵯峨野線",
+      "note": "길로 약 240m."
+    },
+    {
+      "region": "osaka",
+      "stations": [
+        "ドーム前",
+        "ドーム前千代崎"
+      ],
+      "outside": false,
+      "source": "https://ja.wikipedia.org/wiki/ドーム前千代崎駅",
+      "note": "지하 연결 통로로 이어진다. 교세라 돔 앞."
+    },
+    {
+      "region": "osaka",
+      "stations": [
+        "北新地",
+        "西梅田",
+        "大阪",
+        "梅田",
+        "東梅田",
+        "大阪梅田"
+      ],
+      "outside": true,
+      "source": "https://ja.wikipedia.org/wiki/北新地駅",
+      "note": "개찰구를 나와 지하도로 걷는다. 니시우메다가 가장 가깝다."
+    },
+    {
+      "region": "osaka",
+      "stations": [
+        "大阪天満宮",
+        "南森町"
+      ],
+      "outside": false,
+      "source": "https://ja.wikipedia.org/wiki/大阪天満宮駅",
+      "note": "연결 통로로 지하철역과 이어진다."
+    },
+    {
+      "region": "osaka",
+      "stations": [
+        "新福島",
+        "福島"
+      ],
+      "outside": true,
+      "source": "https://ja.wikipedia.org/wiki/新福島駅",
+      "note": "지상으로 나가 걷는다. 약 250m."
+    },
+    {
+      "region": "osaka",
+      "stations": [
+        "海老江",
+        "野田阪神"
+      ],
+      "outside": true,
+      "source": "https://ja.wikipedia.org/wiki/海老江駅",
+      "note": "공식 환승역. 약 170m."
+    },
+    {
+      "region": "osaka",
+      "stations": [
+        "渡辺橋",
+        "肥後橋"
+      ],
+      "outside": false,
+      "source": "https://ja.wikipedia.org/wiki/渡辺橋駅",
+      "note": "나카노시마 지하 통로로 이어진다."
+    },
+    {
+      "region": "osaka",
+      "stations": [
+        "大江橋",
+        "淀屋橋"
+      ],
+      "outside": true,
+      "source": "https://ja.wikipedia.org/wiki/大江橋駅",
+      "note": "환승역으로 안내되지만 지상으로 걷는다. 약 230m."
+    },
+    {
+      "region": "osaka",
+      "stations": [
+        "なにわ橋",
+        "北浜"
+      ],
+      "outside": true,
+      "source": "https://ja.wikipedia.org/wiki/なにわ橋駅",
+      "note": "지상으로 약 100m."
+    },
+    {
+      "region": "kobe",
+      "stations": [
+        "神戸三宮",
+        "三宮",
+        "三宮・花時計前"
+      ],
+      "outside": true,
+      "source": "https://ja.wikipedia.org/wiki/神戸三宮駅_(阪急)",
+      "note": "한큐 역에서 개찰구를 나와 갈아탄다."
+    },
+    {
+      "region": "kobe",
+      "stations": [
+        "元町",
+        "旧居留地・大丸前"
+      ],
+      "outside": true,
+      "source": "https://ja.wikipedia.org/wiki/元町駅_(兵庫県)",
+      "note": "길로 약 210m."
+    },
+    {
+      "region": "kobe",
+      "stations": [
+        "高速神戸",
+        "ハーバーランド"
+      ],
+      "outside": true,
+      "source": "https://ja.wikipedia.org/wiki/高速神戸駅",
+      "note": "공식 환승. 약 400m."
+    },
+    {
+      "region": "kobe",
+      "stations": [
+        "高速長田",
+        "長田"
+      ],
+      "outside": false,
+      "source": "https://ja.wikipedia.org/wiki/高速長田駅",
+      "note": "연결 통로로 이어지는 환승역."
     }
   ],
   "separateSameName": [
