@@ -23,6 +23,7 @@ struct RootView: View {
     private enum Tab { case planner, lines }
     @State private var tab = Tab.planner
     @Bindable private var router = TransitRouter.shared
+    @Bindable private var trip = TripSession.shared
 
     var body: some View {
         TabView(selection: $tab) {
@@ -45,6 +46,8 @@ struct RootView: View {
         .onChange(of: router.showPlannerRequest) { tab = .planner }
         // 모든 사용자가 한 번은 감사를 받는다
         .leeoCelebrations(appName: JapanTransitSpec.displayName)
+        // 길 안내 중이면 어디서든 그 화면을 다시 띄운다 (앱을 다시 열거나 알림을 눌러도)
+        .fullScreenCover(isPresented: $trip.isShowing) { GuideView().foldConfined() }
     }
 
     private static let plannerSymbol = "point.topleft.down.to.point.bottomright.curvepath"

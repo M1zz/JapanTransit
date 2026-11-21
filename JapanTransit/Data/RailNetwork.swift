@@ -99,6 +99,27 @@ struct RailLine: Codable, Identifiable, Hashable {
     /// Where a train on this line runs on into another line without a change
     /// (大江戸線 新宿 → 都庁前 → 光が丘).
     let continuations: [Continuation]?
+    /// Trains that split partway: only some cars go on along this line
+    /// (関空快速 · 紀州路快速 part at 日根野).
+    let splits: [Split]?
+
+    struct Split: Codable, Hashable {
+        /// Where the train splits, and the travel direction it splits in.
+        let atStation: String
+        let step: Int
+        /// The cars that carry on along this line, and those that leave it.
+        let stayOn: Cars
+        let leave: Cars
+
+        struct Cars: Codable, Hashable {
+            /// As platform signs put it: "1〜4号車".
+            let cars: String
+            /// The train's name on the board: "関空快速".
+            let name: String
+            /// Where the leaving part goes ("和歌山").
+            let toward: String?
+        }
+    }
 
     struct Continuation: Codable, Hashable {
         let step: Int

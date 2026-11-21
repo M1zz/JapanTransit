@@ -67,6 +67,14 @@ struct RouteDetailView: View {
                 Spacer()
             }
             RouteStrip(route: route, height: 10)
+            Button { TripSession.shared.start(route) } label: {
+                Label("이 길로 안내 시작", systemImage: "location.north.line.fill")
+                    .font(.headline.weight(.heavy))
+                    .frame(maxWidth: .infinity)
+                    .frame(height: 48)
+            }
+            .buttonStyle(.borderedProminent)
+            .tint(Theme.indigo)
         }
         .card(padding: 18)
     }
@@ -201,6 +209,10 @@ private struct RideBlock: View {
                     DirectionSign(segment: segment)
                 }
 
+                if let split = TripGuide.Leg(segments: [segment] + (through.map { [$0] } ?? [])).cars {
+                    CarAdvice(split: split)
+                }
+
                 DestinationMap(segment: segment, through: through)
 
                 ServiceChart(segment: segment)
@@ -303,39 +315,5 @@ private struct TransferBlock: View {
         }
     }
 
-    private var walk: some View {
-        VStack(alignment: .leading, spacing: 8) {
-            if from.line.id == to.line.id {
-                Text("같은 \(to.line.nameKo)이지만 여기서 열차가 끝나요. 내려서 \(to.headingSign) 열차로 바꿔 타세요")
-                    .font(.footnote.weight(.semibold))
-                    .foregroundStyle(Theme.ink)
-            } else {
-                HStack(spacing: 8) {
-                    LineBadge(line: to.line, size: 22)
-                    Text("\(to.line.nameJa) のりかえ")
-                        .font(.body.weight(.heavy))
-                        .foregroundStyle(Theme.ink)
-                }
-                Text("이 글자가 적힌 안내판을 따라가세요")
-                    .font(.caption)
-                    .foregroundStyle(Theme.inkSoft)
-            }
-            let walk = from.walk(to: to)
-            if TransferWalkDiagram.isWorthDrawing(walk) {
-                TransferWalkDiagram(walk: walk, fromLine: from.line, toLine: to.line)
-            }
-            if from.line.operator != to.line.operator {
-                note("yensign.circle", "\(from.line.operatorKo)에서 \(Josa.ro(to.line.operatorKo)) 회사가 바뀌어요. 개찰구를 한 번 더 지나고 요금이 따로 붙어요. 교통카드(Suica·ICOCA 등)는 그대로 찍으면 돼요")
-            }
-        }
-        .accessibilityElement(children: .combine)
-    }
-
-    private func note(_ icon: String, _ text: String) -> some View {
-        HStack(alignment: .top, spacing: 6) {
-            Image(systemName: icon).font(.caption.weight(.bold))
-            Text(text).font(.caption)
-        }
-        .foregroundStyle(Theme.inkSoft)
-    }
+    private var walk: some View { TransferInstructions(from: from, to: to) }
 }

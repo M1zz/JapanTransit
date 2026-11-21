@@ -420,3 +420,75 @@ final class LookalikeStationTests: XCTestCase {
         XCTAssertNil(try network.lookalike(of: place("新横浜", "yokohama")))
     }
 }
+
+final class TripGuideTests: XCTestCase {
+    private let planner = RoutePlanner(network: RailNetwork.shared)
+
+    func testStepsFollowTheRide() throws {
+        // 한 줄: 타는 곳 → 타고 가기 → 나가기
+        let one = TripGuide(route: try XCTUnwrap(planner.routes(from: "渋谷", to: "浅草").first))
+        XCTAssertEqual(one.steps, [.board(0), .ride(0), .leave])
+        // 갈아타기: 미도스지선 → 게이한
+        let two = TripGuide(route: try XCTUnwrap(planner.routes(from: "osaka/梅田", to: "kyoto/祇園四条").first))
+        XCTAssertEqual(two.legs.count, 2)
+        XCTAssertEqual(two.steps, [.board(0), .ride(0), .change(0), .board(1), .ride(1), .leave])
+    }
+
+    func testTrainThatRunsOnIsOneLeg() throws {
+        // 미도스지선 → 기타오사카 급행: 내리지 않으니 한 열차
+        let route = try XCTUnwrap(planner.routes(from: "osaka/梅田", to: "osaka/箕面萱野").first)
+        let guide = TripGuide(route: route)
+        XCTAssertEqual(guide.legs.count, 1)
+        XCTAssertEqual(guide.steps, [.board(0), .ride(0), .leave])
+        let leg = guide.legs[0]
+        XCTAssertEqual(leg.stops.count, route.stopCount + 1, "갈아타는 역(江坂)은 한 번만")
+        XCTAssertEqual(leg.runsOn.map(\.station.ja), ["江坂"])
+        XCTAssertEqual(leg.stops.map(\.minutes), leg.stops.map(\.minutes).sorted())
+    }
+
+    func testClockGuessesWhereTheTrainIs() throws {
+        let leg = TripGuide(route: try XCTUnwrap(planner.routes(from: "渋谷", to: "浅草").first)).legs[0]
+        let t0 = Date(timeIntervalSince1970: 1_000_000)
+        let clock = RideClock(index: 0, at: t0)
+        XCTAssertEqual(clock.stopIndex(on: leg, at: t0), 0)
+        let total = leg.alighting.minutes * 60
+        XCTAssertEqual(clock.stopIndex(on: leg, at: t0.addingTimeInterval(total)), leg.stops.count - 1)
+        XCTAssertEqual(clock.stopsLeft(on: leg, at: t0.addingTimeInterval(total / 2)),
+                       leg.stops.count - 1 - clock.stopIndex(on: leg, at: t0.addingTimeInterval(total / 2)))
+        // 알림은 내릴 역 바로 앞 역에 닿을 때
+        let warning = try XCTUnwrap(clock.warning(on: leg))
+        XCTAssertEqual(clock.stopIndex(on: leg, at: warning), leg.stops.count - 2)
+        XCTAssertLessThan(warning, clock.arrival(at: leg.stops.count - 1, on: leg))
+        // 앞 역에 와 있으면 알릴 것이 없다
+        XCTAssertNil(RideClock(index: leg.stops.count - 2, at: t0).warning(on: leg))
+
+        // 위치가 잡히면 그 역으로 맞춘다. 멀거나 지난 역이면 그대로.
+        let s5 = leg.stops[5].station
+        let fixed = try XCTUnwrap(clock.corrected(latitude: s5.lat, longitude: s5.lng, on: leg, now: t0))
+        XCTAssertEqual(fixed.index, 5)
+        XCTAssertNil(clock.corrected(latitude: 35.0, longitude: 135.0, on: leg, now: t0))
+        let s1 = leg.stops[1].station
+        XCTAssertNil(RideClock(index: 5, at: t0).corrected(latitude: s1.lat, longitude: s1.lng, on: leg, now: t0))
+    }
+
+    func testSplittingTrainSaysWhichCars() throws {
+        // 오사카 → 간사이 공항 (순환선에서 그대로 한와선): 1〜4号車
+        let route = try XCTUnwrap(planner.routes(from: "osaka/大阪", to: "osaka/関西空港", avoiding: ["osaka.NK", "osaka.M", "osaka.Y", "osaka.T"])
+            .first { $0.segments.last?.line.id == "osaka.JR-R" })
+        let leg = try XCTUnwrap(TripGuide(route: route).legs.last)
+        XCTAssertEqual(leg.cars?.stayOn.cars, "1〜4号車")
+        // 나뉘는 역 앞에서 내리거나, 공항에서 나오는 쪽이면 아무 칸이나
+        let short = try XCTUnwrap(planner.routes(from: "osaka/天王寺", to: "osaka/鳳").first)
+        XCTAssertNil(TripGuide(route: short).legs[0].cars)
+        let back = try XCTUnwrap(planner.routes(from: "osaka/関西空港", to: "osaka/天王寺", avoiding: ["osaka.NK"]).first)
+        XCTAssertNil(TripGuide(route: back).legs[0].cars)
+    }
+
+    func testSavedRouteComesBack() throws {
+        for (a, b) in [("渋谷", "浅草"), ("新宿", "原宿"), ("osaka/梅田", "kyoto/祇園四条"), ("osaka/梅田", "osaka/箕面萱野")] {
+            let route = try XCTUnwrap(planner.routes(from: a, to: b).first)
+            XCTAssertEqual(Route(id: route.id), route, "\(a)→\(b)")
+        }
+        XCTAssertNil(Route(id: "nope:1,2"))
+    }
+}

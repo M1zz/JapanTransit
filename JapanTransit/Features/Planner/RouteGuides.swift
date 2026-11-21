@@ -30,19 +30,32 @@ struct DestinationMap: View {
         .accessibilityElement(children: .combine)
     }
 
-    /// 타도 되는 행선지.
+    /// 타도 되는 행선지. 열차가 다음 노선으로 그대로 이어 가는 길이면(大阪 → 関西空港),
+    /// 끝까지 가는 행선지를 먼저, 이음 역까지만 가는 행선지는 "거기서 갈아타요"로 나눈다.
     @ViewBuilder private func board(_ guide: DestinationGuide) -> some View {
         let names = (guide.loopSign.map { [$0] } ?? []) + guide.ok
-        if !names.isEmpty {
+        let far = through?.destinationGuide.ok ?? []
+        if let through, !far.isEmpty {
+            VStack(alignment: .leading, spacing: 6) {
+                Verdict(ok: true, text: "이 글자면 타세요")
+                DestinationChips(names: far, fill: Theme.signBoard)
+                Text("\(through.alighting.ko)까지 갈아타지 않고 가요")
+                    .font(.caption.weight(.bold))
+                    .foregroundStyle(Theme.indigo)
+                let partWay = names.filter { !far.contains($0) && $0 != guide.loopSign }
+                if !partWay.isEmpty {
+                    DestinationChips(names: partWay, fill: Theme.inkSoft, limit: 6)
+                        .padding(.top, 6)
+                    Text("이 글자면 \(segment.alighting.ko)까지만 같은 길이에요. 거기서 내려 \(Josa.ro(through.line.nameKo)) 갈아타요")
+                        .font(.caption)
+                        .foregroundStyle(Theme.inkSoft)
+                        .fixedSize(horizontal: false, vertical: true)
+                }
+            }
+        } else if !names.isEmpty {
             VStack(alignment: .leading, spacing: 6) {
                 Verdict(ok: true, text: "이 글자면 타세요")
                 DestinationChips(names: names, fill: Theme.signBoard)
-                if let through, case let far = through.destinationGuide.ok.prefix(3), !far.isEmpty {
-                    Text("\(far.joined(separator: " · ")) 행이면 \(through.alighting.ko)까지 갈아타지 않고 가요")
-                        .font(.caption.weight(.bold))
-                        .foregroundStyle(Theme.indigo)
-                        .fixedSize(horizontal: false, vertical: true)
-                }
                 if !segment.line.circular, segment.alighting != segment.headingStations.first {
                     Text("\(segment.alighting.ko)보다 먼 역 이름이면 모두 돼요")
                         .font(.caption)
@@ -606,5 +619,84 @@ private struct BoardWord: View {
             .padding(.horizontal, 8).padding(.vertical, 4)
             .frame(minWidth: minWidth)
             .background(Color(light: 0x15_17_1C, dark: 0x15_17_1C), in: RoundedRectangle(cornerRadius: 6, style: .continuous))
+    }
+}
+
+// MARK: - 갈아타기
+
+/// 내린 곳에서 다음 열차 타는 곳까지: 따라갈 안내판 글자, 걷는 길, 개찰구 · 요금.
+struct TransferInstructions: View {
+    let from: RouteSegment
+    let to: RouteSegment
+
+    var body: some View {
+        VStack(alignment: .leading, spacing: 8) {
+            if from.line.id == to.line.id {
+                Text("같은 \(to.line.nameKo)이지만 여기서 열차가 끝나요. 내려서 \(to.headingSign) 열차로 바꿔 타세요")
+                    .font(.footnote.weight(.semibold))
+                    .foregroundStyle(Theme.ink)
+            } else {
+                HStack(spacing: 8) {
+                    LineBadge(line: to.line, size: 22)
+                    Text("\(to.line.nameJa) のりかえ")
+                        .font(.body.weight(.heavy))
+                        .foregroundStyle(Theme.ink)
+                }
+                Text("이 글자가 적힌 안내판을 따라가세요")
+                    .font(.caption)
+                    .foregroundStyle(Theme.inkSoft)
+            }
+            let walk = from.walk(to: to)
+            if TransferWalkDiagram.isWorthDrawing(walk) {
+                TransferWalkDiagram(walk: walk, fromLine: from.line, toLine: to.line)
+            }
+            if from.line.operator != to.line.operator {
+                note("yensign.circle", "\(from.line.operatorKo)에서 \(Josa.ro(to.line.operatorKo)) 회사가 바뀌어요. 개찰구를 한 번 더 지나고 요금이 따로 붙어요. 교통카드(Suica·ICOCA 등)는 그대로 찍으면 돼요")
+            }
+        }
+        .accessibilityElement(children: .combine)
+    }
+
+    private func note(_ icon: String, _ text: String) -> some View {
+        HStack(alignment: .top, spacing: 6) {
+            Image(systemName: icon).font(.caption.weight(.bold))
+            Text(text).font(.caption)
+        }
+        .foregroundStyle(Theme.inkSoft)
+    }
+}
+
+// MARK: - 타는 칸
+
+/// 도중에 둘로 나뉘는 열차: 내 역까지 가는 칸에 타야 한다 (関空快速 1〜4号車).
+struct CarAdvice: View {
+    let split: RailLine.Split
+
+    var body: some View {
+        VStack(alignment: .leading, spacing: 8) {
+            Label("열차가 도중에 둘로 나뉘어요", systemImage: "exclamationmark.triangle.fill")
+                .font(.caption.weight(.heavy))
+                .foregroundStyle(Theme.vermilion)
+            HStack(alignment: .firstTextBaseline, spacing: 8) {
+                Text(split.stayOn.cars)
+                    .font(.title2.weight(.heavy))
+                    .foregroundStyle(Theme.ink)
+                Text("에 타세요")
+                    .font(.headline.weight(.heavy))
+                    .foregroundStyle(Theme.ink)
+            }
+            Text("\(split.stayOn.name) 칸이에요. \(split.leave.cars)(\(split.leave.name))는 \(split.atStation)에서 떨어져 \(split.leave.toward ?? "다른 곳")으로 가요")
+                .font(.footnote)
+                .foregroundStyle(Theme.inkSoft)
+                .fixedSize(horizontal: false, vertical: true)
+            Text("승강장 바닥과 표지판에 칸 번호가 적혀 있어요")
+                .font(.caption)
+                .foregroundStyle(Theme.inkSoft)
+        }
+        .padding(14)
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .background(Theme.vermilion.opacity(0.08), in: RoundedRectangle(cornerRadius: 14, style: .continuous))
+        .overlay(RoundedRectangle(cornerRadius: 14, style: .continuous).strokeBorder(Theme.vermilion.opacity(0.5), lineWidth: 1.5))
+        .accessibilityElement(children: .combine)
     }
 }

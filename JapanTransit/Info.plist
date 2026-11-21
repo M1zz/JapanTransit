@@ -30,7 +30,9 @@
 	<key>NSCameraUsageDescription</key>
 	<string>Reads the departure board and train front so we can tell you whether to board.</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>Finds the station nearest to you.</string>
+	<string>Finds the station nearest to you and, while guiding, which station your train is at.</string>
+	<key>NSSupportsLiveActivities</key>
+	<true/>
 	<key>UIApplicationSupportsIndirectInputEvents</key>
 	<true/>
 	<key>UILaunchScreen</key>

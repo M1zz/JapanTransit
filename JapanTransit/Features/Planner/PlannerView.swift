@@ -74,6 +74,7 @@ struct PlannerView: View {
             ScrollView {
                 VStack(alignment: .leading, spacing: 20) {
                     header
+                    TripResumeBar()
                     ticket
                     if from != nil, to != nil {
                         results
