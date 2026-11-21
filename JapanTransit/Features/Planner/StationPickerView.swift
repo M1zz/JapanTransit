@@ -125,7 +125,7 @@ struct StationPickerView: View {
             if place.region != region, let r = Region.named(place.region) {
                 Text(r.ko).font(.caption2.weight(.bold)).foregroundStyle(Theme.indigo)
             }
-            StationName(ko: place.ko, ja: place.ja, marks: place.marks)
+            StationName(ko: place.ko, ja: place.ja, en: place.en, marks: place.marks)
             if let look = network.lookalike(of: place) {
                 Label(lookalikeText(look), systemImage: look.linked ? "arrow.left.arrow.right" : "exclamationmark.circle")
                     .font(.caption.weight(.semibold))

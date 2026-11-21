@@ -176,7 +176,7 @@ struct PlannerView: View {
             VStack(alignment: .leading, spacing: 8) {
                 Eyebrow(ko: eyebrow.0, en: eyebrow.1)
                 if let place {
-                    StationName(ko: place.ko, ja: place.ja, marks: place.marks, highlight: highlight)
+                    StationName(ko: place.ko, ja: place.ja, en: place.en, marks: place.marks, highlight: highlight)
                 } else {
                     Text(field == .from ? "출발역 고르기" : "도착역 고르기")
                         .font(.title3.weight(.bold))

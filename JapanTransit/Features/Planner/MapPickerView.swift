@@ -90,7 +90,7 @@ struct MapPickerView: View {
         case .place(let id):
             if let place = network.place(id) {
                 VStack(alignment: .leading, spacing: 12) {
-                    StationName(ko: place.ko, ja: place.ja, marks: place.marks, large: true)
+                    StationName(ko: place.ko, ja: place.ja, en: place.en, marks: place.marks, large: true)
                     Button {
                         onPick(place)
                     } label: {

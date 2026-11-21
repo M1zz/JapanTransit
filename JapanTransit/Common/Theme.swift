@@ -131,6 +131,8 @@ struct LineChip: View {
 struct StationName: View {
     let ko: String
     let ja: String
+    /// 역명판의 로마자 — 표지판에 한글이 없는 역이 많아 영어로 맞춰 본다
+    let en: String
     var marks: [Place.Mark] = []
     var large = false
     var highlight: String?
@@ -157,6 +159,9 @@ struct StationName: View {
                     .foregroundStyle(Theme.ink)
                     .minimumScaleFactor(0.6)
                     .lineLimit(1)
+                Text(en)
+                    .font(large ? .subheadline.weight(.medium) : .caption.weight(.medium))
+                    .foregroundStyle(Theme.inkSoft)
             }
             if !marks.isEmpty {
                 FlowRow(spacing: 4) {
@@ -165,9 +170,10 @@ struct StationName: View {
                         StationMark(code: m.code, color: m.color, size: large ? 32 : 26)
                             .opacity(faded ? 0.3 : 1)
                         if let line = highlightedLine, m.lineID == line.id {
-                            Text(line.nameKo)
-                                .font(.subheadline.weight(.bold))
-                                .foregroundStyle(Theme.ink)
+                            (Text(line.nameKo).font(.subheadline.weight(.bold)).foregroundStyle(Theme.ink)
+                             + Text("  \(line.nameEn)").font(.caption.weight(.medium)).foregroundStyle(Theme.inkSoft))
+                                .lineLimit(1)
+                                .fixedSize()
                                 .padding(.trailing, 6)
                                 .frame(height: large ? 32 : 26)
                         }
@@ -181,8 +187,8 @@ struct StationName: View {
     }
 
     private var accessibilityText: String {
-        if let line = highlightedLine { return "\(ko) 역, \(ja), \(line.nameKo)" }
-        return "\(ko) 역, \(ja)"
+        if let line = highlightedLine { return "\(ko) 역, \(ja), \(en), \(line.nameKo)" }
+        return "\(ko) 역, \(ja), \(en)"
     }
 }
 
