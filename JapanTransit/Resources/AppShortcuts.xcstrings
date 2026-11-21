@@ -1,7 +1,19 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
+    "${applicationName} nearest station" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "${applicationName} 가까운 역"
+          }
+        }
+      }
+    },
     "Get directions to ${station} with ${applicationName}" : {
+      "extractionState" : "stale",
       "localizations" : {
         "ko" : {
           "stringUnit" : {
@@ -11,17 +23,8 @@
         }
       }
     },
-    "Route to a station with ${applicationName}" : {
-      "localizations" : {
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "${applicationName}로 길찾기"
-          }
-        }
-      }
-    },
     "Nearest station with ${applicationName}" : {
+      "extractionState" : "stale",
       "localizations" : {
         "ko" : {
           "stringUnit" : {
@@ -31,12 +34,13 @@
         }
       }
     },
-    "${applicationName} nearest station" : {
+    "Route to a station with ${applicationName}" : {
+      "extractionState" : "stale",
       "localizations" : {
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "${applicationName} 가까운 역"
+            "value" : "${applicationName}로 길찾기"
           }
         }
       }
