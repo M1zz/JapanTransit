@@ -44,7 +44,7 @@ extension Color {
 
 /// White card on paper with a soft edge.
 struct CardStyle: ViewModifier {
-    var padding: CGFloat = 16
+    var padding: CGFloat = 14
 
     func body(content: Content) -> some View {
         content
@@ -56,7 +56,7 @@ struct CardStyle: ViewModifier {
 }
 
 extension View {
-    func card(padding: CGFloat = 16) -> some View { modifier(CardStyle(padding: padding)) }
+    func card(padding: CGFloat = 14) -> some View { modifier(CardStyle(padding: padding)) }
 }
 
 // MARK: - Station number mark
@@ -161,19 +161,23 @@ struct StationName: View {
     }
 
     var body: some View {
-        VStack(alignment: .leading, spacing: 6) {
-            VStack(alignment: .leading, spacing: 1) {
+        VStack(alignment: .leading, spacing: 4) {
+            VStack(alignment: .leading, spacing: 0) {
                 Text(ko)
                     .font(large ? .subheadline.weight(.semibold) : .caption.weight(.semibold))
                     .foregroundStyle(Theme.inkSoft)
-                Text(ja)
-                    .font(.system(size: large ? jaLargeSize : jaSize, weight: .bold))
-                    .foregroundStyle(Theme.ink)
-                    .minimumScaleFactor(0.6)
-                    .lineLimit(1)
-                Text(en)
-                    .font(large ? .subheadline.weight(.medium) : .caption.weight(.medium))
-                    .foregroundStyle(Theme.inkSoft)
+                // 일본어 옆에 로마자: 한 줄을 아낀다
+                HStack(alignment: .firstTextBaseline, spacing: 8) {
+                    Text(ja)
+                        .font(.system(size: large ? jaLargeSize : jaSize, weight: .bold))
+                        .foregroundStyle(Theme.ink)
+                        .layoutPriority(1)
+                    Text(en)
+                        .font(large ? .subheadline.weight(.medium) : .caption.weight(.medium))
+                        .foregroundStyle(Theme.inkSoft)
+                }
+                .lineLimit(1)
+                .minimumScaleFactor(0.6)
             }
             if !marks.isEmpty {
                 FlowRow(spacing: 4) {

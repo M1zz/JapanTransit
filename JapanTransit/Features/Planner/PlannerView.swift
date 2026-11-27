@@ -37,7 +37,7 @@ struct PlannerView: View {
                     RouteDetailView(route: route)
                         .id(route)
                 } else {
-                    ScrollView { tips.padding(20) }
+                    ScrollView { tips.padding(16) }
                         .background(Theme.paper.ignoresSafeArea())
                         .toolbar(.hidden, for: .navigationBar)
                 }
@@ -72,7 +72,7 @@ struct PlannerView: View {
     private var planner: some View {
         NavigationStack(path: routePath) {
             ScrollView {
-                VStack(alignment: .leading, spacing: 20) {
+                VStack(alignment: .leading, spacing: 14) {
                     header
                     TripResumeBar()
                     ticket
@@ -93,8 +93,8 @@ struct PlannerView: View {
                     .font(.subheadline.weight(.semibold))
                     .foregroundStyle(Theme.inkSoft)
                 }
-                .padding(.horizontal, 20)
-                .padding(.bottom, 32)
+                .padding(.horizontal, 16)
+                .padding(.bottom, 24)
             }
             .background(Theme.paper.ignoresSafeArea())
             .toolbar(.hidden, for: .navigationBar)
@@ -124,10 +124,10 @@ struct PlannerView: View {
 
     private var header: some View {
         Text("어디로 갈까요?")
-            .font(.largeTitle.weight(.heavy))
+            .font(.title.weight(.heavy))
             .accessibilityAddTraits(.isHeader)
             .foregroundStyle(Theme.ink)
-            .padding(.top, 24)
+            .padding(.top, 8)
     }
 
     // MARK: Ticket
@@ -157,6 +157,9 @@ struct PlannerView: View {
                 .disabled(from == nil && to == nil)
                 .accessibilityLabel("출발역과 도착역 바꾸기")
             }
+            // 버튼은 절취선 위에 얹는다: 줄 하나를 따로 차지하지 않게
+            .frame(height: 1)
+            .zIndex(1)
             ticketRow(.to, place: to, eyebrow: "도착", highlight: route?.segments.last?.line.id)
         }
         .background(Theme.card, in: TicketShape(notchY: 0.5))
@@ -168,7 +171,7 @@ struct PlannerView: View {
         Button {
             picking = field
         } label: {
-            VStack(alignment: .leading, spacing: 8) {
+            VStack(alignment: .leading, spacing: 4) {
                 Eyebrow(text: eyebrow)
                 if let place {
                     StationName(ko: place.ko, ja: place.ja, en: place.en, marks: place.marks, highlight: highlight)
@@ -179,8 +182,8 @@ struct PlannerView: View {
                         .frame(minHeight: 44, alignment: .leading)
                 }
             }
-            .padding(.horizontal, 20)
-            .padding(.vertical, 18)
+            .padding(.horizontal, 16)
+            .padding(.vertical, 12)
             .frame(maxWidth: .infinity, alignment: .leading)
             .contentShape(Rectangle())
         }
@@ -198,7 +201,7 @@ struct PlannerView: View {
                 .foregroundStyle(Theme.inkSoft)
                 .card()
         } else {
-            VStack(alignment: .leading, spacing: 12) {
+            VStack(alignment: .leading, spacing: 10) {
                 Text("경로")
                     .font(.headline)
                     .foregroundStyle(Theme.ink)
@@ -231,12 +234,12 @@ struct PlannerView: View {
     // MARK: Tips
 
     private var tips: some View {
-        VStack(alignment: .leading, spacing: 16) {
+        VStack(alignment: .leading, spacing: 12) {
             tip(1, "역을 찾아요", "신주쿠, 新宿, Shinjuku, M08 무엇으로든")
             tip(2, "표지판 글자를 맞춰 봐요", "일본어를 못 읽어도 글자 모양만 맞추면 돼요")
             tip(3, "열차를 비춰 봐요", "승강장에서 카메라로 타도 되는 열차인지 확인해요")
         }
-        .card(padding: 20)
+        .card()
     }
 
     private func tip(_ n: Int, _ title: String, _ detail: String) -> some View {
@@ -279,7 +282,7 @@ struct RouteSummaryCard: View {
     let label: String
 
     var body: some View {
-        VStack(alignment: .leading, spacing: 14) {
+        VStack(alignment: .leading, spacing: 10) {
             HStack(alignment: .firstTextBaseline, spacing: 8) {
                 Text("\(route.estimatedMinutes)")
                     .font(.system(.largeTitle, design: .rounded, weight: .heavy))
@@ -304,7 +307,7 @@ struct RouteSummaryCard: View {
                 .font(.footnote)
                 .foregroundStyle(Theme.inkSoft)
         }
-        .card(padding: 18)
+        .card()
         .accessibilityElement(children: .combine)
     }
 

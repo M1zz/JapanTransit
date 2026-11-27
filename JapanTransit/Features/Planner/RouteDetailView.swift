@@ -12,15 +12,15 @@ struct RouteDetailView: View {
         ScrollView {
             VStack(alignment: .leading, spacing: 0) {
                 summary
-                    .padding(.bottom, 24)
+                    .padding(.bottom, 16)
                 if LastTrain.isNear() || ProcessInfo.processInfo.arguments.contains("-lateNight") {
                     LastTrainNotice()
-                        .padding(.bottom, 24)
+                        .padding(.bottom, 16)
                 }
                 // 카메라로 확인하고 탄 열차가 쌓였을 때만, 드물게 응원을 부탁한다. 카메라를 닫고 돌아온 자리다 (모달 아님)
                 LeeoTipAskSlot<JapanTransitSpec>(tipJar: JapanTransitSpec.tipJar,
                                                  reached: JapanTransitTipMoments.reached(boardedCount: boardedCount))
-                    .padding(.bottom, 24)
+                    .padding(.bottom, 16)
                 ForEach(Array(route.segments.enumerated()), id: \.element.id) { i, seg in
                     if i > 0 {
                         let prev = route.segments[i - 1]
@@ -45,8 +45,8 @@ struct RouteDetailView: View {
                 DisruptionCard(route: route)
                     .padding(.top, 16)
             }
-            .padding(.horizontal, 20)
-            .padding(.vertical, 16)
+            .padding(.horizontal, 16)
+            .padding(.vertical, 12)
         }
         .background(Theme.paper.ignoresSafeArea())
         .navigationTitle("\(route.segments.first?.boarding.ko ?? "") → \(route.segments.last?.alighting.ko ?? "")")
@@ -76,7 +76,7 @@ struct RouteDetailView: View {
             .buttonStyle(.borderedProminent)
             .tint(Theme.indigo)
         }
-        .card(padding: 18)
+        .card()
     }
 
     private func stat(_ value: String, _ unit: String) -> some View {
@@ -193,7 +193,7 @@ private struct RideBlock: View {
     var body: some View {
         HStack(alignment: .top, spacing: 12) {
             Rail(color: segment.line.swiftColor)
-            VStack(alignment: .leading, spacing: 14) {
+            VStack(alignment: .leading, spacing: 12) {
                 HStack {
                     LineChip(line: segment.line)
                     Spacer()
@@ -232,8 +232,8 @@ private struct RideBlock: View {
                 }
                 .buttonStyle(.plain)
             }
-            .card(padding: 16)
-            .padding(.vertical, 10)
+            .card()
+            .padding(.vertical, 6)
         }
     }
 
