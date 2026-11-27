@@ -67,6 +67,8 @@ struct StationMark: View {
     let code: String
     let color: Color
     var size: CGFloat = 34
+    /// 마크도 글자 크기를 따라 커진다
+    @ScaledMetric private var scale: CGFloat = 1
 
     private var parts: (String, String) {
         // "M08" → M · 08, "HK-61" → HK · 61, "JR-O01" → O · 01 (JR 서일본 표지판은 노선 글자만 쓴다)
@@ -78,6 +80,7 @@ struct StationMark: View {
 
     var body: some View {
         let (letters, number) = parts
+        let size = size * scale
         VStack(spacing: -size * 0.06) {
             Text(letters)
                 .font(.system(size: size * (letters.count > 1 ? 0.26 : 0.3), weight: .heavy, design: .rounded))
@@ -100,9 +103,11 @@ struct StationMark: View {
 struct LineBadge: View {
     let line: RailLine
     var size: CGFloat = 28
+    @ScaledMetric private var scale: CGFloat = 1
 
     var body: some View {
-        Text(line.badge)
+        let size = size * scale
+        return Text(line.badge)
             .font(.system(size: size * (line.badge.count > 1 ? 0.4 : 0.52), weight: .heavy, design: .rounded))
             .foregroundStyle(.white)
             .frame(width: size, height: size)
@@ -130,7 +135,7 @@ struct LineChip: View {
 /// The sign's Japanese name big, the Korean reading above it, and every line's
 /// number mark below — 新宿 has seven, so they wrap rather than get cut.
 /// With `highlight` (the line you ride from here), that mark comes first with
-/// the line's name and the rest fade: 新宿 [JY17] 야마노테선 → 原宿 [JY19] 야마노테선.
+/// the line's name alone: 新宿 [JY17] 야마노테선 → 原宿 [JY19] 야마노테선.
 struct StationName: View {
     let ko: String
     let ja: String
@@ -144,10 +149,11 @@ struct StationName: View {
     @ScaledMetric(relativeTo: .largeTitle) private var jaLargeSize: CGFloat = 30
 
     private var ordered: [Place.Mark] {
+        // 탈 노선이 정해졌으면 그 마크 하나만: 다른 노선 마크는 눈만 어지럽힌다
+        if highlightedLine != nil { return Array(marks.filter { $0.lineID == highlight }.prefix(1)) }
         // 직통 노선은 역 번호를 함께 쓴다 (江坂 M11): 같은 번호는 한 번만 그린다
         var seen = Set<String>()
-        return (marks.filter { $0.lineID == highlight } + marks.filter { $0.lineID != highlight })
-            .filter { seen.insert($0.code).inserted }
+        return marks.filter { seen.insert($0.code).inserted }
     }
 
     private var highlightedLine: RailLine? {
@@ -172,16 +178,14 @@ struct StationName: View {
             if !marks.isEmpty {
                 FlowRow(spacing: 4) {
                     ForEach(ordered, id: \.code) { m in
-                        let faded = highlightedLine != nil && m.lineID != highlight
                         StationMark(code: m.code, color: m.color, size: large ? 32 : 26)
-                            .opacity(faded ? 0.3 : 1)
                         if let line = highlightedLine, m.lineID == line.id {
                             (Text(line.nameKo).font(.subheadline.weight(.bold)).foregroundStyle(Theme.ink)
                              + Text("  \(line.nameEn)").font(.caption.weight(.medium)).foregroundStyle(Theme.inkSoft))
                                 .lineLimit(1)
                                 .fixedSize()
                                 .padding(.trailing, 6)
-                                .frame(height: large ? 32 : 26)
+                                .frame(minHeight: large ? 32 : 26)
                         }
                     }
                 }
@@ -281,16 +285,12 @@ struct RouteStrip: View {
 
 // MARK: - Eyebrow
 
-/// Small spaced caps label: "출発 FROM".
+/// Small label above a field: "출발".
 struct Eyebrow: View {
-    let ko: String
-    let en: String
+    let text: String
 
     var body: some View {
-        HStack(spacing: 6) {
-            Text(ko).font(.caption.weight(.bold)).foregroundStyle(Theme.indigo)
-            Text(en).font(.caption2.weight(.semibold)).tracking(1.5).foregroundStyle(Theme.inkSoft)
-        }
+        Text(text).font(.caption.weight(.bold)).foregroundStyle(Theme.indigo)
     }
 }
 

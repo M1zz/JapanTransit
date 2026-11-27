@@ -123,17 +123,11 @@ struct PlannerView: View {
     }
 
     private var header: some View {
-        VStack(alignment: .leading, spacing: 4) {
-            Text("일본길찾기")
-                .font(.footnote.weight(.heavy))
-                .tracking(1)
-                .foregroundStyle(Theme.indigo)
-            Text("어디로 갈까요?")
-                .font(.largeTitle.weight(.heavy))
-                .accessibilityAddTraits(.isHeader)
-                .foregroundStyle(Theme.ink)
-        }
-        .padding(.top, 24)
+        Text("어디로 갈까요?")
+            .font(.largeTitle.weight(.heavy))
+            .accessibilityAddTraits(.isHeader)
+            .foregroundStyle(Theme.ink)
+            .padding(.top, 24)
     }
 
     // MARK: Ticket
@@ -143,7 +137,7 @@ struct PlannerView: View {
         // 경로가 있으면 탈 노선 · 내릴 노선의 마크를 앞에 세운다: 같은 노선이면 같은 색 마크가 위아래로 선다.
         let route = routes.first
         return VStack(spacing: 0) {
-            ticketRow(.from, place: from, eyebrow: ("출발", "FROM"), highlight: route?.segments.first?.line.id)
+            ticketRow(.from, place: from, eyebrow: "출발", highlight: route?.segments.first?.line.id)
             ZStack(alignment: .trailing) {
                 Perforation()
                     .stroke(Theme.hairline, style: StrokeStyle(lineWidth: 1.5, dash: [5, 5]))
@@ -163,19 +157,19 @@ struct PlannerView: View {
                 .disabled(from == nil && to == nil)
                 .accessibilityLabel("출발역과 도착역 바꾸기")
             }
-            ticketRow(.to, place: to, eyebrow: ("도착", "TO"), highlight: route?.segments.last?.line.id)
+            ticketRow(.to, place: to, eyebrow: "도착", highlight: route?.segments.last?.line.id)
         }
         .background(Theme.card, in: TicketShape(notchY: 0.5))
         .overlay(TicketShape(notchY: 0.5).stroke(Theme.hairline))
         .shadow(color: Theme.ink.opacity(0.06), radius: 14, y: 6)
     }
 
-    private func ticketRow(_ field: Field, place: Place?, eyebrow: (String, String), highlight: String?) -> some View {
+    private func ticketRow(_ field: Field, place: Place?, eyebrow: String, highlight: String?) -> some View {
         Button {
             picking = field
         } label: {
             VStack(alignment: .leading, spacing: 8) {
-                Eyebrow(ko: eyebrow.0, en: eyebrow.1)
+                Eyebrow(text: eyebrow)
                 if let place {
                     StationName(ko: place.ko, ja: place.ja, en: place.en, marks: place.marks, highlight: highlight)
                 } else {
@@ -191,7 +185,7 @@ struct PlannerView: View {
             .contentShape(Rectangle())
         }
         .buttonStyle(.plain)
-        .accessibilityLabel(place.map { "\(eyebrow.0): \($0.ko)" } ?? "\(eyebrow.0)역 고르기")
+        .accessibilityLabel(place.map { "\(eyebrow): \($0.ko)" } ?? "\(eyebrow)역 고르기")
     }
 
     // MARK: Results

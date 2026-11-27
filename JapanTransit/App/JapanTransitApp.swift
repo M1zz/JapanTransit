@@ -11,6 +11,8 @@ struct JapanTransitApp: App {
     var body: some Scene {
         WindowGroup {
             RootView()
+                // 글자를 늘 크게: 기본이 xxLarge, 사용자가 더 키우면 그대로 따른다
+                .dynamicTypeSize(.xxLarge...)
                 // 아이폰 듀오: 접힘을 재서 아래로 흘리고, 시트 · 알림창이 접힌 선을 비키게 한다.
                 .foldAware()
                 // 팁 상품을 불러오고 끝나지 않은 팁을 마저 센다 (무료 앱이라 LeeoStore 대신 혼자)

@@ -442,7 +442,7 @@ struct ExitSigns: View {
             ForEach(hints.prefix(5)) { hint in
                 HStack(spacing: 12) {
                     VStack(spacing: 0) {
-                        Text("出口").font(.system(size: 9, weight: .heavy))
+                        Text("出口").font(.caption2.weight(.heavy))
                         Text(hint.exit)
                             .font(.system(.headline, design: .rounded, weight: .heavy))
                             .lineLimit(1)
